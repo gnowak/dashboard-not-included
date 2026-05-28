@@ -1,7 +1,7 @@
 import React from 'react';
-import { ArrowDownRight, ArrowUpRight, Maximize2 } from 'lucide-react';
+import { ArrowDownRight, ArrowUpRight, Maximize2, Trash2 } from 'lucide-react';
 
-export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChange }) {
+export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChange, onRemove }) {
   const currentOutput = crop.caloriesPerCycle * count;
   
   // Usable slots per greenhouse: roomSize minus 2 tiles for Farm Station
@@ -32,6 +32,27 @@ export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChang
           <h3 style={{ color: crop.color || 'var(--oni-text-primary)', fontSize: '1.3rem', fontWeight: 'bold' }}>
             {crop.name}
           </h3>
+          {onRemove && (
+            <button 
+              onClick={onRemove}
+              style={{
+                background: 'none',
+                border: 'none',
+                color: 'var(--oni-text-muted)',
+                cursor: 'pointer',
+                padding: '0.2rem',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                transition: 'color 0.15s ease'
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.color = 'var(--oni-accent-danger)'}
+              onMouseLeave={(e) => e.currentTarget.style.color = 'var(--oni-text-muted)'}
+              title="Remove crop card"
+            >
+              <Trash2 size={16} />
+            </button>
+          )}
         </div>
 
         <p style={{ color: 'var(--oni-text-muted)', fontSize: '0.8rem', marginBottom: '0.8rem', fontStyle: 'italic', lineHeight: '1.3', minHeight: '2.8rem' }}>
