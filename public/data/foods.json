@@ -3,6 +3,10 @@
     "id": "SwampFruit",
     "name": "<link=\"SWAMPFRUIT\">Bog Jelly</link>",
     "prefabId": "SwampFruit",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 1840000.0,
     "quality": 0,
     "moraleBonus": 0,
@@ -21,6 +25,10 @@
     "id": "SwampDelights",
     "name": "<link=\"SWAMPDELIGHTS\">Swampy Delights</link>",
     "prefabId": "SwampDelights",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 2240000.0,
     "quality": 1,
     "moraleBonus": 1,
@@ -39,6 +47,8 @@
     "id": "SurfAndTurf",
     "name": "<link=\"SURFANDTURF\">Surf'n'Turf</link>",
     "prefabId": "SurfAndTurf",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 6000000.0,
     "quality": 4,
     "moraleBonus": 12,
@@ -57,6 +67,10 @@
     "id": "SquidMeat",
     "name": "<link=\"SQUIDMEAT\">Calamari</link>",
     "prefabId": "SquidMeat",
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 800000.0,
     "quality": 2,
     "moraleBonus": 4,
@@ -75,6 +89,8 @@
     "id": "SpicyTofu",
     "name": "<link=\"SPICYTOFU\">Spicy Tofu</link>",
     "prefabId": "SpicyTofu",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 4000000.0,
     "quality": 5,
     "moraleBonus": 16,
@@ -93,6 +109,8 @@
     "id": "SpiceBread",
     "name": "<link=\"SPICEBREAD\">Pepper Bread</link>",
     "prefabId": "SpiceBread",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 4000000.0,
     "quality": 5,
     "moraleBonus": 16,
@@ -111,6 +129,10 @@
     "id": "SmokedVegetables",
     "name": "<link=\"SMOKEDVEGETABLES\">Veggie Poppers</link>",
     "prefabId": "SmokedVegetables",
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 2862500.0,
     "quality": 2,
     "moraleBonus": 4,
@@ -129,6 +151,10 @@
     "id": "SmokedFish",
     "name": "<link=\"SMOKEDFISH\">Smoked Fish</link>",
     "prefabId": "SmokedFish",
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 2800000.0,
     "quality": 3,
     "moraleBonus": 8,
@@ -147,6 +173,10 @@
     "id": "SmokedDinosaurMeat",
     "name": "<link=\"SMOKEDDINOSAURMEAT\">Tender Brisket</link>",
     "prefabId": "SmokedDinosaurMeat",
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 5000000.0,
     "quality": 3,
     "moraleBonus": 8,
@@ -165,6 +195,8 @@
     "id": "ShellfishMeat",
     "name": "<link=\"SHELLFISHMEAT\">Raw Shellfish</link>",
     "prefabId": "ShellfishMeat",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 1000000.0,
     "quality": 2,
     "moraleBonus": 4,
@@ -183,6 +215,10 @@
     "id": "SaltySticksFood",
     "name": "<link=\"SALTYSTICKSFOOD\">Salty Sticks</link>",
     "prefabId": "SaltySticksFood",
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 600000.0,
     "quality": -1,
     "moraleBonus": -1,
@@ -201,6 +237,8 @@
     "id": "Salsa",
     "name": "<link=\"SALSA\">Stuffed Berry</link>",
     "prefabId": "Salsa",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 4400000.0,
     "quality": 4,
     "moraleBonus": 12,
@@ -219,6 +257,8 @@
     "id": "RawEgg",
     "name": "<link=\"RAWEGG\">Raw Egg</link>",
     "prefabId": "RawEgg",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 1600000.0,
     "quality": -1,
     "moraleBonus": -1,
@@ -237,6 +277,8 @@
     "id": "Quiche",
     "name": "<link=\"QUICHE\">Mushroom Quiche</link>",
     "prefabId": "Quiche",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 6400000.0,
     "quality": 5,
     "moraleBonus": 16,
@@ -255,6 +297,8 @@
     "id": "PrickleFruit",
     "name": "<link=\"PRICKLEFRUIT\">Bristle Berry</link>",
     "prefabId": "PrickleFruit",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 1600000.0,
     "quality": 0,
     "moraleBonus": 0,
@@ -273,6 +317,10 @@
     "id": "PrehistoricPacuFillet",
     "name": "<link=\"PREHISTORICPACUFILLET\">Jawbo Fillet</link>",
     "prefabId": "PrehistoricPacuFillet",
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 1000000.0,
     "quality": 3,
     "moraleBonus": 8,
@@ -291,6 +339,10 @@
     "id": "PlantMeat",
     "name": "<link=\"PLANTMEAT\">Plant Meat</link>",
     "prefabId": "PlantMeat",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 1200000.0,
     "quality": 1,
     "moraleBonus": 1,
@@ -309,6 +361,8 @@
     "id": "PickledMeal",
     "name": "<link=\"PICKLEDMEAL\">Pickled Meal</link>",
     "prefabId": "PickledMeal",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 1800000.0,
     "quality": -1,
     "moraleBonus": -1,
@@ -327,6 +381,8 @@
     "id": "Tofu",
     "name": "<link=\"TOFU\">Tofu</link>",
     "prefabId": "Tofu",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 3600000.0,
     "quality": 2,
     "moraleBonus": 4,
@@ -345,6 +401,10 @@
     "id": "UrchinMeat",
     "name": "<link=\"URCHINMEAT\">Uni</link>",
     "prefabId": "UrchinMeat",
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 7200000.0,
     "quality": 3,
     "moraleBonus": 8,
@@ -363,6 +423,10 @@
     "id": "WormBasicFood",
     "name": "<link=\"WORMBASICFOOD\">Roast Grubfruit Nut</link>",
     "prefabId": "WormBasicFood",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 1200000.0,
     "quality": 1,
     "moraleBonus": 1,
@@ -381,6 +445,10 @@
     "id": "WormSuperFruit",
     "name": "<link=\"WORMSUPERFRUIT\">Grubfruit</link>",
     "prefabId": "WormSuperFruit",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 250000.0,
     "quality": 1,
     "moraleBonus": 1,
@@ -399,6 +467,10 @@
     "id": "WormSuperFood",
     "name": "<link=\"WORMSUPERFOOD\">Grubfruit Preserve</link>",
     "prefabId": "WormSuperFood",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 2400000.0,
     "quality": 3,
     "moraleBonus": 8,
@@ -417,6 +489,10 @@
     "id": "WormBasicFruit",
     "name": "<link=\"WORMBASICFRUIT\">Spindly Grubfruit</link>",
     "prefabId": "WormBasicFruit",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 800000.0,
     "quality": 0,
     "moraleBonus": 0,
@@ -435,6 +511,10 @@
     "id": "VineFruit",
     "name": "<link=\"VINEFRUIT\">Ovagro Fig</link>",
     "prefabId": "VineFruit",
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 325000.0,
     "quality": 0,
     "moraleBonus": 0,
@@ -453,6 +533,10 @@
     "id": "Pemmican",
     "name": "<link=\"PEMMICAN\">Pemmican</link>",
     "prefabId": "Pemmican",
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 2600000.0,
     "quality": 2,
     "moraleBonus": 4,
@@ -471,6 +555,8 @@
     "id": "Pancakes",
     "name": "<link=\"PANCAKES\">Soufflé Pancakes</link>",
     "prefabId": "Pancakes",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 3600000.0,
     "quality": 3,
     "moraleBonus": 8,
@@ -486,31 +572,17 @@
     "canRot": true
   },
   {
-    "id": "Nigiri",
-    "name": "<link=\"NIGIRI\">Nigiri</link>",
-    "prefabId": "Nigiri",
-    "caloriesPerUnit": 3600000.0,
-    "quality": 5,
-    "moraleBonus": 16,
-    "spoilTimeCycles": 2400.0,
-    "deepFreezeTemp": {
-      "kelvin": 255.15,
-      "celsius": -18.0
-    },
-    "rotTemp": {
-      "kelvin": 277.15,
-      "celsius": 4.0
-    },
-    "canRot": true
-  },
-  {
     "id": "MusselTongue",
     "name": "<link=\"MUSSELTONGUE\">Mussel Tongue</link>",
     "prefabId": "MusselTongue",
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 2800000.0,
     "quality": -1,
     "moraleBonus": -1,
-    "spoilTimeCycles": 19200.0,
+    "spoilTimeCycles": 4800.0,
     "deepFreezeTemp": {
       "kelvin": 255.15,
       "celsius": -18.0
@@ -519,12 +591,14 @@
       "kelvin": 277.15,
       "celsius": 4.0
     },
-    "canRot": true
+    "canRot": false
   },
   {
     "id": "ForestForagePlant",
     "name": "<link=\"FORESTFORAGEPLANT\">Hexalent Fruit</link>",
     "prefabId": "ForestForagePlant",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 6400000.0,
     "quality": -1,
     "moraleBonus": -1,
@@ -543,6 +617,10 @@
     "id": "IceCavesForagePlant",
     "name": "<link=\"ICECAVESFORAGEPLANT\">Sherberry</link>",
     "prefabId": "IceCavesForagePlant",
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 800000.0,
     "quality": -1,
     "moraleBonus": -1,
@@ -561,6 +639,10 @@
     "id": "HardSkinBerry",
     "name": "<link=\"HARDSKINBERRY\">Pikeapple</link>",
     "prefabId": "HardSkinBerry",
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 800000.0,
     "quality": -1,
     "moraleBonus": -1,
@@ -579,6 +661,10 @@
     "id": "GardenForagePlant",
     "name": "<link=\"GARDENFORAGEPLANT\">Snac Fruit</link>",
     "prefabId": "GardenForagePlant",
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 800000.0,
     "quality": -1,
     "moraleBonus": -1,
@@ -597,6 +683,10 @@
     "id": "GardenFoodPlantFood",
     "name": "<link=\"GARDENFOODPLANTFOOD\">Sweatcorn</link>",
     "prefabId": "GardenFoodPlantFood",
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 800000.0,
     "quality": -1,
     "moraleBonus": -1,
@@ -615,6 +705,8 @@
     "id": "BasicForagePlant",
     "name": "<link=\"BASICFORAGEPLANT\">Muckroot</link>",
     "prefabId": "BasicForagePlant",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 800000.0,
     "quality": -1,
     "moraleBonus": -1,
@@ -630,9 +722,35 @@
     "canRot": false
   },
   {
+    "id": "Nigiri",
+    "name": "<link=\"NIGIRI\">Nigiri</link>",
+    "prefabId": "Nigiri",
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "caloriesPerUnit": 3600000.0,
+    "quality": 5,
+    "moraleBonus": 16,
+    "spoilTimeCycles": 2400.0,
+    "deepFreezeTemp": {
+      "kelvin": 255.15,
+      "celsius": -18.0
+    },
+    "rotTemp": {
+      "kelvin": 277.15,
+      "celsius": 4.0
+    },
+    "canRot": true
+  },
+  {
     "id": "DeepFriedShellfish",
     "name": "<link=\"DEEPFRIEDSHELLFISH\">Shellfish Tempura</link>",
     "prefabId": "DeepFriedShellfish",
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 4200000.0,
     "quality": 4,
     "moraleBonus": 12,
@@ -651,6 +769,10 @@
     "id": "DeepFriedNosh",
     "name": "<link=\"DEEPFRIEDNOSH\">Nosh Noms</link>",
     "prefabId": "DeepFriedNosh",
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 5000000.0,
     "quality": 3,
     "moraleBonus": 8,
@@ -669,6 +791,10 @@
     "id": "DeepFriedMeat",
     "name": "<link=\"DEEPFRIEDMEAT\">Deep Fried Steak</link>",
     "prefabId": "DeepFriedMeat",
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 4000000.0,
     "quality": 3,
     "moraleBonus": 8,
@@ -687,6 +813,10 @@
     "id": "DeepFriedFish",
     "name": "<link=\"DEEPFRIEDFISH\">Fish Taco</link>",
     "prefabId": "DeepFriedFish",
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 4200000.0,
     "quality": 4,
     "moraleBonus": 12,
@@ -702,13 +832,15 @@
     "canRot": true
   },
   {
-    "id": "MushroomWrap",
-    "name": "<link=\"MUSHROOMWRAP\">Mushroom Wrap</link>",
-    "prefabId": "MushroomWrap",
-    "caloriesPerUnit": 4800000.0,
-    "quality": 4,
-    "moraleBonus": 12,
-    "spoilTimeCycles": 2400.0,
+    "id": "FriedMushroom",
+    "name": "<link=\"FRIEDMUSHROOM\">Fried Mushroom</link>",
+    "prefabId": "FriedMushroom",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "caloriesPerUnit": 2800000.0,
+    "quality": 1,
+    "moraleBonus": 1,
+    "spoilTimeCycles": 4800.0,
     "deepFreezeTemp": {
       "kelvin": 255.15,
       "celsius": -18.0
@@ -723,6 +855,8 @@
     "id": "Curry",
     "name": "<link=\"CURRY\">Curried Beans</link>",
     "prefabId": "Curry",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 5000000.0,
     "quality": 4,
     "moraleBonus": 12,
@@ -741,6 +875,8 @@
     "id": "CookedMeat",
     "name": "<link=\"COOKEDMEAT\">Barbeque</link>",
     "prefabId": "CookedMeat",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 4000000.0,
     "quality": 3,
     "moraleBonus": 8,
@@ -759,6 +895,8 @@
     "id": "CookedFish",
     "name": "<link=\"COOKEDFISH\">Cooked Seafood</link>",
     "prefabId": "CookedFish",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 1600000.0,
     "quality": 3,
     "moraleBonus": 8,
@@ -777,6 +915,8 @@
     "id": "CookedEgg",
     "name": "<link=\"COOKEDEGG\">Omelette</link>",
     "prefabId": "CookedEgg",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 2800000.0,
     "quality": 2,
     "moraleBonus": 4,
@@ -795,6 +935,8 @@
     "id": "ColdWheatBread",
     "name": "<link=\"COLDWHEATBREAD\">Frost Bun</link>",
     "prefabId": "ColdWheatBread",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 1200000.0,
     "quality": 2,
     "moraleBonus": 4,
@@ -813,6 +955,10 @@
     "id": "Carrot",
     "name": "<link=\"CARROT\">Plume Squash</link>",
     "prefabId": "Carrot",
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 4000000.0,
     "quality": 0,
     "moraleBonus": 0,
@@ -831,6 +977,10 @@
     "id": "ButterflyFood",
     "name": "<link=\"BUTTERFLYFOOD\">Toasted Mimillet</link>",
     "prefabId": "ButterflyFood",
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 1500000.0,
     "quality": 1,
     "moraleBonus": 1,
@@ -849,6 +999,10 @@
     "id": "CookedPikeapple",
     "name": "<link=\"COOKEDPIKEAPPLE\">Pikeapple Skewer</link>",
     "prefabId": "CookedPikeapple",
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 1200000.0,
     "quality": 1,
     "moraleBonus": 1,
@@ -864,13 +1018,15 @@
     "canRot": true
   },
   {
-    "id": "FriesCarrot",
-    "name": "<link=\"FRIESCARROT\">Squash Fries</link>",
-    "prefabId": "FriesCarrot",
-    "caloriesPerUnit": 5400000.0,
-    "quality": 3,
-    "moraleBonus": 8,
-    "spoilTimeCycles": 2400.0,
+    "id": "Mushroom",
+    "name": "<link=\"MUSHROOM\">Mushroom</link>",
+    "prefabId": "Mushroom",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "caloriesPerUnit": 2400000.0,
+    "quality": 0,
+    "moraleBonus": 0,
+    "spoilTimeCycles": 4800.0,
     "deepFreezeTemp": {
       "kelvin": 255.15,
       "celsius": -18.0
@@ -885,6 +1041,8 @@
     "id": "MushBar",
     "name": "<link=\"MUSHBAR\">Mush Bar</link>",
     "prefabId": "MushBar",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 800000.0,
     "quality": -1,
     "moraleBonus": -1,
@@ -903,6 +1061,8 @@
     "id": "Meat",
     "name": "<link=\"MEAT\">Meat</link>",
     "prefabId": "Meat",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 1600000.0,
     "quality": -1,
     "moraleBonus": -1,
@@ -918,13 +1078,17 @@
     "canRot": true
   },
   {
-    "id": "FriedMushroom",
-    "name": "<link=\"FRIEDMUSHROOM\">Fried Mushroom</link>",
-    "prefabId": "FriedMushroom",
-    "caloriesPerUnit": 2800000.0,
-    "quality": 1,
-    "moraleBonus": 1,
-    "spoilTimeCycles": 4800.0,
+    "id": "FriesCarrot",
+    "name": "<link=\"FRIESCARROT\">Squash Fries</link>",
+    "prefabId": "FriesCarrot",
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "caloriesPerUnit": 5400000.0,
+    "quality": 3,
+    "moraleBonus": 8,
+    "spoilTimeCycles": 2400.0,
     "deepFreezeTemp": {
       "kelvin": 255.15,
       "celsius": -18.0
@@ -939,6 +1103,8 @@
     "id": "FruitCake",
     "name": "<link=\"FRUITCAKE\">Berry Sludge</link>",
     "prefabId": "FruitCake",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 4000000.0,
     "quality": 3,
     "moraleBonus": 8,
@@ -957,6 +1123,8 @@
     "id": "GammaMush",
     "name": "<link=\"GAMMAMUSH\">Gamma Mush</link>",
     "prefabId": "GammaMush",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 1050000.0,
     "quality": 1,
     "moraleBonus": 1,
@@ -975,6 +1143,8 @@
     "id": "GrilledPrickleFruit",
     "name": "<link=\"GRILLEDPRICKLEFRUIT\">Gristle Berry</link>",
     "prefabId": "GrilledPrickleFruit",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 2000000.0,
     "quality": 1,
     "moraleBonus": 1,
@@ -993,6 +1163,8 @@
     "id": "FriedMushBar",
     "name": "<link=\"FRIEDMUSHBAR\">Mush Fry</link>",
     "prefabId": "FriedMushBar",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 1050000.0,
     "quality": 0,
     "moraleBonus": 0,
@@ -1008,27 +1180,11 @@
     "canRot": true
   },
   {
-    "id": "Lettuce",
-    "name": "<link=\"LETTUCE\">Lettuce</link>",
-    "prefabId": "Lettuce",
-    "caloriesPerUnit": 400000.0,
-    "quality": 0,
-    "moraleBonus": 0,
-    "spoilTimeCycles": 2400.0,
-    "deepFreezeTemp": {
-      "kelvin": 255.15,
-      "celsius": -18.0
-    },
-    "rotTemp": {
-      "kelvin": 277.15,
-      "celsius": 4.0
-    },
-    "canRot": true
-  },
-  {
     "id": "FishMeat",
     "name": "<link=\"FISHMEAT\">Fish Fillet</link>",
     "prefabId": "FishMeat",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 1000000.0,
     "quality": 2,
     "moraleBonus": 4,
@@ -1044,9 +1200,31 @@
     "canRot": true
   },
   {
+    "id": "Lettuce",
+    "name": "<link=\"LETTUCE\">Lettuce</link>",
+    "prefabId": "Lettuce",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "caloriesPerUnit": 400000.0,
+    "quality": 0,
+    "moraleBonus": 0,
+    "spoilTimeCycles": 2400.0,
+    "deepFreezeTemp": {
+      "kelvin": 255.15,
+      "celsius": -18.0
+    },
+    "rotTemp": {
+      "kelvin": 277.15,
+      "celsius": 4.0
+    },
+    "canRot": true
+  },
+  {
     "id": "FieldRation",
     "name": "<link=\"FIELDRATION\">Nutrient Bar</link>",
     "prefabId": "FieldRation",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 800000.0,
     "quality": -1,
     "moraleBonus": -1,
@@ -1065,6 +1243,10 @@
     "id": "Edamame",
     "name": "<link=\"EDAMAME\">Edamame</link>",
     "prefabId": "Edamame",
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 1450000.0,
     "quality": 3,
     "moraleBonus": 8,
@@ -1083,6 +1265,10 @@
     "id": "Maki",
     "name": "<link=\"MAKI\">Sushi Roll</link>",
     "prefabId": "Maki",
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 3600000.0,
     "quality": 4,
     "moraleBonus": 12,
@@ -1101,6 +1287,8 @@
     "id": "Burger",
     "name": "<link=\"BURGER\">Frost Burger</link>",
     "prefabId": "Burger",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 6000000.0,
     "quality": 6,
     "moraleBonus": 0,
@@ -1116,13 +1304,15 @@
     "canRot": true
   },
   {
-    "id": "Mushroom",
-    "name": "<link=\"MUSHROOM\">Mushroom</link>",
-    "prefabId": "Mushroom",
-    "caloriesPerUnit": 2400000.0,
-    "quality": 0,
-    "moraleBonus": 0,
-    "spoilTimeCycles": 4800.0,
+    "id": "MushroomWrap",
+    "name": "<link=\"MUSHROOMWRAP\">Mushroom Wrap</link>",
+    "prefabId": "MushroomWrap",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "caloriesPerUnit": 4800000.0,
+    "quality": 4,
+    "moraleBonus": 12,
+    "spoilTimeCycles": 2400.0,
     "deepFreezeTemp": {
       "kelvin": 255.15,
       "celsius": -18.0
@@ -1137,6 +1327,10 @@
     "id": "BerryPie",
     "name": "<link=\"BERRYPIE\">Mixed Berry Pie</link>",
     "prefabId": "BerryPie",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 4200000.0,
     "quality": 5,
     "moraleBonus": 16,
@@ -1155,6 +1349,8 @@
     "id": "BasicPlantFood",
     "name": "<link=\"BASICPLANTFOOD\">Meal Lice</link>",
     "prefabId": "BasicPlantFood",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 600000.0,
     "quality": -1,
     "moraleBonus": -1,
@@ -1173,6 +1369,8 @@
     "id": "BasicPlantBar",
     "name": "<link=\"BASICPLANTBAR\">Liceloaf</link>",
     "prefabId": "BasicPlantBar",
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 1700000.0,
     "quality": 0,
     "moraleBonus": 0,
@@ -1191,6 +1389,10 @@
     "id": "SwampForagePlant",
     "name": "<link=\"SWAMPFORAGEPLANT\">Swamp Chard Heart</link>",
     "prefabId": "SwampForagePlant",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "caloriesPerUnit": 2400000.0,
     "quality": -1,
     "moraleBonus": -1,

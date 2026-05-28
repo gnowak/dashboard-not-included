@@ -4,6 +4,10 @@
     "name": "<link=\"FLYTRAPPLANT\">Lura Plant</link>",
     "prefabId": "FlyTrapPlant",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 273.15,
       "warningLowK": 283.15,
@@ -35,6 +39,10 @@
     "name": "<link=\"FILTERPLANT\">Hydrocactus</link>",
     "prefabId": "FilterPlant",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 253.15,
       "warningLowK": 293.15,
@@ -80,6 +88,10 @@
     "name": "<link=\"FILAMENTPLANT\">Petta Pouf</link>",
     "prefabId": "FilamentPlant",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 295.15,
       "warningLowK": 299.15,
@@ -96,12 +108,11 @@
       "warningHigh": 3.40282347E+38,
       "lethalHigh": 3.40282347E+38,
       "safeAtmospheres": [
-        "Water",
-        "DirtyWater",
-        "SaltWater",
+        "MurkyBrine",
         "Brine",
-        "PhytoOil",
-        "NaturalResin"
+        "DirtyWater",
+        "Water",
+        "SaltWater"
       ]
     },
     "light": null,
@@ -115,6 +126,8 @@
     "name": "<link=\"EVILFLOWER\">Sporechid</link>",
     "prefabId": "EvilFlower",
     "isFarmable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 168.15,
       "warningLowK": 258.15,
@@ -145,6 +158,8 @@
     "name": "<link=\"FORESTFORAGEPLANTPLANTED\">Hexalent</link>",
     "prefabId": "ForestForagePlantPlanted",
     "isFarmable": false,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": null,
     "pressures": null,
     "light": null,
@@ -158,6 +173,10 @@
     "name": "<link=\"DINOFERN\">Megafrond</link>",
     "prefabId": "Dinofern",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 218.15,
       "warningLowK": 228.15,
@@ -191,6 +210,10 @@
     "name": "<link=\"DEWDRIPPERPLANT\">Dew Dripper</link>",
     "prefabId": "DewDripperPlant",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 218.15,
       "warningLowK": 238.15,
@@ -228,6 +251,10 @@
     "name": "<link=\"CYLINDRICA\">Bliss Burst</link>",
     "prefabId": "Cylindrica",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 288.15,
       "warningLowK": 293.15,
@@ -260,6 +287,10 @@
     "name": "<link=\"CRITTERTRAPPLANT\">Saturn Critter Trap</link>",
     "prefabId": "CritterTrapPlant",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 173.0,
       "warningLowK": 183.0,
@@ -297,6 +328,8 @@
     "name": "<link=\"COLDWHEAT\">Sleet Wheat</link>",
     "prefabId": "ColdWheat",
     "isFarmable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 118.149994,
       "warningLowK": 218.15,
@@ -344,6 +377,8 @@
     "name": "<link=\"COLDBREATHER\">Wheezewort</link>",
     "prefabId": "ColdBreather",
     "isFarmable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 183.15,
       "warningLowK": 213.15,
@@ -372,6 +407,10 @@
     "name": "<link=\"DEWPALM\">Gum Palm</link>",
     "prefabId": "DewPalm",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 289.15,
       "warningLowK": 297.15,
@@ -409,6 +448,10 @@
     "name": "<link=\"CLAM\">Clampum</link>",
     "prefabId": "Clam",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 273.15,
       "warningLowK": 298.15,
@@ -425,10 +468,11 @@
       "warningHigh": 3.40282347E+38,
       "lethalHigh": 3.40282347E+38,
       "safeAtmospheres": [
-        "Water",
-        "SaltWater",
+        "MurkyBrine",
+        "Brine",
         "DirtyWater",
-        "Brine"
+        "Water",
+        "SaltWater"
       ]
     },
     "light": null,
@@ -451,6 +495,8 @@
     "name": "<link=\"FORESTTREE\">Arbor Tree</link>",
     "prefabId": "ForestTreeBranch",
     "isFarmable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 258.15,
       "warningLowK": 288.15,
@@ -482,6 +528,10 @@
     "name": "<link=\"GARDENDECORPLANT\">Ring Rosebush</link>",
     "prefabId": "GardenDecorPlant",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 263.15,
       "warningLowK": 268.15,
@@ -514,6 +564,10 @@
     "name": "<link=\"KELPPLANT\">Seakomb</link>",
     "prefabId": "KelpPlant",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 253.15,
       "warningLowK": 263.15,
@@ -558,6 +612,10 @@
     "name": "<link=\"ICEFLOWER\">Idylla Flower</link>",
     "prefabId": "IceFlower",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 173.15,
       "warningLowK": 203.15,
@@ -592,6 +650,10 @@
     "name": "<link=\"ICECAVESFORAGEPLANTPLANTED\">Sherberry Plant</link>",
     "prefabId": "IceCavesForagePlantPlanted",
     "isFarmable": false,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": null,
     "pressures": null,
     "light": null,
@@ -605,6 +667,10 @@
     "name": "<link=\"HARDSKINBERRYPLANT\">Pikeapple Bush</link>",
     "prefabId": "HardSkinBerryPlant",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 118.149994,
       "warningLowK": 218.15,
@@ -646,6 +712,8 @@
     "name": "<link=\"FORESTTREE\">Arbor Tree</link>",
     "prefabId": "ForestTree",
     "isFarmable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 258.15,
       "warningLowK": 288.15,
@@ -689,6 +757,8 @@
     "name": "<link=\"GASGRASS\">Gas Grass</link>",
     "prefabId": "GasGrass",
     "isFarmable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 218.15,
       "warningLowK": 0.0,
@@ -735,6 +805,10 @@
     "name": "<link=\"GARDENFORAGEPLANTPLANTED\">Snactus</link>",
     "prefabId": "GardenForagePlantPlanted",
     "isFarmable": false,
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": null,
     "pressures": null,
     "light": null,
@@ -748,6 +822,10 @@
     "name": "<link=\"GARDENFOODPLANT\">Sweatcorn Stalk</link>",
     "prefabId": "GardenFoodPlant",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 263.15,
       "warningLowK": 268.15,
@@ -789,6 +867,10 @@
     "name": "<link=\"CARROTPLANT\">Plume Squash Plant</link>",
     "prefabId": "CarrotPlant",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 118.149994,
       "warningLowK": 218.15,
@@ -830,6 +912,8 @@
     "name": "<link=\"CACTUSPLANT\">Jumping Joya</link>",
     "prefabId": "CactusPlant",
     "isFarmable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 200.0,
       "warningLowK": 273.15,
@@ -862,6 +946,10 @@
     "name": "<link=\"BUTTERFLYPLANT\">Mimika Bud</link>",
     "prefabId": "ButterflyPlant",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 233.15,
       "warningLowK": 283.15,
@@ -904,6 +992,10 @@
     "name": "<link=\"BULBLOOM\">Bulbloom</link>",
     "prefabId": "Bulbloom",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 293.15,
       "warningLowK": 313.15,
@@ -922,8 +1014,9 @@
       "safeAtmospheres": [
         "MurkyBrine",
         "Brine",
-        "SaltWater",
         "DirtyWater",
+        "Water",
+        "SaltWater",
         "Ink"
       ]
     },
@@ -938,6 +1031,8 @@
     "name": "<link=\"BULBPLANT\">Buddy Bud</link>",
     "prefabId": "BulbPlant",
     "isFarmable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 288.0,
       "warningLowK": 293.15,
@@ -973,6 +1068,10 @@
     "name": "<link=\"BLUEGRASS\">Alveo Vera</link>",
     "prefabId": "BlueGrass",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 193.15,
       "warningLowK": 193.15,
@@ -1012,6 +1111,8 @@
     "name": "<link=\"BEANPLANT\">Nosh Sprout</link>",
     "prefabId": "BeanPlant",
     "isFarmable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 198.15,
       "warningLowK": 248.15,
@@ -1057,6 +1158,8 @@
     "name": "<link=\"BASICSINGLEHARVESTPLANT\">Mealwood</link>",
     "prefabId": "BasicSingleHarvestPlant",
     "isFarmable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 218.15,
       "warningLowK": 283.15,
@@ -1098,6 +1201,8 @@
     "name": "<link=\"BASICFORAGEPLANTPLANTED\">Buried Muckroot</link>",
     "prefabId": "BasicForagePlantPlanted",
     "isFarmable": false,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": null,
     "pressures": null,
     "light": null,
@@ -1111,6 +1216,8 @@
     "name": "<link=\"BASICFABRICPLANT\">Thimble Reed</link>",
     "prefabId": "BasicFabricPlant",
     "isFarmable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 248.15,
       "warningLowK": 295.15,
@@ -1154,6 +1261,8 @@
     "name": "<link=\"LEAFYPLANT\">Mirth Leaf</link>",
     "prefabId": "LeafyPlant",
     "isFarmable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 288.0,
       "warningLowK": 293.15,
@@ -1188,6 +1297,10 @@
     "name": "<link=\"MUSSELSPROUT\">Mussel Sprout</link>",
     "prefabId": "MusselSprout",
     "isFarmable": false,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": null,
     "pressures": null,
     "light": null,
@@ -1201,6 +1314,8 @@
     "name": "<link=\"MUSHROOMPLANT\">Dusk Cap</link>",
     "prefabId": "MushroomPlant",
     "isFarmable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 228.15,
       "warningLowK": 278.15,
@@ -1239,10 +1354,59 @@
     }
   },
   {
+    "id": "SaltySticksPlant",
+    "name": "<link=\"SALTYSTICKSPLANT\">Sodicane</link>",
+    "prefabId": "SaltySticksPlant",
+    "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 273.15,
+      "warningLowK": 283.15,
+      "warningHighK": 313.15,
+      "lethalHighK": 318.15,
+      "lethalLowC": 0.0,
+      "warningLowC": 10.0,
+      "warningHighC": 40.0,
+      "lethalHighC": 45.0
+    },
+    "pressures": {
+      "lethalLow": 0.0,
+      "warningLow": 0.15,
+      "warningHigh": 10.0,
+      "lethalHigh": 30.0,
+      "safeAtmospheres": [
+        "Oxygen",
+        "ContaminatedOxygen",
+        "CarbonDioxide"
+      ]
+    },
+    "light": null,
+    "fertilizerRequirements": [
+      {
+        "tag": "Salt",
+        "massConsumptionRateKgPerSec": 0.0166666675,
+        "kgPerCycle": 10.000001
+      }
+    ],
+    "irrigationRequirements": null,
+    "growthCycles": 4.0,
+    "yield": {
+      "itemId": "SaltySticksFood",
+      "amount": 1
+    }
+  },
+  {
     "id": "SpaceTreeBranch",
     "name": "<link=\"SPACETREE\">Bonbon Tree</link>",
     "prefabId": "SpaceTreeBranch",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 173.15,
       "warningLowK": 198.15,
@@ -1277,6 +1441,10 @@
     "name": "<link=\"OXYCORAL\">Flue Coral</link>",
     "prefabId": "OxyCoral",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 253.15,
       "warningLowK": 298.15,
@@ -1322,6 +1490,10 @@
     "name": "<link=\"SEATREE\">Tower Kelp</link>",
     "prefabId": "SeaTree",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 248.15,
       "warningLowK": 295.15,
@@ -1338,9 +1510,10 @@
       "warningHigh": 3.40282347E+38,
       "lethalHigh": 3.40282347E+38,
       "safeAtmospheres": [
-        "Water",
-        "DirtyWater",
+        "MurkyBrine",
         "Brine",
+        "DirtyWater",
+        "Water",
         "SaltWater"
       ]
     },
@@ -1361,6 +1534,8 @@
     "name": "<link=\"SPICEVINE\">Pincha Pepperplant</link>",
     "prefabId": "SpiceVine",
     "isFarmable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 258.15,
       "warningLowK": 308.15,
@@ -1404,6 +1579,8 @@
     "name": "<link=\"OXYFERN\">Oxyfern</link>",
     "prefabId": "Oxyfern",
     "isFarmable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 253.15,
       "warningLowK": 273.15,
@@ -1442,19 +1619,23 @@
     "yield": null
   },
   {
-    "id": "PlanktonCoral",
-    "name": "<link=\"PLANKTONCORAL\">Starnacle</link>",
-    "prefabId": "PlanktonCoral",
+    "id": "SeaTreeBranch",
+    "name": "<link=\"SEATREE\">Tower Kelp</link>",
+    "prefabId": "SeaTreeBranch",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
-      "lethalLowK": 273.15,
-      "warningLowK": 298.15,
-      "warningHighK": 318.15,
-      "lethalHighK": 373.15,
-      "lethalLowC": 0.0,
-      "warningLowC": 25.0,
-      "warningHighC": 45.0,
-      "lethalHighC": 100.0
+      "lethalLowK": 248.15,
+      "warningLowK": 295.15,
+      "warningHighK": 310.15,
+      "lethalHighK": 398.15,
+      "lethalLowC": -25.0,
+      "warningLowC": 22.0,
+      "warningHighC": 37.0,
+      "lethalHighC": 125.0
     },
     "pressures": {
       "lethalLow": -3.40282347E+38,
@@ -1462,25 +1643,20 @@
       "warningHigh": 3.40282347E+38,
       "lethalHigh": 3.40282347E+38,
       "safeAtmospheres": [
-        "Water",
-        "SaltWater",
+        "MurkyBrine",
+        "Brine",
         "DirtyWater",
-        "Brine"
+        "Water",
+        "SaltWater"
       ]
     },
     "light": null,
-    "fertilizerRequirements": [
-      {
-        "tag": "Coquina",
-        "massConsumptionRateKgPerSec": 0.0333333351,
-        "kgPerCycle": 20.0000019
-      }
-    ],
+    "fertilizerRequirements": null,
     "irrigationRequirements": null,
-    "growthCycles": 4.0,
+    "growthCycles": 3.0,
     "yield": {
-      "itemId": "Phosphorite",
-      "amount": 80
+      "itemId": "SeaFairy",
+      "amount": 1
     }
   },
   {
@@ -1488,6 +1664,8 @@
     "name": "<link=\"SEALETTUCE\">Waterweed</link>",
     "prefabId": "SeaLettuce",
     "isFarmable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 248.15,
       "warningLowK": 295.15,
@@ -1539,6 +1717,8 @@
     "name": "<link=\"PRICKLEFLOWER\">Bristle Blossom</link>",
     "prefabId": "PrickleFlower",
     "isFarmable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 218.15,
       "warningLowK": 278.15,
@@ -1583,6 +1763,8 @@
     "name": "<link=\"PRICKLEGRASS\">Bluff Briar</link>",
     "prefabId": "PrickleGrass",
     "isFarmable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 218.15,
       "warningLowK": 283.15,
@@ -1611,58 +1793,23 @@
     "yield": null
   },
   {
-    "id": "SaltPlant",
-    "name": "<link=\"SALTPLANT\">Dasha Saltvine</link>",
-    "prefabId": "SaltPlant",
+    "id": "PlanktonCoral",
+    "name": "<link=\"PLANKTONCORAL\">Starnacle</link>",
+    "prefabId": "PlanktonCoral",
     "isFarmable": true,
-    "temperatures": {
-      "lethalLowK": 198.15,
-      "warningLowK": 248.15,
-      "warningHighK": 323.15,
-      "lethalHighK": 393.15,
-      "lethalLowC": -75.0,
-      "warningLowC": -25.0,
-      "warningHighC": 50.0,
-      "lethalHighC": 120.0
-    },
-    "pressures": {
-      "lethalLow": 0.0,
-      "warningLow": 0.025,
-      "warningHigh": 10.0,
-      "lethalHigh": 30.0,
-      "safeAtmospheres": [
-        "ChlorineGas"
-      ]
-    },
-    "light": null,
-    "fertilizerRequirements": [
-      {
-        "tag": "Sand",
-        "massConsumptionRateKgPerSec": 0.0116666667,
-        "kgPerCycle": 7.0
-      }
+    "requiredDlcIds": [
+      "DLC5_ID"
     ],
-    "irrigationRequirements": null,
-    "growthCycles": 6.0,
-    "yield": {
-      "itemId": "Salt",
-      "amount": 65
-    }
-  },
-  {
-    "id": "SeaTreeBranch",
-    "name": "<link=\"SEATREE\">Tower Kelp</link>",
-    "prefabId": "SeaTreeBranch",
-    "isFarmable": true,
+    "forbiddenDlcIds": null,
     "temperatures": {
-      "lethalLowK": 248.15,
-      "warningLowK": 295.15,
-      "warningHighK": 310.15,
-      "lethalHighK": 398.15,
-      "lethalLowC": -25.0,
-      "warningLowC": 22.0,
-      "warningHighC": 37.0,
-      "lethalHighC": 125.0
+      "lethalLowK": 273.15,
+      "warningLowK": 298.15,
+      "warningHighK": 318.15,
+      "lethalHighK": 373.15,
+      "lethalLowC": 0.0,
+      "warningLowC": 25.0,
+      "warningHighC": 45.0,
+      "lethalHighC": 100.0
     },
     "pressures": {
       "lethalLow": -3.40282347E+38,
@@ -1670,19 +1817,26 @@
       "warningHigh": 3.40282347E+38,
       "lethalHigh": 3.40282347E+38,
       "safeAtmospheres": [
-        "Water",
-        "DirtyWater",
+        "MurkyBrine",
         "Brine",
+        "DirtyWater",
+        "Water",
         "SaltWater"
       ]
     },
     "light": null,
-    "fertilizerRequirements": null,
+    "fertilizerRequirements": [
+      {
+        "tag": "Coquina",
+        "massConsumptionRateKgPerSec": 0.0333333351,
+        "kgPerCycle": 20.0000019
+      }
+    ],
     "irrigationRequirements": null,
-    "growthCycles": 3.0,
+    "growthCycles": 4.0,
     "yield": {
-      "itemId": "SeaFairy",
-      "amount": 1
+      "itemId": "Phosphorite",
+      "amount": 80
     }
   },
   {
@@ -1690,6 +1844,10 @@
     "name": "<link=\"WORMPLANT\">Grubfruit Plant</link>",
     "prefabId": "SuperWormPlant",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 273.15,
       "warningLowK": 288.15,
@@ -1731,6 +1889,10 @@
     "name": "<link=\"SPACETREE\">Bonbon Tree</link>",
     "prefabId": "SpaceTree",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 173.15,
       "warningLowK": 198.15,
@@ -1774,6 +1936,10 @@
     "name": "<link=\"WORMPLANT\">Spindly Grubfruit Plant</link>",
     "prefabId": "WormPlant",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 273.15,
       "warningLowK": 288.15,
@@ -1815,6 +1981,10 @@
     "name": "<link=\"WINECUPS\">Mellow Mallow</link>",
     "prefabId": "WineCups",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 218.15,
       "warningLowK": 283.15,
@@ -1847,6 +2017,10 @@
     "name": "<link=\"WATERCUPS\">Husha Cups</link>",
     "prefabId": "WaterCups",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 288.15,
       "warningLowK": 293.15,
@@ -1879,6 +2053,10 @@
     "name": "<link=\"VINEMOTHER\">Ovagro Node</link>",
     "prefabId": "VineMother",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 273.15,
       "warningLowK": 298.15,
@@ -1917,6 +2095,10 @@
     "name": "<link=\"VINEMOTHER\">Ovagro Vine</link>",
     "prefabId": "VineBranch",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 273.15,
       "warningLowK": 298.15,
@@ -1944,44 +2126,44 @@
     }
   },
   {
-    "id": "SaltySticksPlant",
-    "name": "<link=\"SALTYSTICKSPLANT\">Sodicane</link>",
-    "prefabId": "SaltySticksPlant",
+    "id": "SaltPlant",
+    "name": "<link=\"SALTPLANT\">Dasha Saltvine</link>",
+    "prefabId": "SaltPlant",
     "isFarmable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": {
-      "lethalLowK": 273.15,
-      "warningLowK": 283.15,
-      "warningHighK": 313.15,
-      "lethalHighK": 318.15,
-      "lethalLowC": 0.0,
-      "warningLowC": 10.0,
-      "warningHighC": 40.0,
-      "lethalHighC": 45.0
+      "lethalLowK": 198.15,
+      "warningLowK": 248.15,
+      "warningHighK": 323.15,
+      "lethalHighK": 393.15,
+      "lethalLowC": -75.0,
+      "warningLowC": -25.0,
+      "warningHighC": 50.0,
+      "lethalHighC": 120.0
     },
     "pressures": {
       "lethalLow": 0.0,
-      "warningLow": 0.15,
+      "warningLow": 0.025,
       "warningHigh": 10.0,
       "lethalHigh": 30.0,
       "safeAtmospheres": [
-        "Oxygen",
-        "ContaminatedOxygen",
-        "CarbonDioxide"
+        "ChlorineGas"
       ]
     },
     "light": null,
     "fertilizerRequirements": [
       {
-        "tag": "Salt",
-        "massConsumptionRateKgPerSec": 0.0166666675,
-        "kgPerCycle": 10.000001
+        "tag": "Sand",
+        "massConsumptionRateKgPerSec": 0.0116666667,
+        "kgPerCycle": 7.0
       }
     ],
     "irrigationRequirements": null,
-    "growthCycles": 4.0,
+    "growthCycles": 6.0,
     "yield": {
-      "itemId": "SaltySticksFood",
-      "amount": 1
+      "itemId": "Salt",
+      "amount": 65
     }
   },
   {
@@ -1989,6 +2171,10 @@
     "name": "<link=\"URCHINPLANT\">Pinpoket</link>",
     "prefabId": "UrchinPlant",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 303.15,
       "warningLowK": 313.15,
@@ -2032,6 +2218,10 @@
     "name": "<link=\"TUBEWORM\">Tublia</link>",
     "prefabId": "TubeWorm",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 303.15,
       "warningLowK": 323.15,
@@ -2050,8 +2240,9 @@
       "safeAtmospheres": [
         "MurkyBrine",
         "Brine",
-        "SaltWater",
         "DirtyWater",
+        "Water",
+        "SaltWater",
         "Ink"
       ]
     },
@@ -2068,6 +2259,11 @@
         "tag": "MurkyBrine",
         "massConsumptionRateKgPerSec": 0.05,
         "kgPerCycle": 30.0
+      },
+      {
+        "tag": "Brine",
+        "massConsumptionRateKgPerSec": 0.05,
+        "kgPerCycle": 30.0
       }
     ],
     "growthCycles": 8.0,
@@ -2081,6 +2277,10 @@
     "name": "<link=\"TOEPLANT\">Tranquil Toes</link>",
     "prefabId": "ToePlant",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 173.0,
       "warningLowK": 183.0,
@@ -2113,6 +2313,8 @@
     "name": "<link=\"SWAMPLILY\">Balm Lily</link>",
     "prefabId": "SwampLily",
     "isFarmable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 258.15,
       "warningLowK": 308.15,
@@ -2146,6 +2348,10 @@
     "name": "<link=\"SWAMPHARVESTPLANT\">Bog Bucket</link>",
     "prefabId": "SwampHarvestPlant",
     "isFarmable": true,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 218.15,
       "warningLowK": 283.15,
@@ -2190,6 +2396,10 @@
     "name": "<link=\"SWAMPFORAGEPLANTPLANTED\">Swamp Chard</link>",
     "prefabId": "SwampForagePlantPlanted",
     "isFarmable": false,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "temperatures": null,
     "pressures": null,
     "light": null,

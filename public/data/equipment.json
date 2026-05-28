@@ -3,6 +3,8 @@
     "id": "Atmo_Suit",
     "name": "<link=\"ATMOSUIT\">Atmo Suit</link>",
     "prefabId": "Atmo_Suit",
+    "requiredDlcIds": [],
+    "forbiddenDlcIds": [],
     "slot": "Suit",
     "tank": {
       "capacityKg": 75.0,
@@ -45,6 +47,8 @@
     "id": "CustomClothing",
     "name": "<link=\"CUSTOMCLOTHING\">Primo Garb</link>",
     "prefabId": "CustomClothing",
+    "requiredDlcIds": [],
+    "forbiddenDlcIds": [],
     "slot": "Outfit",
     "tank": null,
     "attributes": []
@@ -53,6 +57,8 @@
     "id": "DrySuit",
     "name": "<link=\"DRYSUIT\">Swimwear</link>",
     "prefabId": "DrySuit",
+    "requiredDlcIds": [],
+    "forbiddenDlcIds": [],
     "slot": "Outfit",
     "tank": null,
     "attributes": []
@@ -61,6 +67,8 @@
     "id": "EquippableBalloon",
     "name": "<link=\"EQUIPPABLEBALLOON\">Balloon Friend</link>",
     "prefabId": "EquippableBalloon",
+    "requiredDlcIds": [],
+    "forbiddenDlcIds": [],
     "slot": "Toy",
     "tank": null,
     "attributes": []
@@ -69,6 +77,8 @@
     "id": "Funky_Vest",
     "name": "<link=\"FUNKYVEST\">Snazzy Suit</link>",
     "prefabId": "Funky_Vest",
+    "requiredDlcIds": [],
+    "forbiddenDlcIds": [],
     "slot": "Outfit",
     "tank": null,
     "attributes": []
@@ -77,6 +87,8 @@
     "id": "Jet_Suit",
     "name": "<link=\"JETSUIT\">Jet Suit</link>",
     "prefabId": "Jet_Suit",
+    "requiredDlcIds": [],
+    "forbiddenDlcIds": [],
     "slot": "Suit",
     "tank": {
       "capacityKg": 75.0,
@@ -119,6 +131,8 @@
     "id": "Lead_Suit",
     "name": "<link=\"LEADSUIT\">Lead Suit</link>",
     "prefabId": "Lead_Suit",
+    "requiredDlcIds": [],
+    "forbiddenDlcIds": [],
     "slot": "Suit",
     "tank": {
       "capacityKg": 40.0,
@@ -166,6 +180,8 @@
     "id": "Oxygen_Mask",
     "name": "<link=\"OXYGENMASK\">Oxygen Mask</link>",
     "prefabId": "Oxygen_Mask",
+    "requiredDlcIds": [],
+    "forbiddenDlcIds": [],
     "slot": "Suit",
     "tank": {
       "capacityKg": 20.0,
@@ -183,6 +199,8 @@
     "id": "RubberBoots",
     "name": "<link=\"RUBBERBOOTS\">Rubber Boots</link>",
     "prefabId": "RubberBoots",
+    "requiredDlcIds": [],
+    "forbiddenDlcIds": [],
     "slot": "Shoes",
     "tank": null,
     "attributes": []
@@ -191,6 +209,8 @@
     "id": "SleepClinicPajamas",
     "name": "<link=\"SLEEPCLINICPAJAMAS\">Pajamas</link>",
     "prefabId": "SleepClinicPajamas",
+    "requiredDlcIds": [],
+    "forbiddenDlcIds": [],
     "slot": "Outfit",
     "tank": null,
     "attributes": []
@@ -199,6 +219,8 @@
     "id": "Warm_Vest",
     "name": "<link=\"WARMVEST\">Warm Coat</link>",
     "prefabId": "Warm_Vest",
+    "requiredDlcIds": [],
+    "forbiddenDlcIds": [],
     "slot": "Outfit",
     "tank": null,
     "attributes": []

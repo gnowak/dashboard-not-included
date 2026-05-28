@@ -17,7 +17,9 @@
         "material": "EmptyElectrobank",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "AdvancedCraftingTable_I_Polypropylene_O_FetchDrone",
@@ -37,7 +39,9 @@
         "material": "FetchDrone",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "AdvancedCraftingTable_I_HardPolypropylene_O_FetchDrone",
@@ -57,7 +61,9 @@
         "material": "FetchDrone",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ChemicalRefinery_I_Water_Salt_O_SaltWater",
@@ -81,7 +87,9 @@
         "material": "SaltWater",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ChemicalRefinery_I_PhytoOil_BleachStone_O_RefinedLipid",
@@ -105,7 +113,9 @@
         "material": "RefinedLipid",
         "amount": 200.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ChemicalRefinery_I_Fullerene_Gold_Petroleum_O_SuperCoolant",
@@ -133,7 +143,9 @@
         "material": "SuperCoolant",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ChemicalRefinery_I_Isoresin_Petroleum_O_ViscoGel",
@@ -157,7 +169,9 @@
         "material": "ViscoGel",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Chlorinator_I_Salt_Gold_O_BleachStone_Sand",
@@ -185,7 +199,9 @@
         "material": "Sand",
         "amount": 19.9999981
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_clubshirt",
@@ -209,7 +225,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_clubshirt",
@@ -233,7 +251,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_cummerbund",
@@ -257,7 +277,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_cummerbund",
@@ -281,7 +303,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_decor_02",
@@ -305,7 +329,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_decor_02",
@@ -329,7 +355,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_decor_03",
@@ -353,7 +381,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_decor_03",
@@ -377,7 +407,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_decor_04",
@@ -401,7 +433,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_decor_04",
@@ -425,7 +459,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_decor_05",
@@ -449,7 +485,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_decor_05",
@@ -473,7 +511,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_gaudysweater",
@@ -497,7 +537,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_gaudysweater",
@@ -521,7 +563,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_limone",
@@ -545,7 +589,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_limone",
@@ -569,7 +615,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_mondrian",
@@ -593,7 +641,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_mondrian",
@@ -617,7 +667,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_overalls",
@@ -641,7 +693,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_overalls",
@@ -665,7 +719,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_triangles",
@@ -689,7 +745,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_triangles",
@@ -713,7 +771,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_workout",
@@ -737,7 +797,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_workout",
@@ -761,7 +823,9 @@
         "material": "CustomClothing",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingFabricator_I_BasicFabric_O_Warm_Vest",
@@ -781,7 +845,9 @@
         "material": "Warm_Vest",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingFabricator_I_FeatherFabric_O_Warm_Vest",
@@ -801,7 +867,9 @@
         "material": "Warm_Vest",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingFabricator_I_BasicFabric_O_Funky_Vest",
@@ -821,7 +889,9 @@
         "material": "Funky_Vest",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingFabricator_I_FeatherFabric_O_Funky_Vest",
@@ -841,7 +911,9 @@
         "material": "Funky_Vest",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingFabricator_I_Rubber_O_DrySuit",
@@ -861,7 +933,9 @@
         "material": "DrySuit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingFabricator_I_Rubber_O_RubberBoots",
@@ -881,7 +955,9 @@
         "material": "RubberBoots",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CookingStation_I_BasicPlantFood_O_PickledMeal",
@@ -901,7 +977,9 @@
         "material": "PickledMeal",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CookingStation_I_MushBar_O_FriedMushBar",
@@ -921,7 +999,9 @@
         "material": "FriedMushBar",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CookingStation_I_Mushroom_O_FriedMushroom",
@@ -941,7 +1021,9 @@
         "material": "FriedMushroom",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CookingStation_I_RawEgg_ColdWheatSeed_O_Pancakes",
@@ -965,7 +1047,9 @@
         "material": "Pancakes",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CookingStation_I_RawEgg_FernFood_O_Pancakes",
@@ -989,7 +1073,9 @@
         "material": "Pancakes",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CookingStation_I_Meat_O_CookedMeat",
@@ -1009,7 +1095,9 @@
         "material": "CookedMeat",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CookingStation_I_FishMeat_O_CookedFish",
@@ -1029,7 +1117,9 @@
         "material": "CookedFish",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CookingStation_I_ShellfishMeat_O_CookedFish",
@@ -1049,7 +1139,9 @@
         "material": "CookedFish",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CookingStation_I_PrickleFruit_O_GrilledPrickleFruit",
@@ -1069,7 +1161,9 @@
         "material": "GrilledPrickleFruit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CookingStation_I_SwampFruit_O_SwampDelights",
@@ -1089,7 +1183,9 @@
         "material": "SwampDelights",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CookingStation_I_ColdWheatSeed_O_ColdWheatBread",
@@ -1109,7 +1205,9 @@
         "material": "ColdWheatBread",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CookingStation_I_FernFood_O_ColdWheatBread",
@@ -1129,7 +1227,9 @@
         "material": "ColdWheatBread",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CookingStation_I_RawEgg_O_CookedEgg",
@@ -1149,7 +1249,9 @@
         "material": "CookedEgg",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CookingStation_I_WormBasicFruit_O_WormBasicFood",
@@ -1169,7 +1271,9 @@
         "material": "WormBasicFood",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CookingStation_I_WormSuperFruit_Sucrose_O_WormSuperFood",
@@ -1193,7 +1297,9 @@
         "material": "WormSuperFood",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CookingStation_I_HardSkinBerry_O_CookedPikeapple",
@@ -1213,7 +1319,11 @@
         "material": "CookedPikeapple",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "CookingStation_I_ButterflyPlantSeed_O_ButterflyFood",
@@ -1233,7 +1343,11 @@
         "material": "ButterflyFood",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "CraftingTable_I_ZincOre_O_DisposableElectrobank_RawMetal",
@@ -1253,7 +1367,11 @@
         "material": "DisposableElectrobank_RawMetal",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "CraftingTable_I_Cuprite_O_DisposableElectrobank_RawMetal",
@@ -1273,7 +1391,11 @@
         "material": "DisposableElectrobank_RawMetal",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "CraftingTable_I_Cobaltite_O_DisposableElectrobank_RawMetal",
@@ -1293,7 +1415,11 @@
         "material": "DisposableElectrobank_RawMetal",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "CraftingTable_I_AluminumOre_O_DisposableElectrobank_RawMetal",
@@ -1313,7 +1439,11 @@
         "material": "DisposableElectrobank_RawMetal",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "CraftingTable_I_NickelOre_O_DisposableElectrobank_RawMetal",
@@ -1333,7 +1463,11 @@
         "material": "DisposableElectrobank_RawMetal",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "CraftingTable_I_Cinnabar_O_DisposableElectrobank_RawMetal",
@@ -1353,7 +1487,11 @@
         "material": "DisposableElectrobank_RawMetal",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "CraftingTable_I_IronOre_O_DisposableElectrobank_RawMetal",
@@ -1373,7 +1511,11 @@
         "material": "DisposableElectrobank_RawMetal",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "CraftingTable_I_UraniumOre_O_DisposableElectrobank_UraniumOre",
@@ -1393,7 +1535,11 @@
         "material": "DisposableElectrobank_UraniumOre",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "CraftingTable_I_ZincOre_O_Oxygen_Mask",
@@ -1413,7 +1559,9 @@
         "material": "Oxygen_Mask",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CraftingTable_I_Cuprite_O_Oxygen_Mask",
@@ -1433,7 +1581,9 @@
         "material": "Oxygen_Mask",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CraftingTable_I_Cobaltite_O_Oxygen_Mask",
@@ -1453,7 +1603,9 @@
         "material": "Oxygen_Mask",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CraftingTable_I_AluminumOre_O_Oxygen_Mask",
@@ -1473,7 +1625,9 @@
         "material": "Oxygen_Mask",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CraftingTable_I_NickelOre_O_Oxygen_Mask",
@@ -1493,7 +1647,9 @@
         "material": "Oxygen_Mask",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CraftingTable_I_Cinnabar_O_Oxygen_Mask",
@@ -1513,7 +1669,9 @@
         "material": "Oxygen_Mask",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CraftingTable_I_IronOre_O_Oxygen_Mask",
@@ -1533,7 +1691,9 @@
         "material": "Oxygen_Mask",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CraftingTable_I_Worn_Oxygen_Mask_O_Oxygen_Mask",
@@ -1553,7 +1713,9 @@
         "material": "Oxygen_Mask",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CraftingTable_I_Rubber_O_RubberGasket",
@@ -1573,7 +1735,9 @@
         "material": "RubberGasket",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CraftingTable_I_Polypropylene_O_PlasticGasket",
@@ -1593,7 +1757,9 @@
         "material": "PlasticGasket",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "DataMiner_I_Polypropylene_O_OrbitalResearchDatabank",
@@ -1613,7 +1779,9 @@
         "material": "OrbitalResearchDatabank",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Deepfryer_I_Carrot_Tallow_O_FriesCarrot",
@@ -1637,7 +1805,11 @@
         "material": "FriesCarrot",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "Deepfryer_I_BeanPlantSeed_Tallow_O_DeepFriedNosh",
@@ -1661,7 +1833,11 @@
         "material": "DeepFriedNosh",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "Deepfryer_I_FishMeat_Tallow_ColdWheatSeed_O_DeepFriedFish",
@@ -1689,7 +1865,11 @@
         "material": "DeepFriedFish",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "Deepfryer_I_FishMeat_Tallow_FernFood_O_DeepFriedFish",
@@ -1717,7 +1897,11 @@
         "material": "DeepFriedFish",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "Deepfryer_I_ShellfishMeat_Tallow_ColdWheatSeed_O_DeepFriedShellfish",
@@ -1745,7 +1929,11 @@
         "material": "DeepFriedShellfish",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "Deepfryer_I_ShellfishMeat_Tallow_FernFood_O_DeepFriedShellfish",
@@ -1773,7 +1961,11 @@
         "material": "DeepFriedShellfish",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "DiamondPress_I_RefinedCarbon_O_Diamond",
@@ -1793,7 +1985,9 @@
         "material": "Diamond",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FabricatedWoodMaker_I_PlantFiber_NaturalResin_O_FabricatedWood",
@@ -1817,7 +2011,9 @@
         "material": "FabricatedWood",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FoodDehydrator_I_Salsa_Polypropylene_O_DehydratedSalsa_Water",
@@ -1845,7 +2041,9 @@
         "material": "Water",
         "amount": 6.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FoodDehydrator_I_MushroomWrap_Polypropylene_O_DehydratedMushroomWrap_Water",
@@ -1873,7 +2071,9 @@
         "material": "Water",
         "amount": 6.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FoodDehydrator_I_SurfAndTurf_Polypropylene_O_DehydratedSurfAndTurf_Water",
@@ -1901,7 +2101,9 @@
         "material": "Water",
         "amount": 6.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FoodDehydrator_I_SpiceBread_Polypropylene_O_DehydratedSpiceBread_Water",
@@ -1929,7 +2131,9 @@
         "material": "Water",
         "amount": 6.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FoodDehydrator_I_Quiche_Polypropylene_O_DehydratedQuiche_Water",
@@ -1957,7 +2161,9 @@
         "material": "Water",
         "amount": 6.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FoodDehydrator_I_Curry_Polypropylene_O_DehydratedCurry_Water",
@@ -1985,7 +2191,9 @@
         "material": "Water",
         "amount": 6.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FoodDehydrator_I_SpicyTofu_Polypropylene_O_DehydratedSpicyTofu_Water",
@@ -2013,7 +2221,9 @@
         "material": "Water",
         "amount": 6.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FoodDehydrator_I_Burger_Polypropylene_O_DehydratedFoodPackage_Water",
@@ -2041,7 +2251,9 @@
         "material": "Water",
         "amount": 6.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FoodDehydrator_I_BerryPie_Polypropylene_O_DehydratedBerryPie_Water",
@@ -2069,7 +2281,9 @@
         "material": "Water",
         "amount": 6.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FossilDig_I_Diamond_O_Fossil",
@@ -2089,7 +2303,9 @@
         "material": "Fossil",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GlassForge_I_Sand_O_MoltenGlass",
@@ -2109,7 +2325,9 @@
         "material": "MoltenGlass",
         "amount": 25.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GourmetCookingStation_I_GrilledPrickleFruit_SpiceNut_O_Salsa",
@@ -2133,7 +2351,9 @@
         "material": "Salsa",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GourmetCookingStation_I_FriedMushroom_Lettuce_O_MushroomWrap",
@@ -2157,7 +2377,9 @@
         "material": "MushroomWrap",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GourmetCookingStation_I_CookedMeat_CookedFish_O_SurfAndTurf",
@@ -2181,7 +2403,9 @@
         "material": "SurfAndTurf",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GourmetCookingStation_I_ColdWheatSeed_SpiceNut_O_SpiceBread",
@@ -2205,7 +2429,9 @@
         "material": "SpiceBread",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GourmetCookingStation_I_FernFood_SpiceNut_O_SpiceBread",
@@ -2229,7 +2455,9 @@
         "material": "SpiceBread",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GourmetCookingStation_I_Tofu_SpiceNut_O_SpicyTofu",
@@ -2253,7 +2481,9 @@
         "material": "SpicyTofu",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GourmetCookingStation_I_GingerConfig_BeanPlantSeed_O_Curry",
@@ -2277,7 +2507,9 @@
         "material": "Curry",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GourmetCookingStation_I_CookedEgg_Lettuce_FriedMushroom_O_Quiche",
@@ -2305,7 +2537,9 @@
         "material": "Quiche",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GourmetCookingStation_I_ColdWheatBread_Lettuce_CookedMeat_O_Burger",
@@ -2333,7 +2567,9 @@
         "material": "Burger",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GourmetCookingStation_I_ColdWheatSeed_WormSuperFruit_GrilledPrickleFruit_O_BerryPie",
@@ -2361,7 +2597,9 @@
         "material": "BerryPie",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GourmetCookingStation_I_ColdWheatSeed_WormSuperFruit_CookedPikeapple_O_BerryPie",
@@ -2389,7 +2627,9 @@
         "material": "BerryPie",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GourmetCookingStation_I_ColdWheatSeed_WormSuperFruit_VineFruit_O_BerryPie",
@@ -2417,7 +2657,9 @@
         "material": "BerryPie",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GourmetCookingStation_I_FernFood_WormSuperFruit_GrilledPrickleFruit_O_BerryPie",
@@ -2445,7 +2687,9 @@
         "material": "BerryPie",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GourmetCookingStation_I_FernFood_WormSuperFruit_CookedPikeapple_O_BerryPie",
@@ -2473,7 +2717,9 @@
         "material": "BerryPie",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GourmetCookingStation_I_FernFood_WormSuperFruit_VineFruit_O_BerryPie",
@@ -2501,7 +2747,9 @@
         "material": "BerryPie",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Kiln_I_Clay_WoodLog_O_Ceramic",
@@ -2525,7 +2773,9 @@
         "material": "Ceramic",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Kiln_I_Clay_FabricatedWood_O_Ceramic",
@@ -2549,7 +2799,9 @@
         "material": "Ceramic",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Kiln_I_Clay_PalmWood_O_Ceramic",
@@ -2573,7 +2825,9 @@
         "material": "Ceramic",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Kiln_I_Clay_Carbon_O_Ceramic",
@@ -2597,7 +2851,9 @@
         "material": "Ceramic",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Kiln_I_Clay_Peat_O_Ceramic",
@@ -2621,7 +2877,9 @@
         "material": "Ceramic",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Kiln_I_WoodLog_O_RefinedCarbon",
@@ -2641,7 +2899,9 @@
         "material": "RefinedCarbon",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Kiln_I_FabricatedWood_O_RefinedCarbon",
@@ -2661,7 +2921,9 @@
         "material": "RefinedCarbon",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Kiln_I_PalmWood_O_RefinedCarbon",
@@ -2681,7 +2943,9 @@
         "material": "RefinedCarbon",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Kiln_I_Carbon_O_RefinedCarbon",
@@ -2701,7 +2965,9 @@
         "material": "RefinedCarbon",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Kiln_I_Peat_O_RefinedCarbon",
@@ -2721,7 +2987,9 @@
         "material": "RefinedCarbon",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ManualHighEnergyParticleSpawner_I_UraniumOre_O_DepletedUranium",
@@ -2741,7 +3009,9 @@
         "material": "DepletedUranium",
         "amount": 0.5
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ManualHighEnergyParticleSpawner_I_EnrichedUranium_O_DepletedUranium",
@@ -2761,7 +3031,9 @@
         "material": "DepletedUranium",
         "amount": 0.8
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MetalRefinery_I_ZincOre_O_Zinc",
@@ -2781,7 +3053,9 @@
         "material": "Zinc",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MetalRefinery_I_Cuprite_O_Copper",
@@ -2801,7 +3075,9 @@
         "material": "Copper",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MetalRefinery_I_Cobaltite_O_Cobalt",
@@ -2821,7 +3097,9 @@
         "material": "Cobalt",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MetalRefinery_I_Wolframite_O_Tungsten",
@@ -2841,7 +3119,9 @@
         "material": "Tungsten",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MetalRefinery_I_Electrum_O_Gold",
@@ -2861,7 +3141,9 @@
         "material": "Gold",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MetalRefinery_I_AluminumOre_O_Aluminum",
@@ -2881,7 +3163,9 @@
         "material": "Aluminum",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MetalRefinery_I_GoldAmalgam_O_Gold",
@@ -2901,7 +3185,9 @@
         "material": "Gold",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MetalRefinery_I_NickelOre_O_Nickel",
@@ -2921,7 +3207,9 @@
         "material": "Nickel",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MetalRefinery_I_TempConductorSolid_O_Niobium_Tungsten",
@@ -2945,7 +3233,9 @@
         "material": "Tungsten",
         "amount": 95.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MetalRefinery_I_IronOre_O_Iron",
@@ -2965,7 +3255,9 @@
         "material": "Iron",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MetalRefinery_I_Cinnabar_O_Mercury",
@@ -2985,7 +3277,9 @@
         "material": "Mercury",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MetalRefinery_I_FoolsGold_O_Iron",
@@ -3005,7 +3299,9 @@
         "material": "Iron",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MetalRefinery_I_Galena_O_Lead_Sulfur",
@@ -3029,7 +3325,9 @@
         "material": "Sulfur",
         "amount": 13.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MetalRefinery_I_Iron_RefinedCarbon_Lime_O_Steel",
@@ -3057,7 +3355,9 @@
         "material": "Steel",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MicrobeMusher_I_Dirt_Water_O_MushBar",
@@ -3081,7 +3381,9 @@
         "material": "MushBar",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MicrobeMusher_I_Dirt_Mucus_O_MushBar",
@@ -3105,7 +3407,9 @@
         "material": "MushBar",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MicrobeMusher_I_BasicPlantFood_Water_O_BasicPlantBar",
@@ -3129,7 +3433,9 @@
         "material": "BasicPlantBar",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MicrobeMusher_I_BasicPlantFood_Mucus_O_BasicPlantBar",
@@ -3153,7 +3459,9 @@
         "material": "BasicPlantBar",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MicrobeMusher_I_BeanPlantSeed_Water_O_Tofu",
@@ -3177,7 +3485,9 @@
         "material": "Tofu",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MicrobeMusher_I_ColdWheatSeed_PrickleFruit_O_FruitCake",
@@ -3201,7 +3511,9 @@
         "material": "FruitCake",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MicrobeMusher_I_ColdWheatSeed_HardSkinBerry_O_FruitCake",
@@ -3225,7 +3537,9 @@
         "material": "FruitCake",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MicrobeMusher_I_FernFood_PrickleFruit_O_FruitCake",
@@ -3249,7 +3563,9 @@
         "material": "FruitCake",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MicrobeMusher_I_FernFood_HardSkinBerry_O_FruitCake",
@@ -3273,7 +3589,9 @@
         "material": "FruitCake",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MicrobeMusher_I_Meat_Tallow_O_Pemmican",
@@ -3297,7 +3615,11 @@
         "material": "Pemmican",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "MicrobeMusher_I_BasicSingleHarvestPlantSeed_Water_O_FishFood",
@@ -3321,7 +3643,9 @@
         "material": "FishFood",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MicrobeMusher_I_PrickleFlowerSeed_Water_O_FishFood",
@@ -3345,7 +3669,9 @@
         "material": "FishFood",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MicrobeMusher_I_MushroomSeed_Water_O_FishFood",
@@ -3369,7 +3695,9 @@
         "material": "FishFood",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MicrobeMusher_I_SeaLettuceSeed_Water_O_FishFood",
@@ -3393,7 +3721,9 @@
         "material": "FishFood",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MicrobeMusher_I_BeanPlantSeed_Water_O_FishFood",
@@ -3417,7 +3747,9 @@
         "material": "FishFood",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MicrobeMusher_I_ColdWheatSeed_Water_O_FishFood",
@@ -3441,7 +3773,9 @@
         "material": "FishFood",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MilkPress_I_ColdWheatSeed_Water_O_Milk",
@@ -3465,7 +3799,9 @@
         "material": "Milk",
         "amount": 20.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MilkPress_I_ColdWheatSeed_Mucus_O_Milk",
@@ -3489,7 +3825,9 @@
         "material": "Milk",
         "amount": 20.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MilkPress_I_SpiceNut_Water_O_Milk",
@@ -3513,7 +3851,9 @@
         "material": "Milk",
         "amount": 20.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MilkPress_I_SpiceNut_Mucus_O_Milk",
@@ -3537,7 +3877,9 @@
         "material": "Milk",
         "amount": 20.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MilkPress_I_BeanPlantSeed_Water_O_Milk",
@@ -3561,7 +3903,9 @@
         "material": "Milk",
         "amount": 20.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MilkPress_I_BeanPlantSeed_Mucus_O_Milk",
@@ -3585,7 +3929,9 @@
         "material": "Milk",
         "amount": 20.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MilkPress_I_DewDrip_O_Milk",
@@ -3605,7 +3951,9 @@
         "material": "Milk",
         "amount": 20.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MilkPress_I_SlimeMold_O_PhytoOil_Dirt",
@@ -3629,7 +3977,9 @@
         "material": "Dirt",
         "amount": 30.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MilkPress_I_Kelp_Water_O_PhytoOil",
@@ -3653,7 +4003,11 @@
         "material": "PhytoOil",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "MilkPress_I_Amber_O_NaturalResin_Fossil_Sand",
@@ -3681,7 +4035,11 @@
         "material": "Sand",
         "amount": 25.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "MilkPress_I_PalmWood_O_Latex",
@@ -3701,7 +4059,11 @@
         "material": "Latex",
         "amount": 50.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "MissileFabricator_I_Nickel_Petroleum_O_MissileBasic",
@@ -3725,7 +4087,9 @@
         "material": "MissileBasic",
         "amount": 5.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MissileFabricator_I_Nickel_RefinedLipid_O_MissileBasic",
@@ -3749,7 +4113,9 @@
         "material": "MissileBasic",
         "amount": 5.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MissileFabricator_I_Copper_Petroleum_O_MissileBasic",
@@ -3773,7 +4139,9 @@
         "material": "MissileBasic",
         "amount": 5.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MissileFabricator_I_Copper_RefinedLipid_O_MissileBasic",
@@ -3797,7 +4165,9 @@
         "material": "MissileBasic",
         "amount": 5.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MissileFabricator_I_Cobalt_Petroleum_O_MissileBasic",
@@ -3821,7 +4191,9 @@
         "material": "MissileBasic",
         "amount": 5.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MissileFabricator_I_Cobalt_RefinedLipid_O_MissileBasic",
@@ -3845,7 +4217,9 @@
         "material": "MissileBasic",
         "amount": 5.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MissileFabricator_I_Zinc_Petroleum_O_MissileBasic",
@@ -3869,7 +4243,9 @@
         "material": "MissileBasic",
         "amount": 5.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MissileFabricator_I_Zinc_RefinedLipid_O_MissileBasic",
@@ -3893,7 +4269,9 @@
         "material": "MissileBasic",
         "amount": 5.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MissileFabricator_I_Aluminum_Petroleum_O_MissileBasic",
@@ -3917,7 +4295,9 @@
         "material": "MissileBasic",
         "amount": 5.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MissileFabricator_I_Aluminum_RefinedLipid_O_MissileBasic",
@@ -3941,7 +4321,9 @@
         "material": "MissileBasic",
         "amount": 5.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MissileFabricator_I_Iron_Petroleum_O_MissileBasic",
@@ -3965,7 +4347,9 @@
         "material": "MissileBasic",
         "amount": 5.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MissileFabricator_I_Iron_RefinedLipid_O_MissileBasic",
@@ -3989,7 +4373,9 @@
         "material": "MissileBasic",
         "amount": 5.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MissileFabricator_I_Nickel_Fertilizer_Petroleum_O_MissileLongRange",
@@ -4017,6 +4403,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4045,6 +4437,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4073,6 +4471,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4101,6 +4505,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4129,6 +4539,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4157,6 +4573,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4185,6 +4607,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4213,6 +4641,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4241,6 +4675,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4269,6 +4709,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4297,6 +4743,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4325,6 +4777,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4353,6 +4811,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4381,6 +4845,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4409,6 +4879,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4437,6 +4913,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4465,6 +4947,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4493,6 +4981,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4521,6 +5015,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4549,6 +5049,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4577,6 +5083,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4605,6 +5117,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4633,6 +5151,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4661,6 +5185,12 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": [
+      "EXPANSION1_ID"
     ]
   },
   {
@@ -4689,7 +5219,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Nickel_Fertilizer_RefinedLipid_O_MissileLongRange",
@@ -4717,7 +5251,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Nickel_Peat_Petroleum_O_MissileLongRange",
@@ -4745,7 +5283,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Nickel_Peat_RefinedLipid_O_MissileLongRange",
@@ -4773,7 +5315,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Copper_Fertilizer_Petroleum_O_MissileLongRange",
@@ -4801,7 +5347,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Copper_Fertilizer_RefinedLipid_O_MissileLongRange",
@@ -4829,7 +5379,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Copper_Peat_Petroleum_O_MissileLongRange",
@@ -4857,7 +5411,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Copper_Peat_RefinedLipid_O_MissileLongRange",
@@ -4885,7 +5443,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Cobalt_Fertilizer_Petroleum_O_MissileLongRange",
@@ -4913,7 +5475,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Cobalt_Fertilizer_RefinedLipid_O_MissileLongRange",
@@ -4941,7 +5507,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Cobalt_Peat_Petroleum_O_MissileLongRange",
@@ -4969,7 +5539,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Cobalt_Peat_RefinedLipid_O_MissileLongRange",
@@ -4997,7 +5571,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Zinc_Fertilizer_Petroleum_O_MissileLongRange",
@@ -5025,7 +5603,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Zinc_Fertilizer_RefinedLipid_O_MissileLongRange",
@@ -5053,7 +5635,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Zinc_Peat_Petroleum_O_MissileLongRange",
@@ -5081,7 +5667,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Zinc_Peat_RefinedLipid_O_MissileLongRange",
@@ -5109,7 +5699,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Aluminum_Fertilizer_Petroleum_O_MissileLongRange",
@@ -5137,7 +5731,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Aluminum_Fertilizer_RefinedLipid_O_MissileLongRange",
@@ -5165,7 +5763,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Aluminum_Peat_Petroleum_O_MissileLongRange",
@@ -5193,7 +5795,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Aluminum_Peat_RefinedLipid_O_MissileLongRange",
@@ -5221,7 +5827,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Iron_Fertilizer_Petroleum_O_MissileLongRange",
@@ -5249,7 +5859,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Iron_Fertilizer_RefinedLipid_O_MissileLongRange",
@@ -5277,7 +5891,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Iron_Peat_Petroleum_O_MissileLongRange",
@@ -5305,7 +5923,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "MissileFabricator_I_Iron_Peat_RefinedLipid_O_MissileLongRange",
@@ -5333,7 +5955,11 @@
         "material": "MissileLongRange",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": []
   },
   {
     "id": "OrbitalResearchCenter_I_Polypropylene_O_OrbitalResearchDatabank",
@@ -5353,7 +5979,9 @@
         "material": "OrbitalResearchDatabank",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_SuperInsulator_O_Sand",
@@ -5373,7 +6001,9 @@
         "material": "Sand",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_Shale_O_Sand",
@@ -5393,7 +6023,9 @@
         "material": "Sand",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_Ceramic_O_Sand",
@@ -5413,7 +6045,9 @@
         "material": "Sand",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_Coquina_O_Sand",
@@ -5433,7 +6067,9 @@
         "material": "Sand",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_Obsidian_O_Sand",
@@ -5453,7 +6089,9 @@
         "material": "Sand",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_IgneousRock_O_Sand",
@@ -5473,7 +6111,9 @@
         "material": "Sand",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_SiltStone_O_Sand",
@@ -5493,7 +6133,9 @@
         "material": "Sand",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_Granite_O_Sand",
@@ -5513,7 +6155,9 @@
         "material": "Sand",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_SedimentaryRock_O_Sand",
@@ -5533,7 +6177,9 @@
         "material": "Sand",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_SandStone_O_Sand",
@@ -5553,7 +6199,9 @@
         "material": "Sand",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_Basalt_O_Sand",
@@ -5573,7 +6221,9 @@
         "material": "Sand",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_ZincOre_O_Zinc_Sand",
@@ -5597,7 +6247,9 @@
         "material": "Sand",
         "amount": 50.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_Cuprite_O_Copper_Sand",
@@ -5621,7 +6273,9 @@
         "material": "Sand",
         "amount": 50.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_Cobaltite_O_Cobalt_Sand",
@@ -5645,7 +6299,9 @@
         "material": "Sand",
         "amount": 50.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_Wolframite_O_Tungsten_Sand",
@@ -5669,7 +6325,9 @@
         "material": "Sand",
         "amount": 50.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_Electrum_O_Gold_Sand",
@@ -5693,7 +6351,9 @@
         "material": "Sand",
         "amount": 50.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_AluminumOre_O_Aluminum_Sand",
@@ -5717,7 +6377,9 @@
         "material": "Sand",
         "amount": 50.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_GoldAmalgam_O_Gold_Sand",
@@ -5741,7 +6403,9 @@
         "material": "Sand",
         "amount": 50.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_NickelOre_O_Nickel_Sand",
@@ -5765,7 +6429,9 @@
         "material": "Sand",
         "amount": 50.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_TempConductorSolid_O_Niobium_Tungsten_Sand",
@@ -5793,7 +6459,9 @@
         "material": "Sand",
         "amount": -45.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_IronOre_O_Iron_Sand",
@@ -5817,7 +6485,9 @@
         "material": "Sand",
         "amount": 50.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_Cinnabar_O_Mercury_Sand",
@@ -5841,7 +6511,9 @@
         "material": "Sand",
         "amount": 50.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_FoolsGold_O_Iron_Sand",
@@ -5865,7 +6537,9 @@
         "material": "Sand",
         "amount": 50.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_Galena_O_Lead_Sulfur_Sand",
@@ -5893,7 +6567,9 @@
         "material": "Sand",
         "amount": 37.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_EggShell_O_Lime",
@@ -5913,7 +6589,9 @@
         "material": "Lime",
         "amount": 5.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_CrabShell_O_Lime",
@@ -5933,7 +6611,9 @@
         "material": "Lime",
         "amount": 60.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_CrabWoodShell_O_WoodLog",
@@ -5953,7 +6633,9 @@
         "material": "WoodLog",
         "amount": 500.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_SnailShell_O_Lime",
@@ -5973,12 +6655,14 @@
         "material": "Lime",
         "amount": 10.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_SnailIronShell_O_GoldAmalgam",
     "time": 40.0,
-    "description": "Crushes <link=\"FOOLSGOLD\">Pyrite</link> into <link=\"SNAILSHELL\">Slogo Molt</link>",
+    "description": "Crushes <link=\"SNAILIRONSHELL\">Gildgo Molt</link> into <link=\"GOLDAMALGAM\">Gold Amalgam</link>",
     "fabricators": [
       "RockCrusher"
     ],
@@ -5993,7 +6677,9 @@
         "material": "GoldAmalgam",
         "amount": 10.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_Fossil_O_Lime_SedimentaryRock",
@@ -6017,7 +6703,9 @@
         "material": "SedimentaryRock",
         "amount": 95.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_Corallium_O_Lime_Sand",
@@ -6041,7 +6729,9 @@
         "material": "Sand",
         "amount": 90.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_GarbageElectrobank_O_Katairite",
@@ -6061,7 +6751,11 @@
         "material": "Katairite",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_Salt_O_TableSalt_Sand",
@@ -6085,7 +6779,9 @@
         "material": "Sand",
         "amount": 99.995
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_Fullerene_O_Graphite_Sand",
@@ -6109,7 +6805,11 @@
         "material": "Sand",
         "amount": 10.0000019
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_IceBellyPoop_O_Phosphorite_Clay",
@@ -6133,7 +6833,11 @@
         "material": "Clay",
         "amount": 87.996
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_Urchin_O_Diamond",
@@ -6153,7 +6857,11 @@
         "material": "Diamond",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher_I_GoldBellyCrown_O_GoldAmalgam",
@@ -6173,7 +6881,11 @@
         "material": "GoldAmalgam",
         "amount": 250.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RubberMaker_I_Latex_O_Rubber",
@@ -6193,7 +6905,9 @@
         "material": "Rubber",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SludgePress_I_ToxicMud_O_ToxicSand_DirtyWater",
@@ -6217,7 +6931,9 @@
         "material": "DirtyWater",
         "amount": 90.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SludgePress_I_Mud_O_Dirt_Water",
@@ -6241,7 +6957,9 @@
         "material": "Water",
         "amount": 90.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SludgePress_I_MurkyBrine_O_Salt_DirtyWater",
@@ -6265,7 +6983,9 @@
         "material": "DirtyWater",
         "amount": 105.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_DinosaurMeat_WoodLog_O_SmokedDinosaurMeat",
@@ -6289,7 +7009,9 @@
         "material": "SmokedDinosaurMeat",
         "amount": 3.2
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_DinosaurMeat_FabricatedWood_O_SmokedDinosaurMeat",
@@ -6313,7 +7035,9 @@
         "material": "SmokedDinosaurMeat",
         "amount": 3.2
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_DinosaurMeat_PalmWood_O_SmokedDinosaurMeat",
@@ -6337,7 +7061,9 @@
         "material": "SmokedDinosaurMeat",
         "amount": 3.2
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_DinosaurMeat_Peat_O_SmokedDinosaurMeat",
@@ -6361,7 +7087,9 @@
         "material": "SmokedDinosaurMeat",
         "amount": 3.2
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_FishMeat_WoodLog_O_SmokedFish",
@@ -6385,7 +7113,9 @@
         "material": "SmokedFish",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_FishMeat_FabricatedWood_O_SmokedFish",
@@ -6409,7 +7139,9 @@
         "material": "SmokedFish",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_FishMeat_PalmWood_O_SmokedFish",
@@ -6433,7 +7165,9 @@
         "material": "SmokedFish",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_FishMeat_Peat_O_SmokedFish",
@@ -6457,7 +7191,9 @@
         "material": "SmokedFish",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_PrehistoricPacuFillet_WoodLog_O_SmokedFish",
@@ -6481,7 +7217,9 @@
         "material": "SmokedFish",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_PrehistoricPacuFillet_FabricatedWood_O_SmokedFish",
@@ -6505,7 +7243,9 @@
         "material": "SmokedFish",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_PrehistoricPacuFillet_PalmWood_O_SmokedFish",
@@ -6529,7 +7269,9 @@
         "material": "SmokedFish",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_PrehistoricPacuFillet_Peat_O_SmokedFish",
@@ -6553,7 +7295,9 @@
         "material": "SmokedFish",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_GardenFoodPlantFood_WoodLog_O_SmokedVegetables",
@@ -6577,7 +7321,9 @@
         "material": "SmokedVegetables",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_GardenFoodPlantFood_FabricatedWood_O_SmokedVegetables",
@@ -6601,7 +7347,9 @@
         "material": "SmokedVegetables",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_GardenFoodPlantFood_PalmWood_O_SmokedVegetables",
@@ -6625,7 +7373,9 @@
         "material": "SmokedVegetables",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_GardenFoodPlantFood_Peat_O_SmokedVegetables",
@@ -6649,7 +7399,9 @@
         "material": "SmokedVegetables",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_HardSkinBerry_WoodLog_O_SmokedVegetables",
@@ -6673,7 +7425,9 @@
         "material": "SmokedVegetables",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_HardSkinBerry_FabricatedWood_O_SmokedVegetables",
@@ -6697,7 +7451,9 @@
         "material": "SmokedVegetables",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_HardSkinBerry_PalmWood_O_SmokedVegetables",
@@ -6721,7 +7477,9 @@
         "material": "SmokedVegetables",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_HardSkinBerry_Peat_O_SmokedVegetables",
@@ -6745,7 +7503,9 @@
         "material": "SmokedVegetables",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_WormBasicFruit_WoodLog_O_SmokedVegetables",
@@ -6769,7 +7529,9 @@
         "material": "SmokedVegetables",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_WormBasicFruit_FabricatedWood_O_SmokedVegetables",
@@ -6793,7 +7555,9 @@
         "material": "SmokedVegetables",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_WormBasicFruit_PalmWood_O_SmokedVegetables",
@@ -6817,7 +7581,9 @@
         "material": "SmokedVegetables",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker_I_WormBasicFruit_Peat_O_SmokedVegetables",
@@ -6841,7 +7607,9 @@
         "material": "SmokedVegetables",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator_I_Nickel_BasicFabric_O_Atmo_Suit",
@@ -6865,7 +7633,9 @@
         "material": "Atmo_Suit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator_I_Nickel_FeatherFabric_O_Atmo_Suit",
@@ -6889,7 +7659,9 @@
         "material": "Atmo_Suit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator_I_Copper_BasicFabric_O_Atmo_Suit",
@@ -6913,7 +7685,9 @@
         "material": "Atmo_Suit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator_I_Copper_FeatherFabric_O_Atmo_Suit",
@@ -6937,7 +7711,9 @@
         "material": "Atmo_Suit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator_I_Cobalt_BasicFabric_O_Atmo_Suit",
@@ -6961,7 +7737,9 @@
         "material": "Atmo_Suit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator_I_Cobalt_FeatherFabric_O_Atmo_Suit",
@@ -6985,7 +7763,9 @@
         "material": "Atmo_Suit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator_I_Zinc_BasicFabric_O_Atmo_Suit",
@@ -7009,7 +7789,9 @@
         "material": "Atmo_Suit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator_I_Zinc_FeatherFabric_O_Atmo_Suit",
@@ -7033,7 +7815,9 @@
         "material": "Atmo_Suit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator_I_Aluminum_BasicFabric_O_Atmo_Suit",
@@ -7057,7 +7841,9 @@
         "material": "Atmo_Suit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator_I_Aluminum_FeatherFabric_O_Atmo_Suit",
@@ -7081,7 +7867,9 @@
         "material": "Atmo_Suit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator_I_Iron_BasicFabric_O_Atmo_Suit",
@@ -7105,7 +7893,9 @@
         "material": "Atmo_Suit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator_I_Iron_FeatherFabric_O_Atmo_Suit",
@@ -7129,7 +7919,9 @@
         "material": "Atmo_Suit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator_I_Worn_Atmo_Suit_BasicFabric_O_Atmo_Suit",
@@ -7153,7 +7945,9 @@
         "material": "Atmo_Suit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator_I_Worn_Atmo_Suit_FeatherFabric_O_Atmo_Suit",
@@ -7177,7 +7971,9 @@
         "material": "Atmo_Suit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator_I_Steel_BasicFabric_O_Jet_Suit",
@@ -7201,7 +7997,9 @@
         "material": "Jet_Suit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator_I_Steel_FeatherFabric_O_Jet_Suit",
@@ -7225,7 +8023,9 @@
         "material": "Jet_Suit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator_I_Worn_Jet_Suit_BasicFabric_O_Jet_Suit",
@@ -7249,7 +8049,9 @@
         "material": "Jet_Suit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator_I_Worn_Jet_Suit_FeatherFabric_O_Jet_Suit",
@@ -7273,7 +8075,9 @@
         "material": "Jet_Suit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator_I_Lead_Glass_O_Lead_Suit",
@@ -7297,7 +8101,9 @@
         "material": "Lead_Suit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator_I_Worn_Lead_Suit_Glass_O_Lead_Suit",
@@ -7321,7 +8127,9 @@
         "material": "Lead_Suit",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SupermaterialRefinery_I_Graphite_Sulfur_Aluminum_O_Fullerene",
@@ -7349,7 +8157,9 @@
         "material": "Fullerene",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SupermaterialRefinery_I_TempConductorSolid_Polypropylene_MilkFat_O_HardPolypropylene",
@@ -7377,7 +8187,9 @@
         "material": "HardPolypropylene",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SupermaterialRefinery_I_Isoresin_Katairite_BasicFabric_O_SuperInsulator",
@@ -7405,7 +8217,9 @@
         "material": "SuperInsulator",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SupermaterialRefinery_I_Isoresin_Katairite_FeatherFabric_O_SuperInsulator",
@@ -7433,7 +8247,9 @@
         "material": "SuperInsulator",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SupermaterialRefinery_I_Niobium_Tungsten_O_TempConductorSolid",
@@ -7457,7 +8273,9 @@
         "material": "TempConductorSolid",
         "amount": 100.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SupermaterialRefinery_I_EnrichedUranium_O_SelfChargingElectrobank",
@@ -7477,7 +8295,12 @@
         "material": "SelfChargingElectrobank",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID",
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "SushiBar_I_BeanPlantSeed_SaltySticksFood_O_Edamame",
@@ -7501,7 +8324,9 @@
         "material": "Edamame",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SushiBar_I_BasicPlantBar_Nori_FishMeat_O_Maki",
@@ -7529,7 +8354,9 @@
         "material": "Maki",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SushiBar_I_Urchin_O_UrchinMeat",
@@ -7549,7 +8376,9 @@
         "material": "UrchinMeat",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SushiBar_I_BasicPlantBar_Nori_SquidMeat_O_Nigiri",
@@ -7577,7 +8406,9 @@
         "material": "Nigiri",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "UraniumCentrifuge_I_UraniumOre_O_EnrichedUranium_MoltenUranium",
@@ -7601,7 +8432,9 @@
         "material": "MoltenUranium",
         "amount": 8.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Apothecary_I_Tallow_Water_O_TallowLubricationStick",
@@ -7625,7 +8458,9 @@
         "material": "TallowLubricationStick",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Apothecary_I_LiquidGunk_Water_O_LubricationStick_DirtyWater",
@@ -7653,7 +8488,9 @@
         "material": "DirtyWater",
         "amount": 200.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "AdvancedApothecary_I_Carbon_O_IntermediateRadPill",
@@ -7673,347 +8510,9 @@
         "material": "IntermediateRadPill",
         "amount": 1.0
       }
-    ]
-  },
-  {
-    "id": "Booster_I_PowerStationTools_O_Booster_Dig1",
-    "time": 60.0,
-    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERDIG1\">Digging Booster</link>\n\n<b>Enables:</b>\n<link=\"HARDNESS\">Very Firm Material</link> Mining\n\n<b>Boosts:</b>\nExcavation: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"CRAFTINGTABLE\">Crafting Station</link>.",
-    "fabricators": [
-      "CraftingTable"
     ],
-    "inputs": [
-      {
-        "material": "PowerStationTools",
-        "amount": 2.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "Booster_Dig1",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "Booster_I_PowerStationTools_O_Booster_Construct1",
-    "time": 60.0,
-    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERCONSTRUCT1\">Construction Booster</link>\n\n<b>Enables:</b>\nDemolish Gravitas Buildings\n\n<b>Boosts:</b>\nConstruction: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"CRAFTINGTABLE\">Crafting Station</link>.",
-    "fabricators": [
-      "CraftingTable"
-    ],
-    "inputs": [
-      {
-        "material": "PowerStationTools",
-        "amount": 2.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "Booster_Construct1",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "Booster_I_PowerStationTools_O_Booster_Carry1",
-    "time": 60.0,
-    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERCARRY1\">Strength Booster</link>\n\n<b>Enables:</b>\n<b>+400 kg</b> <style=\"KKeyword\">Carrying Capacity</style>\n\n<b>Boosts:</b>\nStrength: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"CRAFTINGTABLE\">Crafting Station</link>.",
-    "fabricators": [
-      "CraftingTable"
-    ],
-    "inputs": [
-      {
-        "material": "PowerStationTools",
-        "amount": 2.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "Booster_Carry1",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "Booster_I_PowerStationTools_O_Booster_Research1",
-    "time": 60.0,
-    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERRESEARCH1\">Researching Booster</link>\n\n<b>Enables:</b>\n<link=\"ADVANCEDRESEARCHCENTER\">Super Computer</link> Usage\nGeographical Analysis\n<link=\"GEOTUNER\">Geotuner</link> Usage\n<link=\"CHEMICALREFINERY\">Emulsifier</link> Usage\n\n<b>Boosts:</b>\nScience: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"CRAFTINGTABLE\">Crafting Station</link>.",
-    "fabricators": [
-      "CraftingTable"
-    ],
-    "inputs": [
-      {
-        "material": "PowerStationTools",
-        "amount": 2.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "Booster_Research1",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "Booster_I_PowerStationTools_O_Booster_Medicine1",
-    "time": 60.0,
-    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERMEDICINE1\">Advanced Medical Booster</link>\n\n<b>Enables:</b>\n<link=\"APOTHECARY\">Apothecary</link> Usage\n<link=\"DOCTORSTATION\">Sick Bay</link> Usage\n<link=\"ADVANCEDDOCTORSTATION\">Disease Clinic</link> Usage\n\n<b>Boosts:</b>\nMedicine: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"CRAFTINGTABLE\">Crafting Station</link>.",
-    "fabricators": [
-      "CraftingTable"
-    ],
-    "inputs": [
-      {
-        "material": "PowerStationTools",
-        "amount": 2.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "Booster_Medicine1",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "Booster_I_PowerStationTools_O_Booster_Dig2",
-    "time": 30.0,
-    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERDIG2\">Extreme Digging Booster</link>\n\n<b>Enables:</b>\n<link=\"KATAIRITE\">Abyssalite</link> Mining\n<link=\"DIAMOND\">Diamond</link> and <link=\"OBSIDIAN\">Obsidian</link> Mining\n<link=\"CORIUM\">Corium</link> Mining\n\n<b>Boosts:</b>\nExcavation: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
-    "fabricators": [
-      "AdvancedCraftingTable"
-    ],
-    "inputs": [
-      {
-        "material": "PowerStationTools",
-        "amount": 8.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "Booster_Dig2",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "Booster_I_PowerStationTools_O_Booster_Farm1",
-    "time": 30.0,
-    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERFARM1\">Crop Tending Booster</link>\n\n<b>Enables:</b>\n<link=\"PLANTS\">Crop Tending</link>\n<link=\"FARMSTATION\">Farm Station</link> Usage\nCan salvage <link=\"PLANTFIBER\">Plant Husk</link>\n<link=\"GENETICANALYSISSTATION\">Botanical Analyzer</link> Usage\n\n<b>Boosts:</b>\nAgriculture: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
-    "fabricators": [
-      "AdvancedCraftingTable"
-    ],
-    "inputs": [
-      {
-        "material": "PowerStationTools",
-        "amount": 8.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "Booster_Farm1",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "Booster_I_PowerStationTools_O_Booster_Ranch1",
-    "time": 30.0,
-    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERRANCH1\">Ranching Booster</link>\n\n<b>Enables:</b>\n<link=\"EGGINCUBATOR\">Incubator</link> Usage\n<link=\"RANCHSTATION\">Grooming Station</link> Usage\n<link=\"UNDERWATERRANCHSTATION\">Aquatic Grooming Station</link> Usage\n<link=\"UNDERWATERSHEARINGSTATION\">Aquatic Shearing Station</link> Usage\n<link=\"MILKINGSTATION\">Milking Station</link> Usage\n<link=\"UNDERWATERMILKINGSTATION\">Aquatic Milking Station</link> Usage\n\n<b>Boosts:</b>\nHusbandry: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
-    "fabricators": [
-      "AdvancedCraftingTable"
-    ],
-    "inputs": [
-      {
-        "material": "PowerStationTools",
-        "amount": 8.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "Booster_Ranch1",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "Booster_I_PowerStationTools_O_Booster_Cook1",
-    "time": 30.0,
-    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERCOOK1\">Grilling Booster</link>\n\n<b>Enables:</b>\n<link=\"COOKINGSTATION\">Electric Grill</link> Usage\n<link=\"DEEPFRYER\">Deep Fryer</link> Usage\n<link=\"GOURMETCOOKINGSTATION\">Gas Range</link> Usage\n<link=\"SMOKER\">Smoker</link> Usage\n<link=\"SUSHIBAR\">Sushi Bar</link> Usage\n<link=\"SPICEGRINDER\">Spice Grinder</link> Usage\n\n<b>Boosts:</b>\nCuisine: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
-    "fabricators": [
-      "AdvancedCraftingTable"
-    ],
-    "inputs": [
-      {
-        "material": "PowerStationTools",
-        "amount": 8.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "Booster_Cook1",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "Booster_I_PowerStationTools_O_Booster_Art1",
-    "time": 30.0,
-    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERART1\">Masterworks Art Booster</link>\n\n<b>Enables:</b>\n<link=\"CANVAS\">Blank Canvas</link> Usage\n<link=\"CANVASTALL\">Portrait Canvas</link> Usage\n<link=\"CANVASWIDE\">Landscape Canvas</link> Usage\n<link=\"ICESCULPTURE\">Ice Block</link> Usage\n<link=\"MARBLESCULPTURE\">Marble Block</link> Usage\n<link=\"METALSCULPTURE\">Metal Block</link> Usage\n<link=\"SCULPTURE\">Large Sculpting Block</link> Usage\n<link=\"SMALLSCULPTURE\">Sculpting Block</link> Usage\n<link=\"WOODSCULPTURE\">Wood Block</link> Usage\n<link=\"CLOTHINGALTERATIONSTATION\">Clothing Refashionator</link> Usage\n<link=\"CEILINGFOSSILSCULPTURE\">Hanging Fossil Block</link> Usage\n<link=\"FOSSILSCULPTURE\">Fossil Block</link> Usage\n<link=\"ARTIFACTANALYSISSTATION\">Artifact Analysis Station</link> Usage\n\n<b>Boosts:</b>\nCreativity: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
-    "fabricators": [
-      "AdvancedCraftingTable"
-    ],
-    "inputs": [
-      {
-        "material": "PowerStationTools",
-        "amount": 8.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "Booster_Art1",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "Booster_I_PowerStationTools_O_Booster_Research2",
-    "time": 30.0,
-    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERRESEARCH2\">Astronomy Booster</link>\n\n<b>Enables:</b>\n<link=\"MISSIONCONTROLCLUSTER\">Mission Control Station</link> Usage\n<link=\"ORBITALRESEARCHCENTER\">Orbital Data Collection Lab</link> Usage\n<link=\"CLUSTERTELESCOPE\">Telescope</link> Usage\n<link=\"DLC1COSMICRESEARCHCENTER\">Virtual Planetarium</link> Usage\n\n<b>Boosts:</b>\nScience: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
-    "fabricators": [
-      "AdvancedCraftingTable"
-    ],
-    "inputs": [
-      {
-        "material": "PowerStationTools",
-        "amount": 8.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "Booster_Research2",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "Booster_I_PowerStationTools_O_Booster_Research3",
-    "time": 30.0,
-    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERRESEARCH3\">Applied Sciences Booster</link>\n\n<b>Enables:</b>\n<link=\"NUCLEARRESEARCHCENTER\">Materials Study Terminal</link> Usage\n\n<b>Boosts:</b>\nScience: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
-    "fabricators": [
-      "AdvancedCraftingTable"
-    ],
-    "inputs": [
-      {
-        "material": "PowerStationTools",
-        "amount": 8.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "Booster_Research3",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "Booster_I_PowerStationTools_O_Booster_Pilot1",
-    "time": 30.0,
-    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERPILOT1\">Piloting Booster</link>\n\n<b>Enables:</b>\n<link=\"ROCKETCONTROLSTATION\">Rocket Control Station</link> Usage\n\n<b>Boosts:</b>\nPiloting: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
-    "fabricators": [
-      "AdvancedCraftingTable"
-    ],
-    "inputs": [
-      {
-        "material": "PowerStationTools",
-        "amount": 8.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "Booster_Pilot1",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "Booster_I_PowerStationTools_O_Booster_Suits1",
-    "time": 30.0,
-    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERSUITS1\">Suit Training Booster</link>\n\n<b>Enables:</b>\nSlows <link=\"EQUIPMENT\">Exosuit</link> Durability Damage\n<link=\"EQUIPMENT\">Exosuit</link> Penalty Reduction\n\n<b>Boosts:</b>\nAthletics: +5\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
-    "fabricators": [
-      "AdvancedCraftingTable"
-    ],
-    "inputs": [
-      {
-        "material": "PowerStationTools",
-        "amount": 8.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "Booster_Suits1",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "Booster_I_PowerStationTools_O_Booster_Tidy1",
-    "time": 30.0,
-    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERTIDY1\">Tidying Booster</link>\n\n<b>Enables:</b>\nPipe Emptying\n<link=\"MISSILEFABRICATOR\">Blastshot Maker</link> Usage\n\n<b>Boosts:</b>\nStrength: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
-    "fabricators": [
-      "AdvancedCraftingTable"
-    ],
-    "inputs": [
-      {
-        "material": "PowerStationTools",
-        "amount": 8.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "Booster_Tidy1",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "Booster_I_PowerStationTools_O_Booster_Op1",
-    "time": 30.0,
-    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTEROP1\">Electrical Engineering Booster</link>\n\n<b>Enables:</b>\n<link=\"POWER\">Generator</link> Tuning and <link=\"POWERSTATIONTOOLS\">Microchip</link> Crafting\n<link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link> Usage\n\n<b>Boosts:</b>\nMachinery: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
-    "fabricators": [
-      "AdvancedCraftingTable"
-    ],
-    "inputs": [
-      {
-        "material": "PowerStationTools",
-        "amount": 8.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "Booster_Op1",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "Booster_I_PowerStationTools_O_Booster_Op2",
-    "time": 30.0,
-    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTEROP2\">Mechatronics Engineering Booster</link>\n\n<b>Enables:</b>\n<link=\"SOLIDCONDUIT\">Conveyor Rail</link> Construction\n\n<b>Boosts:</b>\nMachinery: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
-    "fabricators": [
-      "AdvancedCraftingTable"
-    ],
-    "inputs": [
-      {
-        "material": "PowerStationTools",
-        "amount": 8.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "Booster_Op2",
-        "amount": 1.0
-      }
-    ]
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Apothecary_I_SwampLilyFlower_Phosphorite_O_IntermediateCure",
@@ -8037,7 +8536,31 @@
         "material": "IntermediateCure",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Apothecary_I_SpiceNut_O_IntermediateBooster",
+    "time": 100.0,
+    "description": "A supplement that significantly reduces the chance of contracting a <style=\"KKeyword\">Germ</style>-based <link=\"DISEASE\">Disease</link>.\n\nMust be taken daily.",
+    "fabricators": [
+      "Apothecary"
+    ],
+    "inputs": [
+      {
+        "material": "SpiceNut",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "IntermediateBooster",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Apothecary_I_Carbon_O_BasicRadPill",
@@ -8057,31 +8580,9 @@
         "material": "BasicRadPill",
         "amount": 1.0
       }
-    ]
-  },
-  {
-    "id": "Apothecary_I_Carbon_Water_O_BasicCure",
-    "time": 50.0,
-    "description": "Duplicants can take this to cure themselves of minor <style=\"KKeyword\">Germ</style>-based <link=\"DISEASE\">Diseases</link>.\n\nCurative Tablets are very effective against <link=\"FOODPOISONING\">Food Poisoning</link>.",
-    "fabricators": [
-      "Apothecary"
     ],
-    "inputs": [
-      {
-        "material": "Carbon",
-        "amount": 1.0
-      },
-      {
-        "material": "Water",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "BasicCure",
-        "amount": 1.0
-      }
-    ]
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Apothecary_I_Carbon_O_BasicBooster",
@@ -8101,7 +8602,9 @@
         "material": "BasicBooster",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Apothecary_I_PrickleFlowerSeed_Dirt_O_Antihistamine",
@@ -8125,7 +8628,9 @@
         "material": "Antihistamine",
         "amount": 10.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Apothecary_I_Kelp_Dirt_O_Antihistamine",
@@ -8149,7 +8654,9 @@
         "material": "Antihistamine",
         "amount": 10.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Apothecary_I_Steel_LightBugOrangeEgg_O_AdvancedCure",
@@ -8173,27 +8680,419 @@
         "material": "AdvancedCure",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
-    "id": "Apothecary_I_SpiceNut_O_IntermediateBooster",
-    "time": 100.0,
-    "description": "A supplement that significantly reduces the chance of contracting a <style=\"KKeyword\">Germ</style>-based <link=\"DISEASE\">Disease</link>.\n\nMust be taken daily.",
+    "id": "Apothecary_I_Carbon_Water_O_BasicCure",
+    "time": 50.0,
+    "description": "Duplicants can take this to cure themselves of minor <style=\"KKeyword\">Germ</style>-based <link=\"DISEASE\">Diseases</link>.\n\nCurative Tablets are very effective against <link=\"FOODPOISONING\">Food Poisoning</link>.",
     "fabricators": [
       "Apothecary"
     ],
     "inputs": [
       {
-        "material": "SpiceNut",
+        "material": "Carbon",
+        "amount": 1.0
+      },
+      {
+        "material": "Water",
         "amount": 1.0
       }
     ],
     "outputs": [
       {
-        "material": "IntermediateBooster",
+        "material": "BasicCure",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Booster_I_PowerStationTools_O_Booster_Dig1",
+    "time": 60.0,
+    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERDIG1\">Digging Booster</link>\n\n<b>Enables:</b>\n<link=\"HARDNESS\">Very Firm Material</link> Mining\n\n<b>Boosts:</b>\nExcavation: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"CRAFTINGTABLE\">Crafting Station</link>.",
+    "fabricators": [
+      "CraftingTable"
+    ],
+    "inputs": [
+      {
+        "material": "PowerStationTools",
+        "amount": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Booster_Dig1",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Booster_I_PowerStationTools_O_Booster_Construct1",
+    "time": 60.0,
+    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERCONSTRUCT1\">Construction Booster</link>\n\n<b>Enables:</b>\nDemolish Gravitas Buildings\n\n<b>Boosts:</b>\nConstruction: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"CRAFTINGTABLE\">Crafting Station</link>.",
+    "fabricators": [
+      "CraftingTable"
+    ],
+    "inputs": [
+      {
+        "material": "PowerStationTools",
+        "amount": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Booster_Construct1",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Booster_I_PowerStationTools_O_Booster_Carry1",
+    "time": 60.0,
+    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERCARRY1\">Strength Booster</link>\n\n<b>Enables:</b>\n<b>+400 kg</b> <style=\"KKeyword\">Carrying Capacity</style>\n\n<b>Boosts:</b>\nStrength: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"CRAFTINGTABLE\">Crafting Station</link>.",
+    "fabricators": [
+      "CraftingTable"
+    ],
+    "inputs": [
+      {
+        "material": "PowerStationTools",
+        "amount": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Booster_Carry1",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Booster_I_PowerStationTools_O_Booster_Research1",
+    "time": 60.0,
+    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERRESEARCH1\">Researching Booster</link>\n\n<b>Enables:</b>\n<link=\"ADVANCEDRESEARCHCENTER\">Super Computer</link> Usage\nGeographical Analysis\n<link=\"GEOTUNER\">Geotuner</link> Usage\n<link=\"CHEMICALREFINERY\">Emulsifier</link> Usage\n\n<b>Boosts:</b>\nScience: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"CRAFTINGTABLE\">Crafting Station</link>.",
+    "fabricators": [
+      "CraftingTable"
+    ],
+    "inputs": [
+      {
+        "material": "PowerStationTools",
+        "amount": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Booster_Research1",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Booster_I_PowerStationTools_O_Booster_Medicine1",
+    "time": 60.0,
+    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERMEDICINE1\">Advanced Medical Booster</link>\n\n<b>Enables:</b>\n<link=\"APOTHECARY\">Apothecary</link> Usage\n<link=\"DOCTORSTATION\">Sick Bay</link> Usage\n<link=\"ADVANCEDDOCTORSTATION\">Disease Clinic</link> Usage\n\n<b>Boosts:</b>\nMedicine: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"CRAFTINGTABLE\">Crafting Station</link>.",
+    "fabricators": [
+      "CraftingTable"
+    ],
+    "inputs": [
+      {
+        "material": "PowerStationTools",
+        "amount": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Booster_Medicine1",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Booster_I_PowerStationTools_O_Booster_Dig2",
+    "time": 30.0,
+    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERDIG2\">Extreme Digging Booster</link>\n\n<b>Enables:</b>\n<link=\"KATAIRITE\">Abyssalite</link> Mining\n<link=\"DIAMOND\">Diamond</link> and <link=\"OBSIDIAN\">Obsidian</link> Mining\n<link=\"CORIUM\">Corium</link> Mining\n\n<b>Boosts:</b>\nExcavation: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
+    "fabricators": [
+      "AdvancedCraftingTable"
+    ],
+    "inputs": [
+      {
+        "material": "PowerStationTools",
+        "amount": 8.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Booster_Dig2",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Booster_I_PowerStationTools_O_Booster_Farm1",
+    "time": 30.0,
+    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERFARM1\">Crop Tending Booster</link>\n\n<b>Enables:</b>\n<link=\"PLANTS\">Crop Tending</link>\n<link=\"FARMSTATION\">Farm Station</link> Usage\nCan salvage <link=\"PLANTFIBER\">Plant Husk</link>\n<link=\"CLAM\">Clampum</link> farming\n<link=\"GENETICANALYSISSTATION\">Botanical Analyzer</link> Usage\n\n<b>Boosts:</b>\nAgriculture: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
+    "fabricators": [
+      "AdvancedCraftingTable"
+    ],
+    "inputs": [
+      {
+        "material": "PowerStationTools",
+        "amount": 8.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Booster_Farm1",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Booster_I_PowerStationTools_O_Booster_Ranch1",
+    "time": 30.0,
+    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERRANCH1\">Ranching Booster</link>\n\n<b>Enables:</b>\n<link=\"EGGINCUBATOR\">Incubator</link> Usage\n<link=\"RANCHSTATION\">Grooming Station</link> Usage\n<link=\"UNDERWATERRANCHSTATION\">Aquatic Grooming Station</link> Usage\n<link=\"UNDERWATERSHEARINGSTATION\">Aquatic Shearing Station</link> Usage\n<link=\"MILKINGSTATION\">Milking Station</link> Usage\n<link=\"UNDERWATERMILKINGSTATION\">Aquatic Milking Station</link> Usage\n\n<b>Boosts:</b>\nHusbandry: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
+    "fabricators": [
+      "AdvancedCraftingTable"
+    ],
+    "inputs": [
+      {
+        "material": "PowerStationTools",
+        "amount": 8.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Booster_Ranch1",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Booster_I_PowerStationTools_O_Booster_Cook1",
+    "time": 30.0,
+    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERCOOK1\">Grilling Booster</link>\n\n<b>Enables:</b>\n<link=\"COOKINGSTATION\">Electric Grill</link> Usage\n<link=\"DEEPFRYER\">Deep Fryer</link> Usage\n<link=\"GOURMETCOOKINGSTATION\">Gas Range</link> Usage\n<link=\"SMOKER\">Smoker</link> Usage\n<link=\"SUSHIBAR\">Sushi Bar</link> Usage\n<link=\"SPICEGRINDER\">Spice Grinder</link> Usage\n\n<b>Boosts:</b>\nCuisine: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
+    "fabricators": [
+      "AdvancedCraftingTable"
+    ],
+    "inputs": [
+      {
+        "material": "PowerStationTools",
+        "amount": 8.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Booster_Cook1",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Booster_I_PowerStationTools_O_Booster_Art1",
+    "time": 30.0,
+    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERART1\">Masterworks Art Booster</link>\n\n<b>Enables:</b>\n<link=\"CANVAS\">Blank Canvas</link> Usage\n<link=\"CANVASTALL\">Portrait Canvas</link> Usage\n<link=\"CANVASWIDE\">Landscape Canvas</link> Usage\n<link=\"ICESCULPTURE\">Ice Block</link> Usage\n<link=\"MARBLESCULPTURE\">Marble Block</link> Usage\n<link=\"METALSCULPTURE\">Metal Block</link> Usage\n<link=\"SCULPTURE\">Large Sculpting Block</link> Usage\n<link=\"SMALLSCULPTURE\">Sculpting Block</link> Usage\n<link=\"WOODSCULPTURE\">Wood Block</link> Usage\n<link=\"CLOTHINGALTERATIONSTATION\">Clothing Refashionator</link> Usage\n<link=\"CEILINGFOSSILSCULPTURE\">Hanging Fossil Block</link> Usage\n<link=\"FOSSILSCULPTURE\">Fossil Block</link> Usage\n<link=\"ARTIFACTANALYSISSTATION\">Artifact Analysis Station</link> Usage\n\n<b>Boosts:</b>\nCreativity: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
+    "fabricators": [
+      "AdvancedCraftingTable"
+    ],
+    "inputs": [
+      {
+        "material": "PowerStationTools",
+        "amount": 8.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Booster_Art1",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Booster_I_PowerStationTools_O_Booster_Research2",
+    "time": 30.0,
+    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERRESEARCH2\">Astronomy Booster</link>\n\n<b>Enables:</b>\n<link=\"MISSIONCONTROLCLUSTER\">Mission Control Station</link> Usage\n<link=\"ORBITALRESEARCHCENTER\">Orbital Data Collection Lab</link> Usage\n<link=\"CLUSTERTELESCOPE\">Telescope</link> Usage\n<link=\"DLC1COSMICRESEARCHCENTER\">Virtual Planetarium</link> Usage\n\n<b>Boosts:</b>\nScience: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
+    "fabricators": [
+      "AdvancedCraftingTable"
+    ],
+    "inputs": [
+      {
+        "material": "PowerStationTools",
+        "amount": 8.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Booster_Research2",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Booster_I_PowerStationTools_O_Booster_Research3",
+    "time": 30.0,
+    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERRESEARCH3\">Applied Sciences Booster</link>\n\n<b>Enables:</b>\n<link=\"NUCLEARRESEARCHCENTER\">Materials Study Terminal</link> Usage\n\n<b>Boosts:</b>\nScience: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
+    "fabricators": [
+      "AdvancedCraftingTable"
+    ],
+    "inputs": [
+      {
+        "material": "PowerStationTools",
+        "amount": 8.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Booster_Research3",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Booster_I_PowerStationTools_O_Booster_Pilot1",
+    "time": 30.0,
+    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERPILOT1\">Piloting Booster</link>\n\n<b>Enables:</b>\n<link=\"ROCKETCONTROLSTATION\">Rocket Control Station</link> Usage\n\n<b>Boosts:</b>\nPiloting: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
+    "fabricators": [
+      "AdvancedCraftingTable"
+    ],
+    "inputs": [
+      {
+        "material": "PowerStationTools",
+        "amount": 8.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Booster_Pilot1",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Booster_I_PowerStationTools_O_Booster_Suits1",
+    "time": 30.0,
+    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERSUITS1\">Suit Training Booster</link>\n\n<b>Enables:</b>\nSlows <link=\"EQUIPMENT\">Exosuit</link> Durability Damage\n<link=\"EQUIPMENT\">Exosuit</link> Penalty Reduction\n\n<b>Boosts:</b>\nAthletics: +5\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
+    "fabricators": [
+      "AdvancedCraftingTable"
+    ],
+    "inputs": [
+      {
+        "material": "PowerStationTools",
+        "amount": 8.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Booster_Suits1",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Booster_I_PowerStationTools_O_Booster_Tidy1",
+    "time": 30.0,
+    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTERTIDY1\">Tidying Booster</link>\n\n<b>Enables:</b>\nPipe Emptying\n<link=\"MISSILEFABRICATOR\">Blastshot Maker</link> Usage\n\n<b>Boosts:</b>\nStrength: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
+    "fabricators": [
+      "AdvancedCraftingTable"
+    ],
+    "inputs": [
+      {
+        "material": "PowerStationTools",
+        "amount": 8.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Booster_Tidy1",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Booster_I_PowerStationTools_O_Booster_Op1",
+    "time": 30.0,
+    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTEROP1\">Electrical Engineering Booster</link>\n\n<b>Enables:</b>\n<link=\"POWER\">Generator</link> Tuning and <link=\"POWERSTATIONTOOLS\">Microchip</link> Crafting\n<link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link> Usage\n\n<b>Boosts:</b>\nMachinery: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
+    "fabricators": [
+      "AdvancedCraftingTable"
+    ],
+    "inputs": [
+      {
+        "material": "PowerStationTools",
+        "amount": 8.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Booster_Op1",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Booster_I_PowerStationTools_O_Booster_Op2",
+    "time": 30.0,
+    "description": "Converts <link=\"POWERSTATIONTOOLS\">Microchip</link> to <link=\"BOOSTEROP2\">Mechatronics Engineering Booster</link>\n\n<b>Enables:</b>\n<link=\"SOLIDCONDUIT\">Conveyor Rail</link> Construction\n\n<b>Boosts:</b>\nMachinery: +5\nAthletics: +2\n\nThis booster can be manufactured at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>.",
+    "fabricators": [
+      "AdvancedCraftingTable"
+    ],
+    "inputs": [
+      {
+        "material": "PowerStationTools",
+        "amount": 8.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Booster_Op2",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_PuftEgg_O_EggShell_RawEgg",
@@ -8217,7 +9116,9 @@
         "material": "RawEgg",
         "amount": 0.25
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_PuftBleachstoneEgg_O_EggShell_RawEgg",
@@ -8241,31 +9142,9 @@
         "material": "RawEgg",
         "amount": 0.25
       }
-    ]
-  },
-  {
-    "id": "EggCracker_I_PuftAlphaEgg_O_EggShell_RawEgg",
-    "time": 5.0,
-    "description": "Turns <link=\"PUFT\">Puft Egg</link> into Cracked <link=\"PUFT\">Puft Egg</link>.",
-    "fabricators": [
-      "EggCracker"
     ],
-    "inputs": [
-      {
-        "material": "PuftAlphaEgg",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "EggShell",
-        "amount": 0.25
-      },
-      {
-        "material": "RawEgg",
-        "amount": 0.25
-      }
-    ]
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_PuftOxyliteEgg_O_EggShell_RawEgg",
@@ -8289,7 +9168,35 @@
         "material": "RawEgg",
         "amount": 0.25
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "EggCracker_I_PuftAlphaEgg_O_EggShell_RawEgg",
+    "time": 5.0,
+    "description": "Turns <link=\"PUFT\">Puft Egg</link> into Cracked <link=\"PUFT\">Puft Egg</link>.",
+    "fabricators": [
+      "EggCracker"
+    ],
+    "inputs": [
+      {
+        "material": "PuftAlphaEgg",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "EggShell",
+        "amount": 0.25
+      },
+      {
+        "material": "RawEgg",
+        "amount": 0.25
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_OilfloaterEgg_O_EggShell_RawEgg",
@@ -8313,31 +9220,9 @@
         "material": "RawEgg",
         "amount": 1.0
       }
-    ]
-  },
-  {
-    "id": "EggCracker_I_OilfloaterDecorEgg_O_EggShell_RawEgg",
-    "time": 5.0,
-    "description": "Turns <link=\"OILFLOATER\">Slickster Egg</link> into Cracked <link=\"OILFLOATER\">Slickster Egg</link>.",
-    "fabricators": [
-      "EggCracker"
     ],
-    "inputs": [
-      {
-        "material": "OilfloaterDecorEgg",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "EggShell",
-        "amount": 1.0
-      },
-      {
-        "material": "RawEgg",
-        "amount": 1.0
-      }
-    ]
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_OilfloaterHighTempEgg_O_EggShell_RawEgg",
@@ -8361,7 +9246,35 @@
         "material": "RawEgg",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "EggCracker_I_OilfloaterDecorEgg_O_EggShell_RawEgg",
+    "time": 5.0,
+    "description": "Turns <link=\"OILFLOATER\">Slickster Egg</link> into Cracked <link=\"OILFLOATER\">Slickster Egg</link>.",
+    "fabricators": [
+      "EggCracker"
+    ],
+    "inputs": [
+      {
+        "material": "OilfloaterDecorEgg",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "EggShell",
+        "amount": 1.0
+      },
+      {
+        "material": "RawEgg",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_MoleEgg_O_EggShell_RawEgg",
@@ -8385,7 +9298,9 @@
         "material": "RawEgg",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_MoleDelicacyEgg_O_EggShell_RawEgg",
@@ -8409,7 +9324,9 @@
         "material": "RawEgg",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_LightBugEgg_O_EggShell_RawEgg_NaturalResin",
@@ -8437,7 +9354,9 @@
         "material": "NaturalResin",
         "amount": 5.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_LightBugPurpleEgg_O_EggShell_RawEgg_NaturalResin",
@@ -8465,7 +9384,9 @@
         "material": "NaturalResin",
         "amount": 5.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_LightBugPinkEgg_O_EggShell_RawEgg_NaturalResin",
@@ -8493,7 +9414,9 @@
         "material": "NaturalResin",
         "amount": 5.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_LightBugOrangeEgg_O_EggShell_RawEgg_NaturalResin",
@@ -8521,7 +9444,9 @@
         "material": "NaturalResin",
         "amount": 5.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_LightBugCrystalEgg_O_EggShell_RawEgg_NaturalResin",
@@ -8549,7 +9474,9 @@
         "material": "NaturalResin",
         "amount": 5.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_LightBugBlueEgg_O_EggShell_RawEgg_NaturalResin",
@@ -8577,7 +9504,9 @@
         "material": "NaturalResin",
         "amount": 5.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_LightBugBlackEgg_O_EggShell_RawEgg_NaturalResin",
@@ -8605,7 +9534,9 @@
         "material": "NaturalResin",
         "amount": 5.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_ChameleonEgg_O_EggShell_RawEgg",
@@ -8629,7 +9560,11 @@
         "material": "RawEgg",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_DreckoEgg_O_EggShell_RawEgg",
@@ -8653,7 +9588,9 @@
         "material": "RawEgg",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_DreckoPlasticEgg_O_EggShell_RawEgg",
@@ -8677,7 +9614,9 @@
         "material": "RawEgg",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_SealEgg_O_EggShell_RawEgg",
@@ -8701,7 +9640,11 @@
         "material": "RawEgg",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_WoodDeerEgg_O_EggShell_RawEgg",
@@ -8725,7 +9668,11 @@
         "material": "RawEgg",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_GlassDeerEgg_O_EggShell_RawEgg",
@@ -8749,7 +9696,11 @@
         "material": "RawEgg",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_StaterpillarEgg_O_EggShell_RawEgg",
@@ -8773,7 +9724,11 @@
         "material": "RawEgg",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_StaterpillarLiquidEgg_O_EggShell_RawEgg",
@@ -8797,7 +9752,11 @@
         "material": "RawEgg",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_StaterpillarGasEgg_O_EggShell_RawEgg",
@@ -8821,7 +9780,11 @@
         "material": "RawEgg",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_SquirrelEgg_O_EggShell_RawEgg",
@@ -8845,7 +9808,9 @@
         "material": "RawEgg",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_SquirrelHugEgg_O_EggShell_RawEgg",
@@ -8869,279 +9834,9 @@
         "material": "RawEgg",
         "amount": 1.0
       }
-    ]
-  },
-  {
-    "id": "EggCracker_I_IceBellyEgg_O_EggShell_RawEgg",
-    "time": 5.0,
-    "description": "Turns <link=\"ICEBELLY\">Bammoth Egg</link> into Cracked <link=\"ICEBELLY\">Bammoth Egg</link>.",
-    "fabricators": [
-      "EggCracker"
     ],
-    "inputs": [
-      {
-        "material": "IceBellyEgg",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "EggShell",
-        "amount": 4.0
-      },
-      {
-        "material": "RawEgg",
-        "amount": 4.0
-      }
-    ]
-  },
-  {
-    "id": "EggCracker_I_GoldBellyEgg_O_EggShell_RawEgg",
-    "time": 5.0,
-    "description": "Turns <link=\"ICEBELLY\">Bammoth Egg</link> into Cracked <link=\"ICEBELLY\">Bammoth Egg</link>.",
-    "fabricators": [
-      "EggCracker"
-    ],
-    "inputs": [
-      {
-        "material": "GoldBellyEgg",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "EggShell",
-        "amount": 4.0
-      },
-      {
-        "material": "RawEgg",
-        "amount": 4.0
-      }
-    ]
-  },
-  {
-    "id": "EggCracker_I_PufferFishEgg_O_EggShell_RawEgg",
-    "time": 5.0,
-    "description": "Turns <link=\"PUFFERFISH\">Blowter Egg</link> into Cracked <link=\"PUFFERFISH\">Blowter Egg</link>.",
-    "fabricators": [
-      "EggCracker"
-    ],
-    "inputs": [
-      {
-        "material": "PufferFishEgg",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "EggShell",
-        "amount": 1.0
-      },
-      {
-        "material": "RawEgg",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "EggCracker_I_HatchEgg_O_EggShell_RawEgg",
-    "time": 5.0,
-    "description": "Turns <link=\"HATCH\">Hatch Egg</link> into Cracked <link=\"HATCH\">Hatch Egg</link>.",
-    "fabricators": [
-      "EggCracker"
-    ],
-    "inputs": [
-      {
-        "material": "HatchEgg",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "EggShell",
-        "amount": 1.0
-      },
-      {
-        "material": "RawEgg",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "EggCracker_I_HatchHardEgg_O_EggShell_RawEgg",
-    "time": 5.0,
-    "description": "Turns <link=\"HATCH\">Hatch Egg</link> into Cracked <link=\"HATCH\">Hatch Egg</link>.",
-    "fabricators": [
-      "EggCracker"
-    ],
-    "inputs": [
-      {
-        "material": "HatchHardEgg",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "EggShell",
-        "amount": 1.0
-      },
-      {
-        "material": "RawEgg",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "EggCracker_I_HatchVeggieEgg_O_EggShell_RawEgg",
-    "time": 5.0,
-    "description": "Turns <link=\"HATCH\">Hatch Egg</link> into Cracked <link=\"HATCH\">Hatch Egg</link>.",
-    "fabricators": [
-      "EggCracker"
-    ],
-    "inputs": [
-      {
-        "material": "HatchVeggieEgg",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "EggShell",
-        "amount": 1.0
-      },
-      {
-        "material": "RawEgg",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "EggCracker_I_HatchMetalEgg_O_EggShell_RawEgg",
-    "time": 5.0,
-    "description": "Turns <link=\"HATCH\">Hatch Egg</link> into Cracked <link=\"HATCH\">Hatch Egg</link>.",
-    "fabricators": [
-      "EggCracker"
-    ],
-    "inputs": [
-      {
-        "material": "HatchMetalEgg",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "EggShell",
-        "amount": 1.0
-      },
-      {
-        "material": "RawEgg",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "EggCracker_I_PacuEgg_O_RawEgg",
-    "time": 5.0,
-    "description": "Turns <link=\"PACU\">Pacu Egg</link> into Cracked <link=\"PACU\">Pacu Egg</link>.",
-    "fabricators": [
-      "EggCracker"
-    ],
-    "inputs": [
-      {
-        "material": "PacuEgg",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "RawEgg",
-        "amount": 0.75
-      }
-    ]
-  },
-  {
-    "id": "EggCracker_I_PacuCleanerEgg_O_RawEgg",
-    "time": 5.0,
-    "description": "Turns <link=\"PACU\">Pacu Egg</link> into Cracked <link=\"PACU\">Pacu Egg</link>.",
-    "fabricators": [
-      "EggCracker"
-    ],
-    "inputs": [
-      {
-        "material": "PacuCleanerEgg",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "RawEgg",
-        "amount": 0.75
-      }
-    ]
-  },
-  {
-    "id": "EggCracker_I_PacuTropicalEgg_O_RawEgg",
-    "time": 5.0,
-    "description": "Turns <link=\"PACU\">Pacu Egg</link> into Cracked <link=\"PACU\">Pacu Egg</link>.",
-    "fabricators": [
-      "EggCracker"
-    ],
-    "inputs": [
-      {
-        "material": "PacuTropicalEgg",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "RawEgg",
-        "amount": 0.75
-      }
-    ]
-  },
-  {
-    "id": "EggCracker_I_RaptorEgg_O_EggShell_RawEgg",
-    "time": 5.0,
-    "description": "Turns <link=\"RAPTOR\">Rhex Egg</link> into Cracked <link=\"RAPTOR\">Rhex Egg</link>.",
-    "fabricators": [
-      "EggCracker"
-    ],
-    "inputs": [
-      {
-        "material": "RaptorEgg",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "EggShell",
-        "amount": 4.0
-      },
-      {
-        "material": "RawEgg",
-        "amount": 4.0
-      }
-    ]
-  },
-  {
-    "id": "EggCracker_I_ParrotFishEgg_O_RawEgg",
-    "time": 5.0,
-    "description": "Turns <link=\"PARROTFISH\">Beakon Egg</link> into Cracked <link=\"PARROTFISH\">Beakon Egg</link>.",
-    "fabricators": [
-      "EggCracker"
-    ],
-    "inputs": [
-      {
-        "material": "ParrotFishEgg",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "RawEgg",
-        "amount": 2.0
-      }
-    ]
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_PrehistoricPacuEgg_O_EggShell_RawEgg",
@@ -9165,18 +9860,22 @@
         "material": "RawEgg",
         "amount": 1.99999988
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
-    "id": "EggCracker_I_SeaHorseEgg_O_EggShell_RawEgg",
+    "id": "EggCracker_I_PufferFishEgg_O_EggShell_RawEgg",
     "time": 5.0,
-    "description": "Turns <link=\"SEAHORSE\">Seaquine Egg</link> into Cracked <link=\"SEAHORSE\">Seaquine Egg</link>.",
+    "description": "Turns <link=\"PUFFERFISH\">Blowter Egg</link> into Cracked <link=\"PUFFERFISH\">Blowter Egg</link>.",
     "fabricators": [
       "EggCracker"
     ],
     "inputs": [
       {
-        "material": "SeaHorseEgg",
+        "material": "PufferFishEgg",
         "amount": 1.0
       }
     ],
@@ -9189,18 +9888,192 @@
         "material": "RawEgg",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
-    "id": "EggCracker_I_StegoEgg_O_EggShell_RawEgg",
+    "id": "EggCracker_I_PacuEgg_O_RawEgg",
     "time": 5.0,
-    "description": "Turns <link=\"STEGO\">Lumb Egg</link> into Cracked <link=\"STEGO\">Lumb Egg</link>.",
+    "description": "Turns <link=\"PACU\">Pacu Egg</link> into Cracked <link=\"PACU\">Pacu Egg</link>.",
     "fabricators": [
       "EggCracker"
     ],
     "inputs": [
       {
-        "material": "StegoEgg",
+        "material": "PacuEgg",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "RawEgg",
+        "amount": 0.75
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "EggCracker_I_PacuCleanerEgg_O_RawEgg",
+    "time": 5.0,
+    "description": "Turns <link=\"PACU\">Pacu Egg</link> into Cracked <link=\"PACU\">Pacu Egg</link>.",
+    "fabricators": [
+      "EggCracker"
+    ],
+    "inputs": [
+      {
+        "material": "PacuCleanerEgg",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "RawEgg",
+        "amount": 0.75
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "EggCracker_I_PacuTropicalEgg_O_RawEgg",
+    "time": 5.0,
+    "description": "Turns <link=\"PACU\">Pacu Egg</link> into Cracked <link=\"PACU\">Pacu Egg</link>.",
+    "fabricators": [
+      "EggCracker"
+    ],
+    "inputs": [
+      {
+        "material": "PacuTropicalEgg",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "RawEgg",
+        "amount": 0.75
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "EggCracker_I_HatchEgg_O_EggShell_RawEgg",
+    "time": 5.0,
+    "description": "Turns <link=\"HATCH\">Hatch Egg</link> into Cracked <link=\"HATCH\">Hatch Egg</link>.",
+    "fabricators": [
+      "EggCracker"
+    ],
+    "inputs": [
+      {
+        "material": "HatchEgg",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "EggShell",
+        "amount": 1.0
+      },
+      {
+        "material": "RawEgg",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "EggCracker_I_HatchHardEgg_O_EggShell_RawEgg",
+    "time": 5.0,
+    "description": "Turns <link=\"HATCH\">Hatch Egg</link> into Cracked <link=\"HATCH\">Hatch Egg</link>.",
+    "fabricators": [
+      "EggCracker"
+    ],
+    "inputs": [
+      {
+        "material": "HatchHardEgg",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "EggShell",
+        "amount": 1.0
+      },
+      {
+        "material": "RawEgg",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "EggCracker_I_HatchVeggieEgg_O_EggShell_RawEgg",
+    "time": 5.0,
+    "description": "Turns <link=\"HATCH\">Hatch Egg</link> into Cracked <link=\"HATCH\">Hatch Egg</link>.",
+    "fabricators": [
+      "EggCracker"
+    ],
+    "inputs": [
+      {
+        "material": "HatchVeggieEgg",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "EggShell",
+        "amount": 1.0
+      },
+      {
+        "material": "RawEgg",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "EggCracker_I_HatchMetalEgg_O_EggShell_RawEgg",
+    "time": 5.0,
+    "description": "Turns <link=\"HATCH\">Hatch Egg</link> into Cracked <link=\"HATCH\">Hatch Egg</link>.",
+    "fabricators": [
+      "EggCracker"
+    ],
+    "inputs": [
+      {
+        "material": "HatchMetalEgg",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "EggShell",
+        "amount": 1.0
+      },
+      {
+        "material": "RawEgg",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "EggCracker_I_RaptorEgg_O_EggShell_RawEgg",
+    "time": 5.0,
+    "description": "Turns <link=\"RAPTOR\">Rhex Egg</link> into Cracked <link=\"RAPTOR\">Rhex Egg</link>.",
+    "fabricators": [
+      "EggCracker"
+    ],
+    "inputs": [
+      {
+        "material": "RaptorEgg",
         "amount": 1.0
       }
     ],
@@ -9213,18 +10086,46 @@
         "material": "RawEgg",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
-    "id": "EggCracker_I_AlgaeStegoEgg_O_EggShell_RawEgg",
+    "id": "EggCracker_I_ParrotFishEgg_O_RawEgg",
     "time": 5.0,
-    "description": "Turns <link=\"STEGO\">Lumb Egg</link> into Cracked <link=\"STEGO\">Lumb Egg</link>.",
+    "description": "Turns <link=\"PARROTFISH\">Beakon Egg</link> into Cracked <link=\"PARROTFISH\">Beakon Egg</link>.",
     "fabricators": [
       "EggCracker"
     ],
     "inputs": [
       {
-        "material": "AlgaeStegoEgg",
+        "material": "ParrotFishEgg",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "RawEgg",
+        "amount": 0.75
+      }
+    ],
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "EggCracker_I_IceBellyEgg_O_EggShell_RawEgg",
+    "time": 5.0,
+    "description": "Turns <link=\"ICEBELLY\">Bammoth Egg</link> into Cracked <link=\"ICEBELLY\">Bammoth Egg</link>.",
+    "fabricators": [
+      "EggCracker"
+    ],
+    "inputs": [
+      {
+        "material": "IceBellyEgg",
         "amount": 1.0
       }
     ],
@@ -9237,147 +10138,39 @@
         "material": "RawEgg",
         "amount": 4.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
-    "id": "EggCracker_I_CrabEgg_O_EggShell_RawEgg",
+    "id": "EggCracker_I_GoldBellyEgg_O_EggShell_RawEgg",
     "time": 5.0,
-    "description": "Turns <link=\"CRAB\">Pokeshell Roe</link> into Cracked <link=\"CRAB\">Pokeshell Roe</link>.",
+    "description": "Turns <link=\"ICEBELLY\">Bammoth Egg</link> into Cracked <link=\"ICEBELLY\">Bammoth Egg</link>.",
     "fabricators": [
       "EggCracker"
     ],
     "inputs": [
       {
-        "material": "CrabEgg",
+        "material": "GoldBellyEgg",
         "amount": 1.0
       }
     ],
     "outputs": [
       {
         "material": "EggShell",
-        "amount": 1.0
+        "amount": 4.0
       },
       {
         "material": "RawEgg",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "EggCracker_I_CrabWoodEgg_O_EggShell_RawEgg",
-    "time": 5.0,
-    "description": "Turns <link=\"CRAB\">Pokeshell Roe</link> into Cracked <link=\"CRAB\">Pokeshell Roe</link>.",
-    "fabricators": [
-      "EggCracker"
-    ],
-    "inputs": [
-      {
-        "material": "CrabWoodEgg",
-        "amount": 1.0
+        "amount": 4.0
       }
     ],
-    "outputs": [
-      {
-        "material": "EggShell",
-        "amount": 1.0
-      },
-      {
-        "material": "RawEgg",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "EggCracker_I_CrabFreshWaterEgg_O_EggShell_RawEgg",
-    "time": 5.0,
-    "description": "Turns <link=\"CRAB\">Pokeshell Roe</link> into Cracked <link=\"CRAB\">Pokeshell Roe</link>.",
-    "fabricators": [
-      "EggCracker"
+    "requiredDlcIds": [
+      "DLC2_ID"
     ],
-    "inputs": [
-      {
-        "material": "CrabFreshWaterEgg",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "EggShell",
-        "amount": 1.0
-      },
-      {
-        "material": "RawEgg",
-        "amount": 1.0
-      }
-    ]
-  },
-  {
-    "id": "EggCracker_I_SnailIronEgg_O_EggShell_RawEgg",
-    "time": 5.0,
-    "description": "Turns <link=\"SNAILIRON\">Gildgo Egg</link> into Cracked <link=\"SNAILIRON\">Gildgo Egg</link>.",
-    "fabricators": [
-      "EggCracker"
-    ],
-    "inputs": [
-      {
-        "material": "SnailIronEgg",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "EggShell",
-        "amount": 0.25
-      },
-      {
-        "material": "RawEgg",
-        "amount": 0.25
-      }
-    ]
-  },
-  {
-    "id": "EggCracker_I_SnailEgg_O_EggShell_RawEgg",
-    "time": 5.0,
-    "description": "Turns <link=\"SNAILIRON\">Gildgo Egg</link> into Cracked <link=\"SNAILIRON\">Gildgo Egg</link>.",
-    "fabricators": [
-      "EggCracker"
-    ],
-    "inputs": [
-      {
-        "material": "SnailEgg",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "EggShell",
-        "amount": 0.25
-      },
-      {
-        "material": "RawEgg",
-        "amount": 0.25
-      }
-    ]
-  },
-  {
-    "id": "EggCracker_I_SquidEgg_O_RawEgg",
-    "time": 5.0,
-    "description": "Turns <link=\"SQUID\">Glo Squid Egg</link> into Cracked <link=\"SQUID\">Glo Squid Egg</link>.",
-    "fabricators": [
-      "EggCracker"
-    ],
-    "inputs": [
-      {
-        "material": "SquidEgg",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "material": "RawEgg",
-        "amount": 2.0
-      }
-    ]
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_DivergentWormEgg_O_EggShell_RawEgg",
@@ -9401,7 +10194,11 @@
         "material": "RawEgg",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_DivergentBeetleEgg_O_EggShell_RawEgg",
@@ -9425,7 +10222,197 @@
         "material": "RawEgg",
         "amount": 1.0
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "EggCracker_I_StegoEgg_O_EggShell_RawEgg",
+    "time": 5.0,
+    "description": "Turns <link=\"STEGO\">Lumb Egg</link> into Cracked <link=\"STEGO\">Lumb Egg</link>.",
+    "fabricators": [
+      "EggCracker"
+    ],
+    "inputs": [
+      {
+        "material": "StegoEgg",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "EggShell",
+        "amount": 4.0
+      },
+      {
+        "material": "RawEgg",
+        "amount": 4.0
+      }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "EggCracker_I_AlgaeStegoEgg_O_EggShell_RawEgg",
+    "time": 5.0,
+    "description": "Turns <link=\"STEGO\">Lumb Egg</link> into Cracked <link=\"STEGO\">Lumb Egg</link>.",
+    "fabricators": [
+      "EggCracker"
+    ],
+    "inputs": [
+      {
+        "material": "AlgaeStegoEgg",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "EggShell",
+        "amount": 4.0
+      },
+      {
+        "material": "RawEgg",
+        "amount": 4.0
+      }
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "EggCracker_I_CrabEgg_O_EggShell_RawEgg",
+    "time": 5.0,
+    "description": "Turns <link=\"CRAB\">Pokeshell Roe</link> into Cracked <link=\"CRAB\">Pokeshell Roe</link>.",
+    "fabricators": [
+      "EggCracker"
+    ],
+    "inputs": [
+      {
+        "material": "CrabEgg",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "EggShell",
+        "amount": 1.0
+      },
+      {
+        "material": "RawEgg",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "EggCracker_I_CrabWoodEgg_O_EggShell_RawEgg",
+    "time": 5.0,
+    "description": "Turns <link=\"CRAB\">Pokeshell Roe</link> into Cracked <link=\"CRAB\">Pokeshell Roe</link>.",
+    "fabricators": [
+      "EggCracker"
+    ],
+    "inputs": [
+      {
+        "material": "CrabWoodEgg",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "EggShell",
+        "amount": 1.0
+      },
+      {
+        "material": "RawEgg",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "EggCracker_I_CrabFreshWaterEgg_O_EggShell_RawEgg",
+    "time": 5.0,
+    "description": "Turns <link=\"CRAB\">Pokeshell Roe</link> into Cracked <link=\"CRAB\">Pokeshell Roe</link>.",
+    "fabricators": [
+      "EggCracker"
+    ],
+    "inputs": [
+      {
+        "material": "CrabFreshWaterEgg",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "EggShell",
+        "amount": 1.0
+      },
+      {
+        "material": "RawEgg",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "EggCracker_I_SquidEgg_O_RawEgg",
+    "time": 5.0,
+    "description": "Turns <link=\"SQUID\">Glo Squid Egg</link> into Cracked <link=\"SQUID\">Glo Squid Egg</link>.",
+    "fabricators": [
+      "EggCracker"
+    ],
+    "inputs": [
+      {
+        "material": "SquidEgg",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "RawEgg",
+        "amount": 2.0
+      }
+    ],
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "EggCracker_I_SeaHorseEgg_O_EggShell_RawEgg",
+    "time": 5.0,
+    "description": "Turns <link=\"SEAHORSE\">Seaquine Egg</link> into Cracked <link=\"SEAHORSE\">Seaquine Egg</link>.",
+    "fabricators": [
+      "EggCracker"
+    ],
+    "inputs": [
+      {
+        "material": "SeaHorseEgg",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "EggShell",
+        "amount": 1.0
+      },
+      {
+        "material": "RawEgg",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker_I_SeaTurtleEgg_O_EggShell_RawEgg",
@@ -9449,6 +10436,58 @@
         "material": "RawEgg",
         "amount": 1.99999988
       }
-    ]
+    ],
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "EggCracker_I_SnailEgg_O_RawEgg",
+    "time": 5.0,
+    "description": "Turns <link=\"SNAIL\">Slogo Egg</link> into Cracked <link=\"SNAIL\">Slogo Egg</link>.",
+    "fabricators": [
+      "EggCracker"
+    ],
+    "inputs": [
+      {
+        "material": "SnailEgg",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "RawEgg",
+        "amount": 0.5
+      }
+    ],
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "EggCracker_I_SnailIronEgg_O_RawEgg",
+    "time": 5.0,
+    "description": "Turns <link=\"SNAIL\">Slogo Egg</link> into Cracked <link=\"SNAIL\">Slogo Egg</link>.",
+    "fabricators": [
+      "EggCracker"
+    ],
+    "inputs": [
+      {
+        "material": "SnailIronEgg",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "RawEgg",
+        "amount": 0.5
+      }
+    ],
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   }
 ]

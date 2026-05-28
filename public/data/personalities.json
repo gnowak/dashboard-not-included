@@ -6,7 +6,8 @@
     "gender": "MALE",
     "joyTrait": "BalloonArtist",
     "stressTrait": "UglyCrier",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "ADA",
@@ -15,7 +16,8 @@
     "gender": "FEMALE",
     "joyTrait": "BalloonArtist",
     "stressTrait": "StressVomiter",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "AMARI",
@@ -24,7 +26,8 @@
     "gender": "MALE",
     "joyTrait": "SuperProductive",
     "stressTrait": "Banshee",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "ARI",
@@ -33,7 +36,8 @@
     "gender": "NB",
     "joyTrait": "StickerBomber",
     "stressTrait": "UglyCrier",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "ASHKAN",
@@ -42,7 +46,8 @@
     "gender": "MALE",
     "joyTrait": "SparkleStreaker",
     "stressTrait": "BingeEater",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "BANHI",
@@ -51,7 +56,8 @@
     "gender": "FEMALE",
     "joyTrait": "SuperProductive",
     "stressTrait": "Aggressive",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "BUBBLES",
@@ -60,7 +66,8 @@
     "gender": "FEMALE",
     "joyTrait": "StickerBomber",
     "stressTrait": "BingeEater",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "BURT",
@@ -69,7 +76,8 @@
     "gender": "MALE",
     "joyTrait": "StickerBomber",
     "stressTrait": "BingeEater",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "CAMILLE",
@@ -78,7 +86,8 @@
     "gender": "FEMALE",
     "joyTrait": "StickerBomber",
     "stressTrait": "StressVomiter",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "CATALINA",
@@ -87,7 +96,8 @@
     "gender": "FEMALE",
     "joyTrait": "SuperProductive",
     "stressTrait": "StressVomiter",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "CHIP",
@@ -96,7 +106,8 @@
     "gender": "NB",
     "joyTrait": "DataRainer",
     "stressTrait": "StressShocker",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": "DLC3_ID"
   },
   {
     "id": "DEVON",
@@ -105,7 +116,8 @@
     "gender": "NB",
     "joyTrait": "SuperProductive",
     "stressTrait": "BingeEater",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "EDWIREDO",
@@ -114,7 +126,8 @@
     "gender": "MALE",
     "joyTrait": "DataRainer",
     "stressTrait": "StressShocker",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": "DLC3_ID"
   },
   {
     "id": "ELLIE",
@@ -123,7 +136,8 @@
     "gender": "FEMALE",
     "joyTrait": "StickerBomber",
     "stressTrait": "Aggressive",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "FRANKIE",
@@ -132,7 +146,8 @@
     "gender": "NB",
     "joyTrait": "SparkleStreaker",
     "stressTrait": "Aggressive",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "FREYJA",
@@ -141,7 +156,8 @@
     "gender": "FEMALE",
     "joyTrait": "HappySinger",
     "stressTrait": "Aggressive",
-    "congenitalTrait": "FrostProof"
+    "congenitalTrait": "FrostProof",
+    "requiredDlcId": "DLC2_ID"
   },
   {
     "id": "GIZMO",
@@ -150,7 +166,8 @@
     "gender": "MALE",
     "joyTrait": "DataRainer",
     "stressTrait": "StressShocker",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": "DLC3_ID"
   },
   {
     "id": "GOSSMANN",
@@ -159,7 +176,8 @@
     "gender": "FEMALE",
     "joyTrait": "SparkleStreaker",
     "stressTrait": "StressVomiter",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "HAROLD",
@@ -168,7 +186,8 @@
     "gender": "MALE",
     "joyTrait": "BalloonArtist",
     "stressTrait": "BingeEater",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "HASSAN",
@@ -177,7 +196,8 @@
     "gender": "MALE",
     "joyTrait": "SparkleStreaker",
     "stressTrait": "UglyCrier",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "HIGBY",
@@ -186,7 +206,8 @@
     "gender": "MALE",
     "joyTrait": "HappySinger",
     "stressTrait": "Banshee",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": "DLC4_ID"
   },
   {
     "id": "JEAN",
@@ -195,7 +216,8 @@
     "gender": "NB",
     "joyTrait": "SparkleStreaker",
     "stressTrait": "Aggressive",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "JORGE",
@@ -204,7 +226,8 @@
     "gender": "MALE",
     "joyTrait": "BalloonArtist",
     "stressTrait": "UglyCrier",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "JOSHUA",
@@ -213,7 +236,8 @@
     "gender": "MALE",
     "joyTrait": "StickerBomber",
     "stressTrait": "UglyCrier",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "KAI",
@@ -222,7 +246,8 @@
     "gender": "NB",
     "joyTrait": "BalloonArtist",
     "stressTrait": "BingeEater",
-    "congenitalTrait": "GrantSkill_Swimming2"
+    "congenitalTrait": "GrantSkill_Swimming2",
+    "requiredDlcId": "DLC5_ID"
   },
   {
     "id": "LEIRA",
@@ -231,7 +256,8 @@
     "gender": "FEMALE",
     "joyTrait": "SparkleStreaker",
     "stressTrait": "BingeEater",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "LIAM",
@@ -240,7 +266,8 @@
     "gender": "MALE",
     "joyTrait": "SuperProductive",
     "stressTrait": "StressVomiter",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "LINDSAY",
@@ -249,7 +276,8 @@
     "gender": "FEMALE",
     "joyTrait": "StickerBomber",
     "stressTrait": "UglyCrier",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "MAE",
@@ -258,7 +286,8 @@
     "gender": "FEMALE",
     "joyTrait": "SuperProductive",
     "stressTrait": "StressVomiter",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "MARIE",
@@ -267,7 +296,8 @@
     "gender": "FEMALE",
     "joyTrait": "SparkleStreaker",
     "stressTrait": "UglyCrier",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "MAX",
@@ -276,7 +306,8 @@
     "gender": "NB",
     "joyTrait": "BalloonArtist",
     "stressTrait": "UglyCrier",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "MAYA",
@@ -285,7 +316,8 @@
     "gender": "FEMALE",
     "joyTrait": "SparkleStreaker",
     "stressTrait": "Aggressive",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": "DLC4_ID"
   },
   {
     "id": "MEEP",
@@ -294,7 +326,8 @@
     "gender": "MALE",
     "joyTrait": "SparkleStreaker",
     "stressTrait": "Aggressive",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "MIMA",
@@ -303,7 +336,8 @@
     "gender": "FEMALE",
     "joyTrait": "SuperProductive",
     "stressTrait": "StressVomiter",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "MINNOW",
@@ -312,7 +346,8 @@
     "gender": "FEMALE",
     "joyTrait": "HappySinger",
     "stressTrait": "UglyCrier",
-    "congenitalTrait": "Minnow"
+    "congenitalTrait": "Minnow",
+    "requiredDlcId": "DLC5_ID"
   },
   {
     "id": "NAILS",
@@ -321,7 +356,8 @@
     "gender": "NB",
     "joyTrait": "BalloonArtist",
     "stressTrait": "UglyCrier",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "NIKOLA",
@@ -330,7 +366,8 @@
     "gender": "MALE",
     "joyTrait": "SuperProductive",
     "stressTrait": "Aggressive",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "NISBET",
@@ -339,7 +376,8 @@
     "gender": "FEMALE",
     "joyTrait": "SuperProductive",
     "stressTrait": "Aggressive",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "OTTO",
@@ -348,7 +386,8 @@
     "gender": "NB",
     "joyTrait": "BalloonArtist",
     "stressTrait": "StressVomiter",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "PEI",
@@ -357,7 +396,8 @@
     "gender": "FEMALE",
     "joyTrait": "BalloonArtist",
     "stressTrait": "Banshee",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "QUINN",
@@ -366,7 +406,8 @@
     "gender": "NB",
     "joyTrait": "HappySinger",
     "stressTrait": "BingeEater",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "REN",
@@ -375,7 +416,8 @@
     "gender": "MALE",
     "joyTrait": "BalloonArtist",
     "stressTrait": "StressVomiter",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "ROWAN",
@@ -384,7 +426,8 @@
     "gender": "MALE",
     "joyTrait": "StickerBomber",
     "stressTrait": "BingeEater",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "RUBY",
@@ -393,7 +436,8 @@
     "gender": "NB",
     "joyTrait": "StickerBomber",
     "stressTrait": "BingeEater",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "SENA",
@@ -402,7 +446,8 @@
     "gender": "FEMALE",
     "joyTrait": "SparkleStreaker",
     "stressTrait": "Banshee",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": "COSMETIC1_ID"
   },
   {
     "id": "SONYAR",
@@ -411,7 +456,8 @@
     "gender": "FEMALE",
     "joyTrait": "RoboDancer",
     "stressTrait": "StressShocker",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": "DLC3_ID"
   },
   {
     "id": "STEELA",
@@ -420,7 +466,8 @@
     "gender": "FEMALE",
     "joyTrait": "RoboDancer",
     "stressTrait": "StressShocker",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": "DLC3_ID"
   },
   {
     "id": "STEVE",
@@ -429,7 +476,8 @@
     "gender": "MALE",
     "joyTrait": "HappySinger",
     "stressTrait": "UglyCrier",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "STINKY",
@@ -438,7 +486,8 @@
     "gender": "MALE",
     "joyTrait": "BalloonArtist",
     "stressTrait": "StressVomiter",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "TRAVALDO",
@@ -447,7 +496,8 @@
     "gender": "MALE",
     "joyTrait": "BalloonArtist",
     "stressTrait": "StressVomiter",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "TURNER",
@@ -456,7 +506,8 @@
     "gender": "NB",
     "joyTrait": "SparkleStreaker",
     "stressTrait": "BingeEater",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": ""
   },
   {
     "id": "ULTI",
@@ -465,6 +516,7 @@
     "gender": "NB",
     "joyTrait": "RoboDancer",
     "stressTrait": "StressShocker",
-    "congenitalTrait": null
+    "congenitalTrait": null,
+    "requiredDlcId": "DLC3_ID"
   }
 ]

@@ -3,6 +3,10 @@
     "id": "HarvestableSpacePOI_CarbonAsteroidField",
     "name": "HarvestableSpacePOI_CarbonAsteroidField",
     "prefabId": "HarvestableSpacePOI_CarbonAsteroidField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x19456132",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -18,6 +22,10 @@
     "id": "HarvestableSpacePOI_MetallicAsteroidField",
     "name": "HarvestableSpacePOI_MetallicAsteroidField",
     "prefabId": "HarvestableSpacePOI_MetallicAsteroidField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0xE55B6240",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -33,6 +41,10 @@
     "id": "HarvestableSpacePOI_SatelliteField",
     "name": "HarvestableSpacePOI_SatelliteField",
     "prefabId": "HarvestableSpacePOI_SatelliteField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x3E3A895F",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -48,6 +60,10 @@
     "id": "HarvestableSpacePOI_RockyAsteroidField",
     "name": "HarvestableSpacePOI_RockyAsteroidField",
     "prefabId": "HarvestableSpacePOI_RockyAsteroidField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x6DC07EB",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -63,6 +79,10 @@
     "id": "HarvestableSpacePOI_InterstellarIceField",
     "name": "HarvestableSpacePOI_InterstellarIceField",
     "prefabId": "HarvestableSpacePOI_InterstellarIceField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x61ED03A8",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -78,6 +98,10 @@
     "id": "HarvestableSpacePOI_OrganicMassField",
     "name": "HarvestableSpacePOI_OrganicMassField",
     "prefabId": "HarvestableSpacePOI_OrganicMassField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x6DF167FB",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -93,6 +117,10 @@
     "id": "HarvestableSpacePOI_IceAsteroidField",
     "name": "HarvestableSpacePOI_IceAsteroidField",
     "prefabId": "HarvestableSpacePOI_IceAsteroidField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0xE85CF0F4",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -108,6 +136,10 @@
     "id": "HarvestableSpacePOI_GasGiantCloud",
     "name": "HarvestableSpacePOI_GasGiantCloud",
     "prefabId": "HarvestableSpacePOI_GasGiantCloud",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x40FB35E9",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -123,6 +155,10 @@
     "id": "HarvestableSpacePOI_ChlorineCloud",
     "name": "HarvestableSpacePOI_ChlorineCloud",
     "prefabId": "HarvestableSpacePOI_ChlorineCloud",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x5EFFC1DF",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -138,6 +174,10 @@
     "id": "HarvestableSpacePOI_GildedAsteroidField",
     "name": "HarvestableSpacePOI_GildedAsteroidField",
     "prefabId": "HarvestableSpacePOI_GildedAsteroidField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x5C959326",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -153,6 +193,10 @@
     "id": "HarvestableSpacePOI_GlimmeringAsteroidField",
     "name": "HarvestableSpacePOI_GlimmeringAsteroidField",
     "prefabId": "HarvestableSpacePOI_GlimmeringAsteroidField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x76B9E56E",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -168,6 +212,10 @@
     "id": "HarvestableSpacePOI_HeliumCloud",
     "name": "HarvestableSpacePOI_HeliumCloud",
     "prefabId": "HarvestableSpacePOI_HeliumCloud",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x5573BE3",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -183,6 +231,10 @@
     "id": "HarvestableSpacePOI_OilyAsteroidField",
     "name": "HarvestableSpacePOI_OilyAsteroidField",
     "prefabId": "HarvestableSpacePOI_OilyAsteroidField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0xA7386D8",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -198,6 +250,10 @@
     "id": "HarvestableSpacePOI_OxidizedAsteroidField",
     "name": "HarvestableSpacePOI_OxidizedAsteroidField",
     "prefabId": "HarvestableSpacePOI_OxidizedAsteroidField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0xBD45424B",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -213,6 +269,10 @@
     "id": "HarvestableSpacePOI_SaltyAsteroidField",
     "name": "HarvestableSpacePOI_SaltyAsteroidField",
     "prefabId": "HarvestableSpacePOI_SaltyAsteroidField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x7E48E65C",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -228,6 +288,10 @@
     "id": "HarvestableSpacePOI_FrozenOreField",
     "name": "HarvestableSpacePOI_FrozenOreField",
     "prefabId": "HarvestableSpacePOI_FrozenOreField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x1EAA23D8",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -243,6 +307,10 @@
     "id": "HarvestableSpacePOI_ForestyOreField",
     "name": "HarvestableSpacePOI_ForestyOreField",
     "prefabId": "HarvestableSpacePOI_ForestyOreField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x79A94E34",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -258,6 +326,10 @@
     "id": "HarvestableSpacePOI_SwampyOreField",
     "name": "HarvestableSpacePOI_SwampyOreField",
     "prefabId": "HarvestableSpacePOI_SwampyOreField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0xB1658BD1",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -273,6 +345,10 @@
     "id": "HarvestableSpacePOI_SandyOreField",
     "name": "HarvestableSpacePOI_SandyOreField",
     "prefabId": "HarvestableSpacePOI_SandyOreField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x263CF50D",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -288,6 +364,10 @@
     "id": "HarvestableSpacePOI_RadioactiveGasCloud",
     "name": "HarvestableSpacePOI_RadioactiveGasCloud",
     "prefabId": "HarvestableSpacePOI_RadioactiveGasCloud",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x6E84013D",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -303,6 +383,10 @@
     "id": "HarvestableSpacePOI_RadioactiveAsteroidField",
     "name": "HarvestableSpacePOI_RadioactiveAsteroidField",
     "prefabId": "HarvestableSpacePOI_RadioactiveAsteroidField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0xD5AF57FE",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -318,6 +402,10 @@
     "id": "HarvestableSpacePOI_OxygenRichAsteroidField",
     "name": "HarvestableSpacePOI_OxygenRichAsteroidField",
     "prefabId": "HarvestableSpacePOI_OxygenRichAsteroidField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x184BAFE3",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -333,6 +421,10 @@
     "id": "HarvestableSpacePOI_InterstellarOcean",
     "name": "HarvestableSpacePOI_InterstellarOcean",
     "prefabId": "HarvestableSpacePOI_InterstellarOcean",
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x120335C5",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -348,6 +440,11 @@
     "id": "HarvestableSpacePOI_DLC2CeresField",
     "name": "HarvestableSpacePOI_DLC2CeresField",
     "prefabId": "HarvestableSpacePOI_DLC2CeresField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID",
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x671399B3",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -363,6 +460,11 @@
     "id": "HarvestableSpacePOI_DLC2CeresOreField",
     "name": "HarvestableSpacePOI_DLC2CeresOreField",
     "prefabId": "HarvestableSpacePOI_DLC2CeresOreField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID",
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x3894D15F",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -378,6 +480,11 @@
     "id": "HarvestableSpacePOI_DLC4PrehistoricMixingField",
     "name": "HarvestableSpacePOI_DLC4PrehistoricMixingField",
     "prefabId": "HarvestableSpacePOI_DLC4PrehistoricMixingField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID",
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x3DB53AEB",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -393,6 +500,11 @@
     "id": "HarvestableSpacePOI_DLC4PrehistoricOreField",
     "name": "HarvestableSpacePOI_DLC4PrehistoricOreField",
     "prefabId": "HarvestableSpacePOI_DLC4PrehistoricOreField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID",
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0xC88F7381",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -408,6 +520,11 @@
     "id": "HarvestableSpacePOI_DLC4ImpactorDebrisField1",
     "name": "HarvestableSpacePOI_DLC4ImpactorDebrisField1",
     "prefabId": "HarvestableSpacePOI_DLC4ImpactorDebrisField1",
+    "requiredDlcIds": [
+      "EXPANSION1_ID",
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x180B5054",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -423,6 +540,11 @@
     "id": "HarvestableSpacePOI_DLC4ImpactorDebrisField2",
     "name": "HarvestableSpacePOI_DLC4ImpactorDebrisField2",
     "prefabId": "HarvestableSpacePOI_DLC4ImpactorDebrisField2",
+    "requiredDlcIds": [
+      "EXPANSION1_ID",
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x180B5055",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -438,6 +560,11 @@
     "id": "HarvestableSpacePOI_DLC4ImpactorDebrisField3",
     "name": "HarvestableSpacePOI_DLC4ImpactorDebrisField3",
     "prefabId": "HarvestableSpacePOI_DLC4ImpactorDebrisField3",
+    "requiredDlcIds": [
+      "EXPANSION1_ID",
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x180B5056",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -453,6 +580,11 @@
     "id": "HarvestableSpacePOI_DLC5AquaticMixingField",
     "name": "HarvestableSpacePOI_DLC5AquaticMixingField",
     "prefabId": "HarvestableSpacePOI_DLC5AquaticMixingField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID",
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x9548C2DC",
     "capacityRangeMetricTons": {
       "min": 0.0,
@@ -468,6 +600,11 @@
     "id": "HarvestableSpacePOI_DLC5AquaticOreField",
     "name": "HarvestableSpacePOI_DLC5AquaticOreField",
     "prefabId": "HarvestableSpacePOI_DLC5AquaticOreField",
+    "requiredDlcIds": [
+      "EXPANSION1_ID",
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
     "poiType": "0x87E096D0",
     "capacityRangeMetricTons": {
       "min": 0.0,

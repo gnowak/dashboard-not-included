@@ -13,7 +13,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "AdvancedCraftingTable",
@@ -29,7 +33,11 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "AdvancedDoctorStation",
@@ -45,7 +53,9 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 0.25,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "AdvancedResearchCenter",
@@ -61,7 +71,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "AirBorneCritterCondo",
@@ -77,7 +89,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "AirConditioner",
@@ -93,7 +107,9 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "AirFilter",
@@ -109,7 +125,9 @@
     "energyConsumptionWhenActive": 5.0,
     "exhaustKilowattsWhenActive": 0.125,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "AirborneCreatureLure",
@@ -125,7 +143,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "AlgaeDistillery",
@@ -141,7 +161,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 3,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "AlgaeHabitat",
@@ -157,7 +179,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Apothecary",
@@ -173,7 +197,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.125,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ArcadeMachine",
@@ -189,7 +215,9 @@
     "energyConsumptionWhenActive": 1200.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ArtifactAnalysisStation",
@@ -205,7 +233,11 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "ArtifactCargoBay",
@@ -221,7 +253,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "AstronautTrainingCenter",
@@ -237,7 +273,9 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 5,
-    "heightInCells": 5
+    "heightInCells": 5,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "AtomicGarden",
@@ -253,7 +291,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 1.0,
     "widthInCells": 4,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "AutoMiner",
@@ -269,7 +309,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Battery",
@@ -285,7 +327,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.25,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "BatteryMedium",
@@ -301,7 +345,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.25,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "BatteryModule",
@@ -317,7 +363,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "BatterySmart",
@@ -333,7 +383,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "BeachChair",
@@ -351,7 +403,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Bed",
@@ -367,7 +421,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "BiodieselEngineCluster",
@@ -383,7 +439,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 7,
-    "heightInCells": 5
+    "heightInCells": 5,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "BottleEmptierConduitGas",
@@ -399,7 +459,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "BottleEmptierConduitLiquid",
@@ -415,7 +477,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "BottleEmptier",
@@ -431,7 +495,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "BottleEmptierGas",
@@ -447,7 +513,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "BunkerDoor",
@@ -463,7 +531,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "BunkerTile",
@@ -479,7 +549,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CO2Engine",
@@ -495,7 +567,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "CO2Scrubber",
@@ -511,7 +587,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Campfire",
@@ -527,7 +605,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "Canvas",
@@ -545,7 +627,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CanvasTall",
@@ -563,7 +647,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CanvasWide",
@@ -581,7 +667,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CarpetTile",
@@ -599,7 +687,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CeilingFossilSculpture",
@@ -615,7 +705,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "CeilingLight",
@@ -631,7 +725,9 @@
     "energyConsumptionWhenActive": 10.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Checkpoint",
@@ -647,7 +743,9 @@
     "energyConsumptionWhenActive": 10.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ChemicalRefinery",
@@ -665,7 +763,9 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Chlorinator",
@@ -681,7 +781,9 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 1.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingAlterationStation",
@@ -697,7 +799,9 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClothingFabricator",
@@ -713,7 +817,9 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClusterTelescope",
@@ -729,7 +835,11 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.125,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "ClusterTelescopeEnclosed",
@@ -745,7 +855,11 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.125,
     "widthInCells": 4,
-    "heightInCells": 6
+    "heightInCells": 6,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "CometDetector",
@@ -761,7 +875,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Compost",
@@ -777,7 +893,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.125,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasConduitDiseaseSensor",
@@ -795,7 +913,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidConduitDiseaseSensor",
@@ -813,7 +933,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasConduitElementSensor",
@@ -829,7 +951,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidConduitElementSensor",
@@ -845,7 +969,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasConduitTemperatureSensor",
@@ -861,7 +987,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidConduitTemperatureSensor",
@@ -877,7 +1005,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ContactConductivePipeBridge",
@@ -893,7 +1023,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CookingStation",
@@ -909,7 +1041,9 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 3,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CornerMoulding",
@@ -925,7 +1059,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CraftingTable",
@@ -941,7 +1077,9 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CreatureDeliveryPoint",
@@ -957,7 +1095,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CreatureFeeder",
@@ -973,7 +1113,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CreatureTrap",
@@ -989,7 +1131,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CrewCapsule",
@@ -1005,7 +1149,9 @@
     "energyConsumptionWhenActive": 10.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 19
+    "heightInCells": 19,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CritterCondo",
@@ -1023,7 +1169,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CritterDropOff",
@@ -1039,7 +1187,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CritterPickUp",
@@ -1055,7 +1205,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CrownMoulding",
@@ -1071,7 +1223,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "DLC1CosmicResearchCenter",
@@ -1087,7 +1241,11 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 4,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "DataMiner",
@@ -1103,7 +1261,11 @@
     "energyConsumptionWhenActive": 1000.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 3,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "DecontaminationShower",
@@ -1121,7 +1283,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "Deepfryer",
@@ -1137,7 +1303,11 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 2.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "DevGenerator",
@@ -1153,7 +1323,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "DevHEPSpawner",
@@ -1169,7 +1341,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "DevHeater",
@@ -1185,7 +1361,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "DevLifeSupport",
@@ -1201,7 +1379,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "DevLightGenerator",
@@ -1217,7 +1397,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "DevPumpGas",
@@ -1233,7 +1415,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "DevPumpLiquid",
@@ -1249,7 +1433,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "DevPumpSolid",
@@ -1265,7 +1451,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "DevRadiationGenerator",
@@ -1281,7 +1469,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "DiamondPress",
@@ -1297,7 +1487,11 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 5
+    "heightInCells": 5,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "DiningTable",
@@ -1313,7 +1507,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "DoctorStation",
@@ -1329,7 +1525,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Door",
@@ -1345,7 +1543,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggCracker",
@@ -1361,7 +1561,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EggIncubator",
@@ -1377,7 +1579,9 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ElectrobankCharger",
@@ -1393,7 +1597,11 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "Electrolyzer",
@@ -1409,7 +1617,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.25,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EspressoMachine",
@@ -1425,7 +1635,9 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "EthanolDistillery",
@@ -1441,7 +1653,9 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 4,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ExobaseHeadquarters",
@@ -1457,7 +1671,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "ExteriorWall",
@@ -1473,7 +1691,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FabricatedWoodMaker",
@@ -1489,7 +1709,9 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 0.25,
     "widthInCells": 4,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FacilityBackWallWindow",
@@ -1505,7 +1727,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 6
+    "heightInCells": 6,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FarmStation",
@@ -1521,7 +1745,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FarmTile",
@@ -1537,7 +1763,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FertilizerMaker",
@@ -1553,7 +1781,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 1.0,
     "widthInCells": 4,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FirePole",
@@ -1569,7 +1799,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FishDeliveryPoint",
@@ -1585,7 +1817,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FishFeeder",
@@ -1601,7 +1835,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FishPickUp",
@@ -1617,7 +1853,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FishTrap",
@@ -1633,7 +1871,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FloorLamp",
@@ -1649,7 +1889,9 @@
     "energyConsumptionWhenActive": 8.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FloorSwitch",
@@ -1665,7 +1907,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FlowerVase",
@@ -1681,7 +1925,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FlowerVaseHanging",
@@ -1697,7 +1943,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FlowerVaseHangingFancy",
@@ -1713,7 +1961,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FlowerVaseWall",
@@ -1729,7 +1979,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FlushToilet",
@@ -1745,7 +1997,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.25,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FlyingCreatureBait",
@@ -1763,7 +2017,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FoodDehydrator",
@@ -1781,7 +2037,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FoodRehydrator",
@@ -1799,7 +2057,9 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FossilDig",
@@ -1815,7 +2075,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FossilSculpture",
@@ -1831,7 +2093,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "Gantry",
@@ -1847,7 +2113,9 @@
     "energyConsumptionWhenActive": 1200.0,
     "exhaustKilowattsWhenActive": 1.0,
     "widthInCells": 6,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasBottler",
@@ -1863,7 +2131,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasCargoBayCluster",
@@ -1879,7 +2149,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 5
+    "heightInCells": 5,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasCargoBaySmall",
@@ -1895,7 +2169,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasConduitBridge",
@@ -1911,7 +2189,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasConduit",
@@ -1927,7 +2207,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasConduitOverflow",
@@ -1943,7 +2225,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasConduitPreferentialFlow",
@@ -1959,7 +2243,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasConduitRadiant",
@@ -1975,7 +2261,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasFilter",
@@ -1991,7 +2279,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasLimitValve",
@@ -2009,7 +2299,9 @@
     "energyConsumptionWhenActive": 10.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasLogicValve",
@@ -2025,7 +2317,9 @@
     "energyConsumptionWhenActive": 10.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasMiniPump",
@@ -2041,7 +2335,9 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasPermeableMembrane",
@@ -2057,7 +2353,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasPump",
@@ -2073,7 +2371,9 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasReservoir",
@@ -2089,7 +2389,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasValve",
@@ -2105,7 +2407,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasVent",
@@ -2121,7 +2425,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GasVentHighPressure",
@@ -2139,7 +2445,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Generator",
@@ -2155,7 +2463,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 8.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GenericFabricator",
@@ -2171,7 +2481,9 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GeneticAnalysisStation",
@@ -2187,7 +2499,11 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 7,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "GeoTuner",
@@ -2203,12 +2519,14 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 4,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GlassCeilingLight",
     "name": "<link=\"GLASSCEILINGLIGHT\">Glass Ceiling Light</link>",
-    "description": "Light reduces Duplicant stress and is required to grow certain plants.",
+    "description": "It's an attractive way to add overhead lighting in aquatic spaces.",
     "effect": "Provides <link=\"LIGHT\">Light</link> when <link=\"POWER\">Powered</link>.\n\nIncreases Duplicant workspeed within light radius.",
     "mass": [
       50.0
@@ -2219,7 +2537,11 @@
     "energyConsumptionWhenActive": 10.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "GlassExteriorWall",
@@ -2235,7 +2557,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "GlassForge",
@@ -2251,7 +2577,9 @@
     "energyConsumptionWhenActive": 1200.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GlassTile",
@@ -2267,7 +2595,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GourmetCookingStation",
@@ -2283,7 +2613,9 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 1.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Grave",
@@ -2299,7 +2631,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GravitasBathroomStall",
@@ -2315,7 +2649,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GravitasContainer",
@@ -2331,7 +2667,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GravitasCreatureManipulator",
@@ -2347,7 +2685,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GravitasDoor",
@@ -2363,7 +2703,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GravitasLabLight",
@@ -2379,7 +2721,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "GravitasPedestal",
@@ -2395,7 +2739,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "GunkEmptier",
@@ -2411,7 +2759,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.125,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "HEPBattery",
@@ -2427,7 +2779,11 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.25,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "HEPBridgeTile",
@@ -2443,7 +2799,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "HEPEngine",
@@ -2459,7 +2819,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 5
+    "heightInCells": 5,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "HabitatModuleMedium",
@@ -2475,7 +2839,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "HabitatModuleSmall",
@@ -2491,7 +2859,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "HandSanitizer",
@@ -2507,7 +2879,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Headquarters",
@@ -2523,7 +2897,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "HeatCompressor",
@@ -2539,7 +2915,9 @@
     "energyConsumptionWhenActive": 1600.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "HighEnergyParticleRedirector",
@@ -2555,7 +2933,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "HighEnergyParticleSpawner",
@@ -2571,7 +2953,11 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 1.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "HijackedHeadquarters",
@@ -2587,7 +2973,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 5
+    "heightInCells": 5,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "HotTub",
@@ -2605,7 +2993,9 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 1.0,
     "widthInCells": 5,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "HydrogenEngineCluster",
@@ -2621,7 +3011,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 7,
-    "heightInCells": 5
+    "heightInCells": 5,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "HydrogenGenerator",
@@ -2637,7 +3031,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 2.0,
     "widthInCells": 4,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "HydroponicFarm",
@@ -2653,7 +3049,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "IceCooledFan",
@@ -2669,7 +3067,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": -24.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "IceKettle",
@@ -2685,7 +3085,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 2.25,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "IceMachine",
@@ -2701,7 +3105,9 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 4.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "IceSculpture",
@@ -2717,7 +3123,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "InsulatedGasConduit",
@@ -2733,7 +3141,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "InsulatedLiquidConduit",
@@ -2749,7 +3159,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "InsulationTile",
@@ -2765,7 +3177,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ItemPedestal",
@@ -2781,7 +3195,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "JetSuitLocker",
@@ -2797,7 +3213,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "JetSuitMarker",
@@ -2813,7 +3231,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Juicer",
@@ -2829,7 +3249,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "KeroseneEngineCluster",
@@ -2845,7 +3267,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 7,
-    "heightInCells": 5
+    "heightInCells": 5,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "KeroseneEngineClusterSmall",
@@ -2861,7 +3287,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "Kiln",
@@ -2877,7 +3307,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 16.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LadderBed",
@@ -2893,7 +3325,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "Ladder",
@@ -2909,7 +3345,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LadderFast",
@@ -2925,7 +3363,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LandingBeacon",
@@ -2941,7 +3381,11 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "LargeBackwallFarm",
@@ -2959,7 +3403,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "LargeElectrobankDischarger",
@@ -2975,7 +3423,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.25,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "LaunchPad",
@@ -2991,7 +3443,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 7,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "LeadSuitLocker",
@@ -3007,7 +3463,11 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "LeadSuitMarker",
@@ -3023,7 +3483,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidBottler",
@@ -3039,7 +3503,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidCargoBayCluster",
@@ -3055,7 +3521,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 5
+    "heightInCells": 5,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidCargoBaySmall",
@@ -3071,7 +3541,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidConditioner",
@@ -3087,7 +3561,9 @@
     "energyConsumptionWhenActive": 1200.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidConduitBridge",
@@ -3103,7 +3579,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidConduit",
@@ -3119,7 +3597,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidConduitOverflow",
@@ -3135,7 +3615,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidConduitPreferentialFlow",
@@ -3151,7 +3633,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidConduitRadiant",
@@ -3167,7 +3651,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidCooledFan",
@@ -3183,7 +3669,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidFilter",
@@ -3199,7 +3687,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidFuelTankCluster",
@@ -3215,7 +3705,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 5
+    "heightInCells": 5,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidHeater",
@@ -3231,7 +3725,9 @@
     "energyConsumptionWhenActive": 960.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidLimitValve",
@@ -3249,7 +3745,9 @@
     "energyConsumptionWhenActive": 10.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidLogicValve",
@@ -3265,7 +3763,9 @@
     "energyConsumptionWhenActive": 10.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidMiniPump",
@@ -3281,7 +3781,9 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidPump",
@@ -3297,7 +3799,9 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidPumpingStation",
@@ -3313,7 +3817,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidReservoir",
@@ -3329,7 +3835,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidValve",
@@ -3345,7 +3853,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LiquidVent",
@@ -3361,7 +3871,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicAlarm",
@@ -3377,7 +3889,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicClusterLocationSensor",
@@ -3393,7 +3907,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicCounter",
@@ -3409,7 +3927,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicCritterCountSensor",
@@ -3425,7 +3945,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicDiseaseSensor",
@@ -3443,7 +3965,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicDuplicantSensor",
@@ -3459,7 +3983,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicElementSensorGas",
@@ -3475,7 +4001,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicElementSensorLiquid",
@@ -3491,7 +4019,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicGateAND",
@@ -3507,7 +4037,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicGateOR",
@@ -3523,7 +4055,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicGateXOR",
@@ -3539,7 +4073,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicGateNOT",
@@ -3555,7 +4091,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicGateBUFFER",
@@ -3571,7 +4109,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicGateFILTER",
@@ -3587,7 +4127,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicGateMultiplexer",
@@ -3603,7 +4145,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicGateDemultiplexer",
@@ -3619,7 +4163,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicHEPSensor",
@@ -3635,7 +4181,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicHammer",
@@ -3651,7 +4201,9 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicInterasteroidReceiver",
@@ -3667,7 +4219,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicInterasteroidSender",
@@ -3683,7 +4239,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicLightSensor",
@@ -3701,7 +4261,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicMemory",
@@ -3717,7 +4279,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicPowerRelay",
@@ -3733,7 +4297,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicPressureSensorGas",
@@ -3749,7 +4315,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicPressureSensorLiquid",
@@ -3765,7 +4333,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicRadiationSensor",
@@ -3781,7 +4351,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicRibbonBridge",
@@ -3797,7 +4371,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicRibbon",
@@ -3813,7 +4389,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicRibbonReader",
@@ -3829,7 +4407,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicRibbonWriter",
@@ -3845,7 +4425,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicSwitch",
@@ -3861,7 +4443,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicTemperatureSensor",
@@ -3877,7 +4461,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicTimeOfDaySensor",
@@ -3893,7 +4479,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicTimerSensor",
@@ -3909,7 +4497,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicWattageSensor",
@@ -3925,7 +4515,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicWireBridge",
@@ -3941,7 +4533,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LogicWire",
@@ -3957,7 +4551,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LonelyMinionHouse",
@@ -3973,7 +4569,9 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 6
+    "heightInCells": 6,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LonelyMailBox",
@@ -3989,7 +4587,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "LuxuryBed",
@@ -4005,7 +4605,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MachineShop",
@@ -4021,7 +4623,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ManualGenerator",
@@ -4037,7 +4641,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ManualHighEnergyParticleSpawner",
@@ -4053,7 +4659,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "ManualPressureDoor",
@@ -4069,7 +4679,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MarbleSculpture",
@@ -4085,7 +4697,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MassageTable",
@@ -4101,7 +4715,9 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.125,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MassiveHeatSink",
@@ -4117,7 +4733,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": -16.0,
     "widthInCells": 4,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MechanicalSurfboard",
@@ -4133,7 +4751,9 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MedicalCot",
@@ -4149,7 +4769,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MegaBrainTank",
@@ -4165,7 +4787,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 7,
-    "heightInCells": 7
+    "heightInCells": 7,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MercuryCeilingLight",
@@ -4181,7 +4805,11 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "MeshTile",
@@ -4197,7 +4825,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MetalRefinery",
@@ -4213,7 +4843,9 @@
     "energyConsumptionWhenActive": 1200.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MetalSculpture",
@@ -4229,7 +4861,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MetalTile",
@@ -4245,7 +4879,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MethaneGenerator",
@@ -4261,7 +4897,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 2.0,
     "widthInCells": 4,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MicrobeMusher",
@@ -4277,7 +4915,9 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MilkFatSeparator",
@@ -4293,7 +4933,9 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MilkFeeder",
@@ -4311,7 +4953,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MilkPress",
@@ -4327,7 +4971,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MilkingStation",
@@ -4345,7 +4991,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MineralDeoxidizer",
@@ -4361,7 +5009,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MiniFridge",
@@ -4379,7 +5029,11 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "MissileLauncher",
@@ -4395,7 +5049,9 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 3,
-    "heightInCells": 5
+    "heightInCells": 5,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MissileFabricator",
@@ -4411,7 +5067,9 @@
     "energyConsumptionWhenActive": 960.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MissionControlCluster",
@@ -4427,7 +5085,11 @@
     "energyConsumptionWhenActive": 960.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "ModularLaunchpadPortBridge",
@@ -4443,7 +5105,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "ModularLaunchpadPortGas",
@@ -4459,7 +5125,11 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "ModularLaunchpadPortGasUnloader",
@@ -4475,7 +5145,11 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "ModularLaunchpadPortLiquid",
@@ -4491,7 +5165,11 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "ModularLaunchpadPortLiquidUnloader",
@@ -4507,7 +5185,11 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "ModularLaunchpadPortSolid",
@@ -4523,7 +5205,11 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "ModularLaunchpadPortSolidUnloader",
@@ -4539,7 +5225,11 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "MonumentBottom",
@@ -4557,7 +5247,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 5
+    "heightInCells": 5,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MonumentMiddle",
@@ -4577,7 +5269,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 5
+    "heightInCells": 5,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MonumentTop",
@@ -4597,7 +5291,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 5
+    "heightInCells": 5,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MorbRoverMaker",
@@ -4613,7 +5309,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MouldingTile",
@@ -4629,7 +5327,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "MultiMinionDiningTable",
@@ -4645,7 +5345,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "NoseconeBasic",
@@ -4663,7 +5365,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "NoseconeHarvest",
@@ -4681,7 +5387,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "NuclearReactor",
@@ -4697,7 +5407,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 6
+    "heightInCells": 6,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "NuclearResearchCenter",
@@ -4713,7 +5427,11 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 5,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "ObjectDispenser",
@@ -4729,7 +5447,9 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.125,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "OilChanger",
@@ -4745,7 +5465,11 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.25,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "OilRefinery",
@@ -4761,7 +5485,9 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 2.0,
     "widthInCells": 4,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "OilWellCap",
@@ -4777,7 +5503,9 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "OrbitalCargoModule",
@@ -4793,7 +5521,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "OrbitalResearchCenter",
@@ -4809,7 +5541,11 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.125,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "OreScrubber",
@@ -4825,7 +5561,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Outhouse",
@@ -4841,7 +5579,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.25,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "OxidizerTankCluster",
@@ -4857,7 +5597,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 5
+    "heightInCells": 5,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "OxidizerTankLiquidCluster",
@@ -4873,7 +5617,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "OxygenMaskLocker",
@@ -4889,7 +5637,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "OxygenMaskMarker",
@@ -4905,7 +5655,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "OxygenMaskStation",
@@ -4921,7 +5673,9 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "OxyliteRefinery",
@@ -4939,7 +5693,9 @@
     "energyConsumptionWhenActive": 1200.0,
     "exhaustKilowattsWhenActive": 8.0,
     "widthInCells": 3,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Oxysconce",
@@ -4955,7 +5711,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "POIBunkerExteriorDoor",
@@ -4971,7 +5731,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "POIDlc2ShowroomDoor",
@@ -4987,7 +5749,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "POIDoorInternal",
@@ -5003,7 +5767,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "POIFacilityDoor",
@@ -5019,7 +5785,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ParkSign",
@@ -5035,7 +5803,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "PeatGenerator",
@@ -5051,7 +5821,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 4.0,
     "widthInCells": 3,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "PetroleumGenerator",
@@ -5067,7 +5841,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 4.0,
     "widthInCells": 3,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Phonobox",
@@ -5083,7 +5859,9 @@
     "energyConsumptionWhenActive": 960.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "PioneerModule",
@@ -5099,7 +5877,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "PixelPack",
@@ -5117,7 +5899,9 @@
     "energyConsumptionWhenActive": 10.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "PlanterBox",
@@ -5133,7 +5917,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "PlasticTile",
@@ -5149,7 +5935,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Polymerizer",
@@ -5165,7 +5953,9 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "PowerControlStation",
@@ -5181,7 +5971,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "PowerTransformer",
@@ -5197,7 +5989,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "PowerTransformerSmall",
@@ -5213,7 +6007,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "PressureDoor",
@@ -5229,7 +6025,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "PressureSwitchGas",
@@ -5245,7 +6043,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "PressureSwitchLiquid",
@@ -5261,11 +6061,13 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "PropBeachChair",
-    "name": "<link=\"PROPBEACHCHAIR\">Tattered Beach Chair</link>",
+    "name": "<link=\"BEACHCHAIR\">Tattered Beach Chair</link>",
     "description": "This Beach Chair has been worn down by many cycles of use and relentless exposure to the elements. Still comfortable, even if it creaks and moans with even the slightest movement.",
     "effect": "Duplicants can relax by lounging in <link=\"LIGHT\">Sunlight</link>.\n\nIncreases Duplicant <link=\"MORALE\">Morale</link>.",
     "mass": [
@@ -5279,7 +6081,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "PropGravitasLabWall",
@@ -5295,7 +6101,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "PropGravitasLabWindow",
@@ -5311,7 +6119,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "PropGravitasLabWindowHorizontal",
@@ -5327,7 +6137,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "PropGravitasWall",
@@ -5343,7 +6157,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "PropGravitasWallPurple",
@@ -5359,7 +6175,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "PropGravitasWallPurpleWhiteDiagonal",
@@ -5375,7 +6193,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RadiationLight",
@@ -5391,7 +6211,11 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RailGun",
@@ -5407,7 +6231,11 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 5,
-    "heightInCells": 6
+    "heightInCells": 6,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RailGunPayloadOpener",
@@ -5423,7 +6251,11 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RanchStation",
@@ -5439,7 +6271,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RationBox",
@@ -5455,13 +6289,15 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ReefGenerator",
     "name": "<link=\"REEFGENERATOR\">Tidal Turbine</link>",
     "description": "Enables a colony to run on clean energy.",
-    "effect": "Converts the kinetic energy from a <link=\"REEFGEYSER\">Tidal Spring</link> below it into electrical <link=\"POWER\">Power</link>.",
+    "effect": "Converts the kinetic energy from a <link=\"SMALLREEFGEYSER\">Tidal Spring</link> below it into electrical <link=\"POWER\">Power</link>.",
     "mass": [
       800.0,
       1.0
@@ -5473,7 +6309,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "Refrigerator",
@@ -5489,7 +6329,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RemoteWorkTerminal",
@@ -5505,7 +6347,11 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RemoteWorkerDock",
@@ -5521,7 +6367,11 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "ResearchCenter",
@@ -5537,7 +6387,9 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.125,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ResearchClusterModule",
@@ -5553,7 +6405,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "ResetSkillsStation",
@@ -5569,7 +6425,9 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RoboPilotModule",
@@ -5585,7 +6443,12 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": [
+      "EXPANSION1_ID",
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RockCrusher",
@@ -5601,7 +6464,9 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RocketControlStation",
@@ -5617,7 +6482,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RocketEnvelopeWindowTile",
@@ -5633,7 +6502,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RocketInteriorGasInput",
@@ -5649,7 +6520,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RocketInteriorGasInputPort",
@@ -5665,7 +6540,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RocketInteriorGasOutput",
@@ -5681,7 +6560,11 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RocketInteriorGasOutputPort",
@@ -5697,7 +6580,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RocketInteriorLiquidInput",
@@ -5713,7 +6600,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RocketInteriorLiquidInputPort",
@@ -5729,7 +6620,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RocketInteriorLiquidOutput",
@@ -5745,7 +6640,11 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RocketInteriorLiquidOutputPort",
@@ -5761,7 +6660,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RocketInteriorPowerPlug",
@@ -5777,7 +6680,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RocketInteriorSolidInput",
@@ -5793,7 +6700,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RocketInteriorSolidOutput",
@@ -5809,7 +6720,11 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RocketWallTile",
@@ -5825,7 +6740,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RoleStation",
@@ -5841,7 +6760,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "RubberMaker",
@@ -5857,7 +6778,11 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 1.0,
     "widthInCells": 3,
-    "heightInCells": 2
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "RustDeoxidizer",
@@ -5873,7 +6798,9 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.125,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Sauna",
@@ -5891,7 +6818,9 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ScannerModule",
@@ -5909,7 +6838,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 5
+    "heightInCells": 5,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "ScoutModule",
@@ -5925,7 +6858,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "Sculpture",
@@ -5941,7 +6878,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "ShearingStation",
@@ -5957,7 +6896,9 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.125,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Shelf",
@@ -5973,7 +6914,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Shower",
@@ -5989,7 +6932,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.25,
     "widthInCells": 2,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SludgePress",
@@ -6005,7 +6950,11 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "SmallElectrobankDischarger",
@@ -6021,7 +6970,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.125,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "SmallOxidizerTank",
@@ -6037,7 +6990,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "SmallSculpture",
@@ -6053,7 +7010,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Smoker",
@@ -6069,7 +7028,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 1.0,
     "widthInCells": 4,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "SnowTile",
@@ -6085,7 +7048,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "SodaFountain",
@@ -6101,7 +7068,9 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SolarPanel",
@@ -6117,7 +7086,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 7,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SolarPanelModule",
@@ -6133,7 +7104,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "CargoBayCluster",
@@ -6149,7 +7124,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 5
+    "heightInCells": 5,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "SolidCargoBaySmall",
@@ -6165,7 +7144,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "SolidConduitBridge",
@@ -6181,7 +7164,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SolidConduit",
@@ -6197,7 +7182,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SolidConduitInbox",
@@ -6213,7 +7200,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SolidConduitOutbox",
@@ -6229,7 +7218,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SolidConduitDiseaseSensor",
@@ -6247,7 +7238,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SolidConduitElementSensor",
@@ -6263,7 +7256,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SolidConduitTemperatureSensor",
@@ -6279,7 +7274,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SolidFilter",
@@ -6295,7 +7292,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SolidLimitValve",
@@ -6313,7 +7312,9 @@
     "energyConsumptionWhenActive": 10.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SolidLogicValve",
@@ -6329,7 +7330,9 @@
     "energyConsumptionWhenActive": 10.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SolidTransferArm",
@@ -6345,7 +7348,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SolidVent",
@@ -6361,7 +7366,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SpaceHeater",
@@ -6377,7 +7384,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SpecialCargoBayCluster",
@@ -6393,7 +7402,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "SpiceGrinder",
@@ -6409,7 +7422,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "StaterpillarGenerator",
@@ -6425,7 +7440,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 2.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "StaterpillarGasConnector",
@@ -6441,7 +7460,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "StaterpillarLiquidConnector",
@@ -6457,7 +7480,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "SteamEngineCluster",
@@ -6473,7 +7500,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 7,
-    "heightInCells": 5
+    "heightInCells": 5,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "SteamTurbine",
@@ -6491,7 +7522,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SteamTurbine2",
@@ -6509,7 +7542,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "StorageLocker",
@@ -6525,7 +7560,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "StorageLockerSmart",
@@ -6541,7 +7578,9 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.125,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "StorageTile",
@@ -6559,7 +7598,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SublimationStation",
@@ -6575,7 +7616,11 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.5,
     "widthInCells": 2,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "SugarEngine",
@@ -6591,7 +7636,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitFabricator",
@@ -6607,7 +7656,9 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitLocker",
@@ -6623,7 +7674,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SuitMarker",
@@ -6639,7 +7692,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SunLamp",
@@ -6657,7 +7712,9 @@
     "energyConsumptionWhenActive": 960.0,
     "exhaustKilowattsWhenActive": 1.0,
     "widthInCells": 2,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SupermaterialRefinery",
@@ -6673,7 +7730,9 @@
     "energyConsumptionWhenActive": 1600.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 5
+    "heightInCells": 5,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "SushiBar",
@@ -6689,7 +7748,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "SweepBotStation",
@@ -6705,7 +7768,9 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Switch",
@@ -6721,7 +7786,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Telephone",
@@ -6737,7 +7804,11 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "TeleportalPad",
@@ -6753,7 +7824,9 @@
     "energyConsumptionWhenActive": 1600.0,
     "exhaustKilowattsWhenActive": 16.0,
     "widthInCells": 4,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "TemperatureControlledSwitch",
@@ -6769,7 +7842,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "TemporalTearOpener",
@@ -6785,7 +7860,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "ThermalBlock",
@@ -6801,7 +7880,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Tile",
@@ -6817,7 +7898,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "TilePOI",
@@ -6833,7 +7916,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "TravelTube",
@@ -6849,7 +7934,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "TravelTubeEntrance",
@@ -6865,7 +7952,9 @@
     "energyConsumptionWhenActive": 960.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "TravelTubeWallBridge",
@@ -6881,7 +7970,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "UnderwaterCritterCondo",
@@ -6897,7 +7988,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "UnderwaterBreathingStation",
@@ -6913,7 +8006,11 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.125,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "UnderwaterMilkFeeder",
@@ -6931,7 +8028,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "UnderwaterMilkingStation",
@@ -6949,7 +8048,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "UnderwaterRanchStation",
@@ -6965,7 +8068,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "UnderwaterShearingStation",
@@ -6981,7 +8088,11 @@
     "energyConsumptionWhenActive": 60.0,
     "exhaustKilowattsWhenActive": 0.125,
     "widthInCells": 3,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "UnderwaterVentDrill",
@@ -6999,7 +8110,11 @@
     "energyConsumptionWhenActive": 960.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "UraniumCentrifuge",
@@ -7017,7 +8132,11 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 0.125,
     "widthInCells": 3,
-    "heightInCells": 4
+    "heightInCells": 4,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "VerticalWindTunnel",
@@ -7033,7 +8152,9 @@
     "energyConsumptionWhenActive": 1200.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 5,
-    "heightInCells": 6
+    "heightInCells": 6,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "WallToilet",
@@ -7051,7 +8172,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.25,
     "widthInCells": 1,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "WarpConduitReceiver",
@@ -7067,7 +8192,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "WarpConduitSender",
@@ -7083,7 +8212,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "WashBasin",
@@ -7099,7 +8232,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "WashSink",
@@ -7115,7 +8250,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "WaterCooler",
@@ -7131,7 +8268,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "WaterPurifier",
@@ -7147,7 +8286,9 @@
     "energyConsumptionWhenActive": 120.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "WideFarmTile",
@@ -7165,7 +8306,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "WireBridge",
@@ -7181,7 +8326,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "WireBridgeHighWattage",
@@ -7197,7 +8344,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Wire",
@@ -7213,7 +8362,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "HighWattageWire",
@@ -7229,7 +8380,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "WireRefinedBridge",
@@ -7245,7 +8398,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "WireRefinedBridgeHighWattage",
@@ -7261,7 +8416,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "WireRefined",
@@ -7277,7 +8434,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "WireRefinedHighWattage",
@@ -7293,7 +8452,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "WireRubberBridge",
@@ -7311,7 +8472,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "WireRubber",
@@ -7329,7 +8494,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "WoodGasGenerator",
@@ -7345,7 +8514,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 8.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "WoodSculpture",
@@ -7361,7 +8532,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "WoodStorage",
@@ -7377,7 +8552,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "WoodTile",
@@ -7393,7 +8572,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "WoodenDoor",
@@ -7409,7 +8592,11 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
   },
   {
     "id": "CreatureAirTrap",
@@ -7425,7 +8612,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Desalinator",
@@ -7441,7 +8630,9 @@
     "energyConsumptionWhenActive": 480.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 4,
-    "heightInCells": 3
+    "heightInCells": 3,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "InsulatedDoor",
@@ -7459,7 +8650,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "CreatureGroundTrap",
@@ -7475,7 +8668,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "WaterTrap",
@@ -7491,7 +8686,9 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FilteredGasPump",
@@ -7509,7 +8706,9 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "FilteredLiquidPump",
@@ -7527,7 +8726,9 @@
     "energyConsumptionWhenActive": 240.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 2,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "VacuumPump",
@@ -7545,7 +8746,9 @@
     "energyConsumptionWhenActive": 90.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 2
+    "heightInCells": 2,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   },
   {
     "id": "Scaffold",
@@ -7561,6 +8764,8 @@
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
-    "heightInCells": 1
+    "heightInCells": 1,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
   }
 ]

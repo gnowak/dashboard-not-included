@@ -14,6 +14,55 @@ export function cleanName(name) {
   return cleaned;
 }
 
+export function getDlcName(requiredDlcIds) {
+  if (!requiredDlcIds || requiredDlcIds.length === 0) return 'Base Game';
+  const dlc = requiredDlcIds[0];
+  if (dlc === 'EXPANSION1_ID') return 'Spaced Out!';
+  if (dlc === 'DLC2_ID' || dlc === 'DLC2') return 'Frosty Planet';
+  if (dlc === 'DLC3_ID' || dlc === 'DLC3') return 'Bionic Pack';
+  if (dlc === 'DLC4_ID' || dlc === 'DLC4') return 'Dartle Pack';
+  if (dlc === 'DLC5_ID' || dlc === 'DLC5') return 'Aquatic Pack';
+  return dlc.replace('_ID', '').replace('EXPANSION', 'DLC ');
+}
+
+export const DLC_DETAILS = {
+  'all': {
+    name: 'All Content',
+    date: 'Full Colony Catalog',
+    desc: 'Displaying the complete compiled archives of all items, elements, critters, and foods across the base game and all expansion packs.'
+  },
+  'Base Game': {
+    name: 'Base Game Only',
+    date: 'Released May 2019',
+    desc: 'The classic Oxygen Not Included experience featuring the core colony simulation, basic rocketry, and standard biomes.'
+  },
+  'Spaced Out!': {
+    name: 'Spaced Out!',
+    date: 'Released December 2021',
+    desc: 'The first major expansion, which overhauled rocketry and introduced multiple smaller planetoids, radiation mechanics, and nuclear power.'
+  },
+  'Frosty Planet': {
+    name: 'The Frosty Planet Pack',
+    date: 'Released July 2024',
+    desc: 'Introduced cold-weather biomes, new flora and fauna (like Floxes and Bammoths), and mechanics centered around freezing temperatures and nectar.'
+  },
+  'Bionic Pack': {
+    name: 'The Bionic Booster Pack',
+    date: 'Released December 2024',
+    desc: 'Added Bionic duplicants that consume electricity instead of food or oxygen, offering new colony management options centered heavily on power generation.'
+  },
+  'Dartle Pack': {
+    name: 'The Prehistoric Planet Pack',
+    date: 'Released June 2025',
+    desc: 'Brought prehistoric-themed biomes, new critters, and a massive meteor threat that colonies must prepare for and survive.'
+  },
+  'Aquatic Pack': {
+    name: 'Aquatic Planet Pack',
+    date: 'Upcoming / May 2026 Public Beta',
+    desc: 'Currently in public beta testing as of May 2026, this pack introduces water-heavy biomes, swimming mechanics, new underwater critters (like Beakons and Blowters), and tidal spring geysers.'
+  }
+};
+
 export function DatabaseExplorer({ 
   foods = [], 
   geysers = [], 
@@ -32,6 +81,7 @@ export function DatabaseExplorer({
   const [expandedCards, setExpandedCards] = useState({});
   const [foodSort, setFoodSort] = useState('quality_desc');
   const [foodFilter, setFoodFilter] = useState('all');
+  const [dlcFilter, setDlcFilter] = useState('all');
 
   const toggleExpand = (itemId) => {
     setExpandedCards(prev => ({ ...prev, [itemId]: !prev[itemId] }));
@@ -46,12 +96,18 @@ export function DatabaseExplorer({
   const filteredCritters = useMemo(() => critters.filter(c => c.isRanchable !== false), [critters]);
   const filteredPlants = useMemo(() => plants.filter(p => p.isFarmable !== false), [plants]);
 
-  const subTabs = [
-    { id: 'foods', name: 'Foods', count: foods.length, icon: Flame },
-    { id: 'critters', name: 'All Critters', count: filteredCritters.length, icon: HelpCircle },
-    { id: 'plants', name: 'All Plants', count: filteredPlants.length, icon: HelpCircle },
-    { id: 'elements', name: 'Resources', count: elements.length, icon: Scale },
-  ];
+  // Helper to filter list by DLC for tab count telemetry
+  const filterByDlc = (items) => {
+    if (dlcFilter === 'all') return items;
+    return items.filter(item => getDlcName(item.requiredDlcIds) === dlcFilter);
+  };
+
+  const subTabs = useMemo(() => [
+    { id: 'foods', name: 'Foods', count: filterByDlc(foods).length, icon: Flame },
+    { id: 'critters', name: 'All Critters', count: filterByDlc(filteredCritters).length, icon: HelpCircle },
+    { id: 'plants', name: 'All Plants', count: filterByDlc(filteredPlants).length, icon: HelpCircle },
+    { id: 'elements', name: 'Resources', count: filterByDlc(elements).length, icon: Scale },
+  ], [foods.length, filteredCritters.length, filteredPlants.length, elements.length, dlcFilter]);
 
   const activeList = useMemo(() => {
     switch (subTab) {
@@ -65,6 +121,11 @@ export function DatabaseExplorer({
 
   const filteredList = useMemo(() => {
     let list = activeList;
+
+    // Apply DLC Filter
+    if (dlcFilter !== 'all') {
+      list = list.filter(item => getDlcName(item.requiredDlcIds) === dlcFilter);
+    }
 
     // Apply Food Filters
     if (subTab === 'foods') {
@@ -98,7 +159,7 @@ export function DatabaseExplorer({
     }
 
     return list;
-  }, [activeList, searchQuery, subTab, foodFilter, foodSort, recipes]);
+  }, [activeList, searchQuery, subTab, foodFilter, foodSort, dlcFilter, recipes]);
 
   // Utility to safely extract & format Kelvin/Celsius temperatures
   const formatTemp = (tempObj, keyPrefix) => {
@@ -173,6 +234,28 @@ export function DatabaseExplorer({
 
         {/* Search and Filters */}
         <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
+          <select 
+            value={dlcFilter} 
+            onChange={e => setDlcFilter(e.target.value)}
+            style={{
+              padding: '0.45rem 0.75rem',
+              fontSize: '0.8rem',
+              border: '1px solid var(--oni-panel-border)',
+              borderRadius: '4px',
+              background: 'rgba(0, 0, 0, 0.4)',
+              color: 'var(--oni-text-primary)',
+              fontFamily: 'var(--oni-font-mono)',
+              cursor: 'pointer'
+            }}
+          >
+            <option value="all">All Content (Base + DLCs)</option>
+            <option value="Base Game">Base Game Only</option>
+            <option value="Spaced Out!">Spaced Out! (DLC 1)</option>
+            <option value="Frosty Planet">Frosty Planet (DLC 2)</option>
+            <option value="Bionic Pack">Bionic Pack (DLC 3)</option>
+            <option value="Dartle Pack">Dartle Pack (DLC 4)</option>
+            <option value="Aquatic Pack">Aquatic Pack (DLC 5)</option>
+          </select>
           {subTab === 'foods' && (
             <>
               <select 
@@ -242,6 +325,43 @@ export function DatabaseExplorer({
           </div>
         </div>
       </div>
+
+      {/* Active DLC Description Banner */}
+      {dlcFilter && (
+        <div style={{
+          background: 'rgba(20, 20, 25, 0.45)',
+          border: '1px dashed var(--oni-grid-line)',
+          borderRadius: '4px',
+          padding: '0.65rem 0.85rem',
+          marginBottom: '1.25rem',
+          fontSize: '0.75rem',
+          lineHeight: '1.4'
+        }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.25rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+            <span style={{ 
+              fontWeight: 'bold', 
+              color: dlcFilter === 'all' || dlcFilter === 'Base Game' ? 'var(--oni-text-primary)' : 'var(--oni-accent-oxygen)',
+              textTransform: 'uppercase',
+              letterSpacing: '0.05em',
+              fontFamily: 'var(--oni-font-mono)',
+              fontSize: '0.8rem'
+            }}>
+              {DLC_DETAILS[dlcFilter]?.name || dlcFilter}
+            </span>
+            <span style={{ 
+              fontFamily: 'var(--oni-font-mono)', 
+              color: 'var(--oni-text-muted)',
+              fontSize: '0.7rem',
+              fontWeight: 'bold'
+            }}>
+              {DLC_DETAILS[dlcFilter]?.date}
+            </span>
+          </div>
+          <div style={{ color: 'var(--oni-text-muted)', fontFamily: 'var(--oni-font-sans)', fontStyle: 'italic' }}>
+            {DLC_DETAILS[dlcFilter]?.desc}
+          </div>
+        </div>
+      )}
 
       {/* Sub Tabs Bar */}
       <div style={{ 
@@ -362,6 +482,12 @@ export function DatabaseExplorer({
               const cleaned = cleanName(item.name);
               const isExpanded = true;
               
+              const dlcName = getDlcName(item.requiredDlcIds);
+              const isBaseGame = dlcName === 'Base Game';
+              const dlcBadgeColor = isBaseGame ? 'rgba(255, 255, 255, 0.08)' : 'rgba(127, 191, 255, 0.1)';
+              const dlcTextColor = isBaseGame ? 'var(--oni-text-muted)' : 'var(--oni-accent-oxygen)';
+              const dlcBorderColor = isBaseGame ? 'rgba(255, 255, 255, 0.06)' : 'rgba(127, 191, 255, 0.2)';
+
               return (
                 <div 
                   key={item.id} 
@@ -374,7 +500,24 @@ export function DatabaseExplorer({
                     borderTop: '3px solid var(--oni-panel-border)',
                   }}
                 >
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', width: '100%', flexShrink: 0 }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', width: '100%', flexShrink: 0 }}>
+                    {/* DLC Badge Pill */}
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                      <span style={{
+                        fontSize: '0.6rem',
+                        fontWeight: 'bold',
+                        textTransform: 'uppercase',
+                        padding: '0.1rem 0.35rem',
+                        borderRadius: '3px',
+                        background: dlcBadgeColor,
+                        color: dlcTextColor,
+                        border: `1px solid ${dlcBorderColor}`,
+                        fontFamily: 'var(--oni-font-mono)',
+                        letterSpacing: '0.05em'
+                      }}>
+                        {dlcName}
+                      </span>
+                    </div>
                     {/* Header: Name and specific Badge */}
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.6rem', gap: '0.5rem' }}>
                       <h4 style={{ 
