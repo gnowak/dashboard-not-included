@@ -22,6 +22,7 @@ export function DatabaseExplorer({
   critters = [], 
   plants = [], 
   elements = [],
+  recipes = [],
   idToNameMap = {},
   loading = false, 
   error = null 
@@ -29,6 +30,8 @@ export function DatabaseExplorer({
   const [subTab, setSubTab] = useState('foods');
   const [searchQuery, setSearchQuery] = useState('');
   const [expandedCards, setExpandedCards] = useState({});
+  const [foodSort, setFoodSort] = useState('quality_desc');
+  const [foodFilter, setFoodFilter] = useState('all');
 
   const toggleExpand = (itemId) => {
     setExpandedCards(prev => ({ ...prev, [itemId]: !prev[itemId] }));
@@ -61,15 +64,41 @@ export function DatabaseExplorer({
   }, [subTab, foods, filteredCritters, filteredPlants, elements]);
 
   const filteredList = useMemo(() => {
+    let list = activeList;
+
+    // Apply Food Filters
+    if (subTab === 'foods') {
+      if (foodFilter === 'prepared') {
+        list = list.filter(item => recipes.some(r => r.outputs?.some(o => o.material === item.id)));
+      } else if (foodFilter === 'raw') {
+        list = list.filter(item => !recipes.some(r => r.outputs?.some(o => o.material === item.id)));
+      }
+    }
+
     const q = searchQuery.toLowerCase().trim();
-    if (!q) return activeList;
-    return activeList.filter(item => {
-      const name = cleanName(item.name).toLowerCase();
-      const id = (item.id || '').toLowerCase();
-      const prefab = (item.prefabId || '').toLowerCase();
-      return name.includes(q) || id.includes(q) || prefab.includes(q);
-    });
-  }, [activeList, searchQuery]);
+    if (q) {
+      list = list.filter(item => {
+        const name = cleanName(item.name).toLowerCase();
+        const id = (item.id || '').toLowerCase();
+        const prefab = (item.prefabId || '').toLowerCase();
+        return name.includes(q) || id.includes(q) || prefab.includes(q);
+      });
+    }
+
+    // Apply Food Sorting
+    if (subTab === 'foods') {
+      list = [...list].sort((a, b) => {
+        if (foodSort === 'name_asc') return cleanName(a.name).localeCompare(cleanName(b.name));
+        if (foodSort === 'quality_desc') return (b.quality ?? 0) - (a.quality ?? 0);
+        if (foodSort === 'quality_asc') return (a.quality ?? 0) - (b.quality ?? 0);
+        if (foodSort === 'cals_desc') return (b.caloriesPerUnit ?? 0) - (a.caloriesPerUnit ?? 0);
+        if (foodSort === 'spoil_desc') return (b.spoilTimeCycles ?? 0) - (a.spoilTimeCycles ?? 0);
+        return 0;
+      });
+    }
+
+    return list;
+  }, [activeList, searchQuery, subTab, foodFilter, foodSort, recipes]);
 
   // Utility to safely extract & format Kelvin/Celsius temperatures
   const formatTemp = (tempObj, keyPrefix) => {
@@ -142,31 +171,75 @@ export function DatabaseExplorer({
           </p>
         </div>
 
-        {/* Search Bar */}
-        <div style={{ position: 'relative', minWidth: '260px' }}>
-          <Search size={16} style={{ 
-            position: 'absolute', 
-            left: '0.75rem', 
-            top: '50%', 
-            transform: 'translateY(-50%)', 
-            color: 'var(--oni-text-muted)' 
-          }} />
-          <input 
-            type="text" 
-            placeholder={`Search ${subTabs.find(t => t.id === subTab)?.name}...`}
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            style={{ 
-              width: '100%', 
-              padding: '0.45rem 1rem 0.45rem 2.2rem', 
-              fontSize: '0.85rem',
-              border: '1px solid var(--oni-panel-border)',
-              borderRadius: '4px',
-              background: 'rgba(0, 0, 0, 0.4)',
-              color: 'var(--oni-text-primary)',
-              fontFamily: 'var(--oni-font-mono)'
-            }}
-          />
+        {/* Search and Filters */}
+        <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
+          {subTab === 'foods' && (
+            <>
+              <select 
+                value={foodFilter} 
+                onChange={e => setFoodFilter(e.target.value)}
+                style={{
+                  padding: '0.45rem 0.75rem',
+                  fontSize: '0.8rem',
+                  border: '1px solid var(--oni-panel-border)',
+                  borderRadius: '4px',
+                  background: 'rgba(0, 0, 0, 0.4)',
+                  color: 'var(--oni-text-primary)',
+                  fontFamily: 'var(--oni-font-mono)',
+                  cursor: 'pointer'
+                }}
+              >
+                <option value="all">All Foods</option>
+                <option value="prepared">Prepared (Has Recipe)</option>
+                <option value="raw">Raw / Foraged</option>
+              </select>
+              <select 
+                value={foodSort} 
+                onChange={e => setFoodSort(e.target.value)}
+                style={{
+                  padding: '0.45rem 0.75rem',
+                  fontSize: '0.8rem',
+                  border: '1px solid var(--oni-panel-border)',
+                  borderRadius: '4px',
+                  background: 'rgba(0, 0, 0, 0.4)',
+                  color: 'var(--oni-text-primary)',
+                  fontFamily: 'var(--oni-font-mono)',
+                  cursor: 'pointer'
+                }}
+              >
+                <option value="quality_desc">Sort: Quality (High to Low)</option>
+                <option value="quality_asc">Sort: Quality (Low to High)</option>
+                <option value="cals_desc">Sort: Calories (High to Low)</option>
+                <option value="spoil_desc">Sort: Shelf Life (Long to Short)</option>
+                <option value="name_asc">Sort: Name (A-Z)</option>
+              </select>
+            </>
+          )}
+          <div style={{ position: 'relative', minWidth: '260px' }}>
+            <Search size={16} style={{ 
+              position: 'absolute', 
+              left: '0.75rem', 
+              top: '50%', 
+              transform: 'translateY(-50%)', 
+              color: 'var(--oni-text-muted)' 
+            }} />
+            <input 
+              type="text" 
+              placeholder={`Search ${subTabs.find(t => t.id === subTab)?.name}...`}
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              style={{ 
+                width: '100%', 
+                padding: '0.45rem 1rem 0.45rem 2.2rem', 
+                fontSize: '0.85rem',
+                border: '1px solid var(--oni-panel-border)',
+                borderRadius: '4px',
+                background: 'rgba(0, 0, 0, 0.4)',
+                color: 'var(--oni-text-primary)',
+                fontFamily: 'var(--oni-font-mono)'
+              }}
+            />
+          </div>
         </div>
       </div>
 
@@ -595,6 +668,27 @@ export function DatabaseExplorer({
                                 </span>
                               </div>
                             )}
+
+                            {/* Recipe Information */}
+                            {recipes.filter(r => r.outputs?.some(o => o.material === item.id)).map((recipe, idx) => (
+                              <div key={recipe.id || idx} style={{ marginTop: '0.3rem', borderTop: '1px dashed var(--oni-grid-line)', paddingTop: '0.4rem' }}>
+                                <div style={{ fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', color: 'var(--oni-accent-oxygen)', marginBottom: '0.2rem' }}>
+                                  Recipe ({cleanName(recipe.fabricators?.[0] || 'Cooking Station')})
+                                </div>
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.15rem' }}>
+                                  {recipe.inputs?.map((ing, i) => (
+                                    <div key={i} style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', fontFamily: 'var(--oni-font-mono)', color: 'var(--oni-text-primary)' }}>
+                                      <span>Input: {idToNameMap[ing.material] || cleanName(ing.material)}</span>
+                                      <span>{ing.amount} units</span>
+                                    </div>
+                                  ))}
+                                  <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', fontFamily: 'var(--oni-font-mono)', color: 'var(--oni-text-muted)', marginTop: '0.1rem' }}>
+                                    <span>Production Time:</span>
+                                    <span>{recipe.time}s</span>
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
                           </div>
                         )}
                       </div>

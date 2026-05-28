@@ -40,6 +40,7 @@ function App() {
   const [apiEquipment, setApiEquipment] = useState([]);
   const [apiSpacePois, setApiSpacePois] = useState([]);
   const [apiElements, setApiElements] = useState([]);
+  const [apiRecipes, setApiRecipes] = useState([]);
   const [apiLoading, setApiLoading] = useState(true);
   const [apiError, setApiError] = useState(null);
 
@@ -53,7 +54,8 @@ function App() {
       { name: 'geysers', set: setApiGeysers },
       { name: 'equipment', set: setApiEquipment },
       { name: 'space_pois', set: setApiSpacePois },
-      { name: 'elements', set: setApiElements }
+      { name: 'elements', set: setApiElements },
+      { name: 'recipes', set: setApiRecipes }
     ];
 
     async function fetchAll() {
@@ -406,6 +408,7 @@ function App() {
               critters={apiCritters}
               plants={apiPlants}
               elements={apiElements}
+              recipes={apiRecipes}
               idToNameMap={idToNameMap}
               loading={apiLoading}
               error={apiError}
