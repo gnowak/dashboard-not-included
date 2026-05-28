@@ -72,6 +72,7 @@ export function DatabaseExplorer({
   plants = [], 
   elements = [],
   recipes = [],
+  buildings = [],
   idToNameMap = {},
   loading = false, 
   error = null 
@@ -82,15 +83,22 @@ export function DatabaseExplorer({
   const [foodSort, setFoodSort] = useState('quality_desc');
   const [foodFilter, setFoodFilter] = useState('all');
   const [dlcFilter, setDlcFilter] = useState('all');
+  const [showDlcDesc, setShowDlcDesc] = useState(false);
+  const [expandedRecipes, setExpandedRecipes] = useState({});
 
   const toggleExpand = (itemId) => {
     setExpandedCards(prev => ({ ...prev, [itemId]: !prev[itemId] }));
+  };
+
+  const toggleExpandRecipe = (key) => {
+    setExpandedRecipes(prev => ({ ...prev, [key]: !prev[key] }));
   };
 
   const handleSubTabChange = (tabId) => {
     setSubTab(tabId);
     setSearchQuery('');
     setExpandedCards({});
+    setExpandedRecipes({});
   };
 
   const filteredCritters = useMemo(() => critters.filter(c => c.isRanchable !== false), [critters]);
@@ -107,7 +115,8 @@ export function DatabaseExplorer({
     { id: 'critters', name: 'All Critters', count: filterByDlc(filteredCritters).length, icon: HelpCircle },
     { id: 'plants', name: 'All Plants', count: filterByDlc(filteredPlants).length, icon: HelpCircle },
     { id: 'elements', name: 'Resources', count: filterByDlc(elements).length, icon: Scale },
-  ], [foods.length, filteredCritters.length, filteredPlants.length, elements.length, dlcFilter]);
+    { id: 'buildings', name: 'Buildings', count: filterByDlc(buildings).length, icon: Shield },
+  ], [foods.length, filteredCritters.length, filteredPlants.length, elements.length, buildings.length, dlcFilter]);
 
   const activeList = useMemo(() => {
     switch (subTab) {
@@ -115,9 +124,10 @@ export function DatabaseExplorer({
       case 'critters': return filteredCritters;
       case 'plants': return filteredPlants;
       case 'elements': return elements;
+      case 'buildings': return buildings;
       default: return [];
     }
-  }, [subTab, foods, filteredCritters, filteredPlants, elements]);
+  }, [subTab, foods, filteredCritters, filteredPlants, elements, buildings]);
 
   const filteredList = useMemo(() => {
     let list = activeList;
@@ -213,57 +223,125 @@ export function DatabaseExplorer({
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }}>
-      {/* Header and Search Tool Belt */}
+      {/* Consolidated Navigation, Search, and Filters Bar */}
       <div style={{ 
         display: 'flex', 
         justifyContent: 'space-between', 
         alignItems: 'center', 
-        marginBottom: '1rem',
+        marginBottom: '0.75rem',
         flexWrap: 'wrap',
-        gap: '1rem'
+        gap: '0.75rem',
+        borderBottom: '1px solid var(--oni-grid-line)',
+        paddingBottom: '0.75rem'
       }}>
-        <div>
-          <h2 style={{ color: 'var(--oni-text-primary)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <Database size={22} style={{ color: 'var(--oni-accent-oxygen)' }} />
-            Colony Database Databanks
-          </h2>
-          <p style={{ color: 'var(--oni-text-muted)', fontSize: '0.8rem', marginTop: '0.2rem' }}>
-            Live archives synchronized directly from your game DataDumps.
-          </p>
+        {/* Left Side: Sub Tabs Bar */}
+        <div style={{ 
+          display: 'flex', 
+          gap: '0.35rem', 
+          overflowX: 'auto',
+          whiteSpace: 'nowrap'
+        }} className="subtabs-scroll">
+          {subTabs.map((tab) => {
+            const Icon = tab.icon;
+            const isActive = subTab === tab.id;
+            return (
+              <button
+                key={tab.id}
+                onClick={() => handleSubTabChange(tab.id)}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                  padding: '0.35rem 0.7rem',
+                  fontSize: '0.75rem',
+                  background: isActive ? 'rgba(127, 191, 255, 0.15)' : 'rgba(0, 0, 0, 0.2)',
+                  border: `1px solid ${isActive ? 'var(--oni-accent-oxygen)' : 'var(--oni-panel-border)'}`,
+                  color: isActive ? 'var(--oni-text-primary)' : 'var(--oni-text-muted)',
+                  borderRadius: '4px',
+                  cursor: 'pointer',
+                  fontWeight: isActive ? 'bold' : 'normal',
+                  transition: 'all 0.15s ease'
+                }}
+              >
+                <Icon size={12} style={{ color: isActive ? 'var(--oni-accent-oxygen)' : 'inherit' }} />
+                {tab.name}
+                <span style={{ 
+                  fontSize: '0.65rem', 
+                  background: 'rgba(0, 0, 0, 0.5)',
+                  color: 'var(--oni-text-muted)',
+                  padding: '0.02rem 0.25rem',
+                  borderRadius: '10px',
+                  fontFamily: 'var(--oni-font-mono)'
+                }}>
+                  {tab.count}
+                </span>
+              </button>
+            );
+          })}
         </div>
 
-        {/* Search and Filters */}
-        <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
-          <select 
-            value={dlcFilter} 
-            onChange={e => setDlcFilter(e.target.value)}
-            style={{
-              padding: '0.45rem 0.75rem',
-              fontSize: '0.8rem',
-              border: '1px solid var(--oni-panel-border)',
-              borderRadius: '4px',
-              background: 'rgba(0, 0, 0, 0.4)',
-              color: 'var(--oni-text-primary)',
-              fontFamily: 'var(--oni-font-mono)',
-              cursor: 'pointer'
-            }}
-          >
-            <option value="all">All Content (Base + DLCs)</option>
-            <option value="Base Game">Base Game Only</option>
-            <option value="Spaced Out!">Spaced Out! (DLC 1)</option>
-            <option value="Frosty Planet">Frosty Planet (DLC 2)</option>
-            <option value="Bionic Pack">Bionic Pack (DLC 3)</option>
-            <option value="Dartle Pack">Dartle Pack (DLC 4)</option>
-            <option value="Aquatic Pack">Aquatic Pack (DLC 5)</option>
-          </select>
+        {/* Right Side: Search and Filters */}
+        <div style={{ display: 'flex', gap: '0.4rem', alignItems: 'center', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '0.25rem', alignItems: 'center' }}>
+            <select 
+              value={dlcFilter} 
+              onChange={e => {
+                setDlcFilter(e.target.value);
+                if (e.target.value !== 'all') {
+                  setShowDlcDesc(true);
+                } else {
+                  setShowDlcDesc(false);
+                }
+              }}
+              style={{
+                padding: '0.35rem 0.5rem',
+                fontSize: '0.75rem',
+                border: '1px solid var(--oni-panel-border)',
+                borderRadius: '4px',
+                background: 'rgba(0, 0, 0, 0.4)',
+                color: 'var(--oni-text-primary)',
+                fontFamily: 'var(--oni-font-mono)',
+                cursor: 'pointer'
+              }}
+            >
+              <option value="all">All Content</option>
+              <option value="Base Game">Base Game Only</option>
+              <option value="Spaced Out!">Spaced Out!</option>
+              <option value="Frosty Planet">Frosty Planet</option>
+              <option value="Bionic Pack">Bionic Pack</option>
+              <option value="Dartle Pack">Prehistoric Pack</option>
+              <option value="Aquatic Pack">Aquatic Pack</option>
+            </select>
+            {dlcFilter !== 'all' && (
+              <button
+                onClick={() => setShowDlcDesc(!showDlcDesc)}
+                style={{
+                  padding: '0.35rem',
+                  border: '1px solid var(--oni-panel-border)',
+                  borderRadius: '4px',
+                  background: showDlcDesc ? 'rgba(127, 191, 255, 0.15)' : 'rgba(0, 0, 0, 0.4)',
+                  color: showDlcDesc ? 'var(--oni-text-primary)' : 'var(--oni-text-muted)',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  transition: 'all 0.15s ease'
+                }}
+                title="Toggle DLC Information"
+              >
+                <HelpCircle size={12} />
+              </button>
+            )}
+          </div>
+
           {subTab === 'foods' && (
             <>
               <select 
                 value={foodFilter} 
                 onChange={e => setFoodFilter(e.target.value)}
                 style={{
-                  padding: '0.45rem 0.75rem',
-                  fontSize: '0.8rem',
+                  padding: '0.35rem 0.5rem',
+                  fontSize: '0.75rem',
                   border: '1px solid var(--oni-panel-border)',
                   borderRadius: '4px',
                   background: 'rgba(0, 0, 0, 0.4)',
@@ -273,15 +351,15 @@ export function DatabaseExplorer({
                 }}
               >
                 <option value="all">All Foods</option>
-                <option value="prepared">Prepared (Has Recipe)</option>
+                <option value="prepared">Prepared</option>
                 <option value="raw">Raw / Foraged</option>
               </select>
               <select 
                 value={foodSort} 
                 onChange={e => setFoodSort(e.target.value)}
                 style={{
-                  padding: '0.45rem 0.75rem',
-                  fontSize: '0.8rem',
+                  padding: '0.35rem 0.5rem',
+                  fontSize: '0.75rem',
                   border: '1px solid var(--oni-panel-border)',
                   borderRadius: '4px',
                   background: 'rgba(0, 0, 0, 0.4)',
@@ -290,18 +368,19 @@ export function DatabaseExplorer({
                   cursor: 'pointer'
                 }}
               >
-                <option value="quality_desc">Sort: Quality (High to Low)</option>
-                <option value="quality_asc">Sort: Quality (Low to High)</option>
-                <option value="cals_desc">Sort: Calories (High to Low)</option>
-                <option value="spoil_desc">Sort: Shelf Life (Long to Short)</option>
-                <option value="name_asc">Sort: Name (A-Z)</option>
+                <option value="quality_desc">Quality: High</option>
+                <option value="quality_asc">Quality: Low</option>
+                <option value="cals_desc">Calories: High</option>
+                <option value="spoil_desc">Shelf Life: Long</option>
+                <option value="name_asc">Name: A-Z</option>
               </select>
             </>
           )}
-          <div style={{ position: 'relative', minWidth: '260px' }}>
-            <Search size={16} style={{ 
+
+          <div style={{ position: 'relative', minWidth: '180px' }}>
+            <Search size={12} style={{ 
               position: 'absolute', 
-              left: '0.75rem', 
+              left: '0.5rem', 
               top: '50%', 
               transform: 'translateY(-50%)', 
               color: 'var(--oni-text-muted)' 
@@ -313,8 +392,8 @@ export function DatabaseExplorer({
               onChange={(e) => setSearchQuery(e.target.value)}
               style={{ 
                 width: '100%', 
-                padding: '0.45rem 1rem 0.45rem 2.2rem', 
-                fontSize: '0.85rem',
+                padding: '0.35rem 0.75rem 0.35rem 1.6rem', 
+                fontSize: '0.8rem',
                 border: '1px solid var(--oni-panel-border)',
                 borderRadius: '4px',
                 background: 'rgba(0, 0, 0, 0.4)',
@@ -326,32 +405,32 @@ export function DatabaseExplorer({
         </div>
       </div>
 
-      {/* Active DLC Description Banner */}
-      {dlcFilter && (
+      {/* Active DLC Description Banner (Collapsible) */}
+      {dlcFilter && dlcFilter !== 'all' && showDlcDesc && (
         <div style={{
           background: 'rgba(20, 20, 25, 0.45)',
           border: '1px dashed var(--oni-grid-line)',
           borderRadius: '4px',
-          padding: '0.65rem 0.85rem',
-          marginBottom: '1.25rem',
-          fontSize: '0.75rem',
-          lineHeight: '1.4'
+          padding: '0.5rem 0.75rem',
+          marginBottom: '0.75rem',
+          fontSize: '0.7rem',
+          lineHeight: '1.3'
         }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.25rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.2rem', flexWrap: 'wrap', gap: '0.5rem' }}>
             <span style={{ 
               fontWeight: 'bold', 
-              color: dlcFilter === 'all' || dlcFilter === 'Base Game' ? 'var(--oni-text-primary)' : 'var(--oni-accent-oxygen)',
+              color: 'var(--oni-accent-oxygen)',
               textTransform: 'uppercase',
               letterSpacing: '0.05em',
               fontFamily: 'var(--oni-font-mono)',
-              fontSize: '0.8rem'
+              fontSize: '0.75rem'
             }}>
               {DLC_DETAILS[dlcFilter]?.name || dlcFilter}
             </span>
             <span style={{ 
               fontFamily: 'var(--oni-font-mono)', 
               color: 'var(--oni-text-muted)',
-              fontSize: '0.7rem',
+              fontSize: '0.65rem',
               fontWeight: 'bold'
             }}>
               {DLC_DETAILS[dlcFilter]?.date}
@@ -362,55 +441,6 @@ export function DatabaseExplorer({
           </div>
         </div>
       )}
-
-      {/* Sub Tabs Bar */}
-      <div style={{ 
-        display: 'flex', 
-        gap: '0.5rem', 
-        marginBottom: '1rem', 
-        borderBottom: '1px solid var(--oni-grid-line)',
-        paddingBottom: '0.5rem',
-        overflowX: 'auto',
-        whiteSpace: 'nowrap'
-      }} className="subtabs-scroll">
-        {subTabs.map((tab) => {
-          const Icon = tab.icon;
-          const isActive = subTab === tab.id;
-          return (
-            <button
-              key={tab.id}
-              onClick={() => handleSubTabChange(tab.id)}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.4rem',
-                padding: '0.4rem 0.8rem',
-                fontSize: '0.8rem',
-                background: isActive ? 'rgba(127, 191, 255, 0.15)' : 'rgba(0, 0, 0, 0.2)',
-                border: `1px solid ${isActive ? 'var(--oni-accent-oxygen)' : 'var(--oni-panel-border)'}`,
-                color: isActive ? 'var(--oni-text-primary)' : 'var(--oni-text-muted)',
-                borderRadius: '4px',
-                cursor: 'pointer',
-                fontWeight: isActive ? 'bold' : 'normal',
-                transition: 'all 0.15s ease'
-              }}
-            >
-              <Icon size={12} style={{ color: isActive ? 'var(--oni-accent-oxygen)' : 'inherit' }} />
-              {tab.name}
-              <span style={{ 
-                fontSize: '0.7rem', 
-                background: 'rgba(0, 0, 0, 0.5)',
-                color: 'var(--oni-text-muted)',
-                padding: '0.05rem 0.3rem',
-                borderRadius: '10px',
-                fontFamily: 'var(--oni-font-mono)'
-              }}>
-                {tab.count}
-              </span>
-            </button>
-          );
-        })}
-      </div>
 
       {/* Content Area */}
       <div style={{ flex: 1, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
@@ -809,27 +839,68 @@ export function DatabaseExplorer({
                                 </span>
                               </div>
                             )}
-
                             {/* Recipe Information */}
-                            {recipes.filter(r => r.outputs?.some(o => o.material === item.id)).map((recipe, idx) => (
-                              <div key={recipe.id || idx} style={{ marginTop: '0.3rem', borderTop: '1px dashed var(--oni-grid-line)', paddingTop: '0.4rem' }}>
-                                <div style={{ fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', color: 'var(--oni-accent-oxygen)', marginBottom: '0.2rem' }}>
-                                  Recipe ({cleanName(recipe.fabricators?.[0] || 'Cooking Station')})
-                                </div>
-                                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.15rem' }}>
-                                  {recipe.inputs?.map((ing, i) => (
-                                    <div key={i} style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', fontFamily: 'var(--oni-font-mono)', color: 'var(--oni-text-primary)' }}>
-                                      <span>Input: {idToNameMap[ing.material] || idToNameMap[ing.material?.toLowerCase()] || cleanName(ing.material)}</span>
-                                      <span>{ing.amount} units</span>
+                            {(() => {
+                              const foodRecipes = recipes.filter(r => r.outputs?.some(o => o.material === item.id));
+                              if (foodRecipes.length === 0) return null;
+                              
+                              const firstRecipe = foodRecipes[0];
+                              const altRecipes = foodRecipes.slice(1);
+                              const isRecipesExpanded = !!expandedRecipes[item.id];
+                              
+                              const renderRecipeBlock = (recipe, rIdx) => {
+                                const fabricatorId = recipe.fabricators?.[0];
+                                const fabricatorName = idToNameMap[fabricatorId] || idToNameMap[fabricatorId?.toLowerCase()] || cleanName(fabricatorId || 'Cooking Station');
+                                return (
+                                  <div key={recipe.id || rIdx} style={{ marginTop: '0.3rem', borderTop: '1px dashed var(--oni-grid-line)', paddingTop: '0.4rem' }}>
+                                    <div style={{ fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', color: 'var(--oni-accent-oxygen)', marginBottom: '0.2rem' }}>
+                                      Recipe ({fabricatorName})
                                     </div>
-                                  ))}
-                                  <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', fontFamily: 'var(--oni-font-mono)', color: 'var(--oni-text-muted)', marginTop: '0.1rem' }}>
-                                    <span>Production Time:</span>
-                                    <span>{recipe.time}s</span>
+                                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.15rem' }}>
+                                      {recipe.inputs?.map((ing, i) => (
+                                        <div key={i} style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', fontFamily: 'var(--oni-font-mono)', color: 'var(--oni-text-primary)' }}>
+                                          <span>Input: {idToNameMap[ing.material] || idToNameMap[ing.material?.toLowerCase()] || cleanName(ing.material)}</span>
+                                          <span>{ing.amount} units</span>
+                                        </div>
+                                      ))}
+                                      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', fontFamily: 'var(--oni-font-mono)', color: 'var(--oni-text-muted)', marginTop: '0.1rem' }}>
+                                        <span>Production Time:</span>
+                                        <span>{recipe.time}s</span>
+                                      </div>
+                                    </div>
                                   </div>
+                                );
+                              };
+
+                              return (
+                                <div style={{ display: 'flex', flexDirection: 'column' }}>
+                                  {renderRecipeBlock(firstRecipe, 0)}
+                                  
+                                  {altRecipes.length > 0 && (
+                                    <>
+                                      <button
+                                        onClick={() => toggleExpandRecipe(item.id)}
+                                        style={{
+                                          background: 'transparent',
+                                          border: 'none',
+                                          color: 'var(--oni-accent-oxygen)',
+                                          cursor: 'pointer',
+                                          fontSize: '0.7rem',
+                                          textAlign: 'left',
+                                          padding: '0.2rem 0',
+                                          fontFamily: 'var(--oni-font-mono)',
+                                          width: 'fit-content',
+                                          marginTop: '0.2rem'
+                                        }}
+                                      >
+                                        {isRecipesExpanded ? '[-] Hide alternative recipes' : `[+] Show ${altRecipes.length} alternative recipes`}
+                                      </button>
+                                      {isRecipesExpanded && altRecipes.map((recipe, rIdx) => renderRecipeBlock(recipe, rIdx + 1))}
+                                    </>
+                                  )}
                                 </div>
-                              </div>
-                            ))}
+                              );
+                            })()}
                           </div>
                         )}
                       </div>
@@ -1032,6 +1103,85 @@ export function DatabaseExplorer({
                               </div>
                             )}
                           </>
+                        )}
+                      </div>
+                    )}
+
+                    {/* BUILDINGS TAB */}
+                    {subTab === 'buildings' && (
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.45rem', fontSize: '0.75rem' }}>
+                        {/* Dimensions */}
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                          <Scale size={12} style={{ color: 'var(--oni-accent-oxygen)' }} />
+                          <span style={{ color: 'var(--oni-text-muted)' }}>Dimensions:</span>
+                          <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold' }}>
+                            {item.widthInCells} x {item.heightInCells} <span style={{ fontSize: '0.7rem', color: 'var(--oni-text-muted)' }}>({item.widthInCells * item.heightInCells} cells)</span>
+                          </span>
+                        </div>
+
+                        {/* Power Consumption */}
+                        {item.energyConsumptionWhenActive !== undefined && item.energyConsumptionWhenActive > 0 && (
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                            <Zap size={12} style={{ color: '#FFFFA8' }} />
+                            <span style={{ color: 'var(--oni-text-muted)' }}>Power:</span>
+                            <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold', color: 'var(--oni-accent-calorie)' }}>
+                              {item.energyConsumptionWhenActive} W
+                            </span>
+                          </div>
+                        )}
+
+                        {/* Heat Generation */}
+                        {item.exhaustKilowattsWhenActive !== undefined && item.exhaustKilowattsWhenActive > 0 && (
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                            <Thermometer size={12} style={{ color: 'var(--oni-accent-danger)' }} />
+                            <span style={{ color: 'var(--oni-text-muted)' }}>Heat Output:</span>
+                            <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold', color: 'var(--oni-accent-danger)' }}>
+                              +{item.exhaustKilowattsWhenActive} kDTU/s
+                            </span>
+                          </div>
+                        )}
+
+                        {/* Materials */}
+                        {item.mass && item.mass.length > 0 && (
+                          <div style={{ marginTop: '0.3rem', borderTop: '1px dashed var(--oni-grid-line)', paddingTop: '0.4rem' }}>
+                            <div style={{ fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', color: 'var(--oni-accent-oxygen)', marginBottom: '0.2rem' }}>Construction Cost</div>
+                            {item.mass.map((m, idx) => {
+                              const category = item.materialCategory?.[idx] || 'Material';
+                              return (
+                                <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', fontFamily: 'var(--oni-font-mono)', color: 'var(--oni-text-primary)' }}>
+                                  <span>{idToNameMap[category] || idToNameMap[category.toLowerCase()] || cleanName(category)}</span>
+                                  <span>{m} kg</span>
+                                </div>
+                              );
+                            })}
+                          </div>
+                        )}
+
+                        {/* Primary Effect & Description */}
+                        {isExpanded && (
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', borderTop: '1px dashed var(--oni-grid-line)', paddingTop: '0.4rem', marginTop: '0.2rem' }}>
+                            {item.effect && (
+                              <div style={{ 
+                                color: 'var(--oni-text-primary)', 
+                                fontFamily: 'var(--oni-font-sans)', 
+                                lineHeight: '1.3',
+                                background: 'rgba(0, 0, 0, 0.2)',
+                                padding: '0.4rem 0.6rem',
+                                borderRadius: '3px',
+                                border: '1px solid var(--oni-grid-line)'
+                              }}>
+                                <div style={{ fontSize: '0.65rem', fontWeight: 'bold', textTransform: 'uppercase', color: 'var(--oni-accent-oxygen)', marginBottom: '0.25rem' }}>Primary Utility</div>
+                                <span style={{ whiteSpace: 'pre-wrap' }}>
+                                  {cleanName(item.effect)}
+                                </span>
+                              </div>
+                            )}
+                            {item.description && (
+                              <div style={{ color: 'var(--oni-text-muted)', fontStyle: 'italic', fontFamily: 'var(--oni-font-sans)' }}>
+                                "{cleanName(item.description)}"
+                              </div>
+                            )}
+                          </div>
                         )}
                       </div>
                     )}

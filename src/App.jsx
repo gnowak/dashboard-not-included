@@ -41,6 +41,7 @@ function App() {
   const [apiSpacePois, setApiSpacePois] = useState([]);
   const [apiElements, setApiElements] = useState([]);
   const [apiRecipes, setApiRecipes] = useState([]);
+  const [apiBuildings, setApiBuildings] = useState([]);
   const [apiLoading, setApiLoading] = useState(true);
   const [apiError, setApiError] = useState(null);
 
@@ -55,7 +56,8 @@ function App() {
       { name: 'equipment', set: setApiEquipment },
       { name: 'space_pois', set: setApiSpacePois },
       { name: 'elements', set: setApiElements },
-      { name: 'recipes', set: setApiRecipes }
+      { name: 'recipes', set: setApiRecipes },
+      { name: 'buildings', set: setApiBuildings }
     ];
 
     async function fetchAll() {
@@ -119,7 +121,7 @@ function App() {
     };
 
     // Scan all loaded databanks including recipes
-    const allLists = [apiCritters, apiPlants, apiFoods, apiGeysers, apiEquipment, apiSpacePois, apiElements, apiRecipes];
+    const allLists = [apiCritters, apiPlants, apiFoods, apiGeysers, apiEquipment, apiSpacePois, apiElements, apiRecipes, apiBuildings];
     allLists.forEach(list => scanForLinks(list));
 
     // Merge direct item IDs from all API lists (priority to item.id if item.name exists)
@@ -155,7 +157,9 @@ function App() {
       'butterflyplantseed': 'Blossom Seed',
       'gingerconfig': 'Tonic Root',
       'beanplantseed': 'Nosh Bean',
-      'tofu': 'Tofu'
+      'tofu': 'Tofu',
+      'dinosaurmeat': 'Tough Meat',
+      'dinosaurcarcass': 'Dinosaur Carcass'
     };
 
     Object.entries(manualOverrides).forEach(([id, name]) => {
@@ -164,7 +168,7 @@ function App() {
     });
     
     return mapping;
-  }, [apiCritters, apiPlants, apiFoods, apiGeysers, apiEquipment, apiSpacePois, apiElements, apiRecipes]);
+  }, [apiCritters, apiPlants, apiFoods, apiGeysers, apiEquipment, apiSpacePois, apiElements, apiRecipes, apiBuildings]);
 
   // Merge dynamic API names into static data and build a dynamic catalog of all critters
   const mergedCritters = useMemo(() => {
@@ -469,6 +473,7 @@ function App() {
               plants={apiPlants}
               elements={apiElements}
               recipes={apiRecipes}
+              buildings={apiBuildings}
               idToNameMap={idToNameMap}
               loading={apiLoading}
               error={apiError}
