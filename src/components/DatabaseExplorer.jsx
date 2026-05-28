@@ -599,7 +599,7 @@ export function DatabaseExplorer({
                               }}>
                                 <span style={{ color: 'var(--oni-text-muted)' }}>Harvest Yield:</span>
                                 <span style={{ fontWeight: 'bold', color: 'var(--oni-accent-oxygen)' }}>
-                                  {item.yield.amount}x {idToNameMap[item.yield.id] || cleanName(item.yield.id)}
+                                  {item.yield.amount}x {idToNameMap[item.yield.itemId || item.yield.id] || cleanName(item.yield.itemId || item.yield.id)}
                                 </span>
                               </div>
                             )}

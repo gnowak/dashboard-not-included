@@ -4,8 +4,8 @@ import { ArrowDownRight, ArrowUpRight, Maximize2, Trash2 } from 'lucide-react';
 export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChange, onRemove }) {
   const currentOutput = crop.caloriesPerCycle * count;
   
-  // Usable slots per greenhouse: roomSize minus 2 tiles for Farm Station
-  const usableCropsPerRoom = Math.max(1, roomSize - 2);
+  // Usable slots per greenhouse: Room floor width assuming 4-tile high rooms (Room Size / 4) minus 2 tiles for Farm Station
+  const usableCropsPerRoom = Math.max(1, Math.floor(roomSize / 4) - 2);
   
   // Calculate greenhouse room counts dynamically
   const currentGreenhouseCount = Math.ceil(count / usableCropsPerRoom);
@@ -74,7 +74,7 @@ export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChang
               onChange={(e) => {
                 const newSize = parseInt(e.target.value) || 96;
                 onRoomSizeChange(newSize);
-                const newUsable = Math.max(1, newSize - 2);
+                const newUsable = Math.max(1, Math.floor(newSize / 4) - 2);
                 if (count > 5 * newUsable) {
                   onChange(5 * newUsable);
                 }
@@ -89,7 +89,7 @@ export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChang
               onChange={(e) => {
                 const newSize = parseInt(e.target.value) || 96;
                 onRoomSizeChange(newSize);
-                const newUsable = Math.max(1, newSize - 2);
+                const newUsable = Math.max(1, Math.floor(newSize / 4) - 2);
                 if (count > 5 * newUsable) {
                   onChange(5 * newUsable);
                 }
@@ -107,7 +107,7 @@ export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChang
             />
           </div>
           <div style={{ fontSize: '0.7rem', color: 'var(--oni-text-muted)', marginTop: '0.15rem', fontStyle: 'italic' }}>
-            Usable slots: <span style={{ color: 'var(--oni-text-primary)', fontWeight: 'bold' }}>{usableCropsPerRoom} plants</span> (room size minus 2 for Farm Station)
+            Usable slots: <span style={{ color: 'var(--oni-text-primary)', fontWeight: 'bold' }}>{usableCropsPerRoom} plants</span> (floor width assuming 4-tile room height minus 2 for Farm Station)
           </div>
         </div>
 

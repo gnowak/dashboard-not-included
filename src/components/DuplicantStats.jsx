@@ -78,7 +78,7 @@ export function DuplicantStats({ duplicants, setDuplicants, totalCalories, ranch
       if (!crop || cropItem.count <= 0) return;
 
       const roomSize = cropItem.roomSize || 96;
-      const usableCropsPerRoom = Math.max(1, roomSize - 2);
+      const usableCropsPerRoom = Math.max(1, Math.floor(roomSize / 4) - 2);
       const greenhousesNeeded = Math.ceil(cropItem.count / usableCropsPerRoom);
       totalGreenhouses += greenhousesNeeded;
       agricultureSpace += greenhousesNeeded * roomSize;

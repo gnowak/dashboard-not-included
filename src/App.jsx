@@ -248,7 +248,7 @@ function App() {
         // Calculate dynamic calorie density if yield exists
         let calPerCycle = 0;
         if (apiItem.yield) {
-          const yieldFoodId = apiItem.yield.id;
+          const yieldFoodId = apiItem.yield.itemId || apiItem.yield.id;
           const foodMatch = apiFoods.find(f => f.id === yieldFoodId);
           if (foodMatch && foodMatch.caloriesPerUnit) {
             const yieldKcal = foodMatch.caloriesPerUnit / 1000;
@@ -296,7 +296,7 @@ function App() {
             description: apiItem.description || 'Synced from in-game DataDump.',
             caloriesPerCycle: calPerCycle,
             inputs: inputs.length > 0 ? inputs : [{ name: 'Water', amount: 20, unit: 'kg' }],
-            outputs: apiItem.yield ? [{ name: idToNameMap[apiItem.yield.id] || cleanName(apiItem.yield.id), amount: apiItem.yield.amount, unit: 'unit' }] : [],
+            outputs: apiItem.yield ? [{ name: idToNameMap[apiItem.yield.itemId || apiItem.yield.id] || cleanName(apiItem.yield.itemId || apiItem.yield.id), amount: apiItem.yield.amount, unit: 'unit' }] : [],
             isFarmable: apiItem.isFarmable !== undefined ? apiItem.isFarmable : true,
             color: '#A8FF8C' // blueprint green
           };
