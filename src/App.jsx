@@ -96,20 +96,75 @@ function App() {
     mapping['Stone'] = 'Stone';
     mapping['Metal'] = 'Metal';
     
-    // Merge from all API lists
-    const lists = [apiCritters, apiPlants, apiFoods, apiGeysers, apiEquipment, apiSpacePois, apiElements];
-    lists.forEach(list => {
+    // Helper to recursively scan any data structure for <link="ID">Name</link> tags
+    const scanForLinks = (obj) => {
+      if (!obj) return;
+      if (typeof obj === 'string') {
+        const linkRegex = /<link="([^"]+)">([^<]+)<\/link>/gi;
+        let match;
+        while ((match = linkRegex.exec(obj)) !== null) {
+          const id = match[1];
+          const name = match[2];
+          if (id && name) {
+            const cleaned = cleanName(name);
+            mapping[id] = cleaned;
+            mapping[id.toLowerCase()] = cleaned;
+          }
+        }
+      } else if (Array.isArray(obj)) {
+        obj.forEach(scanForLinks);
+      } else if (typeof obj === 'object') {
+        Object.values(obj).forEach(scanForLinks);
+      }
+    };
+
+    // Scan all loaded databanks including recipes
+    const allLists = [apiCritters, apiPlants, apiFoods, apiGeysers, apiEquipment, apiSpacePois, apiElements, apiRecipes];
+    allLists.forEach(list => scanForLinks(list));
+
+    // Merge direct item IDs from all API lists (priority to item.id if item.name exists)
+    allLists.forEach(list => {
       if (Array.isArray(list)) {
         list.forEach(item => {
           if (item.id && item.name) {
-            mapping[item.id] = cleanName(item.name);
+            const cleaned = cleanName(item.name);
+            mapping[item.id] = cleaned;
+            mapping[item.id.toLowerCase()] = cleaned;
           }
         });
       }
     });
+
+    // Provide explicit manual overrides for common food/recipe inputs to ensure accuracy
+    const manualOverrides = {
+      'coldwheatseed': 'Sleet Wheat Grain',
+      'spicenut': 'Pincha Peppernut',
+      'lettuce': 'Lettuce',
+      'mushroom': 'Dusk Cap Mushroom',
+      'meat': 'Raw Meat',
+      'fishmeat': 'Pacu Fillet',
+      'shellfishmeat': 'Raw Shellfish',
+      'basicplantfood': 'Meal Lice',
+      'mushbar': 'Mush Bar',
+      'rawegg': 'Raw Egg',
+      'fernfood': 'Nosh Bean',
+      'sucrose': 'Sucrose',
+      'wormbasicfruit': 'Spindle Grub Fruit',
+      'wormsuperfruit': 'Grubfruit',
+      'hardskinberry': 'Pikeapple',
+      'butterflyplantseed': 'Blossom Seed',
+      'gingerconfig': 'Tonic Root',
+      'beanplantseed': 'Nosh Bean',
+      'tofu': 'Tofu'
+    };
+
+    Object.entries(manualOverrides).forEach(([id, name]) => {
+      mapping[id] = name;
+      mapping[id.toUpperCase()] = name;
+    });
     
     return mapping;
-  }, [apiCritters, apiPlants, apiFoods, apiGeysers, apiEquipment, apiSpacePois, apiElements]);
+  }, [apiCritters, apiPlants, apiFoods, apiGeysers, apiEquipment, apiSpacePois, apiElements, apiRecipes]);
 
   // Merge dynamic API names into static data and build a dynamic catalog of all critters
   const mergedCritters = useMemo(() => {

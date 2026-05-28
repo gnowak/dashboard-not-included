@@ -676,7 +676,7 @@ export function DatabaseExplorer({
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.15rem' }}>
                                   {recipe.inputs?.map((ing, i) => (
                                     <div key={i} style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', fontFamily: 'var(--oni-font-mono)', color: 'var(--oni-text-primary)' }}>
-                                      <span>Input: {idToNameMap[ing.material] || cleanName(ing.material)}</span>
+                                      <span>Input: {idToNameMap[ing.material] || idToNameMap[ing.material?.toLowerCase()] || cleanName(ing.material)}</span>
                                       <span>{ing.amount} units</span>
                                     </div>
                                   ))}
