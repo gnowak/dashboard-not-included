@@ -1,18 +1,26 @@
 import React from 'react';
 import { Egg, Maximize2, ArrowDownRight, ArrowUpRight, Trash2 } from 'lucide-react';
 
-export function RanchCard({ critter, count, activeFeed, onChange, onRemove, onFeedChange }) {
-  const maxAllowed = critter.maxSize || 8;
-  const currentOutput = critter.caloriesPerCycle * count;
-  const eggsTotal = critter.eggsPerCycle * count;
+export function RanchCard({ critter, count, activeFeed, ranchState = 'happy', onChange, onRemove, onFeedChange, onStateChange }) {
+  // Care state multipliers
+  const calMult = ranchState === 'glum' ? 0.1 : ranchState === 'wild' ? 0.06 : 1.0;
+  const eggMult = ranchState === 'glum' ? 0.1 : ranchState === 'wild' ? 0.06 : 1.0;
+  const feedMult = ranchState === 'glum' ? 0.2 : ranchState === 'wild' ? 0.0 : 1.0;
+
+  // Stable requirements: Wild critters do not need stables (stable count = 0, capacity = Infinity)
+  const maxAllowed = ranchState === 'wild' ? Infinity : (critter.maxSize || 8);
+  const currentOutput = critter.caloriesPerCycle * count * calMult;
+  const eggsTotal = critter.eggsPerCycle * count * eggMult;
   const spaceTotal = critter.spaceRequired * count;
   
   // Calculate ranch count dynamically (Math.ceil since any fraction implies starting a new ranch)
-  const currentRanchCount = Math.ceil(count / maxAllowed);
+  const currentRanchCount = maxAllowed === Infinity ? 0 : Math.ceil(count / maxAllowed);
 
   const handleRanchChange = (newRanchCount) => {
-    // Default the critter count to full capacity for the selected ranches
-    onChange(newRanchCount * maxAllowed);
+    if (maxAllowed !== Infinity) {
+      // Default the critter count to full capacity for the selected ranches
+      onChange(newRanchCount * maxAllowed);
+    }
   };
 
   // Resolve the active input based on user preference or fallback
@@ -68,40 +76,42 @@ export function RanchCard({ critter, count, activeFeed, onChange, onRemove, onFe
           {critter.description}
         </p>
 
-        {/* Ranch Count Slider (defaults to full critters on change) */}
-        <div style={{ marginBottom: '0.65rem' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.25rem', fontSize: '0.85rem' }}>
-            <span className="stat-label" style={{ color: 'var(--oni-text-primary)', fontWeight: 'bold' }}>Ranches (96-Tile)</span>
-            <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold', color: critter.color }}>{currentRanchCount}</span>
+        {/* Ranch Count Slider (defaults to full critters on change) - Hidden for wild critters */}
+        {ranchState !== 'wild' && (
+          <div style={{ marginBottom: '0.65rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.25rem', fontSize: '0.85rem' }}>
+              <span className="stat-label" style={{ color: 'var(--oni-text-primary)', fontWeight: 'bold' }}>Ranches (96-Tile)</span>
+              <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold', color: critter.color }}>{currentRanchCount}</span>
+            </div>
+            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+              <input 
+                type="range" 
+                min="0" 
+                max="5" 
+                value={currentRanchCount}
+                onChange={(e) => handleRanchChange(parseInt(e.target.value) || 0)}
+                style={{ accentColor: critter.color, flex: 1 }}
+              />
+              <input 
+                type="number" 
+                min="0" 
+                max="5"
+                value={currentRanchCount} 
+                onChange={(e) => handleRanchChange(parseInt(e.target.value) || 0)}
+                style={{ 
+                  width: '45px', 
+                  padding: '0.15rem', 
+                  textAlign: 'center', 
+                  fontSize: '0.85rem',
+                  border: '1px solid var(--oni-panel-border)',
+                  background: 'rgba(0, 0, 0, 0.4)',
+                  color: 'var(--oni-text-primary)',
+                  fontFamily: 'var(--oni-font-mono)'
+                }}
+              />
+            </div>
           </div>
-          <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-            <input 
-              type="range" 
-              min="0" 
-              max="5" 
-              value={currentRanchCount}
-              onChange={(e) => handleRanchChange(parseInt(e.target.value) || 0)}
-              style={{ accentColor: critter.color, flex: 1 }}
-            />
-            <input 
-              type="number" 
-              min="0" 
-              max="5"
-              value={currentRanchCount} 
-              onChange={(e) => handleRanchChange(parseInt(e.target.value) || 0)}
-              style={{ 
-                width: '45px', 
-                padding: '0.15rem', 
-                textAlign: 'center', 
-                fontSize: '0.85rem',
-                border: '1px solid var(--oni-panel-border)',
-                background: 'rgba(0, 0, 0, 0.4)',
-                color: 'var(--oni-text-primary)',
-                fontFamily: 'var(--oni-font-mono)'
-              }}
-            />
-          </div>
-        </div>
+        )}
 
         {/* Critter Count Slider */}
         <div style={{ marginBottom: '1rem' }}>
@@ -113,7 +123,7 @@ export function RanchCard({ critter, count, activeFeed, onChange, onRemove, onFe
             <input 
               type="range" 
               min="0" 
-              max="40" 
+              max={maxAllowed === Infinity ? 40 : 5 * maxAllowed} 
               value={count}
               onChange={(e) => onChange(parseInt(e.target.value) || 0)}
               style={{ accentColor: critter.color, flex: 1 }}
@@ -121,6 +131,7 @@ export function RanchCard({ critter, count, activeFeed, onChange, onRemove, onFe
             <input 
               type="number" 
               min="0" 
+              max={maxAllowed === Infinity ? 100 : 5 * maxAllowed}
               value={count} 
               onChange={(e) => onChange(parseInt(e.target.value) || 0)}
               style={{ 
@@ -136,6 +147,34 @@ export function RanchCard({ critter, count, activeFeed, onChange, onRemove, onFe
             />
           </div>
         </div>
+
+        {/* Care & Happiness State Select */}
+        {count > 0 && (
+          <div style={{ marginBottom: '1rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.25rem', fontSize: '0.85rem' }}>
+              <span className="stat-label" style={{ color: 'var(--oni-text-primary)', fontWeight: 'bold' }}>Critter Care State</span>
+            </div>
+            <select
+              value={ranchState}
+              onChange={(e) => onStateChange(e.target.value)}
+              style={{
+                width: '100%',
+                padding: '0.35rem 0.5rem',
+                fontSize: '0.8rem',
+                border: '1px solid var(--oni-panel-border)',
+                borderRadius: '4px',
+                background: 'rgba(0, 0, 0, 0.4)',
+                color: 'var(--oni-text-primary)',
+                fontFamily: 'var(--oni-font-mono)',
+                cursor: 'pointer'
+              }}
+            >
+              <option value="happy">Groomed & Happy (Tame)</option>
+              <option value="glum">Tame & Unhappy (Glum)</option>
+              <option value="wild">Wild (Natural)</option>
+            </select>
+          </div>
+        )}
 
         {/* Active Feed Selection for Multi-diet Critters */}
         {count > 0 && hasMultipleInputs && (
@@ -162,6 +201,13 @@ export function RanchCard({ critter, count, activeFeed, onChange, onRemove, onFe
                 <option key={input.name} value={input.name}>{input.name}</option>
               ))}
             </select>
+          </div>
+        )}
+
+        {/* Wild grazing description */}
+        {count > 0 && ranchState === 'wild' && (
+          <div style={{ color: 'var(--oni-text-muted)', fontSize: '0.75rem', fontStyle: 'italic', marginBottom: '0.75rem', lineHeight: '1.3' }}>
+            🌾 Wild critters graze natural tiles, consuming 0 kg domestic feed.
           </div>
         )}
       </div>
@@ -211,12 +257,12 @@ export function RanchCard({ critter, count, activeFeed, onChange, onRemove, onFe
           }}>
             {/* Active Input */}
             <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.2rem', color: 'var(--oni-accent-danger)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.25rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: 'var(--oni-accent-danger)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.25rem' }}>
                 <ArrowDownRight size={10} /> Active Input
               </div>
               {activeInput ? (
                 <div style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', color: 'var(--oni-text-primary)', lineHeight: '1.2' }}>
-                  {(activeInput.amount * count).toFixed(0)} {activeInput.unit} <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{activeInput.name}</span>
+                  {(activeInput.amount * count * feedMult).toFixed(0)} {activeInput.unit} <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{activeInput.name}</span>
                 </div>
               ) : (
                 <span style={{ fontSize: '0.7rem', color: 'var(--oni-text-muted)', fontStyle: 'italic' }}>None</span>
@@ -225,12 +271,12 @@ export function RanchCard({ critter, count, activeFeed, onChange, onRemove, onFe
 
             {/* Outputs */}
             <div style={{ borderLeft: '1px solid var(--oni-grid-line)', paddingLeft: '0.4rem' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.2rem', color: 'var(--oni-accent-success)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.25rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: 'var(--oni-accent-success)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.25rem' }}>
                 <ArrowUpRight size={10} /> Outputs
               </div>
               {activeOutputs?.map((output, idx) => (
                 <div key={idx} style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', color: 'var(--oni-text-primary)', lineHeight: '1.2', marginBottom: '0.2rem' }}>
-                  {(output.amount * count).toFixed(0)} {output.unit} <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{output.name}</span>
+                  {(output.amount * count * feedMult).toFixed(0)} {output.unit} <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{output.name}</span>
                 </div>
               ))}
               {(!activeOutputs || activeOutputs.length === 0) && (

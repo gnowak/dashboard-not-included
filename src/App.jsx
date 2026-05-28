@@ -159,7 +159,19 @@ function App() {
       'beanplantseed': 'Nosh Bean',
       'tofu': 'Tofu',
       'dinosaurmeat': 'Tough Meat',
-      'dinosaurcarcass': 'Dinosaur Carcass'
+      'dinosaurcarcass': 'Dinosaur Carcass',
+      'katairite': 'Abyssalite',
+      'milk': 'Brackene',
+      'milkice': 'Frozen Brackene',
+      'milkfat': 'Brackwax',
+      'moltencarbon': 'Liquid Carbon',
+      'moltenzinc': 'Liquid Zinc',
+      'liquidphosphorus': 'Liquid Phosphorus',
+      'moltenniobium': 'Liquid Niobium',
+      'moltennickel': 'Liquid Nickel',
+      'moltencopper': 'Liquid Copper',
+      'moltentungsten': 'Liquid Tungsten',
+      'moltensucrose': 'Liquid Sucrose'
     };
 
     Object.entries(manualOverrides).forEach(([id, name]) => {
@@ -212,18 +224,54 @@ function App() {
           if (inputs.length > 0) data[coreKey].inputs = inputs;
           if (outputs.length > 0) data[coreKey].outputs = outputs;
           data[coreKey].isRanchable = apiItem.isRanchable !== undefined ? apiItem.isRanchable : true;
+          
+          if (apiItem.spaceRequired !== undefined && apiItem.spaceRequired !== null && apiItem.spaceRequired > 0) {
+            data[coreKey].spaceRequired = apiItem.spaceRequired;
+            if (!coreKey.toLowerCase().includes('pacu') && !coreKey.toLowerCase().includes('fish')) {
+              data[coreKey].maxSize = Math.floor(96 / apiItem.spaceRequired);
+            }
+          }
         } else {
           // Add brand new critter dynamically
           const cleanedName = cleanName(apiItem.name);
           const cleanedId = apiItem.id;
           
+          const lowerId = cleanedId.toLowerCase();
+          const lowerName = cleanedName.toLowerCase();
+          
+          let spaceRequired = 12;
+          if (apiItem.spaceRequired !== undefined && apiItem.spaceRequired !== null && apiItem.spaceRequired > 0) {
+            spaceRequired = apiItem.spaceRequired;
+          } else {
+            // Fallback logic
+            if (lowerId.includes('pacu') || lowerId.includes('fish') || lowerName.includes('pacu') || lowerName.includes('fish')) {
+              spaceRequired = 8;
+            } else if (
+              lowerId.includes('belly') || lowerName.includes('bammoth') ||
+              lowerId.includes('worm') || lowerName.includes('grub') ||
+              lowerId.includes('moo') || lowerName.includes('moo') ||
+              lowerId.includes('seal') || lowerName.includes('seal')
+            ) {
+              spaceRequired = 16;
+            }
+          }
+
+          let maxSize = 8;
+          const isPacuOrFish = (lowerId.includes('pacu') || lowerId.includes('fish') || lowerName.includes('pacu') || lowerName.includes('fish')) 
+            && !lowerId.includes('puffer') && !lowerName.includes('blowter');
+          if (isPacuOrFish) {
+            maxSize = 8;
+          } else {
+            maxSize = Math.floor(96 / spaceRequired);
+          }
+          
           data[cleanedId] = {
             id: cleanedId,
             name: cleanedName,
             description: apiItem.description || 'Synced from in-game DataDump.',
-            maxSize: 8,
+            maxSize: maxSize,
             caloriesPerCycle: apiItem.caloriesPerCycle ?? 0,
-            spaceRequired: apiItem.spaceRequired ?? 12,
+            spaceRequired: spaceRequired,
             eggsPerCycle: apiItem.eggsPerCycle ?? 0.12,
             inputs: inputs.length > 0 ? inputs : [{ name: 'Minerals', amount: 140, unit: 'kg' }],
             outputs: outputs,
@@ -349,11 +397,30 @@ function App() {
   }, [duplicants, ranches, crops]);
 
   const handleRanchCountChange = (critterType, newCount) => {
-    setRanches(ranches.map(r => r.critterType === critterType ? { ...r, count: newCount } : r));
+    const r = ranches.find(x => x.critterType === critterType);
+    if (!r) return;
+    const critter = mergedCritters[critterType];
+    const maxAllowed = r.ranchState === 'wild' ? Infinity : (critter?.maxSize || 8);
+    const maxCritters = maxAllowed === Infinity ? 40 : 5 * maxAllowed;
+    const clampedCount = Math.min(newCount, maxCritters);
+    setRanches(ranches.map(item => item.critterType === critterType ? { ...item, count: clampedCount } : item));
   };
 
   const handleRanchFeedChange = (critterType, newFeed) => {
     setRanches(ranches.map(r => r.critterType === critterType ? { ...r, activeFeed: newFeed } : r));
+  };
+
+  const handleRanchStateChange = (critterType, newState) => {
+    setRanches(ranches.map(r => {
+      if (r.critterType === critterType) {
+        const critter = mergedCritters[critterType];
+        const maxAllowed = newState === 'wild' ? Infinity : (critter?.maxSize || 8);
+        const maxCritters = maxAllowed === Infinity ? 40 : 5 * maxAllowed;
+        const clampedCount = Math.min(r.count, maxCritters);
+        return { ...r, count: clampedCount, ranchState: newState };
+      }
+      return r;
+    }));
   };
 
   const handleCropCountChange = (cropType, newCount) => {
@@ -366,7 +433,7 @@ function App() {
 
   const handleRanchAdd = (critterType) => {
     if (!ranches.some(r => r.critterType === critterType)) {
-      setRanches([...ranches, { critterType, count: 0 }]);
+      setRanches([...ranches, { critterType, count: 0, ranchState: 'happy' }]);
     }
   };
 
@@ -398,7 +465,12 @@ function App() {
     const ranchCals = ranches.reduce((total, ranch) => {
       const critter = mergedCritters[ranch.critterType];
       if (!critter) return total;
-      return total + (critter.caloriesPerCycle * ranch.count);
+      
+      let calMult = 1.0;
+      if (ranch.ranchState === 'glum') calMult = 0.1;
+      else if (ranch.ranchState === 'wild') calMult = 0.06;
+      
+      return total + (critter.caloriesPerCycle * ranch.count * calMult);
     }, 0);
 
     const cropCals = crops.reduce((total, cropItem) => {
@@ -420,6 +492,7 @@ function App() {
             totalCalories={totalCalories}
             ranches={ranches}
             crops={crops}
+            critterData={mergedCritters}
           />
         </aside>
         <section>
@@ -452,6 +525,7 @@ function App() {
               onRanchAdd={handleRanchAdd}
               onRanchRemove={handleRanchRemove}
               onRanchFeedChange={handleRanchFeedChange}
+              onRanchStateChange={handleRanchStateChange}
               critterData={mergedCritters}
             />
           ) : activeTab === 'farms' ? (

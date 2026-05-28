@@ -30,21 +30,6 @@
     "dlcId": ""
   },
   {
-    "id": "Aerogel",
-    "name": "<link=\"AEROGEL\">Aerogel</link>",
-    "description": "",
-    "state": "Solid",
-    "specificHeatCapacity": 1.0,
-    "thermalConductivity": 0.003,
-    "molarMass": 200.0,
-    "highTemp": 10000.0,
-    "highTempTransitionTarget": "Katairite",
-    "lowTemp": 0.0,
-    "lowTempTransitionTarget": "0",
-    "hardness": 2,
-    "dlcId": ""
-  },
-  {
     "id": "Isoresin",
     "name": "<link=\"ISORESIN\">Isosap</link>",
     "description": "Isosap is a crystallized sap composed of long-chain polymers.\n\nIt is used in the production of rare, high grade materials.",
@@ -102,21 +87,6 @@
     "lowTemp": 0.0,
     "lowTempTransitionTarget": "0",
     "hardness": 2,
-    "dlcId": ""
-  },
-  {
-    "id": "PhosphateNodules",
-    "name": "<link=\"PHOSPHATENODULES\">Phosphate Nodules</link>",
-    "description": "(PO<sup>3-</sup><sub>4</sub>) Nodules of sedimentary rock containing high concentrations of phosphate.",
-    "state": "Solid",
-    "specificHeatCapacity": 0.15,
-    "thermalConductivity": 2.0,
-    "molarMass": 95.61,
-    "highTemp": 700.0,
-    "highTempTransitionTarget": "LiquidPhosphorus",
-    "lowTemp": 0.0,
-    "lowTempTransitionTarget": "0",
-    "hardness": 25,
     "dlcId": ""
   },
   {
@@ -315,21 +285,6 @@
     "dlcId": ""
   },
   {
-    "id": "Yellowcake",
-    "name": "<link=\"YELLOWCAKE\">Yellowcake</link>",
-    "description": "(U<sub>3</sub>O<sub>8</sub>) Yellowcake is a byproduct of <link=\"URANIUM\">Uranium</link> mining.\n\nIt is useful in preparing fuel for <link=\"NUCLEARREACTOR\">Research Reactors</link>.\n\nNote: Do not eat.",
-    "state": "Solid",
-    "specificHeatCapacity": 1.0,
-    "thermalConductivity": 20.0,
-    "molarMass": 120.0,
-    "highTemp": 1132.0,
-    "highTempTransitionTarget": "MoltenUranium",
-    "lowTemp": 0.0,
-    "lowTempTransitionTarget": "0",
-    "hardness": 250,
-    "dlcId": "EXPANSION1_ID"
-  },
-  {
     "id": "BrineIce",
     "name": "<link=\"BRINEICE\">Brine Ice</link>",
     "description": "Brine Ice is a natural, highly concentrated solution of <link=\"SALT\">Salt</link> dissolved in <link=\"WATER\">Water</link> and frozen into a <link=\"ELEMENTSSOLID\">Solid</link> state.\n\nIt can be used in desalination processes, separating out usable salt.",
@@ -510,21 +465,6 @@
     "dlcId": ""
   },
   {
-    "id": "SandCement",
-    "name": "<link=\"SANDCEMENT\">Sand Cement</link>",
-    "description": "",
-    "state": "Solid",
-    "specificHeatCapacity": 1.5,
-    "thermalConductivity": 8.0,
-    "molarMass": 25.0,
-    "highTemp": 1683.0,
-    "highTempTransitionTarget": "Magma",
-    "lowTemp": 0.0,
-    "lowTempTransitionTarget": "0",
-    "hardness": 50,
-    "dlcId": ""
-  },
-  {
     "id": "RefinedCarbon",
     "name": "<link=\"REFINEDCARBON\">Refined Carbon</link>",
     "description": "(C) Refined carbon is solid element purified from raw <link=\"CARBON\">Coal</link>.",
@@ -642,21 +582,6 @@
     "lowTemp": 0.0,
     "lowTempTransitionTarget": "0",
     "hardness": 50,
-    "dlcId": ""
-  },
-  {
-    "id": "SolidSyngas",
-    "name": "<link=\"SYNGAS\">Solid Synthesis Gas</link>",
-    "description": "Solid Synthesis Gas is an artificial, unbreathable <link=\"ELEMENTSSOLID\">Solid</link>.\n\nIt can be converted into an efficient fuel.",
-    "state": "Solid",
-    "specificHeatCapacity": 2.4,
-    "thermalConductivity": 1.0,
-    "molarMass": 44.1,
-    "highTemp": 14.0,
-    "highTempTransitionTarget": "MoltenSyngas",
-    "lowTemp": 0.0,
-    "lowTempTransitionTarget": "0",
-    "hardness": 2,
     "dlcId": ""
   },
   {
@@ -840,21 +765,6 @@
     "dlcId": ""
   },
   {
-    "id": "Brick",
-    "name": "<link=\"BRICK\">Brick</link>",
-    "description": "Brick is a hard, brittle material formed from heated <link=\"CLAY\">Clay</link>.\n\nIt is a reliable <b>Construction Material</b>.",
-    "state": "Solid",
-    "specificHeatCapacity": 0.84,
-    "thermalConductivity": 0.62,
-    "molarMass": 25.0,
-    "highTemp": 1683.0,
-    "highTempTransitionTarget": "Magma",
-    "lowTemp": 0.0,
-    "lowTempTransitionTarget": "0",
-    "hardness": 50,
-    "dlcId": ""
-  },
-  {
     "id": "Gold",
     "name": "<link=\"GOLD\">Gold</link>",
     "description": "(Au) Gold is a conductive precious <link=\"REFINEDMETAL\">Metal</link>.\n\nIt is suitable for building <link=\"POWER\">Power</link> systems.",
@@ -1005,21 +915,6 @@
     "dlcId": ""
   },
   {
-    "id": "Electrum",
-    "name": "<link=\"ELECTRUM\">Electrum</link>",
-    "description": "Electrum is a conductive <link=\"METAL\">Metal</link> alloy composed of gold and silver.\n\nIt is suitable for building <link=\"POWER\">Power</link> systems.",
-    "state": "Solid",
-    "specificHeatCapacity": 0.15,
-    "thermalConductivity": 2.0,
-    "molarMass": 95.61,
-    "highTemp": 1337.0,
-    "highTempTransitionTarget": "MoltenGold",
-    "lowTemp": 0.0,
-    "lowTempTransitionTarget": "0",
-    "hardness": 2,
-    "dlcId": ""
-  },
-  {
     "id": "SolidCarbonDioxide",
     "name": "<link=\"SOLIDCARBONDIOXIDE\">Solid Carbon Dioxide</link>",
     "description": "(CO<sub>2</sub>) Carbon Dioxide is an unbreathable compound in a <link=\"ELEMENTSSOLID\">Solid</link> state.",
@@ -1047,21 +942,6 @@
     "lowTemp": 0.0,
     "lowTempTransitionTarget": "0",
     "hardness": 75,
-    "dlcId": ""
-  },
-  {
-    "id": "CarbonFibre",
-    "name": "<link=\"CARBONFIBRE\">Carbon Fiber</link>",
-    "description": "Carbon Fiber is a <link=\"REFINEDMINERAL\">Manufactured Material</link> with high tensile strength.",
-    "state": "19",
-    "specificHeatCapacity": 0.52,
-    "thermalConductivity": 0.0,
-    "molarMass": 25.0,
-    "highTemp": 5000.0,
-    "highTempTransitionTarget": "MoltenCarbon",
-    "lowTemp": 0.0,
-    "lowTempTransitionTarget": "0",
-    "hardness": 250,
     "dlcId": ""
   },
   {
@@ -1620,21 +1500,6 @@
     "dlcId": ""
   },
   {
-    "id": "Slabs",
-    "name": "<link=\"SLABS\">Building Slab</link>",
-    "description": "Slabs are a refined mineral building block used for assembling advanced buildings.",
-    "state": "Solid",
-    "specificHeatCapacity": 0.52,
-    "thermalConductivity": 8.0,
-    "molarMass": 25.0,
-    "highTemp": 1683.0,
-    "highTempTransitionTarget": "Magma",
-    "lowTemp": 0.0,
-    "lowTempTransitionTarget": "0",
-    "hardness": 50,
-    "dlcId": ""
-  },
-  {
     "id": "Bitumen",
     "name": "<link=\"BITUMEN\">Bitumen</link>",
     "description": "Bitumen is a sticky viscous residue left behind from <link=\"PETROLEUM\">Petroleum</link> production.",
@@ -1725,21 +1590,6 @@
     "dlcId": ""
   },
   {
-    "id": "Cement",
-    "name": "<link=\"CEMENT\">Cement</link>",
-    "description": "Cement is a refined building material used for assembling advanced buildings.",
-    "state": "Solid",
-    "specificHeatCapacity": 1.55,
-    "thermalConductivity": 8.0,
-    "molarMass": 25.0,
-    "highTemp": 1683.0,
-    "highTempTransitionTarget": "Magma",
-    "lowTemp": 0.0,
-    "lowTempTransitionTarget": "0",
-    "hardness": 200,
-    "dlcId": ""
-  },
-  {
     "id": "DirtyIce",
     "name": "<link=\"DIRTYICE\">Polluted Ice</link>",
     "description": "Polluted Ice is dirty, unfiltered water frozen into a <link=\"ELEMENTSSOLID\">Solid</link> state.",
@@ -1749,21 +1599,6 @@
     "molarMass": 25.0,
     "highTemp": 252.5,
     "highTempTransitionTarget": "DirtyWater",
-    "lowTemp": 0.0,
-    "lowTempTransitionTarget": "0",
-    "hardness": 10,
-    "dlcId": ""
-  },
-  {
-    "id": "CementMix",
-    "name": "<link=\"CEMENTMIX\">Cement Mix</link>",
-    "description": "Cement Mix can be used to create <link=\"CEMENT\">Cement</link> for advanced building assembly.",
-    "state": "Solid",
-    "specificHeatCapacity": 0.52,
-    "thermalConductivity": 8.0,
-    "molarMass": 25.0,
-    "highTemp": 1683.0,
-    "highTempTransitionTarget": "Magma",
     "lowTemp": 0.0,
     "lowTempTransitionTarget": "0",
     "hardness": 10,
@@ -1901,21 +1736,6 @@
     "highTempTransitionTarget": "DirtyWater",
     "lowTemp": 247.65,
     "lowTempTransitionTarget": "MurkyBrineIce",
-    "hardness": 0,
-    "dlcId": ""
-  },
-  {
-    "id": "LiquidHelium",
-    "name": "<link=\"LIQUIDHELIUM\">Helium</link>",
-    "description": "(He) Helium is an atomically lightweight chemical element cooled into a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
-    "state": "6",
-    "specificHeatCapacity": 0.2,
-    "thermalConductivity": 0.236,
-    "molarMass": 4.0,
-    "highTemp": 4.22,
-    "highTempTransitionTarget": "Helium",
-    "lowTemp": 0.0,
-    "lowTempTransitionTarget": "0",
     "hardness": 0,
     "dlcId": ""
   },
@@ -2370,21 +2190,6 @@
     "dlcId": ""
   },
   {
-    "id": "MoltenSyngas",
-    "name": "<link=\"SYNGAS\">Molten Synthesis Gas</link>",
-    "description": "Molten Synthesis Gas is an artificial, unbreathable <link=\"ELEMENTSLIQUID\">Liquid</link>.\n\nIt can be converted into an efficient fuel.",
-    "state": "6",
-    "specificHeatCapacity": 2.4,
-    "thermalConductivity": 0.1,
-    "molarMass": 1.00794,
-    "highTemp": 21.0,
-    "highTempTransitionTarget": "Syngas",
-    "lowTemp": 14.0,
-    "lowTempTransitionTarget": "SolidSyngas",
-    "hardness": 0,
-    "dlcId": ""
-  },
-  {
     "id": "MoltenZinc",
     "name": "<link=\"MOLTENZINC\">Molten Zinc</link>",
     "description": "Molten Zinc is <link=\"ZINC\">Zinc</link> heated into <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
@@ -2700,21 +2505,6 @@
     "dlcId": ""
   },
   {
-    "id": "Propane",
-    "name": "<link=\"PROPANE\">Propane Gas</link>",
-    "description": "(C<sub>3</sub>H<sub>8</sub>) Propane Gas is a natural alkane.\n\nThis selection is in a <link=\"ELEMENTSGAS\">Gaseous</link> state.\n\nIt is useful in <link=\"POWER\">Power</link> production.",
-    "state": "5",
-    "specificHeatCapacity": 2.4,
-    "thermalConductivity": 0.015,
-    "molarMass": 44.1,
-    "highTemp": 10000.0,
-    "highTempTransitionTarget": "0",
-    "lowTemp": 231.0,
-    "lowTempTransitionTarget": "LiquidPropane",
-    "hardness": 0,
-    "dlcId": ""
-  },
-  {
     "id": "NiobiumGas",
     "name": "<link=\"NIOBIUMGAS\">Niobium Gas</link>",
     "description": "(Nb) Niobium Gas is a rare metal.\n\nThis selection is in a <link=\"ELEMENTSGAS\">Gaseous</link> state.",
@@ -2726,21 +2516,6 @@
     "highTempTransitionTarget": "0",
     "lowTemp": 5017.0,
     "lowTempTransitionTarget": "MoltenNiobium",
-    "hardness": 0,
-    "dlcId": ""
-  },
-  {
-    "id": "Helium",
-    "name": "<link=\"HELIUM\">Helium</link>",
-    "description": "(He) Helium is an atomically lightweight, chemical <link=\"ELEMENTSGAS\">Gas</link>.",
-    "state": "5",
-    "specificHeatCapacity": 0.14,
-    "thermalConductivity": 0.236,
-    "molarMass": 4.0,
-    "highTemp": 10000.0,
-    "highTempTransitionTarget": "0",
-    "lowTemp": 4.22,
-    "lowTempTransitionTarget": "LiquidHelium",
     "hardness": 0,
     "dlcId": ""
   },
@@ -3028,21 +2803,6 @@
     "lowTempTransitionTarget": "NuclearWaste",
     "hardness": 0,
     "dlcId": "EXPANSION1_ID"
-  },
-  {
-    "id": "Syngas",
-    "name": "<link=\"SYNGAS\">Synthesis Gas</link>",
-    "description": "Synthesis Gas is an artificial, unbreathable <link=\"ELEMENTSGAS\">Gas</link>.\n\nIt can be converted into an efficient fuel.",
-    "state": "5",
-    "specificHeatCapacity": 2.4,
-    "thermalConductivity": 0.168,
-    "molarMass": 26.96,
-    "highTemp": 10000.0,
-    "highTempTransitionTarget": "0",
-    "lowTemp": 21.0,
-    "lowTempTransitionTarget": "MoltenSyngas",
-    "hardness": 0,
-    "dlcId": ""
   },
   {
     "id": "NickelGas",

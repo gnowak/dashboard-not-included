@@ -3,7 +3,7 @@ import { DUPLICANT_STATS, CRITTER_DATA } from '../data/critters';
 import { CROP_DATA } from '../data/crops';
 import { Maximize2, ArrowDownRight, ArrowUpRight } from 'lucide-react';
 
-export function DuplicantStats({ duplicants, setDuplicants, totalCalories, ranches, crops }) {
+export function DuplicantStats({ duplicants, setDuplicants, totalCalories, ranches, crops, critterData = {} }) {
   const o2Needed = duplicants * DUPLICANT_STATS.o2PerCycle;
   const caloriesNeeded = duplicants * DUPLICANT_STATS.caloriesPerCycle;
   
@@ -21,9 +21,11 @@ export function DuplicantStats({ duplicants, setDuplicants, totalCalories, ranch
     const inputs = {};
     const outputs = {};
 
+    const activeCritterData = Object.keys(critterData).length > 0 ? critterData : CRITTER_DATA;
+
     // Process Ranches
     ranches.forEach(ranch => {
-      const critter = CRITTER_DATA[ranch.critterType];
+      const critter = activeCritterData[ranch.critterType];
       if (!critter || ranch.count <= 0) return;
 
       // Space
@@ -33,17 +35,21 @@ export function DuplicantStats({ duplicants, setDuplicants, totalCalories, ranch
         landSpace += critter.spaceRequired * ranch.count;
       }
 
-      // Stables
-      totalStables += Math.ceil(ranch.count / critter.maxSize);
+      // Stables (wild critters do not require domestic stables)
+      if (ranch.ranchState !== 'wild') {
+        totalStables += Math.ceil(ranch.count / (critter.maxSize || 8));
+      }
 
-      // Inputs
+      // Feed/metabolism multiplier based on happiness state
+      const feedMult = ranch.ranchState === 'glum' ? 0.2 : ranch.ranchState === 'wild' ? 0.0 : 1.0;
+
       // Inputs
       if (critter.inputs && critter.inputs.length > 0) {
         const activeFeedName = ranch.activeFeed || critter.inputs[0].name;
         const activeInput = critter.inputs.find(input => input.name === activeFeedName) || critter.inputs[0];
         
         if (activeInput) {
-          const totalAmt = activeInput.amount * ranch.count;
+          const totalAmt = activeInput.amount * ranch.count * feedMult;
           const key = `${activeInput.name}_${activeInput.unit}`;
           if (!inputs[key]) {
             inputs[key] = { name: activeInput.name, unit: activeInput.unit, amount: 0 };
@@ -62,7 +68,7 @@ export function DuplicantStats({ duplicants, setDuplicants, totalCalories, ranch
           : critter.outputs;
 
         activeOutputs.forEach(output => {
-          const totalAmt = output.amount * ranch.count;
+          const totalAmt = output.amount * ranch.count * feedMult;
           const key = `${output.name}_${output.unit}`;
           if (!outputs[key]) {
             outputs[key] = { name: output.name, unit: output.unit, amount: 0 };
@@ -117,7 +123,7 @@ export function DuplicantStats({ duplicants, setDuplicants, totalCalories, ranch
       inputs: Object.values(inputs), 
       outputs: Object.values(outputs) 
     };
-  }, [ranches, crops]);
+  }, [ranches, crops, critterData]);
 
   const hasActiveProduction = ranches.some(r => r.count > 0) || crops.some(c => c.count > 0);
 

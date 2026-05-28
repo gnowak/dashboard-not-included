@@ -85,6 +85,7 @@ export function DatabaseExplorer({
   const [dlcFilter, setDlcFilter] = useState('all');
   const [showDlcDesc, setShowDlcDesc] = useState(false);
   const [expandedRecipes, setExpandedRecipes] = useState({});
+  const [stateFilter, setStateFilter] = useState('all');
 
   const toggleExpand = (itemId) => {
     setExpandedCards(prev => ({ ...prev, [itemId]: !prev[itemId] }));
@@ -99,6 +100,7 @@ export function DatabaseExplorer({
     setSearchQuery('');
     setExpandedCards({});
     setExpandedRecipes({});
+    setStateFilter('all');
   };
 
   const filteredCritters = useMemo(() => critters.filter(c => c.isRanchable !== false), [critters]);
@@ -114,7 +116,7 @@ export function DatabaseExplorer({
     { id: 'foods', name: 'Foods', count: filterByDlc(foods).length, icon: Flame },
     { id: 'critters', name: 'All Critters', count: filterByDlc(filteredCritters).length, icon: HelpCircle },
     { id: 'plants', name: 'All Plants', count: filterByDlc(filteredPlants).length, icon: HelpCircle },
-    { id: 'elements', name: 'Resources', count: filterByDlc(elements).length, icon: Scale },
+    { id: 'elements', name: 'Resources', count: elements.length, icon: Scale },
     { id: 'buildings', name: 'Buildings', count: filterByDlc(buildings).length, icon: Shield },
   ], [foods.length, filteredCritters.length, filteredPlants.length, elements.length, buildings.length, dlcFilter]);
 
@@ -132,8 +134,8 @@ export function DatabaseExplorer({
   const filteredList = useMemo(() => {
     let list = activeList;
 
-    // Apply DLC Filter
-    if (dlcFilter !== 'all') {
+    // Apply DLC Filter (skipped for elements due to insufficient dlc metadata in raw JSON)
+    if (dlcFilter !== 'all' && subTab !== 'elements') {
       list = list.filter(item => getDlcName(item.requiredDlcIds) === dlcFilter);
     }
 
@@ -144,6 +146,11 @@ export function DatabaseExplorer({
       } else if (foodFilter === 'raw') {
         list = list.filter(item => !recipes.some(r => r.outputs?.some(o => o.material === item.id)));
       }
+    }
+
+    // Apply State Filter for Elements
+    if (subTab === 'elements' && stateFilter !== 'all') {
+      list = list.filter(item => item.state === stateFilter);
     }
 
     const q = searchQuery.toLowerCase().trim();
@@ -169,7 +176,7 @@ export function DatabaseExplorer({
     }
 
     return list;
-  }, [activeList, searchQuery, subTab, foodFilter, foodSort, dlcFilter, recipes]);
+  }, [activeList, searchQuery, subTab, foodFilter, foodSort, dlcFilter, recipes, stateFilter]);
 
   // Utility to safely extract & format Kelvin/Celsius temperatures
   const formatTemp = (tempObj, keyPrefix) => {
@@ -283,54 +290,70 @@ export function DatabaseExplorer({
         {/* Right Side: Search and Filters */}
         <div style={{ display: 'flex', gap: '0.4rem', alignItems: 'center', flexWrap: 'wrap' }}>
           <div style={{ display: 'flex', gap: '0.25rem', alignItems: 'center' }}>
-            <select 
-              value={dlcFilter} 
-              onChange={e => {
-                setDlcFilter(e.target.value);
-                if (e.target.value !== 'all') {
-                  setShowDlcDesc(true);
-                } else {
-                  setShowDlcDesc(false);
-                }
-              }}
-              style={{
-                padding: '0.35rem 0.5rem',
+            {subTab !== 'elements' ? (
+              <>
+                <select 
+                  value={dlcFilter} 
+                  onChange={e => {
+                    setDlcFilter(e.target.value);
+                    if (e.target.value !== 'all') {
+                      setShowDlcDesc(true);
+                    } else {
+                      setShowDlcDesc(false);
+                    }
+                  }}
+                  style={{
+                    padding: '0.35rem 0.5rem',
+                    fontSize: '0.75rem',
+                    border: '1px solid var(--oni-panel-border)',
+                    borderRadius: '4px',
+                    background: 'rgba(0, 0, 0, 0.4)',
+                    color: 'var(--oni-text-primary)',
+                    fontFamily: 'var(--oni-font-mono)',
+                    cursor: 'pointer'
+                  }}
+                >
+                  <option value="all">All Content</option>
+                  <option value="Base Game">Base Game Only</option>
+                  <option value="Spaced Out!">Spaced Out!</option>
+                  <option value="Frosty Planet">Frosty Planet</option>
+                  <option value="Bionic Pack">Bionic Pack</option>
+                  <option value="Dartle Pack">Prehistoric Pack</option>
+                  <option value="Aquatic Pack">Aquatic Pack</option>
+                </select>
+                {dlcFilter !== 'all' && (
+                  <button
+                    onClick={() => setShowDlcDesc(!showDlcDesc)}
+                    style={{
+                      padding: '0.35rem',
+                      border: '1px solid var(--oni-panel-border)',
+                      borderRadius: '4px',
+                      background: showDlcDesc ? 'rgba(127, 191, 255, 0.15)' : 'rgba(0, 0, 0, 0.4)',
+                      color: showDlcDesc ? 'var(--oni-text-primary)' : 'var(--oni-text-muted)',
+                      cursor: 'pointer',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      transition: 'all 0.15s ease'
+                    }}
+                    title="Toggle DLC Information"
+                  >
+                    <HelpCircle size={12} />
+                  </button>
+                )}
+              </>
+            ) : (
+              <span style={{
                 fontSize: '0.75rem',
+                color: 'var(--oni-text-muted)',
+                padding: '0.35rem 0.5rem',
                 border: '1px solid var(--oni-panel-border)',
                 borderRadius: '4px',
-                background: 'rgba(0, 0, 0, 0.4)',
-                color: 'var(--oni-text-primary)',
-                fontFamily: 'var(--oni-font-mono)',
-                cursor: 'pointer'
-              }}
-            >
-              <option value="all">All Content</option>
-              <option value="Base Game">Base Game Only</option>
-              <option value="Spaced Out!">Spaced Out!</option>
-              <option value="Frosty Planet">Frosty Planet</option>
-              <option value="Bionic Pack">Bionic Pack</option>
-              <option value="Dartle Pack">Prehistoric Pack</option>
-              <option value="Aquatic Pack">Aquatic Pack</option>
-            </select>
-            {dlcFilter !== 'all' && (
-              <button
-                onClick={() => setShowDlcDesc(!showDlcDesc)}
-                style={{
-                  padding: '0.35rem',
-                  border: '1px solid var(--oni-panel-border)',
-                  borderRadius: '4px',
-                  background: showDlcDesc ? 'rgba(127, 191, 255, 0.15)' : 'rgba(0, 0, 0, 0.4)',
-                  color: showDlcDesc ? 'var(--oni-text-primary)' : 'var(--oni-text-muted)',
-                  cursor: 'pointer',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  transition: 'all 0.15s ease'
-                }}
-                title="Toggle DLC Information"
-              >
-                <HelpCircle size={12} />
-              </button>
+                background: 'rgba(0, 0, 0, 0.2)',
+                fontFamily: 'var(--oni-font-mono)'
+              }}>
+                All Resources Enabled
+              </span>
             )}
           </div>
 
@@ -375,6 +398,28 @@ export function DatabaseExplorer({
                 <option value="name_asc">Name: A-Z</option>
               </select>
             </>
+          )}
+
+          {subTab === 'elements' && (
+            <select 
+              value={stateFilter} 
+              onChange={e => setStateFilter(e.target.value)}
+              style={{
+                padding: '0.35rem 0.5rem',
+                fontSize: '0.75rem',
+                border: '1px solid var(--oni-panel-border)',
+                borderRadius: '4px',
+                background: 'rgba(0, 0, 0, 0.4)',
+                color: 'var(--oni-text-primary)',
+                fontFamily: 'var(--oni-font-mono)',
+                cursor: 'pointer'
+              }}
+            >
+              <option value="all">All States</option>
+              <option value="Solid">Solids Only</option>
+              <option value="Liquid">Liquids Only</option>
+              <option value="Gas">Gases Only</option>
+            </select>
           )}
 
           <div style={{ position: 'relative', minWidth: '180px' }}>
@@ -531,23 +576,25 @@ export function DatabaseExplorer({
                   }}
                 >
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', width: '100%', flexShrink: 0 }}>
-                    {/* DLC Badge Pill */}
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                      <span style={{
-                        fontSize: '0.6rem',
-                        fontWeight: 'bold',
-                        textTransform: 'uppercase',
-                        padding: '0.1rem 0.35rem',
-                        borderRadius: '3px',
-                        background: dlcBadgeColor,
-                        color: dlcTextColor,
-                        border: `1px solid ${dlcBorderColor}`,
-                        fontFamily: 'var(--oni-font-mono)',
-                        letterSpacing: '0.05em'
-                      }}>
-                        {dlcName}
-                      </span>
-                    </div>
+                    {/* DLC Badge Pill (Bypassed for elements due to raw data limitations) */}
+                    {subTab !== 'elements' && (
+                      <div style={{ display: 'flex', alignItems: 'center' }}>
+                        <span style={{
+                          fontSize: '0.6rem',
+                          fontWeight: 'bold',
+                          textTransform: 'uppercase',
+                          padding: '0.1rem 0.35rem',
+                          borderRadius: '3px',
+                          background: dlcBadgeColor,
+                          color: dlcTextColor,
+                          border: `1px solid ${dlcBorderColor}`,
+                          fontFamily: 'var(--oni-font-mono)',
+                          letterSpacing: '0.05em'
+                        }}>
+                          {dlcName}
+                        </span>
+                      </div>
+                    )}
                     {/* Header: Name and specific Badge */}
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.6rem', gap: '0.5rem' }}>
                       <h4 style={{ 
@@ -1091,13 +1138,17 @@ export function DatabaseExplorer({
                                 {item.highTemp !== undefined && item.highTemp > 0 && item.highTempTransitionTarget && item.highTempTransitionTarget !== '0' && (
                                   <div style={{ display: 'flex', justifyContent: 'space-between', fontFamily: 'var(--oni-font-mono)', fontSize: '0.7rem' }}>
                                     <span>Melts/Gas at:</span>
-                                    <span style={{ color: 'var(--oni-accent-danger)' }}>{item.highTemp.toFixed(1)} K / {cleanName(item.highTempTransitionTarget)}</span>
+                                    <span style={{ color: 'var(--oni-accent-danger)' }}>
+                                      {item.highTemp.toFixed(1)} K / {idToNameMap[item.highTempTransitionTarget] || idToNameMap[item.highTempTransitionTarget?.toLowerCase()] || cleanName(item.highTempTransitionTarget)}
+                                    </span>
                                   </div>
                                 )}
                                 {item.lowTemp !== undefined && item.lowTemp > 0 && item.lowTempTransitionTarget && item.lowTempTransitionTarget !== '0' && (
                                   <div style={{ display: 'flex', justifyContent: 'space-between', fontFamily: 'var(--oni-font-mono)', fontSize: '0.7rem' }}>
                                     <span>Freezes at:</span>
-                                    <span style={{ color: 'var(--oni-accent-oxygen)' }}>{item.lowTemp.toFixed(1)} K / {cleanName(item.lowTempTransitionTarget)}</span>
+                                    <span style={{ color: 'var(--oni-accent-oxygen)' }}>
+                                      {item.lowTemp.toFixed(1)} K / {idToNameMap[item.lowTempTransitionTarget] || idToNameMap[item.lowTempTransitionTarget?.toLowerCase()] || cleanName(item.lowTempTransitionTarget)}
+                                    </span>
                                   </div>
                                 )}
                               </div>

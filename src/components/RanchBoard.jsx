@@ -3,7 +3,7 @@ import { RanchCard } from './RanchCard';
 import { CRITTER_DATA } from '../data/critters';
 import { cleanName } from './DatabaseExplorer';
 
-export function RanchBoard({ ranches, onRanchCountChange, onRanchRemove, onRanchAdd, onRanchFeedChange, critterData = CRITTER_DATA }) {
+export function RanchBoard({ ranches, onRanchCountChange, onRanchRemove, onRanchAdd, onRanchFeedChange, onRanchStateChange, critterData = CRITTER_DATA }) {
   // Find which critters are not active in ranches and can be tamed/groomed
   const activeCritterTypes = ranches.map(r => r.critterType);
   const hasIsRanchable = Object.values(critterData).some(c => c.isRanchable !== undefined);
@@ -145,9 +145,11 @@ export function RanchBoard({ ranches, onRanchCountChange, onRanchRemove, onRanch
                 critter={critter}
                 count={ranch.count}
                 activeFeed={ranch.activeFeed}
+                ranchState={ranch.ranchState}
                 onChange={(newCount) => onRanchCountChange(ranch.critterType, newCount)}
                 onRemove={() => onRanchRemove(ranch.critterType)}
                 onFeedChange={(newFeed) => onRanchFeedChange(ranch.critterType, newFeed)}
+                onStateChange={(newState) => onRanchStateChange(ranch.critterType, newState)}
               />
             );
           })}
