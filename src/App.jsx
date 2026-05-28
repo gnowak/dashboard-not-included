@@ -9,21 +9,9 @@ import { CROP_DATA } from './data/crops';
 
 const STORAGE_KEY = 'oni-dashboard-state';
 
-const DEFAULT_RANCHES = [
-  { critterType: 'hatch', count: 8 },
-  { critterType: 'drecko', count: 4 },
-  { critterType: 'shineBug', count: 0 },
-  { critterType: 'pip', count: 0 },
-  { critterType: 'pacu', count: 0 }
-];
+const DEFAULT_RANCHES = [];
 
-const DEFAULT_CROPS = [
-  { cropType: 'mealwood', count: 8, roomSize: 96 },
-  { cropType: 'bristleBlossom', count: 4, roomSize: 96 },
-  { cropType: 'duskCap', count: 0, roomSize: 96 },
-  { cropType: 'sleetWheat', count: 0, roomSize: 96 },
-  { cropType: 'thimbleReed', count: 0, roomSize: 96 }
-];
+const DEFAULT_CROPS = [];
 
 const CRITTER_API_MAP = {
   hatch: 'Hatch',
