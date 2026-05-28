@@ -11,6 +11,11 @@ export function FarmBoard({ crops, onCropCountChange, onCropRoomSizeChange, onCr
   const inactiveCrops = Object.values(cropData).filter(c => {
     const isStaged = !activeCropTypes.includes(c.id);
     if (!isStaged) return false;
+
+    // Filter out non-crop producing plants (like decorative plants with no output yield or calories)
+    const isCropProducing = (c.caloriesPerCycle && c.caloriesPerCycle > 0) || (c.outputs && c.outputs.length > 0);
+    if (!isCropProducing) return false;
+
     if (hasIsFarmable) {
       return c.isFarmable === true;
     }
