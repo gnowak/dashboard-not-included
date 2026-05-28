@@ -1,7 +1,7 @@
 [
   {
     "id": "CrushedIce",
-    "name": "<link=\"CRUSHEDICE\">Crushed Ice</link>",
+    "name": "Crushed Ice",
     "description": "(H<sub>2</sub>O) A slush of crushed, semi-solid ice.",
     "state": "Solid",
     "specificHeatCapacity": 2.05,
@@ -16,7 +16,7 @@
   },
   {
     "id": "Diamond",
-    "name": "<link=\"DIAMOND\">Diamond</link>",
+    "name": "Diamond",
     "description": "(C) Diamond is industrial-grade, high density carbon.\n\nIt is very difficult to excavate.",
     "state": "Solid",
     "specificHeatCapacity": 0.516,
@@ -31,7 +31,7 @@
   },
   {
     "id": "Isoresin",
-    "name": "<link=\"ISORESIN\">Isosap</link>",
+    "name": "Isosap",
     "description": "Isosap is a crystallized sap composed of long-chain polymers.\n\nIt is used in the production of rare, high grade materials.",
     "state": "Solid",
     "specificHeatCapacity": 1.3,
@@ -46,7 +46,7 @@
   },
   {
     "id": "Sucrose",
-    "name": "<link=\"SUCROSE\">Sucrose</link>",
+    "name": "Sucrose",
     "description": "(C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>) Sucrose is the raw form of sugar.\n\nIt can be used for cooking higher-quality <link=\"FOOD\">Food</link>.",
     "state": "Solid",
     "specificHeatCapacity": 1.255,
@@ -61,7 +61,7 @@
   },
   {
     "id": "Peat",
-    "name": "<link=\"PEAT\">Peat</link>",
+    "name": "Peat",
     "description": "Peat is a densely packed material made up of partially decomposed organic matter.\n\nIt is a combustible fuel, useful in <link=\"POWER\">Power</link> production.",
     "state": "Solid",
     "specificHeatCapacity": 0.71,
@@ -76,7 +76,7 @@
   },
   {
     "id": "ZincOre",
-    "name": "<link=\"ZINCORE\">Zinc Ore</link>",
+    "name": "Zinc Ore",
     "description": "(Zn) Zinc Ore is a malleable raw <link=\"METALORE\">Metal</link>.\n\nIt is suitable for building <link=\"POWER\">Power</link> systems.",
     "state": "Solid",
     "specificHeatCapacity": 0.388,
@@ -91,7 +91,7 @@
   },
   {
     "id": "Algae",
-    "name": "<link=\"ALGAE\">Algae</link>",
+    "name": "Algae",
     "description": "Algae is a cluster of non-motile, single-celled lifeforms.\n\nIt can be used to produce <link=\"OXYGEN\">Oxygen</link> when used in an <link=\"MINERALDEOXIDIZER\">Oxygen Diffuser</link>.",
     "state": "Solid",
     "specificHeatCapacity": 0.2,
@@ -106,7 +106,7 @@
   },
   {
     "id": "MilkFat",
-    "name": "<link=\"MILKFAT\">Brackwax</link>",
+    "name": "Brackwax",
     "description": "Brackwax is a <link=\"ELEMENTSSOLID\">Solid</link> byproduct of <link=\"MILK\">Brackene</link>.",
     "state": "Solid",
     "specificHeatCapacity": 1.92,
@@ -121,7 +121,7 @@
   },
   {
     "id": "Niobium",
-    "name": "<link=\"NIOBIUM\">Niobium</link>",
+    "name": "Niobium",
     "description": "(Nb) Niobium is a rare metal with many practical applications in metallurgy and superconductor <link=\"RESEARCH\">Research</link>.",
     "state": "Solid",
     "specificHeatCapacity": 0.265,
@@ -136,7 +136,7 @@
   },
   {
     "id": "Nickel",
-    "name": "<link=\"NICKEL\">Nickel</link>",
+    "name": "Nickel",
     "description": "(Ni) Nickel is a conductive <link=\"METAL\">Metal</link>.\n\nIt is suitable for building <link=\"POWER\">Power</link> systems.",
     "state": "Solid",
     "specificHeatCapacity": 0.44,
@@ -151,7 +151,7 @@
   },
   {
     "id": "MilkIce",
-    "name": "<link=\"MILKICE\">Frozen Brackene</link>",
+    "name": "Frozen Brackene",
     "description": "Frozen Brackene is <link=\"MILK\">Brackene</link> frozen into a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 3.4,
@@ -166,7 +166,7 @@
   },
   {
     "id": "Cuprite",
-    "name": "<link=\"CUPRITE\">Copper Ore</link>",
+    "name": "Copper Ore",
     "description": "(Cu<sub>2</sub>O) Copper Ore is a conductive <link=\"METAL\">Metal</link>.\n\nIt is suitable for building <link=\"POWER\">Power</link> systems.",
     "state": "Solid",
     "specificHeatCapacity": 0.386,
@@ -181,7 +181,7 @@
   },
   {
     "id": "Copper",
-    "name": "<link=\"COPPER\">Copper</link>",
+    "name": "Copper",
     "description": "(Cu) Copper is a conductive <link=\"METAL\">Metal</link>.\n\nIt is suitable for building <link=\"POWER\">Power</link> systems.",
     "state": "Solid",
     "specificHeatCapacity": 0.385,
@@ -196,7 +196,7 @@
   },
   {
     "id": "CrushedRock",
-    "name": "<link=\"CRUSHEDROCK\">Crushed Rock</link>",
+    "name": "Crushed Rock",
     "description": "Crushed Rock is <link=\"IGNEOUSROCK\">Igneous Rock</link> crushed into a mechanical mixture.",
     "state": "Solid",
     "specificHeatCapacity": 0.2,
@@ -211,7 +211,7 @@
   },
   {
     "id": "SuperInsulator",
-    "name": "<link=\"SUPERINSULATOR\">Insulite</link>",
+    "name": "Insulite",
     "description": "Insulite reduces <link=\"HEAT\">Heat Transfer</link> and is composed of recrystallized <link=\"KATAIRITE\">Abyssalite</link>.",
     "state": "Solid",
     "specificHeatCapacity": 5.57,
@@ -226,7 +226,7 @@
   },
   {
     "id": "Shale",
-    "name": "<link=\"SHALE\">Shale</link>",
+    "name": "Shale",
     "description": "Shale is a brittle composite of sediment layers.\n\nIt is useful as a <b>Construction Material</b>.",
     "state": "Solid",
     "specificHeatCapacity": 0.25,
@@ -241,7 +241,7 @@
   },
   {
     "id": "Corallium",
-    "name": "<link=\"CORALLIUM\">Corallium</link>",
+    "name": "Corallium",
     "description": "Corallium is a dense coral primarily composed of (CaCO<sub>3</sub>) <link=\"LIME\">Lime</link>.\n\nIt is useful as a <b>Construction Material</b>.",
     "state": "Solid",
     "specificHeatCapacity": 0.2,
@@ -256,7 +256,7 @@
   },
   {
     "id": "PalmWood",
-    "name": "<link=\"PALMWOOD\">Gum Wood</link>",
+    "name": "Gum Wood",
     "description": "Gum Wood can be processed at the <link=\"MILKPRESS\">Plant Pulverizer</link> to yield <link=\"LATEX\">Latex</link>, which is essential for <link=\"RUBBER\">Rubber</link> production.\n\nIt can also be used for <link=\"HEAT\">Heat</link> and <link=\"POWER\">Power</link>, or as a <b>Construction Material</b>.",
     "state": "Solid",
     "specificHeatCapacity": 2.3,
@@ -271,7 +271,7 @@
   },
   {
     "id": "Tallow",
-    "name": "<link=\"TALLOW\">Tallow</link>",
+    "name": "Tallow",
     "description": "A chunk of raw grease that can be used in <link=\"FOOD\">Food</link> production or industrial processes.",
     "state": "Solid",
     "specificHeatCapacity": 2.19,
@@ -286,7 +286,7 @@
   },
   {
     "id": "BrineIce",
-    "name": "<link=\"BRINEICE\">Brine Ice</link>",
+    "name": "Brine Ice",
     "description": "Brine Ice is a natural, highly concentrated solution of <link=\"SALT\">Salt</link> dissolved in <link=\"WATER\">Water</link> and frozen into a <link=\"ELEMENTSSOLID\">Solid</link> state.\n\nIt can be used in desalination processes, separating out usable salt.",
     "state": "Solid",
     "specificHeatCapacity": 3.4,
@@ -301,7 +301,7 @@
   },
   {
     "id": "SolidViscoGel",
-    "name": "<link=\"SOLIDVISCOGEL\">Solid Visco-Gel</link>",
+    "name": "Solid Visco-Gel",
     "description": "Visco-Gel is a polymer that has high surface tension when in <link=\"ELEMENTSLIQUID\">Liquid</link> form.\n\nThis selection is in a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 1.55,
@@ -316,7 +316,7 @@
   },
   {
     "id": "Ceramic",
-    "name": "<link=\"CERAMIC\">Ceramic</link>",
+    "name": "Ceramic",
     "description": "Ceramic is a hard, brittle material formed from heated <link=\"CLAY\">Clay</link>.\n\nIt is a reliable <b>Construction Material</b>.",
     "state": "Solid",
     "specificHeatCapacity": 0.84,
@@ -331,7 +331,7 @@
   },
   {
     "id": "Cobaltite",
-    "name": "<link=\"COBALTITE\">Cobalt Ore</link>",
+    "name": "Cobalt Ore",
     "description": "(Co) Cobalt Ore is a blue-hued <link=\"BUILDINGMATERIALCLASSES\">Metal</link>.\n\nIt is suitable for building <link=\"POWER\">Power</link> systems.",
     "state": "Solid",
     "specificHeatCapacity": 0.42,
@@ -346,7 +346,7 @@
   },
   {
     "id": "Fertilizer",
-    "name": "<link=\"FERTILIZER\">Fertilizer</link>",
+    "name": "Fertilizer",
     "description": "Fertilizer is a processed mixture of biological nutrients.\n\nIt aids in the growth of certain <link=\"PLANTS\">Plants</link>.",
     "state": "Solid",
     "specificHeatCapacity": 0.83,
@@ -361,7 +361,7 @@
   },
   {
     "id": "SolidCrudeOil",
-    "name": "<link=\"SOLIDCRUDEOIL\">Solid Crude Oil</link>",
+    "name": "Solid Crude Oil",
     "description": "",
     "state": "Solid",
     "specificHeatCapacity": 1.69,
@@ -376,7 +376,7 @@
   },
   {
     "id": "Wolframite",
-    "name": "<link=\"WOLFRAMITE\">Wolframite</link>",
+    "name": "Wolframite",
     "description": "((Fe,Mn)WO<sub>4</sub>) Wolframite is a dense Metallic element in a <link=\"ELEMENTSSOLID\">Solid</link> state.\n\nIt is a source of <link=\"TUNGSTEN\">Tungsten</link> and is suitable for building <link=\"POWER\">Power</link> systems.",
     "state": "Solid",
     "specificHeatCapacity": 0.134,
@@ -391,7 +391,7 @@
   },
   {
     "id": "SlimeMold",
-    "name": "<link=\"SLIMEMOLD\">Slime</link>",
+    "name": "Slime",
     "description": "Slime is a thick biomixture of algae, fungi, and mucopolysaccharides.\n\nIt can be distilled into <link=\"ALGAE\">Algae</link> and emits <link=\"CONTAMINATEDOXYGEN\">Polluted Oxygen</link> once dug up.",
     "state": "Solid",
     "specificHeatCapacity": 0.2,
@@ -406,7 +406,7 @@
   },
   {
     "id": "Polypropylene",
-    "name": "<link=\"POLYPROPYLENE\">Plastic</link>",
+    "name": "Plastic",
     "description": "(C<sub>3</sub>H<sub>6</sub>)<sub>n</sub> <link=\"POLYPROPYLENE\">Plastic</link> is a thermoplastic polymer.\n\nIt is useful for constructing a variety of advanced buildings and equipment.",
     "state": "Solid",
     "specificHeatCapacity": 1.92,
@@ -421,7 +421,7 @@
   },
   {
     "id": "Amber",
-    "name": "<link=\"AMBER\">Amber</link>",
+    "name": "Amber",
     "description": "Amber is a <link=\"ELEMENTSSOLID\">Solid</link> organic composite of <link=\"NATURALRESIN\">Resin</link> and <link=\"FOSSIL\">Fossil</link>.",
     "state": "Solid",
     "specificHeatCapacity": 1.3,
@@ -436,7 +436,7 @@
   },
   {
     "id": "SolidNaphtha",
-    "name": "<link=\"SOLIDNAPHTHA\">Solid Naphtha</link>",
+    "name": "Solid Naphtha",
     "description": "Naphtha is a distilled hydrocarbon mixture in a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 2.191,
@@ -451,7 +451,7 @@
   },
   {
     "id": "Tungsten",
-    "name": "<link=\"TUNGSTEN\">Tungsten</link>",
+    "name": "Tungsten",
     "description": "(W) Tungsten is an extremely tough crystalline <link=\"REFINEDMETAL\">Metal</link>.\n\nIt is suitable for building <link=\"POWER\">Power</link> systems.",
     "state": "Solid",
     "specificHeatCapacity": 0.134,
@@ -466,7 +466,7 @@
   },
   {
     "id": "RefinedCarbon",
-    "name": "<link=\"REFINEDCARBON\">Refined Carbon</link>",
+    "name": "Refined Carbon",
     "description": "(C) Refined carbon is solid element purified from raw <link=\"CARBON\">Coal</link>.",
     "state": "Solid",
     "specificHeatCapacity": 1.74,
@@ -481,7 +481,7 @@
   },
   {
     "id": "Steel",
-    "name": "<link=\"STEEL\">Steel</link>",
+    "name": "Steel",
     "description": "Steel is a <link=\"REFINEDMETAL\">Metal Alloy</link> composed of iron and carbon.",
     "state": "Solid",
     "specificHeatCapacity": 0.49,
@@ -496,7 +496,7 @@
   },
   {
     "id": "Phosphorite",
-    "name": "<link=\"PHOSPHORITE\">Phosphorite</link>",
+    "name": "Phosphorite",
     "description": "Phosphorite is a composite of sedimentary rock, saturated with phosphate.",
     "state": "Solid",
     "specificHeatCapacity": 0.15,
@@ -511,7 +511,7 @@
   },
   {
     "id": "SolidHydrogen",
-    "name": "<link=\"SOLIDHYDROGEN\">Solid Hydrogen</link>",
+    "name": "Solid Hydrogen",
     "description": "(H) Solid Hydrogen is the universe's most common element in a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 2.4,
@@ -526,7 +526,7 @@
   },
   {
     "id": "BleachStone",
-    "name": "<link=\"BLEACHSTONE\">Bleach Stone</link>",
+    "name": "Bleach Stone",
     "description": "Bleach stone is an unstable compound that emits unbreathable <link=\"CHLORINEGAS\">Chlorine Gas</link>.\n\nIt is often used in <link=\"HANDSANITIZER\">Hygienic</link> processes.",
     "state": "Solid",
     "specificHeatCapacity": 0.5,
@@ -541,7 +541,7 @@
   },
   {
     "id": "Lead",
-    "name": "<link=\"LEAD\">Lead</link>",
+    "name": "Lead",
     "description": "(Pb) Lead is a soft yet extremely dense <link=\"REFINEDMETAL\">Refined Metal</link>.\n\nIt has a low Overheat Temperature and is suitable for building <link=\"POWER\">Power</link> systems.",
     "state": "Solid",
     "specificHeatCapacity": 0.128,
@@ -556,7 +556,7 @@
   },
   {
     "id": "Sulfur",
-    "name": "<link=\"SULFUR\">Sulfur</link>",
+    "name": "Sulfur",
     "description": "(S) Sulfur is a common chemical element and byproduct of <link=\"METHANE\">Natural Gas</link> production.\n\nThis selection is in a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 0.7,
@@ -571,7 +571,7 @@
   },
   {
     "id": "Lime",
-    "name": "<link=\"LIME\">Lime</link>",
+    "name": "Lime",
     "description": "(CaCO<sub>3</sub>) Lime is a mineral commonly found in <link=\"CREATURES\">Critter</link> egg shells.\n\nIt is useful as a <b>Construction Material</b>.",
     "state": "Solid",
     "specificHeatCapacity": 0.834,
@@ -586,7 +586,7 @@
   },
   {
     "id": "SolidChlorine",
-    "name": "<link=\"SOLIDCHLORINE\">Solid Chlorine</link>",
+    "name": "Solid Chlorine",
     "description": "(Cl) Chlorine is a natural <link=\"DISEASE\">Germ</link>-killing element in a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 0.48,
@@ -601,7 +601,7 @@
   },
   {
     "id": "SolidMucus",
-    "name": "<link=\"SOLIDMUCUS\">Frozen Mucin</link>",
+    "name": "Frozen Mucin",
     "description": "Frozen Mucin is a chunk of <link=\"MUCUS\">Mucin</link> cooled to a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 3.05,
@@ -616,7 +616,7 @@
   },
   {
     "id": "SolidMercury",
-    "name": "<link=\"SOLIDMERCURY\">Mercury</link>",
+    "name": "Mercury",
     "description": "(Hg) Mercury is a rare <link=\"REFINEDMETAL\">Metal</link> in a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 0.14,
@@ -631,7 +631,7 @@
   },
   {
     "id": "SolidNuclearWaste",
-    "name": "<link=\"SOLIDNUCLEARWASTE\">Solid Nuclear Waste</link>",
+    "name": "Solid Nuclear Waste",
     "description": "Highly toxic solid full of <link=\"RADIATION\">Radioactive Contaminants</link>.",
     "state": "7",
     "specificHeatCapacity": 7.44,
@@ -646,7 +646,7 @@
   },
   {
     "id": "Coquina",
-    "name": "<link=\"COQUINA\">Coquina</link>",
+    "name": "Coquina",
     "description": "Coquina is a brittle <link=\"ELEMENTSSOLID\">Solid</link> mineral made up of the calcified remains of aquatic invertebrates.\n\nIt is useful as a <b>Construction Material</b>.",
     "state": "Solid",
     "specificHeatCapacity": 0.8,
@@ -661,7 +661,7 @@
   },
   {
     "id": "Obsidian",
-    "name": "<link=\"OBSIDIAN\">Obsidian</link>",
+    "name": "Obsidian",
     "description": "Obsidian is a brittle composite of volcanic <link=\"GLASS\">Glass</link>.",
     "state": "Solid",
     "specificHeatCapacity": 0.2,
@@ -676,7 +676,7 @@
   },
   {
     "id": "SolidPetroleum",
-    "name": "<link=\"SOLIDPETROLEUM\">Solid Petroleum</link>",
+    "name": "Solid Petroleum",
     "description": "Petroleum is a <link=\"POWER\">Power</link> source.\n\nThis selection is in a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 1.76,
@@ -691,7 +691,7 @@
   },
   {
     "id": "SolidSuperCoolant",
-    "name": "<link=\"SOLIDSUPERCOOLANT\">Solid Super Coolant</link>",
+    "name": "Solid Super Coolant",
     "description": "Super Coolant is an industrial-grade <link=\"FULLERENE\">Fullerene</link> coolant.\n\nThis selection is in a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 8.44,
@@ -706,7 +706,7 @@
   },
   {
     "id": "IgneousRock",
-    "name": "<link=\"IGNEOUSROCK\">Igneous Rock</link>",
+    "name": "Igneous Rock",
     "description": "Igneous Rock is a composite of solidified volcanic rock.\n\nIt is useful as a <b>Construction Material</b>.",
     "state": "Solid",
     "specificHeatCapacity": 1.0,
@@ -721,7 +721,7 @@
   },
   {
     "id": "Rubber",
-    "name": "<link=\"RUBBER\">Rubber</link>",
+    "name": "Rubber",
     "description": "Rubber is a viscoelastic <link=\"ELEMENTSSOLID\">Solid</link> made from vulcanized <link=\"LATEX\">Latex</link>.\n\nIt can be used to make <link=\"BUILDINGGASKET\">Gaskets</link>.",
     "state": "Solid",
     "specificHeatCapacity": 1.8,
@@ -736,7 +736,7 @@
   },
   {
     "id": "EnrichedUranium",
-    "name": "<link=\"ENRICHEDURANIUM\">Enriched Uranium</link>",
+    "name": "Enriched Uranium",
     "description": "(U) Enriched Uranium is a refined substance primarily used to <link=\"POWER\">Power</link> potent research reactors.\n\nIt becomes highly <link=\"RADIATION\">Radioactive</link> when consumed.",
     "state": "Solid",
     "specificHeatCapacity": 1.0,
@@ -751,7 +751,7 @@
   },
   {
     "id": "SiltStone",
-    "name": "<link=\"SILTSTONE\">Siltstone</link>",
+    "name": "Siltstone",
     "description": "Siltstone is a chalky mudrock made primarily of compressed silt.\n\nIt is useful as a <b>Construction Material</b>.",
     "state": "Solid",
     "specificHeatCapacity": 0.9,
@@ -766,7 +766,7 @@
   },
   {
     "id": "Gold",
-    "name": "<link=\"GOLD\">Gold</link>",
+    "name": "Gold",
     "description": "(Au) Gold is a conductive precious <link=\"REFINEDMETAL\">Metal</link>.\n\nIt is suitable for building <link=\"POWER\">Power</link> systems.",
     "state": "Solid",
     "specificHeatCapacity": 0.129,
@@ -781,7 +781,7 @@
   },
   {
     "id": "Rust",
-    "name": "<link=\"RUST\">Rust</link>",
+    "name": "Rust",
     "description": "Rust is an iron oxide that forms from the breakdown of <link=\"IRON\">Iron</link>.\n\nIt is useful in some <link=\"OXYGEN\">Oxygen</link> production processes.",
     "state": "Solid",
     "specificHeatCapacity": 0.449,
@@ -796,7 +796,7 @@
   },
   {
     "id": "Gunk",
-    "name": "<link=\"GUNK\">Solid Gunk</link>",
+    "name": "Solid Gunk",
     "description": "Solid Gunk is the built-up grime and grit produced by Duplicants' bionic mechanisms, which has been frozen into a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 1.2,
@@ -811,7 +811,7 @@
   },
   {
     "id": "FrozenPhytoOil",
-    "name": "<link=\"FROZENPHYTOOIL\">Frozen Phyto Oil</link>",
+    "name": "Frozen Phyto Oil",
     "description": "Frozen Phyto Oil is thick, slippery <link=\"SLIME\">Slime</link> extract, frozen into a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 0.9,
@@ -826,7 +826,7 @@
   },
   {
     "id": "Corium",
-    "name": "<link=\"CORIUM\">Corium</link>",
+    "name": "Corium",
     "description": "A radioactive mixture of nuclear waste and melted reactor materials.\n\nReleases <link=\"FALLOUT\">Nuclear Fallout</link> gas.",
     "state": "Solid",
     "specificHeatCapacity": 7.44,
@@ -841,7 +841,7 @@
   },
   {
     "id": "Phosphorus",
-    "name": "<link=\"PHOSPHORUS\">Refined Phosphorus</link>",
+    "name": "Refined Phosphorus",
     "description": "(P) Refined Phosphorus is a chemical element in its <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 0.7697,
@@ -856,7 +856,7 @@
   },
   {
     "id": "Iridium",
-    "name": "<link=\"IRIDIUM\">Iridium</link>",
+    "name": "Iridium",
     "description": "(Ir) Iridium is a firm and highly conductive <link=\"METAL\">Metal</link> that can withstand extreme  <link=\"HEAT\">Heat</link>.",
     "state": "Solid",
     "specificHeatCapacity": 0.131,
@@ -871,7 +871,7 @@
   },
   {
     "id": "Granite",
-    "name": "<link=\"GRANITE\">Granite</link>",
+    "name": "Granite",
     "description": "Granite is a dense composite of <link=\"IGNEOUSROCK\">Igneous Rock</link>.\n\nIt is useful as a <b>Construction Material</b>.",
     "state": "Solid",
     "specificHeatCapacity": 0.79,
@@ -886,7 +886,7 @@
   },
   {
     "id": "Radium",
-    "name": "<link=\"RADIUM\">Radium</link>",
+    "name": "Radium",
     "description": "(Ra) Radium is a <link=\"LIGHT\">Light</link> emitting radioactive substance.\n\nIt is useful as a <link=\"POWER\">Power</link> source.",
     "state": "Solid",
     "specificHeatCapacity": 1.0,
@@ -901,7 +901,7 @@
   },
   {
     "id": "WoodLog",
-    "name": "<link=\"WOOD\">Wood</link>",
+    "name": "Wood",
     "description": "Wood is a good source of <link=\"HEAT\">Heat</link> and <link=\"POWER\">Power</link>.\n\nIts insulation properties and positive <link=\"DECOR\">Decor</link> also make it a useful <b>Construction Material</b>.",
     "state": "Solid",
     "specificHeatCapacity": 2.3,
@@ -916,7 +916,7 @@
   },
   {
     "id": "SolidCarbonDioxide",
-    "name": "<link=\"SOLIDCARBONDIOXIDE\">Solid Carbon Dioxide</link>",
+    "name": "Solid Carbon Dioxide",
     "description": "(CO<sub>2</sub>) Carbon Dioxide is an unbreathable compound in a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 0.846,
@@ -931,7 +931,7 @@
   },
   {
     "id": "Cobalt",
-    "name": "<link=\"COBALT\">Cobalt</link>",
+    "name": "Cobalt",
     "description": "(Co) Cobalt is a <link=\"REFINEDMETAL\">Refined Metal</link> made from <link=\"COBALTITE\">Cobalt Ore</link>.",
     "state": "Solid",
     "specificHeatCapacity": 0.42,
@@ -946,7 +946,7 @@
   },
   {
     "id": "UraniumOre",
-    "name": "<link=\"URANIUMORE\">Uranium Ore</link>",
+    "name": "Uranium Ore",
     "description": "(U) Uranium Ore is a highly <link=\"RADIATION\">Radioactive</link> substance.\n\nIt can be refined into fuel for research reactors.",
     "state": "Solid",
     "specificHeatCapacity": 1.0,
@@ -961,7 +961,7 @@
   },
   {
     "id": "SolidPropane",
-    "name": "<link=\"SOLIDPROPANE\">Solid Propane</link>",
+    "name": "Solid Propane",
     "description": "(C<sub>3</sub>H<sub>8</sub>) Solid Propane is a natural gas in a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 2.4,
@@ -976,7 +976,7 @@
   },
   {
     "id": "AluminumOre",
-    "name": "<link=\"ALUMINUMORE\">Aluminum Ore</link>",
+    "name": "Aluminum Ore",
     "description": "Aluminum ore, also known as Bauxite, is a sedimentary rock high in metal content.\n\nIt can be refined into <link=\"ALUMINUM\">Aluminum</link>.",
     "state": "Solid",
     "specificHeatCapacity": 0.91,
@@ -991,7 +991,7 @@
   },
   {
     "id": "SedimentaryRock",
-    "name": "<link=\"SEDIMENTARYROCK\">Sedimentary Rock</link>",
+    "name": "Sedimentary Rock",
     "description": "Sedimentary Rock is a hardened composite of sediment layers.\n\nIt is useful as a <b>Construction Material</b>.",
     "state": "Solid",
     "specificHeatCapacity": 0.2,
@@ -1006,7 +1006,7 @@
   },
   {
     "id": "Fullerene",
-    "name": "<link=\"FULLERENE\">Fullerene</link>",
+    "name": "Fullerene",
     "description": "(C<sub>60</sub>) Fullerene is a form of <link=\"CARBON\">Coal</link> consisting of spherical molecules.",
     "state": "Solid",
     "specificHeatCapacity": 0.95,
@@ -1021,7 +1021,7 @@
   },
   {
     "id": "GoldAmalgam",
-    "name": "<link=\"GOLDAMALGAM\">Gold Amalgam</link>",
+    "name": "Gold Amalgam",
     "description": "Gold Amalgam is a conductive amalgam of gold and mercury.\n\nIt is suitable for building <link=\"POWER\">Power</link> systems.",
     "state": "Solid",
     "specificHeatCapacity": 0.15,
@@ -1036,7 +1036,7 @@
   },
   {
     "id": "Salt",
-    "name": "<link=\"SALT\">Salt</link>",
+    "name": "Salt",
     "description": "(NaCl) Salt, also known as sodium chloride, is an edible chemical compound.\n\nWhen refined, it can be eaten with meals to increase Duplicant <link=\"MORALE\">Morale</link>.",
     "state": "Solid",
     "specificHeatCapacity": 0.7,
@@ -1051,7 +1051,7 @@
   },
   {
     "id": "Sand",
-    "name": "<link=\"SAND\">Sand</link>",
+    "name": "Sand",
     "description": "Sand is a composite of granular rock.\n\nIt is useful as a <link=\"FILTER\">Filtration Medium</link>.",
     "state": "Solid",
     "specificHeatCapacity": 0.83,
@@ -1066,7 +1066,7 @@
   },
   {
     "id": "Snow",
-    "name": "<link=\"SNOW\">Snow</link>",
+    "name": "Snow",
     "description": "(H<sub>2</sub>O) Snow is a mass of loose, crystalline ice particles.\n\nIt becomes <link=\"WATER\">Water</link> when melted.",
     "state": "Solid",
     "specificHeatCapacity": 2.05,
@@ -1081,7 +1081,7 @@
   },
   {
     "id": "SandStone",
-    "name": "<link=\"SANDSTONE\">Sandstone</link>",
+    "name": "Sandstone",
     "description": "Sandstone is a composite of relatively soft sedimentary rock.\n\nIt is useful as a <b>Construction Material</b>.",
     "state": "Solid",
     "specificHeatCapacity": 0.8,
@@ -1096,7 +1096,7 @@
   },
   {
     "id": "Glass",
-    "name": "<link=\"GLASS\">Glass</link>",
+    "name": "Glass",
     "description": "Glass is a brittle, transparent substance formed from <link=\"SAND\">Sand</link> fired at high temperatures.",
     "state": "Solid",
     "specificHeatCapacity": 0.84,
@@ -1111,7 +1111,7 @@
   },
   {
     "id": "FrozenInk",
-    "name": "<link=\"FROZENINK\">Frozen Squid Ink</link>",
+    "name": "Frozen Squid Ink",
     "description": "Frozen Ink is <link=\"INK\">Squid Ink</link> cooled to a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 2.0,
@@ -1126,7 +1126,7 @@
   },
   {
     "id": "FabricatedWood",
-    "name": "<link=\"FABRICATEDWOOD\">Plywood</link>",
+    "name": "Plywood",
     "description": "Plywood is a good source of <link=\"HEAT\">Heat</link> and <link=\"POWER\">Power</link>.\n\nIts insulation properties make it a useful <b>Construction Material</b>.",
     "state": "Solid",
     "specificHeatCapacity": 2.3,
@@ -1141,7 +1141,7 @@
   },
   {
     "id": "Clay",
-    "name": "<link=\"CLAY\">Clay</link>",
+    "name": "Clay",
     "description": "Clay is a soft, naturally occurring composite of stone and soil that hardens at high <link=\"HEAT\">Temperatures</link>.\n\nIt is a reliable <b>Construction Material</b>.",
     "state": "Solid",
     "specificHeatCapacity": 0.92,
@@ -1156,7 +1156,7 @@
   },
   {
     "id": "ToxicSand",
-    "name": "<link=\"TOXICSAND\">Polluted Dirt</link>",
+    "name": "Polluted Dirt",
     "description": "Polluted Dirt is unprocessed biological waste.\n\nIt emits <link=\"CONTAMINATEDOXYGEN\">Polluted Oxygen</link> over time.",
     "state": "Solid",
     "specificHeatCapacity": 0.83,
@@ -1171,7 +1171,7 @@
   },
   {
     "id": "Ice",
-    "name": "<link=\"ICE\">Ice</link>",
+    "name": "Ice",
     "description": "(H<sub>2</sub>O) Ice is clean water frozen into a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 2.05,
@@ -1186,7 +1186,7 @@
   },
   {
     "id": "Graphite",
-    "name": "<link=\"GRAPHITE\">Graphite</link>",
+    "name": "Graphite",
     "description": "(C) Graphite is the most stable form of carbon.\n\nIt has high thermal conductivity and is useful as a <b>Construction Material</b>.",
     "state": "Solid",
     "specificHeatCapacity": 0.71,
@@ -1201,7 +1201,7 @@
   },
   {
     "id": "ToxicMud",
-    "name": "<link=\"TOXICMUD\">Polluted Mud</link>",
+    "name": "Polluted Mud",
     "description": "A mixture of <link=\"TOXICSAND\">Polluted Dirt</link> and <link=\"DIRTYWATER\">Polluted Water</link>.\n\nCan be separated into its base elements using a <link=\"SLUDGEPRESS\">Sludge Press</link>.",
     "state": "Solid",
     "specificHeatCapacity": 0.83,
@@ -1216,7 +1216,7 @@
   },
   {
     "id": "Mud",
-    "name": "<link=\"MUD\">Mud</link>",
+    "name": "Mud",
     "description": "A mixture of <link=\"DIRT\">Dirt</link> and <link=\"WATER\">Water</link>.\n\nCan be separated into its base elements using a <link=\"SLUDGEPRESS\">Sludge Press</link>.",
     "state": "Solid",
     "specificHeatCapacity": 0.83,
@@ -1231,7 +1231,7 @@
   },
   {
     "id": "Carbon",
-    "name": "<link=\"CARBON\">Coal</link>",
+    "name": "Coal",
     "description": "(C) Coal is a combustible fossil fuel composed of carbon.\n\nIt is useful in <link=\"POWER\">Power</link> production.",
     "state": "Solid",
     "specificHeatCapacity": 0.71,
@@ -1246,7 +1246,7 @@
   },
   {
     "id": "SolidOxygen",
-    "name": "<link=\"SOLIDOXYGEN\">Solid Oxygen</link>",
+    "name": "Solid Oxygen",
     "description": "(O<sub>2</sub>) Solid Oxygen is a breathable element in a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 1.01,
@@ -1261,7 +1261,7 @@
   },
   {
     "id": "Creature",
-    "name": "<link=\"CREATURE\">Genetic Ooze</link>",
+    "name": "Genetic Ooze",
     "description": "(DuPe) Ooze is a slurry of water, carbon, and dozens and dozens of trace elements.\n\nDuplicants are printed from pure Ooze.",
     "state": "Solid",
     "specificHeatCapacity": 3.47,
@@ -1276,7 +1276,7 @@
   },
   {
     "id": "DepletedUranium",
-    "name": "<link=\"DEPLETEDURANIUM\">Depleted Uranium</link>",
+    "name": "Depleted Uranium",
     "description": "(U) Depleted Uranium is <link=\"URANIUMORE\">Uranium</link> with a low U-235 content.\n\nIt is created as a byproduct of <link=\"ENRICHEDURANIUM\">Enriched Uranium</link> and is no longer suitable as fuel.",
     "state": "Solid",
     "specificHeatCapacity": 1.0,
@@ -1291,7 +1291,7 @@
   },
   {
     "id": "Katairite",
-    "name": "<link=\"KATAIRITE\">Abyssalite</link>",
+    "name": "Abyssalite",
     "description": "(Ab) Abyssalite is a resilient, crystalline element.",
     "state": "Solid",
     "specificHeatCapacity": 4.0,
@@ -1306,7 +1306,7 @@
   },
   {
     "id": "Pearl",
-    "name": "<link=\"PEARL\">Pearl</link>",
+    "name": "Pearl",
     "description": "A perfectly smooth gem.\n\nIt can be eaten by <link=\"SEAHORSESPECIES\">Seaquines</link> or used as an attractive <b>Construction Material</b>.",
     "state": "Solid",
     "specificHeatCapacity": 0.45,
@@ -1321,7 +1321,7 @@
   },
   {
     "id": "SolidMethane",
-    "name": "<link=\"SOLIDMETHANE\">Solid Methane</link>",
+    "name": "Solid Methane",
     "description": "(CH<sub>4</sub>) Methane is an alkane in a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 2.191,
@@ -1336,7 +1336,7 @@
   },
   {
     "id": "FishMilkIce",
-    "name": "<link=\"FISHMILKICE\">Frozen Ovolene</link>",
+    "name": "Frozen Ovolene",
     "description": "Frozen Ovolene is <link=\"FISHMILK\">Ovolene</link> frozen into a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 3.4,
@@ -1351,7 +1351,7 @@
   },
   {
     "id": "HardPolypropylene",
-    "name": "<link=\"HARDPOLYPROPYLENE\">Plastium</link>",
+    "name": "Plastium",
     "description": "<link=\"HARDPOLYPROPYLENE\">Plastium</link> is an advanced thermoplastic polymer made from <link=\"TEMPCONDUCTORSOLID\">Thermium</link>, <link=\"POLYPROPYLENE\">Plastic</link> and <link=\"MILKFAT\">Brackwax</link>.\n\nIt is highly heat-resistant and suitable for use in space buildings.",
     "state": "Solid",
     "specificHeatCapacity": 1.5,
@@ -1366,7 +1366,7 @@
   },
   {
     "id": "NaturalSolidResin",
-    "name": "<link=\"NATURALSOLIDRESIN\">Solid Resin</link>",
+    "name": "Solid Resin",
     "description": "Resin that has been cooled to a <link=\"ELEMENTSSOLID\">Solid</link> state.\n\nIt can be treated to become <link=\"POLYPROPYLENE\">Plastic</link> in the <link=\"POLYMERIZER\">Polymer Press</link>.",
     "state": "Solid",
     "specificHeatCapacity": 1.3,
@@ -1381,7 +1381,7 @@
   },
   {
     "id": "OxyRock",
-    "name": "<link=\"OXYROCK\">Oxylite</link>",
+    "name": "Oxylite",
     "description": "(Ir<sub>3</sub>O<sub>2</sub>) Oxylite is a chemical compound that slowly emits breathable <link=\"OXYGEN\">Oxygen</link>.\n\nExcavating <link=\"OXYROCK\">Oxylite</link> increases its emission rate, but depletes the ore more rapidly.",
     "state": "Solid",
     "specificHeatCapacity": 1.0,
@@ -1396,7 +1396,7 @@
   },
   {
     "id": "MaficRock",
-    "name": "<link=\"MAFICROCK\">Mafic Rock</link>",
+    "name": "Mafic Rock",
     "description": "Mafic Rock is a variation of <link=\"IGNEOUSROCK\">Igneous Rock</link> that is rich in <link=\"IRON\">Iron</link>.\n\nIt is useful as a <b>Construction Material</b>.",
     "state": "Solid",
     "specificHeatCapacity": 0.2,
@@ -1411,7 +1411,7 @@
   },
   {
     "id": "MurkyBrineIce",
-    "name": "<link=\"MURKYBRINEICE\">Polluted Brine Ice</link>",
+    "name": "Polluted Brine Ice",
     "description": "Polluted Brine Ice is a murky, concentrated solution of <link=\"SALT\">Salt</link> dissolved in <link=\"DIRTYWATER\">Polluted Water</link> and frozen into a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 3.6,
@@ -1426,7 +1426,7 @@
   },
   {
     "id": "Iron",
-    "name": "<link=\"IRON\">Iron</link>",
+    "name": "Iron",
     "description": "(Fe) Iron is a common industrial <link=\"REFINEDMETAL\">Metal</link>.",
     "state": "Solid",
     "specificHeatCapacity": 0.449,
@@ -1441,7 +1441,7 @@
   },
   {
     "id": "Basalt",
-    "name": "<link=\"BASALT\">Basalt</link>",
+    "name": "Basalt",
     "description": "Basalt is a natural volcanic rock that forms when <link=\"MAGMA\">Magma</link> cools rapidly.",
     "state": "Solid",
     "specificHeatCapacity": 0.25,
@@ -1456,7 +1456,7 @@
   },
   {
     "id": "Regolith",
-    "name": "<link=\"REGOLITH\">Regolith</link>",
+    "name": "Regolith",
     "description": "Regolith is a sandy substance composed of the various particles that collect atop terrestrial objects.\n\nIt is useful as a <link=\"FILTER\">Filtration Medium</link>.",
     "state": "Solid",
     "specificHeatCapacity": 0.2,
@@ -1471,7 +1471,7 @@
   },
   {
     "id": "SolidResin",
-    "name": "<link=\"SOLIDRESIN\">Solid Sap</link>",
+    "name": "Solid Sap",
     "description": "Solidified goo harvested from a grumpy tree.\n\nIt is used in the production of <link=\"ISORESIN\">Isosap</link>.",
     "state": "Solid",
     "specificHeatCapacity": 1.3,
@@ -1486,7 +1486,7 @@
   },
   {
     "id": "NickelOre",
-    "name": "<link=\"NICKELORE\">Nickel Ore</link>",
+    "name": "Nickel Ore",
     "description": "(Ni) Nickel Ore is a conductive <link=\"METAL\">Metal</link>.\n\nIt can be refined into <link=\"NICKEL\">Nickel</link> and is suitable for building <link=\"POWER\">Power</link> systems.",
     "state": "Solid",
     "specificHeatCapacity": 0.45,
@@ -1501,7 +1501,7 @@
   },
   {
     "id": "Bitumen",
-    "name": "<link=\"BITUMEN\">Bitumen</link>",
+    "name": "Bitumen",
     "description": "Bitumen is a sticky viscous residue left behind from <link=\"PETROLEUM\">Petroleum</link> production.",
     "state": "Solid",
     "specificHeatCapacity": 1.76,
@@ -1516,7 +1516,7 @@
   },
   {
     "id": "StableSnow",
-    "name": "Packed <link=\"SNOW\">Snow</link>",
+    "name": "Packed Snow",
     "description": "(H<sub>2</sub>O) Snow is a mass of loose, crystalline ice particles.\n\nIt becomes <link=\"WATER\">Water</link> when melted.",
     "state": "Solid",
     "specificHeatCapacity": 2.05,
@@ -1531,7 +1531,7 @@
   },
   {
     "id": "TempConductorSolid",
-    "name": "<link=\"TEMPCONDUCTORSOLID\">Thermium</link>",
+    "name": "Thermium",
     "description": "Thermium is an industrial metal alloy formulated to maximize <link=\"HEAT\">Heat Transfer</link> and thermal dispersion.",
     "state": "Solid",
     "specificHeatCapacity": 0.622,
@@ -1546,7 +1546,7 @@
   },
   {
     "id": "IronOre",
-    "name": "<link=\"IRONORE\">Iron Ore</link>",
+    "name": "Iron Ore",
     "description": "(Fe) Iron Ore is a soft <link=\"METAL\">Metal</link>.\n\nIt is suitable for building <link=\"POWER\">Power</link> systems.",
     "state": "Solid",
     "specificHeatCapacity": 0.449,
@@ -1561,7 +1561,7 @@
   },
   {
     "id": "Zinc",
-    "name": "<link=\"ZINC\">Zinc</link>",
+    "name": "Zinc",
     "description": "(Zn) Zinc is a very malleable <link=\"REFINEDMETAL\">Metal Alloy</link>.",
     "state": "Solid",
     "specificHeatCapacity": 0.388,
@@ -1576,7 +1576,7 @@
   },
   {
     "id": "Dirt",
-    "name": "<link=\"DIRT\">Dirt</link>",
+    "name": "Dirt",
     "description": "Dirt is a soft, nutrient-rich substance capable of supporting life.\n\nIt is necessary in some forms of <link=\"FOOD\">Food</link> production.",
     "state": "Solid",
     "specificHeatCapacity": 1.48,
@@ -1591,7 +1591,7 @@
   },
   {
     "id": "DirtyIce",
-    "name": "<link=\"DIRTYICE\">Polluted Ice</link>",
+    "name": "Polluted Ice",
     "description": "Polluted Ice is dirty, unfiltered water frozen into a <link=\"ELEMENTSSOLID\">Solid</link> state.",
     "state": "Solid",
     "specificHeatCapacity": 3.05,
@@ -1606,7 +1606,7 @@
   },
   {
     "id": "Fossil",
-    "name": "<link=\"FOSSIL\">Fossil</link>",
+    "name": "Fossil",
     "description": "Fossil is organic matter, highly compressed and hardened into a mineral state.\n\nIt is useful as a <b>Construction Material</b>.",
     "state": "Solid",
     "specificHeatCapacity": 0.91,
@@ -1621,7 +1621,7 @@
   },
   {
     "id": "Unobtanium",
-    "name": "<link=\"UNOBTANIUM\">Neutronium</link>",
+    "name": "Neutronium",
     "description": "(Nt) Neutronium is a mysterious and extremely resilient element.\n\nIt cannot be excavated by any Duplicant mining tool.",
     "state": "23",
     "specificHeatCapacity": 0.0,
@@ -1636,7 +1636,7 @@
   },
   {
     "id": "Cinnabar",
-    "name": "<link=\"CINNABAR\">Cinnabar Ore</link>",
+    "name": "Cinnabar Ore",
     "description": "(HgS) Cinnabar Ore, also known as mercury sulfide, is a conductive <link=\"METAL\">Metal</link> that can be refined into <link=\"MERCURY\">Mercury</link>.\n\nIt is suitable for building <link=\"POWER\">Power</link> systems.",
     "state": "Solid",
     "specificHeatCapacity": 0.386,
@@ -1651,7 +1651,7 @@
   },
   {
     "id": "SolidEthanol",
-    "name": "<link=\"SOLIDETHANOL\">Solid Ethanol</link>",
+    "name": "Solid Ethanol",
     "description": "(C<sub>2</sub>H<sub>6</sub>O) Solid Ethanol is an advanced chemical compound.\n\nIt can be used as a highly effective fuel source when burned.",
     "state": "Solid",
     "specificHeatCapacity": 2.46,
@@ -1666,7 +1666,7 @@
   },
   {
     "id": "FoolsGold",
-    "name": "<link=\"FOOLSGOLD\">Pyrite</link>",
+    "name": "Pyrite",
     "description": "(FeS<sub>2</sub>) Pyrite is a conductive <link=\"METAL\">Metal</link>.\n\nAlso known as \"Fool's Gold\", is suitable for building <link=\"POWER\">Power</link> systems.",
     "state": "Solid",
     "specificHeatCapacity": 0.386,
@@ -1681,7 +1681,7 @@
   },
   {
     "id": "Galena",
-    "name": "<link=\"GALENA\">Galena</link>",
+    "name": "Galena",
     "description": "(PbS) Galena is a raw <link=\"METAL\">Metal Ore</link> primarily composed of <link=\"LEAD\">Lead</link> with <link=\"SULFUR\">Sulfur</link> impurities.",
     "state": "Solid",
     "specificHeatCapacity": 0.21,
@@ -1696,7 +1696,7 @@
   },
   {
     "id": "Aluminum",
-    "name": "<link=\"ALUMINUM\">Aluminum</link>",
+    "name": "Aluminum",
     "description": "(Al) Aluminum is a low density <link=\"REFINEDMETAL\">Metal</link>.\n\nIt has high Thermal Conductivity and is suitable for building <link=\"POWER\">Power</link> systems.",
     "state": "Solid",
     "specificHeatCapacity": 0.91,
@@ -1711,7 +1711,7 @@
   },
   {
     "id": "Latex",
-    "name": "<link=\"LATEX\">Latex</link>",
+    "name": "Latex",
     "description": "Latex is a naturally derived colloidal dispersion of polymer particles in <link=\"ELEMENTSLIQUID\">Liquid</link>.\n\nIt can be used to produce <link=\"RUBBER\">Rubber</link>.",
     "state": "6",
     "specificHeatCapacity": 2.01,
@@ -1726,7 +1726,7 @@
   },
   {
     "id": "MurkyBrine",
-    "name": "<link=\"MURKYBRINE\">Polluted Brine</link>",
+    "name": "Polluted Brine",
     "description": "Polluted Brine is a murky, concentrated solution of <link=\"SALT\">Salt</link> dissolved in <link=\"DIRTYWATER\">Polluted Water</link>.\n\nIt can be used in desalination processes, separating out usable salt.",
     "state": "6",
     "specificHeatCapacity": 3.6,
@@ -1741,7 +1741,7 @@
   },
   {
     "id": "LiquidOxygen",
-    "name": "<link=\"LIQUIDOXYGEN\">Liquid Oxygen</link>",
+    "name": "Liquid Oxygen",
     "description": "(O<sub>2</sub>) Oxygen is a breathable chemical.\n\nThis selection is in a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 1.01,
@@ -1756,7 +1756,7 @@
   },
   {
     "id": "ViscoGel",
-    "name": "<link=\"VISCOGEL\">Visco-Gel Fluid</link>",
+    "name": "Visco-Gel Fluid",
     "description": "Visco-Gel Fluid is a <link=\"ELEMENTSLIQUID\">Liquid</link> polymer with high surface tension, preventing typical liquid flow and allowing for unusual configurations.",
     "state": "6",
     "specificHeatCapacity": 1.55,
@@ -1771,7 +1771,7 @@
   },
   {
     "id": "MoltenAluminum",
-    "name": "<link=\"MOLTENALUMINUM\">Molten Aluminum</link>",
+    "name": "Molten Aluminum",
     "description": "(Al) Molten Aluminum is a low density <link=\"REFINEDMETAL\">Metal</link> heated into a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 0.91,
@@ -1786,7 +1786,7 @@
   },
   {
     "id": "MoltenLead",
-    "name": "<link=\"MOLTENLEAD\">Molten Lead</link>",
+    "name": "Molten Lead",
     "description": "(Pb) Lead is an extremely dense <link=\"REFINEDMETAL\">Refined Metal</link> heated into a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 0.128,
@@ -1801,7 +1801,7 @@
   },
   {
     "id": "LiquidCarbonDioxide",
-    "name": "<link=\"LIQUIDCARBONDIOXIDE\">Liquid Carbon Dioxide</link>",
+    "name": "Liquid Carbon Dioxide",
     "description": "(CO<sub>2</sub>) Carbon Dioxide is an unbreathable chemical compound.\n\nThis selection is currently in a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 0.846,
@@ -1816,7 +1816,7 @@
   },
   {
     "id": "CrudeOil",
-    "name": "<link=\"CRUDEOIL\">Crude Oil</link>",
+    "name": "Crude Oil",
     "description": "Crude Oil is a raw potential <link=\"POWER\">Power</link> source composed of billions of dead, primordial organisms.\n\nIt is also a useful lubricant for certain types of machinery.",
     "state": "6",
     "specificHeatCapacity": 1.69,
@@ -1831,7 +1831,7 @@
   },
   {
     "id": "MoltenGlass",
-    "name": "<link=\"MOLTENGLASS\">Molten Glass</link>",
+    "name": "Molten Glass",
     "description": "Molten Glass is a composite of granular rock, heated into a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 0.2,
@@ -1846,7 +1846,7 @@
   },
   {
     "id": "MoltenIridium",
-    "name": "<link=\"MOLTENIRIDIUM\">Molten Iridium</link>",
+    "name": "Molten Iridium",
     "description": "(Ir) Molten Iridium is a highly conductive <link=\"METAL\">Metal</link> heated to a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 0.131,
@@ -1861,7 +1861,7 @@
   },
   {
     "id": "RefinedLipid",
-    "name": "<link=\"REFINEDLIPID\">Biodiesel</link>",
+    "name": "Biodiesel",
     "description": "Biodiesel is a <link=\"ELEMENTSLIQUID\">Liquid</link> composed of highly processed fatty acids derived from purified natural oils.\n\nIts <link=\"COMBUSTIBLELIQUID\">combustibility</link> makes it useful for <link=\"POWER\">Power</link> production.",
     "state": "6",
     "specificHeatCapacity": 2.19,
@@ -1876,7 +1876,7 @@
   },
   {
     "id": "LiquidSulfur",
-    "name": "<link=\"LIQUIDSULFUR\">Liquid Sulfur</link>",
+    "name": "Liquid Sulfur",
     "description": "(S) Sulfur is a common chemical element and byproduct of <link=\"METHANE\">Natural Gas</link> production.\n\nThis selection is in a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 0.7,
@@ -1891,7 +1891,7 @@
   },
   {
     "id": "MoltenGold",
-    "name": "<link=\"MOLTENGOLD\">Molten Gold</link>",
+    "name": "Molten Gold",
     "description": "(Au) Gold, a conductive precious <link=\"REFINEDMETAL\">Metal</link>, heated into a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 0.1291,
@@ -1906,7 +1906,7 @@
   },
   {
     "id": "Magma",
-    "name": "<link=\"MAGMA\">Magma</link>",
+    "name": "Magma",
     "description": "Magma is a composite of <link=\"IGNEOUSROCK\">Igneous Rock</link> heated into a molten, <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 1.0,
@@ -1921,7 +1921,7 @@
   },
   {
     "id": "Chlorine",
-    "name": "<link=\"CHLORINE\">Liquid Chlorine</link>",
+    "name": "Liquid Chlorine",
     "description": "(Cl) Chlorine is a natural <link=\"DISEASE\">Germ</link>-killing element in a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 0.48,
@@ -1936,7 +1936,7 @@
   },
   {
     "id": "LiquidHydrogen",
-    "name": "<link=\"LIQUIDHYDROGEN\">Liquid Hydrogen</link>",
+    "name": "Liquid Hydrogen",
     "description": "(H) Hydrogen in its <link=\"ELEMENTSLIQUID\">Liquid</link> state.\n\nIt freezes most substances that come into contact with it.",
     "state": "6",
     "specificHeatCapacity": 2.4,
@@ -1951,7 +1951,7 @@
   },
   {
     "id": "Resin",
-    "name": "<link=\"RESIN\">Sap</link>",
+    "name": "Sap",
     "description": "Sticky goo harvested from a grumpy tree.\n\nIt can be polymerized into <link=\"ISORESIN\">Isosap</link> by boiling away its excess moisture.",
     "state": "6",
     "specificHeatCapacity": 1.11,
@@ -1966,7 +1966,7 @@
   },
   {
     "id": "LiquidGunk",
-    "name": "<link=\"LIQUIDGUNK\">Gunk</link>",
+    "name": "Gunk",
     "description": "Gunk is the built-up grime and grit produced by Duplicants' bionic mechanisms.\n\nIt is unpleasantly viscous.",
     "state": "6",
     "specificHeatCapacity": 1.2,
@@ -1981,7 +1981,7 @@
   },
   {
     "id": "LiquidPropane",
-    "name": "<link=\"LIQUIDPROPANE\">Liquid Propane</link>",
+    "name": "Liquid Propane",
     "description": "(C<sub>3</sub>H<sub>8</sub>) Propane is an alkane.\n\nThis selection is in a <link=\"ELEMENTSLIQUID\">Liquid</link> state.\n\nIt is useful in <link=\"POWER\">Power</link> production.",
     "state": "6",
     "specificHeatCapacity": 2.4,
@@ -1996,7 +1996,7 @@
   },
   {
     "id": "MoltenTungsten",
-    "name": "<link=\"MOLTENTUNGSTEN\">Molten Tungsten</link>",
+    "name": "Molten Tungsten",
     "description": "(W) Molten Tungsten is a crystalline <link=\"REFINEDMETAL\">Metal</link> heated into a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 0.134,
@@ -2011,7 +2011,7 @@
   },
   {
     "id": "Petroleum",
-    "name": "<link=\"PETROLEUM\">Petroleum</link>",
+    "name": "Petroleum",
     "description": "Petroleum is a <link=\"POWER\">Power</link> source refined from <link=\"CRUDEOIL\">Crude Oil</link>.\n\nIt is also an essential ingredient in the production of <link=\"POLYPROPYLENE\">Plastic</link>.",
     "state": "6",
     "specificHeatCapacity": 1.76,
@@ -2026,7 +2026,7 @@
   },
   {
     "id": "MoltenSalt",
-    "name": "<link=\"MOLTENSALT\">Molten Salt</link>",
+    "name": "Molten Salt",
     "description": "(NaCl) Molten Salt is an edible chemical compound that has been heated into a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 0.7,
@@ -2041,7 +2041,7 @@
   },
   {
     "id": "MoltenCobalt",
-    "name": "<link=\"MOLTENCOBALT\">Molten Cobalt</link>",
+    "name": "Molten Cobalt",
     "description": "(Co) Molten Cobalt is a <link=\"REFINEDMETAL\">Refined Metal</link> heated into a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 0.42,
@@ -2056,7 +2056,7 @@
   },
   {
     "id": "Brine",
-    "name": "<link=\"BRINE\">Brine</link>",
+    "name": "Brine",
     "description": "Brine is a natural, highly concentrated solution of <link=\"SALT\">Salt</link> dissolved in <link=\"WATER\">Water</link>.\n\nIt can be used in desalination processes, separating out usable salt.",
     "state": "6",
     "specificHeatCapacity": 3.4,
@@ -2071,7 +2071,7 @@
   },
   {
     "id": "NuclearWaste",
-    "name": "<link=\"NUCLEARWASTE\">Liquid Nuclear Waste</link>",
+    "name": "Liquid Nuclear Waste",
     "description": "Highly toxic liquid full of <link=\"RADIATION\">Radioactive Contaminants</link> which emit <link=\"RADIATION\">Radiation</link> that can be absorbed by <link=\"HIGHENERGYPARTICLESPAWNER\">Radbolt Generators</link>.",
     "state": "6",
     "specificHeatCapacity": 7.44,
@@ -2086,7 +2086,7 @@
   },
   {
     "id": "SuperCoolant",
-    "name": "<link=\"SUPERCOOLANT\">Super Coolant</link>",
+    "name": "Super Coolant",
     "description": "Super Coolant is an industrial-grade coolant that utilizes the unusual energy states of <link=\"FULLERENE\">Fullerene</link>.\n\nThis selection is in a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 8.44,
@@ -2101,7 +2101,7 @@
   },
   {
     "id": "Ethanol",
-    "name": "<link=\"ETHANOL\">Ethanol</link>",
+    "name": "Ethanol",
     "description": "(C<sub>2</sub>H<sub>6</sub>O) Ethanol is an advanced chemical compound in a <link=\"ELEMENTSLIQUID\">Liquid</link> state.\n\nIt can be used as a highly effective fuel source when burned.",
     "state": "6",
     "specificHeatCapacity": 2.46,
@@ -2116,7 +2116,7 @@
   },
   {
     "id": "PhytoOil",
-    "name": "<link=\"PHYTOOIL\">Phyto Oil</link>",
+    "name": "Phyto Oil",
     "description": "Phyto Oil is a thick, slippery <link=\"ELEMENTSLIQUID\">Liquid</link> extracted from pureed <link=\"SLIME\">Slime</link>.",
     "state": "6",
     "specificHeatCapacity": 0.9,
@@ -2131,7 +2131,7 @@
   },
   {
     "id": "Milk",
-    "name": "<link=\"MILK\">Brackene</link>",
+    "name": "Brackene",
     "description": "Brackene is a sodium-rich <link=\"ELEMENTSLIQUID\">Liquid</link>.\n\nIt is useful in <link=\"RANCHING\">Ranching</link>.",
     "state": "6",
     "specificHeatCapacity": 4.1,
@@ -2146,7 +2146,7 @@
   },
   {
     "id": "LiquidMethane",
-    "name": "<link=\"LIQUIDMETHANE\">Liquid Methane</link>",
+    "name": "Liquid Methane",
     "description": "(CH<sub>4</sub>) Methane is an alkane.\n\nThis selection is in a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 2.191,
@@ -2161,7 +2161,7 @@
   },
   {
     "id": "MoltenIron",
-    "name": "<link=\"MOLTENIRON\">Molten Iron</link>",
+    "name": "Molten Iron",
     "description": "(Fe) Molten Iron is a common industrial <link=\"METAL\">Metal</link> heated into a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 0.449,
@@ -2176,7 +2176,7 @@
   },
   {
     "id": "MoltenCarbon",
-    "name": "<link=\"MOLTENCARBON\">Liquid Carbon</link>",
+    "name": "Liquid Carbon",
     "description": "(C) Liquid Carbon is an abundant, versatile element heated into a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 0.71,
@@ -2191,7 +2191,7 @@
   },
   {
     "id": "MoltenZinc",
-    "name": "<link=\"MOLTENZINC\">Molten Zinc</link>",
+    "name": "Molten Zinc",
     "description": "Molten Zinc is <link=\"ZINC\">Zinc</link> heated into <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 0.388,
@@ -2206,8 +2206,8 @@
   },
   {
     "id": "Ink",
-    "name": "<link=\"INK\">Squid Ink</link>",
-    "description": "Squid Ink is a heavily pigmented organic <link=\"ELEMENTSLIQUID\">Liquid</link> composed of mucin, melanin, and <link=\"REFINEDCARBON\">Refined Carbon</link>.\n\nIt possesses useful <link=\"RADIATION\">Radiation</link> absorption properties.",
+    "name": "Squid Ink",
+    "description": "Squid Ink is a heavily pigmented organic <link=\"ELEMENTSLIQUID\">Liquid</link> composed of <link=\"MUCUS\">Mucin</link>, melanin, and <link=\"REFINEDCARBON\">Refined Carbon</link>.\n\nIt possesses useful <link=\"RADIATION\">Radiation</link> absorption properties.",
     "state": "6",
     "specificHeatCapacity": 2.0,
     "thermalConductivity": 0.5,
@@ -2221,7 +2221,7 @@
   },
   {
     "id": "SugarWater",
-    "name": "<link=\"SUGARWATER\">Nectar</link>",
+    "name": "Nectar",
     "description": "Nectar is a natural, lightly concentrated solution of <link=\"SUCROSE\">Sucrose</link> dissolved in <link=\"WATER\">Water</link>.",
     "state": "6",
     "specificHeatCapacity": 4.1,
@@ -2236,7 +2236,7 @@
   },
   {
     "id": "Naphtha",
-    "name": "<link=\"NAPHTHA\">Liquid Naphtha</link>",
+    "name": "Liquid Naphtha",
     "description": "Naphtha a distilled hydrocarbon mixture produced from the burning of <link=\"POLYPROPYLENE\">Plastic</link>.",
     "state": "6",
     "specificHeatCapacity": 2.191,
@@ -2251,7 +2251,7 @@
   },
   {
     "id": "NaturalResin",
-    "name": "<link=\"NATURALRESIN\">Resin</link>",
+    "name": "Resin",
     "description": "Resin is a viscous organic <link=\"ELEMENTSLIQUID\">Liquid</link>.\n\nIt can be treated to become <link=\"POLYPROPYLENE\">Plastic</link> in the <link=\"POLYMERIZER\">Polymer Press</link>.",
     "state": "6",
     "specificHeatCapacity": 1.11,
@@ -2266,7 +2266,7 @@
   },
   {
     "id": "MoltenSucrose",
-    "name": "<link=\"MOLTENSUCROSE\">Liquid Sucrose</link>",
+    "name": "Liquid Sucrose",
     "description": "(C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>) Liquid Sucrose is the raw form of sugar, heated into a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 1.255,
@@ -2281,7 +2281,7 @@
   },
   {
     "id": "LiquidPhosphorus",
-    "name": "<link=\"LIQUIDPHOSPHORUS\">Liquid Phosphorus</link>",
+    "name": "Liquid Phosphorus",
     "description": "(P) Phosphorus is a chemical element.\n\nThis selection is in a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 0.7697,
@@ -2296,7 +2296,7 @@
   },
   {
     "id": "MoltenSteel",
-    "name": "<link=\"MOLTENSTEEL\">Molten Steel</link>",
+    "name": "Molten Steel",
     "description": "Molten Steel is a <link=\"METAL\">Metal</link> alloy of iron and carbon, heated into a hazardous <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 0.386,
@@ -2311,7 +2311,7 @@
   },
   {
     "id": "MoltenNiobium",
-    "name": "<link=\"MOLTENNIOBIUM\">Molten Niobium</link>",
+    "name": "Molten Niobium",
     "description": "(Nb) Molten Niobium is a rare metal heated into a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 0.265,
@@ -2326,8 +2326,8 @@
   },
   {
     "id": "Mucus",
-    "name": "<link=\"MUCUS\">Mucin</link>",
-    "description": "Mucin is a highly viscous <link=\"ELEMENTSLIQUID\">Liquid</link> gel primarily composed of natural enzymes and polysaccharides.\n\nIt's quite slippery.",
+    "name": "Mucin",
+    "description": "Mucin is an extremely viscous <link=\"ELEMENTSLIQUID\">Liquid</link> gel composed of natural enzymes and polysaccharides.\n\nIts unusually thick consistency can result in formations atypical of most liquids.",
     "state": "6",
     "specificHeatCapacity": 3.0,
     "thermalConductivity": 0.45,
@@ -2341,7 +2341,7 @@
   },
   {
     "id": "FishMilk",
-    "name": "<link=\"FISHMILK\">Ovolene</link>",
+    "name": "Ovolene",
     "description": "Ovolene is a protein-rich <link=\"ELEMENTSLIQUID\">Liquid</link> produced by aquatic critters.\n\nIt can be processed into <link=\"CAVIAR\">Caviar</link> and <link=\"MUCUS\">Mucin</link>.",
     "state": "6",
     "specificHeatCapacity": 4.1,
@@ -2356,7 +2356,7 @@
   },
   {
     "id": "Mercury",
-    "name": "<link=\"MERCURY\">Mercury</link>",
+    "name": "Mercury",
     "description": "(Hg) Mercury is a metallic <link=\"ELEMENTSLIQUID\">Liquid</link>.",
     "state": "6",
     "specificHeatCapacity": 0.14,
@@ -2371,7 +2371,7 @@
   },
   {
     "id": "DirtyWater",
-    "name": "<link=\"DIRTYWATER\">Polluted Water</link>",
+    "name": "Polluted Water",
     "description": "Polluted Water is dirty, unfiltered <link=\"WATER\">Water</link>.\n\nIt is not fit for consumption.",
     "state": "6",
     "specificHeatCapacity": 4.179,
@@ -2386,7 +2386,7 @@
   },
   {
     "id": "Water",
-    "name": "<link=\"WATER\">Water</link>",
+    "name": "Water",
     "description": "(H<sub>2</sub>O) Clean <link=\"WATER\">Water</link>, suitable for consumption.",
     "state": "6",
     "specificHeatCapacity": 4.179,
@@ -2401,7 +2401,7 @@
   },
   {
     "id": "SaltWater",
-    "name": "<link=\"SALTWATER\">Salt Water</link>",
+    "name": "Salt Water",
     "description": "Salt Water is a natural, lightly concentrated solution of <link=\"SALT\">Salt</link> dissolved in <link=\"WATER\">Water</link>.\n\nIt can be used in desalination processes, separating out usable salt.",
     "state": "6",
     "specificHeatCapacity": 4.1,
@@ -2416,7 +2416,7 @@
   },
   {
     "id": "MoltenUranium",
-    "name": "<link=\"MOLTENURANIUM\">Liquid Uranium</link>",
+    "name": "Liquid Uranium",
     "description": "(U) Liquid Uranium is a highly <link=\"RADIATION\">Radioactive</link> substance, heated into a hazardous <link=\"ELEMENTSLIQUID\">Liquid</link> state.\n\nIt is a byproduct of <link=\"ENRICHEDURANIUM\">Enriched Uranium</link>.",
     "state": "6",
     "specificHeatCapacity": 1.69,
@@ -2431,7 +2431,7 @@
   },
   {
     "id": "MoltenNickel",
-    "name": "<link=\"MOLTENNICKEL\">Molten Nickel</link>",
+    "name": "Molten Nickel",
     "description": "(Ni) Molten Nickel is a conductive <link=\"METAL\">Metal</link> heated into a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 0.44,
@@ -2446,7 +2446,7 @@
   },
   {
     "id": "MoltenCopper",
-    "name": "<link=\"MOLTENCOPPER\">Molten Copper</link>",
+    "name": "Molten Copper",
     "description": "(Cu) Molten Copper is a conductive <link=\"METAL\">Metal</link> heated into a <link=\"ELEMENTSLIQUID\">Liquid</link> state.",
     "state": "6",
     "specificHeatCapacity": 0.386,
@@ -2461,7 +2461,7 @@
   },
   {
     "id": "SulfurGas",
-    "name": "<link=\"SULFURGAS\">Sulfur Gas</link>",
+    "name": "Sulfur Gas",
     "description": "(S) Sulfur is a common chemical element and byproduct of <link=\"METHANE\">Natural Gas</link> production.\n\nThis selection is in a <link=\"ELEMENTSGAS\">Gaseous</link> state.",
     "state": "5",
     "specificHeatCapacity": 0.7,
@@ -2476,7 +2476,7 @@
   },
   {
     "id": "ZincGas",
-    "name": "<link=\"ZINCGAS\">Zinc Gas</link>",
+    "name": "Zinc Gas",
     "description": "(Zn) Zinc Gas is <link=\"ZINC\">Zinc</link> heated into a <link=\"ELEMENTSGAS\">Gaseous</link> state.",
     "state": "5",
     "specificHeatCapacity": 0.388,
@@ -2491,7 +2491,7 @@
   },
   {
     "id": "SaltGas",
-    "name": "<link=\"SALTGAS\">Salt Gas</link>",
+    "name": "Salt Gas",
     "description": "(NaCl) Salt Gas is an edible chemical compound that has been superheated into a <link=\"ELEMENTSGAS\">Gaseous</link> state.",
     "state": "5",
     "specificHeatCapacity": 0.88,
@@ -2506,7 +2506,7 @@
   },
   {
     "id": "NiobiumGas",
-    "name": "<link=\"NIOBIUMGAS\">Niobium Gas</link>",
+    "name": "Niobium Gas",
     "description": "(Nb) Niobium Gas is a rare metal.\n\nThis selection is in a <link=\"ELEMENTSGAS\">Gaseous</link> state.",
     "state": "5",
     "specificHeatCapacity": 0.265,
@@ -2521,7 +2521,7 @@
   },
   {
     "id": "Oxygen",
-    "name": "<link=\"OXYGEN\">Oxygen</link>",
+    "name": "Oxygen",
     "description": "(O<sub>2</sub>) Oxygen is an atomically lightweight and breathable <link=\"ELEMENTSGAS\">Gas</link>, necessary for sustaining life.\n\nIt tends to rise above other gases.",
     "state": "5",
     "specificHeatCapacity": 1.005,
@@ -2536,7 +2536,7 @@
   },
   {
     "id": "CobaltGas",
-    "name": "<link=\"COBALTGAS\">Cobalt Gas</link>",
+    "name": "Cobalt Gas",
     "description": "(Co) Cobalt is a <link=\"REFINEDMETAL\">Refined Metal</link>, heated into a <link=\"ELEMENTSGAS\">Gas</link>.",
     "state": "5",
     "specificHeatCapacity": 0.42,
@@ -2551,7 +2551,7 @@
   },
   {
     "id": "SteelGas",
-    "name": "<link=\"STEELGAS\">Steel Gas</link>",
+    "name": "Steel Gas",
     "description": "Steel Gas is a superheated <link=\"METAL\">Metal</link> <link=\"ELEMENTSGAS\">Gas</link> composed of iron and carbon.",
     "state": "5",
     "specificHeatCapacity": 0.49,
@@ -2566,7 +2566,7 @@
   },
   {
     "id": "ChlorineGas",
-    "name": "<link=\"CHLORINEGAS\">Chlorine Gas</link>",
+    "name": "Chlorine Gas",
     "description": "(Cl) Chlorine is a natural <link=\"DISEASE\">Germ</link>-killing element in a <link=\"ELEMENTSGAS\">Gaseous</link> state.",
     "state": "5",
     "specificHeatCapacity": 0.48,
@@ -2581,7 +2581,7 @@
   },
   {
     "id": "Hydrogen",
-    "name": "<link=\"HYDROGEN\">Hydrogen Gas</link>",
+    "name": "Hydrogen Gas",
     "description": "(H) Hydrogen Gas is the universe's most common and atomically light element in a <link=\"ELEMENTSGAS\">Gaseous</link> state.",
     "state": "5",
     "specificHeatCapacity": 2.4,
@@ -2596,7 +2596,7 @@
   },
   {
     "id": "SourGas",
-    "name": "<link=\"SOURGAS\">Sour Gas</link>",
+    "name": "Sour Gas",
     "description": "Sour Gas is a hydrocarbon <link=\"ELEMENTSGAS\">Gas</link> containing high concentrations of hydrogen sulfide.\n\nIt is a byproduct of highly heated <link=\"PETROLEUM\">Petroleum</link>.",
     "state": "5",
     "specificHeatCapacity": 1.898,
@@ -2611,7 +2611,7 @@
   },
   {
     "id": "Steam",
-    "name": "<link=\"STEAM\">Steam</link>",
+    "name": "Steam",
     "description": "(H<sub>2</sub>O) Steam is <link=\"WATER\">Water</link> that has been heated into a scalding <link=\"ELEMENTSGAS\">Gas</link>.",
     "state": "5",
     "specificHeatCapacity": 4.179,
@@ -2626,7 +2626,7 @@
   },
   {
     "id": "Methane",
-    "name": "<link=\"METHANE\">Natural Gas</link>",
+    "name": "Natural Gas",
     "description": "Natural Gas is a mixture of various alkanes in a <link=\"ELEMENTSGAS\">Gaseous</link> state.\n\nIt is useful in <link=\"POWER\">Power</link> production.",
     "state": "5",
     "specificHeatCapacity": 2.191,
@@ -2641,7 +2641,7 @@
   },
   {
     "id": "MercuryGas",
-    "name": "<link=\"MERCURYGAS\">Mercury Gas</link>",
+    "name": "Mercury Gas",
     "description": "(Hg) Mercury Gas is a <link=\"REFINEDMETAL\">Metal</link> heated into a <link=\"ELEMENTSGAS\">Gaseous</link> state.",
     "state": "5",
     "specificHeatCapacity": 0.14,
@@ -2656,7 +2656,7 @@
   },
   {
     "id": "GoldGas",
-    "name": "<link=\"GOLDGAS\">Gold Gas</link>",
+    "name": "Gold Gas",
     "description": "(Au) Gold Gas is a conductive precious <link=\"REFINEDMETAL\">Metal</link>, heated into a <link=\"ELEMENTSGAS\">Gaseous</link> state.",
     "state": "5",
     "specificHeatCapacity": 0.1291,
@@ -2671,7 +2671,7 @@
   },
   {
     "id": "EthanolGas",
-    "name": "<link=\"ETHANOLGAS\">Ethanol Gas</link>",
+    "name": "Ethanol Gas",
     "description": "(C<sub>2</sub>H<sub>6</sub>O) Ethanol Gas is an advanced chemical compound heated into a <link=\"ELEMENTSGAS\">Gaseous</link> state.",
     "state": "5",
     "specificHeatCapacity": 2.148,
@@ -2686,7 +2686,7 @@
   },
   {
     "id": "RockGas",
-    "name": "<link=\"ROCKGAS\">Rock Gas</link>",
+    "name": "Rock Gas",
     "description": "Rock Gas is rock that has been superheated into a <link=\"ELEMENTSGAS\">Gaseous</link> state.",
     "state": "5",
     "specificHeatCapacity": 1.0,
@@ -2701,7 +2701,7 @@
   },
   {
     "id": "CarbonGas",
-    "name": "<link=\"CARBONGAS\">Carbon Gas</link>",
+    "name": "Carbon Gas",
     "description": "(C) Carbon is an abundant, versatile element heated into a <link=\"ELEMENTSGAS\">Gaseous</link> state.",
     "state": "5",
     "specificHeatCapacity": 0.71,
@@ -2716,7 +2716,7 @@
   },
   {
     "id": "SuperCoolantGas",
-    "name": "<link=\"SUPERCOOLANTGAS\">Super Coolant Gas</link>",
+    "name": "Super Coolant Gas",
     "description": "Super Coolant is an industrial-grade <link=\"FULLERENE\">Fullerene</link> coolant.\n\nThis selection is in a <link=\"ELEMENTSGAS\">Gaseous</link> state.",
     "state": "5",
     "specificHeatCapacity": 8.44,
@@ -2731,7 +2731,7 @@
   },
   {
     "id": "AluminumGas",
-    "name": "<link=\"ALUMINUMGAS\">Aluminum Gas</link>",
+    "name": "Aluminum Gas",
     "description": "(Al) Aluminum Gas is a low density <link=\"REFINEDMETAL\">Metal</link> heated into a <link=\"ELEMENTSGAS\">Gaseous</link> state.",
     "state": "5",
     "specificHeatCapacity": 0.91,
@@ -2746,7 +2746,7 @@
   },
   {
     "id": "TungstenGas",
-    "name": "<link=\"TUNGSTENGAS\">Tungsten Gas</link>",
+    "name": "Tungsten Gas",
     "description": "(W) Tungsten is a superheated crystalline <link=\"REFINEDMETAL\">Metal</link>.\n\nThis selection is in a <link=\"ELEMENTSGAS\">Gaseous</link> state.",
     "state": "5",
     "specificHeatCapacity": 0.134,
@@ -2761,7 +2761,7 @@
   },
   {
     "id": "ContaminatedOxygen",
-    "name": "<link=\"CONTAMINATEDOXYGEN\">Polluted Oxygen</link>",
+    "name": "Polluted Oxygen",
     "description": "(O<sub>2</sub>) Polluted Oxygen is dirty, unfiltered air.\n\nIt is breathable.",
     "state": "5",
     "specificHeatCapacity": 1.01,
@@ -2776,7 +2776,7 @@
   },
   {
     "id": "LeadGas",
-    "name": "<link=\"LEADGAS\">Lead Gas</link>",
+    "name": "Lead Gas",
     "description": "(Pb) Lead Gas is a soft yet extremely dense <link=\"REFINEDMETAL\">Refined Metal</link> heated into a <link=\"ELEMENTSGAS\">Gaseous</link>.",
     "state": "5",
     "specificHeatCapacity": 0.128,
@@ -2791,7 +2791,7 @@
   },
   {
     "id": "Fallout",
-    "name": "<link=\"FALLOUT\">Nuclear Fallout</link>",
+    "name": "Nuclear Fallout",
     "description": "Nuclear Fallout is a highly toxic gas full of <link=\"RADIATION\">Radioactive Contaminants</link>. Condenses into <link=\"NUCLEARWASTE\">Liquid Nuclear Waste</link>.",
     "state": "5",
     "specificHeatCapacity": 0.265,
@@ -2806,7 +2806,7 @@
   },
   {
     "id": "NickelGas",
-    "name": "<link=\"NICKELGAS\">Nickel Gas</link>",
+    "name": "Nickel Gas",
     "description": "(Ni) Nickel Gas is a conductive <link=\"METAL\">Metal</link> heated into a <link=\"ELEMENTSGAS\">Gas</link> state.",
     "state": "5",
     "specificHeatCapacity": 0.44,
@@ -2821,7 +2821,7 @@
   },
   {
     "id": "IronGas",
-    "name": "<link=\"IRONGAS\">Iron Gas</link>",
+    "name": "Iron Gas",
     "description": "(Fe) Iron Gas is a common industrial <link=\"METAL\">Metal</link>, heated into a <link=\"ELEMENTSGAS\">Gas</link>.",
     "state": "5",
     "specificHeatCapacity": 0.449,
@@ -2836,7 +2836,7 @@
   },
   {
     "id": "IridiumGas",
-    "name": "<link=\"IRIDIUMGAS\">Iridium Gas</link>",
+    "name": "Iridium Gas",
     "description": "(Ir) Iridium Gas is a highly conductive <link=\"METAL\">Metal</link> heated into a  <link=\"ELEMENTSGAS\">Gas</link> state.",
     "state": "5",
     "specificHeatCapacity": 0.131,
@@ -2851,7 +2851,7 @@
   },
   {
     "id": "PhosphorusGas",
-    "name": "<link=\"PHOSPHORUSGAS\">Phosphorus Gas</link>",
+    "name": "Phosphorus Gas",
     "description": "(P) Phosphorus Gas is the <link=\"ELEMENTSGAS\">Gaseous</link> state of <link=\"PHOSPHORUS\">Refined Phosphorus</link>.",
     "state": "5",
     "specificHeatCapacity": 0.7697,
@@ -2866,7 +2866,7 @@
   },
   {
     "id": "CarbonDioxide",
-    "name": "<link=\"CARBONDIOXIDE\">Carbon Dioxide</link>",
+    "name": "Carbon Dioxide",
     "description": "(CO<sub>2</sub>) Carbon Dioxide is an atomically heavy chemical compound in a <link=\"ELEMENTSGAS\">Gaseous</link> state.\n\nIt tends to sink below other gases.",
     "state": "5",
     "specificHeatCapacity": 0.846,
@@ -2881,7 +2881,7 @@
   },
   {
     "id": "CopperGas",
-    "name": "<link=\"COPPERGAS\">Copper Gas</link>",
+    "name": "Copper Gas",
     "description": "(Cu) Copper Gas is a conductive <link=\"METAL\">Metal</link> heated into a <link=\"ELEMENTSGAS\">Gas</link> state.",
     "state": "5",
     "specificHeatCapacity": 0.386,
@@ -2896,7 +2896,7 @@
   },
   {
     "id": "Void",
-    "name": "<link=\"VOID\">Void</link>",
+    "name": "Void",
     "description": "Cold, infinite nothingness.",
     "state": "20",
     "specificHeatCapacity": 0.0,
@@ -2911,7 +2911,7 @@
   },
   {
     "id": "COMPOSITION",
-    "name": "<link=\"COMPOSITION\">Composition</link>",
+    "name": "Composition",
     "description": "A mixture of two or more elements.",
     "state": "20",
     "specificHeatCapacity": 0.0,
@@ -2926,7 +2926,7 @@
   },
   {
     "id": "Vacuum",
-    "name": "<link=\"VACUUM\">Vacuum</link>",
+    "name": "Vacuum",
     "description": "A vacuum is a space devoid of all matter.",
     "state": "20",
     "specificHeatCapacity": 0.0,

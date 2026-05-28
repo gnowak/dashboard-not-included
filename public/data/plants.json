@@ -1,7 +1,7 @@
 [
   {
     "id": "FlyTrapPlant",
-    "name": "<link=\"FLYTRAPPLANT\">Lura Plant</link>",
+    "name": "Lura Plant",
     "prefabId": "FlyTrapPlant",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -36,7 +36,7 @@
   },
   {
     "id": "FilterPlant",
-    "name": "<link=\"FILTERPLANT\">Hydrocactus</link>",
+    "name": "Hydrocactus",
     "prefabId": "FilterPlant",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -85,7 +85,7 @@
   },
   {
     "id": "FilamentPlant",
-    "name": "<link=\"FILAMENTPLANT\">Petta Pouf</link>",
+    "name": "Petta Pouf",
     "prefabId": "FilamentPlant",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -123,7 +123,7 @@
   },
   {
     "id": "EvilFlower",
-    "name": "<link=\"EVILFLOWER\">Sporechid</link>",
+    "name": "Sporechid",
     "prefabId": "EvilFlower",
     "isFarmable": true,
     "requiredDlcIds": null,
@@ -155,7 +155,7 @@
   },
   {
     "id": "ForestForagePlantPlanted",
-    "name": "<link=\"FORESTFORAGEPLANTPLANTED\">Hexalent</link>",
+    "name": "Hexalent",
     "prefabId": "ForestForagePlantPlanted",
     "isFarmable": false,
     "requiredDlcIds": null,
@@ -170,7 +170,7 @@
   },
   {
     "id": "Dinofern",
-    "name": "<link=\"DINOFERN\">Megafrond</link>",
+    "name": "Megafrond",
     "prefabId": "Dinofern",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -207,7 +207,7 @@
   },
   {
     "id": "DewDripperPlant",
-    "name": "<link=\"DEWDRIPPERPLANT\">Dew Dripper</link>",
+    "name": "Dew Dripper",
     "prefabId": "DewDripperPlant",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -248,7 +248,7 @@
   },
   {
     "id": "Cylindrica",
-    "name": "<link=\"CYLINDRICA\">Bliss Burst</link>",
+    "name": "Bliss Burst",
     "prefabId": "Cylindrica",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -284,7 +284,7 @@
   },
   {
     "id": "CritterTrapPlant",
-    "name": "<link=\"CRITTERTRAPPLANT\">Saturn Critter Trap</link>",
+    "name": "Saturn Critter Trap",
     "prefabId": "CritterTrapPlant",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -325,7 +325,7 @@
   },
   {
     "id": "ColdWheat",
-    "name": "<link=\"COLDWHEAT\">Sleet Wheat</link>",
+    "name": "Sleet Wheat",
     "prefabId": "ColdWheat",
     "isFarmable": true,
     "requiredDlcIds": null,
@@ -374,7 +374,7 @@
   },
   {
     "id": "ColdBreather",
-    "name": "<link=\"COLDBREATHER\">Wheezewort</link>",
+    "name": "Wheezewort",
     "prefabId": "ColdBreather",
     "isFarmable": true,
     "requiredDlcIds": null,
@@ -404,7 +404,7 @@
   },
   {
     "id": "DewPalm",
-    "name": "<link=\"DEWPALM\">Gum Palm</link>",
+    "name": "Gum Palm",
     "prefabId": "DewPalm",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -445,7 +445,7 @@
   },
   {
     "id": "Clam",
-    "name": "<link=\"CLAM\">Clampum</link>",
+    "name": "Clampum",
     "prefabId": "Clam",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -492,7 +492,7 @@
   },
   {
     "id": "ForestTreeBranch",
-    "name": "<link=\"FORESTTREE\">Arbor Tree</link>",
+    "name": "Arbor Tree",
     "prefabId": "ForestTreeBranch",
     "isFarmable": true,
     "requiredDlcIds": null,
@@ -525,7 +525,7 @@
   },
   {
     "id": "GardenDecorPlant",
-    "name": "<link=\"GARDENDECORPLANT\">Ring Rosebush</link>",
+    "name": "Ring Rosebush",
     "prefabId": "GardenDecorPlant",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -561,7 +561,7 @@
   },
   {
     "id": "KelpPlant",
-    "name": "<link=\"KELPPLANT\">Seakomb</link>",
+    "name": "Seakomb",
     "prefabId": "KelpPlant",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -609,7 +609,7 @@
   },
   {
     "id": "IceFlower",
-    "name": "<link=\"ICEFLOWER\">Idylla Flower</link>",
+    "name": "Idylla Flower",
     "prefabId": "IceFlower",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -647,7 +647,7 @@
   },
   {
     "id": "IceCavesForagePlantPlanted",
-    "name": "<link=\"ICECAVESFORAGEPLANTPLANTED\">Sherberry Plant</link>",
+    "name": "Sherberry Plant",
     "prefabId": "IceCavesForagePlantPlanted",
     "isFarmable": false,
     "requiredDlcIds": [
@@ -664,7 +664,7 @@
   },
   {
     "id": "HardSkinBerryPlant",
-    "name": "<link=\"HARDSKINBERRYPLANT\">Pikeapple Bush</link>",
+    "name": "Pikeapple Bush",
     "prefabId": "HardSkinBerryPlant",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -709,7 +709,7 @@
   },
   {
     "id": "ForestTree",
-    "name": "<link=\"FORESTTREE\">Arbor Tree</link>",
+    "name": "Arbor Tree",
     "prefabId": "ForestTree",
     "isFarmable": true,
     "requiredDlcIds": null,
@@ -754,7 +754,7 @@
   },
   {
     "id": "GasGrass",
-    "name": "<link=\"GASGRASS\">Gas Grass</link>",
+    "name": "Gas Grass",
     "prefabId": "GasGrass",
     "isFarmable": true,
     "requiredDlcIds": null,
@@ -802,7 +802,7 @@
   },
   {
     "id": "GardenForagePlantPlanted",
-    "name": "<link=\"GARDENFORAGEPLANTPLANTED\">Snactus</link>",
+    "name": "Snactus",
     "prefabId": "GardenForagePlantPlanted",
     "isFarmable": false,
     "requiredDlcIds": [
@@ -819,7 +819,7 @@
   },
   {
     "id": "GardenFoodPlant",
-    "name": "<link=\"GARDENFOODPLANT\">Sweatcorn Stalk</link>",
+    "name": "Sweatcorn Stalk",
     "prefabId": "GardenFoodPlant",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -864,7 +864,7 @@
   },
   {
     "id": "CarrotPlant",
-    "name": "<link=\"CARROTPLANT\">Plume Squash Plant</link>",
+    "name": "Plume Squash Plant",
     "prefabId": "CarrotPlant",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -909,7 +909,7 @@
   },
   {
     "id": "CactusPlant",
-    "name": "<link=\"CACTUSPLANT\">Jumping Joya</link>",
+    "name": "Jumping Joya",
     "prefabId": "CactusPlant",
     "isFarmable": true,
     "requiredDlcIds": null,
@@ -943,7 +943,7 @@
   },
   {
     "id": "ButterflyPlant",
-    "name": "<link=\"BUTTERFLYPLANT\">Mimika Bud</link>",
+    "name": "Mimika Bud",
     "prefabId": "ButterflyPlant",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -989,7 +989,7 @@
   },
   {
     "id": "Bulbloom",
-    "name": "<link=\"BULBLOOM\">Bulbloom</link>",
+    "name": "Bulbloom",
     "prefabId": "Bulbloom",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -1028,7 +1028,7 @@
   },
   {
     "id": "BulbPlant",
-    "name": "<link=\"BULBPLANT\">Buddy Bud</link>",
+    "name": "Buddy Bud",
     "prefabId": "BulbPlant",
     "isFarmable": true,
     "requiredDlcIds": null,
@@ -1065,7 +1065,7 @@
   },
   {
     "id": "BlueGrass",
-    "name": "<link=\"BLUEGRASS\">Alveo Vera</link>",
+    "name": "Alveo Vera",
     "prefabId": "BlueGrass",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -1108,7 +1108,7 @@
   },
   {
     "id": "BeanPlant",
-    "name": "<link=\"BEANPLANT\">Nosh Sprout</link>",
+    "name": "Nosh Sprout",
     "prefabId": "BeanPlant",
     "isFarmable": true,
     "requiredDlcIds": null,
@@ -1155,7 +1155,7 @@
   },
   {
     "id": "BasicSingleHarvestPlant",
-    "name": "<link=\"BASICSINGLEHARVESTPLANT\">Mealwood</link>",
+    "name": "Mealwood",
     "prefabId": "BasicSingleHarvestPlant",
     "isFarmable": true,
     "requiredDlcIds": null,
@@ -1198,7 +1198,7 @@
   },
   {
     "id": "BasicForagePlantPlanted",
-    "name": "<link=\"BASICFORAGEPLANTPLANTED\">Buried Muckroot</link>",
+    "name": "Buried Muckroot",
     "prefabId": "BasicForagePlantPlanted",
     "isFarmable": false,
     "requiredDlcIds": null,
@@ -1213,7 +1213,7 @@
   },
   {
     "id": "BasicFabricPlant",
-    "name": "<link=\"BASICFABRICPLANT\">Thimble Reed</link>",
+    "name": "Thimble Reed",
     "prefabId": "BasicFabricPlant",
     "isFarmable": true,
     "requiredDlcIds": null,
@@ -1258,7 +1258,7 @@
   },
   {
     "id": "LeafyPlant",
-    "name": "<link=\"LEAFYPLANT\">Mirth Leaf</link>",
+    "name": "Mirth Leaf",
     "prefabId": "LeafyPlant",
     "isFarmable": true,
     "requiredDlcIds": null,
@@ -1294,7 +1294,7 @@
   },
   {
     "id": "MusselSprout",
-    "name": "<link=\"MUSSELSPROUT\">Mussel Sprout</link>",
+    "name": "Mussel Sprout",
     "prefabId": "MusselSprout",
     "isFarmable": false,
     "requiredDlcIds": [
@@ -1311,7 +1311,7 @@
   },
   {
     "id": "MushroomPlant",
-    "name": "<link=\"MUSHROOMPLANT\">Dusk Cap</link>",
+    "name": "Dusk Cap",
     "prefabId": "MushroomPlant",
     "isFarmable": true,
     "requiredDlcIds": null,
@@ -1355,7 +1355,7 @@
   },
   {
     "id": "SaltySticksPlant",
-    "name": "<link=\"SALTYSTICKSPLANT\">Sodicane</link>",
+    "name": "Sodicane",
     "prefabId": "SaltySticksPlant",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -1400,7 +1400,7 @@
   },
   {
     "id": "SpaceTreeBranch",
-    "name": "<link=\"SPACETREE\">Bonbon Tree</link>",
+    "name": "Bonbon Tree",
     "prefabId": "SpaceTreeBranch",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -1438,7 +1438,7 @@
   },
   {
     "id": "OxyCoral",
-    "name": "<link=\"OXYCORAL\">Flue Coral</link>",
+    "name": "Flue Coral",
     "prefabId": "OxyCoral",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -1487,7 +1487,7 @@
   },
   {
     "id": "SeaTree",
-    "name": "<link=\"SEATREE\">Tower Kelp</link>",
+    "name": "Tower Kelp",
     "prefabId": "SeaTree",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -1531,7 +1531,7 @@
   },
   {
     "id": "SpiceVine",
-    "name": "<link=\"SPICEVINE\">Pincha Pepperplant</link>",
+    "name": "Pincha Pepperplant",
     "prefabId": "SpiceVine",
     "isFarmable": true,
     "requiredDlcIds": null,
@@ -1576,7 +1576,7 @@
   },
   {
     "id": "Oxyfern",
-    "name": "<link=\"OXYFERN\">Oxyfern</link>",
+    "name": "Oxyfern",
     "prefabId": "Oxyfern",
     "isFarmable": true,
     "requiredDlcIds": null,
@@ -1620,7 +1620,7 @@
   },
   {
     "id": "SeaTreeBranch",
-    "name": "<link=\"SEATREE\">Tower Kelp</link>",
+    "name": "Tower Kelp",
     "prefabId": "SeaTreeBranch",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -1661,7 +1661,7 @@
   },
   {
     "id": "SeaLettuce",
-    "name": "<link=\"SEALETTUCE\">Waterweed</link>",
+    "name": "Waterweed",
     "prefabId": "SeaLettuce",
     "isFarmable": true,
     "requiredDlcIds": null,
@@ -1714,7 +1714,7 @@
   },
   {
     "id": "PrickleFlower",
-    "name": "<link=\"PRICKLEFLOWER\">Bristle Blossom</link>",
+    "name": "Bristle Blossom",
     "prefabId": "PrickleFlower",
     "isFarmable": true,
     "requiredDlcIds": null,
@@ -1760,7 +1760,7 @@
   },
   {
     "id": "PrickleGrass",
-    "name": "<link=\"PRICKLEGRASS\">Bluff Briar</link>",
+    "name": "Bluff Briar",
     "prefabId": "PrickleGrass",
     "isFarmable": true,
     "requiredDlcIds": null,
@@ -1794,7 +1794,7 @@
   },
   {
     "id": "PlanktonCoral",
-    "name": "<link=\"PLANKTONCORAL\">Starnacle</link>",
+    "name": "Starnacle",
     "prefabId": "PlanktonCoral",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -1841,7 +1841,7 @@
   },
   {
     "id": "SuperWormPlant",
-    "name": "<link=\"WORMPLANT\">Grubfruit Plant</link>",
+    "name": "Grubfruit Plant",
     "prefabId": "SuperWormPlant",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -1886,7 +1886,7 @@
   },
   {
     "id": "SpaceTree",
-    "name": "<link=\"SPACETREE\">Bonbon Tree</link>",
+    "name": "Bonbon Tree",
     "prefabId": "SpaceTree",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -1933,7 +1933,7 @@
   },
   {
     "id": "WormPlant",
-    "name": "<link=\"WORMPLANT\">Spindly Grubfruit Plant</link>",
+    "name": "Spindly Grubfruit Plant",
     "prefabId": "WormPlant",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -1978,7 +1978,7 @@
   },
   {
     "id": "WineCups",
-    "name": "<link=\"WINECUPS\">Mellow Mallow</link>",
+    "name": "Mellow Mallow",
     "prefabId": "WineCups",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -2014,7 +2014,7 @@
   },
   {
     "id": "WaterCups",
-    "name": "<link=\"WATERCUPS\">Husha Cups</link>",
+    "name": "Husha Cups",
     "prefabId": "WaterCups",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -2050,7 +2050,7 @@
   },
   {
     "id": "VineMother",
-    "name": "<link=\"VINEMOTHER\">Ovagro Node</link>",
+    "name": "Ovagro Node",
     "prefabId": "VineMother",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -2092,7 +2092,7 @@
   },
   {
     "id": "VineBranch",
-    "name": "<link=\"VINEMOTHER\">Ovagro Vine</link>",
+    "name": "Ovagro Vine",
     "prefabId": "VineBranch",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -2127,7 +2127,7 @@
   },
   {
     "id": "SaltPlant",
-    "name": "<link=\"SALTPLANT\">Dasha Saltvine</link>",
+    "name": "Dasha Saltvine",
     "prefabId": "SaltPlant",
     "isFarmable": true,
     "requiredDlcIds": null,
@@ -2168,7 +2168,7 @@
   },
   {
     "id": "UrchinPlant",
-    "name": "<link=\"URCHINPLANT\">Pinpoket</link>",
+    "name": "Pinpoket",
     "prefabId": "UrchinPlant",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -2215,7 +2215,7 @@
   },
   {
     "id": "TubeWorm",
-    "name": "<link=\"TUBEWORM\">Tublia</link>",
+    "name": "Tublia",
     "prefabId": "TubeWorm",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -2274,7 +2274,7 @@
   },
   {
     "id": "ToePlant",
-    "name": "<link=\"TOEPLANT\">Tranquil Toes</link>",
+    "name": "Tranquil Toes",
     "prefabId": "ToePlant",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -2310,7 +2310,7 @@
   },
   {
     "id": "SwampLily",
-    "name": "<link=\"SWAMPLILY\">Balm Lily</link>",
+    "name": "Balm Lily",
     "prefabId": "SwampLily",
     "isFarmable": true,
     "requiredDlcIds": null,
@@ -2345,7 +2345,7 @@
   },
   {
     "id": "SwampHarvestPlant",
-    "name": "<link=\"SWAMPHARVESTPLANT\">Bog Bucket</link>",
+    "name": "Bog Bucket",
     "prefabId": "SwampHarvestPlant",
     "isFarmable": true,
     "requiredDlcIds": [
@@ -2393,7 +2393,7 @@
   },
   {
     "id": "SwampForagePlantPlanted",
-    "name": "<link=\"SWAMPFORAGEPLANTPLANTED\">Swamp Chard</link>",
+    "name": "Swamp Chard",
     "prefabId": "SwampForagePlantPlanted",
     "isFarmable": false,
     "requiredDlcIds": [

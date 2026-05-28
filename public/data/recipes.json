@@ -1720,7 +1720,7 @@
   {
     "id": "CraftingTable_I_Rubber_O_RubberGasket",
     "time": 30.0,
-    "description": "Converts <link=\"RUBBER\">Rubber</link> to <link=\"BUILDINGGASKET\">Rubber Gasket</link>",
+    "description": "Converts <link=\"RUBBER\">Rubber</link> to <link=\"RUBBERGASKET\">Rubber Gasket</link>",
     "fabricators": [
       "CraftingTable"
     ],
@@ -1742,7 +1742,7 @@
   {
     "id": "CraftingTable_I_Polypropylene_O_PlasticGasket",
     "time": 30.0,
-    "description": "Converts <link=\"POLYPROPYLENE\">Plastic</link> to <link=\"BUILDINGGASKET\">Plastic Gasket</link>",
+    "description": "Converts <link=\"POLYPROPYLENE\">Plastic</link> to <link=\"PLASTICGASKET\">Plastic Gasket</link>",
     "fabricators": [
       "CraftingTable"
     ],
@@ -3623,7 +3623,7 @@
   },
   {
     "id": "MicrobeMusher_I_BasicSingleHarvestPlantSeed_Water_O_FishFood",
-    "time": 50.0,
+    "time": 30.0,
     "description": "A gourmet loaf of ground seeds, specially formulated for Pacus.",
     "fabricators": [
       "MicrobeMusher"
@@ -3631,17 +3631,43 @@
     "inputs": [
       {
         "material": "BasicSingleHarvestPlantSeed",
-        "amount": 1.0
+        "amount": 6.0
       },
       {
         "material": "Water",
-        "amount": 5.0
+        "amount": 30.0
       }
     ],
     "outputs": [
       {
         "material": "FishFood",
-        "amount": 1.0
+        "amount": 6.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "MicrobeMusher_I_BasicSingleHarvestPlantSeed_Mucus_O_FishFood",
+    "time": 30.0,
+    "description": "A gourmet loaf of ground seeds, specially formulated for Pacus.",
+    "fabricators": [
+      "MicrobeMusher"
+    ],
+    "inputs": [
+      {
+        "material": "BasicSingleHarvestPlantSeed",
+        "amount": 6.0
+      },
+      {
+        "material": "Mucus",
+        "amount": 30.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "FishFood",
+        "amount": 6.0
       }
     ],
     "requiredDlcIds": null,
@@ -3649,7 +3675,7 @@
   },
   {
     "id": "MicrobeMusher_I_PrickleFlowerSeed_Water_O_FishFood",
-    "time": 50.0,
+    "time": 30.0,
     "description": "A gourmet loaf of ground seeds, specially formulated for Pacus.",
     "fabricators": [
       "MicrobeMusher"
@@ -3657,17 +3683,43 @@
     "inputs": [
       {
         "material": "PrickleFlowerSeed",
-        "amount": 1.0
+        "amount": 6.0
       },
       {
         "material": "Water",
-        "amount": 5.0
+        "amount": 30.0
       }
     ],
     "outputs": [
       {
         "material": "FishFood",
-        "amount": 1.0
+        "amount": 6.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "MicrobeMusher_I_PrickleFlowerSeed_Mucus_O_FishFood",
+    "time": 30.0,
+    "description": "A gourmet loaf of ground seeds, specially formulated for Pacus.",
+    "fabricators": [
+      "MicrobeMusher"
+    ],
+    "inputs": [
+      {
+        "material": "PrickleFlowerSeed",
+        "amount": 6.0
+      },
+      {
+        "material": "Mucus",
+        "amount": 30.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "FishFood",
+        "amount": 6.0
       }
     ],
     "requiredDlcIds": null,
@@ -3675,7 +3727,7 @@
   },
   {
     "id": "MicrobeMusher_I_MushroomSeed_Water_O_FishFood",
-    "time": 50.0,
+    "time": 30.0,
     "description": "A gourmet loaf of ground seeds, specially formulated for Pacus.",
     "fabricators": [
       "MicrobeMusher"
@@ -3683,17 +3735,43 @@
     "inputs": [
       {
         "material": "MushroomSeed",
-        "amount": 1.0
+        "amount": 6.0
       },
       {
         "material": "Water",
-        "amount": 5.0
+        "amount": 30.0
       }
     ],
     "outputs": [
       {
         "material": "FishFood",
-        "amount": 1.0
+        "amount": 6.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "MicrobeMusher_I_MushroomSeed_Mucus_O_FishFood",
+    "time": 30.0,
+    "description": "A gourmet loaf of ground seeds, specially formulated for Pacus.",
+    "fabricators": [
+      "MicrobeMusher"
+    ],
+    "inputs": [
+      {
+        "material": "MushroomSeed",
+        "amount": 6.0
+      },
+      {
+        "material": "Mucus",
+        "amount": 30.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "FishFood",
+        "amount": 6.0
       }
     ],
     "requiredDlcIds": null,
@@ -3701,7 +3779,7 @@
   },
   {
     "id": "MicrobeMusher_I_SeaLettuceSeed_Water_O_FishFood",
-    "time": 50.0,
+    "time": 30.0,
     "description": "A gourmet loaf of ground seeds, specially formulated for Pacus.",
     "fabricators": [
       "MicrobeMusher"
@@ -3709,17 +3787,43 @@
     "inputs": [
       {
         "material": "SeaLettuceSeed",
-        "amount": 1.0
+        "amount": 6.0
       },
       {
         "material": "Water",
-        "amount": 5.0
+        "amount": 30.0
       }
     ],
     "outputs": [
       {
         "material": "FishFood",
-        "amount": 1.0
+        "amount": 6.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "MicrobeMusher_I_SeaLettuceSeed_Mucus_O_FishFood",
+    "time": 30.0,
+    "description": "A gourmet loaf of ground seeds, specially formulated for Pacus.",
+    "fabricators": [
+      "MicrobeMusher"
+    ],
+    "inputs": [
+      {
+        "material": "SeaLettuceSeed",
+        "amount": 6.0
+      },
+      {
+        "material": "Mucus",
+        "amount": 30.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "FishFood",
+        "amount": 6.0
       }
     ],
     "requiredDlcIds": null,
@@ -3727,7 +3831,7 @@
   },
   {
     "id": "MicrobeMusher_I_BeanPlantSeed_Water_O_FishFood",
-    "time": 50.0,
+    "time": 30.0,
     "description": "A gourmet loaf of ground seeds, specially formulated for Pacus.",
     "fabricators": [
       "MicrobeMusher"
@@ -3735,17 +3839,43 @@
     "inputs": [
       {
         "material": "BeanPlantSeed",
-        "amount": 1.0
+        "amount": 6.0
       },
       {
         "material": "Water",
-        "amount": 5.0
+        "amount": 30.0
       }
     ],
     "outputs": [
       {
         "material": "FishFood",
-        "amount": 1.0
+        "amount": 6.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "MicrobeMusher_I_BeanPlantSeed_Mucus_O_FishFood",
+    "time": 30.0,
+    "description": "A gourmet loaf of ground seeds, specially formulated for Pacus.",
+    "fabricators": [
+      "MicrobeMusher"
+    ],
+    "inputs": [
+      {
+        "material": "BeanPlantSeed",
+        "amount": 6.0
+      },
+      {
+        "material": "Mucus",
+        "amount": 30.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "FishFood",
+        "amount": 6.0
       }
     ],
     "requiredDlcIds": null,
@@ -3753,7 +3883,7 @@
   },
   {
     "id": "MicrobeMusher_I_ColdWheatSeed_Water_O_FishFood",
-    "time": 50.0,
+    "time": 30.0,
     "description": "A gourmet loaf of ground seeds, specially formulated for Pacus.",
     "fabricators": [
       "MicrobeMusher"
@@ -3761,17 +3891,43 @@
     "inputs": [
       {
         "material": "ColdWheatSeed",
-        "amount": 1.0
+        "amount": 6.0
       },
       {
         "material": "Water",
-        "amount": 5.0
+        "amount": 30.0
       }
     ],
     "outputs": [
       {
         "material": "FishFood",
-        "amount": 1.0
+        "amount": 6.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "MicrobeMusher_I_ColdWheatSeed_Mucus_O_FishFood",
+    "time": 30.0,
+    "description": "A gourmet loaf of ground seeds, specially formulated for Pacus.",
+    "fabricators": [
+      "MicrobeMusher"
+    ],
+    "inputs": [
+      {
+        "material": "ColdWheatSeed",
+        "amount": 6.0
+      },
+      {
+        "material": "Mucus",
+        "amount": 30.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "FishFood",
+        "amount": 6.0
       }
     ],
     "requiredDlcIds": null,

@@ -1,7 +1,7 @@
 [
   {
     "id": "Geyser",
-    "name": "<link=\"GEYSER\">Steam Geyser</link>",
+    "name": "Steam Geyser",
     "prefabId": "Geyser",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -31,7 +31,7 @@
   },
   {
     "id": "GeyserGeneric_steam",
-    "name": "<link=\"GEYSERGENERICSTEAM\">Cool Steam Vent</link>",
+    "name": "Cool Steam Vent",
     "prefabId": "GeyserGeneric_steam",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -61,7 +61,7 @@
   },
   {
     "id": "GeyserGeneric_hot_steam",
-    "name": "<link=\"GEYSERGENERICHOTSTEAM\">Steam Vent</link>",
+    "name": "Steam Vent",
     "prefabId": "GeyserGeneric_hot_steam",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -91,7 +91,7 @@
   },
   {
     "id": "GeyserGeneric_hot_water",
-    "name": "<link=\"GEYSERGENERICHOTWATER\">Water Geyser</link>",
+    "name": "Water Geyser",
     "prefabId": "GeyserGeneric_hot_water",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -121,7 +121,7 @@
   },
   {
     "id": "GeyserGeneric_slush_water",
-    "name": "<link=\"GEYSERGENERICSLUSHWATER\">Cool Slush Geyser</link>",
+    "name": "Cool Slush Geyser",
     "prefabId": "GeyserGeneric_slush_water",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -151,7 +151,7 @@
   },
   {
     "id": "GeyserGeneric_filthy_water",
-    "name": "<link=\"GEYSERGENERICFILTHYWATER\">Polluted Water Vent</link>",
+    "name": "Polluted Water Vent",
     "prefabId": "GeyserGeneric_filthy_water",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -181,7 +181,7 @@
   },
   {
     "id": "GeyserGeneric_slush_salt_water",
-    "name": "<link=\"GEYSERGENERICSLUSHSALTWATER\">Cool Salt Slush Geyser</link>",
+    "name": "Cool Salt Slush Geyser",
     "prefabId": "GeyserGeneric_slush_salt_water",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -211,7 +211,7 @@
   },
   {
     "id": "GeyserGeneric_salt_water",
-    "name": "<link=\"GEYSERGENERICSALTWATER\">Salt Water Geyser</link>",
+    "name": "Salt Water Geyser",
     "prefabId": "GeyserGeneric_salt_water",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -241,7 +241,7 @@
   },
   {
     "id": "GeyserGeneric_small_volcano",
-    "name": "<link=\"GEYSERGENERICSMALLVOLCANO\">Minor Volcano</link>",
+    "name": "Minor Volcano",
     "prefabId": "GeyserGeneric_small_volcano",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -271,7 +271,7 @@
   },
   {
     "id": "GeyserGeneric_big_volcano",
-    "name": "<link=\"GEYSERGENERICBIGVOLCANO\">Volcano</link>",
+    "name": "Volcano",
     "prefabId": "GeyserGeneric_big_volcano",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -301,7 +301,7 @@
   },
   {
     "id": "GeyserGeneric_liquid_co2",
-    "name": "<link=\"GEYSERGENERICLIQUIDCO2\">Carbon Dioxide Geyser</link>",
+    "name": "Carbon Dioxide Geyser",
     "prefabId": "GeyserGeneric_liquid_co2",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -331,7 +331,7 @@
   },
   {
     "id": "GeyserGeneric_hot_co2",
-    "name": "<link=\"GEYSERGENERICHOTCO2\">Carbon Dioxide Vent</link>",
+    "name": "Carbon Dioxide Vent",
     "prefabId": "GeyserGeneric_hot_co2",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -361,7 +361,7 @@
   },
   {
     "id": "GeyserGeneric_hot_hydrogen",
-    "name": "<link=\"GEYSERGENERICHOTHYDROGEN\">Hydrogen Vent</link>",
+    "name": "Hydrogen Vent",
     "prefabId": "GeyserGeneric_hot_hydrogen",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -391,7 +391,7 @@
   },
   {
     "id": "GeyserGeneric_hot_po2",
-    "name": "<link=\"GEYSERGENERICHOTPO2\">Hot Polluted Oxygen Vent</link>",
+    "name": "Hot Polluted Oxygen Vent",
     "prefabId": "GeyserGeneric_hot_po2",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -421,7 +421,7 @@
   },
   {
     "id": "GeyserGeneric_slimy_po2",
-    "name": "<link=\"GEYSERGENERICSLIMYPO2\">Infectious Polluted Oxygen Vent</link>",
+    "name": "Infectious Polluted Oxygen Vent",
     "prefabId": "GeyserGeneric_slimy_po2",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -451,7 +451,7 @@
   },
   {
     "id": "GeyserGeneric_chlorine_gas",
-    "name": "<link=\"GEYSERGENERICCHLORINEGAS\">Chlorine Gas Vent</link>",
+    "name": "Chlorine Gas Vent",
     "prefabId": "GeyserGeneric_chlorine_gas",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -481,7 +481,7 @@
   },
   {
     "id": "GeyserGeneric_chlorine_gas_cool",
-    "name": "<link=\"GEYSERGENERICCHLORINEGASCOOL\">Cool Chlorine Gas Vent</link>",
+    "name": "Cool Chlorine Gas Vent",
     "prefabId": "GeyserGeneric_chlorine_gas_cool",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -511,7 +511,7 @@
   },
   {
     "id": "GeyserGeneric_methane",
-    "name": "<link=\"GEYSERGENERICMETHANE\">Natural Gas Geyser</link>",
+    "name": "Natural Gas Geyser",
     "prefabId": "GeyserGeneric_methane",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -541,7 +541,7 @@
   },
   {
     "id": "GeyserGeneric_molten_copper",
-    "name": "<link=\"GEYSERGENERICMOLTENCOPPER\">Copper Volcano</link>",
+    "name": "Copper Volcano",
     "prefabId": "GeyserGeneric_molten_copper",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -571,7 +571,7 @@
   },
   {
     "id": "GeyserGeneric_molten_iron",
-    "name": "<link=\"GEYSERGENERICMOLTENIRON\">Iron Volcano</link>",
+    "name": "Iron Volcano",
     "prefabId": "GeyserGeneric_molten_iron",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -601,7 +601,7 @@
   },
   {
     "id": "GeyserGeneric_molten_gold",
-    "name": "<link=\"GEYSERGENERICMOLTENGOLD\">Gold Volcano</link>",
+    "name": "Gold Volcano",
     "prefabId": "GeyserGeneric_molten_gold",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -631,7 +631,7 @@
   },
   {
     "id": "GeyserGeneric_molten_aluminum",
-    "name": "<link=\"GEYSERGENERICMOLTENALUMINUM\">Aluminum Volcano</link>",
+    "name": "Aluminum Volcano",
     "prefabId": "GeyserGeneric_molten_aluminum",
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -663,7 +663,7 @@
   },
   {
     "id": "GeyserGeneric_molten_tungsten",
-    "name": "<link=\"GEYSERGENERICMOLTENTUNGSTEN\">Tungsten Volcano</link>",
+    "name": "Tungsten Volcano",
     "prefabId": "GeyserGeneric_molten_tungsten",
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -695,7 +695,7 @@
   },
   {
     "id": "GeyserGeneric_molten_niobium",
-    "name": "<link=\"GEYSERGENERICMOLTENNIOBIUM\">Niobium Volcano</link>",
+    "name": "Niobium Volcano",
     "prefabId": "GeyserGeneric_molten_niobium",
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -727,7 +727,7 @@
   },
   {
     "id": "GeyserGeneric_molten_cobalt",
-    "name": "<link=\"GEYSERGENERICMOLTENCOBALT\">Cobalt Volcano</link>",
+    "name": "Cobalt Volcano",
     "prefabId": "GeyserGeneric_molten_cobalt",
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -759,7 +759,7 @@
   },
   {
     "id": "GeyserGeneric_oil_drip",
-    "name": "<link=\"GEYSERGENERICOILDRIP\">Leaky Oil Fissure</link>",
+    "name": "Leaky Oil Fissure",
     "prefabId": "GeyserGeneric_oil_drip",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -789,7 +789,7 @@
   },
   {
     "id": "GeyserGeneric_liquid_sulfur",
-    "name": "<link=\"GEYSERGENERICLIQUIDSULFUR\">Liquid Sulfur Geyser</link>",
+    "name": "Liquid Sulfur Geyser",
     "prefabId": "GeyserGeneric_liquid_sulfur",
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -821,7 +821,7 @@
   },
   {
     "id": "GeyserGeneric_murky_brine",
-    "name": "<link=\"GEYSERGENERICMURKYBRINE\">Polluted Brine Vent</link>",
+    "name": "Polluted Brine Vent",
     "prefabId": "GeyserGeneric_murky_brine",
     "requiredDlcIds": [
       "DLC5_ID"
@@ -853,7 +853,7 @@
   },
   {
     "id": "ChlorineGeyser",
-    "name": "<link=\"GEYSERGENERICCHLORINEGAS\">Chlorine Geyser</link>",
+    "name": "Chlorine Geyser",
     "prefabId": "ChlorineGeyser",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -883,7 +883,7 @@
   },
   {
     "id": "MethaneGeyser",
-    "name": "<link=\"GEYSERGENERICMETHANE\">Natural Gas Geyser</link>",
+    "name": "Natural Gas Geyser",
     "prefabId": "MethaneGeyser",
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -913,7 +913,7 @@
   },
   {
     "id": "NiobiumGeyser",
-    "name": "<link=\"GEYSERGENERICMOLTENNIOBIUM\">Niobium Volcano</link>",
+    "name": "Niobium Volcano",
     "prefabId": "NiobiumGeyser",
     "requiredDlcIds": [
       "EXPANSION1_ID"

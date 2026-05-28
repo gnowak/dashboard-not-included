@@ -1,7 +1,7 @@
 [
   {
     "id": "SweepBot",
-    "name": "<link=\"SWEEPY\">Sweepy</link>",
+    "name": "Sweepy",
     "prefabId": "SweepBot",
     "isRanchable": false,
     "requiredDlcIds": null,
@@ -17,7 +17,7 @@
   },
   {
     "id": "FetchDrone",
-    "name": "<link=\"FETCHDRONE\">Flydo</link>",
+    "name": "Flydo",
     "prefabId": "FetchDrone",
     "isRanchable": false,
     "requiredDlcIds": [
@@ -32,7 +32,7 @@
   },
   {
     "id": "Puft",
-    "name": "<link=\"PUFT\">Puft</link>",
+    "name": "Puft",
     "prefabId": "Puft",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -59,7 +59,7 @@
   },
   {
     "id": "Oilfloater",
-    "name": "<link=\"OILFLOATER\">Slickster</link>",
+    "name": "Slickster",
     "prefabId": "Oilfloater",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -86,7 +86,7 @@
   },
   {
     "id": "MorbRover",
-    "name": "<link=\"STORYTRAITMORBROVER\">Biobot</link>",
+    "name": "Biobot",
     "prefabId": "MorbRover",
     "isRanchable": false,
     "requiredDlcIds": null,
@@ -99,7 +99,7 @@
   },
   {
     "id": "Moo",
-    "name": "<link=\"MOO\">Gassy Moo</link>",
+    "name": "Gassy Moo",
     "prefabId": "Moo",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -136,7 +136,7 @@
   },
   {
     "id": "Mole",
-    "name": "<link=\"MOLE\">Shove Vole</link>",
+    "name": "Shove Vole",
     "prefabId": "Mole",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -183,7 +183,7 @@
   },
   {
     "id": "LightBug",
-    "name": "<link=\"LIGHTBUG\">Shine Bug</link>",
+    "name": "Shine Bug",
     "prefabId": "LightBug",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -214,7 +214,7 @@
   },
   {
     "id": "Glom",
-    "name": "<link=\"GLOM\">Morb</link>",
+    "name": "Morb",
     "prefabId": "Glom",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -230,7 +230,7 @@
   },
   {
     "id": "Chameleon",
-    "name": "<link=\"CHAMELEON\">Dartle</link>",
+    "name": "Dartle",
     "prefabId": "Chameleon",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -259,7 +259,7 @@
   },
   {
     "id": "Bee",
-    "name": "<link=\"BEE\">Beeta</link>",
+    "name": "Beeta",
     "prefabId": "Bee",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -277,7 +277,7 @@
   },
   {
     "id": "Drecko",
-    "name": "<link=\"DRECKO\">Drecko</link>",
+    "name": "Drecko",
     "prefabId": "Drecko",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -306,7 +306,7 @@
   },
   {
     "id": "ScoutRover",
-    "name": "<link=\"SCOUTROVER\">Rover</link>",
+    "name": "Rover",
     "prefabId": "ScoutRover",
     "isRanchable": false,
     "requiredDlcIds": [
@@ -321,7 +321,7 @@
   },
   {
     "id": "Seal",
-    "name": "<link=\"SEAL\">Spigot Seal</link>",
+    "name": "Spigot Seal",
     "prefabId": "Seal",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -360,7 +360,7 @@
   },
   {
     "id": "WoodDeer",
-    "name": "<link=\"WOODDEER\">Flox</link>",
+    "name": "Flox",
     "prefabId": "WoodDeer",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -419,7 +419,7 @@
   },
   {
     "id": "Staterpillar",
-    "name": "<link=\"STATERPILLAR\">Plug Slug</link>",
+    "name": "Plug Slug",
     "prefabId": "Staterpillar",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -648,7 +648,7 @@
   },
   {
     "id": "Squirrel",
-    "name": "<link=\"SQUIRREL\">Pip</link>",
+    "name": "Pip",
     "prefabId": "Squirrel",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -678,7 +678,7 @@
   },
   {
     "id": "PrehistoricPacu",
-    "name": "<link=\"PREHISTORICPACU\">Jawbo</link>",
+    "name": "Jawbo",
     "prefabId": "PrehistoricPacu",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -721,7 +721,7 @@
   },
   {
     "id": "PufferFish",
-    "name": "<link=\"PUFFERFISH\">Blowter</link>",
+    "name": "Blowter",
     "prefabId": "PufferFish",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -760,7 +760,7 @@
   },
   {
     "id": "Pacu",
-    "name": "<link=\"PACU\">Pacu</link>",
+    "name": "Pacu",
     "prefabId": "Pacu",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -1067,7 +1067,7 @@
   },
   {
     "id": "Hatch",
-    "name": "<link=\"HATCH\">Hatch</link>",
+    "name": "Hatch",
     "prefabId": "Hatch",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -1772,7 +1772,7 @@
   },
   {
     "id": "Raptor",
-    "name": "<link=\"RAPTOR\">Rhex</link>",
+    "name": "Rhex",
     "prefabId": "Raptor",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -1861,7 +1861,7 @@
   },
   {
     "id": "ParrotFish",
-    "name": "<link=\"PARROTFISH\">Beakon</link>",
+    "name": "Beakon",
     "prefabId": "ParrotFish",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -1900,7 +1900,7 @@
   },
   {
     "id": "IceBelly",
-    "name": "<link=\"ICEBELLY\">Bammoth</link>",
+    "name": "Bammoth",
     "prefabId": "IceBelly",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -1969,7 +1969,7 @@
   },
   {
     "id": "DivergentWorm",
-    "name": "<link=\"DIVERGENTWORM\">Grubgrub</link>",
+    "name": "Grubgrub",
     "prefabId": "DivergentWorm",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -2008,7 +2008,7 @@
   },
   {
     "id": "SeaFairy",
-    "name": "<link=\"SEAFAIRY\">Kelpole</link>",
+    "name": "Kelpole",
     "prefabId": "SeaFairy",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -2026,7 +2026,7 @@
   },
   {
     "id": "Stego",
-    "name": "<link=\"STEGO\">Lumb</link>",
+    "name": "Lumb",
     "prefabId": "Stego",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -2075,7 +2075,7 @@
   },
   {
     "id": "Butterfly",
-    "name": "<link=\"BUTTERFLY\">Mimika</link>",
+    "name": "Mimika",
     "prefabId": "Butterfly",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -2093,7 +2093,7 @@
   },
   {
     "id": "Crab",
-    "name": "<link=\"CRAB\">Pokeshell</link>",
+    "name": "Pokeshell",
     "prefabId": "Crab",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -2121,7 +2121,7 @@
   },
   {
     "id": "Squid",
-    "name": "<link=\"SQUID\">Glo Squid</link>",
+    "name": "Glo Squid",
     "prefabId": "Squid",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -2150,7 +2150,7 @@
   },
   {
     "id": "DivergentBeetle",
-    "name": "<link=\"DIVERGENTBEETLE\">Sweetle</link>",
+    "name": "Sweetle",
     "prefabId": "DivergentBeetle",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -2179,7 +2179,7 @@
   },
   {
     "id": "Mosquito",
-    "name": "<link=\"MOSQUITO\">Gnit</link>",
+    "name": "Gnit",
     "prefabId": "Mosquito",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -2197,7 +2197,7 @@
   },
   {
     "id": "SeaHorse",
-    "name": "<link=\"SEAHORSE\">Seaquine</link>",
+    "name": "Seaquine",
     "prefabId": "SeaHorse",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -2226,7 +2226,7 @@
   },
   {
     "id": "SeaTurtle",
-    "name": "<link=\"SEATURTLE\">Orehull</link>",
+    "name": "Orehull",
     "prefabId": "SeaTurtle",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -2265,7 +2265,7 @@
   },
   {
     "id": "Snail",
-    "name": "<link=\"SNAIL\">Slogo</link>",
+    "name": "Slogo",
     "prefabId": "Snail",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -2294,7 +2294,7 @@
   },
   {
     "id": "HatchHard",
-    "name": "<link=\"HATCHHARD\">Stone Hatch</link>",
+    "name": "Stone Hatch",
     "prefabId": "HatchHard",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -2415,7 +2415,7 @@
   },
   {
     "id": "GlassDeer",
-    "name": "<link=\"GLASSDEER\">Shatter Flox</link>",
+    "name": "Shatter Flox",
     "prefabId": "GlassDeer",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -2484,7 +2484,7 @@
   },
   {
     "id": "AlgaeStego",
-    "name": "<link=\"ALGAESTEGO\">Blum Lumb</link>",
+    "name": "Blum Lumb",
     "prefabId": "AlgaeStego",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -2533,7 +2533,7 @@
   },
   {
     "id": "MoleDelicacy",
-    "name": "<link=\"MOLEDELICACY\">Delecta Vole</link>",
+    "name": "Delecta Vole",
     "prefabId": "MoleDelicacy",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -2580,7 +2580,7 @@
   },
   {
     "id": "LightBugPurple",
-    "name": "<link=\"LIGHTBUGPURPLE\">Royal Bug</link>",
+    "name": "Royal Bug",
     "prefabId": "LightBugPurple",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -2612,7 +2612,7 @@
   },
   {
     "id": "LightBugPink",
-    "name": "<link=\"LIGHTBUGPINK\">Coral Bug</link>",
+    "name": "Coral Bug",
     "prefabId": "LightBugPink",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -2645,7 +2645,7 @@
   },
   {
     "id": "LightBugOrange",
-    "name": "<link=\"LIGHTBUGORANGE\">Sun Bug</link>",
+    "name": "Sun Bug",
     "prefabId": "LightBugOrange",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -2676,7 +2676,7 @@
   },
   {
     "id": "GoldBelly",
-    "name": "<link=\"GOLDBELLY\">Regal Bammoth</link>",
+    "name": "Regal Bammoth",
     "prefabId": "GoldBelly",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -2745,7 +2745,7 @@
   },
   {
     "id": "LightBugCrystal",
-    "name": "<link=\"LIGHTBUGCRYSTAL\">Radiant Bug</link>",
+    "name": "Radiant Bug",
     "prefabId": "LightBugCrystal",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -2773,7 +2773,7 @@
   },
   {
     "id": "LightBugBlue",
-    "name": "<link=\"LIGHTBUGBLUE\">Azure Bug</link>",
+    "name": "Azure Bug",
     "prefabId": "LightBugBlue",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -2803,7 +2803,7 @@
   },
   {
     "id": "DreckoPlastic",
-    "name": "<link=\"DRECKOPLASTIC\">Glossy Drecko</link>",
+    "name": "Glossy Drecko",
     "prefabId": "DreckoPlastic",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -2831,7 +2831,7 @@
   },
   {
     "id": "CrabWood",
-    "name": "<link=\"CRABWOOD\">Oakshell</link>",
+    "name": "Oakshell",
     "prefabId": "CrabWood",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -2860,7 +2860,7 @@
   },
   {
     "id": "DieselMoo",
-    "name": "<link=\"DIESELMOO\">Husky Moo</link>",
+    "name": "Husky Moo",
     "prefabId": "DieselMoo",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -2897,7 +2897,7 @@
   },
   {
     "id": "DivergentBeetleBaby",
-    "name": "<link=\"DIVERGENTBEETLE\">Sweetle Larva</link>",
+    "name": "Sweetle Larva",
     "prefabId": "DivergentBeetleBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -2926,7 +2926,7 @@
   },
   {
     "id": "HatchVeggie",
-    "name": "<link=\"HATCHVEGGIE\">Sage Hatch</link>",
+    "name": "Sage Hatch",
     "prefabId": "HatchVeggie",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -3629,7 +3629,7 @@
   },
   {
     "id": "HatchMetal",
-    "name": "<link=\"HATCHMETAL\">Smooth Hatch</link>",
+    "name": "Smooth Hatch",
     "prefabId": "HatchMetal",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -3736,7 +3736,7 @@
   },
   {
     "id": "CrabFreshWater",
-    "name": "<link=\"CRABFRESHWATER\">Sanishell</link>",
+    "name": "Sanishell",
     "prefabId": "CrabFreshWater",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -3765,7 +3765,7 @@
   },
   {
     "id": "LightBugBlack",
-    "name": "<link=\"LIGHTBUGBLACK\">Abyss Bug</link>",
+    "name": "Abyss Bug",
     "prefabId": "LightBugBlack",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -3796,7 +3796,7 @@
   },
   {
     "id": "PuftBleachstone",
-    "name": "<link=\"PUFTBLEACHSTONE\">Squeaky Puft</link>",
+    "name": "Squeaky Puft",
     "prefabId": "PuftBleachstone",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -3823,7 +3823,7 @@
   },
   {
     "id": "SquirrelHug",
-    "name": "<link=\"SQUIRREL\">Cuddle Pip</link>",
+    "name": "Cuddle Pip",
     "prefabId": "SquirrelHug",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -3853,7 +3853,7 @@
   },
   {
     "id": "PacuCleaner",
-    "name": "<link=\"PACUCLEANER\">Gulp Fish</link>",
+    "name": "Gulp Fish",
     "prefabId": "PacuCleaner",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -4160,7 +4160,7 @@
   },
   {
     "id": "PacuTropical",
-    "name": "<link=\"PACUTROPICAL\">Tropical Pacu</link>",
+    "name": "Tropical Pacu",
     "prefabId": "PacuTropical",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -4467,7 +4467,7 @@
   },
   {
     "id": "PuftOxylite",
-    "name": "<link=\"PUFTOXYLITE\">Dense Puft</link>",
+    "name": "Dense Puft",
     "prefabId": "PuftOxylite",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -4494,7 +4494,7 @@
   },
   {
     "id": "OilfloaterHighTemp",
-    "name": "<link=\"OILFLOATERHIGHTEMP\">Molten Slickster</link>",
+    "name": "Molten Slickster",
     "prefabId": "OilfloaterHighTemp",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -4521,7 +4521,7 @@
   },
   {
     "id": "SnailIron",
-    "name": "<link=\"SNAILIRON\">Gildgo</link>",
+    "name": "Gildgo",
     "prefabId": "SnailIron",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -4550,7 +4550,7 @@
   },
   {
     "id": "StaterpillarLiquid",
-    "name": "<link=\"STATERPILLAR\">Sponge Slug</link>",
+    "name": "Sponge Slug",
     "prefabId": "StaterpillarLiquid",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -4779,7 +4779,7 @@
   },
   {
     "id": "PuftAlpha",
-    "name": "<link=\"PUFTALPHA\">Puft Prince</link>",
+    "name": "Puft Prince",
     "prefabId": "PuftAlpha",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -4826,7 +4826,7 @@
   },
   {
     "id": "OilfloaterDecor",
-    "name": "<link=\"OILFLOATERDECOR\">Longhair Slickster</link>",
+    "name": "Longhair Slickster",
     "prefabId": "OilfloaterDecor",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -4853,7 +4853,7 @@
   },
   {
     "id": "StaterpillarGas",
-    "name": "<link=\"STATERPILLAR\">Smog Slug</link>",
+    "name": "Smog Slug",
     "prefabId": "StaterpillarGas",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -5082,7 +5082,7 @@
   },
   {
     "id": "RaptorBaby",
-    "name": "<link=\"RAPTOR\">Rhex Baby</link>",
+    "name": "Rhex Baby",
     "prefabId": "RaptorBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -5171,7 +5171,7 @@
   },
   {
     "id": "DreckoBaby",
-    "name": "<link=\"DRECKO\">Drecklet</link>",
+    "name": "Drecklet",
     "prefabId": "DreckoBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -5200,7 +5200,7 @@
   },
   {
     "id": "SeaHorseBaby",
-    "name": "<link=\"SEAHORSE\">Seaquine Fry</link>",
+    "name": "Seaquine Fry",
     "prefabId": "SeaHorseBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -5229,7 +5229,7 @@
   },
   {
     "id": "DivergentWormBaby",
-    "name": "<link=\"DIVERGENTWORM\">Grubgrub Wormling</link>",
+    "name": "Grubgrub Wormling",
     "prefabId": "DivergentWormBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -5268,7 +5268,7 @@
   },
   {
     "id": "SeaTurtleBaby",
-    "name": "<link=\"SEATURTLE\">Orehull Spawn</link>",
+    "name": "Orehull Spawn",
     "prefabId": "SeaTurtleBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -5307,7 +5307,7 @@
   },
   {
     "id": "SealBaby",
-    "name": "<link=\"SEAL\">Spigot Pup</link>",
+    "name": "Spigot Pup",
     "prefabId": "SealBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -5346,7 +5346,7 @@
   },
   {
     "id": "OilfloaterBaby",
-    "name": "<link=\"OILFLOATER\">Slickster Larva</link>",
+    "name": "Slickster Larva",
     "prefabId": "OilfloaterBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -5373,7 +5373,7 @@
   },
   {
     "id": "SquidBaby",
-    "name": "<link=\"SQUID\">Glo Squid Larva</link>",
+    "name": "Glo Squid Larva",
     "prefabId": "SquidBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -5402,7 +5402,7 @@
   },
   {
     "id": "SnailIronBaby",
-    "name": "<link=\"SNAILIRON\">Gildgo Baby</link>",
+    "name": "Gildgo Baby",
     "prefabId": "SnailIronBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -5420,7 +5420,7 @@
   },
   {
     "id": "MosquitoBaby",
-    "name": "<link=\"MOSQUITO\">Gnit Larva</link>",
+    "name": "Gnit Larva",
     "prefabId": "MosquitoBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -5438,7 +5438,7 @@
   },
   {
     "id": "CrabBaby",
-    "name": "<link=\"CRAB\">Pokeshell Spawn</link>",
+    "name": "Pokeshell Spawn",
     "prefabId": "CrabBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -5466,7 +5466,7 @@
   },
   {
     "id": "SquirrelBaby",
-    "name": "<link=\"SQUIRREL\">Pipsqueak</link>",
+    "name": "Pipsqueak",
     "prefabId": "SquirrelBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -5496,7 +5496,7 @@
   },
   {
     "id": "ChameleonBaby",
-    "name": "<link=\"CHAMELEON\">Dartlet</link>",
+    "name": "Dartlet",
     "prefabId": "ChameleonBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -5525,7 +5525,7 @@
   },
   {
     "id": "BeeBaby",
-    "name": "<link=\"BEE\">Beetiny</link>",
+    "name": "Beetiny",
     "prefabId": "BeeBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -5543,7 +5543,7 @@
   },
   {
     "id": "StaterpillarBaby",
-    "name": "<link=\"STATERPILLAR\">Plug Sluglet</link>",
+    "name": "Plug Sluglet",
     "prefabId": "StaterpillarBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -5772,7 +5772,7 @@
   },
   {
     "id": "StegoBaby",
-    "name": "<link=\"STEGO\">Lumblet</link>",
+    "name": "Lumblet",
     "prefabId": "StegoBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -5821,7 +5821,7 @@
   },
   {
     "id": "SnailBaby",
-    "name": "<link=\"SNAIL\">Slogo Baby</link>",
+    "name": "Slogo Baby",
     "prefabId": "SnailBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -5839,7 +5839,7 @@
   },
   {
     "id": "HatchBaby",
-    "name": "<link=\"HATCH\">Hatchling</link>",
+    "name": "Hatchling",
     "prefabId": "HatchBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -6544,7 +6544,7 @@
   },
   {
     "id": "PuftBaby",
-    "name": "<link=\"PUFT\">Puftlet</link>",
+    "name": "Puftlet",
     "prefabId": "PuftBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -6571,7 +6571,7 @@
   },
   {
     "id": "WoodDeerBaby",
-    "name": "<link=\"WOODDEER\">Flox Fawn</link>",
+    "name": "Flox Fawn",
     "prefabId": "WoodDeerBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -6630,7 +6630,7 @@
   },
   {
     "id": "LightBugBaby",
-    "name": "<link=\"LIGHTBUG\">Shine Nymph</link>",
+    "name": "Shine Nymph",
     "prefabId": "LightBugBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -6661,7 +6661,7 @@
   },
   {
     "id": "ParrotFishBaby",
-    "name": "<link=\"PARROTFISH\">Beakon Fry</link>",
+    "name": "Beakon Fry",
     "prefabId": "ParrotFishBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -6700,7 +6700,7 @@
   },
   {
     "id": "IceBellyBaby",
-    "name": "<link=\"ICEBELLY\">Bammini</link>",
+    "name": "Bammini",
     "prefabId": "IceBellyBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -6769,7 +6769,7 @@
   },
   {
     "id": "PufferFishBaby",
-    "name": "<link=\"SQUID\">Blowter Fry</link>",
+    "name": "Blowter Fry",
     "prefabId": "PufferFishBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -6808,7 +6808,7 @@
   },
   {
     "id": "PrehistoricPacuBaby",
-    "name": "<link=\"PREHISTORICPACU\">Jawbo Fry</link>",
+    "name": "Jawbo Fry",
     "prefabId": "PrehistoricPacuBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -6851,7 +6851,7 @@
   },
   {
     "id": "MoleBaby",
-    "name": "<link=\"MOLE\">Vole Pup</link>",
+    "name": "Vole Pup",
     "prefabId": "MoleBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -6898,7 +6898,7 @@
   },
   {
     "id": "PacuBaby",
-    "name": "<link=\"PACU\">Pacu Fry</link>",
+    "name": "Pacu Fry",
     "prefabId": "PacuBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -7205,7 +7205,7 @@
   },
   {
     "id": "AlgaeStegoBaby",
-    "name": "<link=\"ALGAESTEGO\">Blumblet</link>",
+    "name": "Blumblet",
     "prefabId": "AlgaeStegoBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -7254,7 +7254,7 @@
   },
   {
     "id": "StaterpillarGasBaby",
-    "name": "<link=\"STATERPILLAR\">Smog Sluglet</link>",
+    "name": "Smog Sluglet",
     "prefabId": "StaterpillarGasBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -7483,7 +7483,7 @@
   },
   {
     "id": "LightBugPurpleBaby",
-    "name": "<link=\"LIGHTBUGPURPLE\">Royal Nymph</link>",
+    "name": "Royal Nymph",
     "prefabId": "LightBugPurpleBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -7515,7 +7515,7 @@
   },
   {
     "id": "PacuCleanerBaby",
-    "name": "<link=\"PACUCLEANER\">Gulp Fry</link>",
+    "name": "Gulp Fry",
     "prefabId": "PacuCleanerBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -7822,7 +7822,7 @@
   },
   {
     "id": "OilfloaterDecorBaby",
-    "name": "<link=\"OILFLOATERDECOR\">Longhair Larva</link>",
+    "name": "Longhair Larva",
     "prefabId": "OilfloaterDecorBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -7849,7 +7849,7 @@
   },
   {
     "id": "StaterpillarLiquidBaby",
-    "name": "<link=\"STATERPILLAR\">Sponge Sluglet</link>",
+    "name": "Sponge Sluglet",
     "prefabId": "StaterpillarLiquidBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -8078,7 +8078,7 @@
   },
   {
     "id": "OilfloaterHighTempBaby",
-    "name": "<link=\"OILFLOATERHIGHTEMP\">Molten Larva</link>",
+    "name": "Molten Larva",
     "prefabId": "OilfloaterHighTempBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -8105,7 +8105,7 @@
   },
   {
     "id": "SquirrelHugBaby",
-    "name": "<link=\"SQUIRREL\">Cuddle Pipsqueak</link>",
+    "name": "Cuddle Pipsqueak",
     "prefabId": "SquirrelHugBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -8135,7 +8135,7 @@
   },
   {
     "id": "LightBugPinkBaby",
-    "name": "<link=\"LIGHTBUGPINK\">Coral Nymph</link>",
+    "name": "Coral Nymph",
     "prefabId": "LightBugPinkBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -8168,7 +8168,7 @@
   },
   {
     "id": "LightBugOrangeBaby",
-    "name": "<link=\"LIGHTBUGORANGE\">Sun Nymph</link>",
+    "name": "Sun Nymph",
     "prefabId": "LightBugOrangeBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -8199,7 +8199,7 @@
   },
   {
     "id": "MoleDelicacyBaby",
-    "name": "<link=\"MOLEDELICACY\">Delecta Vole Pup</link>",
+    "name": "Delecta Vole Pup",
     "prefabId": "MoleDelicacyBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -8246,7 +8246,7 @@
   },
   {
     "id": "CrabFreshWaterBaby",
-    "name": "<link=\"CRABFRESHWATER\">Sanishell Spawn</link>",
+    "name": "Sanishell Spawn",
     "prefabId": "CrabFreshWaterBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -8275,7 +8275,7 @@
   },
   {
     "id": "PuftAlphaBaby",
-    "name": "<link=\"PUFTALPHA\">Puftlet Prince</link>",
+    "name": "Puftlet Prince",
     "prefabId": "PuftAlphaBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -8322,7 +8322,7 @@
   },
   {
     "id": "CrabWoodBaby",
-    "name": "<link=\"CRABWOOD\">Oakshell Spawn</link>",
+    "name": "Oakshell Spawn",
     "prefabId": "CrabWoodBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -8351,7 +8351,7 @@
   },
   {
     "id": "LightBugBlueBaby",
-    "name": "<link=\"LIGHTBUGBLUE\">Azure Nymph</link>",
+    "name": "Azure Nymph",
     "prefabId": "LightBugBlueBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -8381,7 +8381,7 @@
   },
   {
     "id": "PacuTropicalBaby",
-    "name": "<link=\"PACUTROPICAL\">Tropical Fry</link>",
+    "name": "Tropical Fry",
     "prefabId": "PacuTropicalBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -8688,7 +8688,7 @@
   },
   {
     "id": "LightBugBlackBaby",
-    "name": "<link=\"LIGHTBUGBLACK\">Abyss Nymph</link>",
+    "name": "Abyss Nymph",
     "prefabId": "LightBugBlackBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -8719,7 +8719,7 @@
   },
   {
     "id": "HatchVeggieBaby",
-    "name": "<link=\"HATCHVEGGIE\">Sage Hatchling</link>",
+    "name": "Sage Hatchling",
     "prefabId": "HatchVeggieBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -9422,7 +9422,7 @@
   },
   {
     "id": "DreckoPlasticBaby",
-    "name": "<link=\"DRECKOPLASTIC\">Glossy Drecklet</link>",
+    "name": "Glossy Drecklet",
     "prefabId": "DreckoPlasticBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -9450,7 +9450,7 @@
   },
   {
     "id": "PuftOxyliteBaby",
-    "name": "<link=\"PUFTOXYLITE\">Dense Puftlet</link>",
+    "name": "Dense Puftlet",
     "prefabId": "PuftOxyliteBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -9477,7 +9477,7 @@
   },
   {
     "id": "GlassDeerBaby",
-    "name": "<link=\"GLASSDEER\">Shatter Flox Fawn</link>",
+    "name": "Shatter Flox Fawn",
     "prefabId": "GlassDeerBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -9546,7 +9546,7 @@
   },
   {
     "id": "HatchMetalBaby",
-    "name": "<link=\"HATCHMETAL\">Smooth Hatchling</link>",
+    "name": "Smooth Hatchling",
     "prefabId": "HatchMetalBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -9653,7 +9653,7 @@
   },
   {
     "id": "HatchHardBaby",
-    "name": "<link=\"HATCHHARD\">Stone Hatchling</link>",
+    "name": "Stone Hatchling",
     "prefabId": "HatchHardBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -9774,7 +9774,7 @@
   },
   {
     "id": "GoldBellyBaby",
-    "name": "<link=\"GOLDBELLY\">Regal Bammini</link>",
+    "name": "Regal Bammini",
     "prefabId": "GoldBellyBaby",
     "isRanchable": true,
     "requiredDlcIds": [
@@ -9843,7 +9843,7 @@
   },
   {
     "id": "LightBugCrystalBaby",
-    "name": "<link=\"LIGHTBUGCRYSTAL\">Radiant Nymph</link>",
+    "name": "Radiant Nymph",
     "prefabId": "LightBugCrystalBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -9871,7 +9871,7 @@
   },
   {
     "id": "PuftBleachstoneBaby",
-    "name": "<link=\"PUFTBLEACHSTONE\">Squeaky Puftlet</link>",
+    "name": "Squeaky Puftlet",
     "prefabId": "PuftBleachstoneBaby",
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -9898,7 +9898,7 @@
   },
   {
     "id": "BeeHive",
-    "name": "<link=\"BEEHIVE\">Beeta Hive</link>",
+    "name": "Beeta Hive",
     "prefabId": "BeeHive",
     "isRanchable": false,
     "requiredDlcIds": [
