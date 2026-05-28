@@ -27,7 +27,7 @@ export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChang
         padding: '1rem'
       }}
     >
-      <div>
+      <div style={{ flexShrink: 0 }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.4rem' }}>
           <h3 style={{ color: crop.color || 'var(--oni-text-primary)', fontSize: '1.3rem', fontWeight: 'bold' }}>
             {crop.name}
@@ -168,7 +168,8 @@ export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChang
         display: 'flex',
         flexDirection: 'column',
         gap: '0.6rem',
-        fontSize: '0.8rem'
+        fontSize: '0.8rem',
+        flexShrink: 0
       }}>
         {/* Caloric Output */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>

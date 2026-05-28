@@ -1,7 +1,7 @@
-import React from 'react';
-import { Egg, Maximize2, ArrowDownRight, ArrowUpRight } from 'lucide-react';
+import React, { useState } from 'react';
+import { Egg, Maximize2, ArrowDownRight, ArrowUpRight, Trash2, ChevronDown, ChevronUp } from 'lucide-react';
 
-export function RanchCard({ critter, count, onChange }) {
+export function RanchCard({ critter, count, onChange, onRemove }) {
   const maxAllowed = critter.maxSize || 8;
   const currentOutput = critter.caloriesPerCycle * count;
   const eggsTotal = critter.eggsPerCycle * count;
@@ -9,6 +9,8 @@ export function RanchCard({ critter, count, onChange }) {
   
   // Calculate ranch count dynamically (Math.ceil since any fraction implies starting a new ranch)
   const currentRanchCount = Math.ceil(count / maxAllowed);
+
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const handleRanchChange = (newRanchCount) => {
     // Default the critter count to full capacity for the selected ranches
@@ -23,15 +25,35 @@ export function RanchCard({ critter, count, onChange }) {
         flexDirection: 'column', 
         justifyContent: 'space-between',
         borderTop: `4px solid ${critter.color || 'var(--oni-panel-border)'}`,
-        height: '100%',
         padding: '1rem' // Condensed padding
       }}
     >
-      <div>
+      <div style={{ flexShrink: 0 }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.4rem' }}>
           <h3 style={{ color: critter.color || 'var(--oni-text-primary)', fontSize: '1.3rem', fontWeight: 'bold' }}>
             {critter.name}
           </h3>
+          {onRemove && (
+            <button 
+              onClick={onRemove}
+              style={{
+                background: 'none',
+                border: 'none',
+                color: 'var(--oni-text-muted)',
+                cursor: 'pointer',
+                padding: '0.2rem',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                transition: 'color 0.15s ease'
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.color = 'var(--oni-accent-danger)'}
+              onMouseLeave={(e) => e.currentTarget.style.color = 'var(--oni-text-muted)'}
+              title="Remove ranch card"
+            >
+              <Trash2 size={16} />
+            </button>
+          )}
         </div>
 
         <p style={{ color: 'var(--oni-text-muted)', fontSize: '0.8rem', marginBottom: '0.8rem', fontStyle: 'italic', lineHeight: '1.3', minHeight: '2.8rem' }}>
@@ -143,37 +165,71 @@ export function RanchCard({ critter, count, onChange }) {
         </div>
 
         {/* Inputs & Outputs */}
-        {count > 0 && (
+        {count > 0 && (critter.inputs?.length > 0 || critter.outputs?.length > 0) && (
           <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: '1fr 1fr', 
+            display: 'flex', 
+            flexDirection: 'column',
             gap: '0.5rem', 
             paddingTop: '0.5rem',
             borderTop: '1px solid var(--oni-grid-line)'
           }}>
-            {/* Inputs */}
-            <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.2rem', color: 'var(--oni-accent-danger)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.15rem' }}>
-                <ArrowDownRight size={10} /> Inputs
-              </div>
-              {critter.inputs?.map((input, idx) => (
-                <div key={idx} style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', color: 'var(--oni-text-primary)', lineHeight: '1.2' }}>
-                  {(input.amount * count).toFixed(0)} {input.unit} <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{input.name}</span>
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.4rem',
+                background: 'rgba(0,0,0,0.2)',
+                border: '1px solid var(--oni-panel-border)',
+                borderRadius: '4px',
+                padding: '0.4rem',
+                color: 'var(--oni-text-primary)',
+                cursor: 'pointer',
+                fontFamily: 'var(--oni-font-mono)',
+                fontSize: '0.75rem',
+                transition: 'background 0.2s',
+                width: '100%'
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(0,0,0,0.4)'}
+              onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(0,0,0,0.2)'}
+            >
+              {isExpanded ? <><ChevronUp size={14} /> Hide Details</> : <><ChevronDown size={14} /> Show Details</>}
+            </button>
+            
+            {isExpanded && (
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem', marginTop: '0.4rem' }}>
+                {/* Inputs */}
+                <div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.2rem', color: 'var(--oni-accent-danger)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.25rem' }}>
+                    <ArrowDownRight size={10} /> Inputs
+                  </div>
+                  {critter.inputs?.map((input, idx) => (
+                    <div key={idx} style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', color: 'var(--oni-text-primary)', lineHeight: '1.2', marginBottom: '0.2rem' }}>
+                      {(input.amount * count).toFixed(0)} {input.unit} <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{input.name}</span>
+                    </div>
+                  ))}
+                  {(!critter.inputs || critter.inputs.length === 0) && (
+                    <span style={{ fontSize: '0.7rem', color: 'var(--oni-text-muted)', fontStyle: 'italic' }}>None</span>
+                  )}
                 </div>
-              ))}
-            </div>
 
-            {/* Outputs */}
-            <div style={{ borderLeft: '1px solid var(--oni-grid-line)', paddingLeft: '0.4rem' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.2rem', color: 'var(--oni-accent-success)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.15rem' }}>
-                <ArrowUpRight size={10} /> Outputs
-              </div>
-              {critter.outputs?.map((output, idx) => (
-                <div key={idx} style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', color: 'var(--oni-text-primary)', lineHeight: '1.2' }}>
-                  {(output.amount * count).toFixed(0)} {output.unit} <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{output.name}</span>
+                {/* Outputs */}
+                <div style={{ borderLeft: '1px solid var(--oni-grid-line)', paddingLeft: '0.4rem' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.2rem', color: 'var(--oni-accent-success)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.25rem' }}>
+                    <ArrowUpRight size={10} /> Outputs
+                  </div>
+                  {critter.outputs?.map((output, idx) => (
+                    <div key={idx} style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', color: 'var(--oni-text-primary)', lineHeight: '1.2', marginBottom: '0.2rem' }}>
+                      {(output.amount * count).toFixed(0)} {output.unit} <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{output.name}</span>
+                    </div>
+                  ))}
+                  {(!critter.outputs || critter.outputs.length === 0) && (
+                    <span style={{ fontSize: '0.7rem', color: 'var(--oni-text-muted)', fontStyle: 'italic' }}>None</span>
+                  )}
                 </div>
-              ))}
-            </div>
+              </div>
+            )}
           </div>
         )}
       </div>

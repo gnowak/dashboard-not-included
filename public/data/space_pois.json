@@ -1,0 +1,482 @@
+[
+  {
+    "id": "HarvestableSpacePOI_CarbonAsteroidField",
+    "name": "HarvestableSpacePOI_CarbonAsteroidField",
+    "prefabId": "HarvestableSpacePOI_CarbonAsteroidField",
+    "poiType": "0x19456132",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_MetallicAsteroidField",
+    "name": "HarvestableSpacePOI_MetallicAsteroidField",
+    "prefabId": "HarvestableSpacePOI_MetallicAsteroidField",
+    "poiType": "0xE55B6240",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_SatelliteField",
+    "name": "HarvestableSpacePOI_SatelliteField",
+    "prefabId": "HarvestableSpacePOI_SatelliteField",
+    "poiType": "0x3E3A895F",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_RockyAsteroidField",
+    "name": "HarvestableSpacePOI_RockyAsteroidField",
+    "prefabId": "HarvestableSpacePOI_RockyAsteroidField",
+    "poiType": "0x6DC07EB",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_InterstellarIceField",
+    "name": "HarvestableSpacePOI_InterstellarIceField",
+    "prefabId": "HarvestableSpacePOI_InterstellarIceField",
+    "poiType": "0x61ED03A8",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_OrganicMassField",
+    "name": "HarvestableSpacePOI_OrganicMassField",
+    "prefabId": "HarvestableSpacePOI_OrganicMassField",
+    "poiType": "0x6DF167FB",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_IceAsteroidField",
+    "name": "HarvestableSpacePOI_IceAsteroidField",
+    "prefabId": "HarvestableSpacePOI_IceAsteroidField",
+    "poiType": "0xE85CF0F4",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_GasGiantCloud",
+    "name": "HarvestableSpacePOI_GasGiantCloud",
+    "prefabId": "HarvestableSpacePOI_GasGiantCloud",
+    "poiType": "0x40FB35E9",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_ChlorineCloud",
+    "name": "HarvestableSpacePOI_ChlorineCloud",
+    "prefabId": "HarvestableSpacePOI_ChlorineCloud",
+    "poiType": "0x5EFFC1DF",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_GildedAsteroidField",
+    "name": "HarvestableSpacePOI_GildedAsteroidField",
+    "prefabId": "HarvestableSpacePOI_GildedAsteroidField",
+    "poiType": "0x5C959326",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_GlimmeringAsteroidField",
+    "name": "HarvestableSpacePOI_GlimmeringAsteroidField",
+    "prefabId": "HarvestableSpacePOI_GlimmeringAsteroidField",
+    "poiType": "0x76B9E56E",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_HeliumCloud",
+    "name": "HarvestableSpacePOI_HeliumCloud",
+    "prefabId": "HarvestableSpacePOI_HeliumCloud",
+    "poiType": "0x5573BE3",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_OilyAsteroidField",
+    "name": "HarvestableSpacePOI_OilyAsteroidField",
+    "prefabId": "HarvestableSpacePOI_OilyAsteroidField",
+    "poiType": "0xA7386D8",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_OxidizedAsteroidField",
+    "name": "HarvestableSpacePOI_OxidizedAsteroidField",
+    "prefabId": "HarvestableSpacePOI_OxidizedAsteroidField",
+    "poiType": "0xBD45424B",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_SaltyAsteroidField",
+    "name": "HarvestableSpacePOI_SaltyAsteroidField",
+    "prefabId": "HarvestableSpacePOI_SaltyAsteroidField",
+    "poiType": "0x7E48E65C",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_FrozenOreField",
+    "name": "HarvestableSpacePOI_FrozenOreField",
+    "prefabId": "HarvestableSpacePOI_FrozenOreField",
+    "poiType": "0x1EAA23D8",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_ForestyOreField",
+    "name": "HarvestableSpacePOI_ForestyOreField",
+    "prefabId": "HarvestableSpacePOI_ForestyOreField",
+    "poiType": "0x79A94E34",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_SwampyOreField",
+    "name": "HarvestableSpacePOI_SwampyOreField",
+    "prefabId": "HarvestableSpacePOI_SwampyOreField",
+    "poiType": "0xB1658BD1",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_SandyOreField",
+    "name": "HarvestableSpacePOI_SandyOreField",
+    "prefabId": "HarvestableSpacePOI_SandyOreField",
+    "poiType": "0x263CF50D",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_RadioactiveGasCloud",
+    "name": "HarvestableSpacePOI_RadioactiveGasCloud",
+    "prefabId": "HarvestableSpacePOI_RadioactiveGasCloud",
+    "poiType": "0x6E84013D",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_RadioactiveAsteroidField",
+    "name": "HarvestableSpacePOI_RadioactiveAsteroidField",
+    "prefabId": "HarvestableSpacePOI_RadioactiveAsteroidField",
+    "poiType": "0xD5AF57FE",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_OxygenRichAsteroidField",
+    "name": "HarvestableSpacePOI_OxygenRichAsteroidField",
+    "prefabId": "HarvestableSpacePOI_OxygenRichAsteroidField",
+    "poiType": "0x184BAFE3",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_InterstellarOcean",
+    "name": "HarvestableSpacePOI_InterstellarOcean",
+    "prefabId": "HarvestableSpacePOI_InterstellarOcean",
+    "poiType": "0x120335C5",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_DLC2CeresField",
+    "name": "HarvestableSpacePOI_DLC2CeresField",
+    "prefabId": "HarvestableSpacePOI_DLC2CeresField",
+    "poiType": "0x671399B3",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_DLC2CeresOreField",
+    "name": "HarvestableSpacePOI_DLC2CeresOreField",
+    "prefabId": "HarvestableSpacePOI_DLC2CeresOreField",
+    "poiType": "0x3894D15F",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_DLC4PrehistoricMixingField",
+    "name": "HarvestableSpacePOI_DLC4PrehistoricMixingField",
+    "prefabId": "HarvestableSpacePOI_DLC4PrehistoricMixingField",
+    "poiType": "0x3DB53AEB",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_DLC4PrehistoricOreField",
+    "name": "HarvestableSpacePOI_DLC4PrehistoricOreField",
+    "prefabId": "HarvestableSpacePOI_DLC4PrehistoricOreField",
+    "poiType": "0xC88F7381",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_DLC4ImpactorDebrisField1",
+    "name": "HarvestableSpacePOI_DLC4ImpactorDebrisField1",
+    "prefabId": "HarvestableSpacePOI_DLC4ImpactorDebrisField1",
+    "poiType": "0x180B5054",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_DLC4ImpactorDebrisField2",
+    "name": "HarvestableSpacePOI_DLC4ImpactorDebrisField2",
+    "prefabId": "HarvestableSpacePOI_DLC4ImpactorDebrisField2",
+    "poiType": "0x180B5055",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_DLC4ImpactorDebrisField3",
+    "name": "HarvestableSpacePOI_DLC4ImpactorDebrisField3",
+    "prefabId": "HarvestableSpacePOI_DLC4ImpactorDebrisField3",
+    "poiType": "0x180B5056",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_DLC5AquaticMixingField",
+    "name": "HarvestableSpacePOI_DLC5AquaticMixingField",
+    "prefabId": "HarvestableSpacePOI_DLC5AquaticMixingField",
+    "poiType": "0x9548C2DC",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  },
+  {
+    "id": "HarvestableSpacePOI_DLC5AquaticOreField",
+    "name": "HarvestableSpacePOI_DLC5AquaticOreField",
+    "prefabId": "HarvestableSpacePOI_DLC5AquaticOreField",
+    "poiType": "0x87E096D0",
+    "capacityRangeMetricTons": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "rechargeRangeKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resources": null
+  }
+]

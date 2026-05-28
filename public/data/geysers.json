@@ -1,0 +1,870 @@
+[
+  {
+    "id": "Geyser",
+    "name": "<link=\"GEYSER\">Steam Geyser</link>",
+    "prefabId": "Geyser",
+    "geyserType": "0xCA627A30",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_steam",
+    "name": "<link=\"GEYSERGENERICSTEAM\">Cool Steam Vent</link>",
+    "prefabId": "GeyserGeneric_steam",
+    "geyserType": "0xCA627A30",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_hot_steam",
+    "name": "<link=\"GEYSERGENERICHOTSTEAM\">Steam Vent</link>",
+    "prefabId": "GeyserGeneric_hot_steam",
+    "geyserType": "0x876FE53E",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_hot_water",
+    "name": "<link=\"GEYSERGENERICHOTWATER\">Water Geyser</link>",
+    "prefabId": "GeyserGeneric_hot_water",
+    "geyserType": "0x2A86CCA5",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_slush_water",
+    "name": "<link=\"GEYSERGENERICSLUSHWATER\">Cool Slush Geyser</link>",
+    "prefabId": "GeyserGeneric_slush_water",
+    "geyserType": "0x4C574F29",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_filthy_water",
+    "name": "<link=\"GEYSERGENERICFILTHYWATER\">Polluted Water Vent</link>",
+    "prefabId": "GeyserGeneric_filthy_water",
+    "geyserType": "0xE7593594",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_slush_salt_water",
+    "name": "<link=\"GEYSERGENERICSLUSHSALTWATER\">Cool Salt Slush Geyser</link>",
+    "prefabId": "GeyserGeneric_slush_salt_water",
+    "geyserType": "0x7650909C",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_salt_water",
+    "name": "<link=\"GEYSERGENERICSALTWATER\">Salt Water Geyser</link>",
+    "prefabId": "GeyserGeneric_salt_water",
+    "geyserType": "0x2596C7AE",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_small_volcano",
+    "name": "<link=\"GEYSERGENERICSMALLVOLCANO\">Minor Volcano</link>",
+    "prefabId": "GeyserGeneric_small_volcano",
+    "geyserType": "0xE3E454FA",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_big_volcano",
+    "name": "<link=\"GEYSERGENERICBIGVOLCANO\">Volcano</link>",
+    "prefabId": "GeyserGeneric_big_volcano",
+    "geyserType": "0xA115A2F3",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_liquid_co2",
+    "name": "<link=\"GEYSERGENERICLIQUIDCO2\">Carbon Dioxide Geyser</link>",
+    "prefabId": "GeyserGeneric_liquid_co2",
+    "geyserType": "0x5856E7C3",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_hot_co2",
+    "name": "<link=\"GEYSERGENERICHOTCO2\">Carbon Dioxide Vent</link>",
+    "prefabId": "GeyserGeneric_hot_co2",
+    "geyserType": "0xDB00AC74",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_hot_hydrogen",
+    "name": "<link=\"GEYSERGENERICHOTHYDROGEN\">Hydrogen Vent</link>",
+    "prefabId": "GeyserGeneric_hot_hydrogen",
+    "geyserType": "0x42F75412",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_hot_po2",
+    "name": "<link=\"GEYSERGENERICHOTPO2\">Hot Polluted Oxygen Vent</link>",
+    "prefabId": "GeyserGeneric_hot_po2",
+    "geyserType": "0xE1677601",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_slimy_po2",
+    "name": "<link=\"GEYSERGENERICSLIMYPO2\">Infectious Polluted Oxygen Vent</link>",
+    "prefabId": "GeyserGeneric_slimy_po2",
+    "geyserType": "0x7EDED410",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_chlorine_gas",
+    "name": "<link=\"GEYSERGENERICCHLORINEGAS\">Chlorine Gas Vent</link>",
+    "prefabId": "GeyserGeneric_chlorine_gas",
+    "geyserType": "0x58719BD0",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_chlorine_gas_cool",
+    "name": "<link=\"GEYSERGENERICCHLORINEGASCOOL\">Cool Chlorine Gas Vent</link>",
+    "prefabId": "GeyserGeneric_chlorine_gas_cool",
+    "geyserType": "0xE1B0F818",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_methane",
+    "name": "<link=\"GEYSERGENERICMETHANE\">Natural Gas Geyser</link>",
+    "prefabId": "GeyserGeneric_methane",
+    "geyserType": "0xCDDBC02C",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_molten_copper",
+    "name": "<link=\"GEYSERGENERICMOLTENCOPPER\">Copper Volcano</link>",
+    "prefabId": "GeyserGeneric_molten_copper",
+    "geyserType": "0xD68E8BA5",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_molten_iron",
+    "name": "<link=\"GEYSERGENERICMOLTENIRON\">Iron Volcano</link>",
+    "prefabId": "GeyserGeneric_molten_iron",
+    "geyserType": "0xF253114",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_molten_gold",
+    "name": "<link=\"GEYSERGENERICMOLTENGOLD\">Gold Volcano</link>",
+    "prefabId": "GeyserGeneric_molten_gold",
+    "geyserType": "0xB09A604C",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_molten_aluminum",
+    "name": "<link=\"GEYSERGENERICMOLTENALUMINUM\">Aluminum Volcano</link>",
+    "prefabId": "GeyserGeneric_molten_aluminum",
+    "geyserType": "0xC645C58C",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_molten_tungsten",
+    "name": "<link=\"GEYSERGENERICMOLTENTUNGSTEN\">Tungsten Volcano</link>",
+    "prefabId": "GeyserGeneric_molten_tungsten",
+    "geyserType": "0x97FF710",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_molten_niobium",
+    "name": "<link=\"GEYSERGENERICMOLTENNIOBIUM\">Niobium Volcano</link>",
+    "prefabId": "GeyserGeneric_molten_niobium",
+    "geyserType": "0x3A36CB67",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_molten_cobalt",
+    "name": "<link=\"GEYSERGENERICMOLTENCOBALT\">Cobalt Volcano</link>",
+    "prefabId": "GeyserGeneric_molten_cobalt",
+    "geyserType": "0x43D33A5F",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_oil_drip",
+    "name": "<link=\"GEYSERGENERICOILDRIP\">Leaky Oil Fissure</link>",
+    "prefabId": "GeyserGeneric_oil_drip",
+    "geyserType": "0x80EDB902",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_liquid_sulfur",
+    "name": "<link=\"GEYSERGENERICLIQUIDSULFUR\">Liquid Sulfur Geyser</link>",
+    "prefabId": "GeyserGeneric_liquid_sulfur",
+    "geyserType": "0x96C23E5C",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "GeyserGeneric_murky_brine",
+    "name": "<link=\"GEYSERGENERICMURKYBRINE\">Polluted Brine Vent</link>",
+    "prefabId": "GeyserGeneric_murky_brine",
+    "geyserType": "0x46FCCA29",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "ChlorineGeyser",
+    "name": "<link=\"GEYSERGENERICCHLORINEGAS\">Chlorine Geyser</link>",
+    "prefabId": "ChlorineGeyser",
+    "geyserType": "0x58719BD0",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "MethaneGeyser",
+    "name": "<link=\"GEYSERGENERICMETHANE\">Natural Gas Geyser</link>",
+    "prefabId": "MethaneGeyser",
+    "geyserType": "0xCDDBC02C",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  },
+  {
+    "id": "NiobiumGeyser",
+    "name": "<link=\"GEYSERGENERICMOLTENNIOBIUM\">Niobium Volcano</link>",
+    "prefabId": "NiobiumGeyser",
+    "geyserType": "0x3A36CB67",
+    "element": null,
+    "temperature": {
+      "kelvin": 0.0,
+      "celsius": -273.15
+    },
+    "maxPressure": 0.0,
+    "flowRateKgPerCycle": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "eruptionPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    },
+    "activityPeriod": {
+      "minDurationSeconds": 0.0,
+      "maxDurationSeconds": 0.0,
+      "minDutyCycle": 0.0,
+      "maxDutyCycle": 0.0
+    }
+  }
+]

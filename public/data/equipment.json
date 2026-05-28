@@ -1,0 +1,206 @@
+[
+  {
+    "id": "Atmo_Suit",
+    "name": "<link=\"ATMOSUIT\">Atmo Suit</link>",
+    "prefabId": "Atmo_Suit",
+    "slot": "Suit",
+    "tank": {
+      "capacityKg": 75.0,
+      "element": "Oxygen"
+    },
+    "attributes": [
+      {
+        "attributeId": "Insulation",
+        "value": 50.0,
+        "isMultiplier": false
+      },
+      {
+        "attributeId": "Athletics",
+        "value": -6.0,
+        "isMultiplier": false
+      },
+      {
+        "attributeId": "ThermalConductivityBarrier",
+        "value": 0.2,
+        "isMultiplier": false
+      },
+      {
+        "attributeId": "Digging",
+        "value": 10.0,
+        "isMultiplier": false
+      },
+      {
+        "attributeId": "ScaldingThreshold",
+        "value": 1000.0,
+        "isMultiplier": false
+      },
+      {
+        "attributeId": "ScoldingThreshold",
+        "value": -1000.0,
+        "isMultiplier": false
+      }
+    ]
+  },
+  {
+    "id": "CustomClothing",
+    "name": "<link=\"CUSTOMCLOTHING\">Primo Garb</link>",
+    "prefabId": "CustomClothing",
+    "slot": "Outfit",
+    "tank": null,
+    "attributes": []
+  },
+  {
+    "id": "DrySuit",
+    "name": "<link=\"DRYSUIT\">Swimwear</link>",
+    "prefabId": "DrySuit",
+    "slot": "Outfit",
+    "tank": null,
+    "attributes": []
+  },
+  {
+    "id": "EquippableBalloon",
+    "name": "<link=\"EQUIPPABLEBALLOON\">Balloon Friend</link>",
+    "prefabId": "EquippableBalloon",
+    "slot": "Toy",
+    "tank": null,
+    "attributes": []
+  },
+  {
+    "id": "Funky_Vest",
+    "name": "<link=\"FUNKYVEST\">Snazzy Suit</link>",
+    "prefabId": "Funky_Vest",
+    "slot": "Outfit",
+    "tank": null,
+    "attributes": []
+  },
+  {
+    "id": "Jet_Suit",
+    "name": "<link=\"JETSUIT\">Jet Suit</link>",
+    "prefabId": "Jet_Suit",
+    "slot": "Suit",
+    "tank": {
+      "capacityKg": 75.0,
+      "element": "Oxygen"
+    },
+    "attributes": [
+      {
+        "attributeId": "Insulation",
+        "value": 50.0,
+        "isMultiplier": false
+      },
+      {
+        "attributeId": "Athletics",
+        "value": -6.0,
+        "isMultiplier": false
+      },
+      {
+        "attributeId": "ThermalConductivityBarrier",
+        "value": 0.2,
+        "isMultiplier": false
+      },
+      {
+        "attributeId": "Digging",
+        "value": 10.0,
+        "isMultiplier": false
+      },
+      {
+        "attributeId": "ScaldingThreshold",
+        "value": 1000.0,
+        "isMultiplier": false
+      },
+      {
+        "attributeId": "ScoldingThreshold",
+        "value": -1000.0,
+        "isMultiplier": false
+      }
+    ]
+  },
+  {
+    "id": "Lead_Suit",
+    "name": "<link=\"LEADSUIT\">Lead Suit</link>",
+    "prefabId": "Lead_Suit",
+    "slot": "Suit",
+    "tank": {
+      "capacityKg": 40.0,
+      "element": "Oxygen"
+    },
+    "attributes": [
+      {
+        "attributeId": "Athletics",
+        "value": -8.0,
+        "isMultiplier": false
+      },
+      {
+        "attributeId": "ScaldingThreshold",
+        "value": 1000.0,
+        "isMultiplier": false
+      },
+      {
+        "attributeId": "ScoldingThreshold",
+        "value": -1000.0,
+        "isMultiplier": false
+      },
+      {
+        "attributeId": "RadiationResistance",
+        "value": 0.66,
+        "isMultiplier": false
+      },
+      {
+        "attributeId": "Strength",
+        "value": 10.0,
+        "isMultiplier": false
+      },
+      {
+        "attributeId": "Insulation",
+        "value": 50.0,
+        "isMultiplier": false
+      },
+      {
+        "attributeId": "ThermalConductivityBarrier",
+        "value": 0.3,
+        "isMultiplier": false
+      }
+    ]
+  },
+  {
+    "id": "Oxygen_Mask",
+    "name": "<link=\"OXYGENMASK\">Oxygen Mask</link>",
+    "prefabId": "Oxygen_Mask",
+    "slot": "Suit",
+    "tank": {
+      "capacityKg": 20.0,
+      "element": "Oxygen"
+    },
+    "attributes": [
+      {
+        "attributeId": "Athletics",
+        "value": -2.0,
+        "isMultiplier": false
+      }
+    ]
+  },
+  {
+    "id": "RubberBoots",
+    "name": "<link=\"RUBBERBOOTS\">Rubber Boots</link>",
+    "prefabId": "RubberBoots",
+    "slot": "Shoes",
+    "tank": null,
+    "attributes": []
+  },
+  {
+    "id": "SleepClinicPajamas",
+    "name": "<link=\"SLEEPCLINICPAJAMAS\">Pajamas</link>",
+    "prefabId": "SleepClinicPajamas",
+    "slot": "Outfit",
+    "tank": null,
+    "attributes": []
+  },
+  {
+    "id": "Warm_Vest",
+    "name": "<link=\"WARMVEST\">Warm Coat</link>",
+    "prefabId": "Warm_Vest",
+    "slot": "Outfit",
+    "tank": null,
+    "attributes": []
+  }
+]

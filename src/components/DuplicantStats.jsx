@@ -242,8 +242,8 @@ export function DuplicantStats({ duplicants, setDuplicants, totalCalories, ranch
           )}
 
           <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: '1fr 1fr', 
+            display: 'flex', 
+            flexDirection: 'column', 
             gap: '1rem', 
             fontSize: '0.9rem', 
             borderTop: (aggregates.totalStables > 0 || aggregates.totalGreenhouses > 0) ? '1px dashed var(--oni-grid-line-thick)' : 'none', 
@@ -257,13 +257,21 @@ export function DuplicantStats({ duplicants, setDuplicants, totalCalories, ranch
               {aggregates.inputs.length === 0 ? (
                 <div style={{ color: 'var(--oni-text-muted)', fontSize: '0.8rem' }}>None</div>
               ) : (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
                   {aggregates.inputs.map((input, idx) => (
-                    <div key={idx} style={{ display: 'flex', flexDirection: 'column' }}>
-                      <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold' }}>
+                    <div key={idx} style={{ 
+                      display: 'flex', 
+                      justifyContent: 'space-between', 
+                      alignItems: 'center', 
+                      background: 'rgba(239, 68, 68, 0.05)', 
+                      padding: '0.3rem 0.5rem', 
+                      borderRadius: '3px', 
+                      border: '1px solid rgba(239, 68, 68, 0.15)' 
+                    }}>
+                      <span style={{ color: 'var(--oni-text-primary)', fontSize: '0.8rem' }}>{input.name}</span>
+                      <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold', color: 'var(--oni-accent-danger)', fontSize: '0.85rem' }}>
                         {input.amount.toFixed(1)} {input.unit}/c
                       </span>
-                      <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.8rem' }}>{input.name}</span>
                     </div>
                   ))}
                 </div>
@@ -271,20 +279,28 @@ export function DuplicantStats({ duplicants, setDuplicants, totalCalories, ranch
             </div>
 
             {/* Total Outputs */}
-            <div style={{ borderLeft: '1px solid var(--oni-grid-line)', paddingLeft: '1rem' }}>
+            <div style={{ borderTop: '1px solid var(--oni-grid-line)', paddingTop: '0.75rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: 'var(--oni-accent-success)', fontWeight: 'bold', fontSize: '0.8rem', textTransform: 'uppercase', marginBottom: '0.5rem' }}>
                 <ArrowUpRight size={14} /> Total Outputs
               </div>
               {aggregates.outputs.length === 0 ? (
                 <div style={{ color: 'var(--oni-text-muted)', fontSize: '0.8rem' }}>None</div>
               ) : (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
                   {aggregates.outputs.map((output, idx) => (
-                    <div key={idx} style={{ display: 'flex', flexDirection: 'column' }}>
-                      <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold' }}>
+                    <div key={idx} style={{ 
+                      display: 'flex', 
+                      justifyContent: 'space-between', 
+                      alignItems: 'center', 
+                      background: 'rgba(168, 255, 140, 0.05)', 
+                      padding: '0.3rem 0.5rem', 
+                      borderRadius: '3px', 
+                      border: '1px solid rgba(168, 255, 140, 0.15)' 
+                    }}>
+                      <span style={{ color: 'var(--oni-text-primary)', fontSize: '0.8rem' }}>{output.name}</span>
+                      <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold', color: 'var(--oni-accent-success)', fontSize: '0.85rem' }}>
                         {output.amount.toFixed(1)} {output.unit}/c
                       </span>
-                      <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.8rem' }}>{output.name}</span>
                     </div>
                   ))}
                 </div>

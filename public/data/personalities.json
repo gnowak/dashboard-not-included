@@ -1,0 +1,470 @@
+[
+  {
+    "id": "ABE",
+    "name": "Abe",
+    "description": "Abes are sweet, delicate flowers. They need to be treated gingerly, with great consideration for their feelings.",
+    "gender": "MALE",
+    "joyTrait": "BalloonArtist",
+    "stressTrait": "UglyCrier",
+    "congenitalTrait": null
+  },
+  {
+    "id": "ADA",
+    "name": "Ada",
+    "description": "Adas enjoy writing poetry in their downtime. Dark poetry.",
+    "gender": "FEMALE",
+    "joyTrait": "BalloonArtist",
+    "stressTrait": "StressVomiter",
+    "congenitalTrait": null
+  },
+  {
+    "id": "AMARI",
+    "name": "Amari",
+    "description": "Amaris likes to keep the peace. Ironically, they're a riot at parties.",
+    "gender": "MALE",
+    "joyTrait": "SuperProductive",
+    "stressTrait": "Banshee",
+    "congenitalTrait": null
+  },
+  {
+    "id": "ARI",
+    "name": "Ari",
+    "description": "Aris tend to space out from time to time, but they always pay attention when it counts.",
+    "gender": "NB",
+    "joyTrait": "StickerBomber",
+    "stressTrait": "UglyCrier",
+    "congenitalTrait": null
+  },
+  {
+    "id": "ASHKAN",
+    "name": "Ashkan",
+    "description": "Ashkans have what can only be described as a \"seriously infectious giggle\".",
+    "gender": "MALE",
+    "joyTrait": "SparkleStreaker",
+    "stressTrait": "BingeEater",
+    "congenitalTrait": null
+  },
+  {
+    "id": "BANHI",
+    "name": "Banhi",
+    "description": "The \"cool loner\" vibes that radiate off a Banhi never fail to make the colony swoon.",
+    "gender": "FEMALE",
+    "joyTrait": "SuperProductive",
+    "stressTrait": "Aggressive",
+    "congenitalTrait": null
+  },
+  {
+    "id": "BUBBLES",
+    "name": "Bubbles",
+    "description": "This Bubbles is constantly challenging others to fight her, regardless of whether or not she can actually take them.",
+    "gender": "FEMALE",
+    "joyTrait": "StickerBomber",
+    "stressTrait": "BingeEater",
+    "congenitalTrait": null
+  },
+  {
+    "id": "BURT",
+    "name": "Burt",
+    "description": "This Burt always feels great after a bubble bath and a good long cry.",
+    "gender": "MALE",
+    "joyTrait": "StickerBomber",
+    "stressTrait": "BingeEater",
+    "congenitalTrait": null
+  },
+  {
+    "id": "CAMILLE",
+    "name": "Camille",
+    "description": "This Camille loves anything that makes her feel nostalgic, including things that haven't aged well.",
+    "gender": "FEMALE",
+    "joyTrait": "StickerBomber",
+    "stressTrait": "StressVomiter",
+    "congenitalTrait": null
+  },
+  {
+    "id": "CATALINA",
+    "name": "Catalina",
+    "description": "A Catalina is admired by all for her seemingly tireless work ethic. Little do people know, she's dying on the inside.",
+    "gender": "FEMALE",
+    "joyTrait": "SuperProductive",
+    "stressTrait": "StressVomiter",
+    "congenitalTrait": null
+  },
+  {
+    "id": "CHIP",
+    "name": "Chip",
+    "description": "This Chip is extremely good at guessing their friends' passwords.",
+    "gender": "NB",
+    "joyTrait": "DataRainer",
+    "stressTrait": "StressShocker",
+    "congenitalTrait": null
+  },
+  {
+    "id": "DEVON",
+    "name": "Devon",
+    "description": "This Devon dreams of owning their own personal computer so they can start a blog full of pictures of toast.",
+    "gender": "NB",
+    "joyTrait": "SuperProductive",
+    "stressTrait": "BingeEater",
+    "congenitalTrait": null
+  },
+  {
+    "id": "EDWIREDO",
+    "name": "Edwiredo",
+    "description": "This Edwiredo once rolled his eye so hard that he powered himself off and on again.",
+    "gender": "MALE",
+    "joyTrait": "DataRainer",
+    "stressTrait": "StressShocker",
+    "congenitalTrait": null
+  },
+  {
+    "id": "ELLIE",
+    "name": "Ellie",
+    "description": "Nothing makes an Ellie happier than a big tin of glitter and a pack of unicorn stickers.",
+    "gender": "FEMALE",
+    "joyTrait": "StickerBomber",
+    "stressTrait": "Aggressive",
+    "congenitalTrait": null
+  },
+  {
+    "id": "FRANKIE",
+    "name": "Frankie",
+    "description": "There's nothing Frankies are more proud of than their thick, dignified eyebrows.",
+    "gender": "NB",
+    "joyTrait": "SparkleStreaker",
+    "stressTrait": "Aggressive",
+    "congenitalTrait": null
+  },
+  {
+    "id": "FREYJA",
+    "name": "Freyja",
+    "description": "This Freyja has never stopped anyone from eating yellow snow.",
+    "gender": "FEMALE",
+    "joyTrait": "HappySinger",
+    "stressTrait": "Aggressive",
+    "congenitalTrait": "FrostProof"
+  },
+  {
+    "id": "GIZMO",
+    "name": "Gizmo",
+    "description": "Gizmos love nothing more than a big juicy info dump.",
+    "gender": "MALE",
+    "joyTrait": "DataRainer",
+    "stressTrait": "StressShocker",
+    "congenitalTrait": null
+  },
+  {
+    "id": "GOSSMANN",
+    "name": "Gossmann",
+    "description": "Gossmanns are major goofballs who can make anyone laugh.",
+    "gender": "FEMALE",
+    "joyTrait": "SparkleStreaker",
+    "stressTrait": "StressVomiter",
+    "congenitalTrait": null
+  },
+  {
+    "id": "HAROLD",
+    "name": "Harold",
+    "description": "Get a bunch of Harolds together in a room, and you'll have... a bunch of Harolds together in a room.",
+    "gender": "MALE",
+    "joyTrait": "BalloonArtist",
+    "stressTrait": "BingeEater",
+    "congenitalTrait": null
+  },
+  {
+    "id": "HASSAN",
+    "name": "Hassan",
+    "description": "If someone says something nice to a Hassan he'll think about it nonstop for no less than three weeks.",
+    "gender": "MALE",
+    "joyTrait": "SparkleStreaker",
+    "stressTrait": "UglyCrier",
+    "congenitalTrait": null
+  },
+  {
+    "id": "HIGBY",
+    "name": "Higby",
+    "description": "This Higby's got a song in his heart. Now if only he could remember how it goes.",
+    "gender": "MALE",
+    "joyTrait": "HappySinger",
+    "stressTrait": "Banshee",
+    "congenitalTrait": null
+  },
+  {
+    "id": "JEAN",
+    "name": "Jean",
+    "description": "Just because Jeans are a little slow doesn't mean they can't suffer from soul-crushing existential crises.",
+    "gender": "NB",
+    "joyTrait": "SparkleStreaker",
+    "stressTrait": "Aggressive",
+    "congenitalTrait": null
+  },
+  {
+    "id": "JORGE",
+    "name": "Jorge",
+    "description": "Jorge loves his new colony, even if their collective body odor makes his eyes water.",
+    "gender": "MALE",
+    "joyTrait": "BalloonArtist",
+    "stressTrait": "UglyCrier",
+    "congenitalTrait": null
+  },
+  {
+    "id": "JOSHUA",
+    "name": "Joshua",
+    "description": "Joshuas are precious goobers. Other Duplicants are strangely incapable of cursing in a Joshua's presence.",
+    "gender": "MALE",
+    "joyTrait": "StickerBomber",
+    "stressTrait": "UglyCrier",
+    "congenitalTrait": null
+  },
+  {
+    "id": "KAI",
+    "name": "Kai",
+    "description": "The secret to a Kai's perfectly soft hair is marine mineral hair masks.",
+    "gender": "NB",
+    "joyTrait": "BalloonArtist",
+    "stressTrait": "BingeEater",
+    "congenitalTrait": "GrantSkill_Swimming2"
+  },
+  {
+    "id": "LEIRA",
+    "name": "Leira",
+    "description": "Leiras just want everyone to be happy.",
+    "gender": "FEMALE",
+    "joyTrait": "SparkleStreaker",
+    "stressTrait": "BingeEater",
+    "congenitalTrait": null
+  },
+  {
+    "id": "LIAM",
+    "name": "Liam",
+    "description": "No matter how much this Liam scrubs, he can never truly feel clean.",
+    "gender": "MALE",
+    "joyTrait": "SuperProductive",
+    "stressTrait": "StressVomiter",
+    "congenitalTrait": null
+  },
+  {
+    "id": "LINDSAY",
+    "name": "Lindsay",
+    "description": "A Lindsay is a charming woman, unless you make the mistake of messing with one of her friends.",
+    "gender": "FEMALE",
+    "joyTrait": "StickerBomber",
+    "stressTrait": "UglyCrier",
+    "congenitalTrait": null
+  },
+  {
+    "id": "MAE",
+    "name": "Mae",
+    "description": "There's nothing a Mae can't do if she sets her mind to it.",
+    "gender": "FEMALE",
+    "joyTrait": "SuperProductive",
+    "stressTrait": "StressVomiter",
+    "congenitalTrait": null
+  },
+  {
+    "id": "MARIE",
+    "name": "Marie",
+    "description": "This Marie is positively glowing! What's her secret? Radioactive isotopes, of course.",
+    "gender": "FEMALE",
+    "joyTrait": "SparkleStreaker",
+    "stressTrait": "UglyCrier",
+    "congenitalTrait": null
+  },
+  {
+    "id": "MAX",
+    "name": "Max",
+    "description": "At any given moment a Max is viscerally reliving ten different humiliating memories.",
+    "gender": "NB",
+    "joyTrait": "BalloonArtist",
+    "stressTrait": "UglyCrier",
+    "congenitalTrait": null
+  },
+  {
+    "id": "MAYA",
+    "name": "Maya",
+    "description": "This Maya got her hand crushed in a pneumatic door once. It was the most alive she's ever felt.",
+    "gender": "FEMALE",
+    "joyTrait": "SparkleStreaker",
+    "stressTrait": "Aggressive",
+    "congenitalTrait": null
+  },
+  {
+    "id": "MEEP",
+    "name": "Meep",
+    "description": "Meeps have a face only a two tonne Printing Pod could love.",
+    "gender": "MALE",
+    "joyTrait": "SparkleStreaker",
+    "stressTrait": "Aggressive",
+    "congenitalTrait": null
+  },
+  {
+    "id": "MIMA",
+    "name": "Mi-Ma",
+    "description": "Ol' Mi-Ma here can't stand lookin' at people's knees.",
+    "gender": "FEMALE",
+    "joyTrait": "SuperProductive",
+    "stressTrait": "StressVomiter",
+    "congenitalTrait": null
+  },
+  {
+    "id": "MINNOW",
+    "name": "Minnow",
+    "description": "Minnow always goes with the flow. Unless the flow is going somewhere boring.",
+    "gender": "FEMALE",
+    "joyTrait": "HappySinger",
+    "stressTrait": "UglyCrier",
+    "congenitalTrait": "Minnow"
+  },
+  {
+    "id": "NAILS",
+    "name": "Nails",
+    "description": "People often expect a Duplicant named \"Nails\" to be tough, but they're all pretty huge wimps.",
+    "gender": "NB",
+    "joyTrait": "BalloonArtist",
+    "stressTrait": "UglyCrier",
+    "congenitalTrait": null
+  },
+  {
+    "id": "NIKOLA",
+    "name": "Nikola",
+    "description": "This Nikola once claimed he could build a laser so powerful it would rip the colony in half. No one asked him to prove it.",
+    "gender": "MALE",
+    "joyTrait": "SuperProductive",
+    "stressTrait": "Aggressive",
+    "congenitalTrait": null
+  },
+  {
+    "id": "NISBET",
+    "name": "Nisbet",
+    "description": "This Nisbet likes to punch people to show her affection. Everyone's too afraid of her to tell her it hurts.",
+    "gender": "FEMALE",
+    "joyTrait": "SuperProductive",
+    "stressTrait": "Aggressive",
+    "congenitalTrait": null
+  },
+  {
+    "id": "OTTO",
+    "name": "Otto",
+    "description": "Ottos always insult people by accident and generally exist in a perpetual state of deep regret.",
+    "gender": "NB",
+    "joyTrait": "BalloonArtist",
+    "stressTrait": "StressVomiter",
+    "congenitalTrait": null
+  },
+  {
+    "id": "PEI",
+    "name": "Pei",
+    "description": "Every Pei spends at least half the day pretending that they remember what they came into this room for.",
+    "gender": "FEMALE",
+    "joyTrait": "BalloonArtist",
+    "stressTrait": "Banshee",
+    "congenitalTrait": null
+  },
+  {
+    "id": "QUINN",
+    "name": "Quinn",
+    "description": "This Quinn's favorite genre of music is \"festive power ballad\".",
+    "gender": "NB",
+    "joyTrait": "HappySinger",
+    "stressTrait": "BingeEater",
+    "congenitalTrait": null
+  },
+  {
+    "id": "REN",
+    "name": "Ren",
+    "description": "Every Ren has this unshakable feeling that his life's already happened and he's just watching it unfold from a memory.",
+    "gender": "MALE",
+    "joyTrait": "BalloonArtist",
+    "stressTrait": "StressVomiter",
+    "congenitalTrait": null
+  },
+  {
+    "id": "ROWAN",
+    "name": "Rowan",
+    "description": "Rowans have exceptionally large hearts and express their emotions most efficiently by yelling.",
+    "gender": "MALE",
+    "joyTrait": "StickerBomber",
+    "stressTrait": "BingeEater",
+    "congenitalTrait": null
+  },
+  {
+    "id": "RUBY",
+    "name": "Ruby",
+    "description": "This Ruby asks the pressing questions, like \"Where can I get a leather jacket in space?\"",
+    "gender": "NB",
+    "joyTrait": "StickerBomber",
+    "stressTrait": "BingeEater",
+    "congenitalTrait": null
+  },
+  {
+    "id": "SENA",
+    "name": "Sena",
+    "description": "Senas only care about three things: gold accents, true crime, and the advancement of nuclear physics.",
+    "gender": "FEMALE",
+    "joyTrait": "SparkleStreaker",
+    "stressTrait": "Banshee",
+    "congenitalTrait": null
+  },
+  {
+    "id": "SONYAR",
+    "name": "Sonyar",
+    "description": "Sonyars would sooner burn down the colony than read an instruction manual.",
+    "gender": "FEMALE",
+    "joyTrait": "RoboDancer",
+    "stressTrait": "StressShocker",
+    "congenitalTrait": null
+  },
+  {
+    "id": "STEELA",
+    "name": "Steela",
+    "description": "Steelas aren't programmed to put up with nonsense, but they do enjoy the occasional shenanigan.",
+    "gender": "FEMALE",
+    "joyTrait": "RoboDancer",
+    "stressTrait": "StressShocker",
+    "congenitalTrait": null
+  },
+  {
+    "id": "STEVE",
+    "name": "Steve",
+    "description": "This Steve is convinced that he has psychic powers. And he knows exactly what his friends think about that.",
+    "gender": "MALE",
+    "joyTrait": "HappySinger",
+    "stressTrait": "UglyCrier",
+    "congenitalTrait": null
+  },
+  {
+    "id": "STINKY",
+    "name": "Stinky",
+    "description": "This Stinky has never been invited to a party, which is a shame. His dance moves are incredible.",
+    "gender": "MALE",
+    "joyTrait": "BalloonArtist",
+    "stressTrait": "StressVomiter",
+    "congenitalTrait": null
+  },
+  {
+    "id": "TRAVALDO",
+    "name": "Travaldo",
+    "description": "A Travaldo's monotonous voice and lack of facial expression makes it impossible for others to tell when he's messing with them.",
+    "gender": "MALE",
+    "joyTrait": "BalloonArtist",
+    "stressTrait": "StressVomiter",
+    "congenitalTrait": null
+  },
+  {
+    "id": "TURNER",
+    "name": "Turner",
+    "description": "This Turner is paralyzed by the knowledge that others have memories and perceptions of them they can't control.",
+    "gender": "NB",
+    "joyTrait": "SparkleStreaker",
+    "stressTrait": "BingeEater",
+    "congenitalTrait": null
+  },
+  {
+    "id": "ULTI",
+    "name": "Ulti",
+    "description": "This Ulti's favorite dance move is The Robot. They don't get why others think that's funny.",
+    "gender": "NB",
+    "joyTrait": "RoboDancer",
+    "stressTrait": "StressShocker",
+    "congenitalTrait": null
+  }
+]
