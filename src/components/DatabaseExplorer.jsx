@@ -40,26 +40,25 @@ export function DatabaseExplorer({
     setExpandedCards({});
   };
 
+  const filteredCritters = useMemo(() => critters.filter(c => c.isRanchable !== false), [critters]);
+  const filteredPlants = useMemo(() => plants.filter(p => p.isFarmable !== false), [plants]);
+
   const subTabs = [
     { id: 'foods', name: 'Foods', count: foods.length, icon: Flame },
-    { id: 'critters', name: 'All Critters', count: critters.length, icon: HelpCircle },
-    { id: 'plants', name: 'All Plants', count: plants.length, icon: HelpCircle },
+    { id: 'critters', name: 'All Critters', count: filteredCritters.length, icon: HelpCircle },
+    { id: 'plants', name: 'All Plants', count: filteredPlants.length, icon: HelpCircle },
     { id: 'elements', name: 'Resources', count: elements.length, icon: Scale },
-    { id: 'geysers', name: 'Geysers', count: geysers.length, icon: Wind },
-    { id: 'equipment', name: 'Equipment', count: equipment.length, icon: Shield },
   ];
 
   const activeList = useMemo(() => {
     switch (subTab) {
       case 'foods': return foods;
-      case 'geysers': return geysers;
-      case 'equipment': return equipment;
-      case 'critters': return critters;
-      case 'plants': return plants;
+      case 'critters': return filteredCritters;
+      case 'plants': return filteredPlants;
       case 'elements': return elements;
       default: return [];
     }
-  }, [subTab, foods, geysers, equipment, critters, plants, elements]);
+  }, [subTab, foods, filteredCritters, filteredPlants, elements]);
 
   const filteredList = useMemo(() => {
     const q = searchQuery.toLowerCase().trim();
