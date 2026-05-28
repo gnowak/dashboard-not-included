@@ -1,5 +1,6 @@
 import React from 'react';
 import { Egg, Maximize2, ArrowDownRight, ArrowUpRight, Trash2 } from 'lucide-react';
+import { getImageUrl, formatResourceName } from '../utils/images';
 
 export function RanchCard({ critter, count, activeFeed, ranchState = 'happy', onChange, onRemove, onFeedChange, onStateChange }) {
   // Care state multipliers
@@ -45,31 +46,53 @@ export function RanchCard({ critter, count, activeFeed, ranchState = 'happy', on
       }}
     >
       <div style={{ flexShrink: 0 }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.4rem' }}>
-          <h3 style={{ color: critter.color || 'var(--oni-text-primary)', fontSize: '1.3rem', fontWeight: 'bold' }}>
-            {critter.name}
-          </h3>
-          {onRemove && (
-            <button 
-              onClick={onRemove}
-              style={{
-                background: 'none',
-                border: 'none',
-                color: 'var(--oni-text-muted)',
-                cursor: 'pointer',
-                padding: '0.2rem',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                transition: 'color 0.15s ease'
-              }}
-              onMouseEnter={(e) => e.currentTarget.style.color = 'var(--oni-accent-danger)'}
-              onMouseLeave={(e) => e.currentTarget.style.color = 'var(--oni-text-muted)'}
-              title="Remove ranch card"
-            >
-              <Trash2 size={16} />
-            </button>
-          )}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.6rem' }}>
+          <div style={{
+            width: '42px',
+            height: '42px',
+            borderRadius: '6px',
+            background: 'rgba(0, 0, 0, 0.4)',
+            border: `1px solid ${critter.color || 'var(--oni-panel-border)'}`,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '4px',
+            boxShadow: `0 0 8px ${critter.color}20`,
+            flexShrink: 0
+          }}>
+            <img 
+              src={getImageUrl(critter.id)} 
+              alt={critter.name} 
+              style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
+              onError={(e) => { e.currentTarget.src = '/data/images/Creature.png'; }}
+            />
+          </div>
+          <div style={{ flex: 1, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <h3 style={{ color: critter.color || 'var(--oni-text-primary)', fontSize: '1.25rem', fontWeight: 'bold', margin: 0 }}>
+              {critter.name}
+            </h3>
+            {onRemove && (
+              <button 
+                onClick={onRemove}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: 'var(--oni-text-muted)',
+                  cursor: 'pointer',
+                  padding: '0.2rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  transition: 'color 0.15s ease'
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.color = 'var(--oni-accent-danger)'}
+                onMouseLeave={(e) => e.currentTarget.style.color = 'var(--oni-text-muted)'}
+                title="Remove ranch card"
+              >
+                <Trash2 size={16} />
+              </button>
+            )}
+          </div>
         </div>
 
         <p style={{ color: 'var(--oni-text-muted)', fontSize: '0.8rem', marginBottom: '0.8rem', fontStyle: 'italic', lineHeight: '1.3', minHeight: '2.8rem' }}>
@@ -198,7 +221,7 @@ export function RanchCard({ critter, count, activeFeed, ranchState = 'happy', on
               }}
             >
               {critter.inputs.map(input => (
-                <option key={input.name} value={input.name}>{input.name}</option>
+                <option key={input.name} value={input.name}>{formatResourceName(input.name)}</option>
               ))}
             </select>
           </div>
@@ -257,12 +280,29 @@ export function RanchCard({ critter, count, activeFeed, ranchState = 'happy', on
           }}>
             {/* Active Input */}
             <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: 'var(--oni-accent-danger)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.25rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: 'var(--oni-accent-danger)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.3rem' }}>
                 <ArrowDownRight size={10} /> Active Input
               </div>
               {activeInput ? (
-                <div style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', color: 'var(--oni-text-primary)', lineHeight: '1.2' }}>
-                  {(activeInput.amount * count * feedMult).toFixed(0)} {activeInput.unit} <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{activeInput.name}</span>
+                <div style={{ 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  gap: '0.4rem', 
+                  fontFamily: 'var(--oni-font-mono)', 
+                  fontSize: '0.75rem', 
+                  color: 'var(--oni-text-primary)', 
+                  lineHeight: '1.2' 
+                }}>
+                  <img 
+                    src={getImageUrl(formatResourceName(activeInput.name))} 
+                    alt={formatResourceName(activeInput.name)} 
+                    style={{ width: '16px', height: '16px', objectFit: 'contain' }}
+                    onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                  />
+                  <div>
+                    {(activeInput.amount * count * feedMult).toFixed(0)} {activeInput.unit}
+                    <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{formatResourceName(activeInput.name)}</span>
+                  </div>
                 </div>
               ) : (
                 <span style={{ fontSize: '0.7rem', color: 'var(--oni-text-muted)', fontStyle: 'italic' }}>None</span>
@@ -271,12 +311,30 @@ export function RanchCard({ critter, count, activeFeed, ranchState = 'happy', on
 
             {/* Outputs */}
             <div style={{ borderLeft: '1px solid var(--oni-grid-line)', paddingLeft: '0.4rem' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: 'var(--oni-accent-success)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.25rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: 'var(--oni-accent-success)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.3rem' }}>
                 <ArrowUpRight size={10} /> Outputs
               </div>
               {activeOutputs?.map((output, idx) => (
-                <div key={idx} style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', color: 'var(--oni-text-primary)', lineHeight: '1.2', marginBottom: '0.2rem' }}>
-                  {(output.amount * count * feedMult).toFixed(0)} {output.unit} <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{output.name}</span>
+                <div key={idx} style={{ 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  gap: '0.4rem', 
+                  fontFamily: 'var(--oni-font-mono)', 
+                  fontSize: '0.75rem', 
+                  color: 'var(--oni-text-primary)', 
+                  lineHeight: '1.2', 
+                  marginBottom: '0.25rem' 
+                }}>
+                  <img 
+                    src={getImageUrl(formatResourceName(output.name))} 
+                    alt={formatResourceName(output.name)} 
+                    style={{ width: '16px', height: '16px', objectFit: 'contain' }}
+                    onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                  />
+                  <div>
+                    {(output.amount * count * feedMult).toFixed(0)} {output.unit}
+                    <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{formatResourceName(output.name)}</span>
+                  </div>
                 </div>
               ))}
               {(!activeOutputs || activeOutputs.length === 0) && (

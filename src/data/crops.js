@@ -56,5 +56,40 @@ export const CROP_DATA = {
     outputs: [
       { name: 'Reed Fiber', amount: 0.5, unit: 'unit' }
     ]
+  },
+  pinchaPepper: {
+    id: 'pinchaPepper',
+    name: 'Pincha Pepperplant',
+    caloriesPerCycle: 0, // Spice/seasoning only
+    description: 'Produces hot, aromatic Pincha Peppernuts. Grows hanging upside down. Requires warm temperatures, liquid Polluted Water irrigation, and solid Phosphorite fertilization.',
+    color: '#E25858', // Pepper Red
+    inputs: [
+      { name: 'Polluted Water', amount: 35, unit: 'kg' },
+      { name: 'Phosphorite', amount: 20, unit: 'kg' }
+    ],
+    outputs: []
+  },
+  waterweed: {
+    id: 'waterweed',
+    name: 'Waterweed',
+    caloriesPerCycle: 300, // Yields crunchy Lettuce
+    description: 'Cultivates crisp Lettuce heads in aquatic environments. Must grow in shallow Salt Water or Brine. Fertilizes with Bleach Stone.',
+    color: '#2E8B57', // Sea Green
+    inputs: [
+      { name: 'Salt Water', amount: 5, unit: 'kg' },
+      { name: 'Bleach Stone', amount: 0.5, unit: 'kg' }
+    ],
+    outputs: []
+  },
+  grubfruitPlant: {
+    id: 'grubfruitPlant',
+    name: 'Grubfruit Plant',
+    caloriesPerCycle: 200, // Yields Grubfruit
+    description: 'DLC plant native to Terrania that grows sweet Grubfruit. Requires warm conditions and direct Sulfur irrigation. Speed and yield boosted by Sweetles.',
+    color: '#FFD700', // Grubfruit Yellow Gold
+    inputs: [
+      { name: 'Sulfur', amount: 10, unit: 'kg' }
+    ],
+    outputs: []
   }
 };

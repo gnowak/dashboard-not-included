@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowDownRight, ArrowUpRight, Maximize2, Trash2 } from 'lucide-react';
+import { getImageUrl, formatResourceName } from '../utils/images';
 
 export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChange, onRemove }) {
   const currentOutput = crop.caloriesPerCycle * count;
@@ -28,31 +29,53 @@ export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChang
       }}
     >
       <div style={{ flexShrink: 0 }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.4rem' }}>
-          <h3 style={{ color: crop.color || 'var(--oni-text-primary)', fontSize: '1.3rem', fontWeight: 'bold' }}>
-            {crop.name}
-          </h3>
-          {onRemove && (
-            <button 
-              onClick={onRemove}
-              style={{
-                background: 'none',
-                border: 'none',
-                color: 'var(--oni-text-muted)',
-                cursor: 'pointer',
-                padding: '0.2rem',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                transition: 'color 0.15s ease'
-              }}
-              onMouseEnter={(e) => e.currentTarget.style.color = 'var(--oni-accent-danger)'}
-              onMouseLeave={(e) => e.currentTarget.style.color = 'var(--oni-text-muted)'}
-              title="Remove crop card"
-            >
-              <Trash2 size={16} />
-            </button>
-          )}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.6rem' }}>
+          <div style={{
+            width: '42px',
+            height: '42px',
+            borderRadius: '6px',
+            background: 'rgba(0, 0, 0, 0.4)',
+            border: `1px solid ${crop.color || 'var(--oni-panel-border)'}`,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '4px',
+            boxShadow: `0 0 8px ${crop.color}20`,
+            flexShrink: 0
+          }}>
+            <img 
+              src={getImageUrl(crop.id)} 
+              alt={crop.name} 
+              style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
+              onError={(e) => { e.currentTarget.src = '/data/images/Creature.png'; }}
+            />
+          </div>
+          <div style={{ flex: 1, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <h3 style={{ color: crop.color || 'var(--oni-text-primary)', fontSize: '1.25rem', fontWeight: 'bold', margin: 0 }}>
+              {crop.name}
+            </h3>
+            {onRemove && (
+              <button 
+                onClick={onRemove}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: 'var(--oni-text-muted)',
+                  cursor: 'pointer',
+                  padding: '0.2rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  transition: 'color 0.15s ease'
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.color = 'var(--oni-accent-danger)'}
+                onMouseLeave={(e) => e.currentTarget.style.color = 'var(--oni-text-muted)'}
+                title="Remove crop card"
+              >
+                <Trash2 size={16} />
+              </button>
+            )}
+          </div>
         </div>
 
         <p style={{ color: 'var(--oni-text-muted)', fontSize: '0.8rem', marginBottom: '0.8rem', fontStyle: 'italic', lineHeight: '1.3', minHeight: '2.8rem' }}>
@@ -226,25 +249,61 @@ export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChang
           }}>
             {/* Inputs */}
             <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.2rem', color: 'var(--oni-accent-danger)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.15rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.2rem', color: 'var(--oni-accent-danger)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.3rem' }}>
                 <ArrowDownRight size={10} /> Inputs
               </div>
               {crop.inputs?.map((input, idx) => (
-                <div key={idx} style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', color: 'var(--oni-text-primary)', lineHeight: '1.2' }}>
-                  {(input.amount * count).toFixed(0)} {input.unit} <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{input.name}</span>
+                <div key={idx} style={{ 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  gap: '0.4rem', 
+                  fontFamily: 'var(--oni-font-mono)', 
+                  fontSize: '0.75rem', 
+                  color: 'var(--oni-text-primary)', 
+                  lineHeight: '1.2',
+                  marginBottom: '0.3rem'
+                }}>
+                  <img 
+                    src={getImageUrl(formatResourceName(input.name))} 
+                    alt={formatResourceName(input.name)} 
+                    style={{ width: '16px', height: '16px', objectFit: 'contain' }}
+                    onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                  />
+                  <div>
+                    {(input.amount * count).toFixed(0)} {input.unit}
+                    <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{formatResourceName(input.name)}</span>
+                  </div>
                 </div>
               ))}
             </div>
 
             {/* Outputs */}
             <div style={{ borderLeft: '1px solid var(--oni-grid-line)', paddingLeft: '0.4rem' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.2rem', color: 'var(--oni-accent-success)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.15rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.2rem', color: 'var(--oni-accent-success)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.3rem' }}>
                 <ArrowUpRight size={10} /> Outputs
               </div>
               {crop.outputs && crop.outputs.length > 0 ? (
                 crop.outputs.map((output, idx) => (
-                  <div key={idx} style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', color: 'var(--oni-text-primary)', lineHeight: '1.2' }}>
-                    {(output.amount * count).toFixed(1)} {output.unit} <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{output.name}</span>
+                  <div key={idx} style={{ 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    gap: '0.4rem', 
+                    fontFamily: 'var(--oni-font-mono)', 
+                    fontSize: '0.75rem', 
+                    color: 'var(--oni-text-primary)', 
+                    lineHeight: '1.2',
+                    marginBottom: '0.3rem'
+                  }}>
+                    <img 
+                      src={getImageUrl(formatResourceName(output.name))} 
+                      alt={formatResourceName(output.name)} 
+                      style={{ width: '16px', height: '16px', objectFit: 'contain' }}
+                      onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                    />
+                    <div>
+                      {(output.amount * count).toFixed(1)} {output.unit}
+                      <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{formatResourceName(output.name)}</span>
+                    </div>
                   </div>
                 ))
               ) : (

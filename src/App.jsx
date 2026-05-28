@@ -4,6 +4,7 @@ import { DuplicantStats } from './components/DuplicantStats';
 import { RanchBoard } from './components/RanchBoard';
 import { FarmBoard } from './components/FarmBoard';
 import { DatabaseExplorer, cleanName } from './components/DatabaseExplorer';
+import { FoodCalculator } from './components/FoodCalculator';
 import { CRITTER_DATA } from './data/critters';
 import { CROP_DATA } from './data/crops';
 
@@ -18,7 +19,10 @@ const CRITTER_API_MAP = {
   drecko: 'Drecko',
   shineBug: 'LightBug',
   pip: 'Squirrel',
-  pacu: 'Pacu'
+  pacu: 'Pacu',
+  sweetle: 'DivergentBeetle',
+  iceBelly: 'IceBelly',
+  squid: 'Squid'
 };
 
 const CROP_API_MAP = {
@@ -26,11 +30,14 @@ const CROP_API_MAP = {
   bristleBlossom: 'PrickleFlower',
   duskCap: 'MushroomPlant',
   sleetWheat: 'ColdWheat',
-  thimbleReed: 'BasicFabricPlant'
+  thimbleReed: 'BasicFabricPlant',
+  pinchaPepper: 'SpiceVine',
+  waterweed: 'SeaLettuce',
+  grubfruitPlant: 'SuperWormPlant'
 };
 
 function App() {
-  const [activeTab, setActiveTab] = useState('ranches');
+  const [activeTab, setActiveTab] = useState('tools');
 
   // API dynamic databank states
   const [apiCritters, setApiCritters] = useState([]);
@@ -365,6 +372,39 @@ function App() {
     return 3;
   });
 
+  const [growthMode, setGrowthMode] = useState(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (parsed.growthMode) return parsed.growthMode;
+      } catch (e) {}
+    }
+    return 'domesticated';
+  });
+
+  const [caloriePreset, setCaloriePreset] = useState(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (parsed.caloriePreset) return parsed.caloriePreset;
+      } catch (e) {}
+    }
+    return '1000';
+  });
+
+  const [customCalorieInput, setCustomCalorieInput] = useState(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (parsed.customCalorieInput !== undefined) return parsed.customCalorieInput;
+      } catch (e) {}
+    }
+    return 1000;
+  });
+
   const [ranches, setRanches] = useState(() => {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved) {
@@ -391,10 +431,166 @@ function App() {
     return DEFAULT_CROPS;
   });
 
+  const [addedToDiet, setAddedToDiet] = useState(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (parsed.addedToDiet) return parsed.addedToDiet;
+      } catch (e) {}
+    }
+    // Default fallback bootstrapping
+    const initial = {
+      mealwood: false,
+      bristleBlossom: false,
+      gristleBerry: false,
+      duskCap: false,
+      friedMushroom: false,
+      sleetWheat: false,
+      frostBun: false,
+      barbecue: false,
+      pacuSeafood: false,
+      mushBar: false,
+      mushFry: false,
+      liceLoaf: false,
+      berrySludge: false,
+      surfAndTurf: false,
+      pickledMeal: false,
+      omelette: false,
+      pepperBread: false,
+      stuffedBerry: false,
+      mushroomWrap: false,
+      frostBurger: false,
+      grubfruitPreserves: false,
+      smokedFish: false,
+      veggiePoppers: false,
+      tenderBrisket: false,
+      deepFriedFish: false,
+      deepFriedMeat: false,
+      deepFriedShellfish: false,
+      makiSushi: false,
+      nigiriSushi: false
+    };
+    const savedState = localStorage.getItem(STORAGE_KEY);
+    let parsedCrops = [];
+    let parsedRanches = [];
+    if (savedState) {
+      try {
+        const parsed = JSON.parse(savedState);
+        parsedCrops = parsed.crops || [];
+        parsedRanches = parsed.ranches || [];
+      } catch (e) {}
+    }
+    const hasColonyActivity = parsedCrops.some(c => c.count > 0) || parsedRanches.some(r => r.count > 0);
+    if (hasColonyActivity) {
+      initial.mealwood = parsedCrops.some(c => c.cropType === 'mealwood' && c.count > 0);
+      initial.gristleBerry = parsedCrops.some(c => c.cropType === 'bristleBlossom' && c.count > 0);
+      initial.barbecue = parsedRanches.some(r => r.critterType === 'hatch' && r.count > 0);
+      initial.pacuSeafood = parsedRanches.some(r => r.critterType === 'pacu' && r.count > 0);
+      initial.duskCap = parsedCrops.some(c => c.cropType === 'duskCap' && c.count > 0);
+      initial.sleetWheat = parsedCrops.some(c => c.cropType === 'sleetWheat' && c.count > 0);
+    }
+    return initial;
+  });
+
+  const [mixPercentages, setMixPercentages] = useState(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (parsed.mixPercentages) return parsed.mixPercentages;
+      } catch (e) {}
+    }
+    const savedState = localStorage.getItem(STORAGE_KEY);
+    let parsedCrops = [];
+    let parsedRanches = [];
+    if (savedState) {
+      try {
+        const parsed = JSON.parse(savedState);
+        parsedCrops = parsed.crops || [];
+        parsedRanches = parsed.ranches || [];
+      } catch (e) {}
+    }
+    const hasColonyActivity = parsedCrops.some(c => c.count > 0) || parsedRanches.some(r => r.count > 0);
+    if (hasColonyActivity) {
+      return {
+        mealwood: parsedCrops.some(c => c.cropType === 'mealwood' && c.count > 0) ? 30 : 0,
+        bristleBlossom: 0,
+        gristleBerry: parsedCrops.some(c => c.cropType === 'bristleBlossom' && c.count > 0) ? 20 : 0,
+        duskCap: 0,
+        friedMushroom: 0,
+        sleetWheat: 0,
+        frostBun: 0,
+        barbecue: parsedRanches.some(r => r.critterType === 'hatch' && r.count > 0) ? 50 : 0,
+        pacuSeafood: 0,
+        mushBar: 0,
+        mushFry: 0,
+        liceLoaf: 0,
+        berrySludge: 0,
+        surfAndTurf: 0,
+        pickledMeal: 0,
+        omelette: 0,
+        pepperBread: 0,
+        stuffedBerry: 0,
+        mushroomWrap: 0,
+        frostBurger: 0,
+        grubfruitPreserves: 0,
+        smokedFish: 0,
+        veggiePoppers: 0,
+        tenderBrisket: 0,
+        deepFriedFish: 0,
+        deepFriedMeat: 0,
+        deepFriedShellfish: 0,
+        makiSushi: 0,
+        nigiriSushi: 0
+      };
+    }
+    return {
+      mealwood: 0,
+      bristleBlossom: 0,
+      gristleBerry: 0,
+      duskCap: 0,
+      friedMushroom: 0,
+      sleetWheat: 0,
+      frostBun: 0,
+      barbecue: 0,
+      pacuSeafood: 0,
+      mushBar: 0,
+      mushFry: 0,
+      liceLoaf: 0,
+      berrySludge: 0,
+      surfAndTurf: 0,
+      pickledMeal: 0,
+      omelette: 0,
+      pepperBread: 0,
+      stuffedBerry: 0,
+      mushroomWrap: 0,
+      frostBurger: 0,
+      grubfruitPreserves: 0,
+      smokedFish: 0,
+      veggiePoppers: 0,
+      tenderBrisket: 0,
+      deepFriedFish: 0,
+      deepFriedMeat: 0,
+      deepFriedShellfish: 0,
+      makiSushi: 0,
+      nigiriSushi: 0
+    };
+  });
+
   // Save to LocalStorage whenever state changes
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify({ duplicants, ranches, crops }));
-  }, [duplicants, ranches, crops]);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({ 
+      duplicants, 
+      ranches, 
+      crops, 
+      growthMode, 
+      caloriePreset, 
+      customCalorieInput,
+      addedToDiet,
+      mixPercentages
+    }));
+  }, [duplicants, ranches, crops, growthMode, caloriePreset, customCalorieInput, addedToDiet, mixPercentages]);
 
   const handleRanchCountChange = (critterType, newCount) => {
     const r = ranches.find(x => x.critterType === critterType);
@@ -456,6 +652,38 @@ function App() {
       setDuplicants(3);
       setRanches(DEFAULT_RANCHES);
       setCrops(DEFAULT_CROPS);
+      setAddedToDiet({
+        mealwood: false,
+        bristleBlossom: false,
+        gristleBerry: false,
+        duskCap: false,
+        friedMushroom: false,
+        sleetWheat: false,
+        frostBun: false,
+        barbecue: false,
+        pacuSeafood: false,
+        mushBar: false,
+        mushFry: false,
+        liceLoaf: false,
+        berrySludge: false,
+        surfAndTurf: false
+      });
+      setMixPercentages({
+        mealwood: 0,
+        bristleBlossom: 0,
+        gristleBerry: 0,
+        duskCap: 0,
+        friedMushroom: 0,
+        sleetWheat: 0,
+        frostBun: 0,
+        barbecue: 0,
+        pacuSeafood: 0,
+        mushBar: 0,
+        mushFry: 0,
+        liceLoaf: 0,
+        berrySludge: 0,
+        surfAndTurf: 0
+      });
       localStorage.removeItem(STORAGE_KEY);
     }
   };
@@ -489,6 +717,12 @@ function App() {
           <DuplicantStats 
             duplicants={duplicants} 
             setDuplicants={setDuplicants} 
+            growthMode={growthMode}
+            setGrowthMode={setGrowthMode}
+            caloriePreset={caloriePreset}
+            setCaloriePreset={setCaloriePreset}
+            customCalorieInput={customCalorieInput}
+            setCustomCalorieInput={setCustomCalorieInput}
             totalCalories={totalCalories}
             ranches={ranches}
             crops={crops}
@@ -499,22 +733,28 @@ function App() {
           {/* Blueprint Navigation Tabs */}
           <div className="tabs-container">
             <button 
+              className={`tab-btn ${activeTab === 'tools' ? 'active' : ''}`}
+              onClick={() => setActiveTab('tools')}
+            >
+              Food Calculator
+            </button>
+            <button 
               className={`tab-btn ${activeTab === 'ranches' ? 'active' : ''}`}
               onClick={() => setActiveTab('ranches')}
             >
-              Husbandry (Ranches)
+              Ranches
             </button>
             <button 
               className={`tab-btn ${activeTab === 'farms' ? 'active' : ''}`}
               onClick={() => setActiveTab('farms')}
             >
-              Agriculture (Farms)
+              Farms
             </button>
             <button 
               className={`tab-btn ${activeTab === 'database' ? 'active' : ''}`}
               onClick={() => setActiveTab('database')}
             >
-              Colony Database
+              Database
             </button>
           </div>
 
@@ -536,6 +776,27 @@ function App() {
               onCropAdd={handleCropAdd}
               onCropRemove={handleCropRemove}
               cropData={mergedCrops}
+            />
+          ) : activeTab === 'tools' ? (
+            <FoodCalculator 
+              duplicants={duplicants}
+              setDuplicants={setDuplicants}
+              growthMode={growthMode}
+              setGrowthMode={setGrowthMode}
+              caloriePreset={caloriePreset}
+              setCaloriePreset={setCaloriePreset}
+              customCalorieInput={customCalorieInput}
+              setCustomCalorieInput={setCustomCalorieInput}
+              cropData={mergedCrops}
+              critterData={mergedCritters}
+              crops={crops}
+              setCrops={setCrops}
+              ranches={ranches}
+              setRanches={setRanches}
+              addedToDiet={addedToDiet}
+              setAddedToDiet={setAddedToDiet}
+              mixPercentages={mixPercentages}
+              setMixPercentages={setMixPercentages}
             />
           ) : (
             <DatabaseExplorer 

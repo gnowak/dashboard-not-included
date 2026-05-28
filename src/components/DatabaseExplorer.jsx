@@ -4,6 +4,7 @@ import {
   Thermometer, Sun, Wind, Scale, Zap, Sparkles, Egg,
   ChevronDown, ChevronUp
 } from 'lucide-react';
+import { getImageUrl } from '../utils/images';
 
 export function cleanName(name) {
   if (!name) return '';
@@ -596,42 +597,64 @@ export function DatabaseExplorer({
                       </div>
                     )}
                     {/* Header: Name and specific Badge */}
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.6rem', gap: '0.5rem' }}>
-                      <h4 style={{ 
-                        color: 'var(--oni-text-primary)', 
-                        fontWeight: 'bold', 
-                        fontSize: '1.1rem',
-                        lineHeight: '1.2' 
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.65rem', width: '100%' }}>
+                      <div style={{
+                        width: '36px',
+                        height: '36px',
+                        borderRadius: '4px',
+                        background: 'rgba(0, 0, 0, 0.4)',
+                        border: '1px solid var(--oni-panel-border)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        padding: '3px',
+                        flexShrink: 0
                       }}>
-                        {cleaned}
-                      </h4>
-                      {subTab === 'foods' && renderMoraleBadge(item.moraleBonus)}
-                      {subTab === 'critters' && item.lifespanCycles && (
-                        <span style={{ 
-                          fontSize: '0.75rem', 
-                          background: 'rgba(0, 0, 0, 0.4)', 
-                          padding: '0.1rem 0.35rem', 
-                          borderRadius: '3px',
-                          border: '1px solid var(--oni-grid-line)',
-                          color: 'var(--oni-text-muted)',
-                          fontFamily: 'var(--oni-font-mono)'
+                        <img 
+                          src={getImageUrl(item.prefabId || item.id)} 
+                          alt="" 
+                          style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
+                          onError={(e) => { e.currentTarget.src = '/data/images/Creature.png'; }}
+                        />
+                      </div>
+                      <div style={{ flex: 1, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '0.5rem' }}>
+                        <h4 style={{ 
+                          color: 'var(--oni-text-primary)', 
+                          fontWeight: 'bold', 
+                          fontSize: '1.1rem',
+                          lineHeight: '1.2',
+                          margin: 0
                         }}>
-                          {item.lifespanCycles} cycles
-                        </span>
-                      )}
-                      {subTab === 'plants' && item.growthCycles && (
-                        <span style={{ 
-                          fontSize: '0.75rem', 
-                          background: 'rgba(0, 0, 0, 0.4)', 
-                          padding: '0.1rem 0.35rem', 
-                          borderRadius: '3px',
-                          border: '1px solid var(--oni-grid-line)',
-                          color: 'var(--oni-accent-success)',
-                          fontFamily: 'var(--oni-font-mono)'
-                        }}>
-                          {item.growthCycles} cycles
-                        </span>
-                      )}
+                          {cleaned}
+                        </h4>
+                        {subTab === 'foods' && renderMoraleBadge(item.moraleBonus)}
+                        {subTab === 'critters' && item.lifespanCycles && (
+                          <span style={{ 
+                            fontSize: '0.75rem', 
+                            background: 'rgba(0, 0, 0, 0.4)', 
+                            padding: '0.1rem 0.35rem', 
+                            borderRadius: '3px',
+                            border: '1px solid var(--oni-grid-line)',
+                            color: 'var(--oni-text-muted)',
+                            fontFamily: 'var(--oni-font-mono)'
+                          }}>
+                            {item.lifespanCycles} cycles
+                          </span>
+                        )}
+                        {subTab === 'plants' && item.growthCycles && (
+                          <span style={{ 
+                            fontSize: '0.75rem', 
+                            background: 'rgba(0, 0, 0, 0.4)', 
+                            padding: '0.1rem 0.35rem', 
+                            borderRadius: '3px',
+                            border: '1px solid var(--oni-grid-line)',
+                            color: 'var(--oni-accent-success)',
+                            fontFamily: 'var(--oni-font-mono)'
+                          }}>
+                            {item.growthCycles} cycles
+                          </span>
+                        )}
+                      </div>
                     </div>
 
                     {/* DYNAMIC CARD CONTENT BASED ON TABS */}
@@ -904,12 +927,23 @@ export function DatabaseExplorer({
                                       Recipe ({fabricatorName})
                                     </div>
                                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.15rem' }}>
-                                      {recipe.inputs?.map((ing, i) => (
-                                        <div key={i} style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', fontFamily: 'var(--oni-font-mono)', color: 'var(--oni-text-primary)' }}>
-                                          <span>Input: {idToNameMap[ing.material] || idToNameMap[ing.material?.toLowerCase()] || cleanName(ing.material)}</span>
-                                          <span>{ing.amount} units</span>
-                                        </div>
-                                      ))}
+                                      {recipe.inputs?.map((ing, i) => {
+                                        const ingName = idToNameMap[ing.material] || idToNameMap[ing.material?.toLowerCase()] || cleanName(ing.material);
+                                        return (
+                                          <div key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.75rem', fontFamily: 'var(--oni-font-mono)', color: 'var(--oni-text-primary)', marginBottom: '0.15rem' }}>
+                                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                                              <img 
+                                                src={getImageUrl(ing.material)} 
+                                                alt={ingName} 
+                                                style={{ width: '14px', height: '14px', objectFit: 'contain' }}
+                                                onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                                              />
+                                              <span>{ingName}</span>
+                                            </div>
+                                            <span>{ing.amount} units</span>
+                                          </div>
+                                        );
+                                      })}
                                       <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', fontFamily: 'var(--oni-font-mono)', color: 'var(--oni-text-muted)', marginTop: '0.1rem' }}>
                                         <span>Production Time:</span>
                                         <span>{recipe.time}s</span>
@@ -1198,9 +1232,18 @@ export function DatabaseExplorer({
                             <div style={{ fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', color: 'var(--oni-accent-oxygen)', marginBottom: '0.2rem' }}>Construction Cost</div>
                             {item.mass.map((m, idx) => {
                               const category = item.materialCategory?.[idx] || 'Material';
+                              const catName = idToNameMap[category] || idToNameMap[category.toLowerCase()] || cleanName(category);
                               return (
-                                <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', fontFamily: 'var(--oni-font-mono)', color: 'var(--oni-text-primary)' }}>
-                                  <span>{idToNameMap[category] || idToNameMap[category.toLowerCase()] || cleanName(category)}</span>
+                                <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontFamily: 'var(--oni-font-mono)', color: 'var(--oni-text-primary)', marginBottom: '0.15rem' }}>
+                                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                                    <img 
+                                      src={getImageUrl(category)} 
+                                      alt={catName} 
+                                      style={{ width: '14px', height: '14px', objectFit: 'contain' }}
+                                      onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                                    />
+                                    <span>{catName}</span>
+                                  </div>
                                   <span>{m} kg</span>
                                 </div>
                               );

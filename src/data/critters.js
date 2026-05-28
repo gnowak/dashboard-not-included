@@ -79,6 +79,52 @@ export const CRITTER_DATA = {
     outputs: [
       { name: 'Polluted Dirt', amount: 70, unit: 'kg' }
     ]
+  },
+  sweetle: {
+    id: 'sweetle',
+    name: 'Sweetle',
+    maxSize: 8,
+    caloriesPerCycle: 40,
+    description: 'DLC insect-like beetle native to the Terrania cluster. Feeds on solid Sulfur and excretes sweet Sucrose. Tends Grubfruit plants, doubling their yield.',
+    color: '#ffc107',
+    spaceRequired: 12,
+    eggsPerCycle: 0.15,
+    inputs: [
+      { name: 'Sulfur', amount: 20, unit: 'kg' }
+    ],
+    outputs: [
+      { name: 'Sucrose', amount: 10, unit: 'kg' }
+    ]
+  },
+  iceBelly: {
+    id: 'iceBelly',
+    name: 'Bammoth',
+    maxSize: 8,
+    caloriesPerCycle: 100, // BBQ/Tallow equivalent
+    description: 'Massive cold-biome mammal. Consumes Plume Squash (Carrot) and excretes valuable Bammoth Patty that crushes into Clay. Yields high-energy Tallow when processed.',
+    color: '#a5f3fc',
+    spaceRequired: 16,
+    eggsPerCycle: 0.08,
+    inputs: [
+      { name: 'Plume Squash', amount: 0.27, unit: 'plant' }
+    ],
+    outputs: [
+      { name: 'Clay & Phosphorite', amount: 120, unit: 'kg' }
+    ]
+  },
+  squid: {
+    id: 'squid',
+    name: 'Glo Squid',
+    maxSize: 8,
+    caloriesPerCycle: 60,
+    description: 'DLC floating marine critter native to Aquatic clusters. Feeds on Nori and lights up the water. Sliced at the Sushi Bar for premium Nigiri.',
+    color: '#E0B0FF',
+    spaceRequired: 12,
+    eggsPerCycle: 0.12,
+    inputs: [
+      { name: 'Nori', amount: 2.4, unit: 'kg' }
+    ],
+    outputs: []
   }
 };
 

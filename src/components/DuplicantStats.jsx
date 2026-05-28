@@ -1,9 +1,27 @@
-import React, { useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import { DUPLICANT_STATS, CRITTER_DATA } from '../data/critters';
 import { CROP_DATA } from '../data/crops';
 import { Maximize2, ArrowDownRight, ArrowUpRight } from 'lucide-react';
+import { getImageUrl, formatResourceName } from '../utils/images';
 
-export function DuplicantStats({ duplicants, setDuplicants, totalCalories, ranches, crops, critterData = {} }) {
+export function DuplicantStats({ 
+  duplicants, 
+  setDuplicants, 
+  growthMode,
+  setGrowthMode,
+  caloriePreset,
+  setCaloriePreset,
+  customCalorieInput,
+  setCustomCalorieInput,
+  totalCalories, 
+  ranches, 
+  crops, 
+  critterData = {} 
+}) {
+  const [isDemandsExpanded, setIsDemandsExpanded] = useState(true);
+  const [isAggregatesExpanded, setIsAggregatesExpanded] = useState(true);
+  const [isSettingsExpanded, setIsSettingsExpanded] = useState(false);
+  
   const o2Needed = duplicants * DUPLICANT_STATS.o2PerCycle;
   const caloriesNeeded = duplicants * DUPLICANT_STATS.caloriesPerCycle;
   
@@ -130,200 +148,344 @@ export function DuplicantStats({ duplicants, setDuplicants, totalCalories, ranch
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
       {/* Colony Demands Panel */}
-      <div className="panel" style={{ padding: '1.25rem', fontSize: '0.9rem' }}>
-        <h2 style={{ color: 'var(--oni-accent-oxygen)', marginBottom: '1.25rem', fontSize: '1.2rem' }}>
+      <div className="panel" style={{ padding: '1rem', fontSize: '0.9rem' }}>
+        <h2 
+          onClick={() => setIsDemandsExpanded(!isDemandsExpanded)}
+          style={{ 
+            color: 'var(--oni-accent-oxygen)', 
+            marginBottom: isDemandsExpanded ? '1rem' : '0', 
+            fontSize: '1.15rem', 
+            display: 'flex', 
+            justifyContent: 'space-between', 
+            alignItems: 'center', 
+            cursor: 'pointer', 
+            userSelect: 'none',
+            fontFamily: 'var(--oni-font-mono)',
+            margin: 0
+          }}
+        >
           Colony Demands
+          <span style={{ fontSize: '0.75rem', fontFamily: 'var(--oni-font-mono)', opacity: 0.7 }}>{isDemandsExpanded ? '▼' : '▲'}</span>
         </h2>
         
-        <div className="stat-row" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: '0.4rem', marginBottom: '1.25rem' }}>
-          <label className="stat-label" style={{ fontSize: '0.8rem' }}>Active Duplicants</label>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', width: '100%' }}>
-            <input 
-              type="range" 
-              min="1" 
-              max="100" 
-              value={duplicants} 
-              onChange={(e) => setDuplicants(parseInt(e.target.value) || 1)}
-            />
-            <input 
-              type="number" 
-              min="1" 
-              value={duplicants} 
-              onChange={(e) => setDuplicants(parseInt(e.target.value) || 1)}
-              style={{ 
-                width: '65px', 
-                fontSize: '1rem', 
-                padding: '0.2rem',
-                textAlign: 'center',
-                border: '1px solid var(--oni-panel-border)',
-                background: 'rgba(0, 0, 0, 0.4)',
-                color: 'var(--oni-text-primary)',
-                fontFamily: 'var(--oni-font-mono)'
-              }}
-            />
-          </div>
-        </div>
+        {isDemandsExpanded && (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', marginTop: '0.85rem' }}>
+            <div className="stat-row" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: '0.4rem', marginBottom: '0.4rem' }}>
+              <label className="stat-label" style={{ fontSize: '0.8rem' }}>Active Duplicants</label>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', width: '100%' }}>
+                <input 
+                  type="range" 
+                  min="1" 
+                  max="100" 
+                  value={duplicants} 
+                  onChange={(e) => setDuplicants(parseInt(e.target.value) || 1)}
+                />
+                <input 
+                  type="number" 
+                  min="1" 
+                  value={duplicants} 
+                  onChange={(e) => setDuplicants(parseInt(e.target.value) || 1)}
+                  style={{ 
+                    width: '56px', 
+                    fontSize: '0.9rem', 
+                    padding: '0.15rem',
+                    textAlign: 'center',
+                    border: '1px solid var(--oni-panel-border)',
+                    background: 'rgba(0, 0, 0, 0.4)',
+                    color: 'var(--oni-text-primary)',
+                    fontFamily: 'var(--oni-font-mono)'
+                  }}
+                />
+              </div>
+            </div>
 
-        <div className="stat-row" style={{ marginBottom: '0.5rem' }}>
-          <span className="stat-label">O2 Required</span>
-          <span className="stat-value oxygen" style={{ fontSize: '1.2rem' }}>{o2Needed} kg/c</span>
-        </div>
-        
-        <div className="stat-row" style={{ marginBottom: '0.5rem' }}>
-          <span className="stat-label">Calories Required</span>
-          <span className="stat-value calories" style={{ fontSize: '1.2rem' }}>{caloriesNeeded} kcal/c</span>
-        </div>
+            <div className="stat-row" style={{ marginBottom: '0.15rem' }}>
+              <span className="stat-label">O2 Required</span>
+              <span className="stat-value oxygen" style={{ fontSize: '1.1rem' }}>{o2Needed} kg/c</span>
+            </div>
+            
+            <div className="stat-row" style={{ marginBottom: '0.15rem' }}>
+              <span className="stat-label">Calories Required</span>
+              <span className="stat-value calories" style={{ fontSize: '1.1rem' }}>{caloriesNeeded.toLocaleString()} kcal</span>
+            </div>
 
-        <div style={{ marginTop: '1rem', paddingTop: '1rem', borderTop: '1px solid var(--oni-grid-line-thick)' }}>
-          <h3 style={{ color: 'var(--oni-text-muted)', marginBottom: '0.75rem', fontSize: '0.9rem' }}>Caloric Balance</h3>
-          <div className="stat-row" style={{ marginBottom: '0.5rem' }}>
-            <span className="stat-label">Ranch/Farm Harvest</span>
-            <span className="stat-value calories" style={{ fontSize: '1.2rem' }}>{totalCalories.toFixed(0)} kcal/c</span>
+            <div style={{ marginTop: '0.4rem', paddingTop: '0.6rem', borderTop: '1px solid var(--oni-grid-line-thick)' }}>
+              <h3 style={{ color: 'var(--oni-text-muted)', marginBottom: '0.5rem', fontSize: '0.85rem' }}>Caloric Balance</h3>
+              <div className="stat-row" style={{ marginBottom: '0.15rem' }}>
+                <span className="stat-label">Harvest Total</span>
+                <span className="stat-value calories" style={{ fontSize: '1.1rem' }}>{totalCalories.toFixed(0)} kcal</span>
+              </div>
+              <div className="stat-row">
+                <span className="stat-label">Net Balance</span>
+                <span className="stat-value" style={{ fontSize: '1.1rem', color: isDeficit ? 'var(--oni-accent-danger)' : 'var(--oni-accent-success)' }}>
+                  {calorieDiff > 0 ? '+' : ''}{calorieDiff.toFixed(0)} kcal
+                </span>
+              </div>
+            </div>
+
+            {/* Diet Settings Collapsible Sub-panel */}
+            <div style={{ marginTop: '0.6rem', paddingTop: '0.6rem', borderTop: '1px dashed var(--oni-panel-border)' }}>
+              <div 
+                onClick={() => setIsSettingsExpanded(!isSettingsExpanded)}
+                style={{ 
+                  display: 'flex', 
+                  justifyContent: 'space-between', 
+                  alignItems: 'center', 
+                  cursor: 'pointer', 
+                  userSelect: 'none'
+                }}
+              >
+                <h3 style={{ color: 'var(--oni-text-muted)', fontSize: '0.85rem', margin: 0, display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                  ⚙ Diet Settings
+                </h3>
+                <span style={{ fontSize: '0.75rem', opacity: 0.7 }}>{isSettingsExpanded ? '▼' : '▲'}</span>
+              </div>
+              
+              {isSettingsExpanded && (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginTop: '0.6rem' }}>
+                  {/* Cultivation Mode Dropdown */}
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+                    <label className="stat-label" style={{ fontSize: '0.75rem' }}>Cultivation Mode</label>
+                    <select 
+                      value={growthMode} 
+                      onChange={(e) => setGrowthMode(e.target.value)}
+                      style={{ 
+                        width: '100%', 
+                        padding: '0.25rem', 
+                        background: 'rgba(0, 0, 0, 0.4)', 
+                        border: '1px solid var(--oni-panel-border)',
+                        color: 'var(--oni-text-primary)',
+                        borderRadius: '4px', 
+                        fontSize: '0.8rem',
+                        cursor: 'pointer'
+                      }}
+                    >
+                      <option value="domesticated">Domesticated (100%)</option>
+                      <option value="farmerTouch">Farmer's Touch (200%)</option>
+                      <option value="wild">Wild (0% Cost)</option>
+                    </select>
+                  </div>
+                  
+                  {/* Calorie Intake Presets */}
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+                    <label className="stat-label" style={{ fontSize: '0.75rem' }}>Calorie Preset</label>
+                    <select 
+                      value={caloriePreset} 
+                      onChange={(e) => setCaloriePreset(e.target.value)}
+                      style={{ 
+                        width: '100%', 
+                        padding: '0.25rem', 
+                        background: 'rgba(0, 0, 0, 0.4)', 
+                        border: '1px solid var(--oni-panel-border)',
+                        color: 'var(--oni-text-primary)',
+                        borderRadius: '4px', 
+                        fontSize: '0.8rem',
+                        cursor: 'pointer'
+                      }}
+                    >
+                      <option value="1000">Standard Dupe (1000 kcal)</option>
+                      <option value="500">Half Intake (500 kcal)</option>
+                      <option value="1500">Glutton (1500 kcal)</option>
+                      <option value="custom">Custom Target</option>
+                    </select>
+                  </div>
+                  
+                  {caloriePreset === 'custom' && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem', background: 'rgba(0,0,0,0.2)', padding: '0.4rem', borderRadius: '4px', border: '1px solid var(--oni-panel-border)' }}>
+                      <label className="stat-label" style={{ fontSize: '0.7rem' }}>Custom kcal/cycle</label>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                        <input 
+                          type="range" 
+                          min="300" 
+                          max="2500" 
+                          step="50"
+                          value={customCalorieInput} 
+                          onChange={(e) => setCustomCalorieInput(parseInt(e.target.value) || 1000)}
+                          style={{ flex: 1 }}
+                        />
+                        <span style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', fontWeight: 'bold', minWidth: '32px', textAlign: 'right' }}>
+                          {customCalorieInput}
+                        </span>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
           </div>
-          <div className="stat-row">
-            <span className="stat-label">Net Balance</span>
-            <span className="stat-value" style={{ fontSize: '1.2rem', color: isDeficit ? 'var(--oni-accent-danger)' : 'var(--oni-accent-success)' }}>
-              {calorieDiff > 0 ? '+' : ''}{calorieDiff.toFixed(0)} kcal/c
-            </span>
-          </div>
-        </div>
+        )}
       </div>
 
       {/* Colony-wide Resource Summary Panel */}
       {hasActiveProduction && (
-        <div className="panel" style={{ borderTop: '4px solid var(--oni-accent-calorie)' }}>
-          <h2 style={{ color: 'var(--oni-accent-calorie)', marginBottom: '1rem', fontSize: '1.2rem' }}>
+        <div className="panel" style={{ borderTop: '4px solid var(--oni-accent-calorie)', padding: '1rem' }}>
+          <h2 
+            onClick={() => setIsAggregatesExpanded(!isAggregatesExpanded)}
+            style={{ 
+              color: 'var(--oni-accent-calorie)', 
+              marginBottom: isAggregatesExpanded ? '1rem' : '0', 
+              fontSize: '1.15rem', 
+              display: 'flex', 
+              justifyContent: 'space-between', 
+              alignItems: 'center', 
+              cursor: 'pointer', 
+              userSelect: 'none',
+              fontFamily: 'var(--oni-font-mono)',
+              margin: 0
+            }}
+          >
             Colony Aggregates
+            <span style={{ fontSize: '0.75rem', fontFamily: 'var(--oni-font-mono)', opacity: 0.7 }}>{isAggregatesExpanded ? '▼' : '▲'}</span>
           </h2>
 
-          {/* Space & Stable Totals */}
-          {(aggregates.totalStables > 0 || aggregates.totalGreenhouses > 0) && (
-            <div style={{ marginBottom: '1.25rem', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-              {/* Land Space (Ranches) */}
-              {aggregates.landSpace > 0 && (
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9rem' }}>
-                  <Maximize2 size={14} style={{ color: 'var(--oni-accent-oxygen)' }} />
-                  <span className="stat-label">Ranch Land Space:</span>
-                  <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold' }}>
-                    {aggregates.landSpace} <span style={{ fontSize: '0.85rem', color: 'var(--oni-text-muted)' }}>tiles</span>
-                  </span>
+          {isAggregatesExpanded && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', marginTop: '0.85rem' }}>
+              {/* Space & Stable Totals */}
+              {(aggregates.totalStables > 0 || aggregates.totalGreenhouses > 0) && (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                  {/* Land Space (Ranches) */}
+                  {aggregates.landSpace > 0 && (
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9rem' }}>
+                      <Maximize2 size={14} style={{ color: 'var(--oni-accent-oxygen)' }} />
+                      <span className="stat-label">Ranch Land Space:</span>
+                      <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold' }}>
+                        {aggregates.landSpace} <span style={{ fontSize: '0.85rem', color: 'var(--oni-text-muted)' }}>tiles</span>
+                      </span>
+                    </div>
+                  )}
+                  {/* Liquid Space (Ranches - Pacu) */}
+                  {aggregates.waterSpace > 0 && (
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9rem' }}>
+                      <Maximize2 size={14} style={{ color: 'var(--oni-accent-oxygen)' }} />
+                      <span className="stat-label">Ranch Liquid Space:</span>
+                      <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold' }}>
+                        {aggregates.waterSpace} <span style={{ fontSize: '0.85rem', color: 'var(--oni-text-muted)' }}>tiles</span>
+                      </span>
+                    </div>
+                  )}
+                  {/* Agriculture Space (Greenhouses) */}
+                  {aggregates.agricultureSpace > 0 && (
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9rem' }}>
+                      <Maximize2 size={14} style={{ color: 'var(--oni-accent-oxygen)' }} />
+                      <span className="stat-label">Greenhouse Space:</span>
+                      <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold' }}>
+                        {aggregates.agricultureSpace} <span style={{ fontSize: '0.85rem', color: 'var(--oni-text-muted)' }}>tiles</span>
+                      </span>
+                    </div>
+                  )}
+                  {/* Stables Required */}
+                  {aggregates.totalStables > 0 && (
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9rem', borderTop: '1px solid var(--oni-grid-line)', paddingTop: '0.4rem', marginTop: '0.2rem' }}>
+                      <span className="stat-label">96-Tile Stables:</span>
+                      <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold', color: 'var(--oni-accent-oxygen)' }}>
+                        {aggregates.totalStables} <span style={{ fontSize: '0.75rem', color: 'var(--oni-text-muted)', fontWeight: 'normal' }}>required</span>
+                      </span>
+                    </div>
+                  )}
+                  {/* Greenhouses Required */}
+                  {aggregates.totalGreenhouses > 0 && (
+                    <div style={{ 
+                      display: 'flex', 
+                      alignItems: 'center', 
+                      gap: '0.5rem', 
+                      fontSize: '0.9rem', 
+                      borderTop: aggregates.totalStables > 0 ? 'none' : '1px solid var(--oni-grid-line)', 
+                      paddingTop: aggregates.totalStables > 0 ? '0' : '0.4rem', 
+                      marginTop: aggregates.totalStables > 0 ? '0' : '0.2rem' 
+                    }}>
+                      <span className="stat-label">Greenhouses:</span>
+                      <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold', color: 'var(--oni-accent-oxygen)' }}>
+                        {aggregates.totalGreenhouses} <span style={{ fontSize: '0.75rem', color: 'var(--oni-text-muted)', fontWeight: 'normal' }}>required</span>
+                      </span>
+                    </div>
+                  )}
                 </div>
               )}
-              {/* Liquid Space (Ranches - Pacu) */}
-              {aggregates.waterSpace > 0 && (
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9rem' }}>
-                  <Maximize2 size={14} style={{ color: 'var(--oni-accent-oxygen)' }} />
-                  <span className="stat-label">Ranch Liquid Space:</span>
-                  <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold' }}>
-                    {aggregates.waterSpace} <span style={{ fontSize: '0.85rem', color: 'var(--oni-text-muted)' }}>tiles</span>
-                  </span>
+
+              <div style={{ 
+                display: 'flex', 
+                flexDirection: 'column', 
+                gap: '1rem', 
+                fontSize: '0.9rem', 
+                borderTop: (aggregates.totalStables > 0 || aggregates.totalGreenhouses > 0) ? '1px dashed var(--oni-grid-line-thick)' : 'none', 
+                paddingTop: (aggregates.totalStables > 0 || aggregates.totalGreenhouses > 0) ? '1rem' : '0' 
+              }}>
+                {/* Total Inputs */}
+                <div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: 'var(--oni-accent-danger)', fontWeight: 'bold', fontSize: '0.8rem', textTransform: 'uppercase', marginBottom: '0.5rem' }}>
+                    <ArrowDownRight size={14} /> Total Inputs
+                  </div>
+                  {aggregates.inputs.length === 0 ? (
+                    <div style={{ color: 'var(--oni-text-muted)', fontSize: '0.8rem' }}>None</div>
+                  ) : (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                      {aggregates.inputs.map((input, idx) => (
+                        <div key={idx} style={{ 
+                          display: 'flex', 
+                          justifyContent: 'space-between', 
+                          alignItems: 'center', 
+                          background: 'rgba(239, 68, 68, 0.05)', 
+                          padding: '0.3rem 0.5rem', 
+                          borderRadius: '3px', 
+                          border: '1px solid rgba(239, 68, 68, 0.15)' 
+                        }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                            <img 
+                              src={getImageUrl(formatResourceName(input.name))} 
+                              alt={formatResourceName(input.name)} 
+                              style={{ width: '16px', height: '16px', objectFit: 'contain' }}
+                              onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                            />
+                            <span style={{ color: 'var(--oni-text-primary)', fontSize: '0.8rem' }}>{formatResourceName(input.name)}</span>
+                          </div>
+                          <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold', color: 'var(--oni-accent-danger)', fontSize: '0.85rem' }}>
+                            {input.amount.toFixed(1)} {input.unit}/c
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
-              )}
-              {/* Agriculture Space (Greenhouses) */}
-              {aggregates.agricultureSpace > 0 && (
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9rem' }}>
-                  <Maximize2 size={14} style={{ color: 'var(--oni-accent-oxygen)' }} />
-                  <span className="stat-label">Greenhouse Space:</span>
-                  <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold' }}>
-                    {aggregates.agricultureSpace} <span style={{ fontSize: '0.85rem', color: 'var(--oni-text-muted)' }}>tiles</span>
-                  </span>
+
+                {/* Total Outputs */}
+                <div style={{ borderTop: '1px solid var(--oni-grid-line)', paddingTop: '0.75rem' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: 'var(--oni-accent-success)', fontWeight: 'bold', fontSize: '0.8rem', textTransform: 'uppercase', marginBottom: '0.5rem' }}>
+                    <ArrowUpRight size={14} /> Total Outputs
+                  </div>
+                  {aggregates.outputs.length === 0 ? (
+                    <div style={{ color: 'var(--oni-text-muted)', fontSize: '0.8rem' }}>None</div>
+                  ) : (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                      {aggregates.outputs.map((output, idx) => (
+                        <div key={idx} style={{ 
+                          display: 'flex', 
+                          justifyContent: 'space-between', 
+                          alignItems: 'center', 
+                          background: 'rgba(168, 255, 140, 0.05)', 
+                          padding: '0.3rem 0.5rem', 
+                          borderRadius: '3px', 
+                          border: '1px solid rgba(168, 255, 140, 0.15)' 
+                        }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                            <img 
+                              src={getImageUrl(formatResourceName(output.name))} 
+                              alt={formatResourceName(output.name)} 
+                              style={{ width: '16px', height: '16px', objectFit: 'contain' }}
+                              onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                            />
+                            <span style={{ color: 'var(--oni-text-primary)', fontSize: '0.8rem' }}>{formatResourceName(output.name)}</span>
+                          </div>
+                          <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold', color: 'var(--oni-accent-success)', fontSize: '0.85rem' }}>
+                            {output.amount.toFixed(1)} {output.unit}/c
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
-              )}
-              {/* Stables Required */}
-              {aggregates.totalStables > 0 && (
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9rem', borderTop: '1px solid var(--oni-grid-line)', paddingTop: '0.4rem', marginTop: '0.2rem' }}>
-                  <span className="stat-label">96-Tile Stables:</span>
-                  <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold', color: 'var(--oni-accent-oxygen)' }}>
-                    {aggregates.totalStables} <span style={{ fontSize: '0.75rem', color: 'var(--oni-text-muted)', fontWeight: 'normal' }}>required</span>
-                  </span>
-                </div>
-              )}
-              {/* Greenhouses Required */}
-              {aggregates.totalGreenhouses > 0 && (
-                <div style={{ 
-                  display: 'flex', 
-                  alignItems: 'center', 
-                  gap: '0.5rem', 
-                  fontSize: '0.9rem', 
-                  borderTop: aggregates.totalStables > 0 ? 'none' : '1px solid var(--oni-grid-line)', 
-                  paddingTop: aggregates.totalStables > 0 ? '0' : '0.4rem', 
-                  marginTop: aggregates.totalStables > 0 ? '0' : '0.2rem' 
-                }}>
-                  <span className="stat-label">Greenhouses:</span>
-                  <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold', color: 'var(--oni-accent-oxygen)' }}>
-                    {aggregates.totalGreenhouses} <span style={{ fontSize: '0.75rem', color: 'var(--oni-text-muted)', fontWeight: 'normal' }}>required</span>
-                  </span>
-                </div>
-              )}
+              </div>
             </div>
           )}
-
-          <div style={{ 
-            display: 'flex', 
-            flexDirection: 'column', 
-            gap: '1rem', 
-            fontSize: '0.9rem', 
-            borderTop: (aggregates.totalStables > 0 || aggregates.totalGreenhouses > 0) ? '1px dashed var(--oni-grid-line-thick)' : 'none', 
-            paddingTop: (aggregates.totalStables > 0 || aggregates.totalGreenhouses > 0) ? '1rem' : '0' 
-          }}>
-            {/* Total Inputs */}
-            <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: 'var(--oni-accent-danger)', fontWeight: 'bold', fontSize: '0.8rem', textTransform: 'uppercase', marginBottom: '0.5rem' }}>
-                <ArrowDownRight size={14} /> Total Inputs
-              </div>
-              {aggregates.inputs.length === 0 ? (
-                <div style={{ color: 'var(--oni-text-muted)', fontSize: '0.8rem' }}>None</div>
-              ) : (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                  {aggregates.inputs.map((input, idx) => (
-                    <div key={idx} style={{ 
-                      display: 'flex', 
-                      justifyContent: 'space-between', 
-                      alignItems: 'center', 
-                      background: 'rgba(239, 68, 68, 0.05)', 
-                      padding: '0.3rem 0.5rem', 
-                      borderRadius: '3px', 
-                      border: '1px solid rgba(239, 68, 68, 0.15)' 
-                    }}>
-                      <span style={{ color: 'var(--oni-text-primary)', fontSize: '0.8rem' }}>{input.name}</span>
-                      <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold', color: 'var(--oni-accent-danger)', fontSize: '0.85rem' }}>
-                        {input.amount.toFixed(1)} {input.unit}/c
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Total Outputs */}
-            <div style={{ borderTop: '1px solid var(--oni-grid-line)', paddingTop: '0.75rem' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: 'var(--oni-accent-success)', fontWeight: 'bold', fontSize: '0.8rem', textTransform: 'uppercase', marginBottom: '0.5rem' }}>
-                <ArrowUpRight size={14} /> Total Outputs
-              </div>
-              {aggregates.outputs.length === 0 ? (
-                <div style={{ color: 'var(--oni-text-muted)', fontSize: '0.8rem' }}>None</div>
-              ) : (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                  {aggregates.outputs.map((output, idx) => (
-                    <div key={idx} style={{ 
-                      display: 'flex', 
-                      justifyContent: 'space-between', 
-                      alignItems: 'center', 
-                      background: 'rgba(168, 255, 140, 0.05)', 
-                      padding: '0.3rem 0.5rem', 
-                      borderRadius: '3px', 
-                      border: '1px solid rgba(168, 255, 140, 0.15)' 
-                    }}>
-                      <span style={{ color: 'var(--oni-text-primary)', fontSize: '0.8rem' }}>{output.name}</span>
-                      <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold', color: 'var(--oni-accent-success)', fontSize: '0.85rem' }}>
-                        {output.amount.toFixed(1)} {output.unit}/c
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          </div>
         </div>
       )}
     </div>
