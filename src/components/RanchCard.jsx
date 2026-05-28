@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Egg, Maximize2, ArrowDownRight, ArrowUpRight, Trash2, ChevronDown, ChevronUp } from 'lucide-react';
+import React from 'react';
+import { Egg, Maximize2, ArrowDownRight, ArrowUpRight, Trash2 } from 'lucide-react';
 
-export function RanchCard({ critter, count, onChange, onRemove }) {
+export function RanchCard({ critter, count, activeFeed, onChange, onRemove, onFeedChange }) {
   const maxAllowed = critter.maxSize || 8;
   const currentOutput = critter.caloriesPerCycle * count;
   const eggsTotal = critter.eggsPerCycle * count;
@@ -10,12 +10,15 @@ export function RanchCard({ critter, count, onChange, onRemove }) {
   // Calculate ranch count dynamically (Math.ceil since any fraction implies starting a new ranch)
   const currentRanchCount = Math.ceil(count / maxAllowed);
 
-  const [isExpanded, setIsExpanded] = useState(false);
-
   const handleRanchChange = (newRanchCount) => {
     // Default the critter count to full capacity for the selected ranches
     onChange(newRanchCount * maxAllowed);
   };
+
+  // Resolve the active input based on user preference or fallback
+  const hasMultipleInputs = critter.inputs && critter.inputs.length > 1;
+  const selectedFeedName = activeFeed || (critter.inputs && critter.inputs[0]?.name) || '';
+  const activeInput = critter.inputs?.find(input => input.name === selectedFeedName) || critter.inputs?.[0];
 
   return (
     <div 
@@ -25,7 +28,7 @@ export function RanchCard({ critter, count, onChange, onRemove }) {
         flexDirection: 'column', 
         justifyContent: 'space-between',
         borderTop: `4px solid ${critter.color || 'var(--oni-panel-border)'}`,
-        padding: '1rem' // Condensed padding
+        padding: '1rem' 
       }}
     >
       <div style={{ flexShrink: 0 }}>
@@ -105,7 +108,7 @@ export function RanchCard({ critter, count, onChange, onRemove }) {
             <input 
               type="range" 
               min="0" 
-              max="40" // Represents colony-wide aggregation of this critter
+              max="40" 
               value={count}
               onChange={(e) => onChange(parseInt(e.target.value) || 0)}
               style={{ accentColor: critter.color, flex: 1 }}
@@ -128,6 +131,34 @@ export function RanchCard({ critter, count, onChange, onRemove }) {
             />
           </div>
         </div>
+
+        {/* Active Feed Selection for Multi-diet Critters */}
+        {count > 0 && hasMultipleInputs && (
+          <div style={{ marginBottom: '1rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.25rem', fontSize: '0.85rem' }}>
+              <span className="stat-label" style={{ color: 'var(--oni-text-primary)', fontWeight: 'bold' }}>Active Feed Selection</span>
+            </div>
+            <select
+              value={selectedFeedName}
+              onChange={(e) => onFeedChange(e.target.value)}
+              style={{
+                width: '100%',
+                padding: '0.35rem 0.5rem',
+                fontSize: '0.8rem',
+                border: '1px solid var(--oni-panel-border)',
+                borderRadius: '4px',
+                background: 'rgba(0, 0, 0, 0.4)',
+                color: 'var(--oni-text-primary)',
+                fontFamily: 'var(--oni-font-mono)',
+                cursor: 'pointer'
+              }}
+            >
+              {critter.inputs.map(input => (
+                <option key={input.name} value={input.name}>{input.name}</option>
+              ))}
+            </select>
+          </div>
+        )}
       </div>
 
       {/* Advanced Stats Section */}
@@ -164,72 +195,44 @@ export function RanchCard({ critter, count, onChange, onRemove }) {
           </div>
         </div>
 
-        {/* Inputs & Outputs */}
-        {count > 0 && (critter.inputs?.length > 0 || critter.outputs?.length > 0) && (
+        {/* Inputs & Outputs (Streamlined & Non-collapsible) */}
+        {count > 0 && (activeInput || critter.outputs?.length > 0) && (
           <div style={{ 
-            display: 'flex', 
-            flexDirection: 'column',
+            display: 'grid', 
+            gridTemplateColumns: '1fr 1fr', 
             gap: '0.5rem', 
             paddingTop: '0.5rem',
-            borderTop: '1px solid var(--oni-grid-line)'
+            borderTop: '1px solid var(--oni-grid-line)',
+            marginTop: '0.2rem'
           }}>
-            <button
-              onClick={() => setIsExpanded(!isExpanded)}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '0.4rem',
-                background: 'rgba(0,0,0,0.2)',
-                border: '1px solid var(--oni-panel-border)',
-                borderRadius: '4px',
-                padding: '0.4rem',
-                color: 'var(--oni-text-primary)',
-                cursor: 'pointer',
-                fontFamily: 'var(--oni-font-mono)',
-                fontSize: '0.75rem',
-                transition: 'background 0.2s',
-                width: '100%'
-              }}
-              onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(0,0,0,0.4)'}
-              onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(0,0,0,0.2)'}
-            >
-              {isExpanded ? <><ChevronUp size={14} /> Hide Details</> : <><ChevronDown size={14} /> Show Details</>}
-            </button>
-            
-            {isExpanded && (
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem', marginTop: '0.4rem' }}>
-                {/* Inputs */}
-                <div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.2rem', color: 'var(--oni-accent-danger)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.25rem' }}>
-                    <ArrowDownRight size={10} /> Inputs
-                  </div>
-                  {critter.inputs?.map((input, idx) => (
-                    <div key={idx} style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', color: 'var(--oni-text-primary)', lineHeight: '1.2', marginBottom: '0.2rem' }}>
-                      {(input.amount * count).toFixed(0)} {input.unit} <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{input.name}</span>
-                    </div>
-                  ))}
-                  {(!critter.inputs || critter.inputs.length === 0) && (
-                    <span style={{ fontSize: '0.7rem', color: 'var(--oni-text-muted)', fontStyle: 'italic' }}>None</span>
-                  )}
-                </div>
-
-                {/* Outputs */}
-                <div style={{ borderLeft: '1px solid var(--oni-grid-line)', paddingLeft: '0.4rem' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.2rem', color: 'var(--oni-accent-success)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.25rem' }}>
-                    <ArrowUpRight size={10} /> Outputs
-                  </div>
-                  {critter.outputs?.map((output, idx) => (
-                    <div key={idx} style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', color: 'var(--oni-text-primary)', lineHeight: '1.2', marginBottom: '0.2rem' }}>
-                      {(output.amount * count).toFixed(0)} {output.unit} <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{output.name}</span>
-                    </div>
-                  ))}
-                  {(!critter.outputs || critter.outputs.length === 0) && (
-                    <span style={{ fontSize: '0.7rem', color: 'var(--oni-text-muted)', fontStyle: 'italic' }}>None</span>
-                  )}
-                </div>
+            {/* Active Input */}
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.2rem', color: 'var(--oni-accent-danger)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.25rem' }}>
+                <ArrowDownRight size={10} /> Active Input
               </div>
-            )}
+              {activeInput ? (
+                <div style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', color: 'var(--oni-text-primary)', lineHeight: '1.2' }}>
+                  {(activeInput.amount * count).toFixed(0)} {activeInput.unit} <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{activeInput.name}</span>
+                </div>
+              ) : (
+                <span style={{ fontSize: '0.7rem', color: 'var(--oni-text-muted)', fontStyle: 'italic' }}>None</span>
+              )}
+            </div>
+
+            {/* Outputs */}
+            <div style={{ borderLeft: '1px solid var(--oni-grid-line)', paddingLeft: '0.4rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.2rem', color: 'var(--oni-accent-success)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.25rem' }}>
+                <ArrowUpRight size={10} /> Outputs
+              </div>
+              {critter.outputs?.map((output, idx) => (
+                <div key={idx} style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', color: 'var(--oni-text-primary)', lineHeight: '1.2', marginBottom: '0.2rem' }}>
+                  {(output.amount * count).toFixed(0)} {output.unit} <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{output.name}</span>
+                </div>
+              ))}
+              {(!critter.outputs || critter.outputs.length === 0) && (
+                <span style={{ fontSize: '0.7rem', color: 'var(--oni-text-muted)', fontStyle: 'italic' }}>None</span>
+              )}
+            </div>
           </div>
         )}
       </div>

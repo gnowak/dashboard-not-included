@@ -348,6 +348,10 @@ function App() {
     setRanches(ranches.map(r => r.critterType === critterType ? { ...r, count: newCount } : r));
   };
 
+  const handleRanchFeedChange = (critterType, newFeed) => {
+    setRanches(ranches.map(r => r.critterType === critterType ? { ...r, activeFeed: newFeed } : r));
+  };
+
   const handleCropCountChange = (cropType, newCount) => {
     setCrops(crops.map(c => c.cropType === cropType ? { ...c, count: newCount } : c));
   };
@@ -443,6 +447,7 @@ function App() {
               onRanchCountChange={handleRanchCountChange}
               onRanchAdd={handleRanchAdd}
               onRanchRemove={handleRanchRemove}
+              onRanchFeedChange={handleRanchFeedChange}
               critterData={mergedCritters}
             />
           ) : activeTab === 'farms' ? (

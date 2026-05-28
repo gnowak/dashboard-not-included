@@ -37,15 +37,19 @@ export function DuplicantStats({ duplicants, setDuplicants, totalCalories, ranch
       totalStables += Math.ceil(ranch.count / critter.maxSize);
 
       // Inputs
-      if (critter.inputs) {
-        critter.inputs.forEach(input => {
-          const totalAmt = input.amount * ranch.count;
-          const key = `${input.name}_${input.unit}`;
+      // Inputs
+      if (critter.inputs && critter.inputs.length > 0) {
+        const activeFeedName = ranch.activeFeed || critter.inputs[0].name;
+        const activeInput = critter.inputs.find(input => input.name === activeFeedName) || critter.inputs[0];
+        
+        if (activeInput) {
+          const totalAmt = activeInput.amount * ranch.count;
+          const key = `${activeInput.name}_${activeInput.unit}`;
           if (!inputs[key]) {
-            inputs[key] = { name: input.name, unit: input.unit, amount: 0 };
+            inputs[key] = { name: activeInput.name, unit: activeInput.unit, amount: 0 };
           }
           inputs[key].amount += totalAmt;
-        });
+        }
       }
 
       // Outputs
