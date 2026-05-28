@@ -360,7 +360,7 @@ export function DatabaseExplorer({
           <div key={subTab} className="card-grid" style={{ flex: 1, overflowY: 'auto' }}>
             {filteredList.map((item) => {
               const cleaned = cleanName(item.name);
-              const isExpanded = !!expandedCards[item.id];
+              const isExpanded = true;
               
               return (
                 <div 
@@ -370,10 +370,8 @@ export function DatabaseExplorer({
                     padding: '1rem 1rem 1.25rem 1rem', 
                     display: 'flex', 
                     flexDirection: 'column', 
-                    justifyContent: 'space-between',
+                    justifyContent: 'flex-start',
                     borderTop: '3px solid var(--oni-panel-border)',
-                    height: 'auto',
-                    minHeight: '220px'
                   }}
                 >
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', width: '100%', flexShrink: 0 }}>
@@ -895,49 +893,6 @@ export function DatabaseExplorer({
                       </div>
                     )}
                   </div>
-
-                  {/* Expand/Collapse Toggle Button */}
-                  <button
-                    onClick={() => toggleExpand(item.id)}
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      gap: '0.3rem',
-                      width: '100%',
-                      padding: '0.35rem',
-                      marginTop: '0.75rem',
-                      flexShrink: 0,
-                      background: isExpanded ? 'rgba(127, 191, 255, 0.1)' : 'rgba(0, 0, 0, 0.15)',
-                      border: '1px solid var(--oni-panel-border)',
-                      borderRadius: '4px',
-                      color: isExpanded ? 'var(--oni-text-primary)' : 'var(--oni-text-muted)',
-                      fontSize: '0.75rem',
-                      fontFamily: 'var(--oni-font-mono)',
-                      cursor: 'pointer',
-                      transition: 'all 0.15s ease'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.borderColor = 'var(--oni-accent-oxygen)';
-                      e.currentTarget.style.color = 'var(--oni-text-primary)';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.borderColor = 'var(--oni-panel-border)';
-                      e.currentTarget.style.color = isExpanded ? 'var(--oni-text-primary)' : 'var(--oni-text-muted)';
-                    }}
-                  >
-                    {isExpanded ? (
-                      <>
-                        <ChevronUp size={12} />
-                        Collapse Details
-                      </>
-                    ) : (
-                      <>
-                        <ChevronDown size={12} />
-                        Expand Details
-                      </>
-                    )}
-                  </button>
                 </div>
               );
             })}
