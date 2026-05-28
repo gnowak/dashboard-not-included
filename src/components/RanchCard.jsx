@@ -18,7 +18,12 @@ export function RanchCard({ critter, count, activeFeed, onChange, onRemove, onFe
   // Resolve the active input based on user preference or fallback
   const hasMultipleInputs = critter.inputs && critter.inputs.length > 1;
   const selectedFeedName = activeFeed || (critter.inputs && critter.inputs[0]?.name) || '';
-  const activeInput = critter.inputs?.find(input => input.name === selectedFeedName) || critter.inputs?.[0];
+  const activeInputIdx = critter.inputs ? critter.inputs.findIndex(input => input.name === selectedFeedName) : 0;
+  const activeInput = critter.inputs?.[activeInputIdx >= 0 ? activeInputIdx : 0];
+
+  const activeOutputs = critter.inputs && critter.inputs.length > 0
+    ? (critter.outputs?.[activeInputIdx >= 0 ? activeInputIdx : 0] ? [critter.outputs[activeInputIdx >= 0 ? activeInputIdx : 0]] : [])
+    : (critter.outputs || []);
 
   return (
     <div 
@@ -195,8 +200,7 @@ export function RanchCard({ critter, count, activeFeed, onChange, onRemove, onFe
           </div>
         </div>
 
-        {/* Inputs & Outputs (Streamlined & Non-collapsible) */}
-        {count > 0 && (activeInput || critter.outputs?.length > 0) && (
+        {count > 0 && (activeInput || activeOutputs.length > 0) && (
           <div style={{ 
             display: 'grid', 
             gridTemplateColumns: '1fr 1fr', 
@@ -224,12 +228,12 @@ export function RanchCard({ critter, count, activeFeed, onChange, onRemove, onFe
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.2rem', color: 'var(--oni-accent-success)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '0.25rem' }}>
                 <ArrowUpRight size={10} /> Outputs
               </div>
-              {critter.outputs?.map((output, idx) => (
+              {activeOutputs?.map((output, idx) => (
                 <div key={idx} style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', color: 'var(--oni-text-primary)', lineHeight: '1.2', marginBottom: '0.2rem' }}>
                   {(output.amount * count).toFixed(0)} {output.unit} <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{output.name}</span>
                 </div>
               ))}
-              {(!critter.outputs || critter.outputs.length === 0) && (
+              {(!activeOutputs || activeOutputs.length === 0) && (
                 <span style={{ fontSize: '0.7rem', color: 'var(--oni-text-muted)', fontStyle: 'italic' }}>None</span>
               )}
             </div>

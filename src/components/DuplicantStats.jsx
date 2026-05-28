@@ -53,8 +53,15 @@ export function DuplicantStats({ duplicants, setDuplicants, totalCalories, ranch
       }
 
       // Outputs
-      if (critter.outputs) {
-        critter.outputs.forEach(output => {
+      if (critter.outputs && critter.outputs.length > 0) {
+        const activeFeedName = ranch.activeFeed || (critter.inputs && critter.inputs[0]?.name) || '';
+        const activeInputIdx = critter.inputs ? critter.inputs.findIndex(input => input.name === activeFeedName) : 0;
+        
+        const activeOutputs = critter.inputs && critter.inputs.length > 0
+          ? (critter.outputs[activeInputIdx >= 0 ? activeInputIdx : 0] ? [critter.outputs[activeInputIdx >= 0 ? activeInputIdx : 0]] : [])
+          : critter.outputs;
+
+        activeOutputs.forEach(output => {
           const totalAmt = output.amount * ranch.count;
           const key = `${output.name}_${output.unit}`;
           if (!outputs[key]) {
