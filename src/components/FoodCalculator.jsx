@@ -5,6 +5,37 @@ import { CRITTER_DATA } from '../data/critters';
 import { cleanName } from './DatabaseExplorer';
 import { getImageUrl, formatResourceName } from '../utils/images';
 
+const RECIPE_INGREDIENTS = {
+  mealwood: [{ name: 'Mealwood Seed', amount: 1, unit: 'seed' }],
+  bristleBlossom: [{ name: 'Bristle Blossom Seed', amount: 1, unit: 'seed' }],
+  gristleBerry: [{ name: 'Bristle Berry', amount: 1, unit: 'berry' }],
+  duskCap: [{ name: 'Fungal Spore', amount: 1, unit: 'spore' }],
+  friedMushroom: [{ name: 'Mushroom', amount: 1, unit: 'item' }],
+  sleetWheat: [{ name: 'Sleet Wheat Grain', amount: 1, unit: 'grain' }],
+  frostBun: [{ name: 'Sleet Wheat Grain', amount: 3, unit: 'grains' }],
+  barbecue: [{ name: 'Meat', amount: 1, unit: 'item' }],
+  pacuSeafood: [{ name: 'Pacu Fillet', amount: 1, unit: 'item' }],
+  mushBar: [{ name: 'Dirt', amount: 75, unit: 'kg' }, { name: 'Water', amount: 75, unit: 'kg' }],
+  mushFry: [{ name: 'Mush Bar', amount: 1, unit: 'item' }],
+  liceLoaf: [{ name: 'Meal Lice', amount: 2, unit: 'items' }, { name: 'Water', amount: 50, unit: 'kg' }],
+  berrySludge: [{ name: 'Bristle Berry', amount: 5, unit: 'items' }, { name: 'Sleet Wheat Grain', amount: 5, unit: 'grains' }],
+  surfAndTurf: [{ name: 'Barbecue', amount: 1, unit: 'item' }, { name: 'Cooked Seafood', amount: 1, unit: 'item' }],
+  pickledMeal: [{ name: 'Meal Lice', amount: 1, unit: 'item' }],
+  omelette: [{ name: 'Critter Egg', amount: 1, unit: 'egg' }],
+  pepperBread: [{ name: 'Sleet Wheat Grain', amount: 10, unit: 'grains' }, { name: 'Pincha Peppernut', amount: 1, unit: 'item' }],
+  stuffedBerry: [{ name: 'Bristle Berry', amount: 2, unit: 'items' }, { name: 'Pincha Peppernut', amount: 1, unit: 'item' }],
+  mushroomWrap: [{ name: 'Fried Mushroom', amount: 1, unit: 'item' }, { name: 'Lettuce', amount: 1, unit: 'item' }],
+  frostBurger: [{ name: 'Frost Bun', amount: 1, unit: 'item' }, { name: 'Lettuce', amount: 1, unit: 'item' }, { name: 'Barbecue', amount: 1, unit: 'item' }],
+  grubfruitPreserves: [{ name: 'Grubfruit', amount: 1, unit: 'item' }, { name: 'Sucrose', amount: 5, unit: 'kg' }],
+  smokedFish: [{ name: 'Pacu Fillet', amount: 1, unit: 'item' }, { name: 'Wood Log', amount: 25, unit: 'kg' }],
+  veggiePoppers: [{ name: 'Bristle Berry', amount: 1, unit: 'item' }, { name: 'Wood Log', amount: 25, unit: 'kg' }],
+  tenderBrisket: [{ name: 'Meat', amount: 1, unit: 'item' }, { name: 'Wood Log', amount: 25, unit: 'kg' }],
+  deepFriedFish: [{ name: 'Pacu Fillet', amount: 1, unit: 'item' }, { name: 'Tallow', amount: 2.4, unit: 'kg' }],
+  deepFriedShellfish: [{ name: 'Pacu Fillet', amount: 1, unit: 'item' }, { name: 'Tallow', amount: 2.4, unit: 'kg' }],
+  makiSushi: [{ name: 'Pacu Fillet', amount: 1, unit: 'item' }, { name: 'Nori', amount: 2, unit: 'kg' }],
+  nigiriSushi: [{ name: 'Pacu Fillet', amount: 1, unit: 'item' }, { name: 'Nori', amount: 2, unit: 'kg' }]
+};
+
 export function FoodCalculator({ 
   duplicants, 
   setDuplicants, 
@@ -61,7 +92,8 @@ export function FoodCalculator({
         efficiency: 'High',
         complexity: 'Very Low',
         description: 'Cheap, easy crop requiring only Dirt. Negative morale fallback.',
-        isCooked: false
+        isCooked: false,
+        dlc: null
       },
       bristleBlossom: {
         id: 'bristleBlossom',
@@ -77,7 +109,8 @@ export function FoodCalculator({
         efficiency: 'Medium',
         complexity: 'Low',
         description: 'Produces raw Bristle Berries. Requires Light and direct Water irrigation.',
-        isCooked: false
+        isCooked: false,
+        dlc: null
       },
       gristleBerry: {
         id: 'gristleBerry',
@@ -86,14 +119,15 @@ export function FoodCalculator({
         sourceName: 'Bristle Blossom',
         station: 'Electric Grill',
         rawCalCycle: bristleRaw?.caloriesPerCycle || 266.7,
-        calCycle: (bristleRaw?.caloriesPerCycle || 266.7) * 1.25, // Cooking converts 1.6M cal to 2M cal (+25% yield!)
+        calCycle: (bristleRaw?.caloriesPerCycle || 266.7) * 1.25,
         inputs: bristleRaw?.inputs || [{ name: 'Water', amount: 20, unit: 'kg' }],
         color: '#ffbe82',
         tier: 'Early to Mid',
         efficiency: 'High',
         complexity: 'Medium',
         description: 'Grilled Bristle Berry caps. Saves 20% crop footprint.',
-        isCooked: true
+        isCooked: true,
+        dlc: null
       },
       duskCap: {
         id: 'duskCap',
@@ -109,7 +143,8 @@ export function FoodCalculator({
         efficiency: 'High',
         complexity: 'Medium',
         description: 'Grows in Carbon Dioxide atmospheres. Requires solid Slime fertilization.',
-        isCooked: false
+        isCooked: false,
+        dlc: null
       },
       friedMushroom: {
         id: 'friedMushroom',
@@ -118,14 +153,15 @@ export function FoodCalculator({
         sourceName: 'Dusk Cap',
         station: 'Electric Grill',
         rawCalCycle: duskRaw?.caloriesPerCycle || 320,
-        calCycle: (duskRaw?.caloriesPerCycle || 320) * 1.167, // Cooking Dusk Cap yields Fried Mushroom (+16.7%)
+        calCycle: (duskRaw?.caloriesPerCycle || 320) * 1.167,
         inputs: duskRaw?.inputs || [{ name: 'Slime', amount: 4, unit: 'kg' }],
         color: '#c48bff',
         tier: 'Mid Game',
         efficiency: 'Very High',
         complexity: 'Medium',
         description: 'Delicious fried mushroom caps. Excellent morale boost and extended spoil time.',
-        isCooked: true
+        isCooked: true,
+        dlc: null
       },
       sleetWheat: {
         id: 'sleetWheat',
@@ -141,7 +177,8 @@ export function FoodCalculator({
         efficiency: 'Medium',
         complexity: 'High',
         description: 'Requires cold environment and dual inputs (water + dirt). Standard premium base.',
-        isCooked: false
+        isCooked: false,
+        dlc: null
       },
       frostBun: {
         id: 'frostBun',
@@ -150,14 +187,15 @@ export function FoodCalculator({
         sourceName: 'Sleet Wheat',
         station: 'Electric Grill',
         rawCalCycle: sleetRaw?.caloriesPerCycle || 200,
-        calCycle: (sleetRaw?.caloriesPerCycle || 200) * 2.0, // Cooking 3 grains yields Frost Bun (+100% yield!)
+        calCycle: (sleetRaw?.caloriesPerCycle || 200) * 2.0,
         inputs: sleetRaw?.inputs || [{ name: 'Dirt', amount: 5, unit: 'kg' }, { name: 'Water', amount: 20, unit: 'kg' }],
         color: '#ffe596',
         tier: 'Late Game',
         efficiency: 'Very High',
         complexity: 'High',
         description: 'Bake grains into Frost Buns. Halves your farming footprint compared to eating raw grains.',
-        isCooked: true
+        isCooked: true,
+        dlc: null
       },
       barbecue: {
         id: 'barbecue',
@@ -173,7 +211,8 @@ export function FoodCalculator({
         efficiency: 'High',
         complexity: 'High',
         description: 'Ranching Hatches for meat and cooking it. Generates helpful Coal outputs.',
-        isCooked: true
+        isCooked: true,
+        dlc: null
       },
       pacuSeafood: {
         id: 'pacuSeafood',
@@ -189,7 +228,8 @@ export function FoodCalculator({
         efficiency: 'Extreme',
         complexity: 'High',
         description: 'Pacu fish reproduce rapidly. Extreme calorie yield, but consumes Algae heavily.',
-        isCooked: true
+        isCooked: true,
+        dlc: null
       },
       mushBar: {
         id: 'mushBar',
@@ -208,7 +248,8 @@ export function FoodCalculator({
         efficiency: 'Very Low',
         complexity: 'Low',
         description: 'Emergency food processed from Dirt and Water. Extremely heavy resource footprint and negative morale.',
-        isCooked: false
+        isCooked: false,
+        dlc: null
       },
       mushFry: {
         id: 'mushFry',
@@ -227,7 +268,8 @@ export function FoodCalculator({
         efficiency: 'Low',
         complexity: 'Medium',
         description: 'Baked Mush Bar. Eliminates food poisoning germs and gives a minor morale boost.',
-        isCooked: true
+        isCooked: true,
+        dlc: null
       },
       liceLoaf: {
         id: 'liceLoaf',
@@ -246,7 +288,8 @@ export function FoodCalculator({
         efficiency: 'High',
         complexity: 'Medium',
         description: 'Meal Lice blended with clean Water. Increases calorie yield by 41% and boosts morale.',
-        isCooked: true
+        isCooked: true,
+        dlc: null
       },
       berrySludge: {
         id: 'berrySludge',
@@ -265,11 +308,12 @@ export function FoodCalculator({
         efficiency: 'Very High',
         complexity: 'High',
         description: 'An unspoilable space food made from Bristle Berries and Sleet Wheat Grains. Perfect for rocket missions.',
-        isCooked: true
+        isCooked: true,
+        dlc: null
       },
       surfAndTurf: {
         id: 'surfAndTurf',
-        name: 'Surf \'n\' Turf (BBQ & Fish)',
+        name: "Surf 'n' Turf (BBQ & Fish)",
         type: 'critter',
         sourceName: 'Hatch & Pacu',
         station: 'Gas Range',
@@ -284,7 +328,8 @@ export function FoodCalculator({
         efficiency: 'Extreme',
         complexity: 'High',
         description: 'Ultra-premium prepared meal combining Barbecue and Cooked Seafood. Outstanding morale boost (+12).',
-        isCooked: true
+        isCooked: true,
+        dlc: null
       },
       pickledMeal: {
         id: 'pickledMeal',
@@ -300,7 +345,8 @@ export function FoodCalculator({
         efficiency: 'Medium',
         complexity: 'Low',
         description: 'Meal Lice fermented in vinegar. Preserves standard calories, increases spoil time dramatically.',
-        isCooked: true
+        isCooked: true,
+        dlc: null
       },
       omelette: {
         id: 'omelette',
@@ -316,7 +362,8 @@ export function FoodCalculator({
         efficiency: 'High',
         complexity: 'Medium',
         description: 'Fluffy scrambled eggs cooked from raw critter eggs. Excellent early morale fallback.',
-        isCooked: true
+        isCooked: true,
+        dlc: null
       },
       pepperBread: {
         id: 'pepperBread',
@@ -337,7 +384,8 @@ export function FoodCalculator({
         efficiency: 'Extreme',
         complexity: 'High',
         description: 'Warm, delicious bread made with Sleet Wheat and spiced with Pincha Peppernuts. Superb morale boost (+16).',
-        isCooked: true
+        isCooked: true,
+        dlc: null
       },
       stuffedBerry: {
         id: 'stuffedBerry',
@@ -357,7 +405,8 @@ export function FoodCalculator({
         efficiency: 'Very High',
         complexity: 'High',
         description: 'Bristle Berries stuffed with Pincha Peppernuts. Gourmet baked dessert that Duplicants adore.',
-        isCooked: true
+        isCooked: true,
+        dlc: null
       },
       mushroomWrap: {
         id: 'mushroomWrap',
@@ -377,7 +426,8 @@ export function FoodCalculator({
         efficiency: 'Very High',
         complexity: 'High',
         description: 'Fried mushrooms wrapped in aquatic Lettuce. Healthy, savory, and extremely popular.',
-        isCooked: true
+        isCooked: true,
+        dlc: null
       },
       frostBurger: {
         id: 'frostBurger',
@@ -399,7 +449,8 @@ export function FoodCalculator({
         efficiency: 'Extreme',
         complexity: 'Extreme',
         description: 'Astronaut grade luxury meal stacking a Frost Bun, Lettuce, and BBQ steak. Grants +16 Morale at the cost of Athletics (-2).',
-        isCooked: true
+        isCooked: true,
+        dlc: null
       },
       grubfruitPreserves: {
         id: 'grubfruitPreserves',
@@ -418,7 +469,8 @@ export function FoodCalculator({
         efficiency: 'Very High',
         complexity: 'Medium',
         description: 'Grubfruit cooked in a thick sucrose glaze. Highly stable shelf-life and a sweet morale booster.',
-        isCooked: true
+        isCooked: true,
+        dlc: 'EXPANSION1'
       },
       smokedFish: {
         id: 'smokedFish',
@@ -437,7 +489,8 @@ export function FoodCalculator({
         efficiency: 'High',
         complexity: 'Medium',
         description: 'Buttery fish fillets slow-smoked over a fragrant wood fire. Imbued with a rich woodsy flavor.',
-        isCooked: true
+        isCooked: true,
+        dlc: 'DLC4'
       },
       veggiePoppers: {
         id: 'veggiePoppers',
@@ -456,7 +509,8 @@ export function FoodCalculator({
         efficiency: 'High',
         complexity: 'Medium',
         description: 'Spicy stuffed berries slow-smoked over dry logs. Extra crunchy with a bold hickory aroma.',
-        isCooked: true
+        isCooked: true,
+        dlc: 'DLC4'
       },
       tenderBrisket: {
         id: 'tenderBrisket',
@@ -475,7 +529,8 @@ export function FoodCalculator({
         efficiency: 'Very High',
         complexity: 'Medium',
         description: 'Tender critter steaks slow-smoked for half a cycle. Deeply savory and tender.',
-        isCooked: true
+        isCooked: true,
+        dlc: 'DLC4'
       },
       deepFriedFish: {
         id: 'deepFriedFish',
@@ -496,27 +551,10 @@ export function FoodCalculator({
         efficiency: 'Extreme',
         complexity: 'High',
         description: 'Crisp, golden-battered Pacu fish tacos deep-fried in Bammoth Tallow. Unbelievable calorie density.',
-        isCooked: true
+        isCooked: true,
+        dlc: 'DLC2'
       },
-      deepFriedMeat: {
-        id: 'deepFriedMeat',
-        name: 'Deep Fried Steak',
-        type: 'critter',
-        sourceName: 'Hatch & Deep Fryer',
-        station: 'Deep Fryer',
-        rawCalCycle: 87.5,
-        calCycle: 160,
-        inputs: [
-          { name: 'Igneous Rock', amount: 140, unit: 'kg' },
-          { name: 'Tallow', amount: 2.4, unit: 'kg' }
-        ],
-        color: '#B22222',
-        tier: 'Late Game',
-        efficiency: 'Extreme',
-        complexity: 'High',
-        description: 'Thick Hatch steaks deep-fried to a crisp golden brown in premium Bammoth Tallow.',
-        isCooked: true
-      },
+
       deepFriedShellfish: {
         id: 'deepFriedShellfish',
         name: 'Shellfish Tempura',
@@ -534,7 +572,8 @@ export function FoodCalculator({
         efficiency: 'Extreme',
         complexity: 'High',
         description: 'Delicate aquatic fish fillets lightly tempura-fried in warm, rich Tallow.',
-        isCooked: true
+        isCooked: true,
+        dlc: 'DLC2'
       },
       makiSushi: {
         id: 'makiSushi',
@@ -553,7 +592,8 @@ export function FoodCalculator({
         efficiency: 'Very High',
         complexity: 'Medium',
         description: 'Rice rolled in thin sheets of toasted Nori and stuffed with fresh Pacu sashimi. Exquisite beta quality.',
-        isCooked: true
+        isCooked: true,
+        dlc: 'DLC5'
       },
       nigiriSushi: {
         id: 'nigiriSushi',
@@ -571,10 +611,17 @@ export function FoodCalculator({
         efficiency: 'Extreme',
         complexity: 'High',
         description: 'A thin slice of Glo Squid sashimi laid over a small hand-pressed block of seasoned rice.',
-        isCooked: true
+        isCooked: true,
+        dlc: 'DLC5'
       }
     };
   }, [cropData, critterData]);
+
+  // Add-sources panel filter/sort state
+  const [addSearchText, setAddSearchText] = useState('');
+  const [addFilterDlc, setAddFilterDlc] = useState('all'); // 'all' | 'base' | 'dlc'
+  const [addSortBy, setAddSortBy] = useState('type'); // 'type' | 'name' | 'kcal' | 'efficiency'
+  const [addSortDirection, setAddSortDirection] = useState('desc'); // 'asc' | 'desc'
 
   // Accordion toggle actions
   const handleScaleToggle = () => {
@@ -640,7 +687,6 @@ export function FoodCalculator({
       case 'barbecue':
       case 'omelette':
       case 'tenderBrisket':
-      case 'deepFriedMeat':
         return ranches.some(r => r.critterType === 'hatch' && r.count > 0);
       case 'pacuSeafood':
       case 'smokedFish':
@@ -689,7 +735,6 @@ export function FoodCalculator({
       case 'barbecue':
       case 'omelette':
       case 'tenderBrisket':
-      case 'deepFriedMeat':
         return { type: 'critter', key: 'hatch' };
       case 'pacuSeafood':
       case 'smokedFish':
@@ -1727,6 +1772,41 @@ export function FoodCalculator({
                   </div>
                 </div>
 
+                {/* Recipe Ingredients Panel */}
+                {RECIPE_INGREDIENTS[calorieSources[activeSlide].id] && (
+                  <div style={{ background: 'rgba(0,0,0,0.2)', padding: '1.25rem', borderRadius: '8px', border: '1px solid var(--oni-panel-border)', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                    <h4 style={{ fontSize: '0.9rem', color: 'var(--oni-accent-success)', display: 'flex', alignItems: 'center', gap: '0.4rem', borderBottom: '1px dashed var(--oni-grid-line-thick)', paddingBottom: '0.4rem', margin: '0' }}>
+                      <Sparkles size={16} /> Recipe Ingredients
+                    </h4>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', flex: 1 }}>
+                      {RECIPE_INGREDIENTS[calorieSources[activeSlide].id].map((ing, idx) => (
+                        <div key={idx} style={{ 
+                          display: 'flex', 
+                          justifyContent: 'space-between', 
+                          alignItems: 'center', 
+                          background: 'rgba(255, 255, 255, 0.03)', 
+                          padding: '0.5rem 0.75rem', 
+                          borderRadius: '4px', 
+                          border: '1px solid var(--oni-panel-border)' 
+                        }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                            <img 
+                              src={getImageUrl(formatResourceName(ing.name))} 
+                              alt={formatResourceName(ing.name)} 
+                              style={{ width: '18px', height: '18px', objectFit: 'contain' }}
+                              onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                            />
+                            <span style={{ fontSize: '0.85rem' }}>{formatResourceName(ing.name)}</span>
+                          </div>
+                          <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold', color: 'var(--oni-accent-success)', fontSize: '0.9rem' }}>
+                            {ing.amount} {ing.unit}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
                 {/* Overall Required Resources */}
                 <div style={{ background: 'rgba(0,0,0,0.2)', padding: '1.25rem', borderRadius: '8px', border: '1px solid var(--oni-panel-border)', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                   <h4 style={{ fontSize: '0.9rem', color: 'var(--oni-accent-calorie)', display: 'flex', alignItems: 'center', gap: '0.4rem', borderBottom: '1px dashed var(--oni-grid-line-thick)', paddingBottom: '0.4rem', margin: '0' }}>
@@ -2141,109 +2221,382 @@ export function FoodCalculator({
           )}
 
           {/* SLIDE C: ADD FOOD TO DIET OVERVIEW PANEL */}
-          {activeSlide === 'add' && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', height: '100%' }}>
-              <div>
-                <h3 style={{ color: 'var(--oni-accent-oxygen)', fontSize: '1.4rem', display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.25rem', margin: 0 }}>
-                  Add Calorie Sources to Planner
-                </h3>
-                <p style={{ color: 'var(--oni-text-muted)', fontSize: '0.9rem', margin: 0, marginTop: '0.25rem' }}>
-                  Select crop or critter calorie sources to add to your diet distribution planner. Once added, you can adjust their percentages and send them to your live farms or ranches.
-                </p>
-              </div>
+          {activeSlide === 'add' && (() => {
+            const FOOD_ITEM_CALORIES = {
+              mealwood: 600,
+              bristleBlossom: 1600,
+              gristleBerry: 2000,
+              duskCap: 2400,
+              friedMushroom: 2800,
+              sleetWheat: 360,
+              frostBun: 1200,
+              barbecue: 4000,
+              pacuSeafood: 1600,
+              mushBar: 800,
+              mushFry: 1050,
+              liceLoaf: 1700,
+              berrySludge: 4000,
+              surfAndTurf: 6000,
+              pickledMeal: 1800,
+              omelette: 2800,
+              pepperBread: 4000,
+              stuffedBerry: 4000,
+              mushroomWrap: 3000,
+              frostBurger: 6000,
+              grubfruitPreserves: 3200,
+              smokedFish: 1600,
+              veggiePoppers: 2000,
+              tenderBrisket: 4000,
+              deepFriedFish: 2000,
+              deepFriedShellfish: 2400,
+              makiSushi: 3000,
+              nigiriSushi: 4000
+            };
 
-              <div style={{ 
-                display: 'grid', 
-                gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', 
-                gap: '1.25rem',
-                overflowY: 'auto',
-                paddingRight: '0.4rem',
-                flex: 1,
-                maxHeight: '400px'
-              }}>
-                {Object.values(calorieSources).map(src => {
-                  const added = addedToDiet[src.id];
-                  return (
-                    <div 
-                      key={src.id} 
-                      style={{ 
-                        padding: '0.85rem', 
-                        background: 'rgba(0, 0, 0, 0.3)', 
-                        borderRadius: '8px', 
-                        border: added ? `1.5px dashed ${src.color}` : '1.5px solid var(--oni-panel-border)',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'space-between',
-                        gap: '0.6rem',
+            const dlcLabels = {
+              'EXPANSION1': 'Spaced Out!',
+              'DLC2': 'Bionic',
+              'DLC4': 'Smoker',
+              'DLC5': 'Aquatic'
+            };
+
+            const dlcColors = {
+              'EXPANSION1': 'var(--oni-accent-oxygen)',
+              'DLC2': '#FFAE19',
+              'DLC4': '#D475FF',
+              'DLC5': '#3BE8B0'
+            };
+
+            const efficiencyOrder = { 'Very Low': 0, 'Low': 1, 'Medium': 2, 'High': 3, 'Very High': 4, 'Extreme': 5 };
+
+            const handleToggleDietSource = (srcId) => {
+              const added = addedToDiet[srcId];
+              if (!added) {
+                setAddedToDiet(prev => ({ ...prev, [srcId]: true }));
+              } else {
+                setAddedToDiet(prev => ({ ...prev, [srcId]: false }));
+                setMixPercentages(prev => ({ ...prev, [srcId]: 0 }));
+                handleRemoveFromFarms(srcId);
+              }
+            };
+
+            const filteredSources = Object.values(calorieSources).filter(src => {
+              const matchesSearch = !addSearchText || 
+                src.name.toLowerCase().includes(addSearchText.toLowerCase()) || 
+                src.station.toLowerCase().includes(addSearchText.toLowerCase());
+
+              const matchesDlc = addFilterDlc === 'all' || 
+                (addFilterDlc === 'base' ? src.dlc === null : src.dlc !== null);
+
+              return matchesSearch && matchesDlc;
+            });
+
+            const sortedSources = [...filteredSources].sort((a, b) => {
+              let comparison = 0;
+              
+              if (addSortBy === 'name') {
+                comparison = a.name.localeCompare(b.name);
+              } else if (addSortBy === 'kcal') {
+                const kcalA = FOOD_ITEM_CALORIES[a.id] || a.calCycle;
+                const kcalB = FOOD_ITEM_CALORIES[b.id] || b.calCycle;
+                comparison = kcalA - kcalB;
+              } else if (addSortBy === 'efficiency') {
+                const effA = efficiencyOrder[a.efficiency] ?? 0;
+                const effB = efficiencyOrder[b.efficiency] ?? 0;
+                comparison = effA - effB;
+              } else {
+                // type sorting: sort by type first, then by name
+                const typeOrder = { 'crop': 0, 'critter': 1, 'prepared': 2 };
+                const typeA = typeOrder[a.type] ?? 99;
+                const typeB = typeOrder[b.type] ?? 99;
+                if (typeA !== typeB) {
+                  comparison = typeA - typeB;
+                } else {
+                  comparison = a.name.localeCompare(b.name);
+                }
+              }
+
+              return addSortDirection === 'asc' ? comparison : -comparison;
+            });
+
+            const renderFoodRow = (src) => {
+              const added = addedToDiet[src.id];
+              const itemKcal = FOOD_ITEM_CALORIES[src.id] || src.calCycle;
+
+              return (
+                <div
+                  key={src.id}
+                  onClick={() => handleToggleDietSource(src.id)}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.5rem',
+                    padding: '0.35rem 0.5rem',
+                    background: added ? `${src.color}12` : 'rgba(0,0,0,0.2)',
+                    borderRadius: '5px',
+                    border: added ? `1px solid ${src.color}50` : '1px solid rgba(255,255,255,0.05)',
+                    transition: 'all 0.15s ease',
+                    cursor: 'pointer',
+                    userSelect: 'none'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = added ? `${src.color}22` : 'rgba(255,255,255,0.08)';
+                    e.currentTarget.style.borderColor = added ? `${src.color}80` : 'rgba(255,255,255,0.15)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = added ? `${src.color}12` : 'rgba(0,0,0,0.2)';
+                    e.currentTarget.style.borderColor = added ? `${src.color}50` : '1px solid rgba(255,255,255,0.05)';
+                  }}
+                >
+                  {/* Icon */}
+                  <img
+                    src={getImageUrl(src.id)}
+                    alt={src.name}
+                    style={{ width: '22px', height: '22px', objectFit: 'contain', flexShrink: 0 }}
+                    onError={(e) => { e.currentTarget.src = '/data/images/Creature.png'; }}
+                  />
+
+                  {/* Name + badges */}
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ fontSize: '0.8rem', fontWeight: 'bold', color: added ? src.color : 'var(--oni-text-primary)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                      {src.name}
+                    </div>
+                    <div style={{ display: 'flex', gap: '0.2rem', marginTop: '0.1rem', flexWrap: 'wrap', alignItems: 'center' }}>
+                      <span style={{ fontSize: '0.55rem', padding: '0.05rem 0.2rem', borderRadius: '2px', background: 'rgba(255,255,255,0.06)', color: 'var(--oni-text-muted)', fontFamily: 'var(--oni-font-mono)' }}>{src.station}</span>
+                      <span style={{ fontSize: '0.55rem', padding: '0.05rem 0.2rem', borderRadius: '2px', background: `${src.color}18`, color: src.color, fontFamily: 'var(--oni-font-mono)' }}>{src.efficiency}</span>
+                      {src.dlc && (
+                        <span style={{
+                          fontSize: '0.55rem',
+                          padding: '0.05rem 0.2rem',
+                          borderRadius: '2px',
+                          background: `${dlcColors[src.dlc] || '#888888'}18`,
+                          color: dlcColors[src.dlc] || '#888888',
+                          border: `1px solid ${dlcColors[src.dlc] || '#888888'}33`,
+                          fontFamily: 'var(--oni-font-mono)',
+                          fontWeight: 'bold'
+                        }}>
+                          {dlcLabels[src.dlc] || src.dlc}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* kcal and kcal/c */}
+                  <div style={{ textAlign: 'right', flexShrink: 0, fontFamily: 'var(--oni-font-mono)', fontSize: '0.7rem', marginRight: '0.25rem', display: 'flex', flexDirection: 'column', gap: '0.05rem' }}>
+                    <div style={{ fontWeight: 'bold', color: 'var(--oni-accent-calorie)' }}>
+                      {itemKcal.toLocaleString()} <span style={{ fontSize: '0.55rem', fontWeight: 'normal', color: 'var(--oni-text-muted)' }}>kcal</span>
+                    </div>
+                    <div style={{ fontSize: '0.55rem', color: 'var(--oni-text-muted)' }}>
+                      {src.calCycle.toFixed(0)} kcal/c
+                    </div>
+                  </div>
+
+                  {/* Add / Added button */}
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleToggleDietSource(src.id);
+                    }}
+                    style={{
+                      padding: '0.2rem 0.45rem',
+                      fontSize: '0.65rem',
+                      borderRadius: '3px',
+                      border: added ? `1px solid ${src.color}50` : '1px solid rgba(168,255,140,0.3)',
+                      background: added ? `${src.color}18` : 'rgba(168, 255, 140, 0.1)',
+                      color: added ? src.color : 'var(--oni-accent-success)',
+                      cursor: 'pointer',
+                      fontFamily: 'var(--oni-font-mono)',
+                      fontWeight: 'bold',
+                      transition: 'all 0.15s ease',
+                      flexShrink: 0,
+                      whiteSpace: 'nowrap'
+                    }}
+                  >
+                    {added ? '✓ Added' : '+ Add'}
+                  </button>
+                </div>
+              );
+            };
+
+            return (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', height: '100%' }}>
+                {/* Header */}
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid var(--oni-grid-line-thick)', paddingBottom: '0.5rem' }}>
+                  <h3 style={{ color: 'var(--oni-accent-oxygen)', fontSize: '1rem', display: 'flex', alignItems: 'center', gap: '0.4rem', margin: 0, fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold' }}>
+                    Add Calorie Sources
+                  </h3>
+                  <span style={{ fontSize: '0.7rem', color: 'var(--oni-text-muted)', fontFamily: 'var(--oni-font-mono)' }}>
+                    {Object.values(calorieSources).filter(s => addedToDiet[s.id]).length} / {Object.values(calorieSources).length} added
+                  </span>
+                </div>
+
+                {/* Filter and Search Controls */}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', background: 'rgba(0, 0, 0, 0.25)', padding: '0.6rem', borderRadius: '6px', border: '1px solid var(--oni-panel-border)' }}>
+                  {/* Search Text */}
+                  <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
+                    <input
+                      type="text"
+                      value={addSearchText}
+                      onChange={(e) => setAddSearchText(e.target.value)}
+                      placeholder="Filter foods..."
+                      style={{
+                        width: '100%',
+                        background: 'rgba(0, 0, 0, 0.5)',
+                        border: '1px solid var(--oni-panel-border)',
+                        color: 'var(--oni-text-primary)',
+                        padding: '0.35rem 0.5rem',
+                        paddingRight: '1.5rem',
+                        borderRadius: '4px',
+                        fontSize: '0.75rem',
+                        fontFamily: 'var(--oni-font-main)',
+                        outline: 'none',
                         transition: 'all 0.15s ease'
                       }}
-                    >
-                      <div style={{ display: 'flex', gap: '0.6rem', alignItems: 'flex-start' }}>
-                        <div style={{
-                          width: '40px',
-                          height: '40px',
-                          borderRadius: '6px',
-                          background: 'rgba(0,0,0,0.4)',
-                          border: `1.5px solid ${src.color}`,
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          padding: '4px',
-                          flexShrink: 0
-                        }}>
-                          <img 
-                            src={getImageUrl(src.id)} 
-                            alt={src.name} 
-                            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
-                            onError={(e) => { e.currentTarget.src = '/data/images/Creature.png'; }}
-                          />
-                        </div>
-                        <div>
-                          <div style={{ fontWeight: 'bold', fontSize: '0.85rem', color: 'var(--oni-text-primary)' }}>{src.name}</div>
-                          <div style={{ display: 'flex', gap: '0.25rem', marginTop: '0.15rem' }}>
-                            <span style={{ fontSize: '0.65rem', padding: '0.05rem 0.25rem', borderRadius: '2px', background: 'rgba(255,255,255,0.06)', color: 'var(--oni-text-muted)', fontFamily: 'var(--oni-font-mono)' }}>{src.tier}</span>
-                            <span style={{ fontSize: '0.65rem', padding: '0.05rem 0.25rem', borderRadius: '2px', background: `${src.color}15`, color: src.color, fontFamily: 'var(--oni-font-mono)' }}>{src.efficiency} Eff.</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <p style={{ color: 'var(--oni-text-muted)', fontSize: '0.75rem', margin: 0, lineHeight: '1.3', fontStyle: 'italic' }}>
-                        {src.description}
-                      </p>
-
+                      onFocus={(e) => {
+                        e.target.style.borderColor = 'var(--oni-accent-oxygen)';
+                        e.target.style.boxShadow = '0 0 8px rgba(127, 191, 255, 0.4)';
+                      }}
+                      onBlur={(e) => {
+                        e.target.style.borderColor = 'var(--oni-panel-border)';
+                        e.target.style.boxShadow = 'none';
+                      }}
+                    />
+                    {addSearchText && (
                       <button
-                        onClick={() => {
-                          if (!added) {
-                            setAddedToDiet(prev => ({ ...prev, [src.id]: true }));
-                          }
-                        }}
-                        disabled={added}
+                        onClick={() => setAddSearchText('')}
                         style={{
-                          width: '100%',
-                          padding: '0.35rem',
-                          fontSize: '0.7rem',
-                          borderRadius: '4px',
-                          border: added ? '1px solid rgba(255,255,255,0.15)' : '1px solid var(--oni-panel-border)',
-                          background: added ? 'rgba(255, 255, 255, 0.05)' : 'rgba(168, 255, 140, 0.12)',
-                          color: added ? 'var(--oni-text-muted)' : 'var(--oni-accent-success)',
-                          cursor: added ? 'default' : 'pointer',
-                          fontFamily: 'var(--oni-font-mono)',
-                          fontWeight: 'bold',
-                          transition: 'all 0.15s ease',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          gap: '0.25rem'
+                          position: 'absolute',
+                          right: '0.4rem',
+                          background: 'none',
+                          border: 'none',
+                          color: 'var(--oni-text-muted)',
+                          cursor: 'pointer',
+                          fontSize: '0.8rem',
+                          padding: 0
                         }}
                       >
-                        {added ? '✓ Added to Planner' : '✚ Add to Diet Planner'}
+                        ✕
+                      </button>
+                    )}
+                  </div>
+
+                  {/* Filter & Sort selectors */}
+                  <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
+                    {/* DLC Filter buttons */}
+                    <div style={{ display: 'flex', background: 'rgba(0,0,0,0.3)', borderRadius: '4px', padding: '0.15rem', border: '1px solid rgba(255,255,255,0.05)', flex: 1, minWidth: '120px' }}>
+                      {[
+                        { id: 'all', label: 'All' },
+                        { id: 'base', label: 'Base' },
+                        { id: 'dlc', label: 'DLCs' }
+                      ].map(opt => {
+                        const isActive = addFilterDlc === opt.id;
+                        return (
+                          <button
+                            key={opt.id}
+                            onClick={() => setAddFilterDlc(opt.id)}
+                            style={{
+                              flex: 1,
+                              background: isActive ? 'rgba(127, 191, 255, 0.15)' : 'transparent',
+                              border: 'none',
+                              borderRadius: '3px',
+                              color: isActive ? 'var(--oni-accent-oxygen)' : 'var(--oni-text-muted)',
+                              padding: '0.25rem 0.4rem',
+                              fontSize: '0.65rem',
+                              fontWeight: isActive ? 'bold' : 'normal',
+                              fontFamily: 'var(--oni-font-mono)',
+                              cursor: 'pointer',
+                              transition: 'all 0.15s ease',
+                              whiteSpace: 'nowrap'
+                            }}
+                          >
+                            {opt.label}
+                          </button>
+                        );
+                      })}
+                    </div>
+
+                    {/* Sort Dropdown + Direction */}
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', flexShrink: 0 }}>
+                      <span style={{ fontSize: '0.6rem', color: 'var(--oni-text-muted)', fontFamily: 'var(--oni-font-mono)' }}>Sort:</span>
+                      <select
+                        value={addSortBy}
+                        onChange={(e) => setAddSortBy(e.target.value)}
+                        style={{
+                          background: 'rgba(0,0,0,0.4)',
+                          border: '1px solid var(--oni-panel-border)',
+                          color: 'var(--oni-text-primary)',
+                          padding: '0.2rem 0.4rem',
+                          borderRadius: '4px',
+                          fontSize: '0.65rem',
+                          fontFamily: 'var(--oni-font-mono)',
+                          cursor: 'pointer',
+                          outline: 'none'
+                        }}
+                      >
+                        <option value="type">Type Group</option>
+                        <option value="name">Name</option>
+                        <option value="kcal">Kcal Value</option>
+                        <option value="efficiency">Efficiency</option>
+                      </select>
+
+                      <button
+                        onClick={() => setAddSortDirection(prev => prev === 'asc' ? 'desc' : 'asc')}
+                        style={{
+                          background: 'rgba(0,0,0,0.4)',
+                          border: '1px solid var(--oni-panel-border)',
+                          color: 'var(--oni-accent-oxygen)',
+                          padding: '0.2rem 0.45rem',
+                          borderRadius: '4px',
+                          fontSize: '0.65rem',
+                          fontFamily: 'var(--oni-font-mono)',
+                          cursor: 'pointer',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          transition: 'all 0.15s ease',
+                          outline: 'none'
+                        }}
+                        title={addSortDirection === 'asc' ? 'Sort Ascending' : 'Sort Descending'}
+                      >
+                        {addSortDirection === 'asc' ? '▲' : '▼'}
                       </button>
                     </div>
-                  );
-                })}
+                  </div>
+                </div>
+
+                {/* Calorie sources list */}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', overflowY: 'auto', flex: 1, paddingRight: '0.2rem' }}>
+                  {sortedSources.length === 0 ? (
+                    <div style={{ textAlign: 'center', padding: '2rem 1rem', color: 'var(--oni-text-muted)', fontSize: '0.75rem', fontStyle: 'italic', background: 'rgba(0,0,0,0.15)', borderRadius: '6px', border: '1px dashed var(--oni-panel-border)' }}>
+                      No food sources match the filter criteria.
+                    </div>
+                  ) : addSortBy === 'type' ? (
+                    // Grouped display
+                    ['crop', 'critter', 'prepared'].map(groupType => {
+                      const groupSources = sortedSources.filter(s => s.type === groupType);
+                      if (groupSources.length === 0) return null;
+                      const groupLabel = groupType === 'crop' ? '🌾 Crops & Processed' : groupType === 'critter' ? '🐾 Critter Ranching' : '⚗️ Prepared Foods';
+                      return (
+                        <div key={groupType} style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+                          <div style={{ fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--oni-text-muted)', fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold', padding: '0.1rem 0', borderBottom: '1px solid rgba(255,255,255,0.04)' }}>
+                            {groupLabel}
+                          </div>
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
+                            {groupSources.map(src => renderFoodRow(src))}
+                          </div>
+                        </div>
+                      );
+                    })
+                  ) : (
+                    // Flat sorted list display
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
+                      {sortedSources.map(src => renderFoodRow(src))}
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
-          )}
+            );
+          })()}
 
         </div>
 
