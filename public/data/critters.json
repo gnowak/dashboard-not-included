@@ -3,6 +3,14 @@
     "id": "SweepBot",
     "name": "Sweepy",
     "prefabId": "SweepBot",
+    "tags": [
+      "Creature",
+      "Robot",
+      "OrnamentDisplay",
+      "HideFromSpawnTool",
+      "Walker",
+      "CreatureBrain"
+    ],
     "isRanchable": false,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -19,6 +27,12 @@
     "id": "FetchDrone",
     "name": "Flydo",
     "prefabId": "FetchDrone",
+    "tags": [
+      "HasDoorPermissions",
+      "Experimental",
+      "DupeBrain",
+      "Robot"
+    ],
     "isRanchable": false,
     "requiredDlcIds": [
       "DLC3_ID"
@@ -34,6 +48,13 @@
     "id": "Puft",
     "name": "Puft",
     "prefabId": "Puft",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -61,6 +82,13 @@
     "id": "Oilfloater",
     "name": "Slickster",
     "prefabId": "Oilfloater",
+    "tags": [
+      "Hoverer",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -88,6 +116,12 @@
     "id": "MorbRover",
     "name": "Biobot",
     "prefabId": "MorbRover",
+    "tags": [
+      "HasDoorPermissions",
+      "Experimental",
+      "DupeBrain",
+      "Robot"
+    ],
     "isRanchable": false,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -101,6 +135,13 @@
     "id": "Moo",
     "name": "Gassy Moo",
     "prefabId": "Moo",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -138,6 +179,14 @@
     "id": "Mole",
     "name": "Shove Vole",
     "prefabId": "Mole",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "Digger",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -185,6 +234,14 @@
     "id": "LightBug",
     "name": "Shine Bug",
     "prefabId": "LightBug",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature",
+      "LightSource"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -216,6 +273,13 @@
     "id": "Glom",
     "name": "Morb",
     "prefabId": "Glom",
+    "tags": [
+      "Walker",
+      "OriginalCreature",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -232,6 +296,13 @@
     "id": "Chameleon",
     "name": "Dartle",
     "prefabId": "Chameleon",
+    "tags": [
+      "Walker",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -261,6 +332,13 @@
     "id": "Bee",
     "name": "Beeta",
     "prefabId": "Bee",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Flyer",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -279,6 +357,13 @@
     "id": "Drecko",
     "name": "Drecko",
     "prefabId": "Drecko",
+    "tags": [
+      "Walker",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -308,6 +393,12 @@
     "id": "ScoutRover",
     "name": "Rover",
     "prefabId": "ScoutRover",
+    "tags": [
+      "HasDoorPermissions",
+      "Experimental",
+      "DupeBrain",
+      "Robot"
+    ],
     "isRanchable": false,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -323,6 +414,13 @@
     "id": "Seal",
     "name": "Spigot Seal",
     "prefabId": "Seal",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC2_ID"
@@ -362,6 +460,13 @@
     "id": "WoodDeer",
     "name": "Flox",
     "prefabId": "WoodDeer",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC2_ID"
@@ -421,6 +526,14 @@
     "id": "Staterpillar",
     "name": "Plug Slug",
     "prefabId": "Staterpillar",
+    "tags": [
+      "Walker",
+      "Amphibious",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -650,6 +763,13 @@
     "id": "Squirrel",
     "name": "Pip",
     "prefabId": "Squirrel",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -680,6 +800,15 @@
     "id": "PrehistoricPacu",
     "name": "Jawbo",
     "prefabId": "PrehistoricPacu",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "Creature",
+      "CreatureBrain",
+      "BagableCreature",
+      "OriginalCreature",
+      "LargeCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -723,6 +852,14 @@
     "id": "PufferFish",
     "name": "Blowter",
     "prefabId": "PufferFish",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -762,6 +899,14 @@
     "id": "Pacu",
     "name": "Pacu",
     "prefabId": "Pacu",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -1069,6 +1214,13 @@
     "id": "Hatch",
     "name": "Hatch",
     "prefabId": "Hatch",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -1774,6 +1926,14 @@
     "id": "Raptor",
     "name": "Rhex",
     "prefabId": "Raptor",
+    "tags": [
+      "Creature",
+      "Walker",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature",
+      "LargeCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -1863,6 +2023,14 @@
     "id": "ParrotFish",
     "name": "Beakon",
     "prefabId": "ParrotFish",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -1902,6 +2070,14 @@
     "id": "IceBelly",
     "name": "Bammoth",
     "prefabId": "IceBelly",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "OriginalCreature",
+      "LargeCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC2_ID"
@@ -1971,6 +2147,13 @@
     "id": "DivergentWorm",
     "name": "Grubgrub",
     "prefabId": "DivergentWorm",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "Pollinator"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -2010,6 +2193,14 @@
     "id": "SeaFairy",
     "name": "Kelpole",
     "prefabId": "SeaFairy",
+    "tags": [
+      "Creature",
+      "SwimmingCreature",
+      "Swimmer",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -2028,6 +2219,14 @@
     "id": "Stego",
     "name": "Lumb",
     "prefabId": "Stego",
+    "tags": [
+      "Creature",
+      "Walker",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature",
+      "LargeCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -2077,6 +2276,14 @@
     "id": "Butterfly",
     "name": "Mimika",
     "prefabId": "Butterfly",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature",
+      "Pollinator"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -2095,6 +2302,15 @@
     "id": "Crab",
     "name": "Pokeshell",
     "prefabId": "Crab",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CrabFriend",
+      "CreatureBrain",
+      "Amphibious",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -2123,6 +2339,15 @@
     "id": "Squid",
     "name": "Glo Squid",
     "prefabId": "Squid",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "SquidFriend",
+      "Creature",
+      "CreatureBrain",
+      "BagableCreature",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -2152,6 +2377,14 @@
     "id": "DivergentBeetle",
     "name": "Sweetle",
     "prefabId": "DivergentBeetle",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "OriginalCreature",
+      "Pollinator"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -2181,6 +2414,13 @@
     "id": "Mosquito",
     "name": "Gnit",
     "prefabId": "Mosquito",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -2199,6 +2439,14 @@
     "id": "SeaHorse",
     "name": "Seaquine",
     "prefabId": "SeaHorse",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -2228,6 +2476,15 @@
     "id": "SeaTurtle",
     "name": "Orehull",
     "prefabId": "SeaTurtle",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "Creature",
+      "CreatureBrain",
+      "BagableCreature",
+      "OriginalCreature",
+      "LargeCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -2267,6 +2524,13 @@
     "id": "Snail",
     "name": "Slogo",
     "prefabId": "Snail",
+    "tags": [
+      "Amphibious",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -2296,6 +2560,12 @@
     "id": "HatchHard",
     "name": "Stone Hatch",
     "prefabId": "HatchHard",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -2417,6 +2687,12 @@
     "id": "GlassDeer",
     "name": "Shatter Flox",
     "prefabId": "GlassDeer",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC2_ID"
@@ -2486,6 +2762,13 @@
     "id": "AlgaeStego",
     "name": "Blum Lumb",
     "prefabId": "AlgaeStego",
+    "tags": [
+      "Creature",
+      "Walker",
+      "BagableCreature",
+      "CreatureBrain",
+      "LargeCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -2535,6 +2818,13 @@
     "id": "MoleDelicacy",
     "name": "Delecta Vole",
     "prefabId": "MoleDelicacy",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "Digger"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -2582,6 +2872,12 @@
     "id": "LightBugPurple",
     "name": "Royal Bug",
     "prefabId": "LightBugPurple",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -2614,6 +2910,12 @@
     "id": "LightBugPink",
     "name": "Coral Bug",
     "prefabId": "LightBugPink",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -2647,6 +2949,12 @@
     "id": "LightBugOrange",
     "name": "Sun Bug",
     "prefabId": "LightBugOrange",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -2678,6 +2986,13 @@
     "id": "GoldBelly",
     "name": "Regal Bammoth",
     "prefabId": "GoldBelly",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "LargeCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC2_ID"
@@ -2747,6 +3062,12 @@
     "id": "LightBugCrystal",
     "name": "Radiant Bug",
     "prefabId": "LightBugCrystal",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -2775,6 +3096,12 @@
     "id": "LightBugBlue",
     "name": "Azure Bug",
     "prefabId": "LightBugBlue",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -2805,6 +3132,12 @@
     "id": "DreckoPlastic",
     "name": "Glossy Drecko",
     "prefabId": "DreckoPlastic",
+    "tags": [
+      "Walker",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -2833,6 +3166,14 @@
     "id": "CrabWood",
     "name": "Oakshell",
     "prefabId": "CrabWood",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CrabFriend",
+      "CreatureBrain",
+      "Amphibious"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -2862,6 +3203,13 @@
     "id": "DieselMoo",
     "name": "Husky Moo",
     "prefabId": "DieselMoo",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -2899,6 +3247,13 @@
     "id": "DivergentBeetleBaby",
     "name": "Sweetle Larva",
     "prefabId": "DivergentBeetleBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -2928,6 +3283,12 @@
     "id": "HatchVeggie",
     "name": "Sage Hatch",
     "prefabId": "HatchVeggie",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -3631,6 +3992,12 @@
     "id": "HatchMetal",
     "name": "Smooth Hatch",
     "prefabId": "HatchMetal",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -3738,6 +4105,14 @@
     "id": "CrabFreshWater",
     "name": "Sanishell",
     "prefabId": "CrabFreshWater",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CrabFriend",
+      "CreatureBrain",
+      "Amphibious"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -3767,6 +4142,12 @@
     "id": "LightBugBlack",
     "name": "Abyss Bug",
     "prefabId": "LightBugBlack",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -3798,6 +4179,12 @@
     "id": "PuftBleachstone",
     "name": "Squeaky Puft",
     "prefabId": "PuftBleachstone",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -3825,6 +4212,12 @@
     "id": "SquirrelHug",
     "name": "Cuddle Pip",
     "prefabId": "SquirrelHug",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -3855,6 +4248,13 @@
     "id": "PacuCleaner",
     "name": "Gulp Fish",
     "prefabId": "PacuCleaner",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -4162,6 +4562,13 @@
     "id": "PacuTropical",
     "name": "Tropical Pacu",
     "prefabId": "PacuTropical",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -4469,6 +4876,12 @@
     "id": "PuftOxylite",
     "name": "Dense Puft",
     "prefabId": "PuftOxylite",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -4496,6 +4909,12 @@
     "id": "OilfloaterHighTemp",
     "name": "Molten Slickster",
     "prefabId": "OilfloaterHighTemp",
+    "tags": [
+      "Hoverer",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -4523,6 +4942,12 @@
     "id": "SnailIron",
     "name": "Gildgo",
     "prefabId": "SnailIron",
+    "tags": [
+      "Amphibious",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -4552,6 +4977,13 @@
     "id": "StaterpillarLiquid",
     "name": "Sponge Slug",
     "prefabId": "StaterpillarLiquid",
+    "tags": [
+      "Walker",
+      "Amphibious",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -4781,6 +5213,12 @@
     "id": "PuftAlpha",
     "name": "Puft Prince",
     "prefabId": "PuftAlpha",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -4828,6 +5266,12 @@
     "id": "OilfloaterDecor",
     "name": "Longhair Slickster",
     "prefabId": "OilfloaterDecor",
+    "tags": [
+      "Hoverer",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -4855,6 +5299,13 @@
     "id": "StaterpillarGas",
     "name": "Smog Slug",
     "prefabId": "StaterpillarGas",
+    "tags": [
+      "Walker",
+      "Amphibious",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -5084,6 +5535,13 @@
     "id": "RaptorBaby",
     "name": "Rhex Baby",
     "prefabId": "RaptorBaby",
+    "tags": [
+      "Creature",
+      "Walker",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -5173,6 +5631,13 @@
     "id": "DreckoBaby",
     "name": "Drecklet",
     "prefabId": "DreckoBaby",
+    "tags": [
+      "Walker",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -5202,6 +5667,14 @@
     "id": "SeaHorseBaby",
     "name": "Seaquine Fry",
     "prefabId": "SeaHorseBaby",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -5231,6 +5704,12 @@
     "id": "DivergentWormBaby",
     "name": "Grubgrub Wormling",
     "prefabId": "DivergentWormBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -5270,6 +5749,14 @@
     "id": "SeaTurtleBaby",
     "name": "Orehull Spawn",
     "prefabId": "SeaTurtleBaby",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "Creature",
+      "CreatureBrain",
+      "BagableCreature",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -5309,6 +5796,13 @@
     "id": "SealBaby",
     "name": "Spigot Pup",
     "prefabId": "SealBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC2_ID"
@@ -5348,6 +5842,13 @@
     "id": "OilfloaterBaby",
     "name": "Slickster Larva",
     "prefabId": "OilfloaterBaby",
+    "tags": [
+      "Hoverer",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -5375,6 +5876,14 @@
     "id": "SquidBaby",
     "name": "Glo Squid Larva",
     "prefabId": "SquidBaby",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "SquidFriend",
+      "Creature",
+      "CreatureBrain",
+      "BagableCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -5404,6 +5913,13 @@
     "id": "SnailIronBaby",
     "name": "Gildgo Baby",
     "prefabId": "SnailIronBaby",
+    "tags": [
+      "Amphibious",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -5422,6 +5938,14 @@
     "id": "MosquitoBaby",
     "name": "Gnit Larva",
     "prefabId": "MosquitoBaby",
+    "tags": [
+      "Creature",
+      "SwimmingCreature",
+      "Swimmer",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -5440,6 +5964,15 @@
     "id": "CrabBaby",
     "name": "Pokeshell Spawn",
     "prefabId": "CrabBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CrabFriend",
+      "CreatureBrain",
+      "Amphibious",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -5468,6 +6001,13 @@
     "id": "SquirrelBaby",
     "name": "Pipsqueak",
     "prefabId": "SquirrelBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -5498,6 +6038,13 @@
     "id": "ChameleonBaby",
     "name": "Dartlet",
     "prefabId": "ChameleonBaby",
+    "tags": [
+      "Walker",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -5527,6 +6074,13 @@
     "id": "BeeBaby",
     "name": "Beetiny",
     "prefabId": "BeeBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature",
+      "Walker"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -5545,6 +6099,14 @@
     "id": "StaterpillarBaby",
     "name": "Plug Sluglet",
     "prefabId": "StaterpillarBaby",
+    "tags": [
+      "Walker",
+      "Amphibious",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -5774,6 +6336,13 @@
     "id": "StegoBaby",
     "name": "Lumblet",
     "prefabId": "StegoBaby",
+    "tags": [
+      "Creature",
+      "Walker",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -5823,6 +6392,13 @@
     "id": "SnailBaby",
     "name": "Slogo Baby",
     "prefabId": "SnailBaby",
+    "tags": [
+      "Amphibious",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -5841,6 +6417,13 @@
     "id": "HatchBaby",
     "name": "Hatchling",
     "prefabId": "HatchBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -6546,6 +7129,13 @@
     "id": "PuftBaby",
     "name": "Puftlet",
     "prefabId": "PuftBaby",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -6573,6 +7163,13 @@
     "id": "WoodDeerBaby",
     "name": "Flox Fawn",
     "prefabId": "WoodDeerBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC2_ID"
@@ -6632,6 +7229,14 @@
     "id": "LightBugBaby",
     "name": "Shine Nymph",
     "prefabId": "LightBugBaby",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature",
+      "LightSource"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -6663,6 +7268,14 @@
     "id": "ParrotFishBaby",
     "name": "Beakon Fry",
     "prefabId": "ParrotFishBaby",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -6702,6 +7315,13 @@
     "id": "IceBellyBaby",
     "name": "Bammini",
     "prefabId": "IceBellyBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC2_ID"
@@ -6771,6 +7391,14 @@
     "id": "PufferFishBaby",
     "name": "Blowter Fry",
     "prefabId": "PufferFishBaby",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -6810,6 +7438,14 @@
     "id": "PrehistoricPacuBaby",
     "name": "Jawbo Fry",
     "prefabId": "PrehistoricPacuBaby",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "Creature",
+      "CreatureBrain",
+      "BagableCreature",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -6853,6 +7489,14 @@
     "id": "MoleBaby",
     "name": "Vole Pup",
     "prefabId": "MoleBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "Digger",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -6900,6 +7544,14 @@
     "id": "PacuBaby",
     "name": "Pacu Fry",
     "prefabId": "PacuBaby",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -7207,6 +7859,12 @@
     "id": "AlgaeStegoBaby",
     "name": "Blumblet",
     "prefabId": "AlgaeStegoBaby",
+    "tags": [
+      "Creature",
+      "Walker",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -7256,6 +7914,13 @@
     "id": "StaterpillarGasBaby",
     "name": "Smog Sluglet",
     "prefabId": "StaterpillarGasBaby",
+    "tags": [
+      "Walker",
+      "Amphibious",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -7485,6 +8150,12 @@
     "id": "LightBugPurpleBaby",
     "name": "Royal Nymph",
     "prefabId": "LightBugPurpleBaby",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -7517,6 +8188,13 @@
     "id": "PacuCleanerBaby",
     "name": "Gulp Fry",
     "prefabId": "PacuCleanerBaby",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -7824,6 +8502,12 @@
     "id": "OilfloaterDecorBaby",
     "name": "Longhair Larva",
     "prefabId": "OilfloaterDecorBaby",
+    "tags": [
+      "Hoverer",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -7851,6 +8535,13 @@
     "id": "StaterpillarLiquidBaby",
     "name": "Sponge Sluglet",
     "prefabId": "StaterpillarLiquidBaby",
+    "tags": [
+      "Walker",
+      "Amphibious",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -8080,6 +8771,12 @@
     "id": "OilfloaterHighTempBaby",
     "name": "Molten Larva",
     "prefabId": "OilfloaterHighTempBaby",
+    "tags": [
+      "Hoverer",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -8107,6 +8804,12 @@
     "id": "SquirrelHugBaby",
     "name": "Cuddle Pipsqueak",
     "prefabId": "SquirrelHugBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -8137,6 +8840,12 @@
     "id": "LightBugPinkBaby",
     "name": "Coral Nymph",
     "prefabId": "LightBugPinkBaby",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -8170,6 +8879,12 @@
     "id": "LightBugOrangeBaby",
     "name": "Sun Nymph",
     "prefabId": "LightBugOrangeBaby",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -8201,6 +8916,13 @@
     "id": "MoleDelicacyBaby",
     "name": "Delecta Vole Pup",
     "prefabId": "MoleDelicacyBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "Digger"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -8248,6 +8970,14 @@
     "id": "CrabFreshWaterBaby",
     "name": "Sanishell Spawn",
     "prefabId": "CrabFreshWaterBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CrabFriend",
+      "CreatureBrain",
+      "Amphibious"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -8277,6 +9007,12 @@
     "id": "PuftAlphaBaby",
     "name": "Puftlet Prince",
     "prefabId": "PuftAlphaBaby",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -8324,6 +9060,14 @@
     "id": "CrabWoodBaby",
     "name": "Oakshell Spawn",
     "prefabId": "CrabWoodBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CrabFriend",
+      "CreatureBrain",
+      "Amphibious"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -8353,6 +9097,12 @@
     "id": "LightBugBlueBaby",
     "name": "Azure Nymph",
     "prefabId": "LightBugBlueBaby",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -8383,6 +9133,13 @@
     "id": "PacuTropicalBaby",
     "name": "Tropical Fry",
     "prefabId": "PacuTropicalBaby",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -8690,6 +9447,12 @@
     "id": "LightBugBlackBaby",
     "name": "Abyss Nymph",
     "prefabId": "LightBugBlackBaby",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -8721,6 +9484,12 @@
     "id": "HatchVeggieBaby",
     "name": "Sage Hatchling",
     "prefabId": "HatchVeggieBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -9424,6 +10193,12 @@
     "id": "DreckoPlasticBaby",
     "name": "Glossy Drecklet",
     "prefabId": "DreckoPlasticBaby",
+    "tags": [
+      "Walker",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -9452,6 +10227,12 @@
     "id": "PuftOxyliteBaby",
     "name": "Dense Puftlet",
     "prefabId": "PuftOxyliteBaby",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -9479,6 +10260,12 @@
     "id": "GlassDeerBaby",
     "name": "Shatter Flox Fawn",
     "prefabId": "GlassDeerBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC2_ID"
@@ -9548,6 +10335,12 @@
     "id": "HatchMetalBaby",
     "name": "Smooth Hatchling",
     "prefabId": "HatchMetalBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -9655,6 +10448,12 @@
     "id": "HatchHardBaby",
     "name": "Stone Hatchling",
     "prefabId": "HatchHardBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -9776,6 +10575,12 @@
     "id": "GoldBellyBaby",
     "name": "Regal Bammini",
     "prefabId": "GoldBellyBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC2_ID"
@@ -9845,6 +10650,12 @@
     "id": "LightBugCrystalBaby",
     "name": "Radiant Nymph",
     "prefabId": "LightBugCrystalBaby",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -9873,6 +10684,12 @@
     "id": "PuftBleachstoneBaby",
     "name": "Squeaky Puftlet",
     "prefabId": "PuftBleachstoneBaby",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -9900,6 +10717,11 @@
     "id": "BeeHive",
     "name": "Beeta Hive",
     "prefabId": "BeeHive",
+    "tags": [
+      "Experimental",
+      "Creature",
+      "CreatureBrain"
+    ],
     "isRanchable": false,
     "requiredDlcIds": [
       "EXPANSION1_ID"

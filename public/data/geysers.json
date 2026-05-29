@@ -3,6 +3,14 @@
     "id": "Geyser",
     "name": "Steam Geyser",
     "prefabId": "Geyser",
+    "tags": [
+      "DeprecatedContent",
+      "Plumbable",
+      "Crushable",
+      "BuildableAny",
+      "Solid",
+      "BuildableRaw"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0xCA627A30",
@@ -33,6 +41,11 @@
     "id": "GeyserGeneric_steam",
     "name": "Cool Steam Vent",
     "prefabId": "GeyserGeneric_steam",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0xCA627A30",
@@ -63,6 +76,11 @@
     "id": "GeyserGeneric_hot_steam",
     "name": "Steam Vent",
     "prefabId": "GeyserGeneric_hot_steam",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0x876FE53E",
@@ -93,6 +111,11 @@
     "id": "GeyserGeneric_hot_water",
     "name": "Water Geyser",
     "prefabId": "GeyserGeneric_hot_water",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0x2A86CCA5",
@@ -123,6 +146,11 @@
     "id": "GeyserGeneric_slush_water",
     "name": "Cool Slush Geyser",
     "prefabId": "GeyserGeneric_slush_water",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0x4C574F29",
@@ -153,6 +181,11 @@
     "id": "GeyserGeneric_filthy_water",
     "name": "Polluted Water Vent",
     "prefabId": "GeyserGeneric_filthy_water",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0xE7593594",
@@ -183,6 +216,11 @@
     "id": "GeyserGeneric_slush_salt_water",
     "name": "Cool Salt Slush Geyser",
     "prefabId": "GeyserGeneric_slush_salt_water",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0x7650909C",
@@ -213,6 +251,11 @@
     "id": "GeyserGeneric_salt_water",
     "name": "Salt Water Geyser",
     "prefabId": "GeyserGeneric_salt_water",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0x2596C7AE",
@@ -243,6 +286,11 @@
     "id": "GeyserGeneric_small_volcano",
     "name": "Minor Volcano",
     "prefabId": "GeyserGeneric_small_volcano",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0xE3E454FA",
@@ -273,6 +321,11 @@
     "id": "GeyserGeneric_big_volcano",
     "name": "Volcano",
     "prefabId": "GeyserGeneric_big_volcano",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0xA115A2F3",
@@ -303,6 +356,11 @@
     "id": "GeyserGeneric_liquid_co2",
     "name": "Carbon Dioxide Geyser",
     "prefabId": "GeyserGeneric_liquid_co2",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0x5856E7C3",
@@ -333,6 +391,11 @@
     "id": "GeyserGeneric_hot_co2",
     "name": "Carbon Dioxide Vent",
     "prefabId": "GeyserGeneric_hot_co2",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0xDB00AC74",
@@ -363,6 +426,11 @@
     "id": "GeyserGeneric_hot_hydrogen",
     "name": "Hydrogen Vent",
     "prefabId": "GeyserGeneric_hot_hydrogen",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0x42F75412",
@@ -393,6 +461,11 @@
     "id": "GeyserGeneric_hot_po2",
     "name": "Hot Polluted Oxygen Vent",
     "prefabId": "GeyserGeneric_hot_po2",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0xE1677601",
@@ -423,6 +496,11 @@
     "id": "GeyserGeneric_slimy_po2",
     "name": "Infectious Polluted Oxygen Vent",
     "prefabId": "GeyserGeneric_slimy_po2",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0x7EDED410",
@@ -453,6 +531,11 @@
     "id": "GeyserGeneric_chlorine_gas",
     "name": "Chlorine Gas Vent",
     "prefabId": "GeyserGeneric_chlorine_gas",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0x58719BD0",
@@ -483,6 +566,11 @@
     "id": "GeyserGeneric_chlorine_gas_cool",
     "name": "Cool Chlorine Gas Vent",
     "prefabId": "GeyserGeneric_chlorine_gas_cool",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0xE1B0F818",
@@ -513,6 +601,11 @@
     "id": "GeyserGeneric_methane",
     "name": "Natural Gas Geyser",
     "prefabId": "GeyserGeneric_methane",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0xCDDBC02C",
@@ -543,6 +636,11 @@
     "id": "GeyserGeneric_molten_copper",
     "name": "Copper Volcano",
     "prefabId": "GeyserGeneric_molten_copper",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0xD68E8BA5",
@@ -573,6 +671,11 @@
     "id": "GeyserGeneric_molten_iron",
     "name": "Iron Volcano",
     "prefabId": "GeyserGeneric_molten_iron",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0xF253114",
@@ -603,6 +706,11 @@
     "id": "GeyserGeneric_molten_gold",
     "name": "Gold Volcano",
     "prefabId": "GeyserGeneric_molten_gold",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0xB09A604C",
@@ -633,6 +741,11 @@
     "id": "GeyserGeneric_molten_aluminum",
     "name": "Aluminum Volcano",
     "prefabId": "GeyserGeneric_molten_aluminum",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": [
       "EXPANSION1_ID"
     ],
@@ -665,6 +778,11 @@
     "id": "GeyserGeneric_molten_tungsten",
     "name": "Tungsten Volcano",
     "prefabId": "GeyserGeneric_molten_tungsten",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": [
       "EXPANSION1_ID"
     ],
@@ -697,6 +815,11 @@
     "id": "GeyserGeneric_molten_niobium",
     "name": "Niobium Volcano",
     "prefabId": "GeyserGeneric_molten_niobium",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": [
       "EXPANSION1_ID"
     ],
@@ -729,6 +852,11 @@
     "id": "GeyserGeneric_molten_cobalt",
     "name": "Cobalt Volcano",
     "prefabId": "GeyserGeneric_molten_cobalt",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": [
       "EXPANSION1_ID"
     ],
@@ -761,6 +889,11 @@
     "id": "GeyserGeneric_oil_drip",
     "name": "Leaky Oil Fissure",
     "prefabId": "GeyserGeneric_oil_drip",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0x80EDB902",
@@ -791,6 +924,11 @@
     "id": "GeyserGeneric_liquid_sulfur",
     "name": "Liquid Sulfur Geyser",
     "prefabId": "GeyserGeneric_liquid_sulfur",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": [
       "EXPANSION1_ID"
     ],
@@ -823,6 +961,11 @@
     "id": "GeyserGeneric_murky_brine",
     "name": "Polluted Brine Vent",
     "prefabId": "GeyserGeneric_murky_brine",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other"
+    ],
     "requiredDlcIds": [
       "DLC5_ID"
     ],
@@ -855,6 +998,14 @@
     "id": "ChlorineGeyser",
     "name": "Chlorine Geyser",
     "prefabId": "ChlorineGeyser",
+    "tags": [
+      "DeprecatedContent",
+      "Plumbable",
+      "Crushable",
+      "BuildableAny",
+      "Solid",
+      "BuildableRaw"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0x58719BD0",
@@ -885,6 +1036,14 @@
     "id": "MethaneGeyser",
     "name": "Natural Gas Geyser",
     "prefabId": "MethaneGeyser",
+    "tags": [
+      "DeprecatedContent",
+      "Plumbable",
+      "Crushable",
+      "BuildableAny",
+      "Solid",
+      "BuildableRaw"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "geyserType": "0xCDDBC02C",
@@ -915,6 +1074,12 @@
     "id": "NiobiumGeyser",
     "name": "Niobium Volcano",
     "prefabId": "NiobiumGeyser",
+    "tags": [
+      "GeyserFeature",
+      "Solid",
+      "Other",
+      "DeprecatedContent"
+    ],
     "requiredDlcIds": [
       "EXPANSION1_ID"
     ],

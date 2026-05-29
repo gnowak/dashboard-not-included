@@ -3,6 +3,10 @@
     "id": "FlyTrapPlant",
     "name": "Lura Plant",
     "prefabId": "FlyTrapPlant",
+    "tags": [
+      "Hanging",
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -38,6 +42,10 @@
     "id": "FilterPlant",
     "name": "Hydrocactus",
     "prefabId": "FilterPlant",
+    "tags": [
+      "Plant",
+      "DeprecatedContent"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -87,6 +95,9 @@
     "id": "FilamentPlant",
     "name": "Petta Pouf",
     "prefabId": "FilamentPlant",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -125,6 +136,9 @@
     "id": "EvilFlower",
     "name": "Sporechid",
     "prefabId": "EvilFlower",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -157,6 +171,7 @@
     "id": "ForestForagePlantPlanted",
     "name": "Hexalent",
     "prefabId": "ForestForagePlantPlanted",
+    "tags": [],
     "isFarmable": false,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -172,6 +187,9 @@
     "id": "Dinofern",
     "name": "Megafrond",
     "prefabId": "Dinofern",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -209,6 +227,10 @@
     "id": "DewDripperPlant",
     "name": "Dew Dripper",
     "prefabId": "DewDripperPlant",
+    "tags": [
+      "Hanging",
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -250,6 +272,9 @@
     "id": "Cylindrica",
     "name": "Bliss Burst",
     "prefabId": "Cylindrica",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -286,6 +311,9 @@
     "id": "CritterTrapPlant",
     "name": "Saturn Critter Trap",
     "prefabId": "CritterTrapPlant",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -327,6 +355,9 @@
     "id": "ColdWheat",
     "name": "Sleet Wheat",
     "prefabId": "ColdWheat",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -376,6 +407,7 @@
     "id": "ColdBreather",
     "name": "Wheezewort",
     "prefabId": "ColdBreather",
+    "tags": [],
     "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -406,6 +438,9 @@
     "id": "DewPalm",
     "name": "Gum Palm",
     "prefabId": "DewPalm",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -447,6 +482,9 @@
     "id": "Clam",
     "name": "Clampum",
     "prefabId": "Clam",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -494,6 +532,12 @@
     "id": "ForestTreeBranch",
     "name": "Arbor Tree",
     "prefabId": "ForestTreeBranch",
+    "tags": [
+      "HideFromSpawnTool",
+      "HideFromCodex",
+      "PlantBranch",
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -527,6 +571,9 @@
     "id": "GardenDecorPlant",
     "name": "Ring Rosebush",
     "prefabId": "GardenDecorPlant",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -563,6 +610,10 @@
     "id": "KelpPlant",
     "name": "Seakomb",
     "prefabId": "KelpPlant",
+    "tags": [
+      "Hanging",
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -611,6 +662,9 @@
     "id": "IceFlower",
     "name": "Idylla Flower",
     "prefabId": "IceFlower",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC2_ID"
@@ -649,6 +703,9 @@
     "id": "IceCavesForagePlantPlanted",
     "name": "Sherberry Plant",
     "prefabId": "IceCavesForagePlantPlanted",
+    "tags": [
+      "Hanging"
+    ],
     "isFarmable": false,
     "requiredDlcIds": [
       "DLC2_ID"
@@ -666,6 +723,9 @@
     "id": "HardSkinBerryPlant",
     "name": "Pikeapple Bush",
     "prefabId": "HardSkinBerryPlant",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC2_ID"
@@ -711,6 +771,9 @@
     "id": "ForestTree",
     "name": "Arbor Tree",
     "prefabId": "ForestTree",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -756,6 +819,9 @@
     "id": "GasGrass",
     "name": "Gas Grass",
     "prefabId": "GasGrass",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -804,6 +870,7 @@
     "id": "GardenForagePlantPlanted",
     "name": "Snactus",
     "prefabId": "GardenForagePlantPlanted",
+    "tags": [],
     "isFarmable": false,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -821,6 +888,9 @@
     "id": "GardenFoodPlant",
     "name": "Sweatcorn Stalk",
     "prefabId": "GardenFoodPlant",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -866,6 +936,9 @@
     "id": "CarrotPlant",
     "name": "Plume Squash Plant",
     "prefabId": "CarrotPlant",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC2_ID"
@@ -911,6 +984,9 @@
     "id": "CactusPlant",
     "name": "Jumping Joya",
     "prefabId": "CactusPlant",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -945,6 +1021,9 @@
     "id": "ButterflyPlant",
     "name": "Mimika Bud",
     "prefabId": "ButterflyPlant",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -991,6 +1070,9 @@
     "id": "Bulbloom",
     "name": "Bulbloom",
     "prefabId": "Bulbloom",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -1030,6 +1112,9 @@
     "id": "BulbPlant",
     "name": "Buddy Bud",
     "prefabId": "BulbPlant",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -1067,6 +1152,9 @@
     "id": "BlueGrass",
     "name": "Alveo Vera",
     "prefabId": "BlueGrass",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC2_ID"
@@ -1110,6 +1198,9 @@
     "id": "BeanPlant",
     "name": "Nosh Sprout",
     "prefabId": "BeanPlant",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -1157,6 +1248,9 @@
     "id": "BasicSingleHarvestPlant",
     "name": "Mealwood",
     "prefabId": "BasicSingleHarvestPlant",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -1200,6 +1294,7 @@
     "id": "BasicForagePlantPlanted",
     "name": "Buried Muckroot",
     "prefabId": "BasicForagePlantPlanted",
+    "tags": [],
     "isFarmable": false,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -1215,6 +1310,9 @@
     "id": "BasicFabricPlant",
     "name": "Thimble Reed",
     "prefabId": "BasicFabricPlant",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -1260,6 +1358,9 @@
     "id": "LeafyPlant",
     "name": "Mirth Leaf",
     "prefabId": "LeafyPlant",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -1296,6 +1397,7 @@
     "id": "MusselSprout",
     "name": "Mussel Sprout",
     "prefabId": "MusselSprout",
+    "tags": [],
     "isFarmable": false,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -1313,6 +1415,9 @@
     "id": "MushroomPlant",
     "name": "Dusk Cap",
     "prefabId": "MushroomPlant",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -1357,6 +1462,9 @@
     "id": "SaltySticksPlant",
     "name": "Sodicane",
     "prefabId": "SaltySticksPlant",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -1402,6 +1510,12 @@
     "id": "SpaceTreeBranch",
     "name": "Bonbon Tree",
     "prefabId": "SpaceTreeBranch",
+    "tags": [
+      "HideFromSpawnTool",
+      "HideFromCodex",
+      "PlantBranch",
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC2_ID"
@@ -1440,6 +1554,9 @@
     "id": "OxyCoral",
     "name": "Flue Coral",
     "prefabId": "OxyCoral",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -1489,6 +1606,9 @@
     "id": "SeaTree",
     "name": "Tower Kelp",
     "prefabId": "SeaTree",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -1533,6 +1653,10 @@
     "id": "SpiceVine",
     "name": "Pincha Pepperplant",
     "prefabId": "SpiceVine",
+    "tags": [
+      "Hanging",
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -1578,6 +1702,9 @@
     "id": "Oxyfern",
     "name": "Oxyfern",
     "prefabId": "Oxyfern",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -1622,6 +1749,13 @@
     "id": "SeaTreeBranch",
     "name": "Tower Kelp",
     "prefabId": "SeaTreeBranch",
+    "tags": [
+      "HideFromSpawnTool",
+      "HideFromCodex",
+      "PlantBranch",
+      "ExcludeFromTemplate",
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -1663,6 +1797,9 @@
     "id": "SeaLettuce",
     "name": "Waterweed",
     "prefabId": "SeaLettuce",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -1716,6 +1853,9 @@
     "id": "PrickleFlower",
     "name": "Bristle Blossom",
     "prefabId": "PrickleFlower",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -1762,6 +1902,9 @@
     "id": "PrickleGrass",
     "name": "Bluff Briar",
     "prefabId": "PrickleGrass",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -1796,6 +1939,9 @@
     "id": "PlanktonCoral",
     "name": "Starnacle",
     "prefabId": "PlanktonCoral",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -1843,6 +1989,9 @@
     "id": "SuperWormPlant",
     "name": "Grubfruit Plant",
     "prefabId": "SuperWormPlant",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -1888,6 +2037,9 @@
     "id": "SpaceTree",
     "name": "Bonbon Tree",
     "prefabId": "SpaceTree",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC2_ID"
@@ -1935,6 +2087,9 @@
     "id": "WormPlant",
     "name": "Spindly Grubfruit Plant",
     "prefabId": "WormPlant",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -1980,6 +2135,9 @@
     "id": "WineCups",
     "name": "Mellow Mallow",
     "prefabId": "WineCups",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -2016,6 +2174,9 @@
     "id": "WaterCups",
     "name": "Husha Cups",
     "prefabId": "WaterCups",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -2052,6 +2213,9 @@
     "id": "VineMother",
     "name": "Ovagro Node",
     "prefabId": "VineMother",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -2094,6 +2258,13 @@
     "id": "VineBranch",
     "name": "Ovagro Vine",
     "prefabId": "VineBranch",
+    "tags": [
+      "HideFromSpawnTool",
+      "HideFromCodex",
+      "PlantBranch",
+      "ExcludeFromTemplate",
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC4_ID"
@@ -2129,6 +2300,10 @@
     "id": "SaltPlant",
     "name": "Dasha Saltvine",
     "prefabId": "SaltPlant",
+    "tags": [
+      "Hanging",
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -2170,6 +2345,9 @@
     "id": "UrchinPlant",
     "name": "Pinpoket",
     "prefabId": "UrchinPlant",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -2217,6 +2395,9 @@
     "id": "TubeWorm",
     "name": "Tublia",
     "prefabId": "TubeWorm",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "DLC5_ID"
@@ -2276,6 +2457,9 @@
     "id": "ToePlant",
     "name": "Tranquil Toes",
     "prefabId": "ToePlant",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -2312,6 +2496,9 @@
     "id": "SwampLily",
     "name": "Balm Lily",
     "prefabId": "SwampLily",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
@@ -2347,6 +2534,9 @@
     "id": "SwampHarvestPlant",
     "name": "Bog Bucket",
     "prefabId": "SwampHarvestPlant",
+    "tags": [
+      "Plant"
+    ],
     "isFarmable": true,
     "requiredDlcIds": [
       "EXPANSION1_ID"
@@ -2395,6 +2585,7 @@
     "id": "SwampForagePlantPlanted",
     "name": "Swamp Chard",
     "prefabId": "SwampForagePlantPlanted",
+    "tags": [],
     "isFarmable": false,
     "requiredDlcIds": [
       "EXPANSION1_ID"
