@@ -710,6 +710,203 @@ function App() {
     }));
   }, [duplicants, ranches, crops, growthMode, caloriePreset, customCalorieInput, o2Preset, customO2Input, addedToDiet, mixPercentages, lockedPercentages]);
 
+  const [liveSync, setLiveSync] = useState(() => {
+    return localStorage.getItem('oni-dashboard-livesync') === 'true';
+  });
+
+  const [wsStatus, setWsStatus] = useState('Disconnected');
+  const [liveData, setLiveData] = useState(null);
+
+  useEffect(() => {
+    localStorage.setItem('oni-dashboard-livesync', liveSync);
+  }, [liveSync]);
+
+  useEffect(() => {
+    if (!liveSync) {
+      setWsStatus('Disconnected');
+      setLiveData(null);
+      return;
+    }
+
+    let socket = null;
+    let reconnectTimeout = null;
+    let isComponentMounted = true;
+
+    function connect() {
+      if (!isComponentMounted) return;
+      setWsStatus('Connecting');
+      socket = new WebSocket('ws://localhost:8080');
+
+      socket.onopen = () => {
+        if (!isComponentMounted) return;
+        setWsStatus('Connected');
+      };
+
+      socket.onmessage = (event) => {
+        if (!isComponentMounted) return;
+        try {
+          const data = JSON.parse(event.data);
+          setLiveData(data);
+        } catch (e) {
+          console.error("Failed to parse WebSocket message:", e);
+        }
+      };
+
+      socket.onclose = () => {
+        if (!isComponentMounted) return;
+        setWsStatus('Connecting');
+        reconnectTimeout = setTimeout(connect, 5000);
+      };
+
+      socket.onerror = () => {
+        if (!isComponentMounted) return;
+        socket.close();
+      };
+    }
+
+    connect();
+
+    return () => {
+      isComponentMounted = false;
+      if (socket) {
+        socket.onopen = null;
+        socket.onmessage = null;
+        socket.onclose = null;
+        socket.onerror = null;
+        socket.close();
+      }
+      if (reconnectTimeout) {
+        clearTimeout(reconnectTimeout);
+      }
+    };
+  }, [liveSync]);
+
+  const isLiveConnected = liveSync && wsStatus === 'Connected';
+
+  const liveCritterRanches = useMemo(() => {
+    if (!isLiveConnected || !liveData || !Array.isArray(liveData.critters)) return null;
+    const mapped = [];
+    const getCritterKey = (apiId) => {
+      if (!apiId) return '';
+      const match = Object.keys(CRITTER_API_MAP).find(key => CRITTER_API_MAP[key].toLowerCase() === String(apiId).toLowerCase());
+      return match || apiId;
+    };
+
+    liveData.critters.forEach(apiItem => {
+      if (!apiItem || typeof apiItem !== 'object') return;
+      const critterType = getCritterKey(apiItem.id);
+      if (!critterType) return;
+      const activeFeed = apiItem.activeFeed
+        ? (idToNameMap[String(apiItem.activeFeed).toLowerCase()] || idToNameMap[String(apiItem.activeFeed)] || cleanName(String(apiItem.activeFeed)))
+        : '';
+
+      const wildCount = Number(apiItem.wildCount) || 0;
+      const domesticHappyCount = Number(apiItem.domesticHappyCount) || 0;
+      const domesticGlumCount = Number(apiItem.domesticGlumCount) || 0;
+
+      if (wildCount > 0) {
+        mapped.push({
+          id: `${critterType}_wild`,
+          critterType,
+          count: wildCount,
+          ranchState: 'wild',
+          activeFeed
+        });
+      }
+      if (domesticHappyCount > 0) {
+        mapped.push({
+          id: `${critterType}_happy`,
+          critterType,
+          count: domesticHappyCount,
+          ranchState: 'happy',
+          activeFeed
+        });
+      }
+      if (domesticGlumCount > 0) {
+        mapped.push({
+          id: `${critterType}_glum`,
+          critterType,
+          count: domesticGlumCount,
+          ranchState: 'glum',
+          activeFeed
+        });
+      }
+    });
+    return mapped;
+  }, [isLiveConnected, liveData, idToNameMap]);
+
+  const liveFarmCrops = useMemo(() => {
+    if (!isLiveConnected || !liveData || !Array.isArray(liveData.crops)) return null;
+    const mapped = [];
+    const getCropKey = (apiId) => {
+      if (!apiId) return '';
+      const match = Object.keys(CROP_API_MAP).find(key => CROP_API_MAP[key].toLowerCase() === String(apiId).toLowerCase());
+      return match || apiId;
+    };
+
+    liveData.crops.forEach(apiItem => {
+      if (!apiItem || typeof apiItem !== 'object') return;
+      const cropType = getCropKey(apiItem.id);
+      if (!cropType) return;
+      let planterType = 'HydroponicFarm';
+      if (apiItem.planterTypes && typeof apiItem.planterTypes === 'object' && apiItem.planterTypes !== null && !Array.isArray(apiItem.planterTypes)) {
+        const keys = Object.keys(apiItem.planterTypes);
+        if (keys.length > 0) {
+          planterType = keys.reduce((a, b) => apiItem.planterTypes[a] > apiItem.planterTypes[b] ? a : b);
+        }
+      }
+
+      const wildCount = Number(apiItem.wildCount) || 0;
+      const touchCount = Number(apiItem.farmersTouchCount) || 0;
+      const domCount = Number(apiItem.domesticatedCount) || 0;
+
+      if (wildCount > 0) {
+        mapped.push({
+          id: `${cropType}_wild`,
+          cropType,
+          count: wildCount,
+          roomSize: 96,
+          growthMode: 'wild',
+          farmerTouch: false,
+          planterType
+        });
+      }
+      
+      if (touchCount > 0) {
+        mapped.push({
+          id: `${cropType}_domesticated_boosted`,
+          cropType,
+          count: touchCount,
+          roomSize: 96,
+          growthMode: 'domesticated',
+          farmerTouch: true,
+          planterType
+        });
+      }
+      
+      if (domCount - touchCount > 0) {
+        mapped.push({
+          id: `${cropType}_domesticated`,
+          cropType,
+          count: domCount - touchCount,
+          roomSize: 96,
+          growthMode: 'domesticated',
+          farmerTouch: false,
+          planterType
+        });
+      }
+    });
+    return mapped;
+  }, [isLiveConnected, liveData]);
+
+  const activeDuplicants = isLiveConnected
+    ? (typeof liveData?.duplicants === 'number'
+        ? liveData.duplicants
+        : (Number(liveData?.duplicants?.count) || duplicants))
+    : duplicants;
+  const activeRanches = isLiveConnected ? (liveCritterRanches ?? ranches) : ranches;
+  const activeCrops = isLiveConnected ? (liveFarmCrops ?? crops) : crops;
+
   const handleRanchCountChange = (critterType, newCount) => {
     const r = ranches.find(x => x.critterType === critterType);
     if (!r) return;
@@ -864,7 +1061,7 @@ function App() {
 
   // Calculate total calories generated across both ranches and crops
   const totalCalories = useMemo(() => {
-    const ranchCals = ranches.reduce((total, ranch) => {
+    const ranchCals = activeRanches.reduce((total, ranch) => {
       const critter = mergedCritters[ranch.critterType];
       if (!critter) return total;
       
@@ -875,7 +1072,7 @@ function App() {
       return total + (critter.caloriesPerCycle * ranch.count * calMult);
     }, 0);
 
-    const cropCals = crops.reduce((total, cropItem) => {
+    const cropCals = activeCrops.reduce((total, cropItem) => {
       const crop = mergedCrops[cropItem.cropType];
       if (!crop) return total;
       const plantMult = cropItem.growthMode === 'wild' ? 0.25 : (cropItem.farmerTouch ? 2.0 : 1.0);
@@ -883,14 +1080,19 @@ function App() {
     }, 0);
 
     return ranchCals + cropCals;
-  }, [ranches, crops, mergedCritters, mergedCrops]);
+  }, [activeRanches, activeCrops, mergedCritters, mergedCrops]);
 
   return (
-    <Layout onClearAll={clearAll}>
+    <Layout 
+      onClearAll={clearAll}
+      liveSync={liveSync}
+      setLiveSync={setLiveSync}
+      wsStatus={wsStatus}
+    >
       <div className="main-grid">
         <aside>
           <DuplicantStats 
-            duplicants={duplicants} 
+            duplicants={activeDuplicants} 
             setDuplicants={setDuplicants} 
             growthMode={growthMode}
             setGrowthMode={setGrowthMode}
@@ -903,10 +1105,12 @@ function App() {
             customO2Input={customO2Input}
             setCustomO2Input={setCustomO2Input}
             totalCalories={totalCalories}
-            ranches={ranches}
-            crops={crops}
+            ranches={activeRanches}
+            crops={activeCrops}
             critterData={mergedCritters}
             cropData={mergedCrops}
+            isLiveConnected={isLiveConnected}
+            liveData={liveData}
           />
         </aside>
         <section>
@@ -940,17 +1144,18 @@ function App() {
 
           {activeTab === 'ranches' ? (
             <RanchBoard 
-              ranches={ranches}
+              ranches={activeRanches}
               onRanchCountChange={handleRanchCountChange}
               onRanchAdd={handleRanchAdd}
               onRanchRemove={handleRanchRemove}
               onRanchFeedChange={handleRanchFeedChange}
               onRanchStateChange={handleRanchStateChange}
               critterData={mergedCritters}
+              isLiveConnected={isLiveConnected}
             />
           ) : activeTab === 'farms' ? (
             <FarmBoard 
-              crops={crops}
+              crops={activeCrops}
               onCropCountChange={handleCropCountChange}
               onCropRoomSizeChange={handleCropRoomSizeChange}
               onCropAdd={handleCropAdd}
@@ -960,10 +1165,11 @@ function App() {
               onCropModeChange={handleCropModeChange}
               onCropFarmerTouchChange={handleCropFarmerTouchChange}
               onCropPlanterChange={handleCropPlanterChange}
+              isLiveConnected={isLiveConnected}
             />
           ) : activeTab === 'tools' ? (
             <FoodCalculator 
-              duplicants={duplicants}
+              duplicants={activeDuplicants}
               setDuplicants={setDuplicants}
               growthMode={growthMode}
               setGrowthMode={setGrowthMode}
@@ -973,9 +1179,9 @@ function App() {
               setCustomCalorieInput={setCustomCalorieInput}
               cropData={mergedCrops}
               critterData={mergedCritters}
-              crops={crops}
+              crops={activeCrops}
               setCrops={setCrops}
-              ranches={ranches}
+              ranches={activeRanches}
               setRanches={setRanches}
               addedToDiet={addedToDiet}
               setAddedToDiet={setAddedToDiet}
@@ -983,6 +1189,7 @@ function App() {
               setMixPercentages={setMixPercentages}
               lockedPercentages={lockedPercentages}
               setLockedPercentages={setLockedPercentages}
+              isLiveConnected={isLiveConnected}
             />
           ) : (
             <DatabaseExplorer 

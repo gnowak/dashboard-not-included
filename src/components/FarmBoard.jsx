@@ -14,7 +14,8 @@ export function FarmBoard({
   growthMode, 
   onCropModeChange,
   onCropFarmerTouchChange,
-  onCropPlanterChange
+  onCropPlanterChange,
+  isLiveConnected = false
 }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [isOpen, setIsOpen] = useState(false);
@@ -56,9 +57,14 @@ export function FarmBoard({
         gap: '1rem',
         zIndex: 1001 // ensure dropdown menu overlays cards correctly
       }}>
-        <h2 style={{ color: 'var(--oni-text-primary)' }}>Agricultural Crops</h2>
+        <div>
+          <h2 style={{ color: 'var(--oni-accent-oxygen)', fontSize: '1.5rem', margin: 0 }}>Agricultural Crops</h2>
+          <p style={{ color: 'var(--oni-text-muted)', fontSize: '0.85rem', marginTop: '0.2rem' }}>
+            {isLiveConnected ? "Monitoring live colony crop data in real-time." : "Plan crop layouts and calculate harvest calories."}
+          </p>
+        </div>
 
-        {inactiveCrops.length > 0 && (
+        {!isLiveConnected && inactiveCrops.length > 0 && (
           <div style={{ position: 'relative', width: '280px' }}>
             {/* Search Input Box */}
             <div style={{ 
@@ -209,7 +215,7 @@ export function FarmBoard({
           textAlign: 'center',
           background: 'rgba(0, 0, 0, 0.15)'
         }}>
-          No active crop farms. Use the search box above to search and add a crop!
+          {isLiveConnected ? "No live crops detected in the colony." : "No active crop farms. Use the search box above to search and add a crop!"}
         </div>
       ) : (
         <div className="card-grid">
@@ -224,13 +230,14 @@ export function FarmBoard({
                 roomSize={cropItem.roomSize || 96}
                 onChange={(newCount) => onCropCountChange(cropItem.id, newCount)}
                 onRoomSizeChange={(newRoomSize) => onCropRoomSizeChange(cropItem.id, newRoomSize)}
-                onRemove={() => onCropRemove(cropItem.id)}
+                onRemove={isLiveConnected ? null : () => onCropRemove(cropItem.id)}
                 growthMode={cropItem.growthMode}
                 farmerTouch={cropItem.farmerTouch}
                 onModeChange={(newMode) => onCropModeChange(cropItem.id, newMode)}
                 onFarmerTouchChange={(checked) => onCropFarmerTouchChange(cropItem.id, checked)}
                 planterType={cropItem.planterType}
                 onPlanterChange={(newPlanter) => onCropPlanterChange(cropItem.id, newPlanter)}
+                isLiveConnected={isLiveConnected}
               />
             );
           })}

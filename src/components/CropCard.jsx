@@ -14,7 +14,8 @@ export function CropCard({
   onModeChange, 
   onFarmerTouchChange,
   planterType,
-  onPlanterChange
+  onPlanterChange,
+  isLiveConnected = false
 }) {
   const plantMult = growthMode === 'wild' ? 0.25 : (farmerTouch ? 2.0 : 1.0);
   const inputMult = growthMode === 'wild' ? 0.0 : 1.0;
@@ -157,7 +158,8 @@ export function CropCard({
                   onChange(5 * newUsable);
                 }
               }}
-              style={{ accentColor: crop.color, flex: 1 }}
+              disabled={isLiveConnected}
+              style={{ accentColor: crop.color, flex: 1, opacity: isLiveConnected ? 0.5 : 1, cursor: isLiveConnected ? 'not-allowed' : 'default' }}
             />
             <input 
               type="number" 
@@ -172,6 +174,7 @@ export function CropCard({
                   onChange(5 * newUsable);
                 }
               }}
+              disabled={isLiveConnected}
               style={{ 
                 width: '45px', 
                 padding: '0.15rem', 
@@ -180,7 +183,9 @@ export function CropCard({
                 border: '1px solid var(--oni-panel-border)',
                 background: 'rgba(0, 0, 0, 0.4)',
                 color: 'var(--oni-text-primary)',
-                fontFamily: 'var(--oni-font-mono)'
+                fontFamily: 'var(--oni-font-mono)',
+                opacity: isLiveConnected ? 0.5 : 1,
+                cursor: isLiveConnected ? 'not-allowed' : 'default'
               }}
             />
           </div>
@@ -205,7 +210,8 @@ export function CropCard({
               max="5" 
               value={currentGreenhouseCount}
               onChange={(e) => handleGreenhouseChange(parseInt(e.target.value) || 0)}
-              style={{ accentColor: crop.color, flex: 1 }}
+              disabled={isLiveConnected}
+              style={{ accentColor: crop.color, flex: 1, opacity: isLiveConnected ? 0.5 : 1, cursor: isLiveConnected ? 'not-allowed' : 'default' }}
             />
             <input 
               type="number" 
@@ -213,6 +219,7 @@ export function CropCard({
               max="5"
               value={currentGreenhouseCount} 
               onChange={(e) => handleGreenhouseChange(parseInt(e.target.value) || 0)}
+              disabled={isLiveConnected}
               style={{ 
                 width: '45px', 
                 padding: '0.15rem', 
@@ -221,7 +228,9 @@ export function CropCard({
                 border: '1px solid var(--oni-panel-border)',
                 background: 'rgba(0, 0, 0, 0.4)',
                 color: 'var(--oni-text-primary)',
-                fontFamily: 'var(--oni-font-mono)'
+                fontFamily: 'var(--oni-font-mono)',
+                opacity: isLiveConnected ? 0.5 : 1,
+                cursor: isLiveConnected ? 'not-allowed' : 'default'
               }}
             />
           </div>
@@ -240,13 +249,15 @@ export function CropCard({
               max={5 * usableCropsPerRoom} 
               value={count}
               onChange={(e) => onChange(parseInt(e.target.value) || 0)}
-              style={{ accentColor: crop.color, flex: 1 }}
+              disabled={isLiveConnected}
+              style={{ accentColor: crop.color, flex: 1, opacity: isLiveConnected ? 0.5 : 1, cursor: isLiveConnected ? 'not-allowed' : 'default' }}
             />
             <input 
               type="number" 
               min="0" 
               value={count} 
               onChange={(e) => onChange(parseInt(e.target.value) || 0)}
+              disabled={isLiveConnected}
               style={{ 
                 width: '45px', 
                 padding: '0.15rem', 
@@ -255,7 +266,9 @@ export function CropCard({
                 border: '1px solid var(--oni-panel-border)',
                 background: 'rgba(0, 0, 0, 0.4)',
                 color: 'var(--oni-text-primary)',
-                fontFamily: 'var(--oni-font-mono)'
+                fontFamily: 'var(--oni-font-mono)',
+                opacity: isLiveConnected ? 0.5 : 1,
+                cursor: isLiveConnected ? 'not-allowed' : 'default'
               }}
             />
           </div>
@@ -289,6 +302,7 @@ export function CropCard({
             <select
               value={growthMode}
               onChange={(e) => onModeChange(e.target.value)}
+              disabled={isLiveConnected}
               style={{
                 background: 'rgba(0, 0, 0, 0.4)',
                 border: 'none',
@@ -297,7 +311,8 @@ export function CropCard({
                 fontSize: '0.75rem',
                 fontWeight: 'bold',
                 padding: '0.1rem 0.3rem',
-                cursor: 'pointer',
+                cursor: isLiveConnected ? 'not-allowed' : 'pointer',
+                opacity: isLiveConnected ? 0.5 : 1,
                 outline: 'none',
                 textTransform: 'uppercase'
               }}
@@ -325,6 +340,7 @@ export function CropCard({
               <select
                 value={activePlanter}
                 onChange={(e) => onPlanterChange(e.target.value)}
+                disabled={isLiveConnected}
                 style={{
                   background: 'rgba(0, 0, 0, 0.4)',
                   border: 'none',
@@ -333,7 +349,8 @@ export function CropCard({
                   fontSize: '0.75rem',
                   fontWeight: 'bold',
                   padding: '0.1rem 0.3rem',
-                  cursor: 'pointer',
+                  cursor: isLiveConnected ? 'not-allowed' : 'pointer',
+                  opacity: isLiveConnected ? 0.5 : 1,
                   outline: 'none'
                 }}
               >
@@ -361,16 +378,18 @@ export function CropCard({
             padding: '0.35rem 0.5rem',
             borderRadius: '4px',
             border: `1px solid ${farmerTouch ? 'rgba(127, 191, 255, 0.2)' : 'var(--oni-panel-border)'}`,
-            marginBottom: '0.25rem'
+            marginBottom: '0.25rem',
+            opacity: isLiveConnected ? 0.6 : 1
           }}>
             <input 
               type="checkbox" 
               id={`ft-${crop.id}-${growthMode}`}
               checked={!!farmerTouch}
               onChange={(e) => onFarmerTouchChange(e.target.checked)}
-              style={{ cursor: 'pointer', width: '14px', height: '14px' }}
+              disabled={isLiveConnected}
+              style={{ cursor: isLiveConnected ? 'not-allowed' : 'pointer', width: '14px', height: '14px' }}
             />
-            <label htmlFor={`ft-${crop.id}-${growthMode}`} style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', color: 'var(--oni-text-primary)', cursor: 'pointer', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '0.25rem', userSelect: 'none' }}>
+            <label htmlFor={`ft-${crop.id}-${growthMode}`} style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', color: 'var(--oni-text-primary)', cursor: isLiveConnected ? 'not-allowed' : 'pointer', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '0.25rem', userSelect: 'none' }}>
               ⚡ Farmer's Touch <span style={{ color: 'var(--oni-accent-oxygen)', fontSize: '0.65rem' }}>(2x Speed)</span>
             </label>
           </div>

@@ -3,7 +3,7 @@ import { RanchCard } from './RanchCard';
 import { CRITTER_DATA } from '../data/critters';
 import { cleanName } from './DatabaseExplorer';
 
-export function RanchBoard({ ranches, onRanchCountChange, onRanchRemove, onRanchAdd, onRanchFeedChange, onRanchStateChange, critterData = CRITTER_DATA }) {
+export function RanchBoard({ ranches, onRanchCountChange, onRanchRemove, onRanchAdd, onRanchFeedChange, onRanchStateChange, critterData = CRITTER_DATA, isLiveConnected = false }) {
   // Find which critters are not active in ranches and can be tamed/groomed
   const activeCritterTypes = ranches.map(r => r.critterType);
   const hasIsRanchable = Object.values(critterData).some(c => c.isRanchable !== undefined);
@@ -38,25 +38,15 @@ export function RanchBoard({ ranches, onRanchCountChange, onRanchRemove, onRanch
     'Staterpillar',
     'DivergentBeetle',
     'Belly',
+    'IceBelly',
     'WoodDeer',
-    'Snail',
-    'Stego',
-    'Chameleon',
-    'Raptor',
-    'Rhex'
+    'Deer',
+    'Squid',
+    'SqueakyPuft'
   ]);
 
-  // Separate regular species from variants
-  const regularCritters = [];
-  const variantCritters = [];
-
-  inactiveCritters.forEach(c => {
-    if (REGULAR_CRITTER_IDS.has(c.id)) {
-      regularCritters.push(c);
-    } else {
-      variantCritters.push(c);
-    }
-  });
+  const regularCritters = inactiveCritters.filter(c => REGULAR_CRITTER_IDS.has(c.id));
+  const variantCritters = inactiveCritters.filter(c => !REGULAR_CRITTER_IDS.has(c.id));
 
   // Sort regular critters alphabetically by cleaned name
   regularCritters.sort((a, b) => cleanName(a.name).localeCompare(cleanName(b.name)));
@@ -64,33 +54,28 @@ export function RanchBoard({ ranches, onRanchCountChange, onRanchRemove, onRanch
   variantCritters.sort((a, b) => cleanName(a.name).localeCompare(cleanName(b.name)));
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }}>
-      <div style={{ 
-        display: 'flex', 
-        justifyContent: 'space-between', 
-        alignItems: 'center', 
-        marginBottom: '1.5rem',
-        flexWrap: 'wrap',
-        gap: '1rem'
-      }}>
-        <h2 style={{ color: 'var(--oni-text-primary)' }}>Critter Husbandry</h2>
-
-        {inactiveCritters.length > 0 && (
-          <select
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0 }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', borderBottom: '1px solid var(--oni-grid-line)', paddingBottom: '1rem' }}>
+        <div>
+          <h2 style={{ color: 'var(--oni-accent-oxygen)', fontSize: '1.5rem', margin: 0 }}>Colony Stables</h2>
+          <p style={{ color: 'var(--oni-text-muted)', fontSize: '0.85rem', marginTop: '0.2rem' }}>
+            {isLiveConnected ? "Monitoring live colony stable data in real-time." : "Plan stable space and calculate output capacities."}
+          </p>
+        </div>
+        {!isLiveConnected && inactiveCritters.length > 0 && (
+          <select 
+            value="" 
             onChange={(e) => {
               if (e.target.value) {
                 onRanchAdd(e.target.value);
-                e.target.value = ''; // Reset selection
               }
             }}
-            defaultValue=""
             style={{
-              padding: '0.35rem 0.75rem',
-              fontSize: '0.8rem',
-              border: '1px solid var(--oni-panel-border)',
+              padding: '0.4rem 0.8rem',
               borderRadius: '4px',
+              border: '1px solid var(--oni-panel-border)',
               background: 'rgba(0, 0, 0, 0.4)',
-              color: 'var(--oni-text-primary)',
+              color: 'var(--oni-accent-oxygen)',
               cursor: 'pointer',
               fontFamily: 'var(--oni-font-mono)'
             }}
@@ -132,7 +117,7 @@ export function RanchBoard({ ranches, onRanchCountChange, onRanchRemove, onRanch
           textAlign: 'center',
           background: 'rgba(0, 0, 0, 0.15)'
         }}>
-          No active critter ranches. Use the dropdown above to add a critter planner!
+          {isLiveConnected ? "No live critters detected in the colony." : "No active critter ranches. Use the dropdown above to add a critter planner!"}
         </div>
       ) : (
         <div className="card-grid">
@@ -141,15 +126,16 @@ export function RanchBoard({ ranches, onRanchCountChange, onRanchRemove, onRanch
             if (!critter) return null;
             return (
               <RanchCard 
-                key={ranch.critterType} 
+                key={ranch.id || ranch.critterType} 
                 critter={critter}
                 count={ranch.count}
                 activeFeed={ranch.activeFeed}
                 ranchState={ranch.ranchState}
                 onChange={(newCount) => onRanchCountChange(ranch.critterType, newCount)}
-                onRemove={() => onRanchRemove(ranch.critterType)}
+                onRemove={isLiveConnected ? null : () => onRanchRemove(ranch.critterType)}
                 onFeedChange={(newFeed) => onRanchFeedChange(ranch.critterType, newFeed)}
                 onStateChange={(newState) => onRanchStateChange(ranch.critterType, newState)}
+                isLiveConnected={isLiveConnected}
               />
             );
           })}

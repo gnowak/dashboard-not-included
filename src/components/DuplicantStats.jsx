@@ -21,7 +21,9 @@ export function DuplicantStats({
   ranches, 
   crops, 
   critterData = {},
-  cropData = {}
+  cropData = {},
+  isLiveConnected = false,
+  liveData = null
 }) {
   const [isDemandsExpanded, setIsDemandsExpanded] = useState(true);
   const [isAggregatesExpanded, setIsAggregatesExpanded] = useState(true);
@@ -211,12 +213,15 @@ export function DuplicantStats({
                   max="100" 
                   value={duplicants} 
                   onChange={(e) => setDuplicants(parseInt(e.target.value) || 1)}
+                  disabled={isLiveConnected}
+                  style={{ opacity: isLiveConnected ? 0.5 : 1, cursor: isLiveConnected ? 'not-allowed' : 'default' }}
                 />
                 <input 
                   type="number" 
                   min="1" 
                   value={duplicants} 
                   onChange={(e) => setDuplicants(parseInt(e.target.value) || 1)}
+                  disabled={isLiveConnected}
                   style={{ 
                     width: '56px', 
                     fontSize: '0.9rem', 
@@ -225,7 +230,9 @@ export function DuplicantStats({
                     border: '1px solid var(--oni-panel-border)',
                     background: 'rgba(0, 0, 0, 0.4)',
                     color: 'var(--oni-text-primary)',
-                    fontFamily: 'var(--oni-font-mono)'
+                    fontFamily: 'var(--oni-font-mono)',
+                    opacity: isLiveConnected ? 0.5 : 1, 
+                    cursor: isLiveConnected ? 'not-allowed' : 'default'
                   }}
                 />
               </div>
@@ -243,6 +250,14 @@ export function DuplicantStats({
 
             <div style={{ marginTop: '0.4rem', paddingTop: '0.6rem', borderTop: '1px solid var(--oni-grid-line-thick)' }}>
               <h3 style={{ color: 'var(--oni-text-muted)', marginBottom: '0.5rem', fontSize: '0.85rem' }}>Caloric Balance</h3>
+              {isLiveConnected && liveData?.foodStorage && (
+                <div className="stat-row" style={{ marginBottom: '0.15rem' }}>
+                  <span className="stat-label">Food Storage</span>
+                  <span className="stat-value calories" style={{ fontSize: '1.1rem' }}>
+                    {(liveData.foodStorage.totalCalories ?? 0).toLocaleString()} kcal
+                  </span>
+                </div>
+              )}
               <div className="stat-row" style={{ marginBottom: '0.15rem' }}>
                 <span className="stat-label">Harvest Total</span>
                 <span className="stat-value calories" style={{ fontSize: '1.1rem' }}>{totalCalories.toFixed(0)} kcal</span>
@@ -250,9 +265,44 @@ export function DuplicantStats({
               <div className="stat-row">
                 <span className="stat-label">Net Balance</span>
                 <span className="stat-value" style={{ fontSize: '1.1rem', color: isDeficit ? 'var(--oni-accent-danger)' : 'var(--oni-accent-success)' }}>
-                  {calorieDiff > 0 ? '+' : ''}{calorieDiff.toFixed(0)} kcal
+                  {calorieDiff > 0 ? '+' : ''}{calorieDiff.toFixed(0)} kcal/c
                 </span>
               </div>
+              
+              {isLiveConnected && (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '0.8rem' }}>
+                  {liveData?.foodStorage?.totalCalories < caloriesNeeded * 3 && (
+                    <div className="alert-badge warning" style={{
+                      background: 'rgba(255, 69, 0, 0.15)',
+                      border: '1px solid var(--oni-accent-danger)',
+                      color: '#ff4500',
+                      padding: '0.4rem 0.6rem',
+                      borderRadius: '4px',
+                      fontSize: '0.75rem',
+                      fontFamily: 'var(--oni-font-mono)',
+                      fontWeight: 'bold',
+                      textAlign: 'center'
+                    }}>
+                      ⚠️ CRITICAL: Food storage &lt; 3 cycles!
+                    </div>
+                  )}
+                  {calorieDiff < 0 && (
+                    <div className="alert-badge error" style={{
+                      background: 'rgba(255, 69, 0, 0.15)',
+                      border: '1px solid var(--oni-accent-danger)',
+                      color: '#ff8c00',
+                      padding: '0.4rem 0.6rem',
+                      borderRadius: '4px',
+                      fontSize: '0.75rem',
+                      fontFamily: 'var(--oni-font-mono)',
+                      fontWeight: 'bold',
+                      textAlign: 'center'
+                    }}>
+                      ⚠️ DEFICIT: Net calorie deficit!
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
 
             {/* Colony Modifiers Collapsible Sub-panel */}
@@ -281,6 +331,7 @@ export function DuplicantStats({
                     <select 
                       value={caloriePreset} 
                       onChange={(e) => setCaloriePreset(e.target.value)}
+                      disabled={isLiveConnected}
                       style={{ 
                         width: '100%', 
                         padding: '0.25rem', 
@@ -289,7 +340,8 @@ export function DuplicantStats({
                         color: 'var(--oni-text-primary)',
                         borderRadius: '4px', 
                         fontSize: '0.8rem',
-                        cursor: 'pointer'
+                        cursor: isLiveConnected ? 'not-allowed' : 'pointer',
+                        opacity: isLiveConnected ? 0.5 : 1
                       }}
                     >
                       <option value="1000">Standard Dupe (1000 kcal)</option>
@@ -310,7 +362,8 @@ export function DuplicantStats({
                           step="50"
                           value={customCalorieInput} 
                           onChange={(e) => setCustomCalorieInput(parseInt(e.target.value) || 1000)}
-                          style={{ flex: 1 }}
+                          disabled={isLiveConnected}
+                          style={{ flex: 1, opacity: isLiveConnected ? 0.5 : 1, cursor: isLiveConnected ? 'not-allowed' : 'default' }}
                         />
                         <span style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', fontWeight: 'bold', minWidth: '32px', textAlign: 'right' }}>
                           {customCalorieInput}
@@ -325,6 +378,7 @@ export function DuplicantStats({
                     <select 
                       value={o2Preset} 
                       onChange={(e) => setO2Preset(e.target.value)}
+                      disabled={isLiveConnected}
                       style={{ 
                         width: '100%', 
                         padding: '0.25rem', 
@@ -333,7 +387,8 @@ export function DuplicantStats({
                         color: 'var(--oni-text-primary)',
                         borderRadius: '4px', 
                         fontSize: '0.8rem',
-                        cursor: 'pointer'
+                        cursor: isLiveConnected ? 'not-allowed' : 'pointer',
+                        opacity: isLiveConnected ? 0.5 : 1
                       }}
                     >
                       <option value="60">Standard Dupe (60 kg/c)</option>
@@ -354,7 +409,8 @@ export function DuplicantStats({
                           step="5"
                           value={customO2Input} 
                           onChange={(e) => setCustomO2Input(parseInt(e.target.value) || 60)}
-                          style={{ flex: 1 }}
+                          disabled={isLiveConnected}
+                          style={{ flex: 1, opacity: isLiveConnected ? 0.5 : 1, cursor: isLiveConnected ? 'not-allowed' : 'default' }}
                         />
                         <span style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', fontWeight: 'bold', minWidth: '32px', textAlign: 'right' }}>
                           {customO2Input}
@@ -471,31 +527,76 @@ export function DuplicantStats({
                   {aggregates.inputs.length === 0 ? (
                     <div style={{ color: 'var(--oni-text-muted)', fontSize: '0.8rem' }}>None</div>
                   ) : (
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                      {aggregates.inputs.map((input, idx) => (
-                        <div key={idx} style={{ 
-                          display: 'flex', 
-                          justifyContent: 'space-between', 
-                          alignItems: 'center', 
-                          background: 'rgba(239, 68, 68, 0.05)', 
-                          padding: '0.3rem 0.5rem', 
-                          borderRadius: '3px', 
-                          border: '1px solid rgba(239, 68, 68, 0.15)' 
-                        }}>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                            <img 
-                              src={getImageUrl(formatResourceName(input.name))} 
-                              alt={formatResourceName(input.name)} 
-                              style={{ width: '16px', height: '16px', objectFit: 'contain' }}
-                              onError={(e) => { e.currentTarget.style.display = 'none'; }}
-                            />
-                            <span style={{ color: 'var(--oni-text-primary)', fontSize: '0.8rem' }}>{formatResourceName(input.name)}</span>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                      {aggregates.inputs.map((input, idx) => {
+                        const resources = liveData?.resources;
+                        const stockpile = resources ? (resources[input.name] ?? resources[formatResourceName(input.name)] ?? Object.entries(resources).find(([k]) => k.toLowerCase() === input.name.toLowerCase())?.[1] ?? 0) : null;
+                        const runway = stockpile !== null && input.amount > 0 ? (stockpile / input.amount) : (stockpile !== null ? Infinity : null);
+                        
+                        let runwayColor = 'var(--oni-text-muted)';
+                        let runwayBorder = 'rgba(255, 255, 255, 0.15)';
+                        let runwayBg = 'rgba(0, 0, 0, 0.2)';
+                        if (runway !== null) {
+                          if (runway < 10) {
+                            runwayColor = 'var(--oni-accent-danger)';
+                            runwayBorder = 'rgba(255, 69, 0, 0.4)';
+                            runwayBg = 'rgba(255, 69, 0, 0.1)';
+                          } else if (runway < 50) {
+                            runwayColor = '#ffaa00';
+                            runwayBorder = 'rgba(255, 170, 0, 0.4)';
+                            runwayBg = 'rgba(255, 170, 0, 0.1)';
+                          } else {
+                            runwayColor = 'var(--oni-accent-success)';
+                            runwayBorder = 'rgba(168, 255, 140, 0.4)';
+                            runwayBg = 'rgba(168, 255, 140, 0.1)';
+                          }
+                        }
+
+                        return (
+                          <div key={idx} style={{ 
+                            display: 'flex', 
+                            flexDirection: 'column',
+                            gap: '0.25rem',
+                            background: 'rgba(239, 68, 68, 0.05)', 
+                            padding: '0.4rem 0.5rem', 
+                            borderRadius: '4px', 
+                            border: '1px solid rgba(239, 68, 68, 0.15)' 
+                          }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                                <img 
+                                  src={getImageUrl(formatResourceName(input.name))} 
+                                  alt={formatResourceName(input.name)} 
+                                  style={{ width: '16px', height: '16px', objectFit: 'contain' }}
+                                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                                />
+                                <span style={{ color: 'var(--oni-text-primary)', fontSize: '0.8rem' }}>{formatResourceName(input.name)}</span>
+                              </div>
+                              <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold', color: 'var(--oni-accent-danger)', fontSize: '0.85rem' }}>
+                                {input.amount.toFixed(1)} {input.unit}/c
+                              </span>
+                            </div>
+                            {stockpile !== null && (
+                              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.75rem', marginTop: '0.1rem', borderTop: '1px dashed rgba(255, 255, 255, 0.05)', paddingTop: '0.2rem' }}>
+                                <span style={{ color: 'var(--oni-text-muted)', opacity: 0.8 }}>
+                                  Stock: {stockpile.toLocaleString(undefined, { maximumFractionDigits: 0 })} {input.unit}
+                                </span>
+                                <span style={{ 
+                                  fontFamily: 'var(--oni-font-mono)', 
+                                  color: runwayColor, 
+                                  fontWeight: 'bold', 
+                                  padding: '0.05rem 0.35rem', 
+                                  borderRadius: '3px',
+                                  border: `1px solid ${runwayBorder}`,
+                                  background: runwayBg
+                                }}>
+                                  {runway === null || runway === undefined ? 'N/A' : (runway === Infinity ? '∞ cycles' : `${runway.toFixed(1)} cycles`)}
+                                </span>
+                              </div>
+                            )}
                           </div>
-                          <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold', color: 'var(--oni-accent-danger)', fontSize: '0.85rem' }}>
-                            {input.amount.toFixed(1)} {input.unit}/c
-                          </span>
-                        </div>
-                      ))}
+                        );
+                      })}
                     </div>
                   )}
                 </div>

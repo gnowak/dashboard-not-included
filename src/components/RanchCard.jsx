@@ -2,7 +2,7 @@ import React from 'react';
 import { Egg, Maximize2, ArrowDownRight, ArrowUpRight, Trash2 } from 'lucide-react';
 import { getImageUrl, formatResourceName } from '../utils/images';
 
-export function RanchCard({ critter, count, activeFeed, ranchState = 'happy', onChange, onRemove, onFeedChange, onStateChange }) {
+export function RanchCard({ critter, count, activeFeed, ranchState = 'happy', onChange, onRemove, onFeedChange, onStateChange, isLiveConnected = false }) {
   // Care state multipliers
   const calMult = ranchState === 'glum' ? 0.1 : ranchState === 'wild' ? 0.06 : 1.0;
   const eggMult = ranchState === 'glum' ? 0.1 : ranchState === 'wild' ? 0.06 : 1.0;
@@ -113,7 +113,8 @@ export function RanchCard({ critter, count, activeFeed, ranchState = 'happy', on
                 max="5" 
                 value={currentRanchCount}
                 onChange={(e) => handleRanchChange(parseInt(e.target.value) || 0)}
-                style={{ accentColor: critter.color, flex: 1 }}
+                disabled={isLiveConnected}
+                style={{ accentColor: critter.color, flex: 1, opacity: isLiveConnected ? 0.5 : 1, cursor: isLiveConnected ? 'not-allowed' : 'default' }}
               />
               <input 
                 type="number" 
@@ -121,6 +122,7 @@ export function RanchCard({ critter, count, activeFeed, ranchState = 'happy', on
                 max="5"
                 value={currentRanchCount} 
                 onChange={(e) => handleRanchChange(parseInt(e.target.value) || 0)}
+                disabled={isLiveConnected}
                 style={{ 
                   width: '45px', 
                   padding: '0.15rem', 
@@ -129,7 +131,9 @@ export function RanchCard({ critter, count, activeFeed, ranchState = 'happy', on
                   border: '1px solid var(--oni-panel-border)',
                   background: 'rgba(0, 0, 0, 0.4)',
                   color: 'var(--oni-text-primary)',
-                  fontFamily: 'var(--oni-font-mono)'
+                  fontFamily: 'var(--oni-font-mono)',
+                  opacity: isLiveConnected ? 0.5 : 1,
+                  cursor: isLiveConnected ? 'not-allowed' : 'default'
                 }}
               />
             </div>
@@ -149,7 +153,8 @@ export function RanchCard({ critter, count, activeFeed, ranchState = 'happy', on
               max={maxAllowed === Infinity ? 40 : 5 * maxAllowed} 
               value={count}
               onChange={(e) => onChange(parseInt(e.target.value) || 0)}
-              style={{ accentColor: critter.color, flex: 1 }}
+              disabled={isLiveConnected}
+              style={{ accentColor: critter.color, flex: 1, opacity: isLiveConnected ? 0.5 : 1, cursor: isLiveConnected ? 'not-allowed' : 'default' }}
             />
             <input 
               type="number" 
@@ -157,6 +162,7 @@ export function RanchCard({ critter, count, activeFeed, ranchState = 'happy', on
               max={maxAllowed === Infinity ? 100 : 5 * maxAllowed}
               value={count} 
               onChange={(e) => onChange(parseInt(e.target.value) || 0)}
+              disabled={isLiveConnected}
               style={{ 
                 width: '45px', 
                 padding: '0.15rem', 
@@ -165,7 +171,9 @@ export function RanchCard({ critter, count, activeFeed, ranchState = 'happy', on
                 border: '1px solid var(--oni-panel-border)',
                 background: 'rgba(0, 0, 0, 0.4)',
                 color: 'var(--oni-text-primary)',
-                fontFamily: 'var(--oni-font-mono)'
+                fontFamily: 'var(--oni-font-mono)',
+                opacity: isLiveConnected ? 0.5 : 1,
+                cursor: isLiveConnected ? 'not-allowed' : 'default'
               }}
             />
           </div>
@@ -180,6 +188,7 @@ export function RanchCard({ critter, count, activeFeed, ranchState = 'happy', on
             <select
               value={ranchState}
               onChange={(e) => onStateChange(e.target.value)}
+              disabled={isLiveConnected}
               style={{
                 width: '100%',
                 padding: '0.35rem 0.5rem',
@@ -189,7 +198,8 @@ export function RanchCard({ critter, count, activeFeed, ranchState = 'happy', on
                 background: 'rgba(0, 0, 0, 0.4)',
                 color: 'var(--oni-text-primary)',
                 fontFamily: 'var(--oni-font-mono)',
-                cursor: 'pointer'
+                cursor: isLiveConnected ? 'not-allowed' : 'pointer',
+                opacity: isLiveConnected ? 0.5 : 1
               }}
             >
               <option value="happy">Groomed & Happy (Tame)</option>
@@ -208,6 +218,7 @@ export function RanchCard({ critter, count, activeFeed, ranchState = 'happy', on
             <select
               value={selectedFeedName}
               onChange={(e) => onFeedChange(e.target.value)}
+              disabled={isLiveConnected}
               style={{
                 width: '100%',
                 padding: '0.35rem 0.5rem',
@@ -217,7 +228,8 @@ export function RanchCard({ critter, count, activeFeed, ranchState = 'happy', on
                 background: 'rgba(0, 0, 0, 0.4)',
                 color: 'var(--oni-text-primary)',
                 fontFamily: 'var(--oni-font-mono)',
-                cursor: 'pointer'
+                cursor: isLiveConnected ? 'not-allowed' : 'pointer',
+                opacity: isLiveConnected ? 0.5 : 1
               }}
             >
               {critter.inputs.map(input => (
