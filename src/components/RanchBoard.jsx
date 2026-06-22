@@ -6,6 +6,9 @@ import { cleanName } from './DatabaseExplorer';
 export function RanchBoard({ ranches, onRanchCountChange, onRanchRemove, onRanchAdd, onRanchFeedChange, onRanchStateChange, critterData = CRITTER_DATA, isLiveConnected = false }) {
   // Find which critters are not active in ranches and can be tamed/groomed
   const activeCritterTypes = ranches.map(r => r.critterType);
+  const displayedRanches = isLiveConnected ? ranches.filter(r => r.ranchState !== 'wild') : ranches;
+  const wildCritterCount = isLiveConnected ? ranches.filter(r => r.ranchState === 'wild').reduce((acc, r) => acc + r.count, 0) : 0;
+  
   const hasIsRanchable = Object.values(critterData).some(c => c.isRanchable !== undefined);
   
   const inactiveCritters = Object.values(critterData).filter(c => {
@@ -103,7 +106,26 @@ export function RanchBoard({ ranches, onRanchCountChange, onRanchRemove, onRanch
         )}
       </div>
 
-      {ranches.length === 0 ? (
+      {isLiveConnected && wildCritterCount > 0 && (
+        <div style={{
+          background: 'rgba(0, 209, 255, 0.05)',
+          border: '1px solid rgba(0, 209, 255, 0.15)',
+          borderRadius: '4px',
+          padding: '0.5rem 0.75rem',
+          marginBottom: '1.2rem',
+          fontSize: '0.8rem',
+          color: 'var(--oni-text-primary)',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.5rem',
+          fontFamily: 'var(--oni-font-sans)'
+        }}>
+          <span style={{ color: 'var(--oni-accent-oxygen)', fontWeight: 'bold' }}>ℹ️ Live Sync Notice:</span>
+          <span>{wildCritterCount} wild creatures are hidden to keep the panel clean, but their caloric and resource outputs are still fully active in your calculations.</span>
+        </div>
+      )}
+
+      {displayedRanches.length === 0 ? (
         <div style={{ 
           flex: 1, 
           display: 'flex', 
@@ -117,11 +139,15 @@ export function RanchBoard({ ranches, onRanchCountChange, onRanchRemove, onRanch
           textAlign: 'center',
           background: 'rgba(0, 0, 0, 0.15)'
         }}>
-          {isLiveConnected ? "No live critters detected in the colony." : "No active critter ranches. Use the dropdown above to add a critter planner!"}
+          {isLiveConnected 
+            ? (wildCritterCount > 0 
+                ? "No tamed critters detected in the colony. (Wild critters are active in calculations but hidden here)" 
+                : "No live critters detected in the colony.") 
+            : "No active critter ranches. Use the dropdown above to add a critter planner!"}
         </div>
       ) : (
         <div className="card-grid">
-          {ranches.map((ranch) => {
+          {displayedRanches.map((ranch) => {
             const critter = critterData[ranch.critterType];
             if (!critter) return null;
             return (
