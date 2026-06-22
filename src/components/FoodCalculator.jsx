@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Sliders, Droplet, Flame, Compass, Info, ShieldAlert, Sparkles, HelpCircle } from 'lucide-react';
+import { Sliders, Droplet, Flame, Compass, Info, ShieldAlert, Sparkles, HelpCircle, Lock, Unlock } from 'lucide-react';
 import { CROP_DATA } from '../data/crops';
 import { CRITTER_DATA } from '../data/critters';
 import { cleanName } from './DatabaseExplorer';
@@ -24,7 +24,7 @@ const RECIPE_INGREDIENTS = {
   omelette: [{ name: 'Critter Egg', amount: 1, unit: 'egg' }],
   pepperBread: [{ name: 'Sleet Wheat Grain', amount: 10, unit: 'grains' }, { name: 'Pincha Peppernut', amount: 1, unit: 'item' }],
   stuffedBerry: [{ name: 'Bristle Berry', amount: 2, unit: 'items' }, { name: 'Pincha Peppernut', amount: 1, unit: 'item' }],
-  mushroomWrap: [{ name: 'Fried Mushroom', amount: 1, unit: 'item' }, { name: 'Lettuce', amount: 1, unit: 'item' }],
+  mushroomWrap: [{ name: 'Fried Mushroom', amount: 1, unit: 'item' }, { name: 'Lettuce', amount: 4, unit: 'item' }],
   frostBurger: [{ name: 'Frost Bun', amount: 1, unit: 'item' }, { name: 'Lettuce', amount: 1, unit: 'item' }, { name: 'Barbecue', amount: 1, unit: 'item' }],
   grubfruitPreserves: [{ name: 'Grubfruit', amount: 1, unit: 'item' }, { name: 'Sucrose', amount: 5, unit: 'kg' }],
   smokedFish: [{ name: 'Pacu Fillet', amount: 1, unit: 'item' }, { name: 'Wood Log', amount: 25, unit: 'kg' }],
@@ -32,8 +32,291 @@ const RECIPE_INGREDIENTS = {
   tenderBrisket: [{ name: 'Meat', amount: 1, unit: 'item' }, { name: 'Wood Log', amount: 25, unit: 'kg' }],
   deepFriedFish: [{ name: 'Pacu Fillet', amount: 1, unit: 'item' }, { name: 'Tallow', amount: 2.4, unit: 'kg' }],
   deepFriedShellfish: [{ name: 'Pacu Fillet', amount: 1, unit: 'item' }, { name: 'Tallow', amount: 2.4, unit: 'kg' }],
-  makiSushi: [{ name: 'Pacu Fillet', amount: 1, unit: 'item' }, { name: 'Nori', amount: 2, unit: 'kg' }],
-  nigiriSushi: [{ name: 'Pacu Fillet', amount: 1, unit: 'item' }, { name: 'Nori', amount: 2, unit: 'kg' }]
+  makiSushi: [{ name: 'Liceloaf', amount: 1, unit: 'item' }, { name: 'Pacu Fillet', amount: 1, unit: 'item' }, { name: 'Nori', amount: 1, unit: 'kg' }],
+  nigiriSushi: [{ name: 'Liceloaf', amount: 1, unit: 'item' }, { name: 'Calamari', amount: 1, unit: 'item' }, { name: 'Nori', amount: 1, unit: 'kg' }]
+};
+
+// Helper function to adjust percentages when a slider is changed manually
+const adjustPercentages = (current, activeKeys, locked, changedKey, newValue) => {
+  const updated = { ...current };
+  
+  // Set all inactive keys to 0
+  Object.keys(updated).forEach(k => {
+    if (!activeKeys.includes(k)) {
+      updated[k] = 0;
+    }
+  });
+
+  if (activeKeys.length === 0) return updated;
+  if (activeKeys.length === 1) {
+    updated[activeKeys[0]] = 100;
+    return updated;
+  }
+
+  if (changedKey) {
+    const val = Math.max(0, Math.min(100, newValue));
+    updated[changedKey] = val;
+
+    const delta = val - (current[changedKey] || 0);
+    if (delta === 0) return updated;
+
+    // Adjust other active keys to absorb -delta.
+    const adjustKeys = activeKeys.filter(k => k !== changedKey && !locked[k]);
+
+    if (adjustKeys.length > 0) {
+      let remainingToAbsorb = -delta;
+      const sumCurrent = adjustKeys.reduce((sum, k) => sum + (current[k] || 0), 0);
+      
+      if (sumCurrent > 0) {
+        let applied = 0;
+        adjustKeys.forEach((k, idx) => {
+          let share;
+          if (idx === adjustKeys.length - 1) {
+            share = remainingToAbsorb - applied;
+          } else {
+            share = Math.round((current[k] / sumCurrent) * remainingToAbsorb);
+          }
+          const oldVal = updated[k] || 0;
+          let newVal = oldVal + share;
+          if (newVal < 0) newVal = 0;
+          if (newVal > 100) newVal = 100;
+          const actualChange = newVal - oldVal;
+          updated[k] = newVal;
+          applied += actualChange;
+        });
+        
+        let leftover = remainingToAbsorb - applied;
+        if (leftover !== 0) {
+          let passes = 0;
+          while (leftover !== 0 && passes < 5) {
+            passes++;
+            let candidateKeys = adjustKeys.filter(k => {
+              if (leftover < 0) {
+                return updated[k] > 0;
+              } else {
+                return updated[k] < 100;
+              }
+            });
+            if (candidateKeys.length === 0) break;
+            
+            let appliedInPass = 0;
+            const len = candidateKeys.length;
+            candidateKeys.forEach((k, idx) => {
+              let share;
+              if (idx === len - 1) {
+                share = leftover - appliedInPass;
+              } else {
+                share = leftover > 0 ? Math.ceil(leftover / len) : Math.floor(leftover / len);
+              }
+              const oldVal = updated[k];
+              let newVal = Math.max(0, Math.min(100, oldVal + share));
+              updated[k] = newVal;
+              appliedInPass += (newVal - oldVal);
+            });
+            leftover -= appliedInPass;
+          }
+        }
+      } else {
+        let remainingToAbsorb = -delta;
+        const len = adjustKeys.length;
+        adjustKeys.forEach((k, idx) => {
+          let share;
+          if (idx === len - 1) {
+            share = remainingToAbsorb;
+          } else {
+            share = remainingToAbsorb > 0 ? Math.ceil(remainingToAbsorb / len) : Math.floor(remainingToAbsorb / len);
+          }
+          updated[k] = Math.max(0, Math.min(100, share));
+          remainingToAbsorb -= updated[k];
+        });
+      }
+    } else {
+      // Revert the change to changedKey if we can't adjust other items
+      updated[changedKey] = current[changedKey] || 0;
+    }
+  }
+
+  // Ensure total sum is exactly 100
+  const total = activeKeys.reduce((sum, k) => sum + (updated[k] || 0), 0);
+  if (total !== 100) {
+    const diff = 100 - total;
+    const targetKeys = activeKeys.filter(k => !locked[k]);
+    const keysToAdjust = targetKeys.length > 0 ? targetKeys : activeKeys;
+    const sorted = [...keysToAdjust].sort((a, b) => {
+      return diff > 0 ? (updated[b] - updated[a]) : (updated[a] - updated[b]);
+    });
+    if (sorted.length > 0) {
+      updated[sorted[0]] = Math.max(0, Math.min(100, (updated[sorted[0]] || 0) + diff));
+    }
+  }
+
+  return updated;
+};
+
+// Helper function to redistribute percentages when a new food item is added to the diet
+const redistributeOnAddition = (addedId, current, activeKeys, locked) => {
+  const updated = { ...current };
+  const N = activeKeys.length;
+  const target = Math.floor(100 / N);
+
+  updated[addedId] = target;
+
+  const others = activeKeys.filter(k => k !== addedId);
+  if (others.length === 0) {
+    updated[addedId] = 100;
+    return updated;
+  }
+
+  const unlockedOthers = others.filter(k => !locked[k]);
+  const sumUnlockedOthers = unlockedOthers.reduce((sum, k) => sum + (current[k] || 0), 0);
+
+  if (sumUnlockedOthers >= target) {
+    let remainingToDeduct = target;
+    let applied = 0;
+    unlockedOthers.forEach((k, idx) => {
+      let share;
+      if (idx === unlockedOthers.length - 1) {
+        share = remainingToDeduct - applied;
+      } else {
+        share = Math.round((current[k] / sumUnlockedOthers) * target);
+      }
+      const oldVal = current[k] || 0;
+      const newVal = Math.max(0, oldVal - share);
+      updated[k] = newVal;
+      applied += (oldVal - newVal);
+    });
+
+    let leftover = target - applied;
+    if (leftover > 0) {
+      unlockedOthers.filter(k => updated[k] > 0).forEach(k => {
+        if (leftover <= 0) return;
+        const oldVal = updated[k];
+        const newVal = Math.max(0, oldVal - leftover);
+        updated[k] = newVal;
+        leftover -= (oldVal - newVal);
+      });
+    }
+  } else {
+    unlockedOthers.forEach(k => {
+      updated[k] = 0;
+    });
+
+    const remainingToDeduct = target - sumUnlockedOthers;
+    const lockedOthers = others.filter(k => locked[k]);
+    const sumLockedOthers = lockedOthers.reduce((sum, k) => sum + (current[k] || 0), 0);
+
+    if (sumLockedOthers > 0) {
+      let applied = 0;
+      lockedOthers.forEach((k, idx) => {
+        let share;
+        if (idx === lockedOthers.length - 1) {
+          share = remainingToDeduct - applied;
+        } else {
+          share = Math.round((current[k] / sumLockedOthers) * remainingToDeduct);
+        }
+        const oldVal = current[k] || 0;
+        const newVal = Math.max(0, oldVal - share);
+        updated[k] = newVal;
+        applied += (oldVal - newVal);
+      });
+    }
+  }
+
+  const total = activeKeys.reduce((sum, k) => sum + (updated[k] || 0), 0);
+  if (total !== 100) {
+    const diff = 100 - total;
+    const sorted = [...activeKeys].sort((a, b) => updated[b] - updated[a]);
+    if (sorted.length > 0) {
+      updated[sorted[0]] = Math.max(0, Math.min(100, (updated[sorted[0]] || 0) + diff));
+    }
+  }
+
+  return updated;
+};
+
+// Helper function to redistribute percentages when a food item is removed from the diet
+const redistributeOnRemoval = (removedId, current, activeKeys, locked) => {
+  const updated = { ...current };
+  updated[removedId] = 0;
+
+  if (activeKeys.length === 0) return updated;
+  if (activeKeys.length === 1) {
+    updated[activeKeys[0]] = 100;
+    return updated;
+  }
+
+  const freed = current[removedId] || 0;
+  if (freed === 0) return updated;
+
+  const unlocked = activeKeys.filter(k => !locked[k]);
+  if (unlocked.length > 0) {
+    const sumUnlocked = unlocked.reduce((sum, k) => sum + (current[k] || 0), 0);
+    if (sumUnlocked > 0) {
+      let applied = 0;
+      unlocked.forEach((k, idx) => {
+        let share;
+        if (idx === unlocked.length - 1) {
+          share = freed - applied;
+        } else {
+          share = Math.round((current[k] / sumUnlocked) * freed);
+        }
+        updated[k] = (current[k] || 0) + share;
+        applied += share;
+      });
+    } else {
+      let remaining = freed;
+      const len = unlocked.length;
+      unlocked.forEach((k, idx) => {
+        let share;
+        if (idx === len - 1) {
+          share = remaining;
+        } else {
+          share = Math.round(freed / len);
+        }
+        updated[k] = share;
+        remaining -= share;
+      });
+    }
+  } else {
+    const sumLocked = activeKeys.reduce((sum, k) => sum + (current[k] || 0), 0);
+    if (sumLocked > 0) {
+      let applied = 0;
+      activeKeys.forEach((k, idx) => {
+        let share;
+        if (idx === activeKeys.length - 1) {
+          share = freed - applied;
+        } else {
+          share = Math.round((current[k] / sumLocked) * freed);
+        }
+        updated[k] = (current[k] || 0) + share;
+        applied += share;
+      });
+    } else {
+      let remaining = freed;
+      const len = activeKeys.length;
+      activeKeys.forEach((k, idx) => {
+        let share;
+        if (idx === len - 1) {
+          share = remaining;
+        } else {
+          share = Math.round(freed / len);
+        }
+        updated[k] = share;
+        remaining -= share;
+      });
+    }
+  }
+
+  const total = activeKeys.reduce((sum, k) => sum + (updated[k] || 0), 0);
+  if (total !== 100) {
+    const diff = 100 - total;
+    const sorted = [...activeKeys].sort((a, b) => updated[b] - updated[a]);
+    if (sorted.length > 0) {
+      updated[sorted[0]] = Math.max(0, Math.min(100, (updated[sorted[0]] || 0) + diff));
+    }
+  }
+
+  return updated;
 };
 
 export function FoodCalculator({ 
@@ -54,8 +337,29 @@ export function FoodCalculator({
   addedToDiet,
   setAddedToDiet,
   mixPercentages,
-  setMixPercentages
+  setMixPercentages,
+  lockedPercentages = {},
 }) {
+  const createCropObject = (cropType, count) => {
+    const crop = cropData[cropType] || CROP_DATA[cropType];
+    const planters = crop?.acceptedPlanters || [];
+    let defaultPlanter = 'HydroponicFarm';
+    if (planters.includes('WideFarmTile')) {
+      defaultPlanter = 'WideFarmTile';
+    } else if (planters.includes('LargeBackwallFarm')) {
+      defaultPlanter = 'LargeBackwallFarm';
+    }
+    return {
+      id: `${cropType}_domesticated`,
+      cropType,
+      count,
+      roomSize: 96,
+      growthMode: 'domesticated',
+      farmerTouch: false,
+      planterType: defaultPlanter
+    };
+  };
+
   // Hovered tab state
   const [hoveredTabId, setHoveredTabId] = useState(null);
 
@@ -418,8 +722,7 @@ export function FoodCalculator({
         calCycle: 400,
         inputs: [
           { name: 'Slime', amount: 4, unit: 'kg' },
-          { name: 'Salt Water', amount: 5, unit: 'kg' },
-          { name: 'Bleach Stone', amount: 0.5, unit: 'kg' }
+          { name: 'Salt Water', amount: 20, unit: 'kg' }
         ],
         color: '#2E8B57',
         tier: 'Late Game',
@@ -441,8 +744,7 @@ export function FoodCalculator({
           { name: 'Dirt', amount: 5, unit: 'kg' },
           { name: 'Water', amount: 20, unit: 'kg' },
           { name: 'Igneous Rock', amount: 140, unit: 'kg' },
-          { name: 'Salt Water', amount: 5, unit: 'kg' },
-          { name: 'Bleach Stone', amount: 0.5, unit: 'kg' }
+          { name: 'Salt Water', amount: 20, unit: 'kg' }
         ],
         color: '#00FFFF',
         tier: 'Late Game',
@@ -577,34 +879,38 @@ export function FoodCalculator({
       },
       makiSushi: {
         id: 'makiSushi',
-        name: 'Maki Sushi',
-        type: 'critter',
-        sourceName: 'Pacu & Sushi Bar',
+        name: 'Sushi Roll',
+        type: 'prepared',
+        sourceName: 'Pacu & Mealwood',
         station: 'Sushi Bar',
         rawCalCycle: 200,
-        calCycle: 320,
+        calCycle: 436,
         inputs: [
           { name: 'Algae', amount: 140, unit: 'kg' },
-          { name: 'Nori', amount: 2.0, unit: 'kg' }
+          { name: 'Dirt', amount: 10, unit: 'kg' },
+          { name: 'Water', amount: 50, unit: 'kg' },
+          { name: 'Nori', amount: 1.0, unit: 'kg' }
         ],
         color: '#006400',
         tier: 'Mid to Late',
         efficiency: 'Very High',
         complexity: 'Medium',
-        description: 'Rice rolled in thin sheets of toasted Nori and stuffed with fresh Pacu sashimi. Exquisite beta quality.',
+        description: 'Rice rolled in thin sheets of toasted Nori and stuffed with fresh Pacu sashimi and Liceloaf.',
         isCooked: true,
         dlc: 'DLC5'
       },
       nigiriSushi: {
         id: 'nigiriSushi',
-        name: 'Nigiri Sushi',
-        type: 'critter',
-        sourceName: 'Squid & Sushi Bar',
+        name: 'Nigiri',
+        type: 'prepared',
+        sourceName: 'Squid & Mealwood',
         station: 'Sushi Bar',
         rawCalCycle: 60,
-        calCycle: 150,
+        calCycle: 416,
         inputs: [
-          { name: 'Nori', amount: 2.0, unit: 'kg' }
+          { name: 'Nori', amount: 3.4, unit: 'kg' },
+          { name: 'Dirt', amount: 10, unit: 'kg' },
+          { name: 'Water', amount: 50, unit: 'kg' }
         ],
         color: '#FFC0CB',
         tier: 'Late Game',
@@ -692,10 +998,11 @@ export function FoodCalculator({
       case 'smokedFish':
       case 'deepFriedFish':
       case 'deepFriedShellfish':
-      case 'makiSushi':
         return ranches.some(r => r.critterType === 'pacu' && r.count > 0);
+      case 'makiSushi':
+        return ranches.some(r => r.critterType === 'pacu' && r.count > 0) && crops.some(c => c.cropType === 'mealwood' && c.count > 0);
       case 'nigiriSushi':
-        return ranches.some(r => r.critterType === 'squid' && r.count > 0);
+        return ranches.some(r => r.critterType === 'squid' && r.count > 0) && crops.some(c => c.cropType === 'mealwood' && c.count > 0);
       case 'berrySludge':
         return crops.some(c => c.cropType === 'bristleBlossom' && c.count > 0) && crops.some(c => c.cropType === 'sleetWheat' && c.count > 0);
       case 'surfAndTurf':
@@ -740,10 +1047,11 @@ export function FoodCalculator({
       case 'smokedFish':
       case 'deepFriedFish':
       case 'deepFriedShellfish':
-      case 'makiSushi':
         return { type: 'critter', key: 'pacu' };
+      case 'makiSushi':
+        return { type: 'mixed-source', cropKeys: ['mealwood'], critterKeys: ['pacu'] };
       case 'nigiriSushi':
-        return { type: 'critter', key: 'squid' };
+        return { type: 'mixed-source', cropKeys: ['mealwood'], critterKeys: ['squid'] };
       case 'berrySludge':
         return { type: 'multi-crop', keys: ['bristleBlossom', 'sleetWheat'] };
       case 'surfAndTurf':
@@ -826,12 +1134,12 @@ export function FoodCalculator({
       if (newCrops.some(c => c.cropType === 'bristleBlossom')) {
         newCrops = newCrops.map(c => c.cropType === 'bristleBlossom' ? { ...c, count: bristleCount } : c);
       } else {
-        newCrops.push({ cropType: 'bristleBlossom', count: bristleCount, roomSize: 96 });
+        newCrops.push(createCropObject('bristleBlossom', bristleCount));
       }
       if (newCrops.some(c => c.cropType === 'sleetWheat')) {
         newCrops = newCrops.map(c => c.cropType === 'sleetWheat' ? { ...c, count: wheatCount } : c);
       } else {
-        newCrops.push({ cropType: 'sleetWheat', count: wheatCount, roomSize: 96 });
+        newCrops.push(createCropObject('sleetWheat', wheatCount));
       }
       setCrops(newCrops);
 
@@ -863,12 +1171,12 @@ export function FoodCalculator({
       if (newCrops.some(c => c.cropType === 'sleetWheat')) {
         newCrops = newCrops.map(c => c.cropType === 'sleetWheat' ? { ...c, count: wheatCount } : c);
       } else {
-        newCrops.push({ cropType: 'sleetWheat', count: wheatCount, roomSize: 96 });
+        newCrops.push(createCropObject('sleetWheat', wheatCount));
       }
       if (newCrops.some(c => c.cropType === 'pinchaPepper')) {
         newCrops = newCrops.map(c => c.cropType === 'pinchaPepper' ? { ...c, count: pepperCount } : c);
       } else {
-        newCrops.push({ cropType: 'pinchaPepper', count: pepperCount, roomSize: 96 });
+        newCrops.push(createCropObject('pinchaPepper', pepperCount));
       }
       setCrops(newCrops);
 
@@ -879,12 +1187,12 @@ export function FoodCalculator({
       if (newCrops.some(c => c.cropType === 'bristleBlossom')) {
         newCrops = newCrops.map(c => c.cropType === 'bristleBlossom' ? { ...c, count: bristleCount } : c);
       } else {
-        newCrops.push({ cropType: 'bristleBlossom', count: bristleCount, roomSize: 96 });
+        newCrops.push(createCropObject('bristleBlossom', bristleCount));
       }
       if (newCrops.some(c => c.cropType === 'pinchaPepper')) {
         newCrops = newCrops.map(c => c.cropType === 'pinchaPepper' ? { ...c, count: pepperCount } : c);
       } else {
-        newCrops.push({ cropType: 'pinchaPepper', count: pepperCount, roomSize: 96 });
+        newCrops.push(createCropObject('pinchaPepper', pepperCount));
       }
       setCrops(newCrops);
 
@@ -895,12 +1203,12 @@ export function FoodCalculator({
       if (newCrops.some(c => c.cropType === 'duskCap')) {
         newCrops = newCrops.map(c => c.cropType === 'duskCap' ? { ...c, count: duskCount } : c);
       } else {
-        newCrops.push({ cropType: 'duskCap', count: duskCount, roomSize: 96 });
+        newCrops.push(createCropObject('duskCap', duskCount));
       }
       if (newCrops.some(c => c.cropType === 'waterweed')) {
         newCrops = newCrops.map(c => c.cropType === 'waterweed' ? { ...c, count: weedCount } : c);
       } else {
-        newCrops.push({ cropType: 'waterweed', count: weedCount, roomSize: 96 });
+        newCrops.push(createCropObject('waterweed', weedCount));
       }
       setCrops(newCrops);
 
@@ -912,7 +1220,7 @@ export function FoodCalculator({
       if (newCrops.some(c => c.cropType === 'grubfruitPlant')) {
         newCrops = newCrops.map(c => c.cropType === 'grubfruitPlant' ? { ...c, count: plantCount } : c);
       } else {
-        newCrops.push({ cropType: 'grubfruitPlant', count: plantCount, roomSize: 96 });
+        newCrops.push(createCropObject('grubfruitPlant', plantCount));
       }
       setCrops(newCrops);
 
@@ -933,12 +1241,12 @@ export function FoodCalculator({
       if (newCrops.some(c => c.cropType === 'sleetWheat')) {
         newCrops = newCrops.map(c => c.cropType === 'sleetWheat' ? { ...c, count: wheatCount } : c);
       } else {
-        newCrops.push({ cropType: 'sleetWheat', count: wheatCount, roomSize: 96 });
+        newCrops.push(createCropObject('sleetWheat', wheatCount));
       }
       if (newCrops.some(c => c.cropType === 'waterweed')) {
         newCrops = newCrops.map(c => c.cropType === 'waterweed' ? { ...c, count: weedCount } : c);
       } else {
-        newCrops.push({ cropType: 'waterweed', count: weedCount, roomSize: 96 });
+        newCrops.push(createCropObject('waterweed', weedCount));
       }
       setCrops(newCrops);
 
@@ -950,6 +1258,52 @@ export function FoodCalculator({
       }
       setRanches(newRanches);
 
+    } else if (srcId === 'makiSushi') {
+      const pacuKcalNeeded = 0.485 * totalCaloriesNeeded;
+      const mealwoodKcalNeeded = 0.515 * totalCaloriesNeeded;
+
+      const pacuCount = Math.ceil(pacuKcalNeeded / 200) || 4;
+      const mealwoodCount = Math.ceil(mealwoodKcalNeeded / (200 * plantSpeed)) || 6;
+
+      let newCrops = [...crops];
+      if (newCrops.some(c => c.cropType === 'mealwood')) {
+        newCrops = newCrops.map(c => c.cropType === 'mealwood' ? { ...c, count: mealwoodCount } : c);
+      } else {
+        newCrops.push(createCropObject('mealwood', mealwoodCount));
+      }
+      setCrops(newCrops);
+
+      let newRanches = [...ranches];
+      if (newRanches.some(r => r.critterType === 'pacu')) {
+        newRanches = newRanches.map(r => r.critterType === 'pacu' ? { ...r, count: pacuCount } : r);
+      } else {
+        newRanches.push({ critterType: 'pacu', count: pacuCount, ranchState: 'happy' });
+      }
+      setRanches(newRanches);
+
+    } else if (srcId === 'nigiriSushi') {
+      const squidKcalNeeded = 0.32 * totalCaloriesNeeded;
+      const mealwoodKcalNeeded = 0.68 * totalCaloriesNeeded;
+
+      const squidCount = Math.ceil(squidKcalNeeded / 60) || 6;
+      const mealwoodCount = Math.ceil(mealwoodKcalNeeded / (200 * plantSpeed)) || 8;
+
+      let newCrops = [...crops];
+      if (newCrops.some(c => c.cropType === 'mealwood')) {
+        newCrops = newCrops.map(c => c.cropType === 'mealwood' ? { ...c, count: mealwoodCount } : c);
+      } else {
+        newCrops.push(createCropObject('mealwood', mealwoodCount));
+      }
+      setCrops(newCrops);
+
+      let newRanches = [...ranches];
+      if (newRanches.some(r => r.critterType === 'squid')) {
+        newRanches = newRanches.map(r => r.critterType === 'squid' ? { ...r, count: squidCount } : r);
+      } else {
+        newRanches.push({ critterType: 'squid', count: squidCount, ranchState: 'happy' });
+      }
+      setRanches(newRanches);
+
     } else if (mapping.type === 'crop') {
       const actualCal = src.calCycle * plantSpeed;
       const countRequired = Math.ceil(totalCaloriesNeeded / actualCal) || 8;
@@ -957,7 +1311,7 @@ export function FoodCalculator({
       if (exists) {
         setCrops(crops.map(c => c.cropType === mapping.key ? { ...c, count: countRequired } : c));
       } else {
-        setCrops([...crops, { cropType: mapping.key, count: countRequired, roomSize: 96 }]);
+        setCrops([...crops, createCropObject(mapping.key, countRequired)]);
       }
     } else if (mapping.type === 'critter') {
       const actualCal = src.calCycle;
@@ -996,53 +1350,86 @@ export function FoodCalculator({
 
   // Handle Percentage Changes inside the Diet Mixer
   const handleMixPercentageChange = (key, newVal) => {
-    const updated = { ...mixPercentages, [key]: newVal };
-    const total = Object.values(updated).reduce((sum, v) => sum + v, 0);
-
-    if (total <= 100) {
-      setMixPercentages(updated);
-    } else {
-      // If exceeding 100, dynamically deduct from other sliders
-      const overflow = total - 100;
-      let remainingOverflow = overflow;
-      
-      const siblingKeys = Object.keys(updated).filter(k => k !== key && updated[k] > 0);
-      
-      // Deduct proportionally
-      const siblingSum = siblingKeys.reduce((sum, k) => sum + updated[k], 0);
-      if (siblingSum > 0) {
-        siblingKeys.forEach(k => {
-          const share = Math.round((updated[k] / siblingSum) * overflow);
-          const deduction = Math.min(updated[k], share);
-          updated[k] -= deduction;
-          remainingOverflow -= deduction;
-        });
-      }
-
-      // Cleanup any minor rounding errors
-      if (remainingOverflow !== 0) {
-        const activeSibling = siblingKeys.find(k => updated[k] > 0);
-        if (activeSibling) {
-          updated[activeSibling] = Math.max(0, updated[activeSibling] - remainingOverflow);
-        }
-      }
-      
-      setMixPercentages(updated);
-    }
+    setMixPercentages(current => {
+      const activeKeys = Object.keys(addedToDiet).filter(k => addedToDiet[k]);
+      return adjustPercentages(current, activeKeys, lockedPercentages, key, newVal);
+    });
   };
 
-  // Re-adjust Mixer to exact 100% total if needed
-  const fixMixPercentages = () => {
-    const total = Object.values(mixPercentages).reduce((sum, v) => sum + v, 0);
-    if (total === 100) return;
-    
-    if (total < 100) {
-      // Add the difference to the largest or first positive slider
-      const diff = 100 - total;
-      const sortedKeys = Object.keys(mixPercentages).sort((a, b) => mixPercentages[b] - mixPercentages[a]);
-      const target = sortedKeys[0];
-      setMixPercentages({ ...mixPercentages, [target]: mixPercentages[target] + diff });
-    }
+  const handleAddFoodToDiet = (srcId) => {
+    setAddedToDiet(prev => {
+      const nextAdded = { ...prev, [srcId]: true };
+      const activeKeys = Object.keys(nextAdded).filter(k => nextAdded[k]);
+      setMixPercentages(current => {
+        return redistributeOnAddition(srcId, current, activeKeys, lockedPercentages);
+      });
+      return nextAdded;
+    });
+  };
+
+  const handleRemoveFoodFromDiet = (srcId) => {
+    setAddedToDiet(prev => {
+      const nextAdded = { ...prev, [srcId]: false };
+      const activeKeys = Object.keys(nextAdded).filter(k => nextAdded[k]);
+      setMixPercentages(current => {
+        return redistributeOnRemoval(srcId, current, activeKeys, lockedPercentages);
+      });
+      return nextAdded;
+    });
+    setLockedPercentages(prev => {
+      const nextLocked = { ...prev };
+      delete nextLocked[srcId];
+      return nextLocked;
+    });
+    handleRemoveFromFarms(srcId);
+  };
+
+  const toggleLock = (srcId) => {
+    setLockedPercentages(prev => ({
+      ...prev,
+      [srcId]: !prev[srcId]
+    }));
+  };
+
+  const handleEqualizeDiet = () => {
+    const activeKeys = Object.keys(addedToDiet).filter(k => addedToDiet[k]);
+    if (activeKeys.length === 0) return;
+
+    setMixPercentages(current => {
+      const updated = { ...current };
+      const unlocked = activeKeys.filter(k => !lockedPercentages[k]);
+
+      if (unlocked.length > 0) {
+        const sumLocked = activeKeys.filter(k => lockedPercentages[k]).reduce((sum, k) => sum + (current[k] || 0), 0);
+        const remaining = Math.max(0, 100 - sumLocked);
+        const share = Math.floor(remaining / unlocked.length);
+        
+        unlocked.forEach(k => {
+          updated[k] = share;
+        });
+
+        // Distribute remainder
+        let diff = remaining - (share * unlocked.length);
+        if (diff > 0) {
+          const sorted = [...unlocked].sort((a, b) => (current[b] || 0) - (current[a] || 0));
+          if (sorted.length > 0) {
+            updated[sorted[0]] += diff;
+          }
+        }
+      } else {
+        // All are locked: unlock everything and balance equally
+        setLockedPercentages({});
+        const share = Math.floor(100 / activeKeys.length);
+        activeKeys.forEach(k => {
+          updated[k] = share;
+        });
+        let diff = 100 - (share * activeKeys.length);
+        if (diff > 0 && activeKeys.length > 0) {
+          updated[activeKeys[0]] += diff;
+        }
+      }
+      return updated;
+    });
   };
 
   const mixTotalPercentage = Object.values(mixPercentages).reduce((sum, v) => sum + v, 0);
@@ -1219,17 +1606,43 @@ export function FoodCalculator({
             <Sliders size={16} />
             Diet Distribution
           </h2>
-          <span style={{ 
-            fontSize: '0.75rem', 
-            background: mixTotalPercentage === 100 ? 'rgba(168, 255, 140, 0.15)' : 'rgba(239, 68, 68, 0.15)', 
-            color: mixTotalPercentage === 100 ? 'var(--oni-accent-success)' : 'var(--oni-accent-danger)', 
-            padding: '0.15rem 0.4rem', 
-            borderRadius: '4px',
-            fontFamily: 'var(--oni-font-mono)',
-            fontWeight: 'bold'
-          }}>
-            {mixTotalPercentage}%
-          </span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            {Object.values(calorieSources).filter(src => addedToDiet[src.id]).length > 1 && (
+              <button
+                onClick={handleEqualizeDiet}
+                style={{
+                  background: 'rgba(255, 255, 255, 0.05)',
+                  border: '1px solid rgba(255, 255, 255, 0.1)',
+                  borderRadius: '4px',
+                  color: 'var(--oni-accent-oxygen)',
+                  fontSize: '0.7rem',
+                  padding: '0.15rem 0.4rem',
+                  cursor: 'pointer',
+                  fontFamily: 'var(--oni-font-mono)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.2rem',
+                  transition: 'background 0.15s ease'
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)'}
+                onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)'}
+                title="Balance all unlocked diet items equally"
+              >
+                Balance
+              </button>
+            )}
+            <span style={{ 
+              fontSize: '0.75rem', 
+              background: mixTotalPercentage === 100 ? 'rgba(168, 255, 140, 0.15)' : 'rgba(239, 68, 68, 0.15)', 
+              color: mixTotalPercentage === 100 ? 'var(--oni-accent-success)' : 'var(--oni-accent-danger)', 
+              padding: '0.15rem 0.4rem', 
+              borderRadius: '4px',
+              fontFamily: 'var(--oni-font-mono)',
+              fontWeight: 'bold'
+            }}>
+              {mixTotalPercentage}%
+            </span>
+          </div>
         </div>
         
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
@@ -1280,15 +1693,31 @@ export function FoodCalculator({
                       <span style={{ fontSize: '0.8rem', fontWeight: 'bold', color: 'var(--oni-text-primary)' }}>{src.name}</span>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                      <button
+                        onClick={() => toggleLock(src.id)}
+                        style={{
+                          background: 'none',
+                          border: 'none',
+                          color: lockedPercentages[src.id] ? 'var(--oni-accent-oxygen)' : 'var(--oni-text-muted)',
+                          cursor: 'pointer',
+                          padding: '0.1rem',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          opacity: lockedPercentages[src.id] ? 1 : 0.4,
+                          transition: 'opacity 0.15s ease, color 0.15s ease'
+                        }}
+                        title={lockedPercentages[src.id] ? "Unlock diet percentage" : "Lock diet percentage"}
+                        onMouseEnter={(e) => { if (!lockedPercentages[src.id]) e.currentTarget.style.opacity = 0.8; }}
+                        onMouseLeave={(e) => { if (!lockedPercentages[src.id]) e.currentTarget.style.opacity = 0.4; }}
+                      >
+                        {lockedPercentages[src.id] ? <Lock size={12} /> : <Unlock size={12} />}
+                      </button>
                       <span style={{ fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold', color: src.color, fontSize: '0.8rem' }}>
                         {mixPercentages[src.id]}%
                       </span>
                       <button 
-                        onClick={() => {
-                          setAddedToDiet(prev => ({ ...prev, [src.id]: false }));
-                          setMixPercentages(prev => ({ ...prev, [src.id]: 0 }));
-                          handleRemoveFromFarms(src.id);
-                        }}
+                        onClick={() => handleRemoveFoodFromDiet(src.id)}
                         style={{
                           background: 'none',
                           border: 'none',
@@ -1316,7 +1745,7 @@ export function FoodCalculator({
                     type="range" 
                     min="0" 
                     max="100" 
-                    step="5"
+                    step="1"
                     value={mixPercentages[src.id]} 
                     onChange={(e) => handleMixPercentageChange(src.id, parseInt(e.target.value) || 0)}
                     style={{ cursor: 'pointer', height: '6px', margin: '0.2rem 0' }}
@@ -1482,9 +1911,7 @@ export function FoodCalculator({
               <button
                 onClick={(e) => {
                   e.stopPropagation();
-                  setAddedToDiet(prev => ({ ...prev, [src.id]: false }));
-                  setMixPercentages(prev => ({ ...prev, [src.id]: 0 }));
-                  handleRemoveFromFarms(src.id);
+                  handleRemoveFoodFromDiet(src.id);
                 }}
                 style={{
                   position: 'absolute',
@@ -2249,7 +2676,7 @@ export function FoodCalculator({
               tenderBrisket: 4000,
               deepFriedFish: 2000,
               deepFriedShellfish: 2400,
-              makiSushi: 3000,
+              makiSushi: 3600,
               nigiriSushi: 4000
             };
 
@@ -2272,11 +2699,9 @@ export function FoodCalculator({
             const handleToggleDietSource = (srcId) => {
               const added = addedToDiet[srcId];
               if (!added) {
-                setAddedToDiet(prev => ({ ...prev, [srcId]: true }));
+                handleAddFoodToDiet(srcId);
               } else {
-                setAddedToDiet(prev => ({ ...prev, [srcId]: false }));
-                setMixPercentages(prev => ({ ...prev, [srcId]: 0 }));
-                handleRemoveFromFarms(srcId);
+                handleRemoveFoodFromDiet(srcId);
               }
             };
 

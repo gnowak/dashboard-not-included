@@ -2,11 +2,47 @@ import React from 'react';
 import { ArrowDownRight, ArrowUpRight, Maximize2, Trash2 } from 'lucide-react';
 import { getImageUrl, formatResourceName } from '../utils/images';
 
-export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChange, onRemove }) {
-  const currentOutput = crop.caloriesPerCycle * count;
+export function CropCard({ 
+  crop, 
+  count, 
+  roomSize = 96, 
+  onChange, 
+  onRoomSizeChange, 
+  onRemove, 
+  growthMode, 
+  farmerTouch, 
+  onModeChange, 
+  onFarmerTouchChange,
+  planterType,
+  onPlanterChange
+}) {
+  const plantMult = growthMode === 'wild' ? 0.25 : (farmerTouch ? 2.0 : 1.0);
+  const inputMult = growthMode === 'wild' ? 0.0 : 1.0;
+
+  const currentOutput = crop.caloriesPerCycle * count * plantMult;
   
-  // Usable slots per greenhouse: Room floor width assuming 4-tile high rooms (Room Size / 4) minus 2 tiles for Farm Station
-  const usableCropsPerRoom = Math.max(1, Math.floor(roomSize / 4) - 2);
+  // Resolve valid farm planters from acceptedPlanters
+  const planters = crop.acceptedPlanters || [];
+  const farmPlanters = planters.filter(p => 
+    p === 'PlanterBox' || p === 'FarmTile' || p === 'HydroponicFarm' || p === 'LargeBackwallFarm' || p === 'WideFarmTile'
+  );
+  if (farmPlanters.length === 0) {
+    const lowerId = crop.id?.toLowerCase() || '';
+    if (lowerId.includes('dewpalm') || lowerId === 'clam') {
+      farmPlanters.push('WideFarmTile');
+    } else if (lowerId.includes('planktoncoral') || lowerId.includes('urchinplant')) {
+      farmPlanters.push('LargeBackwallFarm', 'HydroponicFarm');
+    } else {
+      farmPlanters.push('HydroponicFarm');
+    }
+  }
+
+  const activePlanter = planterType || farmPlanters[0] || 'HydroponicFarm';
+  const planterWidth = activePlanter === 'WideFarmTile' ? 3 : (activePlanter === 'LargeBackwallFarm' ? 2 : 1);
+  const planterName = planterWidth === 3 ? 'Wide Hydroponic Farm (3x1)' : (planterWidth === 2 ? 'Wall Planter (2x2)' : 'Standard Tile (1x1)');
+
+  // Usable slots per greenhouse: Room floor width assuming 4-tile high rooms (Room Size / 4) minus 2 tiles for Farm Station, divided by planter width
+  const usableCropsPerRoom = Math.max(1, Math.floor((Math.floor(roomSize / 4) - 2) / planterWidth));
   
   // Calculate greenhouse room counts dynamically
   const currentGreenhouseCount = Math.ceil(count / usableCropsPerRoom);
@@ -24,8 +60,13 @@ export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChang
         flexDirection: 'column', 
         justifyContent: 'space-between',
         borderTop: `4px solid ${crop.color || 'var(--oni-panel-border)'}`,
+        borderLeft: growthMode === 'wild' ? '1px dashed var(--oni-accent-success)' : '1px solid var(--oni-panel-border)',
+        borderRight: growthMode === 'wild' ? '1px dashed var(--oni-accent-success)' : '1px solid var(--oni-panel-border)',
+        borderBottom: growthMode === 'wild' ? '1px dashed var(--oni-accent-success)' : '1px solid var(--oni-panel-border)',
+        background: growthMode === 'wild' ? 'linear-gradient(180deg, var(--oni-panel-bg) 0%, rgba(168, 255, 140, 0.03) 100%)' : 'var(--oni-panel-bg)',
         height: '100%',
-        padding: '1rem'
+        padding: '1rem',
+        boxShadow: growthMode === 'wild' ? '0 6px 16px rgba(0, 0, 0, 0.35), 0 0 12px rgba(168, 255, 140, 0.05)' : '0 6px 16px rgba(0, 0, 0, 0.35), 0 0 20px rgba(127, 191, 255, 0.04)'
       }}
     >
       <div style={{ flexShrink: 0 }}>
@@ -51,8 +92,22 @@ export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChang
             />
           </div>
           <div style={{ flex: 1, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <h3 style={{ color: crop.color || 'var(--oni-text-primary)', fontSize: '1.25rem', fontWeight: 'bold', margin: 0 }}>
+            <h3 style={{ color: crop.color || 'var(--oni-text-primary)', fontSize: '1.25rem', fontWeight: 'bold', margin: 0, display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
               {crop.name}
+              <span style={{ 
+                fontSize: '0.65rem', 
+                color: growthMode === 'wild' ? 'var(--oni-accent-success)' : 'var(--oni-accent-oxygen)', 
+                fontWeight: 'bold', 
+                textTransform: 'uppercase',
+                background: growthMode === 'wild' ? 'rgba(168, 255, 140, 0.15)' : 'rgba(127, 191, 255, 0.15)',
+                border: `1px solid ${growthMode === 'wild' ? 'var(--oni-accent-success)' : 'var(--oni-accent-oxygen)'}`,
+                padding: '0.1rem 0.45rem',
+                borderRadius: '4px',
+                letterSpacing: '0.05em',
+                fontFamily: 'var(--oni-font-mono)'
+              }}>
+                {growthMode === 'wild' ? '🌾 Wild' : '🏡 Dom'}
+              </span>
             </h3>
             {onRemove && (
               <button 
@@ -97,7 +152,7 @@ export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChang
               onChange={(e) => {
                 const newSize = parseInt(e.target.value) || 96;
                 onRoomSizeChange(newSize);
-                const newUsable = Math.max(1, Math.floor(newSize / 4) - 2);
+                const newUsable = Math.max(1, Math.floor((Math.floor(newSize / 4) - 2) / planterWidth));
                 if (count > 5 * newUsable) {
                   onChange(5 * newUsable);
                 }
@@ -112,7 +167,7 @@ export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChang
               onChange={(e) => {
                 const newSize = parseInt(e.target.value) || 96;
                 onRoomSizeChange(newSize);
-                const newUsable = Math.max(1, Math.floor(newSize / 4) - 2);
+                const newUsable = Math.max(1, Math.floor((Math.floor(newSize / 4) - 2) / planterWidth));
                 if (count > 5 * newUsable) {
                   onChange(5 * newUsable);
                 }
@@ -129,8 +184,11 @@ export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChang
               }}
             />
           </div>
-          <div style={{ fontSize: '0.7rem', color: 'var(--oni-text-muted)', marginTop: '0.15rem', fontStyle: 'italic' }}>
-            Usable slots: <span style={{ color: 'var(--oni-text-primary)', fontWeight: 'bold' }}>{usableCropsPerRoom} plants</span> (floor width assuming 4-tile room height minus 2 for Farm Station)
+          <div style={{ fontSize: '0.75rem', color: crop.color || 'var(--oni-accent-oxygen)', marginTop: '0.25rem', fontFamily: 'var(--oni-font-mono)', fontWeight: 'bold' }}>
+            Planter: <span style={{ color: '#fff' }}>{planterName}</span>
+          </div>
+          <div style={{ fontSize: '0.7rem', color: 'var(--oni-text-muted)', marginTop: '0.15rem', fontStyle: 'italic', lineHeight: '1.2' }}>
+            Usable slots: <span style={{ color: 'var(--oni-text-primary)', fontWeight: 'bold' }}>{usableCropsPerRoom} plants</span> (floor width {Math.floor(roomSize / 4)} tiles minus 2 for Farm Station, divided by planter width {planterWidth})
           </div>
         </div>
 
@@ -215,6 +273,109 @@ export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChang
         fontSize: '0.8rem',
         flexShrink: 0
       }}>
+        {/* Cultivation Mode Selector */}
+        {count > 0 && (
+          <div style={{ 
+            display: 'flex', 
+            justifyContent: 'space-between', 
+            alignItems: 'center', 
+            background: growthMode === 'wild' ? 'rgba(168, 255, 140, 0.05)' : 'rgba(0, 0, 0, 0.2)',
+            padding: '0.25rem 0.5rem',
+            borderRadius: '4px',
+            border: `1px solid ${growthMode === 'wild' ? 'rgba(168, 255, 140, 0.15)' : 'var(--oni-panel-border)'}`,
+            marginBottom: '0.25rem'
+          }}>
+            <span className="stat-label" style={{ fontSize: '0.75rem' }}>Mode:</span>
+            <select
+              value={growthMode}
+              onChange={(e) => onModeChange(e.target.value)}
+              style={{
+                background: 'rgba(0, 0, 0, 0.4)',
+                border: 'none',
+                color: growthMode === 'wild' ? 'var(--oni-accent-success)' : 'var(--oni-text-primary)',
+                fontFamily: 'var(--oni-font-mono)',
+                fontSize: '0.75rem',
+                fontWeight: 'bold',
+                padding: '0.1rem 0.3rem',
+                cursor: 'pointer',
+                outline: 'none',
+                textTransform: 'uppercase'
+              }}
+            >
+              <option value="domesticated" style={{ background: '#1a1d24', color: '#fff' }}>🏡 Domesticated</option>
+              <option value="wild" style={{ background: '#1a1d24', color: 'var(--oni-accent-success)' }}>🌾 Wild</option>
+            </select>
+          </div>
+        )}
+
+        {/* Planter Selector */}
+        {count > 0 && (
+          <div style={{ 
+            display: 'flex', 
+            justifyContent: 'space-between', 
+            alignItems: 'center', 
+            background: 'rgba(0, 0, 0, 0.2)',
+            padding: '0.25rem 0.5rem',
+            borderRadius: '4px',
+            border: '1px solid var(--oni-panel-border)',
+            marginBottom: '0.25rem'
+          }}>
+            <span className="stat-label" style={{ fontSize: '0.75rem' }}>Planter:</span>
+            {farmPlanters.length > 1 ? (
+              <select
+                value={activePlanter}
+                onChange={(e) => onPlanterChange(e.target.value)}
+                style={{
+                  background: 'rgba(0, 0, 0, 0.4)',
+                  border: 'none',
+                  color: 'var(--oni-accent-oxygen)',
+                  fontFamily: 'var(--oni-font-mono)',
+                  fontSize: '0.75rem',
+                  fontWeight: 'bold',
+                  padding: '0.1rem 0.3rem',
+                  cursor: 'pointer',
+                  outline: 'none'
+                }}
+              >
+                {farmPlanters.map(p => (
+                  <option key={p} value={p} style={{ background: '#1a1d24', color: '#fff' }}>
+                    {p === 'LargeBackwallFarm' ? 'Wall Planter (2x2)' : (p === 'WideFarmTile' ? 'Wide Hydroponic (3x1)' : 'Standard Tile (1x1)')}
+                  </option>
+                ))}
+              </select>
+            ) : (
+              <span style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', fontWeight: 'bold', color: 'var(--oni-text-primary)' }}>
+                {planterWidth === 3 ? 'Wide Hydroponic (3x1)' : (planterWidth === 2 ? 'Wall Planter (2x2)' : 'Standard Tile (1x1)')}
+              </span>
+            )}
+          </div>
+        )}
+
+        {/* Farmer's Touch Checkbox */}
+        {count > 0 && growthMode === 'domesticated' && (
+          <div style={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            gap: '0.5rem',
+            background: farmerTouch ? 'rgba(127, 191, 255, 0.08)' : 'rgba(0, 0, 0, 0.1)',
+            padding: '0.35rem 0.5rem',
+            borderRadius: '4px',
+            border: `1px solid ${farmerTouch ? 'rgba(127, 191, 255, 0.2)' : 'var(--oni-panel-border)'}`,
+            marginBottom: '0.25rem'
+          }}>
+            <input 
+              type="checkbox" 
+              id={`ft-${crop.id}-${growthMode}`}
+              checked={!!farmerTouch}
+              onChange={(e) => onFarmerTouchChange(e.target.checked)}
+              style={{ cursor: 'pointer', width: '14px', height: '14px' }}
+            />
+            <label htmlFor={`ft-${crop.id}-${growthMode}`} style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', color: 'var(--oni-text-primary)', cursor: 'pointer', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '0.25rem', userSelect: 'none' }}>
+              ⚡ Farmer's Touch <span style={{ color: 'var(--oni-accent-oxygen)', fontSize: '0.65rem' }}>(2x Speed)</span>
+            </label>
+          </div>
+        )}
+
         {/* Caloric Output */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <span className="stat-label" style={{ fontWeight: 'bold' }}>Daily Calorie Output</span>
@@ -270,7 +431,7 @@ export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChang
                     onError={(e) => { e.currentTarget.style.display = 'none'; }}
                   />
                   <div>
-                    {(input.amount * count).toFixed(0)} {input.unit}
+                    {(input.amount * count * inputMult).toFixed(0)} {input.unit}
                     <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{formatResourceName(input.name)}</span>
                   </div>
                 </div>
@@ -301,7 +462,7 @@ export function CropCard({ crop, count, roomSize = 96, onChange, onRoomSizeChang
                       onError={(e) => { e.currentTarget.style.display = 'none'; }}
                     />
                     <div>
-                      {(output.amount * count).toFixed(1)} {output.unit}
+                      {(output.amount * count * plantMult).toFixed(1)} {output.unit}
                       <span style={{ color: 'var(--oni-text-muted)', fontSize: '0.65rem', display: 'block' }}>{formatResourceName(output.name)}</span>
                     </div>
                   </div>

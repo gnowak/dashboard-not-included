@@ -73,11 +73,10 @@ export const CROP_DATA = {
     id: 'waterweed',
     name: 'Waterweed',
     caloriesPerCycle: 300, // Yields crunchy Lettuce
-    description: 'Cultivates crisp Lettuce heads in aquatic environments. Must grow in shallow Salt Water or Brine. Fertilizes with Bleach Stone.',
+    description: 'Cultivates crisp Lettuce heads in aquatic environments. Must grow in shallow Salt Water or Brine.',
     color: '#2E8B57', // Sea Green
     inputs: [
-      { name: 'Salt Water', amount: 5, unit: 'kg' },
-      { name: 'Bleach Stone', amount: 0.5, unit: 'kg' }
+      { name: 'Salt Water', amount: 20, unit: 'kg' }
     ],
     outputs: []
   },

@@ -727,7 +727,7 @@
     "specificHeatCapacity": 1.8,
     "thermalConductivity": 0.15,
     "molarMass": 68.12,
-    "highTemp": 450.15,
+    "highTemp": 493.15,
     "highTempTransitionTarget": "CarbonDioxide",
     "lowTemp": 0.0,
     "lowTempTransitionTarget": "0",

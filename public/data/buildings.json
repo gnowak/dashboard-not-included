@@ -834,8 +834,7 @@
     "tags": [
       "RoomProberBuilding",
       "FloorTiles",
-      "Carpeted",
-      "truetiles_texturedTile"
+      "Carpeted"
     ],
     "description": "Soft on little Duplicant toesies.",
     "effect": "Used to build the walls and floors of rooms.\n\nIncreases <link=\"DECOR\">Decor</link>, contributing to <link=\"MORALE\">Morale</link>.",
@@ -1361,7 +1360,7 @@
     "tags": [
       "RoomProberBuilding"
     ],
-    "description": "Critters tend to stay close to their food source and wander less when given a feeder.",
+    "description": "Wild critters who use feeders get accustomed to the cushiness of domesticated life.",
     "effect": "Automatically dispenses food for hungry <link=\"CREATURES\">Critters</link>.",
     "mass": [
       200.0
@@ -2270,7 +2269,7 @@
       "RoomProberBuilding",
       "Submergible"
     ],
-    "description": "Build this feeder above a body of water to feed the fish within.",
+    "description": "Build this feeder above a body of water to feed and tame the fish within.",
     "effect": "Automatically dispenses stored <link=\"CREATURES\">Critter</link> food into the area below.\n\nDispenses continuously as food is consumed.",
     "mass": [
       200.0
@@ -2317,7 +2316,7 @@
       "Submergible"
     ],
     "description": "Trapped fish will automatically be bagged for transport.",
-    "effect": "Attracts and traps swimming <link=\"PACU\">Pacu</link>.\n\nSingle use.",
+    "effect": "Attracts and traps aquatic <link=\"CREATURES\">Critters</link>.\n\nSingle use.",
     "mass": [
       200.0
     ],
@@ -2924,8 +2923,7 @@
     "name": "Airflow Tile",
     "tags": [
       "RoomProberBuilding",
-      "FloorTiles",
-      "truetiles_texturedTile"
+      "FloorTiles"
     ],
     "description": "Building with airflow tile promotes better gas circulation within a colony.",
     "effect": "Used to build the walls and floors of rooms.\n\nBlocks <link=\"ELEMENTSLIQUID\">Liquid</link> flow without obstructing <link=\"ELEMENTSGAS\">Gas</link>.",
@@ -3169,7 +3167,7 @@
     "materialCategory": [
       "Glasses"
     ],
-    "energyConsumptionWhenActive": 10.0,
+    "energyConsumptionWhenActive": 50.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
     "heightInCells": 1,
@@ -3230,8 +3228,7 @@
     "tags": [
       "RoomProberBuilding",
       "Window",
-      "FloorTiles",
-      "truetiles_texturedTile"
+      "FloorTiles"
     ],
     "description": "Window tiles provide a barrier against liquid and gas and are completely transparent.",
     "effect": "Used to build the walls and floors of rooms.\n\nAllows <link=\"LIGHT\">Light</link> and <link=\"DECOR\">Decor</link> to pass through.",
@@ -3829,7 +3826,7 @@
       "FarmTiles"
     ],
     "description": "Hydroponic farms reduce Duplicant traffic by automating irrigating crops.",
-    "effect": "Grows one <link=\"PLANTS\">Plant</link> from a <link=\"PLANTS\">Seed</link>.\n\nCan be used as floor tile and rotated before construction.\n\nMust be irrigated through <link=\"LIQUIDPIPING\">Liquid Piping</link>.",
+    "effect": "Grows one <link=\"PLANTS\">Plant</link> from a <link=\"PLANTS\">Seed</link>.\n\nCan be used as floor tile and rotated before construction.\n\nSome plants must be irrigated through <link=\"LIQUIDPIPING\">Liquid Piping</link>.",
     "mass": [
       100.0
     ],
@@ -3982,8 +3979,7 @@
     "name": "Insulated Tile",
     "tags": [
       "RoomProberBuilding",
-      "FloorTiles",
-      "truetiles_texturedTile"
+      "FloorTiles"
     ],
     "description": "The low thermal conductivity of insulated tiles slows any heat passing through them.",
     "effect": "Used to build the walls and floors of rooms.\n\nReduces <link=\"HEAT\">Heat</link> transfer between walls, retaining ambient heat in an area.",
@@ -6062,8 +6058,7 @@
     "name": "Mesh Tile",
     "tags": [
       "RoomProberBuilding",
-      "FloorTiles",
-      "truetiles_texturedTile"
+      "FloorTiles"
     ],
     "description": "Mesh tile can be used to make Duplicant pathways in areas where liquid flows.",
     "effect": "Used to build the walls and floors of rooms.\n\nDoes not obstruct <link=\"ELEMENTSLIQUID\">Liquid</link> or <link=\"ELEMENTSGAS\">Gas</link> flow.",
@@ -6130,8 +6125,7 @@
     "name": "Metal Tile",
     "tags": [
       "RoomProberBuilding",
-      "FloorTiles",
-      "truetiles_texturedTile"
+      "FloorTiles"
     ],
     "description": "Heat travels much more quickly through metal tile than other types of flooring.",
     "effect": "Used to build the walls and floors of rooms.\n\nSignificantly increases Duplicant runspeed.",
@@ -7474,8 +7468,7 @@
     "name": "Plastic Tile",
     "tags": [
       "RoomProberBuilding",
-      "FloorTiles",
-      "truetiles_texturedTile"
+      "FloorTiles"
     ],
     "description": "Plastic tile is mildly antiseptic and can help limit the spread of germs in a colony.",
     "effect": "Used to build the walls and floors of rooms.\n\nSignificantly increases Duplicant runspeed.",
@@ -7657,7 +7650,7 @@
       "HideFromCodex",
       "RecBuilding"
     ],
-    "description": "This Beach Chair has been worn down by many cycles of use and relentless exposure to the elements. Still comfortable, even if it creaks and moans with even the slightest movement.",
+    "description": "Worn down by countless cycles of use and exposure to the elements.",
     "effect": "Duplicants can relax by lounging in <link=\"LIGHT\">Sunlight</link>.\n\nIncreases Duplicant <link=\"MORALE\">Morale</link>.",
     "mass": [
       400.0,
@@ -7932,7 +7925,7 @@
       "RanchStationType"
     ],
     "description": "A groomed critter is a happy, healthy, productive critter.",
-    "effect": "Allows the assigned <link=\"RANCHER\">Rancher</link> to care for <link=\"CREATURES\">Critters</link>.\n\nAssigned Duplicants must possess the <link=\"RANCHING1\">Critter Ranching</link> skill.",
+    "effect": "Allows the assigned <link=\"RANCHER\">Rancher</link> to care for and gradually tame <link=\"CREATURES\">Critters</link>.\n\nAssigned Duplicants must possess the <link=\"RANCHING1\">Critter Ranching</link> skill.",
     "mass": [
       400.0
     ],
@@ -7990,7 +7983,7 @@
       "BuildingGasket"
     ],
     "energyConsumptionWhenActive": 0.0,
-    "exhaustKilowattsWhenActive": 0.0,
+    "exhaustKilowattsWhenActive": 0.125,
     "widthInCells": 3,
     "heightInCells": 3,
     "requiredDlcIds": [
@@ -8591,6 +8584,31 @@
     "exhaustKilowattsWhenActive": 1.0,
     "widthInCells": 3,
     "heightInCells": 3,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "RubberTile",
+    "name": "Rubber Tile",
+    "tags": [
+      "RoomProberBuilding",
+      "FloorTiles",
+      "PreventsSlipping"
+    ],
+    "description": "Rubber tiles are designed to resist damage from liquid pressure.",
+    "effect": "Used to build the walls and floors of rooms.\n\nProvides an anti-slip work surface and effective <link=\"HEAT\">Insulation</link>.",
+    "mass": [
+      100.0
+    ],
+    "materialCategory": [
+      "Rubber"
+    ],
+    "energyConsumptionWhenActive": 0.0,
+    "exhaustKilowattsWhenActive": 0.0,
+    "widthInCells": 1,
+    "heightInCells": 1,
     "requiredDlcIds": [
       "DLC5_ID"
     ],
@@ -9963,8 +9981,7 @@
     "name": "Tile",
     "tags": [
       "RoomProberBuilding",
-      "FloorTiles",
-      "truetiles_texturedTile"
+      "FloorTiles"
     ],
     "description": "Tile can be used to bridge gaps and get to unreachable areas.",
     "effect": "Used to build the walls and floors of rooms.\n\nIncreases Duplicant runspeed.",
@@ -10072,6 +10089,7 @@
     "name": "Aquatic Critter Condo",
     "tags": [
       "RoomProberBuilding",
+      "RanchStationType",
       "Submergible"
     ],
     "description": "Even wild critters are happier after they've had a little R&R.",
@@ -10096,8 +10114,8 @@
       "RoomProberBuilding",
       "Submergible"
     ],
-    "description": "Duplicants catch their breath faster by using a breathing station than by trying to resurface for air.",
-    "effect": "Provides breathable <link=\"OXYGEN\">Oxygen</link> to submerged Duplicants via a connected <link=\"GASPIPING\">Gas Pipe</link> input.\n\nRequires <link=\"POWER\">Power</link>.",
+    "description": "Submerged Duplicants recover their breath faster by using a breathing station than by surfacing for air.",
+    "effect": "Provides breathable <link=\"OXYGEN\">Oxygen</link> to Duplicants in suffocating environments via a connected <link=\"GASPIPING\">Gas Pipe</link> input.",
     "mass": [
       100.0
     ],
@@ -10169,10 +10187,11 @@
     "name": "Aquatic Grooming Station",
     "tags": [
       "RoomProberBuilding",
+      "RanchStationType",
       "Submergible"
     ],
     "description": "A groomed critter is a happy, healthy, productive critter.",
-    "effect": "Allows the assigned <link=\"RANCHER\">Rancher</link> to care for <link=\"CREATURES\">Critters</link>.\n\nAssigned Duplicants must possess both the <link=\"RANCHING1\">Critter Ranching</link> and <link=\"SWIMMING\">Basic Swimming</link> skills.",
+    "effect": "Allows the assigned <link=\"RANCHER\">Rancher</link> to care for and gradually tame <link=\"CREATURES\">Critters</link>.\n\nAssigned Duplicants must possess both the <link=\"RANCHING1\">Critter Ranching</link> and <link=\"SWIMMING\">Basic Swimming</link> skills.",
     "mass": [
       400.0
     ],
@@ -10468,7 +10487,7 @@
       "FarmBuilding"
     ],
     "description": "Enables Duplicants to accelerate growth rates for oversized plants too.",
-    "effect": "Grows one extra-large <link=\"PLANTS\">Plant</link> from a <link=\"PLANTS\">Seed</link>.\n\nCan be used as floor tile.\n\nMust be irrigated through <link=\"LIQUIDPIPING\">Liquid Piping</link>",
+    "effect": "Grows one extra-large <link=\"PLANTS\">Plant</link> from a <link=\"PLANTS\">Seed</link>.\n\nCan be used as floor tile.\n\nSome plants must be irrigated through <link=\"LIQUIDPIPING\">Liquid Piping</link>.",
     "mass": [
       200.0,
       100.0
@@ -10673,15 +10692,13 @@
     ],
     "materialCategory": [
       "RefinedMetal",
-      "Rubber"
+      "Rubber&Plastic"
     ],
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 3,
     "heightInCells": 1,
-    "requiredDlcIds": [
-      "DLC5_ID"
-    ],
+    "requiredDlcIds": null,
     "forbiddenDlcIds": null
   },
   {
@@ -10698,15 +10715,13 @@
     ],
     "materialCategory": [
       "RefinedMetal",
-      "Rubber"
+      "Rubber&Plastic"
     ],
     "energyConsumptionWhenActive": 0.0,
     "exhaustKilowattsWhenActive": 0.0,
     "widthInCells": 1,
     "heightInCells": 1,
-    "requiredDlcIds": [
-      "DLC5_ID"
-    ],
+    "requiredDlcIds": null,
     "forbiddenDlcIds": null
   },
   {
@@ -10788,8 +10803,7 @@
     "name": "Wood Tile",
     "tags": [
       "RoomProberBuilding",
-      "FloorTiles",
-      "truetiles_texturedTile"
+      "FloorTiles"
     ],
     "description": "Rooms built with wood tile are cozy and pleasant.",
     "effect": "Used to build the walls and floors of rooms.\n\nProvides good insulation and boosts <link=\"DECOR\">Decor</link>, contributing to <link=\"MORALE\">Morale</link>.",
@@ -10929,7 +10943,7 @@
       "Submergible"
     ],
     "description": "Trapped fish will automatically be bagged for transport.",
-    "effect": "Attracts and traps swimming <link=\"PACU\">Pacu</link>.\n\nOnly Duplicants with the <link=\"RANCHING1\">Critter Ranching I</link> skill can arm this trap. It's reusable!",
+    "effect": "Attracts and traps aquatic <link=\"CREATURES\">Critters</link>.\n\nOnly Duplicants with the <link=\"RANCHING1\">Critter Ranching I</link> skill can arm this trap. It's reusable!",
     "mass": [
       200.0
     ],

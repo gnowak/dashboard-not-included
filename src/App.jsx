@@ -152,6 +152,7 @@ function App() {
       'mushroom': 'Dusk Cap Mushroom',
       'meat': 'Raw Meat',
       'fishmeat': 'Pacu Fillet',
+      'squidmeat': 'Calamari',
       'shellfishmeat': 'Raw Shellfish',
       'basicplantfood': 'Meal Lice',
       'mushbar': 'Mush Bar',
@@ -178,7 +179,52 @@ function App() {
       'moltennickel': 'Liquid Nickel',
       'moltencopper': 'Liquid Copper',
       'moltentungsten': 'Liquid Tungsten',
-      'moltensucrose': 'Liquid Sucrose'
+      'moltensucrose': 'Liquid Sucrose',
+      
+      // Elements & Feedings
+      'dewdrip': 'Nectar',
+      'icebellypoop': 'Bammoth Patty',
+      'fieldration': 'Muckroot',
+      'basicforageplant': 'Muckroot',
+      'forestforageplant': 'Hexalent Fruit',
+      'swampforageplant': 'Swamp Chard',
+      'icecavesforageplant': 'Sherberry',
+      'prehistoricpacufillet': 'Jawbo Fillet',
+      'deepfriedmeat': 'Deep Fried Steak',
+      'gammamush': 'Gamma Mush',
+      'musseltongue': 'Mussel Tongue',
+      'rotpile': 'Rot Pile',
+      'fishfood': 'Fish Food',
+      'kelp': 'Nori',
+      'kelpplant': 'Seakomb',
+      'gardenforageplant': 'Snactus',
+      
+      // Seeds
+      'flytrapplantseed': 'Lura Plant Seed',
+      'dewpalmseed': 'Gum Palm Seed',
+      'dewdripperplantseed': 'Dew Dripper Seed',
+      'gardenfoodplantseed': 'Sweatcorn Seed',
+      'hardskinberryplantseed': 'Pikeapple Seed',
+      'bluegrassseed': 'Alveo Vera Seed',
+      'gasgrassseed': 'Gas Grass Seed',
+      'mushroomseed': 'Fungal Spore',
+      'clamseed': 'Clampum Seed',
+      'carrotplantseed': 'Plume Squash Seed',
+      'basicsingleharvestplantseed': 'Mealwood Seed',
+      'basicfabricmaterialplantseed': 'Thimble Reed Seed',
+      'saltplantseed': 'Dasha Saltvine Seed',
+      'swamplilyseed': 'Balm Lily Seed',
+      'swampharvestplantseed': 'Bog Jelly Spore',
+      'saltysticksplantseed': 'Sodicane Seed',
+      'spicevineseed': 'Pincha Pepper Nut',
+      'spacetreeseed': 'Bonbon Sprout',
+      'sealettuceseed': 'Waterweed Seed',
+      'prickleflowerseed': 'Blossom Seed',
+      'urchinplantseed': 'Pinpoket Seed',
+      'wormplantseed': 'Grubfruit Seed',
+      'tubewormseed': 'Tublia Seed',
+      'planktoncoralseed': 'Starnacle Seed',
+      'planktoncoral': 'Starnacle'
     };
 
     Object.entries(manualOverrides).forEach(([id, name]) => {
@@ -209,8 +255,8 @@ function App() {
         if (apiItem.diet && apiItem.diet.length > 0) {
           inputs = apiItem.diet.map(d => {
             const mappedTags = d.consumedTags 
-              ? d.consumedTags.map(tag => idToNameMap[tag] || cleanName(tag)).join(', ')
-              : (idToNameMap[d.consumedTag] || cleanName(d.consumedTag || 'Minerals'));
+              ? d.consumedTags.map(tag => idToNameMap[tag.toLowerCase()] || idToNameMap[tag] || cleanName(tag)).join(', ')
+              : (idToNameMap[d.consumedTag?.toLowerCase()] || idToNameMap[d.consumedTag] || cleanName(d.consumedTag || 'Minerals'));
             return {
               name: mappedTags,
               amount: d.dailyConsumptionKg ?? 140,
@@ -218,7 +264,7 @@ function App() {
             };
           });
           outputs = apiItem.diet.map(d => ({
-            name: idToNameMap[d.producedElement] || cleanName(d.producedElement || 'Coal'),
+            name: idToNameMap[d.producedElement?.toLowerCase()] || idToNameMap[d.producedElement] || cleanName(d.producedElement || 'Coal'),
             amount: d.dailyExcrementKg ?? 70,
             unit: 'kg'
           }));
@@ -322,7 +368,7 @@ function App() {
         if (apiItem.fertilizerRequirements) {
           apiItem.fertilizerRequirements.forEach(f => {
             inputs.push({
-              name: idToNameMap[f.tag] || cleanName(f.tag),
+              name: idToNameMap[f.tag?.toLowerCase()] || idToNameMap[f.tag] || cleanName(f.tag),
               amount: f.kgPerCycle ?? (f.massConsumptionRateKgPerSec * 600),
               unit: 'kg'
             });
@@ -331,7 +377,7 @@ function App() {
         if (apiItem.irrigationRequirements) {
           apiItem.irrigationRequirements.forEach(i => {
             inputs.push({
-              name: idToNameMap[i.tag] || cleanName(i.tag),
+              name: idToNameMap[i.tag?.toLowerCase()] || idToNameMap[i.tag] || cleanName(i.tag),
               amount: i.kgPerCycle ?? (i.massConsumptionRateKgPerSec * 600),
               unit: 'kg'
             });
@@ -344,6 +390,9 @@ function App() {
           if (inputs.length > 0) data[coreKey].inputs = inputs;
           if (calPerCycle > 0) data[coreKey].caloriesPerCycle = calPerCycle;
           data[coreKey].isFarmable = apiItem.isFarmable !== undefined ? apiItem.isFarmable : true;
+          if (apiItem.acceptedPlanters) {
+            data[coreKey].acceptedPlanters = apiItem.acceptedPlanters;
+          }
         } else {
           // Create new dynamic crop
           const cleanedName = cleanName(apiItem.name);
@@ -355,8 +404,9 @@ function App() {
             description: apiItem.description || 'Synced from in-game DataDump.',
             caloriesPerCycle: calPerCycle,
             inputs: inputs.length > 0 ? inputs : [{ name: 'Water', amount: 20, unit: 'kg' }],
-            outputs: apiItem.yield ? [{ name: idToNameMap[apiItem.yield.itemId || apiItem.yield.id] || cleanName(apiItem.yield.itemId || apiItem.yield.id), amount: apiItem.yield.amount, unit: 'unit' }] : [],
+            outputs: apiItem.yield ? [{ name: idToNameMap[(apiItem.yield.itemId || apiItem.yield.id)?.toLowerCase()] || idToNameMap[apiItem.yield.itemId || apiItem.yield.id] || cleanName(apiItem.yield.itemId || apiItem.yield.id), amount: apiItem.yield.amount, unit: 'unit' }] : [],
             isFarmable: apiItem.isFarmable !== undefined ? apiItem.isFarmable : true,
+            acceptedPlanters: apiItem.acceptedPlanters || [],
             color: '#A8FF8C' // blueprint green
           };
         }
@@ -368,7 +418,14 @@ function App() {
   // Initialize state from LocalStorage or defaults
   const [duplicants, setDuplicants] = useState(() => {
     const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) return JSON.parse(saved).duplicants;
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (parsed && typeof parsed.duplicants === 'number') {
+          return parsed.duplicants;
+        }
+      } catch (e) {}
+    }
     return 3;
   });
 
@@ -405,6 +462,28 @@ function App() {
     return 1000;
   });
 
+  const [o2Preset, setO2Preset] = useState(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (parsed.o2Preset) return parsed.o2Preset;
+      } catch (e) {}
+    }
+    return '60';
+  });
+
+  const [customO2Input, setCustomO2Input] = useState(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (parsed.customO2Input !== undefined) return parsed.customO2Input;
+      } catch (e) {}
+    }
+    return 60;
+  });
+
   const [ranches, setRanches] = useState(() => {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved) {
@@ -424,7 +503,32 @@ function App() {
       try {
         const parsed = JSON.parse(saved).crops;
         if (Array.isArray(parsed) && parsed.every(item => item.cropType)) {
-          return parsed.map(c => ({ roomSize: 96, ...c }));
+          return parsed.map(c => {
+            const mode = c.growthMode === 'farmerTouch' ? 'domesticated' : (c.growthMode || 'domesticated');
+            const ft = c.farmerTouch || c.growthMode === 'farmerTouch' || false;
+            
+            // Resolve default planterType if missing
+            let pType = c.planterType;
+            if (!pType) {
+              const lowerId = c.cropType?.toLowerCase() || '';
+              if (lowerId.includes('dewpalm') || lowerId === 'clam') {
+                pType = 'WideFarmTile';
+              } else if (lowerId.includes('planktoncoral') || lowerId.includes('urchinplant')) {
+                pType = 'LargeBackwallFarm';
+              } else {
+                pType = 'HydroponicFarm';
+              }
+            }
+
+            return {
+              roomSize: 96,
+              growthMode: mode,
+              farmerTouch: ft,
+              id: c.id || `${c.cropType}_${mode}`,
+              planterType: pType,
+              ...c
+            };
+          });
         }
       } catch (e) {}
     }
@@ -578,6 +682,17 @@ function App() {
     };
   });
 
+  const [lockedPercentages, setLockedPercentages] = useState(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (parsed.lockedPercentages) return parsed.lockedPercentages;
+      } catch (e) {}
+    }
+    return {};
+  });
+
   // Save to LocalStorage whenever state changes
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify({ 
@@ -587,10 +702,13 @@ function App() {
       growthMode, 
       caloriePreset, 
       customCalorieInput,
+      o2Preset,
+      customO2Input,
       addedToDiet,
-      mixPercentages
+      mixPercentages,
+      lockedPercentages
     }));
-  }, [duplicants, ranches, crops, growthMode, caloriePreset, customCalorieInput, addedToDiet, mixPercentages]);
+  }, [duplicants, ranches, crops, growthMode, caloriePreset, customCalorieInput, o2Preset, customO2Input, addedToDiet, mixPercentages, lockedPercentages]);
 
   const handleRanchCountChange = (critterType, newCount) => {
     const r = ranches.find(x => x.critterType === critterType);
@@ -619,12 +737,36 @@ function App() {
     }));
   };
 
-  const handleCropCountChange = (cropType, newCount) => {
-    setCrops(crops.map(c => c.cropType === cropType ? { ...c, count: newCount } : c));
+  const handleCropCountChange = (cropId, newCount) => {
+    setCrops(crops.map(c => c.id === cropId ? { ...c, count: newCount } : c));
   };
 
-  const handleCropRoomSizeChange = (cropType, newRoomSize) => {
-    setCrops(crops.map(c => c.cropType === cropType ? { ...c, roomSize: newRoomSize } : c));
+  const handleCropRoomSizeChange = (cropId, newRoomSize) => {
+    setCrops(crops.map(c => c.id === cropId ? { ...c, roomSize: newRoomSize } : c));
+  };
+
+  const handleCropModeChange = (cropId, newMode) => {
+    setCrops(crops.map(c => {
+      if (c.id === cropId) {
+        const nextId = `${c.cropType}_${newMode}`;
+        if (crops.some(other => other.id === nextId && other.id !== cropId)) {
+          alert(`A card for this crop in ${newMode} mode already exists.`);
+          return c;
+        }
+        // If switching to wild, make sure farmerTouch is unchecked since wild cannot use it
+        const ft = newMode === 'wild' ? false : c.farmerTouch;
+        return { ...c, id: nextId, growthMode: newMode, farmerTouch: ft };
+      }
+      return c;
+    }));
+  };
+
+  const handleCropFarmerTouchChange = (cropId, checked) => {
+    setCrops(crops.map(c => c.id === cropId ? { ...c, farmerTouch: checked } : c));
+  };
+
+  const handleCropPlanterChange = (cropId, newPlanter) => {
+    setCrops(crops.map(c => c.id === cropId ? { ...c, planterType: newPlanter } : c));
   };
 
   const handleRanchAdd = (critterType) => {
@@ -637,14 +779,31 @@ function App() {
     setRanches(ranches.filter(r => r.critterType !== critterType));
   };
 
-  const handleCropAdd = (cropType) => {
-    if (!crops.some(c => c.cropType === cropType)) {
-      setCrops([...crops, { cropType, count: 0, roomSize: 96 }]);
+  const handleCropAdd = (cropType, mode = 'domesticated') => {
+    const uniqueId = `${cropType}_${mode}`;
+    if (!crops.some(c => c.id === uniqueId)) {
+      const cropData = mergedCrops[cropType];
+      const planters = cropData?.acceptedPlanters || [];
+      let defaultPlanter = 'HydroponicFarm';
+      if (planters.includes('WideFarmTile')) {
+        defaultPlanter = 'WideFarmTile';
+      } else if (planters.includes('LargeBackwallFarm')) {
+        defaultPlanter = 'LargeBackwallFarm';
+      }
+      setCrops([...crops, { 
+        id: uniqueId, 
+        cropType, 
+        count: 0, 
+        roomSize: 96, 
+        growthMode: mode, 
+        farmerTouch: false,
+        planterType: defaultPlanter 
+      }]);
     }
   };
 
-  const handleCropRemove = (cropType) => {
-    setCrops(crops.filter(c => c.cropType !== cropType));
+  const handleCropRemove = (cropId) => {
+    setCrops(crops.filter(c => c.id !== cropId));
   };
 
   const clearAll = () => {
@@ -652,7 +811,8 @@ function App() {
       setDuplicants(3);
       setRanches(DEFAULT_RANCHES);
       setCrops(DEFAULT_CROPS);
-      setAddedToDiet({
+      
+      const defaultDiet = {
         mealwood: false,
         bristleBlossom: false,
         gristleBerry: false,
@@ -666,24 +826,38 @@ function App() {
         mushFry: false,
         liceLoaf: false,
         berrySludge: false,
-        surfAndTurf: false
+        surfAndTurf: false,
+        pickledMeal: false,
+        omelette: false,
+        pepperBread: false,
+        stuffedBerry: false,
+        mushroomWrap: false,
+        frostBurger: false,
+        grubfruitPreserves: false,
+        smokedFish: false,
+        veggiePoppers: false,
+        tenderBrisket: false,
+        deepFriedFish: false,
+        deepFriedMeat: false,
+        deepFriedShellfish: false,
+        makiSushi: false,
+        nigiriSushi: false
+      };
+      setAddedToDiet(defaultDiet);
+      
+      const defaultMix = {};
+      Object.keys(defaultDiet).forEach(k => {
+        defaultMix[k] = 0;
       });
-      setMixPercentages({
-        mealwood: 0,
-        bristleBlossom: 0,
-        gristleBerry: 0,
-        duskCap: 0,
-        friedMushroom: 0,
-        sleetWheat: 0,
-        frostBun: 0,
-        barbecue: 0,
-        pacuSeafood: 0,
-        mushBar: 0,
-        mushFry: 0,
-        liceLoaf: 0,
-        berrySludge: 0,
-        surfAndTurf: 0
-      });
+      setMixPercentages(defaultMix);
+      
+      setGrowthMode('domesticated');
+      setCaloriePreset('1000');
+      setCustomCalorieInput(1000);
+      setO2Preset('60');
+      setCustomO2Input(60);
+      setLockedPercentages({});
+      
       localStorage.removeItem(STORAGE_KEY);
     }
   };
@@ -704,7 +878,8 @@ function App() {
     const cropCals = crops.reduce((total, cropItem) => {
       const crop = mergedCrops[cropItem.cropType];
       if (!crop) return total;
-      return total + (crop.caloriesPerCycle * cropItem.count);
+      const plantMult = cropItem.growthMode === 'wild' ? 0.25 : (cropItem.farmerTouch ? 2.0 : 1.0);
+      return total + (crop.caloriesPerCycle * cropItem.count * plantMult);
     }, 0);
 
     return ranchCals + cropCals;
@@ -723,10 +898,15 @@ function App() {
             setCaloriePreset={setCaloriePreset}
             customCalorieInput={customCalorieInput}
             setCustomCalorieInput={setCustomCalorieInput}
+            o2Preset={o2Preset}
+            setO2Preset={setO2Preset}
+            customO2Input={customO2Input}
+            setCustomO2Input={setCustomO2Input}
             totalCalories={totalCalories}
             ranches={ranches}
             crops={crops}
             critterData={mergedCritters}
+            cropData={mergedCrops}
           />
         </aside>
         <section>
@@ -776,6 +956,10 @@ function App() {
               onCropAdd={handleCropAdd}
               onCropRemove={handleCropRemove}
               cropData={mergedCrops}
+              growthMode={growthMode}
+              onCropModeChange={handleCropModeChange}
+              onCropFarmerTouchChange={handleCropFarmerTouchChange}
+              onCropPlanterChange={handleCropPlanterChange}
             />
           ) : activeTab === 'tools' ? (
             <FoodCalculator 
@@ -797,6 +981,8 @@ function App() {
               setAddedToDiet={setAddedToDiet}
               mixPercentages={mixPercentages}
               setMixPercentages={setMixPercentages}
+              lockedPercentages={lockedPercentages}
+              setLockedPercentages={setLockedPercentages}
             />
           ) : (
             <DatabaseExplorer 

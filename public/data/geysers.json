@@ -1,8 +1,8 @@
 [
   {
-    "id": "Geyser",
-    "name": "Steam Geyser",
-    "prefabId": "Geyser",
+    "id": "MethaneGeyser",
+    "name": "Natural Gas Geyser",
+    "prefabId": "MethaneGeyser",
     "tags": [
       "DeprecatedContent",
       "Plumbable",
@@ -13,7 +13,7 @@
     ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
-    "geyserType": "0xCA627A30",
+    "geyserType": "0xCDDBC02C",
     "element": null,
     "temperature": {
       "kelvin": 0.0,
@@ -995,9 +995,9 @@
     }
   },
   {
-    "id": "ChlorineGeyser",
-    "name": "Chlorine Geyser",
-    "prefabId": "ChlorineGeyser",
+    "id": "Geyser",
+    "name": "Steam Geyser",
+    "prefabId": "Geyser",
     "tags": [
       "DeprecatedContent",
       "Plumbable",
@@ -1008,7 +1008,7 @@
     ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
-    "geyserType": "0x58719BD0",
+    "geyserType": "0xCA627A30",
     "element": null,
     "temperature": {
       "kelvin": 0.0,
@@ -1033,9 +1033,9 @@
     }
   },
   {
-    "id": "MethaneGeyser",
-    "name": "Natural Gas Geyser",
-    "prefabId": "MethaneGeyser",
+    "id": "ChlorineGeyser",
+    "name": "Chlorine Geyser",
+    "prefabId": "ChlorineGeyser",
     "tags": [
       "DeprecatedContent",
       "Plumbable",
@@ -1046,7 +1046,7 @@
     ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
-    "geyserType": "0xCDDBC02C",
+    "geyserType": "0x58719BD0",
     "element": null,
     "temperature": {
       "kelvin": 0.0,

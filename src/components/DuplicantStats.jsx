@@ -13,17 +13,24 @@ export function DuplicantStats({
   setCaloriePreset,
   customCalorieInput,
   setCustomCalorieInput,
+  o2Preset,
+  setO2Preset,
+  customO2Input,
+  setCustomO2Input,
   totalCalories, 
   ranches, 
   crops, 
-  critterData = {} 
+  critterData = {},
+  cropData = {}
 }) {
   const [isDemandsExpanded, setIsDemandsExpanded] = useState(true);
   const [isAggregatesExpanded, setIsAggregatesExpanded] = useState(true);
   const [isSettingsExpanded, setIsSettingsExpanded] = useState(false);
   
-  const o2Needed = duplicants * DUPLICANT_STATS.o2PerCycle;
-  const caloriesNeeded = duplicants * DUPLICANT_STATS.caloriesPerCycle;
+  const o2PerDuplicant = o2Preset === 'custom' ? customO2Input : (parseInt(o2Preset) || 60);
+  const o2Needed = duplicants * o2PerDuplicant;
+  const caloriesPerDuplicant = caloriePreset === 'custom' ? customCalorieInput : (parseInt(caloriePreset) || 1000);
+  const caloriesNeeded = duplicants * caloriesPerDuplicant;
   
   // Calculate surplus/deficit
   const calorieDiff = totalCalories - caloriesNeeded;
@@ -97,20 +104,45 @@ export function DuplicantStats({
     });
 
     // Process Crops
+    const activeCropData = Object.keys(cropData).length > 0 ? cropData : CROP_DATA;
+
     crops.forEach(cropItem => {
-      const crop = CROP_DATA[cropItem.cropType];
+      const crop = activeCropData[cropItem.cropType];
       if (!crop || cropItem.count <= 0) return;
 
       const roomSize = cropItem.roomSize || 96;
-      const usableCropsPerRoom = Math.max(1, Math.floor(roomSize / 4) - 2);
+      let activePlanter = cropItem.planterType;
+      if (!activePlanter) {
+        const planters = crop.acceptedPlanters || [];
+        const farmPlanters = planters.filter(p => 
+          p === 'PlanterBox' || p === 'FarmTile' || p === 'HydroponicFarm' || p === 'LargeBackwallFarm' || p === 'WideFarmTile'
+        );
+        if (farmPlanters.length > 0) {
+          activePlanter = farmPlanters[0];
+        } else {
+          const lowerId = crop.id?.toLowerCase() || '';
+          if (lowerId.includes('dewpalm') || lowerId === 'clam') {
+            activePlanter = 'WideFarmTile';
+          } else if (lowerId.includes('planktoncoral') || lowerId.includes('urchinplant')) {
+            activePlanter = 'LargeBackwallFarm';
+          } else {
+            activePlanter = 'HydroponicFarm';
+          }
+        }
+      }
+      const planterWidth = activePlanter === 'WideFarmTile' ? 3 : (activePlanter === 'LargeBackwallFarm' ? 2 : 1);
+      const usableCropsPerRoom = Math.max(1, Math.floor((Math.floor(roomSize / 4) - 2) / planterWidth));
       const greenhousesNeeded = Math.ceil(cropItem.count / usableCropsPerRoom);
       totalGreenhouses += greenhousesNeeded;
       agricultureSpace += greenhousesNeeded * roomSize;
 
+      const plantMult = cropItem.growthMode === 'wild' ? 0.25 : (cropItem.farmerTouch ? 2.0 : 1.0);
+      const inputMult = cropItem.growthMode === 'wild' ? 0.0 : 1.0;
+
       // Inputs
       if (crop.inputs) {
         crop.inputs.forEach(input => {
-          const totalAmt = input.amount * cropItem.count;
+          const totalAmt = input.amount * cropItem.count * inputMult;
           const key = `${input.name}_${input.unit}`;
           if (!inputs[key]) {
             inputs[key] = { name: input.name, unit: input.unit, amount: 0 };
@@ -122,7 +154,7 @@ export function DuplicantStats({
       // Outputs
       if (crop.outputs) {
         crop.outputs.forEach(output => {
-          const totalAmt = output.amount * cropItem.count;
+          const totalAmt = output.amount * cropItem.count * plantMult;
           const key = `${output.name}_${output.unit}`;
           if (!outputs[key]) {
             outputs[key] = { name: output.name, unit: output.unit, amount: 0 };
@@ -141,7 +173,7 @@ export function DuplicantStats({
       inputs: Object.values(inputs), 
       outputs: Object.values(outputs) 
     };
-  }, [ranches, crops, critterData]);
+  }, [ranches, crops, critterData, cropData]);
 
   const hasActiveProduction = ranches.some(r => r.count > 0) || crops.some(c => c.count > 0);
 
@@ -223,7 +255,7 @@ export function DuplicantStats({
               </div>
             </div>
 
-            {/* Diet Settings Collapsible Sub-panel */}
+            {/* Colony Modifiers Collapsible Sub-panel */}
             <div style={{ marginTop: '0.6rem', paddingTop: '0.6rem', borderTop: '1px dashed var(--oni-panel-border)' }}>
               <div 
                 onClick={() => setIsSettingsExpanded(!isSettingsExpanded)}
@@ -236,36 +268,13 @@ export function DuplicantStats({
                 }}
               >
                 <h3 style={{ color: 'var(--oni-text-muted)', fontSize: '0.85rem', margin: 0, display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-                  ⚙ Diet Settings
+                  ⚙ Colony Modifiers
                 </h3>
                 <span style={{ fontSize: '0.75rem', opacity: 0.7 }}>{isSettingsExpanded ? '▼' : '▲'}</span>
               </div>
               
               {isSettingsExpanded && (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginTop: '0.6rem' }}>
-                  {/* Cultivation Mode Dropdown */}
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
-                    <label className="stat-label" style={{ fontSize: '0.75rem' }}>Cultivation Mode</label>
-                    <select 
-                      value={growthMode} 
-                      onChange={(e) => setGrowthMode(e.target.value)}
-                      style={{ 
-                        width: '100%', 
-                        padding: '0.25rem', 
-                        background: 'rgba(0, 0, 0, 0.4)', 
-                        border: '1px solid var(--oni-panel-border)',
-                        color: 'var(--oni-text-primary)',
-                        borderRadius: '4px', 
-                        fontSize: '0.8rem',
-                        cursor: 'pointer'
-                      }}
-                    >
-                      <option value="domesticated">Domesticated (100%)</option>
-                      <option value="farmerTouch">Farmer's Touch (200%)</option>
-                      <option value="wild">Wild (0% Cost)</option>
-                    </select>
-                  </div>
-                  
                   {/* Calorie Intake Presets */}
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
                     <label className="stat-label" style={{ fontSize: '0.75rem' }}>Calorie Preset</label>
@@ -305,6 +314,50 @@ export function DuplicantStats({
                         />
                         <span style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', fontWeight: 'bold', minWidth: '32px', textAlign: 'right' }}>
                           {customCalorieInput}
+                        </span>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Oxygen Consumption Presets */}
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem', borderTop: '1px solid var(--oni-grid-line)', paddingTop: '0.5rem', marginTop: '0.25rem' }}>
+                    <label className="stat-label" style={{ fontSize: '0.75rem' }}>Oxygen Preset</label>
+                    <select 
+                      value={o2Preset} 
+                      onChange={(e) => setO2Preset(e.target.value)}
+                      style={{ 
+                        width: '100%', 
+                        padding: '0.25rem', 
+                        background: 'rgba(0, 0, 0, 0.4)', 
+                        border: '1px solid var(--oni-panel-border)',
+                        color: 'var(--oni-text-primary)',
+                        borderRadius: '4px', 
+                        fontSize: '0.8rem',
+                        cursor: 'pointer'
+                      }}
+                    >
+                      <option value="60">Standard Dupe (60 kg/c)</option>
+                      <option value="45">Diver's Lungs (45 kg/c)</option>
+                      <option value="120">Mouth Breather (120 kg/c)</option>
+                      <option value="custom">Custom Target</option>
+                    </select>
+                  </div>
+                  
+                  {o2Preset === 'custom' && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem', background: 'rgba(0,0,0,0.2)', padding: '0.4rem', borderRadius: '4px', border: '1px solid var(--oni-panel-border)' }}>
+                      <label className="stat-label" style={{ fontSize: '0.7rem' }}>Custom kg/cycle</label>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                        <input 
+                          type="range" 
+                          min="15" 
+                          max="180" 
+                          step="5"
+                          value={customO2Input} 
+                          onChange={(e) => setCustomO2Input(parseInt(e.target.value) || 60)}
+                          style={{ flex: 1 }}
+                        />
+                        <span style={{ fontFamily: 'var(--oni-font-mono)', fontSize: '0.75rem', fontWeight: 'bold', minWidth: '32px', textAlign: 'right' }}>
+                          {customO2Input}
                         </span>
                       </div>
                     </div>

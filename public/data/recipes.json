@@ -1,1 +1,1896 @@
-[]
+[
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_clubshirt",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "BasicFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_clubshirt",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "FeatherFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_cummerbund",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "BasicFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_cummerbund",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "FeatherFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_decor_02",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "BasicFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_decor_02",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "FeatherFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_decor_03",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "BasicFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_decor_03",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "FeatherFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_decor_04",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "BasicFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_decor_04",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "FeatherFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_decor_05",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "BasicFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_decor_05",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "FeatherFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_gaudysweater",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "BasicFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_gaudysweater",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "FeatherFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_limone",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "BasicFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_limone",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "FeatherFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_mondrian",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "BasicFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_mondrian",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "FeatherFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_overalls",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "BasicFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_overalls",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "FeatherFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_triangles",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "BasicFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_triangles",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "FeatherFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_BasicFabric_O_CustomClothing_workout",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "BasicFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingAlterationStation_I_Funky_Vest_FeatherFabric_O_CustomClothing_workout",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer",
+    "fabricators": [
+      "ClothingAlterationStation"
+    ],
+    "inputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      },
+      {
+        "material": "FeatherFabric",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CustomClothing",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingFabricator_I_BasicFabric_O_Warm_Vest",
+    "time": 180.0,
+    "description": "Protects the wearer from <style=\"heat\">Cold</style> by increasing insulation",
+    "fabricators": [
+      "ClothingFabricator"
+    ],
+    "inputs": [
+      {
+        "material": "BasicFabric",
+        "amount": 4.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Warm_Vest",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingFabricator_I_FeatherFabric_O_Warm_Vest",
+    "time": 180.0,
+    "description": "Protects the wearer from <style=\"heat\">Cold</style> by increasing insulation",
+    "fabricators": [
+      "ClothingFabricator"
+    ],
+    "inputs": [
+      {
+        "material": "FeatherFabric",
+        "amount": 4.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Warm_Vest",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingFabricator_I_BasicFabric_O_Funky_Vest",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer. Can be upgraded to <link=\"CUSTOMCLOTHING\">Primo Garb</link> at the <link=\"CLOTHINGALTERATIONSTATION\">Clothing Refashionator</link>",
+    "fabricators": [
+      "ClothingFabricator"
+    ],
+    "inputs": [
+      {
+        "material": "BasicFabric",
+        "amount": 4.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "ClothingFabricator_I_FeatherFabric_O_Funky_Vest",
+    "time": 180.0,
+    "description": "Increases Decor in a small area effect around the wearer. Can be upgraded to <link=\"CUSTOMCLOTHING\">Primo Garb</link> at the <link=\"CLOTHINGALTERATIONSTATION\">Clothing Refashionator</link>",
+    "fabricators": [
+      "ClothingFabricator"
+    ],
+    "inputs": [
+      {
+        "material": "FeatherFabric",
+        "amount": 4.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Funky_Vest",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "CookingStation_I_BasicPlantFood_O_PickledMeal",
+    "time": 30.0,
+    "description": "<link=\"BASICPLANTFOOD\">Meal Lice</link> regrettably preserved in vinegar.",
+    "fabricators": [
+      "CookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "BasicPlantFood",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "PickledMeal",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "CookingStation_I_MushBar_O_FriedMushBar",
+    "time": 50.0,
+    "description": "Pan-fried, solidified mudslop.",
+    "fabricators": [
+      "CookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "MushBar",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "FriedMushBar",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "CookingStation_I_Mushroom_O_FriedMushroom",
+    "time": 50.0,
+    "description": "A pan-fried dish made with a fruiting <link=\"MUSHROOM\">Dusk Cap</link>.",
+    "fabricators": [
+      "CookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "Mushroom",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "FriedMushroom",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "CookingStation_I_RawEgg_FernFood_O_Pancakes",
+    "time": 50.0,
+    "description": "Sweet discs made from <link=\"RAWEGG\">Raw Egg</link> and <link=\"COLDWHEATSEED\">Sleet Wheat Grain</link>.",
+    "fabricators": [
+      "CookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "RawEgg",
+        "amount": 1.0
+      },
+      {
+        "material": "FernFood",
+        "amount": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Pancakes",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "CookingStation_I_Meat_O_CookedMeat",
+    "time": 50.0,
+    "description": "The cooked meat of a defeated critter.",
+    "fabricators": [
+      "CookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "Meat",
+        "amount": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CookedMeat",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "CookingStation_I_FishMeat_O_CookedFish",
+    "time": 50.0,
+    "description": "The cooked meat of a defeated critter.",
+    "fabricators": [
+      "CookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "FishMeat",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CookedFish",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "CookingStation_I_ShellfishMeat_O_CookedFish",
+    "time": 50.0,
+    "description": "The cooked meat of a defeated critter.",
+    "fabricators": [
+      "CookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "ShellfishMeat",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CookedFish",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "CookingStation_I_PrickleFruit_O_GrilledPrickleFruit",
+    "time": 50.0,
+    "description": "The grilled bud of a <link=\"PRICKLEFRUIT\">Bristle Berry</link>.",
+    "fabricators": [
+      "CookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "PrickleFruit",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "GrilledPrickleFruit",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "CookingStation_I_SwampFruit_O_SwampDelights",
+    "time": 50.0,
+    "description": "Dried gelatinous cubes from a <link=\"SWAMPFRUIT\">Bog Jelly</link>.",
+    "fabricators": [
+      "CookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "SwampFruit",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "SwampDelights",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "CookingStation_I_FernFood_O_ColdWheatBread",
+    "time": 50.0,
+    "description": "A simple bun baked from <link=\"COLDWHEATSEED\">Sleet Wheat Grain</link>.",
+    "fabricators": [
+      "CookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "FernFood",
+        "amount": 3.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "ColdWheatBread",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "CookingStation_I_RawEgg_O_CookedEgg",
+    "time": 50.0,
+    "description": "Fluffed and folded egg innards.",
+    "fabricators": [
+      "CookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "RawEgg",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CookedEgg",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "CookingStation_I_WormBasicFruit_O_WormBasicFood",
+    "time": 50.0,
+    "description": "Slow roasted <link=\"WORMBASICFRUIT\">Spindly Grubfruit</link>.",
+    "fabricators": [
+      "CookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "WormBasicFruit",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "WormBasicFood",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "CookingStation_I_HardSkinBerry_O_CookedPikeapple",
+    "time": 50.0,
+    "description": "A grilled dish made with a fruiting <link=\"HARDSKINBERRY\">Pikeapple</link>.",
+    "fabricators": [
+      "CookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "HardSkinBerry",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "CookedPikeapple",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Deepfryer_I_Carrot_Tallow_O_FriesCarrot",
+    "time": 50.0,
+    "description": "Crunchy sticks of <link=\"CARROT\">Plume Squash</link> deep-fried in <link=\"TALLOW\">Tallow</link>.",
+    "fabricators": [
+      "Deepfryer"
+    ],
+    "inputs": [
+      {
+        "material": "Carrot",
+        "amount": 1.0
+      },
+      {
+        "material": "Tallow",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "FriesCarrot",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Deepfryer_I_FishMeat_Tallow_FernFood_O_DeepFriedFish",
+    "time": 50.0,
+    "description": "<link=\"FISHMEAT\">Fish Fillet</link> lightly battered and deep-fried in <link=\"TALLOW\">Tallow</link>.",
+    "fabricators": [
+      "Deepfryer"
+    ],
+    "inputs": [
+      {
+        "material": "FishMeat",
+        "amount": 1.0
+      },
+      {
+        "material": "Tallow",
+        "amount": 2.4
+      },
+      {
+        "material": "FernFood",
+        "amount": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "DeepFriedFish",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Deepfryer_I_ShellfishMeat_Tallow_FernFood_O_DeepFriedShellfish",
+    "time": 50.0,
+    "description": "A tender chunk of battered <link=\"SHELLFISHMEAT\">Raw Shellfish</link> deep-fried in <link=\"TALLOW\">Tallow</link>.",
+    "fabricators": [
+      "Deepfryer"
+    ],
+    "inputs": [
+      {
+        "material": "ShellfishMeat",
+        "amount": 1.0
+      },
+      {
+        "material": "Tallow",
+        "amount": 2.4
+      },
+      {
+        "material": "FernFood",
+        "amount": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "DeepFriedShellfish",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "GourmetCookingStation_I_GrilledPrickleFruit_SpiceNut_O_Salsa",
+    "time": 50.0,
+    "description": "A baked <link=\"PRICKLEFRUIT\">Bristle Berry</link> stuffed with delectable spices and vibrantly flavored.",
+    "fabricators": [
+      "GourmetCookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "GrilledPrickleFruit",
+        "amount": 2.0
+      },
+      {
+        "material": "SpiceNut",
+        "amount": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Salsa",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "GourmetCookingStation_I_FriedMushroom_Lettuce_O_MushroomWrap",
+    "time": 50.0,
+    "description": "Flavorful <link=\"MUSHROOM\">Mushrooms</link> wrapped in <link=\"LETTUCE\">Lettuce</link>.",
+    "fabricators": [
+      "GourmetCookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "FriedMushroom",
+        "amount": 1.0
+      },
+      {
+        "material": "Lettuce",
+        "amount": 4.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "MushroomWrap",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "GourmetCookingStation_I_CookedMeat_CookedFish_O_SurfAndTurf",
+    "time": 50.0,
+    "description": "A bit of <link=\"MEAT\">Meat</link> from the land and <link=\"COOKEDFISH\">Cooked Seafood</link> from the sea.",
+    "fabricators": [
+      "GourmetCookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "CookedMeat",
+        "amount": 1.0
+      },
+      {
+        "material": "CookedFish",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "SurfAndTurf",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "GourmetCookingStation_I_FernFood_SpiceNut_O_SpiceBread",
+    "time": 50.0,
+    "description": "A loaf of bread, lightly spiced with <link=\"SPICENUT\">Pincha Peppernut</link> for a mild bite.",
+    "fabricators": [
+      "GourmetCookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "FernFood",
+        "amount": 10.0
+      },
+      {
+        "material": "SpiceNut",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "SpiceBread",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "GourmetCookingStation_I_Tofu_SpiceNut_O_SpicyTofu",
+    "time": 50.0,
+    "description": "<link=\"TOFU\">Tofu</link> marinated in a flavorful <link=\"SPICENUT\">Pincha Peppernut</link> sauce.",
+    "fabricators": [
+      "GourmetCookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "Tofu",
+        "amount": 1.0
+      },
+      {
+        "material": "SpiceNut",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "SpicyTofu",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "GourmetCookingStation_I_CookedEgg_Lettuce_FriedMushroom_O_Quiche",
+    "time": 50.0,
+    "description": "<link=\"COOKEDEGG\">Omelette</link>, <link=\"FRIEDMUSHROOM\">Fried Mushroom</link> and <link=\"LETTUCE\">Lettuce</link> piled onto a yummy crust.",
+    "fabricators": [
+      "GourmetCookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "CookedEgg",
+        "amount": 1.0
+      },
+      {
+        "material": "Lettuce",
+        "amount": 1.0
+      },
+      {
+        "material": "FriedMushroom",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Quiche",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "GourmetCookingStation_I_ColdWheatBread_Lettuce_CookedMeat_O_Burger",
+    "time": 50.0,
+    "description": "<link=\"MEAT\">Meat</link> and <link=\"LETTUCE\">Lettuce</link> on a chilled <link=\"COLDWHEATBREAD\">Frost Bun</link>.",
+    "fabricators": [
+      "GourmetCookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "ColdWheatBread",
+        "amount": 1.0
+      },
+      {
+        "material": "Lettuce",
+        "amount": 1.0
+      },
+      {
+        "material": "CookedMeat",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Burger",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "GourmetCookingStation_I_FernFood_WormSuperFruit_GrilledPrickleFruit_O_BerryPie",
+    "time": 50.0,
+    "description": "A pie made primarily of <link=\"WORMSUPERFRUIT\">Grubfruit</link> and <link=\"PRICKLEFRUIT\">Gristle Berries</link>.",
+    "fabricators": [
+      "GourmetCookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "FernFood",
+        "amount": 3.0
+      },
+      {
+        "material": "WormSuperFruit",
+        "amount": 4.0
+      },
+      {
+        "material": "GrilledPrickleFruit",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "BerryPie",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "GourmetCookingStation_I_FernFood_WormSuperFruit_CookedPikeapple_O_BerryPie",
+    "time": 50.0,
+    "description": "A pie made primarily of <link=\"WORMSUPERFRUIT\">Grubfruit</link> and <link=\"PRICKLEFRUIT\">Gristle Berries</link>.",
+    "fabricators": [
+      "GourmetCookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "FernFood",
+        "amount": 3.0
+      },
+      {
+        "material": "WormSuperFruit",
+        "amount": 4.0
+      },
+      {
+        "material": "CookedPikeapple",
+        "amount": 1.6667
+      }
+    ],
+    "outputs": [
+      {
+        "material": "BerryPie",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "GourmetCookingStation_I_FernFood_WormSuperFruit_VineFruit_O_BerryPie",
+    "time": 50.0,
+    "description": "A pie made primarily of <link=\"WORMSUPERFRUIT\">Grubfruit</link> and <link=\"PRICKLEFRUIT\">Gristle Berries</link>.",
+    "fabricators": [
+      "GourmetCookingStation"
+    ],
+    "inputs": [
+      {
+        "material": "FernFood",
+        "amount": 3.0
+      },
+      {
+        "material": "WormSuperFruit",
+        "amount": 4.0
+      },
+      {
+        "material": "VineFruit",
+        "amount": 6.153
+      }
+    ],
+    "outputs": [
+      {
+        "material": "BerryPie",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "MicrobeMusher_I_FernFood_PrickleFruit_O_FruitCake",
+    "time": 50.0,
+    "description": "A mashed up <link=\"PRICKLEFRUIT\">Bristle Berry</link> sludge with an exceptionally long shelf life.",
+    "fabricators": [
+      "MicrobeMusher"
+    ],
+    "inputs": [
+      {
+        "material": "FernFood",
+        "amount": 5.0
+      },
+      {
+        "material": "PrickleFruit",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "FruitCake",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "MicrobeMusher_I_FernFood_HardSkinBerry_O_FruitCake",
+    "time": 50.0,
+    "description": "A mashed up <link=\"PRICKLEFRUIT\">Bristle Berry</link> sludge with an exceptionally long shelf life.",
+    "fabricators": [
+      "MicrobeMusher"
+    ],
+    "inputs": [
+      {
+        "material": "FernFood",
+        "amount": 5.0
+      },
+      {
+        "material": "HardSkinBerry",
+        "amount": 2.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "FruitCake",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "MicrobeMusher_I_Meat_Tallow_O_Pemmican",
+    "time": 50.0,
+    "description": "<link=\"MEAT\">Meat</link> and <link=\"TALLOW\">Tallow</link> pounded into a nutrient-dense brick with an exceptionally long shelf life.",
+    "fabricators": [
+      "MicrobeMusher"
+    ],
+    "inputs": [
+      {
+        "material": "Meat",
+        "amount": 1.0
+      },
+      {
+        "material": "Tallow",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Pemmican",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "RockCrusher_I_CrabWoodShell_O_WoodLog",
+    "time": 40.0,
+    "description": "Crushes <link=\"CRABWOODSHELL\">Oakshell Molt</link> into <link=\"WOOD\">Wood</link>",
+    "fabricators": [
+      "RockCrusher"
+    ],
+    "inputs": [
+      {
+        "material": "CrabWoodShell",
+        "amount": 500.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "WoodLog",
+        "amount": 500.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Smoker_I_DinosaurMeat_WoodLog_O_SmokedDinosaurMeat",
+    "time": 600.0,
+    "description": "A stack of tender, slow-smoked meat.",
+    "fabricators": [
+      "Smoker"
+    ],
+    "inputs": [
+      {
+        "material": "DinosaurMeat",
+        "amount": 6.0
+      },
+      {
+        "material": "WoodLog",
+        "amount": 100.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "SmokedDinosaurMeat",
+        "amount": 3.2
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Smoker_I_DinosaurMeat_FabricatedWood_O_SmokedDinosaurMeat",
+    "time": 600.0,
+    "description": "A stack of tender, slow-smoked meat.",
+    "fabricators": [
+      "Smoker"
+    ],
+    "inputs": [
+      {
+        "material": "DinosaurMeat",
+        "amount": 6.0
+      },
+      {
+        "material": "FabricatedWood",
+        "amount": 100.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "SmokedDinosaurMeat",
+        "amount": 3.2
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Smoker_I_FishMeat_WoodLog_O_SmokedFish",
+    "time": 600.0,
+    "description": "A buttery smoked fish fillet.",
+    "fabricators": [
+      "Smoker"
+    ],
+    "inputs": [
+      {
+        "material": "FishMeat",
+        "amount": 6.0
+      },
+      {
+        "material": "WoodLog",
+        "amount": 100.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "SmokedFish",
+        "amount": 4.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Smoker_I_FishMeat_FabricatedWood_O_SmokedFish",
+    "time": 600.0,
+    "description": "A buttery smoked fish fillet.",
+    "fabricators": [
+      "Smoker"
+    ],
+    "inputs": [
+      {
+        "material": "FishMeat",
+        "amount": 6.0
+      },
+      {
+        "material": "FabricatedWood",
+        "amount": 100.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "SmokedFish",
+        "amount": 4.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Smoker_I_PrehistoricPacuFillet_WoodLog_O_SmokedFish",
+    "time": 600.0,
+    "description": "A buttery smoked fish fillet.",
+    "fabricators": [
+      "Smoker"
+    ],
+    "inputs": [
+      {
+        "material": "PrehistoricPacuFillet",
+        "amount": 6.0
+      },
+      {
+        "material": "WoodLog",
+        "amount": 100.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "SmokedFish",
+        "amount": 4.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Smoker_I_PrehistoricPacuFillet_FabricatedWood_O_SmokedFish",
+    "time": 600.0,
+    "description": "A buttery smoked fish fillet.",
+    "fabricators": [
+      "Smoker"
+    ],
+    "inputs": [
+      {
+        "material": "PrehistoricPacuFillet",
+        "amount": 6.0
+      },
+      {
+        "material": "FabricatedWood",
+        "amount": 100.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "SmokedFish",
+        "amount": 4.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Smoker_I_GardenFoodPlantFood_WoodLog_O_SmokedVegetables",
+    "time": 600.0,
+    "description": "Crisp vegetables stuffed with herbs.",
+    "fabricators": [
+      "Smoker"
+    ],
+    "inputs": [
+      {
+        "material": "GardenFoodPlantFood",
+        "amount": 7.0
+      },
+      {
+        "material": "WoodLog",
+        "amount": 100.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "SmokedVegetables",
+        "amount": 4.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Smoker_I_GardenFoodPlantFood_FabricatedWood_O_SmokedVegetables",
+    "time": 600.0,
+    "description": "Crisp vegetables stuffed with herbs.",
+    "fabricators": [
+      "Smoker"
+    ],
+    "inputs": [
+      {
+        "material": "GardenFoodPlantFood",
+        "amount": 7.0
+      },
+      {
+        "material": "FabricatedWood",
+        "amount": 100.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "SmokedVegetables",
+        "amount": 4.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Smoker_I_HardSkinBerry_WoodLog_O_SmokedVegetables",
+    "time": 600.0,
+    "description": "Crisp vegetables stuffed with herbs.",
+    "fabricators": [
+      "Smoker"
+    ],
+    "inputs": [
+      {
+        "material": "HardSkinBerry",
+        "amount": 7.0
+      },
+      {
+        "material": "WoodLog",
+        "amount": 100.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "SmokedVegetables",
+        "amount": 4.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Smoker_I_HardSkinBerry_FabricatedWood_O_SmokedVegetables",
+    "time": 600.0,
+    "description": "Crisp vegetables stuffed with herbs.",
+    "fabricators": [
+      "Smoker"
+    ],
+    "inputs": [
+      {
+        "material": "HardSkinBerry",
+        "amount": 7.0
+      },
+      {
+        "material": "FabricatedWood",
+        "amount": 100.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "SmokedVegetables",
+        "amount": 4.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Smoker_I_WormBasicFruit_WoodLog_O_SmokedVegetables",
+    "time": 600.0,
+    "description": "Crisp vegetables stuffed with herbs.",
+    "fabricators": [
+      "Smoker"
+    ],
+    "inputs": [
+      {
+        "material": "WormBasicFruit",
+        "amount": 7.0
+      },
+      {
+        "material": "WoodLog",
+        "amount": 100.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "SmokedVegetables",
+        "amount": 4.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Smoker_I_WormBasicFruit_FabricatedWood_O_SmokedVegetables",
+    "time": 600.0,
+    "description": "Crisp vegetables stuffed with herbs.",
+    "fabricators": [
+      "Smoker"
+    ],
+    "inputs": [
+      {
+        "material": "WormBasicFruit",
+        "amount": 7.0
+      },
+      {
+        "material": "FabricatedWood",
+        "amount": 100.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "SmokedVegetables",
+        "amount": 4.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "SushiBar_I_BasicPlantBar_Nori_FishMeat_O_Maki",
+    "time": 50.0,
+    "description": "Raw <link=\"FISHMEAT\">Fish Fillet</link> paired with <link=\"BASICPLANTBAR\">Liceloaf</link> and <link=\"NORI\">Nori</link>.",
+    "fabricators": [
+      "SushiBar"
+    ],
+    "inputs": [
+      {
+        "material": "BasicPlantBar",
+        "amount": 1.0
+      },
+      {
+        "material": "Nori",
+        "amount": 1.0
+      },
+      {
+        "material": "FishMeat",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Maki",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "SushiBar_I_Urchin_O_UrchinMeat",
+    "time": 50.0,
+    "description": "The edible flesh of a <link=\"URCHIN\">Pinpoki</link> prepared at the <link=\"SUSHIBAR\">Sushi Bar</link>.",
+    "fabricators": [
+      "SushiBar"
+    ],
+    "inputs": [
+      {
+        "material": "Urchin",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "UrchinMeat",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "SushiBar_I_BasicPlantBar_Nori_SquidMeat_O_Nigiri",
+    "time": 50.0,
+    "description": "Tenderized <link=\"SQUIDMEAT\">Calamari</link> with <link=\"BASICPLANTBAR\">Liceloaf</link> and <link=\"NORI\">Nori</link>.",
+    "fabricators": [
+      "SushiBar"
+    ],
+    "inputs": [
+      {
+        "material": "BasicPlantBar",
+        "amount": 1.0
+      },
+      {
+        "material": "Nori",
+        "amount": 1.0
+      },
+      {
+        "material": "SquidMeat",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "Nigiri",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  },
+  {
+    "id": "Apothecary_I_SpiceNut_O_IntermediateBooster",
+    "time": 100.0,
+    "description": "A supplement that significantly reduces the chance of contracting a <style=\"KKeyword\">Germ</style>-based <link=\"DISEASE\">Disease</link>.\n\nMust be taken daily.",
+    "fabricators": [
+      "Apothecary"
+    ],
+    "inputs": [
+      {
+        "material": "SpiceNut",
+        "amount": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "material": "IntermediateBooster",
+        "amount": 1.0
+      }
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null
+  }
+]

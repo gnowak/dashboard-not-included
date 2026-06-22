@@ -1,5 +1,22 @@
 [
   {
+    "id": "ForestForagePlantPlanted",
+    "name": "Hexalent",
+    "prefabId": "ForestForagePlantPlanted",
+    "tags": [],
+    "isFarmable": false,
+    "acceptedPlanters": [],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "temperatures": null,
+    "pressures": null,
+    "light": null,
+    "fertilizerRequirements": null,
+    "irrigationRequirements": null,
+    "growthCycles": 0.0,
+    "yield": null
+  },
+  {
     "id": "FlyTrapPlant",
     "name": "Lura Plant",
     "prefabId": "FlyTrapPlant",
@@ -8,6 +25,7 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [],
     "requiredDlcIds": [
       "DLC4_ID"
     ],
@@ -47,6 +65,14 @@
       "DeprecatedContent"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
     "requiredDlcIds": [
       "EXPANSION1_ID"
     ],
@@ -99,6 +125,15 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FlowerVase",
+      "FlowerVaseHanging",
+      "FlowerVaseHangingFancy",
+      "FlowerVaseWall",
+      "GravitasPedestal",
+      "ItemPedestal",
+      "Shelf"
+    ],
     "requiredDlcIds": [
       "DLC5_ID"
     ],
@@ -133,6 +168,46 @@
     "yield": null
   },
   {
+    "id": "ForestTreeBranch",
+    "name": "Arbor Tree",
+    "prefabId": "ForestTreeBranch",
+    "tags": [
+      "HideFromSpawnTool",
+      "HideFromCodex",
+      "PlantBranch",
+      "Plant"
+    ],
+    "isFarmable": true,
+    "acceptedPlanters": [],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 258.15,
+      "warningLowK": 288.15,
+      "warningHighK": 313.15,
+      "lethalHighK": 448.15,
+      "lethalLowC": -15.0,
+      "warningLowC": 15.0,
+      "warningHighC": 40.0,
+      "lethalHighC": 175.0
+    },
+    "pressures": {
+      "lethalLow": 0.0,
+      "warningLow": 0.15,
+      "warningHigh": 10.0,
+      "lethalHigh": 30.0,
+      "safeAtmospheres": []
+    },
+    "light": null,
+    "fertilizerRequirements": null,
+    "irrigationRequirements": null,
+    "growthCycles": 4.5,
+    "yield": {
+      "itemId": "WoodLog",
+      "amount": 300
+    }
+  },
+  {
     "id": "EvilFlower",
     "name": "Sporechid",
     "prefabId": "EvilFlower",
@@ -140,6 +215,15 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FlowerVase",
+      "FlowerVaseHanging",
+      "FlowerVaseHangingFancy",
+      "FlowerVaseWall",
+      "GravitasPedestal",
+      "ItemPedestal",
+      "Shelf"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "temperatures": {
@@ -168,59 +252,54 @@
     "yield": null
   },
   {
-    "id": "ForestForagePlantPlanted",
-    "name": "Hexalent",
-    "prefabId": "ForestForagePlantPlanted",
-    "tags": [],
-    "isFarmable": false,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "temperatures": null,
-    "pressures": null,
-    "light": null,
-    "fertilizerRequirements": null,
-    "irrigationRequirements": null,
-    "growthCycles": 0.0,
-    "yield": null
-  },
-  {
-    "id": "Dinofern",
-    "name": "Megafrond",
-    "prefabId": "Dinofern",
+    "id": "DewPalm",
+    "name": "Gum Palm",
+    "prefabId": "DewPalm",
     "tags": [
-      "Plant"
+      "Plant",
+      "BlockBuildOverPlantFeature"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "GravitasPedestal",
+      "ItemPedestal",
+      "Shelf",
+      "WideFarmTile"
+    ],
     "requiredDlcIds": [
-      "DLC4_ID"
+      "DLC5_ID"
     ],
     "forbiddenDlcIds": null,
     "temperatures": {
-      "lethalLowK": 218.15,
-      "warningLowK": 228.15,
-      "warningHighK": 288.15,
-      "lethalHighK": 308.15,
-      "lethalLowC": -55.0,
-      "warningLowC": -45.0,
-      "warningHighC": 15.0,
-      "lethalHighC": 35.0
+      "lethalLowK": 289.15,
+      "warningLowK": 297.15,
+      "warningHighK": 327.15,
+      "lethalHighK": 329.15,
+      "lethalLowC": 16.0,
+      "warningLowC": 24.0,
+      "warningHighC": 54.0,
+      "lethalHighC": 56.0
     },
     "pressures": {
       "lethalLow": 0.0,
-      "warningLow": 0.5,
+      "warningLow": 0.15,
       "warningHigh": 10.0,
       "lethalHigh": 30.0,
-      "safeAtmospheres": [
-        "ChlorineGas"
-      ]
+      "safeAtmospheres": []
     },
     "light": null,
-    "fertilizerRequirements": null,
+    "fertilizerRequirements": [
+      {
+        "tag": "Sulfur",
+        "massConsumptionRateKgPerSec": 0.0333333351,
+        "kgPerCycle": 20.0000019
+      }
+    ],
     "irrigationRequirements": null,
-    "growthCycles": 9.0,
+    "growthCycles": 10.0,
     "yield": {
-      "itemId": "FernFood",
-      "amount": 36
+      "itemId": "PalmWood",
+      "amount": 700
     }
   },
   {
@@ -232,6 +311,7 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [],
     "requiredDlcIds": [
       "DLC4_ID"
     ],
@@ -276,6 +356,15 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FlowerVase",
+      "FlowerVaseHanging",
+      "FlowerVaseHangingFancy",
+      "FlowerVaseWall",
+      "GravitasPedestal",
+      "ItemPedestal",
+      "Shelf"
+    ],
     "requiredDlcIds": [
       "EXPANSION1_ID"
     ],
@@ -315,6 +404,14 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
     "requiredDlcIds": [
       "EXPANSION1_ID"
     ],
@@ -359,6 +456,14 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "temperatures": {
@@ -404,367 +509,52 @@
     }
   },
   {
-    "id": "ColdBreather",
-    "name": "Wheezewort",
-    "prefabId": "ColdBreather",
-    "tags": [],
-    "isFarmable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "temperatures": {
-      "lethalLowK": 183.15,
-      "warningLowK": 213.15,
-      "warningHighK": 368.15,
-      "lethalHighK": 463.15,
-      "lethalLowC": -90.0,
-      "warningLowC": -60.0,
-      "warningHighC": 95.0,
-      "lethalHighC": 190.0
-    },
-    "pressures": null,
-    "light": null,
-    "fertilizerRequirements": [
-      {
-        "tag": "Phosphorite",
-        "massConsumptionRateKgPerSec": 0.006666667,
-        "kgPerCycle": 4.0
-      }
-    ],
-    "irrigationRequirements": null,
-    "growthCycles": 0.0,
-    "yield": null
-  },
-  {
-    "id": "DewPalm",
-    "name": "Gum Palm",
-    "prefabId": "DewPalm",
+    "id": "Dinofern",
+    "name": "Megafrond",
+    "prefabId": "Dinofern",
     "tags": [
-      "Plant"
+      "Plant",
+      "BlockBuildOverPlantFeature"
     ],
     "isFarmable": true,
-    "requiredDlcIds": [
-      "DLC5_ID"
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
     ],
-    "forbiddenDlcIds": null,
-    "temperatures": {
-      "lethalLowK": 289.15,
-      "warningLowK": 297.15,
-      "warningHighK": 327.15,
-      "lethalHighK": 329.15,
-      "lethalLowC": 16.0,
-      "warningLowC": 24.0,
-      "warningHighC": 54.0,
-      "lethalHighC": 56.0
-    },
-    "pressures": {
-      "lethalLow": 0.0,
-      "warningLow": 0.15,
-      "warningHigh": 10.0,
-      "lethalHigh": 30.0,
-      "safeAtmospheres": []
-    },
-    "light": null,
-    "fertilizerRequirements": [
-      {
-        "tag": "Sulfur",
-        "massConsumptionRateKgPerSec": 0.0333333351,
-        "kgPerCycle": 20.0000019
-      }
-    ],
-    "irrigationRequirements": null,
-    "growthCycles": 10.0,
-    "yield": {
-      "itemId": "PalmWood",
-      "amount": 700
-    }
-  },
-  {
-    "id": "Clam",
-    "name": "Clampum",
-    "prefabId": "Clam",
-    "tags": [
-      "Plant"
-    ],
-    "isFarmable": true,
-    "requiredDlcIds": [
-      "DLC5_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "temperatures": {
-      "lethalLowK": 273.15,
-      "warningLowK": 298.15,
-      "warningHighK": 318.15,
-      "lethalHighK": 373.15,
-      "lethalLowC": 0.0,
-      "warningLowC": 25.0,
-      "warningHighC": 45.0,
-      "lethalHighC": 100.0
-    },
-    "pressures": {
-      "lethalLow": -3.40282347E+38,
-      "warningLow": -3.40282347E+38,
-      "warningHigh": 3.40282347E+38,
-      "lethalHigh": 3.40282347E+38,
-      "safeAtmospheres": [
-        "MurkyBrine",
-        "Brine",
-        "DirtyWater",
-        "Water",
-        "SaltWater"
-      ]
-    },
-    "light": null,
-    "fertilizerRequirements": [
-      {
-        "tag": "Sand",
-        "massConsumptionRateKgPerSec": 0.0583333336,
-        "kgPerCycle": 35.0
-      }
-    ],
-    "irrigationRequirements": null,
-    "growthCycles": 8.0,
-    "yield": {
-      "itemId": "Pearl",
-      "amount": 50
-    }
-  },
-  {
-    "id": "ForestTreeBranch",
-    "name": "Arbor Tree",
-    "prefabId": "ForestTreeBranch",
-    "tags": [
-      "HideFromSpawnTool",
-      "HideFromCodex",
-      "PlantBranch",
-      "Plant"
-    ],
-    "isFarmable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "temperatures": {
-      "lethalLowK": 258.15,
-      "warningLowK": 288.15,
-      "warningHighK": 313.15,
-      "lethalHighK": 448.15,
-      "lethalLowC": -15.0,
-      "warningLowC": 15.0,
-      "warningHighC": 40.0,
-      "lethalHighC": 175.0
-    },
-    "pressures": {
-      "lethalLow": 0.0,
-      "warningLow": 0.15,
-      "warningHigh": 10.0,
-      "lethalHigh": 30.0,
-      "safeAtmospheres": []
-    },
-    "light": null,
-    "fertilizerRequirements": null,
-    "irrigationRequirements": null,
-    "growthCycles": 4.5,
-    "yield": {
-      "itemId": "WoodLog",
-      "amount": 300
-    }
-  },
-  {
-    "id": "GardenDecorPlant",
-    "name": "Ring Rosebush",
-    "prefabId": "GardenDecorPlant",
-    "tags": [
-      "Plant"
-    ],
-    "isFarmable": true,
     "requiredDlcIds": [
       "DLC4_ID"
     ],
     "forbiddenDlcIds": null,
     "temperatures": {
-      "lethalLowK": 263.15,
-      "warningLowK": 268.15,
-      "warningHighK": 313.15,
-      "lethalHighK": 323.15,
-      "lethalLowC": -10.0,
-      "warningLowC": -5.0,
-      "warningHighC": 40.0,
-      "lethalHighC": 50.0
-    },
-    "pressures": {
-      "lethalLow": -3.40282347E+38,
-      "warningLow": -3.40282347E+38,
-      "warningHigh": 3.40282347E+38,
-      "lethalHigh": 3.40282347E+38,
-      "safeAtmospheres": [
-        "Oxygen",
-        "ContaminatedOxygen",
-        "CarbonDioxide"
-      ]
-    },
-    "light": null,
-    "fertilizerRequirements": null,
-    "irrigationRequirements": null,
-    "growthCycles": 0.0,
-    "yield": null
-  },
-  {
-    "id": "KelpPlant",
-    "name": "Seakomb",
-    "prefabId": "KelpPlant",
-    "tags": [
-      "Hanging",
-      "Plant"
-    ],
-    "isFarmable": true,
-    "requiredDlcIds": [
-      "DLC4_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "temperatures": {
-      "lethalLowK": 253.15,
-      "warningLowK": 263.15,
-      "warningHighK": 358.15,
-      "lethalHighK": 373.15,
-      "lethalLowC": -20.0,
-      "warningLowC": -10.0,
-      "warningHighC": 85.0,
-      "lethalHighC": 100.0
-    },
-    "pressures": {
-      "lethalLow": -3.40282347E+38,
-      "warningLow": -3.40282347E+38,
-      "warningHigh": 3.40282347E+38,
-      "lethalHigh": 3.40282347E+38,
-      "safeAtmospheres": [
-        "Water",
-        "DirtyWater",
-        "SaltWater",
-        "Brine",
-        "PhytoOil",
-        "NaturalResin"
-      ]
-    },
-    "light": null,
-    "fertilizerRequirements": [
-      {
-        "tag": "ToxicSand",
-        "massConsumptionRateKgPerSec": 0.0166666675,
-        "kgPerCycle": 10.000001
-      }
-    ],
-    "irrigationRequirements": null,
-    "growthCycles": 5.0,
-    "yield": {
-      "itemId": "Kelp",
-      "amount": 50
-    }
-  },
-  {
-    "id": "IceFlower",
-    "name": "Idylla Flower",
-    "prefabId": "IceFlower",
-    "tags": [
-      "Plant"
-    ],
-    "isFarmable": true,
-    "requiredDlcIds": [
-      "DLC2_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "temperatures": {
-      "lethalLowK": 173.15,
-      "warningLowK": 203.15,
-      "warningHighK": 278.15,
-      "lethalHighK": 318.15,
-      "lethalLowC": -100.0,
-      "warningLowC": -70.0,
-      "warningHighC": 5.0,
-      "lethalHighC": 45.0
+      "lethalLowK": 218.15,
+      "warningLowK": 228.15,
+      "warningHighK": 288.15,
+      "lethalHighK": 308.15,
+      "lethalLowC": -55.0,
+      "warningLowC": -45.0,
+      "warningHighC": 15.0,
+      "lethalHighC": 35.0
     },
     "pressures": {
       "lethalLow": 0.0,
-      "warningLow": 0.15,
+      "warningLow": 0.5,
       "warningHigh": 10.0,
       "lethalHigh": 30.0,
       "safeAtmospheres": [
-        "Oxygen",
-        "ContaminatedOxygen",
-        "CarbonDioxide",
-        "ChlorineGas",
-        "Hydrogen"
+        "ChlorineGas"
       ]
     },
     "light": null,
     "fertilizerRequirements": null,
     "irrigationRequirements": null,
-    "growthCycles": 0.0,
-    "yield": null
-  },
-  {
-    "id": "IceCavesForagePlantPlanted",
-    "name": "Sherberry Plant",
-    "prefabId": "IceCavesForagePlantPlanted",
-    "tags": [
-      "Hanging"
-    ],
-    "isFarmable": false,
-    "requiredDlcIds": [
-      "DLC2_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "temperatures": null,
-    "pressures": null,
-    "light": null,
-    "fertilizerRequirements": null,
-    "irrigationRequirements": null,
-    "growthCycles": 0.0,
-    "yield": null
-  },
-  {
-    "id": "HardSkinBerryPlant",
-    "name": "Pikeapple Bush",
-    "prefabId": "HardSkinBerryPlant",
-    "tags": [
-      "Plant"
-    ],
-    "isFarmable": true,
-    "requiredDlcIds": [
-      "DLC2_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "temperatures": {
-      "lethalLowK": 118.149994,
-      "warningLowK": 218.15,
-      "warningHighK": 259.15,
-      "lethalHighK": 269.15,
-      "lethalLowC": -155.0,
-      "warningLowC": -55.0,
-      "warningHighC": -14.0,
-      "lethalHighC": -4.0
-    },
-    "pressures": {
-      "lethalLow": 0.0,
-      "warningLow": 0.15,
-      "warningHigh": 10.0,
-      "lethalHigh": 30.0,
-      "safeAtmospheres": [
-        "Oxygen",
-        "ContaminatedOxygen",
-        "CarbonDioxide"
-      ]
-    },
-    "light": null,
-    "fertilizerRequirements": [
-      {
-        "tag": "Phosphorite",
-        "massConsumptionRateKgPerSec": 0.008333334,
-        "kgPerCycle": 5.00000048
-      }
-    ],
-    "irrigationRequirements": null,
-    "growthCycles": 3.0,
+    "growthCycles": 9.0,
     "yield": {
-      "itemId": "HardSkinBerry",
-      "amount": 1
+      "itemId": "FernFood",
+      "amount": 36
     }
   },
   {
@@ -775,6 +565,14 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "temperatures": {
@@ -816,6 +614,339 @@
     }
   },
   {
+    "id": "GardenDecorPlant",
+    "name": "Ring Rosebush",
+    "prefabId": "GardenDecorPlant",
+    "tags": [
+      "Plant"
+    ],
+    "isFarmable": true,
+    "acceptedPlanters": [
+      "FlowerVase",
+      "FlowerVaseHanging",
+      "FlowerVaseHangingFancy",
+      "FlowerVaseWall",
+      "GravitasPedestal",
+      "ItemPedestal",
+      "Shelf"
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 263.15,
+      "warningLowK": 268.15,
+      "warningHighK": 313.15,
+      "lethalHighK": 323.15,
+      "lethalLowC": -10.0,
+      "warningLowC": -5.0,
+      "warningHighC": 40.0,
+      "lethalHighC": 50.0
+    },
+    "pressures": {
+      "lethalLow": -3.40282347E+38,
+      "warningLow": -3.40282347E+38,
+      "warningHigh": 3.40282347E+38,
+      "lethalHigh": 3.40282347E+38,
+      "safeAtmospheres": [
+        "Oxygen",
+        "ContaminatedOxygen",
+        "CarbonDioxide"
+      ]
+    },
+    "light": null,
+    "fertilizerRequirements": null,
+    "irrigationRequirements": null,
+    "growthCycles": 0.0,
+    "yield": null
+  },
+  {
+    "id": "GardenFoodPlant",
+    "name": "Sweatcorn Stalk",
+    "prefabId": "GardenFoodPlant",
+    "tags": [
+      "Plant"
+    ],
+    "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 263.15,
+      "warningLowK": 268.15,
+      "warningHighK": 313.15,
+      "lethalHighK": 323.15,
+      "lethalLowC": -10.0,
+      "warningLowC": -5.0,
+      "warningHighC": 40.0,
+      "lethalHighC": 50.0
+    },
+    "pressures": {
+      "lethalLow": 0.0,
+      "warningLow": 0.15,
+      "warningHigh": 10.0,
+      "lethalHigh": 30.0,
+      "safeAtmospheres": [
+        "Oxygen",
+        "ContaminatedOxygen",
+        "CarbonDioxide"
+      ]
+    },
+    "light": null,
+    "fertilizerRequirements": [
+      {
+        "tag": "Peat",
+        "massConsumptionRateKgPerSec": 0.0166666675,
+        "kgPerCycle": 10.000001
+      }
+    ],
+    "irrigationRequirements": null,
+    "growthCycles": 3.0,
+    "yield": {
+      "itemId": "GardenFoodPlantFood",
+      "amount": 1
+    }
+  },
+  {
+    "id": "LeafyPlant",
+    "name": "Mirth Leaf",
+    "prefabId": "LeafyPlant",
+    "tags": [
+      "Plant"
+    ],
+    "isFarmable": true,
+    "acceptedPlanters": [
+      "FlowerVase",
+      "FlowerVaseHanging",
+      "FlowerVaseHangingFancy",
+      "FlowerVaseWall",
+      "GravitasPedestal",
+      "ItemPedestal",
+      "Shelf"
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 288.0,
+      "warningLowK": 293.15,
+      "warningHighK": 323.15,
+      "lethalHighK": 373.0,
+      "lethalLowC": 14.8500061,
+      "warningLowC": 20.0,
+      "warningHighC": 50.0,
+      "lethalHighC": 99.8500061
+    },
+    "pressures": {
+      "lethalLow": 0.0,
+      "warningLow": 0.15,
+      "warningHigh": 10.0,
+      "lethalHigh": 30.0,
+      "safeAtmospheres": [
+        "Oxygen",
+        "ContaminatedOxygen",
+        "CarbonDioxide",
+        "ChlorineGas",
+        "Hydrogen"
+      ]
+    },
+    "light": null,
+    "fertilizerRequirements": null,
+    "irrigationRequirements": null,
+    "growthCycles": 0.0,
+    "yield": null
+  },
+  {
+    "id": "KelpPlant",
+    "name": "Seakomb",
+    "prefabId": "KelpPlant",
+    "tags": [
+      "Hanging",
+      "Plant"
+    ],
+    "isFarmable": true,
+    "acceptedPlanters": [],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 253.15,
+      "warningLowK": 263.15,
+      "warningHighK": 358.15,
+      "lethalHighK": 373.15,
+      "lethalLowC": -20.0,
+      "warningLowC": -10.0,
+      "warningHighC": 85.0,
+      "lethalHighC": 100.0
+    },
+    "pressures": {
+      "lethalLow": -3.40282347E+38,
+      "warningLow": -3.40282347E+38,
+      "warningHigh": 3.40282347E+38,
+      "lethalHigh": 3.40282347E+38,
+      "safeAtmospheres": [
+        "Water",
+        "DirtyWater",
+        "SaltWater",
+        "Brine",
+        "MurkyBrine",
+        "PhytoOil",
+        "NaturalResin"
+      ]
+    },
+    "light": null,
+    "fertilizerRequirements": [
+      {
+        "tag": "ToxicSand",
+        "massConsumptionRateKgPerSec": 0.0166666675,
+        "kgPerCycle": 10.000001
+      }
+    ],
+    "irrigationRequirements": null,
+    "growthCycles": 5.0,
+    "yield": {
+      "itemId": "Kelp",
+      "amount": 50
+    }
+  },
+  {
+    "id": "IceFlower",
+    "name": "Idylla Flower",
+    "prefabId": "IceFlower",
+    "tags": [
+      "Plant"
+    ],
+    "isFarmable": true,
+    "acceptedPlanters": [
+      "FlowerVase",
+      "FlowerVaseHanging",
+      "FlowerVaseHangingFancy",
+      "FlowerVaseWall",
+      "GravitasPedestal",
+      "ItemPedestal",
+      "Shelf"
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 173.15,
+      "warningLowK": 203.15,
+      "warningHighK": 278.15,
+      "lethalHighK": 318.15,
+      "lethalLowC": -100.0,
+      "warningLowC": -70.0,
+      "warningHighC": 5.0,
+      "lethalHighC": 45.0
+    },
+    "pressures": {
+      "lethalLow": 0.0,
+      "warningLow": 0.15,
+      "warningHigh": 10.0,
+      "lethalHigh": 30.0,
+      "safeAtmospheres": [
+        "Oxygen",
+        "ContaminatedOxygen",
+        "CarbonDioxide",
+        "ChlorineGas",
+        "Hydrogen"
+      ]
+    },
+    "light": null,
+    "fertilizerRequirements": null,
+    "irrigationRequirements": null,
+    "growthCycles": 0.0,
+    "yield": null
+  },
+  {
+    "id": "IceCavesForagePlantPlanted",
+    "name": "Sherberry Plant",
+    "prefabId": "IceCavesForagePlantPlanted",
+    "tags": [
+      "Hanging"
+    ],
+    "isFarmable": false,
+    "acceptedPlanters": [],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "temperatures": null,
+    "pressures": null,
+    "light": null,
+    "fertilizerRequirements": null,
+    "irrigationRequirements": null,
+    "growthCycles": 0.0,
+    "yield": null
+  },
+  {
+    "id": "HardSkinBerryPlant",
+    "name": "Pikeapple Bush",
+    "prefabId": "HardSkinBerryPlant",
+    "tags": [
+      "Plant"
+    ],
+    "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 118.149994,
+      "warningLowK": 218.15,
+      "warningHighK": 259.15,
+      "lethalHighK": 269.15,
+      "lethalLowC": -155.0,
+      "warningLowC": -55.0,
+      "warningHighC": -14.0,
+      "lethalHighC": -4.0
+    },
+    "pressures": {
+      "lethalLow": 0.0,
+      "warningLow": 0.15,
+      "warningHigh": 10.0,
+      "lethalHigh": 30.0,
+      "safeAtmospheres": [
+        "Oxygen",
+        "ContaminatedOxygen",
+        "CarbonDioxide"
+      ]
+    },
+    "light": null,
+    "fertilizerRequirements": [
+      {
+        "tag": "Phosphorite",
+        "massConsumptionRateKgPerSec": 0.008333334,
+        "kgPerCycle": 5.00000048
+      }
+    ],
+    "irrigationRequirements": null,
+    "growthCycles": 3.0,
+    "yield": {
+      "itemId": "HardSkinBerry",
+      "amount": 1
+    }
+  },
+  {
     "id": "GasGrass",
     "name": "Gas Grass",
     "prefabId": "GasGrass",
@@ -823,6 +954,14 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "temperatures": {
@@ -872,6 +1011,7 @@
     "prefabId": "GardenForagePlantPlanted",
     "tags": [],
     "isFarmable": false,
+    "acceptedPlanters": [],
     "requiredDlcIds": [
       "DLC4_ID"
     ],
@@ -885,26 +1025,71 @@
     "yield": null
   },
   {
-    "id": "GardenFoodPlant",
-    "name": "Sweatcorn Stalk",
-    "prefabId": "GardenFoodPlant",
+    "id": "ColdBreather",
+    "name": "Wheezewort",
+    "prefabId": "ColdBreather",
+    "tags": [],
+    "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 183.15,
+      "warningLowK": 213.15,
+      "warningHighK": 368.15,
+      "lethalHighK": 463.15,
+      "lethalLowC": -90.0,
+      "warningLowC": -60.0,
+      "warningHighC": 95.0,
+      "lethalHighC": 190.0
+    },
+    "pressures": null,
+    "light": null,
+    "fertilizerRequirements": [
+      {
+        "tag": "Phosphorite",
+        "massConsumptionRateKgPerSec": 0.006666667,
+        "kgPerCycle": 4.0
+      }
+    ],
+    "irrigationRequirements": null,
+    "growthCycles": 0.0,
+    "yield": null
+  },
+  {
+    "id": "MushroomPlant",
+    "name": "Dusk Cap",
+    "prefabId": "MushroomPlant",
     "tags": [
       "Plant"
     ],
     "isFarmable": true,
-    "requiredDlcIds": [
-      "DLC4_ID"
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
     ],
+    "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "temperatures": {
-      "lethalLowK": 263.15,
-      "warningLowK": 268.15,
-      "warningHighK": 313.15,
-      "lethalHighK": 323.15,
-      "lethalLowC": -10.0,
-      "warningLowC": -5.0,
-      "warningHighC": 40.0,
-      "lethalHighC": 50.0
+      "lethalLowK": 228.15,
+      "warningLowK": 278.15,
+      "warningHighK": 308.15,
+      "lethalHighK": 398.15,
+      "lethalLowC": -45.0,
+      "warningLowC": 5.0,
+      "warningHighC": 35.0,
+      "lethalHighC": 125.0
     },
     "pressures": {
       "lethalLow": 0.0,
@@ -912,24 +1097,82 @@
       "warningHigh": 10.0,
       "lethalHigh": 30.0,
       "safeAtmospheres": [
-        "Oxygen",
-        "ContaminatedOxygen",
         "CarbonDioxide"
+      ]
+    },
+    "light": {
+      "prefersDarkness": true,
+      "lightThresholdLux": 0
+    },
+    "fertilizerRequirements": [
+      {
+        "tag": "SlimeMold",
+        "massConsumptionRateKgPerSec": 0.006666667,
+        "kgPerCycle": 4.0
+      }
+    ],
+    "irrigationRequirements": null,
+    "growthCycles": 7.5,
+    "yield": {
+      "itemId": "Mushroom",
+      "amount": 1
+    }
+  },
+  {
+    "id": "Clam",
+    "name": "Clampum",
+    "prefabId": "Clam",
+    "tags": [
+      "Plant",
+      "BlockBuildOverPlantFeature"
+    ],
+    "isFarmable": true,
+    "acceptedPlanters": [
+      "GravitasPedestal",
+      "ItemPedestal",
+      "Shelf",
+      "WideFarmTile"
+    ],
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 273.15,
+      "warningLowK": 298.15,
+      "warningHighK": 318.15,
+      "lethalHighK": 373.15,
+      "lethalLowC": 0.0,
+      "warningLowC": 25.0,
+      "warningHighC": 45.0,
+      "lethalHighC": 100.0
+    },
+    "pressures": {
+      "lethalLow": -3.40282347E+38,
+      "warningLow": -3.40282347E+38,
+      "warningHigh": 3.40282347E+38,
+      "lethalHigh": 3.40282347E+38,
+      "safeAtmospheres": [
+        "MurkyBrine",
+        "Brine",
+        "DirtyWater",
+        "Water",
+        "SaltWater"
       ]
     },
     "light": null,
     "fertilizerRequirements": [
       {
-        "tag": "Peat",
-        "massConsumptionRateKgPerSec": 0.0166666675,
-        "kgPerCycle": 10.000001
+        "tag": "Sand",
+        "massConsumptionRateKgPerSec": 0.0583333336,
+        "kgPerCycle": 35.0
       }
     ],
     "irrigationRequirements": null,
-    "growthCycles": 3.0,
+    "growthCycles": 8.0,
     "yield": {
-      "itemId": "GardenFoodPlantFood",
-      "amount": 1
+      "itemId": "Pearl",
+      "amount": 50
     }
   },
   {
@@ -940,6 +1183,14 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
     "requiredDlcIds": [
       "DLC2_ID"
     ],
@@ -988,6 +1239,15 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FlowerVase",
+      "FlowerVaseHanging",
+      "FlowerVaseHangingFancy",
+      "FlowerVaseWall",
+      "GravitasPedestal",
+      "ItemPedestal",
+      "Shelf"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "temperatures": {
@@ -1025,6 +1285,14 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
     "requiredDlcIds": [
       "DLC4_ID"
     ],
@@ -1074,6 +1342,15 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FlowerVase",
+      "FlowerVaseHanging",
+      "FlowerVaseHangingFancy",
+      "FlowerVaseWall",
+      "GravitasPedestal",
+      "ItemPedestal",
+      "Shelf"
+    ],
     "requiredDlcIds": [
       "DLC5_ID"
     ],
@@ -1116,6 +1393,15 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FlowerVase",
+      "FlowerVaseHanging",
+      "FlowerVaseHangingFancy",
+      "FlowerVaseWall",
+      "GravitasPedestal",
+      "ItemPedestal",
+      "Shelf"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "temperatures": {
@@ -1156,6 +1442,14 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
     "requiredDlcIds": [
       "DLC2_ID"
     ],
@@ -1202,6 +1496,14 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "temperatures": {
@@ -1252,6 +1554,14 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "temperatures": {
@@ -1296,6 +1606,7 @@
     "prefabId": "BasicForagePlantPlanted",
     "tags": [],
     "isFarmable": false,
+    "acceptedPlanters": [],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "temperatures": null,
@@ -1314,6 +1625,13 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "Shelf"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "temperatures": {
@@ -1355,50 +1673,12 @@
     }
   },
   {
-    "id": "LeafyPlant",
-    "name": "Mirth Leaf",
-    "prefabId": "LeafyPlant",
-    "tags": [
-      "Plant"
-    ],
-    "isFarmable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "temperatures": {
-      "lethalLowK": 288.0,
-      "warningLowK": 293.15,
-      "warningHighK": 323.15,
-      "lethalHighK": 373.0,
-      "lethalLowC": 14.8500061,
-      "warningLowC": 20.0,
-      "warningHighC": 50.0,
-      "lethalHighC": 99.8500061
-    },
-    "pressures": {
-      "lethalLow": 0.0,
-      "warningLow": 0.15,
-      "warningHigh": 10.0,
-      "lethalHigh": 30.0,
-      "safeAtmospheres": [
-        "Oxygen",
-        "ContaminatedOxygen",
-        "CarbonDioxide",
-        "ChlorineGas",
-        "Hydrogen"
-      ]
-    },
-    "light": null,
-    "fertilizerRequirements": null,
-    "irrigationRequirements": null,
-    "growthCycles": 0.0,
-    "yield": null
-  },
-  {
     "id": "MusselSprout",
     "name": "Mussel Sprout",
     "prefabId": "MusselSprout",
     "tags": [],
     "isFarmable": false,
+    "acceptedPlanters": [],
     "requiredDlcIds": [
       "DLC5_ID"
     ],
@@ -1412,23 +1692,125 @@
     "yield": null
   },
   {
-    "id": "MushroomPlant",
-    "name": "Dusk Cap",
-    "prefabId": "MushroomPlant",
+    "id": "SaltPlant",
+    "name": "Dasha Saltvine",
+    "prefabId": "SaltPlant",
+    "tags": [
+      "Hanging",
+      "Plant"
+    ],
+    "isFarmable": true,
+    "acceptedPlanters": [],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 198.15,
+      "warningLowK": 248.15,
+      "warningHighK": 323.15,
+      "lethalHighK": 393.15,
+      "lethalLowC": -75.0,
+      "warningLowC": -25.0,
+      "warningHighC": 50.0,
+      "lethalHighC": 120.0
+    },
+    "pressures": {
+      "lethalLow": 0.0,
+      "warningLow": 0.025,
+      "warningHigh": 10.0,
+      "lethalHigh": 30.0,
+      "safeAtmospheres": [
+        "ChlorineGas"
+      ]
+    },
+    "light": null,
+    "fertilizerRequirements": [
+      {
+        "tag": "Sand",
+        "massConsumptionRateKgPerSec": 0.0116666667,
+        "kgPerCycle": 7.0
+      }
+    ],
+    "irrigationRequirements": null,
+    "growthCycles": 6.0,
+    "yield": {
+      "itemId": "Salt",
+      "amount": 65
+    }
+  },
+  {
+    "id": "SwampLily",
+    "name": "Balm Lily",
+    "prefabId": "SwampLily",
     "tags": [
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "temperatures": {
-      "lethalLowK": 228.15,
-      "warningLowK": 278.15,
-      "warningHighK": 308.15,
+      "lethalLowK": 258.15,
+      "warningLowK": 308.15,
+      "warningHighK": 358.15,
+      "lethalHighK": 448.15,
+      "lethalLowC": -15.0,
+      "warningLowC": 35.0,
+      "warningHighC": 85.0,
+      "lethalHighC": 175.0
+    },
+    "pressures": {
+      "lethalLow": 0.0,
+      "warningLow": 0.15,
+      "warningHigh": 10.0,
+      "lethalHigh": 30.0,
+      "safeAtmospheres": [
+        "ChlorineGas"
+      ]
+    },
+    "light": null,
+    "fertilizerRequirements": null,
+    "irrigationRequirements": null,
+    "growthCycles": 12.0,
+    "yield": {
+      "itemId": "SwampLilyFlower",
+      "amount": 2
+    }
+  },
+  {
+    "id": "SwampHarvestPlant",
+    "name": "Bog Bucket",
+    "prefabId": "SwampHarvestPlant",
+    "tags": [
+      "Plant"
+    ],
+    "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 218.15,
+      "warningLowK": 283.15,
+      "warningHighK": 303.15,
       "lethalHighK": 398.15,
-      "lethalLowC": -45.0,
-      "warningLowC": 5.0,
-      "warningHighC": 35.0,
+      "lethalLowC": -55.0,
+      "warningLowC": 10.0,
+      "warningHighC": 30.0,
       "lethalHighC": 125.0
     },
     "pressures": {
@@ -1437,6 +1819,8 @@
       "warningHigh": 10.0,
       "lethalHigh": 30.0,
       "safeAtmospheres": [
+        "Oxygen",
+        "ContaminatedOxygen",
         "CarbonDioxide"
       ]
     },
@@ -1444,18 +1828,63 @@
       "prefersDarkness": true,
       "lightThresholdLux": 0
     },
-    "fertilizerRequirements": [
+    "fertilizerRequirements": null,
+    "irrigationRequirements": [
       {
-        "tag": "SlimeMold",
-        "massConsumptionRateKgPerSec": 0.006666667,
-        "kgPerCycle": 4.0
+        "tag": "DirtyWater",
+        "massConsumptionRateKgPerSec": 0.06666667,
+        "kgPerCycle": 40.0000038
       }
     ],
-    "irrigationRequirements": null,
-    "growthCycles": 7.5,
+    "growthCycles": 6.6,
     "yield": {
-      "itemId": "Mushroom",
+      "itemId": "SwampFruit",
       "amount": 1
+    }
+  },
+  {
+    "id": "SpaceTreeBranch",
+    "name": "Bonbon Tree",
+    "prefabId": "SpaceTreeBranch",
+    "tags": [
+      "HideFromSpawnTool",
+      "HideFromCodex",
+      "PlantBranch",
+      "Plant"
+    ],
+    "isFarmable": true,
+    "acceptedPlanters": [],
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 173.15,
+      "warningLowK": 198.15,
+      "warningHighK": 258.15,
+      "lethalHighK": 293.15,
+      "lethalLowC": -100.0,
+      "warningLowC": -75.0,
+      "warningHighC": -15.0,
+      "lethalHighC": 20.0
+    },
+    "pressures": {
+      "lethalLow": -3.40282347E+38,
+      "warningLow": -3.40282347E+38,
+      "warningHigh": 3.40282347E+38,
+      "lethalHigh": 3.40282347E+38,
+      "safeAtmospheres": []
+    },
+    "light": {
+      "prefersDarkness": false,
+      "lightThresholdLux": 300
+    },
+    "fertilizerRequirements": null,
+    "irrigationRequirements": null,
+    "growthCycles": 4.5,
+    "yield": {
+      "itemId": "WoodLog",
+      "amount": 75
     }
   },
   {
@@ -1466,6 +1895,14 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
     "requiredDlcIds": [
       "DLC5_ID"
     ],
@@ -1507,485 +1944,6 @@
     }
   },
   {
-    "id": "SpaceTreeBranch",
-    "name": "Bonbon Tree",
-    "prefabId": "SpaceTreeBranch",
-    "tags": [
-      "HideFromSpawnTool",
-      "HideFromCodex",
-      "PlantBranch",
-      "Plant"
-    ],
-    "isFarmable": true,
-    "requiredDlcIds": [
-      "DLC2_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "temperatures": {
-      "lethalLowK": 173.15,
-      "warningLowK": 198.15,
-      "warningHighK": 258.15,
-      "lethalHighK": 293.15,
-      "lethalLowC": -100.0,
-      "warningLowC": -75.0,
-      "warningHighC": -15.0,
-      "lethalHighC": 20.0
-    },
-    "pressures": {
-      "lethalLow": -3.40282347E+38,
-      "warningLow": -3.40282347E+38,
-      "warningHigh": 3.40282347E+38,
-      "lethalHigh": 3.40282347E+38,
-      "safeAtmospheres": []
-    },
-    "light": {
-      "prefersDarkness": false,
-      "lightThresholdLux": 300
-    },
-    "fertilizerRequirements": null,
-    "irrigationRequirements": null,
-    "growthCycles": 4.5,
-    "yield": {
-      "itemId": "WoodLog",
-      "amount": 75
-    }
-  },
-  {
-    "id": "OxyCoral",
-    "name": "Flue Coral",
-    "prefabId": "OxyCoral",
-    "tags": [
-      "Plant"
-    ],
-    "isFarmable": true,
-    "requiredDlcIds": [
-      "DLC5_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "temperatures": {
-      "lethalLowK": 253.15,
-      "warningLowK": 298.15,
-      "warningHighK": 318.15,
-      "lethalHighK": 373.15,
-      "lethalLowC": -20.0,
-      "warningLowC": 25.0,
-      "warningHighC": 45.0,
-      "lethalHighC": 100.0
-    },
-    "pressures": {
-      "lethalLow": -3.40282347E+38,
-      "warningLow": -3.40282347E+38,
-      "warningHigh": 3.40282347E+38,
-      "lethalHigh": 3.40282347E+38,
-      "safeAtmospheres": [
-        "Water",
-        "SaltWater",
-        "DirtyWater",
-        "Brine"
-      ]
-    },
-    "light": null,
-    "fertilizerRequirements": [
-      {
-        "tag": "Lime",
-        "massConsumptionRateKgPerSec": 0.008333334,
-        "kgPerCycle": 5.00000048
-      }
-    ],
-    "irrigationRequirements": [
-      {
-        "tag": "SaltWater",
-        "massConsumptionRateKgPerSec": 0.0333333351,
-        "kgPerCycle": 20.0000019
-      }
-    ],
-    "growthCycles": 0.0,
-    "yield": null
-  },
-  {
-    "id": "SeaTree",
-    "name": "Tower Kelp",
-    "prefabId": "SeaTree",
-    "tags": [
-      "Plant"
-    ],
-    "isFarmable": true,
-    "requiredDlcIds": [
-      "DLC5_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "temperatures": {
-      "lethalLowK": 248.15,
-      "warningLowK": 295.15,
-      "warningHighK": 310.15,
-      "lethalHighK": 398.15,
-      "lethalLowC": -25.0,
-      "warningLowC": 22.0,
-      "warningHighC": 37.0,
-      "lethalHighC": 125.0
-    },
-    "pressures": {
-      "lethalLow": -3.40282347E+38,
-      "warningLow": -3.40282347E+38,
-      "warningHigh": 3.40282347E+38,
-      "lethalHigh": 3.40282347E+38,
-      "safeAtmospheres": [
-        "MurkyBrine",
-        "Brine",
-        "DirtyWater",
-        "Water",
-        "SaltWater"
-      ]
-    },
-    "light": null,
-    "fertilizerRequirements": [
-      {
-        "tag": "ToxicMud",
-        "massConsumptionRateKgPerSec": 0.06666667,
-        "kgPerCycle": 40.0000038
-      }
-    ],
-    "irrigationRequirements": null,
-    "growthCycles": 0.0,
-    "yield": null
-  },
-  {
-    "id": "SpiceVine",
-    "name": "Pincha Pepperplant",
-    "prefabId": "SpiceVine",
-    "tags": [
-      "Hanging",
-      "Plant"
-    ],
-    "isFarmable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "temperatures": {
-      "lethalLowK": 258.15,
-      "warningLowK": 308.15,
-      "warningHighK": 358.15,
-      "lethalHighK": 448.15,
-      "lethalLowC": -15.0,
-      "warningLowC": 35.0,
-      "warningHighC": 85.0,
-      "lethalHighC": 175.0
-    },
-    "pressures": {
-      "lethalLow": 0.0,
-      "warningLow": 0.15,
-      "warningHigh": 10.0,
-      "lethalHigh": 30.0,
-      "safeAtmospheres": []
-    },
-    "light": null,
-    "fertilizerRequirements": [
-      {
-        "tag": "Phosphorite",
-        "massConsumptionRateKgPerSec": 0.00166666671,
-        "kgPerCycle": 1.0
-      }
-    ],
-    "irrigationRequirements": [
-      {
-        "tag": "DirtyWater",
-        "massConsumptionRateKgPerSec": 0.0583333336,
-        "kgPerCycle": 35.0
-      }
-    ],
-    "growthCycles": 8.0,
-    "yield": {
-      "itemId": "SpiceNut",
-      "amount": 4
-    }
-  },
-  {
-    "id": "Oxyfern",
-    "name": "Oxyfern",
-    "prefabId": "Oxyfern",
-    "tags": [
-      "Plant"
-    ],
-    "isFarmable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "temperatures": {
-      "lethalLowK": 253.15,
-      "warningLowK": 273.15,
-      "warningHighK": 313.15,
-      "lethalHighK": 373.15,
-      "lethalLowC": -20.0,
-      "warningLowC": 0.0,
-      "warningHighC": 40.0,
-      "lethalHighC": 100.0
-    },
-    "pressures": {
-      "lethalLow": 0.0,
-      "warningLow": 0.025,
-      "warningHigh": 10.0,
-      "lethalHigh": 30.0,
-      "safeAtmospheres": [
-        "CarbonDioxide"
-      ]
-    },
-    "light": null,
-    "fertilizerRequirements": [
-      {
-        "tag": "Dirt",
-        "massConsumptionRateKgPerSec": 0.006666667,
-        "kgPerCycle": 4.0
-      }
-    ],
-    "irrigationRequirements": [
-      {
-        "tag": "Water",
-        "massConsumptionRateKgPerSec": 0.0316666663,
-        "kgPerCycle": 19.0
-      }
-    ],
-    "growthCycles": 0.0,
-    "yield": null
-  },
-  {
-    "id": "SeaTreeBranch",
-    "name": "Tower Kelp",
-    "prefabId": "SeaTreeBranch",
-    "tags": [
-      "HideFromSpawnTool",
-      "HideFromCodex",
-      "PlantBranch",
-      "ExcludeFromTemplate",
-      "Plant"
-    ],
-    "isFarmable": true,
-    "requiredDlcIds": [
-      "DLC5_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "temperatures": {
-      "lethalLowK": 248.15,
-      "warningLowK": 295.15,
-      "warningHighK": 310.15,
-      "lethalHighK": 398.15,
-      "lethalLowC": -25.0,
-      "warningLowC": 22.0,
-      "warningHighC": 37.0,
-      "lethalHighC": 125.0
-    },
-    "pressures": {
-      "lethalLow": -3.40282347E+38,
-      "warningLow": -3.40282347E+38,
-      "warningHigh": 3.40282347E+38,
-      "lethalHigh": 3.40282347E+38,
-      "safeAtmospheres": [
-        "MurkyBrine",
-        "Brine",
-        "DirtyWater",
-        "Water",
-        "SaltWater"
-      ]
-    },
-    "light": null,
-    "fertilizerRequirements": null,
-    "irrigationRequirements": null,
-    "growthCycles": 3.0,
-    "yield": {
-      "itemId": "SeaFairy",
-      "amount": 1
-    }
-  },
-  {
-    "id": "SeaLettuce",
-    "name": "Waterweed",
-    "prefabId": "SeaLettuce",
-    "tags": [
-      "Plant"
-    ],
-    "isFarmable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "temperatures": {
-      "lethalLowK": 248.15,
-      "warningLowK": 295.15,
-      "warningHighK": 338.15,
-      "lethalHighK": 398.15,
-      "lethalLowC": -25.0,
-      "warningLowC": 22.0,
-      "warningHighC": 65.0,
-      "lethalHighC": 125.0
-    },
-    "pressures": {
-      "lethalLow": -3.40282347E+38,
-      "warningLow": -3.40282347E+38,
-      "warningHigh": 3.40282347E+38,
-      "lethalHigh": 3.40282347E+38,
-      "safeAtmospheres": [
-        "Water",
-        "SaltWater",
-        "Brine"
-      ]
-    },
-    "light": null,
-    "fertilizerRequirements": null,
-    "irrigationRequirements": [
-      {
-        "tag": "SaltWater",
-        "massConsumptionRateKgPerSec": 0.0166666675,
-        "kgPerCycle": 10.000001
-      },
-      {
-        "tag": "Water",
-        "massConsumptionRateKgPerSec": 0.0166666675,
-        "kgPerCycle": 10.000001
-      },
-      {
-        "tag": "Brine",
-        "massConsumptionRateKgPerSec": 0.0166666675,
-        "kgPerCycle": 10.000001
-      }
-    ],
-    "growthCycles": 12.0,
-    "yield": {
-      "itemId": "Lettuce",
-      "amount": 12
-    }
-  },
-  {
-    "id": "PrickleFlower",
-    "name": "Bristle Blossom",
-    "prefabId": "PrickleFlower",
-    "tags": [
-      "Plant"
-    ],
-    "isFarmable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "temperatures": {
-      "lethalLowK": 218.15,
-      "warningLowK": 278.15,
-      "warningHighK": 303.15,
-      "lethalHighK": 398.15,
-      "lethalLowC": -55.0,
-      "warningLowC": 5.0,
-      "warningHighC": 30.0,
-      "lethalHighC": 125.0
-    },
-    "pressures": {
-      "lethalLow": 0.0,
-      "warningLow": 0.15,
-      "warningHigh": 10.0,
-      "lethalHigh": 30.0,
-      "safeAtmospheres": [
-        "Oxygen",
-        "ContaminatedOxygen",
-        "CarbonDioxide"
-      ]
-    },
-    "light": {
-      "prefersDarkness": false,
-      "lightThresholdLux": 200
-    },
-    "fertilizerRequirements": null,
-    "irrigationRequirements": [
-      {
-        "tag": "Water",
-        "massConsumptionRateKgPerSec": 0.0333333351,
-        "kgPerCycle": 20.0000019
-      }
-    ],
-    "growthCycles": 6.0,
-    "yield": {
-      "itemId": "PrickleFruit",
-      "amount": 1
-    }
-  },
-  {
-    "id": "PrickleGrass",
-    "name": "Bluff Briar",
-    "prefabId": "PrickleGrass",
-    "tags": [
-      "Plant"
-    ],
-    "isFarmable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "temperatures": {
-      "lethalLowK": 218.15,
-      "warningLowK": 283.15,
-      "warningHighK": 303.15,
-      "lethalHighK": 398.15,
-      "lethalLowC": -55.0,
-      "warningLowC": 10.0,
-      "warningHighC": 30.0,
-      "lethalHighC": 125.0
-    },
-    "pressures": {
-      "lethalLow": 0.0,
-      "warningLow": 0.15,
-      "warningHigh": 10.0,
-      "lethalHigh": 30.0,
-      "safeAtmospheres": [
-        "Oxygen",
-        "ContaminatedOxygen",
-        "CarbonDioxide"
-      ]
-    },
-    "light": null,
-    "fertilizerRequirements": null,
-    "irrigationRequirements": null,
-    "growthCycles": 0.0,
-    "yield": null
-  },
-  {
-    "id": "PlanktonCoral",
-    "name": "Starnacle",
-    "prefabId": "PlanktonCoral",
-    "tags": [
-      "Plant"
-    ],
-    "isFarmable": true,
-    "requiredDlcIds": [
-      "DLC5_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "temperatures": {
-      "lethalLowK": 273.15,
-      "warningLowK": 298.15,
-      "warningHighK": 318.15,
-      "lethalHighK": 373.15,
-      "lethalLowC": 0.0,
-      "warningLowC": 25.0,
-      "warningHighC": 45.0,
-      "lethalHighC": 100.0
-    },
-    "pressures": {
-      "lethalLow": -3.40282347E+38,
-      "warningLow": -3.40282347E+38,
-      "warningHigh": 3.40282347E+38,
-      "lethalHigh": 3.40282347E+38,
-      "safeAtmospheres": [
-        "MurkyBrine",
-        "Brine",
-        "DirtyWater",
-        "Water",
-        "SaltWater"
-      ]
-    },
-    "light": null,
-    "fertilizerRequirements": [
-      {
-        "tag": "Coquina",
-        "massConsumptionRateKgPerSec": 0.0333333351,
-        "kgPerCycle": 20.0000019
-      }
-    ],
-    "irrigationRequirements": null,
-    "growthCycles": 4.0,
-    "yield": {
-      "itemId": "Phosphorite",
-      "amount": 80
-    }
-  },
-  {
     "id": "SuperWormPlant",
     "name": "Grubfruit Plant",
     "prefabId": "SuperWormPlant",
@@ -1993,6 +1951,14 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
     "requiredDlcIds": [
       "EXPANSION1_ID"
     ],
@@ -2034,6 +2000,56 @@
     }
   },
   {
+    "id": "SpiceVine",
+    "name": "Pincha Pepperplant",
+    "prefabId": "SpiceVine",
+    "tags": [
+      "Hanging",
+      "Plant"
+    ],
+    "isFarmable": true,
+    "acceptedPlanters": [],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 258.15,
+      "warningLowK": 308.15,
+      "warningHighK": 358.15,
+      "lethalHighK": 448.15,
+      "lethalLowC": -15.0,
+      "warningLowC": 35.0,
+      "warningHighC": 85.0,
+      "lethalHighC": 175.0
+    },
+    "pressures": {
+      "lethalLow": 0.0,
+      "warningLow": 0.15,
+      "warningHigh": 10.0,
+      "lethalHigh": 30.0,
+      "safeAtmospheres": []
+    },
+    "light": null,
+    "fertilizerRequirements": [
+      {
+        "tag": "Phosphorite",
+        "massConsumptionRateKgPerSec": 0.00166666671,
+        "kgPerCycle": 1.0
+      }
+    ],
+    "irrigationRequirements": [
+      {
+        "tag": "DirtyWater",
+        "massConsumptionRateKgPerSec": 0.0583333336,
+        "kgPerCycle": 35.0
+      }
+    ],
+    "growthCycles": 8.0,
+    "yield": {
+      "itemId": "SpiceNut",
+      "amount": 4
+    }
+  },
+  {
     "id": "SpaceTree",
     "name": "Bonbon Tree",
     "prefabId": "SpaceTree",
@@ -2041,6 +2057,14 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
     "requiredDlcIds": [
       "DLC2_ID"
     ],
@@ -2084,26 +2108,203 @@
     }
   },
   {
-    "id": "WormPlant",
-    "name": "Spindly Grubfruit Plant",
-    "prefabId": "WormPlant",
+    "id": "SeaLettuce",
+    "name": "Waterweed",
+    "prefabId": "SeaLettuce",
     "tags": [
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "Shelf"
+    ],
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 248.15,
+      "warningLowK": 295.15,
+      "warningHighK": 338.15,
+      "lethalHighK": 398.15,
+      "lethalLowC": -25.0,
+      "warningLowC": 22.0,
+      "warningHighC": 65.0,
+      "lethalHighC": 125.0
+    },
+    "pressures": {
+      "lethalLow": -3.40282347E+38,
+      "warningLow": -3.40282347E+38,
+      "warningHigh": 3.40282347E+38,
+      "lethalHigh": 3.40282347E+38,
+      "safeAtmospheres": [
+        "Water",
+        "SaltWater",
+        "Brine"
+      ]
+    },
+    "light": null,
+    "fertilizerRequirements": null,
+    "irrigationRequirements": [
+      {
+        "tag": "SaltWater",
+        "massConsumptionRateKgPerSec": 0.0333333351,
+        "kgPerCycle": 20.0000019
+      }
+    ],
+    "growthCycles": 12.0,
+    "yield": {
+      "itemId": "Lettuce",
+      "amount": 12
+    }
+  },
+  {
+    "id": "SeaTreeBranch",
+    "name": "Tower Kelp",
+    "prefabId": "SeaTreeBranch",
+    "tags": [
+      "HideFromSpawnTool",
+      "HideFromCodex",
+      "PlantBranch",
+      "ExcludeFromTemplate",
+      "Plant"
+    ],
+    "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "Shelf"
+    ],
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 248.15,
+      "warningLowK": 295.15,
+      "warningHighK": 310.15,
+      "lethalHighK": 398.15,
+      "lethalLowC": -25.0,
+      "warningLowC": 22.0,
+      "warningHighC": 37.0,
+      "lethalHighC": 125.0
+    },
+    "pressures": {
+      "lethalLow": -3.40282347E+38,
+      "warningLow": -3.40282347E+38,
+      "warningHigh": 3.40282347E+38,
+      "lethalHigh": 3.40282347E+38,
+      "safeAtmospheres": [
+        "MurkyBrine",
+        "Brine",
+        "DirtyWater",
+        "Water",
+        "SaltWater"
+      ]
+    },
+    "light": null,
+    "fertilizerRequirements": null,
+    "irrigationRequirements": null,
+    "growthCycles": 3.0,
+    "yield": {
+      "itemId": "SeaFairy",
+      "amount": 1
+    }
+  },
+  {
+    "id": "SeaTree",
+    "name": "Tower Kelp",
+    "prefabId": "SeaTree",
+    "tags": [
+      "Plant"
+    ],
+    "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "Shelf"
+    ],
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 248.15,
+      "warningLowK": 295.15,
+      "warningHighK": 310.15,
+      "lethalHighK": 398.15,
+      "lethalLowC": -25.0,
+      "warningLowC": 22.0,
+      "warningHighC": 37.0,
+      "lethalHighC": 125.0
+    },
+    "pressures": {
+      "lethalLow": -3.40282347E+38,
+      "warningLow": -3.40282347E+38,
+      "warningHigh": 3.40282347E+38,
+      "lethalHigh": 3.40282347E+38,
+      "safeAtmospheres": [
+        "MurkyBrine",
+        "Brine",
+        "DirtyWater",
+        "Water",
+        "SaltWater"
+      ]
+    },
+    "light": null,
+    "fertilizerRequirements": [
+      {
+        "tag": "ToxicSand",
+        "massConsumptionRateKgPerSec": 0.06666667,
+        "kgPerCycle": 40.0000038
+      }
+    ],
+    "irrigationRequirements": [
+      {
+        "tag": "DirtyWater",
+        "massConsumptionRateKgPerSec": 0.05,
+        "kgPerCycle": 30.0
+      }
+    ],
+    "growthCycles": 0.0,
+    "yield": null
+  },
+  {
+    "id": "ToePlant",
+    "name": "Tranquil Toes",
+    "prefabId": "ToePlant",
+    "tags": [
+      "Plant"
+    ],
+    "isFarmable": true,
+    "acceptedPlanters": [
+      "FlowerVase",
+      "FlowerVaseHanging",
+      "FlowerVaseHangingFancy",
+      "FlowerVaseWall",
+      "GravitasPedestal",
+      "ItemPedestal",
+      "Shelf"
+    ],
     "requiredDlcIds": [
       "EXPANSION1_ID"
     ],
     "forbiddenDlcIds": null,
     "temperatures": {
-      "lethalLowK": 273.15,
-      "warningLowK": 288.15,
-      "warningHighK": 323.15,
-      "lethalHighK": 373.15,
-      "lethalLowC": 0.0,
-      "warningLowC": 15.0,
-      "warningHighC": 50.0,
-      "lethalHighC": 100.0
+      "lethalLowK": 173.0,
+      "warningLowK": 183.0,
+      "warningHighK": 273.0,
+      "lethalHighK": 283.0,
+      "lethalLowC": -100.149994,
+      "warningLowC": -90.1499939,
+      "warningHighC": -0.1499939,
+      "lethalHighC": 9.850006
     },
     "pressures": {
       "lethalLow": 0.0,
@@ -2117,31 +2318,29 @@
       ]
     },
     "light": null,
-    "fertilizerRequirements": [
-      {
-        "tag": "Sulfur",
-        "massConsumptionRateKgPerSec": 0.0166666675,
-        "kgPerCycle": 10.000001
-      }
-    ],
+    "fertilizerRequirements": null,
     "irrigationRequirements": null,
-    "growthCycles": 4.0,
-    "yield": {
-      "itemId": "WormBasicFruit",
-      "amount": 1
-    }
+    "growthCycles": 0.0,
+    "yield": null
   },
   {
-    "id": "WineCups",
-    "name": "Mellow Mallow",
-    "prefabId": "WineCups",
+    "id": "PrickleGrass",
+    "name": "Bluff Briar",
+    "prefabId": "PrickleGrass",
     "tags": [
       "Plant"
     ],
     "isFarmable": true,
-    "requiredDlcIds": [
-      "EXPANSION1_ID"
+    "acceptedPlanters": [
+      "FlowerVase",
+      "FlowerVaseHanging",
+      "FlowerVaseHangingFancy",
+      "FlowerVaseWall",
+      "GravitasPedestal",
+      "ItemPedestal",
+      "Shelf"
     ],
+    "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "temperatures": {
       "lethalLowK": 218.15,
@@ -2171,6 +2370,25 @@
     "yield": null
   },
   {
+    "id": "SwampForagePlantPlanted",
+    "name": "Swamp Chard",
+    "prefabId": "SwampForagePlantPlanted",
+    "tags": [],
+    "isFarmable": false,
+    "acceptedPlanters": [],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "temperatures": null,
+    "pressures": null,
+    "light": null,
+    "fertilizerRequirements": null,
+    "irrigationRequirements": null,
+    "growthCycles": 0.0,
+    "yield": null
+  },
+  {
     "id": "WaterCups",
     "name": "Husha Cups",
     "prefabId": "WaterCups",
@@ -2178,6 +2396,15 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FlowerVase",
+      "FlowerVaseHanging",
+      "FlowerVaseHangingFancy",
+      "FlowerVaseWall",
+      "GravitasPedestal",
+      "ItemPedestal",
+      "Shelf"
+    ],
     "requiredDlcIds": [
       "DLC5_ID"
     ],
@@ -2210,136 +2437,109 @@
     "yield": null
   },
   {
-    "id": "VineMother",
-    "name": "Ovagro Node",
-    "prefabId": "VineMother",
+    "id": "PrickleFlower",
+    "name": "Bristle Blossom",
+    "prefabId": "PrickleFlower",
     "tags": [
       "Plant"
     ],
     "isFarmable": true,
-    "requiredDlcIds": [
-      "DLC4_ID"
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
     ],
+    "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "temperatures": {
-      "lethalLowK": 273.15,
-      "warningLowK": 298.15,
-      "warningHighK": 318.15,
-      "lethalHighK": 378.15,
-      "lethalLowC": 0.0,
-      "warningLowC": 25.0,
-      "warningHighC": 45.0,
-      "lethalHighC": 105.0
+      "lethalLowK": 218.15,
+      "warningLowK": 278.15,
+      "warningHighK": 303.15,
+      "lethalHighK": 398.15,
+      "lethalLowC": -55.0,
+      "warningLowC": 5.0,
+      "warningHighC": 30.0,
+      "lethalHighC": 125.0
     },
     "pressures": {
-      "lethalLow": -3.40282347E+38,
-      "warningLow": -3.40282347E+38,
-      "warningHigh": 3.40282347E+38,
-      "lethalHigh": 3.40282347E+38,
+      "lethalLow": 0.0,
+      "warningLow": 0.15,
+      "warningHigh": 10.0,
+      "lethalHigh": 30.0,
       "safeAtmospheres": [
         "Oxygen",
-        "CarbonDioxide",
-        "ContaminatedOxygen"
+        "ContaminatedOxygen",
+        "CarbonDioxide"
       ]
     },
-    "light": null,
+    "light": {
+      "prefersDarkness": false,
+      "lightThresholdLux": 200
+    },
     "fertilizerRequirements": null,
     "irrigationRequirements": [
       {
         "tag": "Water",
-        "massConsumptionRateKgPerSec": 0.15,
-        "kgPerCycle": 90.0
+        "massConsumptionRateKgPerSec": 0.0333333351,
+        "kgPerCycle": 20.0000019
       }
     ],
-    "growthCycles": 0.0,
-    "yield": null
-  },
-  {
-    "id": "VineBranch",
-    "name": "Ovagro Vine",
-    "prefabId": "VineBranch",
-    "tags": [
-      "HideFromSpawnTool",
-      "HideFromCodex",
-      "PlantBranch",
-      "ExcludeFromTemplate",
-      "Plant"
-    ],
-    "isFarmable": true,
-    "requiredDlcIds": [
-      "DLC4_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "temperatures": {
-      "lethalLowK": 273.15,
-      "warningLowK": 298.15,
-      "warningHighK": 318.15,
-      "lethalHighK": 378.15,
-      "lethalLowC": 0.0,
-      "warningLowC": 25.0,
-      "warningHighC": 45.0,
-      "lethalHighC": 105.0
-    },
-    "pressures": {
-      "lethalLow": -3.40282347E+38,
-      "warningLow": -3.40282347E+38,
-      "warningHigh": 3.40282347E+38,
-      "lethalHigh": 3.40282347E+38,
-      "safeAtmospheres": []
-    },
-    "light": null,
-    "fertilizerRequirements": null,
-    "irrigationRequirements": null,
-    "growthCycles": 3.0,
+    "growthCycles": 6.0,
     "yield": {
-      "itemId": "VineFruit",
+      "itemId": "PrickleFruit",
       "amount": 1
     }
   },
   {
-    "id": "SaltPlant",
-    "name": "Dasha Saltvine",
-    "prefabId": "SaltPlant",
+    "id": "WineCups",
+    "name": "Mellow Mallow",
+    "prefabId": "WineCups",
     "tags": [
-      "Hanging",
       "Plant"
     ],
     "isFarmable": true,
-    "requiredDlcIds": null,
+    "acceptedPlanters": [
+      "FlowerVase",
+      "FlowerVaseHanging",
+      "FlowerVaseHangingFancy",
+      "FlowerVaseWall",
+      "GravitasPedestal",
+      "ItemPedestal",
+      "Shelf"
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
     "forbiddenDlcIds": null,
     "temperatures": {
-      "lethalLowK": 198.15,
-      "warningLowK": 248.15,
-      "warningHighK": 323.15,
-      "lethalHighK": 393.15,
-      "lethalLowC": -75.0,
-      "warningLowC": -25.0,
-      "warningHighC": 50.0,
-      "lethalHighC": 120.0
+      "lethalLowK": 218.15,
+      "warningLowK": 283.15,
+      "warningHighK": 303.15,
+      "lethalHighK": 398.15,
+      "lethalLowC": -55.0,
+      "warningLowC": 10.0,
+      "warningHighC": 30.0,
+      "lethalHighC": 125.0
     },
     "pressures": {
       "lethalLow": 0.0,
-      "warningLow": 0.025,
+      "warningLow": 0.15,
       "warningHigh": 10.0,
       "lethalHigh": 30.0,
       "safeAtmospheres": [
-        "ChlorineGas"
+        "Oxygen",
+        "ContaminatedOxygen",
+        "CarbonDioxide"
       ]
     },
     "light": null,
-    "fertilizerRequirements": [
-      {
-        "tag": "Sand",
-        "massConsumptionRateKgPerSec": 0.0116666667,
-        "kgPerCycle": 7.0
-      }
-    ],
+    "fertilizerRequirements": null,
     "irrigationRequirements": null,
-    "growthCycles": 6.0,
-    "yield": {
-      "itemId": "Salt",
-      "amount": 65
-    }
+    "growthCycles": 0.0,
+    "yield": null
   },
   {
     "id": "UrchinPlant",
@@ -2349,6 +2549,15 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "LargeBackwallFarm",
+      "PlanterBox",
+      "Shelf"
+    ],
     "requiredDlcIds": [
       "DLC5_ID"
     ],
@@ -2392,6 +2601,225 @@
     }
   },
   {
+    "id": "WormPlant",
+    "name": "Spindly Grubfruit Plant",
+    "prefabId": "WormPlant",
+    "tags": [
+      "Plant"
+    ],
+    "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 273.15,
+      "warningLowK": 288.15,
+      "warningHighK": 323.15,
+      "lethalHighK": 373.15,
+      "lethalLowC": 0.0,
+      "warningLowC": 15.0,
+      "warningHighC": 50.0,
+      "lethalHighC": 100.0
+    },
+    "pressures": {
+      "lethalLow": 0.0,
+      "warningLow": 0.15,
+      "warningHigh": 10.0,
+      "lethalHigh": 30.0,
+      "safeAtmospheres": [
+        "Oxygen",
+        "ContaminatedOxygen",
+        "CarbonDioxide"
+      ]
+    },
+    "light": null,
+    "fertilizerRequirements": [
+      {
+        "tag": "Sulfur",
+        "massConsumptionRateKgPerSec": 0.0166666675,
+        "kgPerCycle": 10.000001
+      }
+    ],
+    "irrigationRequirements": null,
+    "growthCycles": 4.0,
+    "yield": {
+      "itemId": "WormBasicFruit",
+      "amount": 1
+    }
+  },
+  {
+    "id": "OxyCoral",
+    "name": "Flue Coral",
+    "prefabId": "OxyCoral",
+    "tags": [
+      "Plant",
+      "BlockBuildOverPlantFeature"
+    ],
+    "isFarmable": true,
+    "acceptedPlanters": [
+      "GravitasPedestal",
+      "ItemPedestal",
+      "Shelf",
+      "WideFarmTile"
+    ],
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 253.15,
+      "warningLowK": 298.15,
+      "warningHighK": 318.15,
+      "lethalHighK": 373.15,
+      "lethalLowC": -20.0,
+      "warningLowC": 25.0,
+      "warningHighC": 45.0,
+      "lethalHighC": 100.0
+    },
+    "pressures": {
+      "lethalLow": -3.40282347E+38,
+      "warningLow": -3.40282347E+38,
+      "warningHigh": 3.40282347E+38,
+      "lethalHigh": 3.40282347E+38,
+      "safeAtmospheres": [
+        "Water",
+        "SaltWater",
+        "DirtyWater",
+        "Brine",
+        "MurkyBrine"
+      ]
+    },
+    "light": null,
+    "fertilizerRequirements": [
+      {
+        "tag": "Lime",
+        "massConsumptionRateKgPerSec": 0.008333334,
+        "kgPerCycle": 5.00000048
+      }
+    ],
+    "irrigationRequirements": [
+      {
+        "tag": "SaltWater",
+        "massConsumptionRateKgPerSec": 0.0333333351,
+        "kgPerCycle": 20.0000019
+      }
+    ],
+    "growthCycles": 0.0,
+    "yield": null
+  },
+  {
+    "id": "VineBranch",
+    "name": "Ovagro Vine",
+    "prefabId": "VineBranch",
+    "tags": [
+      "HideFromSpawnTool",
+      "HideFromCodex",
+      "PlantBranch",
+      "ExcludeFromTemplate",
+      "Plant"
+    ],
+    "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 273.15,
+      "warningLowK": 298.15,
+      "warningHighK": 318.15,
+      "lethalHighK": 378.15,
+      "lethalLowC": 0.0,
+      "warningLowC": 25.0,
+      "warningHighC": 45.0,
+      "lethalHighC": 105.0
+    },
+    "pressures": {
+      "lethalLow": -3.40282347E+38,
+      "warningLow": -3.40282347E+38,
+      "warningHigh": 3.40282347E+38,
+      "lethalHigh": 3.40282347E+38,
+      "safeAtmospheres": []
+    },
+    "light": null,
+    "fertilizerRequirements": null,
+    "irrigationRequirements": null,
+    "growthCycles": 3.0,
+    "yield": {
+      "itemId": "VineFruit",
+      "amount": 1
+    }
+  },
+  {
+    "id": "VineMother",
+    "name": "Ovagro Node",
+    "prefabId": "VineMother",
+    "tags": [
+      "Plant"
+    ],
+    "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "temperatures": {
+      "lethalLowK": 273.15,
+      "warningLowK": 298.15,
+      "warningHighK": 318.15,
+      "lethalHighK": 378.15,
+      "lethalLowC": 0.0,
+      "warningLowC": 25.0,
+      "warningHighC": 45.0,
+      "lethalHighC": 105.0
+    },
+    "pressures": {
+      "lethalLow": -3.40282347E+38,
+      "warningLow": -3.40282347E+38,
+      "warningHigh": 3.40282347E+38,
+      "lethalHigh": 3.40282347E+38,
+      "safeAtmospheres": [
+        "Oxygen",
+        "CarbonDioxide",
+        "ContaminatedOxygen"
+      ]
+    },
+    "light": null,
+    "fertilizerRequirements": null,
+    "irrigationRequirements": [
+      {
+        "tag": "Water",
+        "massConsumptionRateKgPerSec": 0.15,
+        "kgPerCycle": 90.0
+      }
+    ],
+    "growthCycles": 0.0,
+    "yield": null
+  },
+  {
     "id": "TubeWorm",
     "name": "Tublia",
     "prefabId": "TubeWorm",
@@ -2399,6 +2827,14 @@
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
+    ],
     "requiredDlcIds": [
       "DLC5_ID"
     ],
@@ -2454,149 +2890,117 @@
     }
   },
   {
-    "id": "ToePlant",
-    "name": "Tranquil Toes",
-    "prefabId": "ToePlant",
+    "id": "Oxyfern",
+    "name": "Oxyfern",
+    "prefabId": "Oxyfern",
     "tags": [
       "Plant"
     ],
     "isFarmable": true,
-    "requiredDlcIds": [
-      "EXPANSION1_ID"
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "PlanterBox",
+      "Shelf"
     ],
-    "forbiddenDlcIds": null,
-    "temperatures": {
-      "lethalLowK": 173.0,
-      "warningLowK": 183.0,
-      "warningHighK": 273.0,
-      "lethalHighK": 283.0,
-      "lethalLowC": -100.149994,
-      "warningLowC": -90.1499939,
-      "warningHighC": -0.1499939,
-      "lethalHighC": 9.850006
-    },
-    "pressures": {
-      "lethalLow": 0.0,
-      "warningLow": 0.15,
-      "warningHigh": 10.0,
-      "lethalHigh": 30.0,
-      "safeAtmospheres": [
-        "Oxygen",
-        "ContaminatedOxygen",
-        "CarbonDioxide"
-      ]
-    },
-    "light": null,
-    "fertilizerRequirements": null,
-    "irrigationRequirements": null,
-    "growthCycles": 0.0,
-    "yield": null
-  },
-  {
-    "id": "SwampLily",
-    "name": "Balm Lily",
-    "prefabId": "SwampLily",
-    "tags": [
-      "Plant"
-    ],
-    "isFarmable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "temperatures": {
-      "lethalLowK": 258.15,
-      "warningLowK": 308.15,
-      "warningHighK": 358.15,
-      "lethalHighK": 448.15,
-      "lethalLowC": -15.0,
-      "warningLowC": 35.0,
-      "warningHighC": 85.0,
-      "lethalHighC": 175.0
+      "lethalLowK": 253.15,
+      "warningLowK": 273.15,
+      "warningHighK": 313.15,
+      "lethalHighK": 373.15,
+      "lethalLowC": -20.0,
+      "warningLowC": 0.0,
+      "warningHighC": 40.0,
+      "lethalHighC": 100.0
     },
     "pressures": {
       "lethalLow": 0.0,
-      "warningLow": 0.15,
+      "warningLow": 0.025,
       "warningHigh": 10.0,
       "lethalHigh": 30.0,
       "safeAtmospheres": [
-        "ChlorineGas"
+        "CarbonDioxide"
       ]
     },
     "light": null,
-    "fertilizerRequirements": null,
-    "irrigationRequirements": null,
-    "growthCycles": 12.0,
-    "yield": {
-      "itemId": "SwampLilyFlower",
-      "amount": 2
-    }
+    "fertilizerRequirements": [
+      {
+        "tag": "Dirt",
+        "massConsumptionRateKgPerSec": 0.006666667,
+        "kgPerCycle": 4.0
+      }
+    ],
+    "irrigationRequirements": [
+      {
+        "tag": "Water",
+        "massConsumptionRateKgPerSec": 0.0316666663,
+        "kgPerCycle": 19.0
+      }
+    ],
+    "growthCycles": 0.0,
+    "yield": null
   },
   {
-    "id": "SwampHarvestPlant",
-    "name": "Bog Bucket",
-    "prefabId": "SwampHarvestPlant",
+    "id": "PlanktonCoral",
+    "name": "Starnacle",
+    "prefabId": "PlanktonCoral",
     "tags": [
       "Plant"
     ],
     "isFarmable": true,
+    "acceptedPlanters": [
+      "FarmTile",
+      "GravitasPedestal",
+      "HydroponicFarm",
+      "ItemPedestal",
+      "LargeBackwallFarm",
+      "PlanterBox",
+      "Shelf"
+    ],
     "requiredDlcIds": [
-      "EXPANSION1_ID"
+      "DLC5_ID"
     ],
     "forbiddenDlcIds": null,
     "temperatures": {
-      "lethalLowK": 218.15,
-      "warningLowK": 283.15,
-      "warningHighK": 303.15,
-      "lethalHighK": 398.15,
-      "lethalLowC": -55.0,
-      "warningLowC": 10.0,
-      "warningHighC": 30.0,
-      "lethalHighC": 125.0
+      "lethalLowK": 273.15,
+      "warningLowK": 298.15,
+      "warningHighK": 318.15,
+      "lethalHighK": 373.15,
+      "lethalLowC": 0.0,
+      "warningLowC": 25.0,
+      "warningHighC": 45.0,
+      "lethalHighC": 100.0
     },
     "pressures": {
-      "lethalLow": 0.0,
-      "warningLow": 0.15,
-      "warningHigh": 10.0,
-      "lethalHigh": 30.0,
+      "lethalLow": -3.40282347E+38,
+      "warningLow": -3.40282347E+38,
+      "warningHigh": 3.40282347E+38,
+      "lethalHigh": 3.40282347E+38,
       "safeAtmospheres": [
-        "Oxygen",
-        "ContaminatedOxygen",
-        "CarbonDioxide"
+        "MurkyBrine",
+        "Brine",
+        "DirtyWater",
+        "Water",
+        "SaltWater"
       ]
     },
-    "light": {
-      "prefersDarkness": true,
-      "lightThresholdLux": 0
-    },
-    "fertilizerRequirements": null,
-    "irrigationRequirements": [
+    "light": null,
+    "fertilizerRequirements": [
       {
-        "tag": "DirtyWater",
-        "massConsumptionRateKgPerSec": 0.06666667,
-        "kgPerCycle": 40.0000038
+        "tag": "Coquina",
+        "massConsumptionRateKgPerSec": 0.0333333351,
+        "kgPerCycle": 20.0000019
       }
     ],
-    "growthCycles": 6.6,
-    "yield": {
-      "itemId": "SwampFruit",
-      "amount": 1
-    }
-  },
-  {
-    "id": "SwampForagePlantPlanted",
-    "name": "Swamp Chard",
-    "prefabId": "SwampForagePlantPlanted",
-    "tags": [],
-    "isFarmable": false,
-    "requiredDlcIds": [
-      "EXPANSION1_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "temperatures": null,
-    "pressures": null,
-    "light": null,
-    "fertilizerRequirements": null,
     "irrigationRequirements": null,
-    "growthCycles": 0.0,
-    "yield": null
+    "growthCycles": 4.0,
+    "yield": {
+      "itemId": "Phosphorite",
+      "amount": 80
+    }
   }
 ]

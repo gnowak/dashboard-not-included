@@ -1,5 +1,26 @@
 [
   {
+    "id": "FetchDrone",
+    "name": "Flydo",
+    "prefabId": "FetchDrone",
+    "tags": [
+      "HasDoorPermissions",
+      "Experimental",
+      "DupeBrain",
+      "Robot"
+    ],
+    "isRanchable": false,
+    "requiredDlcIds": [
+      "DLC3_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "spaceRequired": null,
+    "temperatures": null,
+    "decor": null,
+    "lifespanCycles": 100.0,
+    "diet": null
+  },
+  {
     "id": "SweepBot",
     "name": "Sweepy",
     "prefabId": "SweepBot",
@@ -20,27 +41,6 @@
       "value": 0.0,
       "radius": 1.0
     },
-    "lifespanCycles": 100.0,
-    "diet": null
-  },
-  {
-    "id": "FetchDrone",
-    "name": "Flydo",
-    "prefabId": "FetchDrone",
-    "tags": [
-      "HasDoorPermissions",
-      "Experimental",
-      "DupeBrain",
-      "Robot"
-    ],
-    "isRanchable": false,
-    "requiredDlcIds": [
-      "DLC3_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "spaceRequired": null,
-    "temperatures": null,
-    "decor": null,
     "lifespanCycles": 100.0,
     "diet": null
   },
@@ -797,24 +797,23 @@
     ]
   },
   {
-    "id": "PrehistoricPacu",
-    "name": "Jawbo",
-    "prefabId": "PrehistoricPacu",
+    "id": "ParrotFish",
+    "name": "Beakon",
+    "prefabId": "ParrotFish",
     "tags": [
       "SwimmingCreature",
       "Swimmer",
+      "BagableCreature",
       "Creature",
       "CreatureBrain",
-      "BagableCreature",
-      "OriginalCreature",
-      "LargeCreature"
+      "OriginalCreature"
     ],
     "isRanchable": true,
     "requiredDlcIds": [
-      "DLC4_ID"
+      "DLC5_ID"
     ],
     "forbiddenDlcIds": null,
-    "spaceRequired": 12,
+    "spaceRequired": 8,
     "temperatures": null,
     "decor": {
       "value": 10.0,
@@ -824,27 +823,23 @@
     "diet": [
       {
         "consumedTags": [
-          "Pacu",
-          "PacuCleaner",
-          "PacuTropical",
-          "ParrotFish",
-          "PufferFish"
+          "Phosphorite"
         ],
-        "producedElement": "Rust",
-        "caloriesPerKg": 500.0,
-        "producedConversionRate": 0.3,
-        "dailyConsumptionKg": 240.0,
-        "dailyExcrementKg": 72.0
+        "producedElement": "Lime",
+        "caloriesPerKg": 10000.0,
+        "producedConversionRate": 0.5,
+        "dailyConsumptionKg": 12.0,
+        "dailyExcrementKg": 6.0
       },
       {
         "consumedTags": [
-          "FishMeat"
+          "PlanktonCoral"
         ],
-        "producedElement": "Rust",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 60.0,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 72.0
+        "producedElement": "Lime",
+        "caloriesPerKg": 200000.0,
+        "producedConversionRate": 10.0,
+        "dailyConsumptionKg": 0.6,
+        "dailyExcrementKg": 6.0
       }
     ]
   },
@@ -879,9 +874,9 @@
         ],
         "producedElement": "Oxygen",
         "caloriesPerKg": 400000.0,
-        "producedConversionRate": 7.5,
+        "producedConversionRate": 15.0,
         "dailyConsumptionKg": 0.3,
-        "dailyExcrementKg": 2.25
+        "dailyExcrementKg": 4.5
       },
       {
         "consumedTags": [
@@ -889,28 +884,30 @@
         ],
         "producedElement": "Oxygen",
         "caloriesPerKg": 400000.0,
-        "producedConversionRate": 7.5,
+        "producedConversionRate": 15.0,
         "dailyConsumptionKg": 0.3,
-        "dailyExcrementKg": 2.25
+        "dailyExcrementKg": 4.5
       }
     ]
   },
   {
-    "id": "Pacu",
-    "name": "Pacu",
-    "prefabId": "Pacu",
+    "id": "IceBelly",
+    "name": "Bammoth",
+    "prefabId": "IceBelly",
     "tags": [
-      "SwimmingCreature",
-      "Swimmer",
-      "BagableCreature",
       "Creature",
+      "BagableCreature",
+      "Walker",
       "CreatureBrain",
-      "OriginalCreature"
+      "OriginalCreature",
+      "LargeCreature"
     ],
     "isRanchable": true,
-    "requiredDlcIds": null,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
     "forbiddenDlcIds": null,
-    "spaceRequired": 8,
+    "spaceRequired": 16,
     "temperatures": null,
     "decor": {
       "value": 10.0,
@@ -920,293 +917,53 @@
     "diet": [
       {
         "consumedTags": [
-          "Algae"
+          "CarrotPlant"
         ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 13333.333,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 9.0,
-        "dailyExcrementKg": 4.5
+        "producedElement": "IceBellyPoop",
+        "caloriesPerKg": 444444.438,
+        "producedConversionRate": 7.497111,
+        "dailyConsumptionKg": 0.27,
+        "dailyExcrementKg": 2.02422
       },
       {
         "consumedTags": [
-          "Kelp"
+          "Carrot"
         ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 12.0
+        "producedElement": "IceBellyPoop",
+        "caloriesPerKg": 4000000.0,
+        "producedConversionRate": 67.474,
+        "dailyConsumptionKg": 0.03,
+        "dailyExcrementKg": 2.02422
       },
       {
         "consumedTags": [
-          "KelpPlant"
+          "FriesCarrot"
         ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 50000.0,
-        "producedConversionRate": 5.0,
-        "dailyConsumptionKg": 2.4,
-        "dailyExcrementKg": 12.0
+        "producedElement": "IceBellyPoop",
+        "caloriesPerKg": 7112000.5,
+        "producedConversionRate": 120.01,
+        "dailyConsumptionKg": 0.01687289,
+        "dailyExcrementKg": 2.0249157
       },
       {
         "consumedTags": [
-          "FlyTrapPlantSeed"
+          "BeanPlant"
         ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "DewDripperPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "ColdWheatSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "DewPalmSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "HardSkinBerryPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "GasGrassSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "GardenFoodPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "CarrotPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "ButterflyPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BlueGrassSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "producedElement": "IceBellyPoop",
+        "caloriesPerKg": 597371.563,
+        "producedConversionRate": 10.0767622,
+        "dailyConsumptionKg": 0.20088,
+        "dailyExcrementKg": 2.02422
       },
       {
         "consumedTags": [
           "BeanPlantSeed"
         ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BasicSingleHarvestPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BasicFabricMaterialPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "MushroomSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SaltySticksPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SpiceVineSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SeaLettuceSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "PrickleFlowerSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SpaceTreeSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "WormPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SaltPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "UrchinPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "TubeWormSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SwampLilySeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SwampHarvestPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "FishFood"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "producedElement": "IceBellyPoop",
+        "caloriesPerKg": 1100000.0,
+        "producedConversionRate": 18.5709953,
+        "dailyConsumptionKg": 0.109090909,
+        "dailyExcrementKg": 2.02592683
       }
     ]
   },
@@ -2020,9 +1777,9 @@
     ]
   },
   {
-    "id": "ParrotFish",
-    "name": "Beakon",
-    "prefabId": "ParrotFish",
+    "id": "Pacu",
+    "name": "Pacu",
+    "prefabId": "Pacu",
     "tags": [
       "SwimmingCreature",
       "Swimmer",
@@ -2032,9 +1789,7 @@
       "OriginalCreature"
     ],
     "isRanchable": true,
-    "requiredDlcIds": [
-      "DLC5_ID"
-    ],
+    "requiredDlcIds": null,
     "forbiddenDlcIds": null,
     "spaceRequired": 8,
     "temperatures": null,
@@ -2046,120 +1801,335 @@
     "diet": [
       {
         "consumedTags": [
-          "Phosphorite"
+          "Algae"
         ],
-        "producedElement": "Lime",
-        "caloriesPerKg": 10000.0,
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 13333.333,
+        "producedConversionRate": 0.6666667,
+        "dailyConsumptionKg": 9.0,
+        "dailyExcrementKg": 6.0
+      },
+      {
+        "consumedTags": [
+          "Kelp"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 5000.0,
         "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 12.0,
-        "dailyExcrementKg": 6.0
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 12.0
       },
       {
         "consumedTags": [
-          "PlanktonCoral"
+          "KelpPlant"
         ],
-        "producedElement": "Lime",
-        "caloriesPerKg": 200000.0,
-        "producedConversionRate": 10.0,
-        "dailyConsumptionKg": 0.6,
-        "dailyExcrementKg": 6.0
-      }
-    ]
-  },
-  {
-    "id": "IceBelly",
-    "name": "Bammoth",
-    "prefabId": "IceBelly",
-    "tags": [
-      "Creature",
-      "BagableCreature",
-      "Walker",
-      "CreatureBrain",
-      "OriginalCreature",
-      "LargeCreature"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": [
-      "DLC2_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "spaceRequired": 16,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "CarrotPlant"
-        ],
-        "producedElement": "IceBellyPoop",
-        "caloriesPerKg": 444444.438,
-        "producedConversionRate": 7.497111,
-        "dailyConsumptionKg": 0.27,
-        "dailyExcrementKg": 2.02422
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 50000.0,
+        "producedConversionRate": 5.0,
+        "dailyConsumptionKg": 2.4,
+        "dailyExcrementKg": 12.0
       },
       {
         "consumedTags": [
-          "Carrot"
+          "FlyTrapPlantSeed"
         ],
-        "producedElement": "IceBellyPoop",
-        "caloriesPerKg": 4000000.0,
-        "producedConversionRate": 67.474,
-        "dailyConsumptionKg": 0.03,
-        "dailyExcrementKg": 2.02422
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "FriesCarrot"
+          "DewPalmSeed"
         ],
-        "producedElement": "IceBellyPoop",
-        "caloriesPerKg": 7112000.5,
-        "producedConversionRate": 120.01,
-        "dailyConsumptionKg": 0.01687289,
-        "dailyExcrementKg": 2.0249157
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "BeanPlant"
+          "DewDripperPlantSeed"
         ],
-        "producedElement": "IceBellyPoop",
-        "caloriesPerKg": 597371.563,
-        "producedConversionRate": 10.0767622,
-        "dailyConsumptionKg": 0.20088,
-        "dailyExcrementKg": 2.02422
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "ColdWheatSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "GardenFoodPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "HardSkinBerryPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "GasGrassSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "MushroomSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "ClamSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "CarrotPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "ButterflyPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "BlueGrassSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
           "BeanPlantSeed"
         ],
-        "producedElement": "IceBellyPoop",
-        "caloriesPerKg": 1100000.0,
-        "producedConversionRate": 18.5709953,
-        "dailyConsumptionKg": 0.109090909,
-        "dailyExcrementKg": 2.02592683
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "BasicSingleHarvestPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "BasicFabricMaterialPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SaltPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SwampLilySeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SwampHarvestPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SaltySticksPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SpiceVineSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SpaceTreeSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SeaLettuceSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "PrickleFlowerSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "UrchinPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "WormPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "TubeWormSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "PlanktonCoralSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "FishFood"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 6.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 7.20000029
       }
     ]
   },
   {
-    "id": "DivergentWorm",
-    "name": "Grubgrub",
-    "prefabId": "DivergentWorm",
+    "id": "PrehistoricPacu",
+    "name": "Jawbo",
+    "prefabId": "PrehistoricPacu",
     "tags": [
+      "SwimmingCreature",
+      "Swimmer",
       "Creature",
-      "BagableCreature",
-      "Walker",
       "CreatureBrain",
-      "Pollinator"
+      "BagableCreature",
+      "OriginalCreature",
+      "LargeCreature"
     ],
     "isRanchable": true,
     "requiredDlcIds": [
-      "EXPANSION1_ID"
+      "DLC4_ID"
     ],
     "forbiddenDlcIds": null,
-    "spaceRequired": 16,
+    "spaceRequired": 12,
     "temperatures": null,
     "decor": {
       "value": 10.0,
@@ -2169,25 +2139,64 @@
     "diet": [
       {
         "consumedTags": [
-          "Sulfur"
+          "Pacu",
+          "PacuCleaner",
+          "PacuTropical",
+          "ParrotFish",
+          "PufferFish"
         ],
-        "producedElement": "Mud",
-        "caloriesPerKg": 14000.0,
-        "producedConversionRate": 0.1,
-        "dailyConsumptionKg": 8.571428,
-        "dailyExcrementKg": 0.857142866
+        "producedElement": "Rust",
+        "caloriesPerKg": 500.0,
+        "producedConversionRate": 0.3,
+        "dailyConsumptionKg": 240.0,
+        "dailyExcrementKg": 72.0
       },
       {
         "consumedTags": [
-          "Sucrose"
+          "FishMeat"
         ],
-        "producedElement": "Mud",
-        "caloriesPerKg": 23333.334,
-        "producedConversionRate": 1.0,
-        "dailyConsumptionKg": 5.142857,
-        "dailyExcrementKg": 5.142857
+        "producedElement": "Rust",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 60.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 72.0
+      },
+      {
+        "consumedTags": [
+          "CookedFish"
+        ],
+        "producedElement": "Rust",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 60.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 72.0
       }
     ]
+  },
+  {
+    "id": "Mosquito",
+    "name": "Gnit",
+    "prefabId": "Mosquito",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "spaceRequired": 4,
+    "temperatures": null,
+    "decor": {
+      "value": -5.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": null
   },
   {
     "id": "SeaFairy",
@@ -2204,6 +2213,69 @@
     "isRanchable": true,
     "requiredDlcIds": [
       "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "spaceRequired": 8,
+    "temperatures": null,
+    "decor": {
+      "value": 10.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": null
+  },
+  {
+    "id": "SeaHorse",
+    "name": "Seaquine",
+    "prefabId": "SeaHorse",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "spaceRequired": 8,
+    "temperatures": null,
+    "decor": {
+      "value": 25.0,
+      "radius": 4.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "Pearl"
+        ],
+        "producedElement": "SlimeMold",
+        "caloriesPerKg": 32000.0,
+        "producedConversionRate": 3.84,
+        "dailyConsumptionKg": 3.75,
+        "dailyExcrementKg": 14.4
+      }
+    ]
+  },
+  {
+    "id": "Butterfly",
+    "name": "Mimika",
+    "prefabId": "Butterfly",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature",
+      "Pollinator"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": [
+      "DLC4_ID"
     ],
     "forbiddenDlcIds": null,
     "spaceRequired": 8,
@@ -2273,30 +2345,98 @@
     ]
   },
   {
-    "id": "Butterfly",
-    "name": "Mimika",
-    "prefabId": "Butterfly",
+    "id": "SeaTurtle",
+    "name": "Orehull",
+    "prefabId": "SeaTurtle",
     "tags": [
+      "SwimmingCreature",
+      "Swimmer",
       "Creature",
-      "Flyer",
-      "BagableCreature",
       "CreatureBrain",
+      "BagableCreature",
       "OriginalCreature",
-      "Pollinator"
+      "LargeCreature"
     ],
     "isRanchable": true,
     "requiredDlcIds": [
-      "DLC4_ID"
+      "DLC5_ID"
     ],
     "forbiddenDlcIds": null,
-    "spaceRequired": 8,
+    "spaceRequired": 12,
     "temperatures": null,
     "decor": {
       "value": 10.0,
       "radius": 1.0
     },
     "lifespanCycles": 100.0,
-    "diet": null
+    "diet": [
+      {
+        "consumedTags": [
+          "SeaFairy"
+        ],
+        "producedElement": "ToxicMud",
+        "caloriesPerKg": 80000.0,
+        "producedConversionRate": 5.0,
+        "dailyConsumptionKg": 1.5,
+        "dailyExcrementKg": 7.5
+      },
+      {
+        "consumedTags": [
+          "Nori"
+        ],
+        "producedElement": "ToxicMud",
+        "caloriesPerKg": 40000.0,
+        "producedConversionRate": 2.5,
+        "dailyConsumptionKg": 3.0,
+        "dailyExcrementKg": 7.5
+      }
+    ]
+  },
+  {
+    "id": "DivergentWorm",
+    "name": "Grubgrub",
+    "prefabId": "DivergentWorm",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "Pollinator"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "spaceRequired": 16,
+    "temperatures": null,
+    "decor": {
+      "value": 10.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "Sulfur"
+        ],
+        "producedElement": "Mud",
+        "caloriesPerKg": 14000.0,
+        "producedConversionRate": 0.1,
+        "dailyConsumptionKg": 8.571428,
+        "dailyExcrementKg": 0.857142866
+      },
+      {
+        "consumedTags": [
+          "Sucrose"
+        ],
+        "producedElement": "Mud",
+        "caloriesPerKg": 23333.334,
+        "producedConversionRate": 1.0,
+        "dailyConsumptionKg": 5.142857,
+        "dailyExcrementKg": 5.142857
+      }
+    ]
   },
   {
     "id": "Crab",
@@ -2336,16 +2476,15 @@
     ]
   },
   {
-    "id": "Squid",
-    "name": "Glo Squid",
-    "prefabId": "Squid",
+    "id": "Snail",
+    "name": "Slogo",
+    "prefabId": "Snail",
     "tags": [
-      "SwimmingCreature",
-      "Swimmer",
-      "SquidFriend",
+      "Amphibious",
+      "Walker",
+      "BagableCreature",
       "Creature",
       "CreatureBrain",
-      "BagableCreature",
       "OriginalCreature"
     ],
     "isRanchable": true,
@@ -2363,13 +2502,13 @@
     "diet": [
       {
         "consumedTags": [
-          "TubeWorm"
+          "Salt"
         ],
-        "producedElement": "Katairite",
-        "caloriesPerKg": 50000.0,
-        "producedConversionRate": 10.0,
-        "dailyConsumptionKg": 2.4,
-        "dailyExcrementKg": 24.0
+        "producedElement": "Dirt",
+        "caloriesPerKg": 1000.0,
+        "producedConversionRate": 0.5,
+        "dailyConsumptionKg": 120.0,
+        "dailyExcrementKg": 60.0
       }
     ]
   },
@@ -2411,124 +2550,16 @@
     ]
   },
   {
-    "id": "Mosquito",
-    "name": "Gnit",
-    "prefabId": "Mosquito",
-    "tags": [
-      "Creature",
-      "Flyer",
-      "BagableCreature",
-      "CreatureBrain",
-      "OriginalCreature"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": [
-      "DLC4_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "spaceRequired": 4,
-    "temperatures": null,
-    "decor": {
-      "value": -5.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": null
-  },
-  {
-    "id": "SeaHorse",
-    "name": "Seaquine",
-    "prefabId": "SeaHorse",
+    "id": "Squid",
+    "name": "Glo Squid",
+    "prefabId": "Squid",
     "tags": [
       "SwimmingCreature",
       "Swimmer",
-      "BagableCreature",
-      "Creature",
-      "CreatureBrain",
-      "OriginalCreature"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": [
-      "DLC5_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "spaceRequired": 8,
-    "temperatures": null,
-    "decor": {
-      "value": 25.0,
-      "radius": 4.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "Pearl"
-        ],
-        "producedElement": "SlimeMold",
-        "caloriesPerKg": 32000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 3.75,
-        "dailyExcrementKg": 1.875
-      }
-    ]
-  },
-  {
-    "id": "SeaTurtle",
-    "name": "Orehull",
-    "prefabId": "SeaTurtle",
-    "tags": [
-      "SwimmingCreature",
-      "Swimmer",
+      "SquidFriend",
       "Creature",
       "CreatureBrain",
       "BagableCreature",
-      "OriginalCreature",
-      "LargeCreature"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": [
-      "DLC5_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "spaceRequired": 12,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "SeaFairy"
-        ],
-        "producedElement": "ToxicMud",
-        "caloriesPerKg": 80000.0,
-        "producedConversionRate": 4.0,
-        "dailyConsumptionKg": 1.5,
-        "dailyExcrementKg": 6.0
-      },
-      {
-        "consumedTags": [
-          "Nori"
-        ],
-        "producedElement": "ToxicMud",
-        "caloriesPerKg": 40000.0,
-        "producedConversionRate": 2.0,
-        "dailyConsumptionKg": 3.0,
-        "dailyExcrementKg": 6.0
-      }
-    ]
-  },
-  {
-    "id": "Snail",
-    "name": "Slogo",
-    "prefabId": "Snail",
-    "tags": [
-      "Amphibious",
-      "BagableCreature",
-      "Creature",
-      "CreatureBrain",
       "OriginalCreature"
     ],
     "isRanchable": true,
@@ -2546,271 +2577,13 @@
     "diet": [
       {
         "consumedTags": [
-          "Salt"
+          "TubeWorm"
         ],
-        "producedElement": "Dirt",
-        "caloriesPerKg": 1000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 120.0,
-        "dailyExcrementKg": 60.0
-      }
-    ]
-  },
-  {
-    "id": "HatchHard",
-    "name": "Stone Hatch",
-    "prefabId": "HatchHard",
-    "tags": [
-      "Creature",
-      "BagableCreature",
-      "Walker",
-      "CreatureBrain"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "spaceRequired": 12,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "SedimentaryRock",
-          "IgneousRock",
-          "Obsidian",
-          "Granite",
-          "Basalt"
-        ],
-        "producedElement": "Carbon",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 12.0
-      },
-      {
-        "consumedTags": [
-          "ZincOre"
-        ],
-        "producedElement": "Carbon",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.25,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 6.0
-      },
-      {
-        "consumedTags": [
-          "Cuprite"
-        ],
-        "producedElement": "Carbon",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.25,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 6.0
-      },
-      {
-        "consumedTags": [
-          "Cobaltite"
-        ],
-        "producedElement": "Carbon",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.25,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 6.0
-      },
-      {
-        "consumedTags": [
-          "AluminumOre"
-        ],
-        "producedElement": "Carbon",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.25,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 6.0
-      },
-      {
-        "consumedTags": [
-          "NickelOre"
-        ],
-        "producedElement": "Carbon",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.25,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 6.0
-      },
-      {
-        "consumedTags": [
-          "Cinnabar"
-        ],
-        "producedElement": "Carbon",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.25,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 6.0
-      },
-      {
-        "consumedTags": [
-          "IronOre"
-        ],
-        "producedElement": "Carbon",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.25,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 6.0
-      },
-      {
-        "consumedTags": [
-          "GoldAmalgam"
-        ],
-        "producedElement": "Carbon",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.25,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 6.0
-      },
-      {
-        "consumedTags": [
-          "Wolframite"
-        ],
-        "producedElement": "Carbon",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.25,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 6.0
-      }
-    ]
-  },
-  {
-    "id": "GlassDeer",
-    "name": "Shatter Flox",
-    "prefabId": "GlassDeer",
-    "tags": [
-      "Creature",
-      "BagableCreature",
-      "Walker",
-      "CreatureBrain"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": [
-      "DLC2_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "spaceRequired": 12,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "HardSkinBerryPlant"
-        ],
-        "producedElement": "Dirt",
-        "caloriesPerKg": 166666.656,
-        "producedConversionRate": 8.333334,
-        "dailyConsumptionKg": 0.72,
-        "dailyExcrementKg": 6.00000048
-      },
-      {
-        "consumedTags": [
-          "HardSkinBerry"
-        ],
-        "producedElement": "Dirt",
-        "caloriesPerKg": 499999.969,
-        "producedConversionRate": 25.0000019,
-        "dailyConsumptionKg": 0.24000001,
-        "dailyExcrementKg": 6.00000048
-      },
-      {
-        "consumedTags": [
-          "PrickleFlower"
-        ],
-        "producedElement": "Dirt",
-        "caloriesPerKg": 166666.656,
-        "producedConversionRate": 8.333334,
-        "dailyConsumptionKg": 0.72,
-        "dailyExcrementKg": 6.00000048
-      },
-      {
-        "consumedTags": [
-          "PrickleFruit"
-        ],
-        "producedElement": "Dirt",
-        "caloriesPerKg": 999999.938,
-        "producedConversionRate": 50.0000038,
-        "dailyConsumptionKg": 0.120000005,
-        "dailyExcrementKg": 6.00000048
-      },
-      {
-        "consumedTags": [
-          "Katairite"
-        ],
-        "producedElement": "Dirt",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 12.0
-      }
-    ]
-  },
-  {
-    "id": "AlgaeStego",
-    "name": "Blum Lumb",
-    "prefabId": "AlgaeStego",
-    "tags": [
-      "Creature",
-      "Walker",
-      "BagableCreature",
-      "CreatureBrain",
-      "LargeCreature"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": [
-      "DLC4_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "spaceRequired": 16,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "VineFruit"
-        ],
-        "producedElement": "Algae",
-        "caloriesPerKg": 325000.0,
-        "producedConversionRate": 33.0,
-        "dailyConsumptionKg": 0.369230777,
-        "dailyExcrementKg": 12.1846161
-      },
-      {
-        "consumedTags": [
-          "PrickleFruit"
-        ],
-        "producedElement": "Algae",
-        "caloriesPerKg": 1600000.0,
-        "producedConversionRate": 162.461548,
-        "dailyConsumptionKg": 0.075,
-        "dailyExcrementKg": 12.184617
-      },
-      {
-        "consumedTags": [
-          "SwampFruit"
-        ],
-        "producedElement": "Algae",
-        "caloriesPerKg": 1840000.0,
-        "producedConversionRate": 280.246155,
-        "dailyConsumptionKg": 0.06521739,
-        "dailyExcrementKg": 18.2769222
+        "producedElement": "Katairite",
+        "caloriesPerKg": 50000.0,
+        "producedConversionRate": 10.0,
+        "dailyConsumptionKg": 2.4,
+        "dailyExcrementKg": 24.0
       }
     ]
   },
@@ -2865,6 +2638,43 @@
         "producedConversionRate": 0.5,
         "dailyConsumptionKg": 120.0,
         "dailyExcrementKg": 60.0
+      }
+    ]
+  },
+  {
+    "id": "CrabFreshWater",
+    "name": "Sanishell",
+    "prefabId": "CrabFreshWater",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CrabFriend",
+      "CreatureBrain",
+      "Amphibious"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "spaceRequired": 12,
+    "temperatures": null,
+    "decor": {
+      "value": 10.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "ToxicSand",
+          "RotPile",
+          "SlimeMold"
+        ],
+        "producedElement": "Sand",
+        "caloriesPerKg": 6666.6665,
+        "producedConversionRate": 0.6666667,
+        "dailyConsumptionKg": 18.0,
+        "dailyExcrementKg": 12.0
       }
     ]
   },
@@ -2946,6 +2756,43 @@
     ]
   },
   {
+    "id": "CrabWood",
+    "name": "Oakshell",
+    "prefabId": "CrabWood",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CrabFriend",
+      "CreatureBrain",
+      "Amphibious"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "spaceRequired": 12,
+    "temperatures": null,
+    "decor": {
+      "value": 10.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "ToxicSand",
+          "RotPile",
+          "SlimeMold"
+        ],
+        "producedElement": "Sand",
+        "caloriesPerKg": 1428.57141,
+        "producedConversionRate": 0.25,
+        "dailyConsumptionKg": 84.0,
+        "dailyExcrementKg": 21.0
+      }
+    ]
+  },
+  {
     "id": "LightBugOrange",
     "name": "Sun Bug",
     "prefabId": "LightBugOrange",
@@ -2983,116 +2830,6 @@
     ]
   },
   {
-    "id": "GoldBelly",
-    "name": "Regal Bammoth",
-    "prefabId": "GoldBelly",
-    "tags": [
-      "Creature",
-      "BagableCreature",
-      "Walker",
-      "CreatureBrain",
-      "LargeCreature"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": [
-      "DLC2_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "spaceRequired": 16,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "CarrotPlant"
-        ],
-        "producedElement": "IceBellyPoop",
-        "caloriesPerKg": 444444.438,
-        "producedConversionRate": 7.497111,
-        "dailyConsumptionKg": 0.27,
-        "dailyExcrementKg": 2.02422
-      },
-      {
-        "consumedTags": [
-          "Carrot"
-        ],
-        "producedElement": "IceBellyPoop",
-        "caloriesPerKg": 4000000.0,
-        "producedConversionRate": 67.474,
-        "dailyConsumptionKg": 0.03,
-        "dailyExcrementKg": 2.02422
-      },
-      {
-        "consumedTags": [
-          "FriesCarrot"
-        ],
-        "producedElement": "IceBellyPoop",
-        "caloriesPerKg": 7112000.5,
-        "producedConversionRate": 120.01,
-        "dailyConsumptionKg": 0.01687289,
-        "dailyExcrementKg": 2.0249157
-      },
-      {
-        "consumedTags": [
-          "BeanPlant"
-        ],
-        "producedElement": "IceBellyPoop",
-        "caloriesPerKg": 597371.563,
-        "producedConversionRate": 10.0767622,
-        "dailyConsumptionKg": 0.20088,
-        "dailyExcrementKg": 2.02422
-      },
-      {
-        "consumedTags": [
-          "BeanPlantSeed"
-        ],
-        "producedElement": "IceBellyPoop",
-        "caloriesPerKg": 1100000.0,
-        "producedConversionRate": 18.5709953,
-        "dailyConsumptionKg": 0.109090909,
-        "dailyExcrementKg": 2.02592683
-      }
-    ]
-  },
-  {
-    "id": "LightBugCrystal",
-    "name": "Radiant Bug",
-    "prefabId": "LightBugCrystal",
-    "tags": [
-      "Creature",
-      "Flyer",
-      "BagableCreature",
-      "CreatureBrain"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "spaceRequired": 6,
-    "temperatures": null,
-    "decor": {
-      "value": 200.0,
-      "radius": 8.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "CookedMeat",
-          "Diamond"
-        ],
-        "producedElement": "0",
-        "caloriesPerKg": 40000.0,
-        "producedConversionRate": 1.0,
-        "dailyConsumptionKg": 3.0,
-        "dailyExcrementKg": 3.0
-      }
-    ]
-  },
-  {
     "id": "LightBugBlue",
     "name": "Azure Bug",
     "prefabId": "LightBugBlue",
@@ -3125,77 +2862,6 @@
         "producedConversionRate": 1.0,
         "dailyConsumptionKg": 3.0,
         "dailyExcrementKg": 3.0
-      }
-    ]
-  },
-  {
-    "id": "DreckoPlastic",
-    "name": "Glossy Drecko",
-    "prefabId": "DreckoPlastic",
-    "tags": [
-      "Walker",
-      "Creature",
-      "BagableCreature",
-      "CreatureBrain"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "spaceRequired": 12,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "BasicSingleHarvestPlant",
-          "PrickleFlower"
-        ],
-        "producedElement": "Phosphorite",
-        "caloriesPerKg": 2000000.0,
-        "producedConversionRate": 9.0,
-        "dailyConsumptionKg": 0.06,
-        "dailyExcrementKg": 0.539999962
-      }
-    ]
-  },
-  {
-    "id": "CrabWood",
-    "name": "Oakshell",
-    "prefabId": "CrabWood",
-    "tags": [
-      "Creature",
-      "BagableCreature",
-      "Walker",
-      "CrabFriend",
-      "CreatureBrain",
-      "Amphibious"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "spaceRequired": 12,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "ToxicSand",
-          "RotPile",
-          "SlimeMold"
-        ],
-        "producedElement": "Sand",
-        "caloriesPerKg": 1428.57141,
-        "producedConversionRate": 0.25,
-        "dailyConsumptionKg": 84.0,
-        "dailyExcrementKg": 21.0
       }
     ]
   },
@@ -3240,6 +2906,118 @@
         "producedConversionRate": 0.05,
         "dailyConsumptionKg": 120.0,
         "dailyExcrementKg": 6.0
+      }
+    ]
+  },
+  {
+    "id": "GlassDeer",
+    "name": "Shatter Flox",
+    "prefabId": "GlassDeer",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "spaceRequired": 12,
+    "temperatures": null,
+    "decor": {
+      "value": 10.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "HardSkinBerryPlant"
+        ],
+        "producedElement": "Dirt",
+        "caloriesPerKg": 166666.656,
+        "producedConversionRate": 8.333334,
+        "dailyConsumptionKg": 0.72,
+        "dailyExcrementKg": 6.00000048
+      },
+      {
+        "consumedTags": [
+          "HardSkinBerry"
+        ],
+        "producedElement": "Dirt",
+        "caloriesPerKg": 499999.969,
+        "producedConversionRate": 25.0000019,
+        "dailyConsumptionKg": 0.24000001,
+        "dailyExcrementKg": 6.00000048
+      },
+      {
+        "consumedTags": [
+          "PrickleFlower"
+        ],
+        "producedElement": "Dirt",
+        "caloriesPerKg": 166666.656,
+        "producedConversionRate": 8.333334,
+        "dailyConsumptionKg": 0.72,
+        "dailyExcrementKg": 6.00000048
+      },
+      {
+        "consumedTags": [
+          "PrickleFruit"
+        ],
+        "producedElement": "Dirt",
+        "caloriesPerKg": 999999.938,
+        "producedConversionRate": 50.0000038,
+        "dailyConsumptionKg": 0.120000005,
+        "dailyExcrementKg": 6.00000048
+      },
+      {
+        "consumedTags": [
+          "Katairite"
+        ],
+        "producedElement": "Dirt",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.5,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 12.0
+      }
+    ]
+  },
+  {
+    "id": "LightBugBlack",
+    "name": "Abyss Bug",
+    "prefabId": "LightBugBlack",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "spaceRequired": 6,
+    "temperatures": null,
+    "decor": {
+      "value": 80.0,
+      "radius": 7.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "Salsa",
+          "Meat",
+          "CookedMeat",
+          "Katairite",
+          "Phosphorus"
+        ],
+        "producedElement": "0",
+        "caloriesPerKg": 40000.0,
+        "producedConversionRate": 1.0,
+        "dailyConsumptionKg": 3.0,
+        "dailyExcrementKg": 3.0
       }
     ]
   },
@@ -4102,16 +3880,14 @@
     ]
   },
   {
-    "id": "CrabFreshWater",
-    "name": "Sanishell",
-    "prefabId": "CrabFreshWater",
+    "id": "HatchHard",
+    "name": "Stone Hatch",
+    "prefabId": "HatchHard",
     "tags": [
       "Creature",
       "BagableCreature",
       "Walker",
-      "CrabFriend",
-      "CreatureBrain",
-      "Amphibious"
+      "CreatureBrain"
     ],
     "isRanchable": true,
     "requiredDlcIds": null,
@@ -4126,22 +3902,224 @@
     "diet": [
       {
         "consumedTags": [
-          "ToxicSand",
-          "RotPile",
-          "SlimeMold"
+          "SedimentaryRock",
+          "IgneousRock",
+          "Obsidian",
+          "Granite",
+          "Basalt"
         ],
-        "producedElement": "Sand",
-        "caloriesPerKg": 6666.6665,
-        "producedConversionRate": 0.6666667,
-        "dailyConsumptionKg": 18.0,
+        "producedElement": "Carbon",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.5,
+        "dailyConsumptionKg": 24.0,
         "dailyExcrementKg": 12.0
+      },
+      {
+        "consumedTags": [
+          "ZincOre"
+        ],
+        "producedElement": "Carbon",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.25,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 6.0
+      },
+      {
+        "consumedTags": [
+          "Cuprite"
+        ],
+        "producedElement": "Carbon",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.25,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 6.0
+      },
+      {
+        "consumedTags": [
+          "Cobaltite"
+        ],
+        "producedElement": "Carbon",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.25,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 6.0
+      },
+      {
+        "consumedTags": [
+          "AluminumOre"
+        ],
+        "producedElement": "Carbon",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.25,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 6.0
+      },
+      {
+        "consumedTags": [
+          "NickelOre"
+        ],
+        "producedElement": "Carbon",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.25,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 6.0
+      },
+      {
+        "consumedTags": [
+          "Cinnabar"
+        ],
+        "producedElement": "Carbon",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.25,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 6.0
+      },
+      {
+        "consumedTags": [
+          "IronOre"
+        ],
+        "producedElement": "Carbon",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.25,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 6.0
+      },
+      {
+        "consumedTags": [
+          "GoldAmalgam"
+        ],
+        "producedElement": "Carbon",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.25,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 6.0
+      },
+      {
+        "consumedTags": [
+          "Wolframite"
+        ],
+        "producedElement": "Carbon",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.25,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 6.0
       }
     ]
   },
   {
-    "id": "LightBugBlack",
-    "name": "Abyss Bug",
-    "prefabId": "LightBugBlack",
+    "id": "DreckoPlastic",
+    "name": "Glossy Drecko",
+    "prefabId": "DreckoPlastic",
+    "tags": [
+      "Walker",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "spaceRequired": 12,
+    "temperatures": null,
+    "decor": {
+      "value": 10.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "BasicSingleHarvestPlant",
+          "PrickleFlower"
+        ],
+        "producedElement": "Phosphorite",
+        "caloriesPerKg": 2000000.0,
+        "producedConversionRate": 9.0,
+        "dailyConsumptionKg": 0.06,
+        "dailyExcrementKg": 0.539999962
+      }
+    ]
+  },
+  {
+    "id": "GoldBelly",
+    "name": "Regal Bammoth",
+    "prefabId": "GoldBelly",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "LargeCreature"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "spaceRequired": 16,
+    "temperatures": null,
+    "decor": {
+      "value": 10.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "CarrotPlant"
+        ],
+        "producedElement": "IceBellyPoop",
+        "caloriesPerKg": 444444.438,
+        "producedConversionRate": 7.497111,
+        "dailyConsumptionKg": 0.27,
+        "dailyExcrementKg": 2.02422
+      },
+      {
+        "consumedTags": [
+          "Carrot"
+        ],
+        "producedElement": "IceBellyPoop",
+        "caloriesPerKg": 4000000.0,
+        "producedConversionRate": 67.474,
+        "dailyConsumptionKg": 0.03,
+        "dailyExcrementKg": 2.02422
+      },
+      {
+        "consumedTags": [
+          "FriesCarrot"
+        ],
+        "producedElement": "IceBellyPoop",
+        "caloriesPerKg": 7112000.5,
+        "producedConversionRate": 120.01,
+        "dailyConsumptionKg": 0.01687289,
+        "dailyExcrementKg": 2.0249157
+      },
+      {
+        "consumedTags": [
+          "BeanPlant"
+        ],
+        "producedElement": "IceBellyPoop",
+        "caloriesPerKg": 597371.563,
+        "producedConversionRate": 10.0767622,
+        "dailyConsumptionKg": 0.20088,
+        "dailyExcrementKg": 2.02422
+      },
+      {
+        "consumedTags": [
+          "BeanPlantSeed"
+        ],
+        "producedElement": "IceBellyPoop",
+        "caloriesPerKg": 1100000.0,
+        "producedConversionRate": 18.5709953,
+        "dailyConsumptionKg": 0.109090909,
+        "dailyExcrementKg": 2.02592683
+      }
+    ]
+  },
+  {
+    "id": "LightBugCrystal",
+    "name": "Radiant Bug",
+    "prefabId": "LightBugCrystal",
     "tags": [
       "Creature",
       "Flyer",
@@ -4154,18 +4132,15 @@
     "spaceRequired": 6,
     "temperatures": null,
     "decor": {
-      "value": 80.0,
-      "radius": 7.0
+      "value": 200.0,
+      "radius": 8.0
     },
     "lifespanCycles": 100.0,
     "diet": [
       {
         "consumedTags": [
-          "Salsa",
-          "Meat",
           "CookedMeat",
-          "Katairite",
-          "Phosphorus"
+          "Diamond"
         ],
         "producedElement": "0",
         "caloriesPerKg": 40000.0,
@@ -4176,9 +4151,98 @@
     ]
   },
   {
-    "id": "PuftBleachstone",
-    "name": "Squeaky Puft",
-    "prefabId": "PuftBleachstone",
+    "id": "AlgaeStego",
+    "name": "Blum Lumb",
+    "prefabId": "AlgaeStego",
+    "tags": [
+      "Creature",
+      "Walker",
+      "BagableCreature",
+      "CreatureBrain",
+      "LargeCreature"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "spaceRequired": 16,
+    "temperatures": null,
+    "decor": {
+      "value": 10.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "VineFruit"
+        ],
+        "producedElement": "Algae",
+        "caloriesPerKg": 325000.0,
+        "producedConversionRate": 33.0,
+        "dailyConsumptionKg": 0.369230777,
+        "dailyExcrementKg": 12.1846161
+      },
+      {
+        "consumedTags": [
+          "PrickleFruit"
+        ],
+        "producedElement": "Algae",
+        "caloriesPerKg": 1600000.0,
+        "producedConversionRate": 162.461548,
+        "dailyConsumptionKg": 0.075,
+        "dailyExcrementKg": 12.184617
+      },
+      {
+        "consumedTags": [
+          "SwampFruit"
+        ],
+        "producedElement": "Algae",
+        "caloriesPerKg": 1840000.0,
+        "producedConversionRate": 280.246155,
+        "dailyConsumptionKg": 0.06521739,
+        "dailyExcrementKg": 18.2769222
+      }
+    ]
+  },
+  {
+    "id": "OilfloaterDecor",
+    "name": "Longhair Slickster",
+    "prefabId": "OilfloaterDecor",
+    "tags": [
+      "Hoverer",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "spaceRequired": 12,
+    "temperatures": null,
+    "decor": {
+      "value": 50.0,
+      "radius": 7.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "Oxygen"
+        ],
+        "producedElement": "0",
+        "caloriesPerKg": 4000.0,
+        "producedConversionRate": 0.0,
+        "dailyConsumptionKg": 30.0,
+        "dailyExcrementKg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "PuftOxylite",
+    "name": "Dense Puft",
+    "prefabId": "PuftOxylite",
     "tags": [
       "Creature",
       "Flyer",
@@ -4198,13 +4262,102 @@
     "diet": [
       {
         "consumedTags": [
+          "Oxygen"
+        ],
+        "producedElement": "OxyRock",
+        "caloriesPerKg": 4000.0,
+        "producedConversionRate": 0.95,
+        "dailyConsumptionKg": 30.0,
+        "dailyExcrementKg": 28.5
+      }
+    ]
+  },
+  {
+    "id": "PuftAlpha",
+    "name": "Puft Prince",
+    "prefabId": "PuftAlpha",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "spaceRequired": 16,
+    "temperatures": null,
+    "decor": {
+      "value": 10.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "ContaminatedOxygen"
+        ],
+        "producedElement": "SlimeMold",
+        "caloriesPerKg": 6666.6665,
+        "producedConversionRate": 0.1,
+        "dailyConsumptionKg": 18.0,
+        "dailyExcrementKg": 1.80000007
+      },
+      {
+        "consumedTags": [
           "ChlorineGas"
         ],
         "producedElement": "BleachStone",
         "caloriesPerKg": 6666.6665,
-        "producedConversionRate": 0.95,
+        "producedConversionRate": 0.1,
         "dailyConsumptionKg": 18.0,
-        "dailyExcrementKg": 17.1
+        "dailyExcrementKg": 1.80000007
+      },
+      {
+        "consumedTags": [
+          "Oxygen"
+        ],
+        "producedElement": "OxyRock",
+        "caloriesPerKg": 6666.6665,
+        "producedConversionRate": 0.1,
+        "dailyConsumptionKg": 18.0,
+        "dailyExcrementKg": 1.80000007
+      }
+    ]
+  },
+  {
+    "id": "SnailIron",
+    "name": "Gildgo",
+    "prefabId": "SnailIron",
+    "tags": [
+      "Amphibious",
+      "Walker",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "spaceRequired": 12,
+    "temperatures": null,
+    "decor": {
+      "value": 10.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "Sulfur"
+        ],
+        "producedElement": "Obsidian",
+        "caloriesPerKg": 1000.0,
+        "producedConversionRate": 0.5,
+        "dailyConsumptionKg": 120.0,
+        "dailyExcrementKg": 60.0
       }
     ]
   },
@@ -4272,9 +4425,9 @@
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 13333.333,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 0.6666667,
         "dailyConsumptionKg": 9.0,
-        "dailyExcrementKg": 4.5
+        "dailyExcrementKg": 6.0
       },
       {
         "consumedTags": [
@@ -4302,29 +4455,9 @@
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "DewDripperPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "ColdWheatSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
@@ -4332,29 +4465,29 @@
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "HardSkinBerryPlantSeed"
+          "DewDripperPlantSeed"
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "GasGrassSeed"
+          "ColdWheatSeed"
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
@@ -4362,69 +4495,29 @@
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "CarrotPlantSeed"
+          "HardSkinBerryPlantSeed"
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "ButterflyPlantSeed"
+          "GasGrassSeed"
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BlueGrassSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BeanPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BasicSingleHarvestPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BasicFabricMaterialPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
@@ -4432,69 +4525,79 @@
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "SaltySticksPlantSeed"
+          "ClamSeed"
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "SpiceVineSeed"
+          "CarrotPlantSeed"
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "SeaLettuceSeed"
+          "ButterflyPlantSeed"
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "PrickleFlowerSeed"
+          "BlueGrassSeed"
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "SpaceTreeSeed"
+          "BeanPlantSeed"
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "WormPlantSeed"
+          "BasicSingleHarvestPlantSeed"
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "BasicFabricMaterialPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
@@ -4502,29 +4605,9 @@
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "UrchinPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "TubeWormSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
@@ -4532,9 +4615,9 @@
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
@@ -4542,9 +4625,99 @@
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SaltySticksPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SpiceVineSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SpaceTreeSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SeaLettuceSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "PrickleFlowerSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "UrchinPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "WormPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "TubeWormSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "PlanktonCoralSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
@@ -4552,9 +4725,9 @@
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 6.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 7.20000029
       }
     ]
   },
@@ -4586,9 +4759,9 @@
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 13333.333,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 0.6666667,
         "dailyConsumptionKg": 9.0,
-        "dailyExcrementKg": 4.5
+        "dailyExcrementKg": 6.0
       },
       {
         "consumedTags": [
@@ -4616,29 +4789,9 @@
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "DewDripperPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "ColdWheatSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
@@ -4646,29 +4799,29 @@
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "HardSkinBerryPlantSeed"
+          "DewDripperPlantSeed"
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "GasGrassSeed"
+          "ColdWheatSeed"
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
@@ -4676,69 +4829,29 @@
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "CarrotPlantSeed"
+          "HardSkinBerryPlantSeed"
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "ButterflyPlantSeed"
+          "GasGrassSeed"
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BlueGrassSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BeanPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BasicSingleHarvestPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BasicFabricMaterialPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
@@ -4746,69 +4859,79 @@
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "SaltySticksPlantSeed"
+          "ClamSeed"
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "SpiceVineSeed"
+          "CarrotPlantSeed"
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "SeaLettuceSeed"
+          "ButterflyPlantSeed"
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "PrickleFlowerSeed"
+          "BlueGrassSeed"
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "SpaceTreeSeed"
+          "BeanPlantSeed"
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
-          "WormPlantSeed"
+          "BasicSingleHarvestPlantSeed"
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "BasicFabricMaterialPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
@@ -4816,29 +4939,9 @@
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "UrchinPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "TubeWormSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
@@ -4846,9 +4949,9 @@
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
@@ -4856,9 +4959,99 @@
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 3.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SaltySticksPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SpiceVineSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SpaceTreeSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SeaLettuceSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "PrickleFlowerSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "UrchinPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "WormPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "TubeWormSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "PlanktonCoralSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
       },
       {
         "consumedTags": [
@@ -4866,16 +5059,16 @@
         ],
         "producedElement": "ToxicSand",
         "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
+        "producedConversionRate": 6.0,
         "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
+        "dailyExcrementKg": 7.20000029
       }
     ]
   },
   {
-    "id": "PuftOxylite",
-    "name": "Dense Puft",
-    "prefabId": "PuftOxylite",
+    "id": "PuftBleachstone",
+    "name": "Squeaky Puft",
+    "prefabId": "PuftBleachstone",
     "tags": [
       "Creature",
       "Flyer",
@@ -4895,81 +5088,13 @@
     "diet": [
       {
         "consumedTags": [
-          "Oxygen"
+          "ChlorineGas"
         ],
-        "producedElement": "OxyRock",
-        "caloriesPerKg": 4000.0,
+        "producedElement": "BleachStone",
+        "caloriesPerKg": 6666.6665,
         "producedConversionRate": 0.95,
-        "dailyConsumptionKg": 30.0,
-        "dailyExcrementKg": 28.5
-      }
-    ]
-  },
-  {
-    "id": "OilfloaterHighTemp",
-    "name": "Molten Slickster",
-    "prefabId": "OilfloaterHighTemp",
-    "tags": [
-      "Hoverer",
-      "Creature",
-      "BagableCreature",
-      "CreatureBrain"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "spaceRequired": 12,
-    "temperatures": null,
-    "decor": {
-      "value": 15.0,
-      "radius": 2.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "CarbonDioxide"
-        ],
-        "producedElement": "Petroleum",
-        "caloriesPerKg": 6000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 20.0,
-        "dailyExcrementKg": 10.0
-      }
-    ]
-  },
-  {
-    "id": "SnailIron",
-    "name": "Gildgo",
-    "prefabId": "SnailIron",
-    "tags": [
-      "Amphibious",
-      "BagableCreature",
-      "Creature",
-      "CreatureBrain"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": [
-      "DLC5_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "spaceRequired": 12,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "Sulfur"
-        ],
-        "producedElement": "Obsidian",
-        "caloriesPerKg": 1000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 120.0,
-        "dailyExcrementKg": 60.0
+        "dailyConsumptionKg": 18.0,
+        "dailyExcrementKg": 17.1
       }
     ]
   },
@@ -5210,62 +5335,9 @@
     ]
   },
   {
-    "id": "PuftAlpha",
-    "name": "Puft Prince",
-    "prefabId": "PuftAlpha",
-    "tags": [
-      "Creature",
-      "Flyer",
-      "BagableCreature",
-      "CreatureBrain"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "spaceRequired": 16,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "ContaminatedOxygen"
-        ],
-        "producedElement": "SlimeMold",
-        "caloriesPerKg": 6666.6665,
-        "producedConversionRate": 0.1,
-        "dailyConsumptionKg": 18.0,
-        "dailyExcrementKg": 1.80000007
-      },
-      {
-        "consumedTags": [
-          "ChlorineGas"
-        ],
-        "producedElement": "BleachStone",
-        "caloriesPerKg": 6666.6665,
-        "producedConversionRate": 0.1,
-        "dailyConsumptionKg": 18.0,
-        "dailyExcrementKg": 1.80000007
-      },
-      {
-        "consumedTags": [
-          "Oxygen"
-        ],
-        "producedElement": "OxyRock",
-        "caloriesPerKg": 6666.6665,
-        "producedConversionRate": 0.1,
-        "dailyConsumptionKg": 18.0,
-        "dailyExcrementKg": 1.80000007
-      }
-    ]
-  },
-  {
-    "id": "OilfloaterDecor",
-    "name": "Longhair Slickster",
-    "prefabId": "OilfloaterDecor",
+    "id": "OilfloaterHighTemp",
+    "name": "Molten Slickster",
+    "prefabId": "OilfloaterHighTemp",
     "tags": [
       "Hoverer",
       "Creature",
@@ -5278,20 +5350,20 @@
     "spaceRequired": 12,
     "temperatures": null,
     "decor": {
-      "value": 50.0,
-      "radius": 7.0
+      "value": 15.0,
+      "radius": 2.0
     },
     "lifespanCycles": 100.0,
     "diet": [
       {
         "consumedTags": [
-          "Oxygen"
+          "CarbonDioxide"
         ],
-        "producedElement": "0",
-        "caloriesPerKg": 4000.0,
-        "producedConversionRate": 0.0,
-        "dailyConsumptionKg": 30.0,
-        "dailyExcrementKg": 0.0
+        "producedElement": "Petroleum",
+        "caloriesPerKg": 6000.0,
+        "producedConversionRate": 0.5,
+        "dailyConsumptionKg": 20.0,
+        "dailyExcrementKg": 10.0
       }
     ]
   },
@@ -5532,6 +5604,32 @@
     ]
   },
   {
+    "id": "MosquitoBaby",
+    "name": "Gnit Larva",
+    "prefabId": "MosquitoBaby",
+    "tags": [
+      "Creature",
+      "SwimmingCreature",
+      "Swimmer",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "spaceRequired": 0,
+    "temperatures": null,
+    "decor": {
+      "value": -5.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": null
+  },
+  {
     "id": "RaptorBaby",
     "name": "Rhex Baby",
     "prefabId": "RaptorBaby",
@@ -5628,6 +5726,109 @@
     ]
   },
   {
+    "id": "WoodDeerBaby",
+    "name": "Flox Fawn",
+    "prefabId": "WoodDeerBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "spaceRequired": 12,
+    "temperatures": null,
+    "decor": {
+      "value": 10.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "HardSkinBerryPlant"
+        ],
+        "producedElement": "Dirt",
+        "caloriesPerKg": 166666.656,
+        "producedConversionRate": 8.333334,
+        "dailyConsumptionKg": 0.72,
+        "dailyExcrementKg": 6.00000048
+      },
+      {
+        "consumedTags": [
+          "HardSkinBerry"
+        ],
+        "producedElement": "Dirt",
+        "caloriesPerKg": 499999.969,
+        "producedConversionRate": 25.0000019,
+        "dailyConsumptionKg": 0.24000001,
+        "dailyExcrementKg": 6.00000048
+      },
+      {
+        "consumedTags": [
+          "PrickleFlower"
+        ],
+        "producedElement": "Dirt",
+        "caloriesPerKg": 166666.656,
+        "producedConversionRate": 8.333334,
+        "dailyConsumptionKg": 0.72,
+        "dailyExcrementKg": 6.00000048
+      },
+      {
+        "consumedTags": [
+          "PrickleFruit"
+        ],
+        "producedElement": "Dirt",
+        "caloriesPerKg": 999999.938,
+        "producedConversionRate": 50.0000038,
+        "dailyConsumptionKg": 0.120000005,
+        "dailyExcrementKg": 6.00000048
+      }
+    ]
+  },
+  {
+    "id": "SeaHorseBaby",
+    "name": "Seaquine Fry",
+    "prefabId": "SeaHorseBaby",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "spaceRequired": 8,
+    "temperatures": null,
+    "decor": {
+      "value": 25.0,
+      "radius": 4.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "Pearl"
+        ],
+        "producedElement": "SlimeMold",
+        "caloriesPerKg": 32000.0,
+        "producedConversionRate": 3.84,
+        "dailyConsumptionKg": 3.75,
+        "dailyExcrementKg": 14.4
+      }
+    ]
+  },
+  {
     "id": "DreckoBaby",
     "name": "Drecklet",
     "prefabId": "DreckoBaby",
@@ -5664,15 +5865,15 @@
     ]
   },
   {
-    "id": "SeaHorseBaby",
-    "name": "Seaquine Fry",
-    "prefabId": "SeaHorseBaby",
+    "id": "SeaTurtleBaby",
+    "name": "Orehull Spawn",
+    "prefabId": "SeaTurtleBaby",
     "tags": [
       "SwimmingCreature",
       "Swimmer",
-      "BagableCreature",
       "Creature",
       "CreatureBrain",
+      "BagableCreature",
       "OriginalCreature"
     ],
     "isRanchable": true,
@@ -5680,23 +5881,33 @@
       "DLC5_ID"
     ],
     "forbiddenDlcIds": null,
-    "spaceRequired": 8,
+    "spaceRequired": 12,
     "temperatures": null,
     "decor": {
-      "value": 25.0,
-      "radius": 4.0
+      "value": 10.0,
+      "radius": 1.0
     },
     "lifespanCycles": 100.0,
     "diet": [
       {
         "consumedTags": [
-          "Pearl"
+          "SeaFairy"
         ],
-        "producedElement": "SlimeMold",
-        "caloriesPerKg": 32000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 3.75,
-        "dailyExcrementKg": 1.875
+        "producedElement": "ToxicMud",
+        "caloriesPerKg": 80000.0,
+        "producedConversionRate": 5.0,
+        "dailyConsumptionKg": 1.5,
+        "dailyExcrementKg": 7.5
+      },
+      {
+        "consumedTags": [
+          "Nori"
+        ],
+        "producedElement": "ToxicMud",
+        "caloriesPerKg": 40000.0,
+        "producedConversionRate": 2.5,
+        "dailyConsumptionKg": 3.0,
+        "dailyExcrementKg": 7.5
       }
     ]
   },
@@ -5742,53 +5953,6 @@
         "producedConversionRate": 1.0,
         "dailyConsumptionKg": 5.142857,
         "dailyExcrementKg": 5.142857
-      }
-    ]
-  },
-  {
-    "id": "SeaTurtleBaby",
-    "name": "Orehull Spawn",
-    "prefabId": "SeaTurtleBaby",
-    "tags": [
-      "SwimmingCreature",
-      "Swimmer",
-      "Creature",
-      "CreatureBrain",
-      "BagableCreature",
-      "OriginalCreature"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": [
-      "DLC5_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "spaceRequired": 12,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "SeaFairy"
-        ],
-        "producedElement": "ToxicMud",
-        "caloriesPerKg": 80000.0,
-        "producedConversionRate": 4.0,
-        "dailyConsumptionKg": 1.5,
-        "dailyExcrementKg": 6.0
-      },
-      {
-        "consumedTags": [
-          "Nori"
-        ],
-        "producedElement": "ToxicMud",
-        "caloriesPerKg": 40000.0,
-        "producedConversionRate": 2.0,
-        "dailyConsumptionKg": 3.0,
-        "dailyExcrementKg": 6.0
       }
     ]
   },
@@ -5839,38 +6003,85 @@
     ]
   },
   {
-    "id": "OilfloaterBaby",
-    "name": "Slickster Larva",
-    "prefabId": "OilfloaterBaby",
+    "id": "StegoBaby",
+    "name": "Lumblet",
+    "prefabId": "StegoBaby",
     "tags": [
-      "Hoverer",
       "Creature",
+      "Walker",
       "BagableCreature",
       "CreatureBrain",
       "OriginalCreature"
     ],
     "isRanchable": true,
-    "requiredDlcIds": null,
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
     "forbiddenDlcIds": null,
-    "spaceRequired": 12,
+    "spaceRequired": 16,
     "temperatures": null,
     "decor": {
-      "value": 15.0,
-      "radius": 2.0
+      "value": 10.0,
+      "radius": 1.0
     },
     "lifespanCycles": 100.0,
     "diet": [
       {
         "consumedTags": [
-          "CarbonDioxide"
+          "VineFruit"
         ],
-        "producedElement": "CrudeOil",
-        "caloriesPerKg": 6000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 20.0,
-        "dailyExcrementKg": 10.0
+        "producedElement": "Peat",
+        "caloriesPerKg": 325000.0,
+        "producedConversionRate": 50.0,
+        "dailyConsumptionKg": 0.369230777,
+        "dailyExcrementKg": 18.4615383
+      },
+      {
+        "consumedTags": [
+          "PrickleFruit"
+        ],
+        "producedElement": "Peat",
+        "caloriesPerKg": 1600000.0,
+        "producedConversionRate": 246.153854,
+        "dailyConsumptionKg": 0.075,
+        "dailyExcrementKg": 18.46154
+      },
+      {
+        "consumedTags": [
+          "SwampFruit"
+        ],
+        "producedElement": "Peat",
+        "caloriesPerKg": 1840000.0,
+        "producedConversionRate": 424.6154,
+        "dailyConsumptionKg": 0.06521739,
+        "dailyExcrementKg": 27.6923084
       }
     ]
+  },
+  {
+    "id": "SnailIronBaby",
+    "name": "Gildgo Baby",
+    "prefabId": "SnailIronBaby",
+    "tags": [
+      "Amphibious",
+      "Walker",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "spaceRequired": 12,
+    "temperatures": null,
+    "decor": {
+      "value": 10.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": null
   },
   {
     "id": "SquidBaby",
@@ -5882,7 +6093,8 @@
       "SquidFriend",
       "Creature",
       "CreatureBrain",
-      "BagableCreature"
+      "BagableCreature",
+      "OriginalCreature"
     ],
     "isRanchable": true,
     "requiredDlcIds": [
@@ -5910,73 +6122,20 @@
     ]
   },
   {
-    "id": "SnailIronBaby",
-    "name": "Gildgo Baby",
-    "prefabId": "SnailIronBaby",
-    "tags": [
-      "Amphibious",
-      "BagableCreature",
-      "Creature",
-      "CreatureBrain",
-      "OriginalCreature"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": [
-      "DLC5_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "spaceRequired": 12,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": null
-  },
-  {
-    "id": "MosquitoBaby",
-    "name": "Gnit Larva",
-    "prefabId": "MosquitoBaby",
+    "id": "PuftBaby",
+    "name": "Puftlet",
+    "prefabId": "PuftBaby",
     "tags": [
       "Creature",
-      "SwimmingCreature",
-      "Swimmer",
+      "Flyer",
       "BagableCreature",
       "CreatureBrain",
-      "OriginalCreature"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": [
-      "DLC4_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "spaceRequired": 0,
-    "temperatures": null,
-    "decor": {
-      "value": -5.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": null
-  },
-  {
-    "id": "CrabBaby",
-    "name": "Pokeshell Spawn",
-    "prefabId": "CrabBaby",
-    "tags": [
-      "Creature",
-      "BagableCreature",
-      "Walker",
-      "CrabFriend",
-      "CreatureBrain",
-      "Amphibious",
       "OriginalCreature"
     ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
-    "spaceRequired": 12,
+    "spaceRequired": 16,
     "temperatures": null,
     "decor": {
       "value": 10.0,
@@ -5986,14 +6145,13 @@
     "diet": [
       {
         "consumedTags": [
-          "ToxicSand",
-          "RotPile"
+          "ContaminatedOxygen"
         ],
-        "producedElement": "Sand",
-        "caloriesPerKg": 1428.57141,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 84.0,
-        "dailyExcrementKg": 42.0
+        "producedElement": "SlimeMold",
+        "caloriesPerKg": 4000.0,
+        "producedConversionRate": 0.95,
+        "dailyConsumptionKg": 30.0,
+        "dailyExcrementKg": 28.5
       }
     ]
   },
@@ -6035,6 +6193,43 @@
     ]
   },
   {
+    "id": "CrabBaby",
+    "name": "Pokeshell Spawn",
+    "prefabId": "CrabBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CrabFriend",
+      "CreatureBrain",
+      "Amphibious",
+      "OriginalCreature"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "spaceRequired": 12,
+    "temperatures": null,
+    "decor": {
+      "value": 10.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "ToxicSand",
+          "RotPile"
+        ],
+        "producedElement": "Sand",
+        "caloriesPerKg": 1428.57141,
+        "producedConversionRate": 0.5,
+        "dailyConsumptionKg": 84.0,
+        "dailyExcrementKg": 42.0
+      }
+    ]
+  },
+  {
     "id": "ChameleonBaby",
     "name": "Dartlet",
     "prefabId": "ChameleonBaby",
@@ -6069,31 +6264,6 @@
         "dailyExcrementKg": 0.599999964
       }
     ]
-  },
-  {
-    "id": "BeeBaby",
-    "name": "Beetiny",
-    "prefabId": "BeeBaby",
-    "tags": [
-      "Creature",
-      "BagableCreature",
-      "CreatureBrain",
-      "OriginalCreature",
-      "Walker"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": [
-      "EXPANSION1_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "spaceRequired": 4,
-    "temperatures": null,
-    "decor": {
-      "value": 30.0,
-      "radius": 5.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": null
   },
   {
     "id": "StaterpillarBaby",
@@ -6333,67 +6503,12 @@
     ]
   },
   {
-    "id": "StegoBaby",
-    "name": "Lumblet",
-    "prefabId": "StegoBaby",
-    "tags": [
-      "Creature",
-      "Walker",
-      "BagableCreature",
-      "CreatureBrain",
-      "OriginalCreature"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": [
-      "DLC4_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "spaceRequired": 16,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "VineFruit"
-        ],
-        "producedElement": "Peat",
-        "caloriesPerKg": 325000.0,
-        "producedConversionRate": 50.0,
-        "dailyConsumptionKg": 0.369230777,
-        "dailyExcrementKg": 18.4615383
-      },
-      {
-        "consumedTags": [
-          "PrickleFruit"
-        ],
-        "producedElement": "Peat",
-        "caloriesPerKg": 1600000.0,
-        "producedConversionRate": 246.153854,
-        "dailyConsumptionKg": 0.075,
-        "dailyExcrementKg": 18.46154
-      },
-      {
-        "consumedTags": [
-          "SwampFruit"
-        ],
-        "producedElement": "Peat",
-        "caloriesPerKg": 1840000.0,
-        "producedConversionRate": 424.6154,
-        "dailyConsumptionKg": 0.06521739,
-        "dailyExcrementKg": 27.6923084
-      }
-    ]
-  },
-  {
     "id": "SnailBaby",
     "name": "Slogo Baby",
     "prefabId": "SnailBaby",
     "tags": [
       "Amphibious",
+      "Walker",
       "BagableCreature",
       "Creature",
       "CreatureBrain",
@@ -6412,6 +6527,141 @@
     },
     "lifespanCycles": 100.0,
     "diet": null
+  },
+  {
+    "id": "BeeBaby",
+    "name": "Beetiny",
+    "prefabId": "BeeBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature",
+      "Walker"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": [
+      "EXPANSION1_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "spaceRequired": 4,
+    "temperatures": null,
+    "decor": {
+      "value": 30.0,
+      "radius": 5.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": null
+  },
+  {
+    "id": "OilfloaterBaby",
+    "name": "Slickster Larva",
+    "prefabId": "OilfloaterBaby",
+    "tags": [
+      "Hoverer",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "spaceRequired": 12,
+    "temperatures": null,
+    "decor": {
+      "value": 15.0,
+      "radius": 2.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "CarbonDioxide"
+        ],
+        "producedElement": "CrudeOil",
+        "caloriesPerKg": 6000.0,
+        "producedConversionRate": 0.5,
+        "dailyConsumptionKg": 20.0,
+        "dailyExcrementKg": 10.0
+      }
+    ]
+  },
+  {
+    "id": "IceBellyBaby",
+    "name": "Bammini",
+    "prefabId": "IceBellyBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "spaceRequired": 16,
+    "temperatures": null,
+    "decor": {
+      "value": 10.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "CarrotPlant"
+        ],
+        "producedElement": "IceBellyPoop",
+        "caloriesPerKg": 444444.438,
+        "producedConversionRate": 7.497111,
+        "dailyConsumptionKg": 0.27,
+        "dailyExcrementKg": 2.02422
+      },
+      {
+        "consumedTags": [
+          "Carrot"
+        ],
+        "producedElement": "IceBellyPoop",
+        "caloriesPerKg": 4000000.0,
+        "producedConversionRate": 67.474,
+        "dailyConsumptionKg": 0.03,
+        "dailyExcrementKg": 2.02422
+      },
+      {
+        "consumedTags": [
+          "FriesCarrot"
+        ],
+        "producedElement": "IceBellyPoop",
+        "caloriesPerKg": 7112000.5,
+        "producedConversionRate": 120.01,
+        "dailyConsumptionKg": 0.01687289,
+        "dailyExcrementKg": 2.0249157
+      },
+      {
+        "consumedTags": [
+          "BeanPlant"
+        ],
+        "producedElement": "IceBellyPoop",
+        "caloriesPerKg": 597371.563,
+        "producedConversionRate": 10.0767622,
+        "dailyConsumptionKg": 0.20088,
+        "dailyExcrementKg": 2.02422
+      },
+      {
+        "consumedTags": [
+          "BeanPlantSeed"
+        ],
+        "producedElement": "IceBellyPoop",
+        "caloriesPerKg": 1100000.0,
+        "producedConversionRate": 18.5709953,
+        "dailyConsumptionKg": 0.109090909,
+        "dailyExcrementKg": 2.02592683
+      }
+    ]
   },
   {
     "id": "HatchBaby",
@@ -7126,106 +7376,6 @@
     ]
   },
   {
-    "id": "PuftBaby",
-    "name": "Puftlet",
-    "prefabId": "PuftBaby",
-    "tags": [
-      "Creature",
-      "Flyer",
-      "BagableCreature",
-      "CreatureBrain",
-      "OriginalCreature"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "spaceRequired": 16,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "ContaminatedOxygen"
-        ],
-        "producedElement": "SlimeMold",
-        "caloriesPerKg": 4000.0,
-        "producedConversionRate": 0.95,
-        "dailyConsumptionKg": 30.0,
-        "dailyExcrementKg": 28.5
-      }
-    ]
-  },
-  {
-    "id": "WoodDeerBaby",
-    "name": "Flox Fawn",
-    "prefabId": "WoodDeerBaby",
-    "tags": [
-      "Creature",
-      "BagableCreature",
-      "Walker",
-      "CreatureBrain",
-      "OriginalCreature"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": [
-      "DLC2_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "spaceRequired": 12,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "HardSkinBerryPlant"
-        ],
-        "producedElement": "Dirt",
-        "caloriesPerKg": 166666.656,
-        "producedConversionRate": 8.333334,
-        "dailyConsumptionKg": 0.72,
-        "dailyExcrementKg": 6.00000048
-      },
-      {
-        "consumedTags": [
-          "HardSkinBerry"
-        ],
-        "producedElement": "Dirt",
-        "caloriesPerKg": 499999.969,
-        "producedConversionRate": 25.0000019,
-        "dailyConsumptionKg": 0.24000001,
-        "dailyExcrementKg": 6.00000048
-      },
-      {
-        "consumedTags": [
-          "PrickleFlower"
-        ],
-        "producedElement": "Dirt",
-        "caloriesPerKg": 166666.656,
-        "producedConversionRate": 8.333334,
-        "dailyConsumptionKg": 0.72,
-        "dailyExcrementKg": 6.00000048
-      },
-      {
-        "consumedTags": [
-          "PrickleFruit"
-        ],
-        "producedElement": "Dirt",
-        "caloriesPerKg": 999999.938,
-        "producedConversionRate": 50.0000038,
-        "dailyConsumptionKg": 0.120000005,
-        "dailyExcrementKg": 6.00000048
-      }
-    ]
-  },
-  {
     "id": "LightBugBaby",
     "name": "Shine Nymph",
     "prefabId": "LightBugBaby",
@@ -7312,129 +7462,6 @@
     ]
   },
   {
-    "id": "IceBellyBaby",
-    "name": "Bammini",
-    "prefabId": "IceBellyBaby",
-    "tags": [
-      "Creature",
-      "BagableCreature",
-      "Walker",
-      "CreatureBrain",
-      "OriginalCreature"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": [
-      "DLC2_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "spaceRequired": 16,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "CarrotPlant"
-        ],
-        "producedElement": "IceBellyPoop",
-        "caloriesPerKg": 444444.438,
-        "producedConversionRate": 7.497111,
-        "dailyConsumptionKg": 0.27,
-        "dailyExcrementKg": 2.02422
-      },
-      {
-        "consumedTags": [
-          "Carrot"
-        ],
-        "producedElement": "IceBellyPoop",
-        "caloriesPerKg": 4000000.0,
-        "producedConversionRate": 67.474,
-        "dailyConsumptionKg": 0.03,
-        "dailyExcrementKg": 2.02422
-      },
-      {
-        "consumedTags": [
-          "FriesCarrot"
-        ],
-        "producedElement": "IceBellyPoop",
-        "caloriesPerKg": 7112000.5,
-        "producedConversionRate": 120.01,
-        "dailyConsumptionKg": 0.01687289,
-        "dailyExcrementKg": 2.0249157
-      },
-      {
-        "consumedTags": [
-          "BeanPlant"
-        ],
-        "producedElement": "IceBellyPoop",
-        "caloriesPerKg": 597371.563,
-        "producedConversionRate": 10.0767622,
-        "dailyConsumptionKg": 0.20088,
-        "dailyExcrementKg": 2.02422
-      },
-      {
-        "consumedTags": [
-          "BeanPlantSeed"
-        ],
-        "producedElement": "IceBellyPoop",
-        "caloriesPerKg": 1100000.0,
-        "producedConversionRate": 18.5709953,
-        "dailyConsumptionKg": 0.109090909,
-        "dailyExcrementKg": 2.02592683
-      }
-    ]
-  },
-  {
-    "id": "PufferFishBaby",
-    "name": "Blowter Fry",
-    "prefabId": "PufferFishBaby",
-    "tags": [
-      "SwimmingCreature",
-      "Swimmer",
-      "BagableCreature",
-      "Creature",
-      "CreatureBrain",
-      "OriginalCreature"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": [
-      "DLC5_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "spaceRequired": 8,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "Lettuce"
-        ],
-        "producedElement": "Oxygen",
-        "caloriesPerKg": 400000.0,
-        "producedConversionRate": 7.5,
-        "dailyConsumptionKg": 0.3,
-        "dailyExcrementKg": 2.25
-      },
-      {
-        "consumedTags": [
-          "SeaLettuce"
-        ],
-        "producedElement": "Oxygen",
-        "caloriesPerKg": 400000.0,
-        "producedConversionRate": 7.5,
-        "dailyConsumptionKg": 0.3,
-        "dailyExcrementKg": 2.25
-      }
-    ]
-  },
-  {
     "id": "PrehistoricPacuBaby",
     "name": "Jawbo Fry",
     "prefabId": "PrehistoricPacuBaby",
@@ -7482,6 +7509,398 @@
         "producedConversionRate": 60.0,
         "dailyConsumptionKg": 1.2,
         "dailyExcrementKg": 72.0
+      },
+      {
+        "consumedTags": [
+          "CookedFish"
+        ],
+        "producedElement": "Rust",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 60.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 72.0
+      }
+    ]
+  },
+  {
+    "id": "PufferFishBaby",
+    "name": "Blowter Fry",
+    "prefabId": "PufferFishBaby",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": [
+      "DLC5_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "spaceRequired": 8,
+    "temperatures": null,
+    "decor": {
+      "value": 10.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "Lettuce"
+        ],
+        "producedElement": "Oxygen",
+        "caloriesPerKg": 400000.0,
+        "producedConversionRate": 15.0,
+        "dailyConsumptionKg": 0.3,
+        "dailyExcrementKg": 4.5
+      },
+      {
+        "consumedTags": [
+          "SeaLettuce"
+        ],
+        "producedElement": "Oxygen",
+        "caloriesPerKg": 400000.0,
+        "producedConversionRate": 15.0,
+        "dailyConsumptionKg": 0.3,
+        "dailyExcrementKg": 4.5
+      }
+    ]
+  },
+  {
+    "id": "PacuBaby",
+    "name": "Pacu Fry",
+    "prefabId": "PacuBaby",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain",
+      "OriginalCreature"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "spaceRequired": 8,
+    "temperatures": null,
+    "decor": {
+      "value": 10.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "Algae"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 13333.333,
+        "producedConversionRate": 0.6666667,
+        "dailyConsumptionKg": 9.0,
+        "dailyExcrementKg": 6.0
+      },
+      {
+        "consumedTags": [
+          "Kelp"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.5,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 12.0
+      },
+      {
+        "consumedTags": [
+          "KelpPlant"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 50000.0,
+        "producedConversionRate": 5.0,
+        "dailyConsumptionKg": 2.4,
+        "dailyExcrementKg": 12.0
+      },
+      {
+        "consumedTags": [
+          "FlyTrapPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "DewPalmSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "DewDripperPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "ColdWheatSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "GardenFoodPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "HardSkinBerryPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "GasGrassSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "MushroomSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "ClamSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "CarrotPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "ButterflyPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "BlueGrassSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "BeanPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "BasicSingleHarvestPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "BasicFabricMaterialPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SaltPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SwampLilySeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SwampHarvestPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SaltySticksPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SpiceVineSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SpaceTreeSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SeaLettuceSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "PrickleFlowerSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "UrchinPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "WormPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "TubeWormSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "PlanktonCoralSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "FishFood"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 6.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 7.20000029
       }
     ]
   },
@@ -7541,372 +7960,35 @@
     ]
   },
   {
-    "id": "PacuBaby",
-    "name": "Pacu Fry",
-    "prefabId": "PacuBaby",
+    "id": "OilfloaterHighTempBaby",
+    "name": "Molten Larva",
+    "prefabId": "OilfloaterHighTempBaby",
     "tags": [
-      "SwimmingCreature",
-      "Swimmer",
-      "BagableCreature",
+      "Hoverer",
       "Creature",
-      "CreatureBrain",
-      "OriginalCreature"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "spaceRequired": 8,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "Algae"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 13333.333,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 9.0,
-        "dailyExcrementKg": 4.5
-      },
-      {
-        "consumedTags": [
-          "Kelp"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 12.0
-      },
-      {
-        "consumedTags": [
-          "KelpPlant"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 50000.0,
-        "producedConversionRate": 5.0,
-        "dailyConsumptionKg": 2.4,
-        "dailyExcrementKg": 12.0
-      },
-      {
-        "consumedTags": [
-          "FlyTrapPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "DewDripperPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "ColdWheatSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "DewPalmSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "HardSkinBerryPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "GasGrassSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "GardenFoodPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "CarrotPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "ButterflyPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BlueGrassSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BeanPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BasicSingleHarvestPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BasicFabricMaterialPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "MushroomSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SaltySticksPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SpiceVineSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SeaLettuceSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "PrickleFlowerSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SpaceTreeSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "WormPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SaltPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "UrchinPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "TubeWormSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SwampLilySeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SwampHarvestPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "FishFood"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      }
-    ]
-  },
-  {
-    "id": "AlgaeStegoBaby",
-    "name": "Blumblet",
-    "prefabId": "AlgaeStegoBaby",
-    "tags": [
-      "Creature",
-      "Walker",
       "BagableCreature",
       "CreatureBrain"
     ],
     "isRanchable": true,
-    "requiredDlcIds": [
-      "DLC4_ID"
-    ],
+    "requiredDlcIds": null,
     "forbiddenDlcIds": null,
-    "spaceRequired": 16,
+    "spaceRequired": 12,
     "temperatures": null,
     "decor": {
-      "value": 10.0,
-      "radius": 1.0
+      "value": 15.0,
+      "radius": 2.0
     },
     "lifespanCycles": 100.0,
     "diet": [
       {
         "consumedTags": [
-          "VineFruit"
+          "CarbonDioxide"
         ],
-        "producedElement": "Algae",
-        "caloriesPerKg": 325000.0,
-        "producedConversionRate": 33.0,
-        "dailyConsumptionKg": 0.369230777,
-        "dailyExcrementKg": 12.1846161
-      },
-      {
-        "consumedTags": [
-          "PrickleFruit"
-        ],
-        "producedElement": "Algae",
-        "caloriesPerKg": 1600000.0,
-        "producedConversionRate": 162.461548,
-        "dailyConsumptionKg": 0.075,
-        "dailyExcrementKg": 12.184617
-      },
-      {
-        "consumedTags": [
-          "SwampFruit"
-        ],
-        "producedElement": "Algae",
-        "caloriesPerKg": 1840000.0,
-        "producedConversionRate": 280.246155,
-        "dailyConsumptionKg": 0.06521739,
-        "dailyExcrementKg": 18.2769222
+        "producedElement": "Petroleum",
+        "caloriesPerKg": 6000.0,
+        "producedConversionRate": 0.5,
+        "dailyConsumptionKg": 20.0,
+        "dailyExcrementKg": 10.0
       }
     ]
   },
@@ -8147,6 +8229,43 @@
     ]
   },
   {
+    "id": "LightBugOrangeBaby",
+    "name": "Sun Nymph",
+    "prefabId": "LightBugOrangeBaby",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "spaceRequired": 6,
+    "temperatures": null,
+    "decor": {
+      "value": 50.0,
+      "radius": 7.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "Mushroom",
+          "FriedMushroom",
+          "GrilledPrickleFruit",
+          "CookedPikeapple",
+          "Phosphorite"
+        ],
+        "producedElement": "0",
+        "caloriesPerKg": 160000.0,
+        "producedConversionRate": 1.0,
+        "dailyConsumptionKg": 0.75,
+        "dailyExcrementKg": 0.75
+      }
+    ]
+  },
+  {
     "id": "LightBugPurpleBaby",
     "name": "Royal Nymph",
     "prefabId": "LightBugPurpleBaby",
@@ -8181,353 +8300,6 @@
         "producedConversionRate": 1.0,
         "dailyConsumptionKg": 3.0,
         "dailyExcrementKg": 3.0
-      }
-    ]
-  },
-  {
-    "id": "PacuCleanerBaby",
-    "name": "Gulp Fry",
-    "prefabId": "PacuCleanerBaby",
-    "tags": [
-      "SwimmingCreature",
-      "Swimmer",
-      "BagableCreature",
-      "Creature",
-      "CreatureBrain"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "spaceRequired": 8,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "Algae"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 13333.333,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 9.0,
-        "dailyExcrementKg": 4.5
-      },
-      {
-        "consumedTags": [
-          "Kelp"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 12.0
-      },
-      {
-        "consumedTags": [
-          "KelpPlant"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 50000.0,
-        "producedConversionRate": 5.0,
-        "dailyConsumptionKg": 2.4,
-        "dailyExcrementKg": 12.0
-      },
-      {
-        "consumedTags": [
-          "FlyTrapPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "DewDripperPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "ColdWheatSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "DewPalmSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "HardSkinBerryPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "GasGrassSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "GardenFoodPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "CarrotPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "ButterflyPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BlueGrassSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BeanPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BasicSingleHarvestPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BasicFabricMaterialPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "MushroomSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SaltySticksPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SpiceVineSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SeaLettuceSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "PrickleFlowerSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SpaceTreeSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "WormPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SaltPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "UrchinPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "TubeWormSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SwampLilySeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SwampHarvestPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "FishFood"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      }
-    ]
-  },
-  {
-    "id": "OilfloaterDecorBaby",
-    "name": "Longhair Larva",
-    "prefabId": "OilfloaterDecorBaby",
-    "tags": [
-      "Hoverer",
-      "Creature",
-      "BagableCreature",
-      "CreatureBrain"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "spaceRequired": 12,
-    "temperatures": null,
-    "decor": {
-      "value": 50.0,
-      "radius": 7.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "Oxygen"
-        ],
-        "producedElement": "0",
-        "caloriesPerKg": 4000.0,
-        "producedConversionRate": 0.0,
-        "dailyConsumptionKg": 30.0,
-        "dailyExcrementKg": 0.0
       }
     ]
   },
@@ -8768,35 +8540,41 @@
     ]
   },
   {
-    "id": "OilfloaterHighTempBaby",
-    "name": "Molten Larva",
-    "prefabId": "OilfloaterHighTempBaby",
+    "id": "LightBugPinkBaby",
+    "name": "Coral Nymph",
+    "prefabId": "LightBugPinkBaby",
     "tags": [
-      "Hoverer",
       "Creature",
+      "Flyer",
       "BagableCreature",
       "CreatureBrain"
     ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
-    "spaceRequired": 12,
+    "spaceRequired": 6,
     "temperatures": null,
     "decor": {
-      "value": 15.0,
-      "radius": 2.0
+      "value": 50.0,
+      "radius": 7.0
     },
     "lifespanCycles": 100.0,
     "diet": [
       {
         "consumedTags": [
-          "CarbonDioxide"
+          "FriedMushroom",
+          "SpiceBread",
+          "PrickleFruit",
+          "GrilledPrickleFruit",
+          "CookedPikeapple",
+          "Salsa",
+          "Phosphorite"
         ],
-        "producedElement": "Petroleum",
-        "caloriesPerKg": 6000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 20.0,
-        "dailyExcrementKg": 10.0
+        "producedElement": "0",
+        "caloriesPerKg": 40000.0,
+        "producedConversionRate": 1.0,
+        "dailyConsumptionKg": 3.0,
+        "dailyExcrementKg": 3.0
       }
     ]
   },
@@ -8837,78 +8615,336 @@
     ]
   },
   {
-    "id": "LightBugPinkBaby",
-    "name": "Coral Nymph",
-    "prefabId": "LightBugPinkBaby",
+    "id": "PacuCleanerBaby",
+    "name": "Gulp Fry",
+    "prefabId": "PacuCleanerBaby",
     "tags": [
-      "Creature",
-      "Flyer",
+      "SwimmingCreature",
+      "Swimmer",
       "BagableCreature",
+      "Creature",
       "CreatureBrain"
     ],
     "isRanchable": true,
     "requiredDlcIds": null,
     "forbiddenDlcIds": null,
-    "spaceRequired": 6,
+    "spaceRequired": 8,
     "temperatures": null,
     "decor": {
-      "value": 50.0,
-      "radius": 7.0
+      "value": 10.0,
+      "radius": 1.0
     },
     "lifespanCycles": 100.0,
     "diet": [
       {
         "consumedTags": [
-          "FriedMushroom",
-          "SpiceBread",
-          "PrickleFruit",
-          "GrilledPrickleFruit",
-          "CookedPikeapple",
-          "Salsa",
-          "Phosphorite"
+          "Algae"
         ],
-        "producedElement": "0",
-        "caloriesPerKg": 40000.0,
-        "producedConversionRate": 1.0,
-        "dailyConsumptionKg": 3.0,
-        "dailyExcrementKg": 3.0
-      }
-    ]
-  },
-  {
-    "id": "LightBugOrangeBaby",
-    "name": "Sun Nymph",
-    "prefabId": "LightBugOrangeBaby",
-    "tags": [
-      "Creature",
-      "Flyer",
-      "BagableCreature",
-      "CreatureBrain"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "spaceRequired": 6,
-    "temperatures": null,
-    "decor": {
-      "value": 50.0,
-      "radius": 7.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 13333.333,
+        "producedConversionRate": 0.6666667,
+        "dailyConsumptionKg": 9.0,
+        "dailyExcrementKg": 6.0
+      },
       {
         "consumedTags": [
-          "Mushroom",
-          "FriedMushroom",
-          "GrilledPrickleFruit",
-          "CookedPikeapple",
-          "Phosphorite"
+          "Kelp"
         ],
-        "producedElement": "0",
-        "caloriesPerKg": 160000.0,
-        "producedConversionRate": 1.0,
-        "dailyConsumptionKg": 0.75,
-        "dailyExcrementKg": 0.75
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.5,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 12.0
+      },
+      {
+        "consumedTags": [
+          "KelpPlant"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 50000.0,
+        "producedConversionRate": 5.0,
+        "dailyConsumptionKg": 2.4,
+        "dailyExcrementKg": 12.0
+      },
+      {
+        "consumedTags": [
+          "FlyTrapPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "DewPalmSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "DewDripperPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "ColdWheatSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "GardenFoodPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "HardSkinBerryPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "GasGrassSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "MushroomSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "ClamSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "CarrotPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "ButterflyPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "BlueGrassSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "BeanPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "BasicSingleHarvestPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "BasicFabricMaterialPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SaltPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SwampLilySeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SwampHarvestPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SaltySticksPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SpiceVineSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SpaceTreeSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SeaLettuceSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "PrickleFlowerSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "UrchinPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "WormPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "TubeWormSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "PlanktonCoralSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "FishFood"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 6.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 7.20000029
       }
     ]
   },
@@ -8967,6 +9003,221 @@
     ]
   },
   {
+    "id": "OilfloaterDecorBaby",
+    "name": "Longhair Larva",
+    "prefabId": "OilfloaterDecorBaby",
+    "tags": [
+      "Hoverer",
+      "Creature",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "spaceRequired": 12,
+    "temperatures": null,
+    "decor": {
+      "value": 50.0,
+      "radius": 7.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "Oxygen"
+        ],
+        "producedElement": "0",
+        "caloriesPerKg": 4000.0,
+        "producedConversionRate": 0.0,
+        "dailyConsumptionKg": 30.0,
+        "dailyExcrementKg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "AlgaeStegoBaby",
+    "name": "Blumblet",
+    "prefabId": "AlgaeStegoBaby",
+    "tags": [
+      "Creature",
+      "Walker",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": [
+      "DLC4_ID"
+    ],
+    "forbiddenDlcIds": null,
+    "spaceRequired": 16,
+    "temperatures": null,
+    "decor": {
+      "value": 10.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "VineFruit"
+        ],
+        "producedElement": "Algae",
+        "caloriesPerKg": 325000.0,
+        "producedConversionRate": 33.0,
+        "dailyConsumptionKg": 0.369230777,
+        "dailyExcrementKg": 12.1846161
+      },
+      {
+        "consumedTags": [
+          "PrickleFruit"
+        ],
+        "producedElement": "Algae",
+        "caloriesPerKg": 1600000.0,
+        "producedConversionRate": 162.461548,
+        "dailyConsumptionKg": 0.075,
+        "dailyExcrementKg": 12.184617
+      },
+      {
+        "consumedTags": [
+          "SwampFruit"
+        ],
+        "producedElement": "Algae",
+        "caloriesPerKg": 1840000.0,
+        "producedConversionRate": 280.246155,
+        "dailyConsumptionKg": 0.06521739,
+        "dailyExcrementKg": 18.2769222
+      }
+    ]
+  },
+  {
+    "id": "HatchHardBaby",
+    "name": "Stone Hatchling",
+    "prefabId": "HatchHardBaby",
+    "tags": [
+      "Creature",
+      "BagableCreature",
+      "Walker",
+      "CreatureBrain"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "spaceRequired": 12,
+    "temperatures": null,
+    "decor": {
+      "value": 10.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "SedimentaryRock",
+          "IgneousRock",
+          "Obsidian",
+          "Granite",
+          "Basalt"
+        ],
+        "producedElement": "Carbon",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.5,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 12.0
+      },
+      {
+        "consumedTags": [
+          "ZincOre"
+        ],
+        "producedElement": "Carbon",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.25,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 6.0
+      },
+      {
+        "consumedTags": [
+          "Cuprite"
+        ],
+        "producedElement": "Carbon",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.25,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 6.0
+      },
+      {
+        "consumedTags": [
+          "Cobaltite"
+        ],
+        "producedElement": "Carbon",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.25,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 6.0
+      },
+      {
+        "consumedTags": [
+          "AluminumOre"
+        ],
+        "producedElement": "Carbon",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.25,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 6.0
+      },
+      {
+        "consumedTags": [
+          "NickelOre"
+        ],
+        "producedElement": "Carbon",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.25,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 6.0
+      },
+      {
+        "consumedTags": [
+          "Cinnabar"
+        ],
+        "producedElement": "Carbon",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.25,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 6.0
+      },
+      {
+        "consumedTags": [
+          "IronOre"
+        ],
+        "producedElement": "Carbon",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.25,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 6.0
+      },
+      {
+        "consumedTags": [
+          "GoldAmalgam"
+        ],
+        "producedElement": "Carbon",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.25,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 6.0
+      },
+      {
+        "consumedTags": [
+          "Wolframite"
+        ],
+        "producedElement": "Carbon",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.25,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 6.0
+      }
+    ]
+  },
+  {
     "id": "CrabFreshWaterBaby",
     "name": "Sanishell Spawn",
     "prefabId": "CrabFreshWaterBaby",
@@ -9000,59 +9251,6 @@
         "producedConversionRate": 0.6666667,
         "dailyConsumptionKg": 18.0,
         "dailyExcrementKg": 12.0
-      }
-    ]
-  },
-  {
-    "id": "PuftAlphaBaby",
-    "name": "Puftlet Prince",
-    "prefabId": "PuftAlphaBaby",
-    "tags": [
-      "Creature",
-      "Flyer",
-      "BagableCreature",
-      "CreatureBrain"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "spaceRequired": 16,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "ContaminatedOxygen"
-        ],
-        "producedElement": "SlimeMold",
-        "caloriesPerKg": 6666.6665,
-        "producedConversionRate": 0.1,
-        "dailyConsumptionKg": 18.0,
-        "dailyExcrementKg": 1.80000007
-      },
-      {
-        "consumedTags": [
-          "ChlorineGas"
-        ],
-        "producedElement": "BleachStone",
-        "caloriesPerKg": 6666.6665,
-        "producedConversionRate": 0.1,
-        "dailyConsumptionKg": 18.0,
-        "dailyExcrementKg": 1.80000007
-      },
-      {
-        "consumedTags": [
-          "Oxygen"
-        ],
-        "producedElement": "OxyRock",
-        "caloriesPerKg": 6666.6665,
-        "producedConversionRate": 0.1,
-        "dailyConsumptionKg": 18.0,
-        "dailyExcrementKg": 1.80000007
       }
     ]
   },
@@ -9094,6 +9292,340 @@
     ]
   },
   {
+    "id": "PacuTropicalBaby",
+    "name": "Tropical Fry",
+    "prefabId": "PacuTropicalBaby",
+    "tags": [
+      "SwimmingCreature",
+      "Swimmer",
+      "BagableCreature",
+      "Creature",
+      "CreatureBrain"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "spaceRequired": 8,
+    "temperatures": null,
+    "decor": {
+      "value": 25.0,
+      "radius": 5.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "Algae"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 13333.333,
+        "producedConversionRate": 0.6666667,
+        "dailyConsumptionKg": 9.0,
+        "dailyExcrementKg": 6.0
+      },
+      {
+        "consumedTags": [
+          "Kelp"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 5000.0,
+        "producedConversionRate": 0.5,
+        "dailyConsumptionKg": 24.0,
+        "dailyExcrementKg": 12.0
+      },
+      {
+        "consumedTags": [
+          "KelpPlant"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 50000.0,
+        "producedConversionRate": 5.0,
+        "dailyConsumptionKg": 2.4,
+        "dailyExcrementKg": 12.0
+      },
+      {
+        "consumedTags": [
+          "FlyTrapPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "DewPalmSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "DewDripperPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "ColdWheatSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "GardenFoodPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "HardSkinBerryPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "GasGrassSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "MushroomSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "ClamSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "CarrotPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "ButterflyPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "BlueGrassSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "BeanPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "BasicSingleHarvestPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "BasicFabricMaterialPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SaltPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SwampLilySeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SwampHarvestPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SaltySticksPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SpiceVineSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SpaceTreeSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "SeaLettuceSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "PrickleFlowerSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "UrchinPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "WormPlantSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "TubeWormSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "PlanktonCoralSeed"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 3.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 3.60000014
+      },
+      {
+        "consumedTags": [
+          "FishFood"
+        ],
+        "producedElement": "ToxicSand",
+        "caloriesPerKg": 100000.0,
+        "producedConversionRate": 6.0,
+        "dailyConsumptionKg": 1.2,
+        "dailyExcrementKg": 7.20000029
+      }
+    ]
+  },
+  {
     "id": "LightBugBlueBaby",
     "name": "Azure Nymph",
     "prefabId": "LightBugBlueBaby",
@@ -9126,320 +9658,6 @@
         "producedConversionRate": 1.0,
         "dailyConsumptionKg": 3.0,
         "dailyExcrementKg": 3.0
-      }
-    ]
-  },
-  {
-    "id": "PacuTropicalBaby",
-    "name": "Tropical Fry",
-    "prefabId": "PacuTropicalBaby",
-    "tags": [
-      "SwimmingCreature",
-      "Swimmer",
-      "BagableCreature",
-      "Creature",
-      "CreatureBrain"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "spaceRequired": 8,
-    "temperatures": null,
-    "decor": {
-      "value": 25.0,
-      "radius": 5.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "Algae"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 13333.333,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 9.0,
-        "dailyExcrementKg": 4.5
-      },
-      {
-        "consumedTags": [
-          "Kelp"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 12.0
-      },
-      {
-        "consumedTags": [
-          "KelpPlant"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 50000.0,
-        "producedConversionRate": 5.0,
-        "dailyConsumptionKg": 2.4,
-        "dailyExcrementKg": 12.0
-      },
-      {
-        "consumedTags": [
-          "FlyTrapPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "DewDripperPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "ColdWheatSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "DewPalmSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "HardSkinBerryPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "GasGrassSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "GardenFoodPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "CarrotPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "ButterflyPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BlueGrassSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BeanPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BasicSingleHarvestPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "BasicFabricMaterialPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "MushroomSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SaltySticksPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SpiceVineSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SeaLettuceSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "PrickleFlowerSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SpaceTreeSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "WormPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SaltPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "UrchinPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "TubeWormSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SwampLilySeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "SwampHarvestPlantSeed"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
-      },
-      {
-        "consumedTags": [
-          "FishFood"
-        ],
-        "producedElement": "ToxicSand",
-        "caloriesPerKg": 100000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 1.2,
-        "dailyExcrementKg": 0.6
       }
     ]
   },
@@ -10224,114 +10442,6 @@
     ]
   },
   {
-    "id": "PuftOxyliteBaby",
-    "name": "Dense Puftlet",
-    "prefabId": "PuftOxyliteBaby",
-    "tags": [
-      "Creature",
-      "Flyer",
-      "BagableCreature",
-      "CreatureBrain"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": null,
-    "forbiddenDlcIds": null,
-    "spaceRequired": 16,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "Oxygen"
-        ],
-        "producedElement": "OxyRock",
-        "caloriesPerKg": 4000.0,
-        "producedConversionRate": 0.95,
-        "dailyConsumptionKg": 30.0,
-        "dailyExcrementKg": 28.5
-      }
-    ]
-  },
-  {
-    "id": "GlassDeerBaby",
-    "name": "Shatter Flox Fawn",
-    "prefabId": "GlassDeerBaby",
-    "tags": [
-      "Creature",
-      "BagableCreature",
-      "Walker",
-      "CreatureBrain"
-    ],
-    "isRanchable": true,
-    "requiredDlcIds": [
-      "DLC2_ID"
-    ],
-    "forbiddenDlcIds": null,
-    "spaceRequired": 12,
-    "temperatures": null,
-    "decor": {
-      "value": 10.0,
-      "radius": 1.0
-    },
-    "lifespanCycles": 100.0,
-    "diet": [
-      {
-        "consumedTags": [
-          "HardSkinBerryPlant"
-        ],
-        "producedElement": "Dirt",
-        "caloriesPerKg": 166666.656,
-        "producedConversionRate": 8.333334,
-        "dailyConsumptionKg": 0.72,
-        "dailyExcrementKg": 6.00000048
-      },
-      {
-        "consumedTags": [
-          "HardSkinBerry"
-        ],
-        "producedElement": "Dirt",
-        "caloriesPerKg": 499999.969,
-        "producedConversionRate": 25.0000019,
-        "dailyConsumptionKg": 0.24000001,
-        "dailyExcrementKg": 6.00000048
-      },
-      {
-        "consumedTags": [
-          "PrickleFlower"
-        ],
-        "producedElement": "Dirt",
-        "caloriesPerKg": 166666.656,
-        "producedConversionRate": 8.333334,
-        "dailyConsumptionKg": 0.72,
-        "dailyExcrementKg": 6.00000048
-      },
-      {
-        "consumedTags": [
-          "PrickleFruit"
-        ],
-        "producedElement": "Dirt",
-        "caloriesPerKg": 999999.938,
-        "producedConversionRate": 50.0000038,
-        "dailyConsumptionKg": 0.120000005,
-        "dailyExcrementKg": 6.00000048
-      },
-      {
-        "consumedTags": [
-          "Katairite"
-        ],
-        "producedElement": "Dirt",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.5,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 12.0
-      }
-    ]
-  },
-  {
     "id": "HatchMetalBaby",
     "name": "Smooth Hatchling",
     "prefabId": "HatchMetalBaby",
@@ -10445,9 +10555,9 @@
     ]
   },
   {
-    "id": "HatchHardBaby",
-    "name": "Stone Hatchling",
-    "prefabId": "HatchHardBaby",
+    "id": "GlassDeerBaby",
+    "name": "Shatter Flox Fawn",
+    "prefabId": "GlassDeerBaby",
     "tags": [
       "Creature",
       "BagableCreature",
@@ -10455,7 +10565,9 @@
       "CreatureBrain"
     ],
     "isRanchable": true,
-    "requiredDlcIds": null,
+    "requiredDlcIds": [
+      "DLC2_ID"
+    ],
     "forbiddenDlcIds": null,
     "spaceRequired": 12,
     "temperatures": null,
@@ -10467,107 +10579,139 @@
     "diet": [
       {
         "consumedTags": [
-          "SedimentaryRock",
-          "IgneousRock",
-          "Obsidian",
-          "Granite",
-          "Basalt"
+          "HardSkinBerryPlant"
         ],
-        "producedElement": "Carbon",
+        "producedElement": "Dirt",
+        "caloriesPerKg": 166666.656,
+        "producedConversionRate": 8.333334,
+        "dailyConsumptionKg": 0.72,
+        "dailyExcrementKg": 6.00000048
+      },
+      {
+        "consumedTags": [
+          "HardSkinBerry"
+        ],
+        "producedElement": "Dirt",
+        "caloriesPerKg": 499999.969,
+        "producedConversionRate": 25.0000019,
+        "dailyConsumptionKg": 0.24000001,
+        "dailyExcrementKg": 6.00000048
+      },
+      {
+        "consumedTags": [
+          "PrickleFlower"
+        ],
+        "producedElement": "Dirt",
+        "caloriesPerKg": 166666.656,
+        "producedConversionRate": 8.333334,
+        "dailyConsumptionKg": 0.72,
+        "dailyExcrementKg": 6.00000048
+      },
+      {
+        "consumedTags": [
+          "PrickleFruit"
+        ],
+        "producedElement": "Dirt",
+        "caloriesPerKg": 999999.938,
+        "producedConversionRate": 50.0000038,
+        "dailyConsumptionKg": 0.120000005,
+        "dailyExcrementKg": 6.00000048
+      },
+      {
+        "consumedTags": [
+          "Katairite"
+        ],
+        "producedElement": "Dirt",
         "caloriesPerKg": 5000.0,
         "producedConversionRate": 0.5,
         "dailyConsumptionKg": 24.0,
         "dailyExcrementKg": 12.0
+      }
+    ]
+  },
+  {
+    "id": "PuftOxyliteBaby",
+    "name": "Dense Puftlet",
+    "prefabId": "PuftOxyliteBaby",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "spaceRequired": 16,
+    "temperatures": null,
+    "decor": {
+      "value": 10.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "Oxygen"
+        ],
+        "producedElement": "OxyRock",
+        "caloriesPerKg": 4000.0,
+        "producedConversionRate": 0.95,
+        "dailyConsumptionKg": 30.0,
+        "dailyExcrementKg": 28.5
+      }
+    ]
+  },
+  {
+    "id": "PuftAlphaBaby",
+    "name": "Puftlet Prince",
+    "prefabId": "PuftAlphaBaby",
+    "tags": [
+      "Creature",
+      "Flyer",
+      "BagableCreature",
+      "CreatureBrain"
+    ],
+    "isRanchable": true,
+    "requiredDlcIds": null,
+    "forbiddenDlcIds": null,
+    "spaceRequired": 16,
+    "temperatures": null,
+    "decor": {
+      "value": 10.0,
+      "radius": 1.0
+    },
+    "lifespanCycles": 100.0,
+    "diet": [
+      {
+        "consumedTags": [
+          "ContaminatedOxygen"
+        ],
+        "producedElement": "SlimeMold",
+        "caloriesPerKg": 6666.6665,
+        "producedConversionRate": 0.1,
+        "dailyConsumptionKg": 18.0,
+        "dailyExcrementKg": 1.80000007
       },
       {
         "consumedTags": [
-          "ZincOre"
+          "ChlorineGas"
         ],
-        "producedElement": "Carbon",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.25,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 6.0
+        "producedElement": "BleachStone",
+        "caloriesPerKg": 6666.6665,
+        "producedConversionRate": 0.1,
+        "dailyConsumptionKg": 18.0,
+        "dailyExcrementKg": 1.80000007
       },
       {
         "consumedTags": [
-          "Cuprite"
+          "Oxygen"
         ],
-        "producedElement": "Carbon",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.25,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 6.0
-      },
-      {
-        "consumedTags": [
-          "Cobaltite"
-        ],
-        "producedElement": "Carbon",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.25,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 6.0
-      },
-      {
-        "consumedTags": [
-          "AluminumOre"
-        ],
-        "producedElement": "Carbon",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.25,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 6.0
-      },
-      {
-        "consumedTags": [
-          "NickelOre"
-        ],
-        "producedElement": "Carbon",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.25,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 6.0
-      },
-      {
-        "consumedTags": [
-          "Cinnabar"
-        ],
-        "producedElement": "Carbon",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.25,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 6.0
-      },
-      {
-        "consumedTags": [
-          "IronOre"
-        ],
-        "producedElement": "Carbon",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.25,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 6.0
-      },
-      {
-        "consumedTags": [
-          "GoldAmalgam"
-        ],
-        "producedElement": "Carbon",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.25,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 6.0
-      },
-      {
-        "consumedTags": [
-          "Wolframite"
-        ],
-        "producedElement": "Carbon",
-        "caloriesPerKg": 5000.0,
-        "producedConversionRate": 0.25,
-        "dailyConsumptionKg": 24.0,
-        "dailyExcrementKg": 6.0
+        "producedElement": "OxyRock",
+        "caloriesPerKg": 6666.6665,
+        "producedConversionRate": 0.1,
+        "dailyConsumptionKg": 18.0,
+        "dailyExcrementKg": 1.80000007
       }
     ]
   },

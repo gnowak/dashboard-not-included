@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { 
   Search, Database, Flame, Shield, Map, HelpCircle, 
   Thermometer, Sun, Wind, Scale, Zap, Sparkles, Egg,
-  ChevronDown, ChevronUp
+  ChevronDown, ChevronUp, Maximize2
 } from 'lucide-react';
 import { getImageUrl } from '../utils/images';
 
@@ -16,8 +16,12 @@ export function cleanName(name) {
 }
 
 export function getDlcName(requiredDlcIds) {
-  if (!requiredDlcIds || requiredDlcIds.length === 0) return 'Base Game';
-  const dlc = requiredDlcIds[0];
+  let ids = requiredDlcIds;
+  if (typeof requiredDlcIds === 'string') {
+    ids = requiredDlcIds ? [requiredDlcIds] : [];
+  }
+  if (!ids || ids.length === 0 || !ids[0]) return 'Base Game';
+  const dlc = ids[0];
   if (dlc === 'EXPANSION1_ID') return 'Spaced Out!';
   if (dlc === 'DLC2_ID' || dlc === 'DLC2') return 'Frosty Planet';
   if (dlc === 'DLC3_ID' || dlc === 'DLC3') return 'Bionic Pack';
@@ -110,14 +114,17 @@ export function DatabaseExplorer({
   // Helper to filter list by DLC for tab count telemetry
   const filterByDlc = (items) => {
     if (dlcFilter === 'all') return items;
-    return items.filter(item => getDlcName(item.requiredDlcIds) === dlcFilter);
+    return items.filter(item => {
+      const dlcIds = item.requiredDlcIds || (item.dlcId ? [item.dlcId] : []);
+      return getDlcName(dlcIds) === dlcFilter;
+    });
   };
 
   const subTabs = useMemo(() => [
     { id: 'foods', name: 'Foods', count: filterByDlc(foods).length, icon: Flame },
     { id: 'critters', name: 'All Critters', count: filterByDlc(filteredCritters).length, icon: HelpCircle },
     { id: 'plants', name: 'All Plants', count: filterByDlc(filteredPlants).length, icon: HelpCircle },
-    { id: 'elements', name: 'Resources', count: elements.length, icon: Scale },
+    { id: 'elements', name: 'Resources', count: filterByDlc(elements).length, icon: Scale },
     { id: 'buildings', name: 'Buildings', count: filterByDlc(buildings).length, icon: Shield },
   ], [foods.length, filteredCritters.length, filteredPlants.length, elements.length, buildings.length, dlcFilter]);
 
@@ -135,9 +142,12 @@ export function DatabaseExplorer({
   const filteredList = useMemo(() => {
     let list = activeList;
 
-    // Apply DLC Filter (skipped for elements due to insufficient dlc metadata in raw JSON)
-    if (dlcFilter !== 'all' && subTab !== 'elements') {
-      list = list.filter(item => getDlcName(item.requiredDlcIds) === dlcFilter);
+    // Apply DLC Filter
+    if (dlcFilter !== 'all') {
+      list = list.filter(item => {
+        const dlcIds = item.requiredDlcIds || (item.dlcId ? [item.dlcId] : []);
+        return getDlcName(dlcIds) === dlcFilter;
+      });
     }
 
     // Apply Food Filters
@@ -723,13 +733,13 @@ export function DatabaseExplorer({
                                   }}>
                                     <div style={{ display: 'flex', justifyContent: 'space-between', fontFamily: 'var(--oni-font-mono)', gap: '0.5rem', flexWrap: 'wrap' }}>
                                       <span style={{ flex: 1, minWidth: '120px' }}>Eats: {dietItem.consumedTags 
-                                        ? dietItem.consumedTags.map(t => idToNameMap[t] || cleanName(t)).join(', ') 
-                                        : (idToNameMap[dietItem.consumedTag] || cleanName(dietItem.consumedTag || 'Minerals'))}</span>
+                                        ? dietItem.consumedTags.map(t => idToNameMap[t.toLowerCase()] || idToNameMap[t] || cleanName(t)).join(', ') 
+                                        : (idToNameMap[dietItem.consumedTag?.toLowerCase()] || idToNameMap[dietItem.consumedTag] || cleanName(dietItem.consumedTag || 'Minerals'))}</span>
                                       <span style={{ color: 'var(--oni-text-primary)', whiteSpace: 'nowrap' }}>{dietItem.dailyConsumptionKg?.toFixed(1) ?? '140'} kg/c</span>
                                     </div>
                                     {dietItem.producedElement && (
                                       <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.7rem', color: 'var(--oni-text-muted)', borderTop: '1px solid rgba(255,255,255,0.05)', marginTop: '0.2rem', paddingTop: '0.2rem', gap: '0.5rem', flexWrap: 'wrap' }}>
-                                        <span style={{ flex: 1, minWidth: '120px' }}>Excretes: {idToNameMap[dietItem.producedElement] || cleanName(dietItem.producedElement)}</span>
+                                        <span style={{ flex: 1, minWidth: '120px' }}>Excretes: {idToNameMap[dietItem.producedElement?.toLowerCase()] || idToNameMap[dietItem.producedElement] || cleanName(dietItem.producedElement)}</span>
                                         <span style={{ whiteSpace: 'nowrap' }}>{dietItem.dailyExcrementKg?.toFixed(1) ?? '70'} kg/c</span>
                                       </div>
                                     )}
@@ -802,6 +812,35 @@ export function DatabaseExplorer({
                             </span>
                           </div>
                         )}
+                        {/* Planter Requirement */}
+                        {item.isFarmable !== false && (
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                            <Maximize2 size={12} style={{ color: 'var(--oni-accent-oxygen)' }} />
+                            <span style={{ color: 'var(--oni-text-muted)' }}>Planter:</span>
+                            <span style={{ fontWeight: 'bold', color: 'var(--oni-text-primary)' }}>
+                              {(() => {
+                                const planters = item.acceptedPlanters || [];
+                                const farmPlanters = planters.filter(p => 
+                                  p === 'PlanterBox' || p === 'FarmTile' || p === 'HydroponicFarm' || p === 'LargeBackwallFarm' || p === 'WideFarmTile'
+                                );
+                                if (farmPlanters.length > 0) {
+                                  return farmPlanters.map(p => {
+                                    if (p === 'LargeBackwallFarm') return 'Wall Planter (2x2)';
+                                    if (p === 'WideFarmTile') return 'Wide Hydroponic Farm (3x1)';
+                                    if (p === 'PlanterBox') return 'Planter Box (1x1)';
+                                    if (p === 'FarmTile') return 'Farm Tile (1x1)';
+                                    if (p === 'HydroponicFarm') return 'Hydroponic Farm (1x1)';
+                                    return p;
+                                  }).join(', ');
+                                }
+                                const lowerId = item.id?.toLowerCase() || '';
+                                if (lowerId.includes('dewpalm') || lowerId === 'clam') return 'Wide Hydroponic Farm (3x1)';
+                                if (lowerId.includes('planktoncoral') || lowerId.includes('urchinplant')) return 'Wall Planter (2x2), Standard Tile (1x1)';
+                                return 'Standard Tile (1x1)';
+                              })()}
+                            </span>
+                          </div>
+                        )}
                         {/* Fertilizers & Irrigation (Collapsible) */}
                         {isExpanded && (
                           <>
@@ -812,14 +851,14 @@ export function DatabaseExplorer({
                                 {/* Fertilizers */}
                                 {item.fertilizerRequirements?.map((f, idx) => (
                                   <div key={`f-${idx}`} style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', fontFamily: 'var(--oni-font-mono)', color: 'var(--oni-text-primary)' }}>
-                                    <span>Solid: {idToNameMap[f.tag] || cleanName(f.tag)}</span>
+                                    <span>Solid: {idToNameMap[f.tag?.toLowerCase()] || idToNameMap[f.tag] || cleanName(f.tag)}</span>
                                     <span>{f.kgPerCycle?.toFixed(1) ?? (f.massConsumptionRateKgPerSec * 600).toFixed(1)} kg/c</span>
                                   </div>
                                 ))}
                                 {/* Irrigation */}
                                 {item.irrigationRequirements?.map((ir, idx) => (
                                   <div key={`i-${idx}`} style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', fontFamily: 'var(--oni-font-mono)', color: 'var(--oni-text-primary)' }}>
-                                    <span>Liquid: {idToNameMap[ir.tag] || cleanName(ir.tag)}</span>
+                                    <span>Liquid: {idToNameMap[ir.tag?.toLowerCase()] || idToNameMap[ir.tag] || cleanName(ir.tag)}</span>
                                     <span>{ir.kgPerCycle?.toFixed(1) ?? (ir.massConsumptionRateKgPerSec * 600).toFixed(1)} kg/c</span>
                                   </div>
                                 ))}
@@ -842,7 +881,7 @@ export function DatabaseExplorer({
                               }}>
                                 <span style={{ color: 'var(--oni-text-muted)' }}>Harvest Yield:</span>
                                 <span style={{ fontWeight: 'bold', color: 'var(--oni-accent-oxygen)' }}>
-                                  {item.yield.amount}x {idToNameMap[item.yield.itemId || item.yield.id] || cleanName(item.yield.itemId || item.yield.id)}
+                                  {item.yield.amount}x {idToNameMap[(item.yield.itemId || item.yield.id)?.toLowerCase()] || idToNameMap[item.yield.itemId || item.yield.id] || cleanName(item.yield.itemId || item.yield.id)}
                                 </span>
                               </div>
                             )}
